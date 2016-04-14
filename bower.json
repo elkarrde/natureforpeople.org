@@ -2,16 +2,15 @@
   "name": "wwf-adria",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "bootstrap": "4.0"
   },
   "overrides": {
-    "bootstrap-sass": {
+    "bootstrap": {
       "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
+        "scss/bootstrap.scss",
+        "dist/js/bootstrap.js"
       ]
     }
   },
