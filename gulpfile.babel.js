@@ -4,6 +4,7 @@ import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {stream as wiredep} from 'wiredep';
+import gzip from 'gulp-gzip';
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -72,6 +73,13 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('compress', () => {
+  gulp.src(['app/scripts/**/*.js', 'app/scripts/**/*.json'])
+  .pipe(gzip())
+  .pipe(gulp.dest('.tmp/scripts'))
+  .pipe(gulp.dest('dist/scripts'));
+});
+
 gulp.task('fonts', () => {
   return gulp.src(require('main-bower-files')('**/*.{eot,svg,ttf,woff,woff2}', function (err) {})
     .concat('app/fonts/**/*'))
@@ -90,7 +98,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['styles', 'scripts', 'compress', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -153,7 +161,7 @@ gulp.task('wiredep', () => {
 
   gulp.src('app/*.html')
     .pipe(wiredep({
-      exclude: ['bootstrap-sass'],
+      exclude: ['bootstrap'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));
