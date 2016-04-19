@@ -26,43 +26,116 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">wwf adria</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+  <!-- Navigation
+    ================================================== -->
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-          
+    <nav class="navbar navbar-light bg-custom navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="icon-logo"></span>
+          <span class="sr-only">WWF Adria</span>
+        </a>
+        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
+        &#9776;
+      </a>
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
+          <span class="icon-user"></span>
+        </a>
+        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="/">About PA-BAT</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="/">WWF Adria</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    
+    <!-- Hero Section
+    ================================================== -->
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+    <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner">
+      <div class="container">
+        <h1 class="display-3">WWF Adria</h1>
+        <h2 class="m-b-3">PA-Bat</h2>
+        <!-- <a class="btn btn-secondary-outline m-b-1" href="http://tympanus.net/codrops/?p=25217" role="button"><span class="icon-sketch"> --><!-- </span>Sketch included</a>
+        <ul class="nav nav-inline social-share">
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
+        </ul> -->
       </div>
-    </div>
+    </header>
+
+    <!-- Text Content
+    ================================================== -->
+
+    <section class="section-text">
+      <div class="container">
+        <h3 class="text-xs-center">Key Ecosystem Values</h3>
+        <div class="row p-y-3">
+          <div class="col-md-6">
+            <img src="/images/water.jpg" alt="" class="img-circle text-image">
+            <h4>Water</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+           <div class="col-md-6">
+            <img src="/images/forest.jpg" alt="" class="img-circle text-image">
+            <h4>Forest</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/jobs.jpg" alt="" class="img-circle text-image">
+            <h4>Jobs</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/food.jpg" alt="" class="img-circle text-image">
+            <h4>Food</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/tourism.jpg" alt="" class="img-circle text-image">
+            <h4>Tourism</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="/images/eco-system.jpg" alt="" class="img-circle text-image">
+            <h4>Eco-system services</h4>
+            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer
+    ================================================== -->
+
+    <footer class="section-footer bg-inverse" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-5">
+            <div class="media">
+              <div class="media-left">
+                <span class="media-object icon-logo display-1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-7">
+            <ul class="nav nav-inline">
+              <li class="nav-item">
+                <a class="nav-link" href="./index-carousel.html">About PA-BAT</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="ui-elements.html">WWF Adria</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -78,22 +151,8 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
