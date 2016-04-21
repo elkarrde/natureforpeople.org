@@ -201,16 +201,11 @@ body {
 }
 
 .navbar {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: .875rem;
   font-weight: 500;
   line-height: 1.2;
-
-  @include media-breakpoint-up(md) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }
 
 .navbar-light {
@@ -627,21 +622,17 @@ body {
   padding: 0;
 }
 
-$custom-min-width: map-get($grid-breakpoints, 'md');
+$custom-min-width: map-get($grid-breakpoints, 'xs');
 $custom-min-height: 37.5em; // 600
 
 // static
 
 .jumbotron {
-  padding-top: 7rem;
   margin-bottom: 0;
-  background: #663fb5 url(../images/hero.jpg) no-repeat center bottom;
-  background-size: cover;
+  // background: #663fb5 url(../images/hero.jpg) no-repeat center bottom;
+  // background-size: cover;
   border-radius: 0;
-
-  @include media-breakpoint-down(sm) {
-    padding-top: 6.25rem;
-  }
+  padding: 0;
 
   .btn { padding: 1.2rem 2rem; }
 
@@ -653,6 +644,41 @@ $custom-min-height: 37.5em; // 600
   a.jumbolink:hover,
   a.jumbolink:focus {
     opacity: 1;
+  }
+}
+
+.map-wrapper {
+  // display: inline-block;
+  // position: relative;
+  // width: 100%;
+  // padding-bottom: 60%;
+  // vertical-align: middle;
+  
+  svg {
+    // display: block;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    
+    .subunit.ALB { fill: #bad696; }
+    .subunit.BIH { fill: #bad696; }
+    .subunit.HRV { fill: #bad696; }
+    .subunit.KOS { fill: #bad696; }
+    .subunit.MKD { fill: #bad696; }
+    .subunit.MNE { fill: #bad696; }
+    .subunit.SRB { fill: #bad696; }
+    .subunit.SVN { fill: #bad696; }
+
+    .subunit:hover {
+      fill: #bad600;
+    }
+
+    .subunit-boundary {
+      fill: none;
+      stroke: #777;
+      stroke-dasharray: 2,2;
+      stroke-linejoin: round;
+    }
   }
 }
 
