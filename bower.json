@@ -7,7 +7,9 @@
     "tether": "^1.2.0",
     "bootstrap": "4.0",
     "c3": "^0.4.10",
-    "topojson": "^1.6.24"
+    "topojson": "^1.6.24",
+    "lodash": "^4.11.2",
+    "textures": "*"
   },
   "overrides": {
     "bootstrap": {
