@@ -15,6 +15,8 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="/bower_components/bxslider/bx_styles/bx_styles.css">
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -22,6 +24,7 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -61,11 +64,36 @@
 
     <header class="jumbotron text-xs-center center-vertically content" role="banner">
       <div class="container">
-        <h1>Croatia</h1>
-        <span id="click-me">X</span>
-        <div id="chart"></div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="bxslider chart-wrapper">
+            <div class="slide1">
+                <h1>Did you know that governments and businesses are sole economical benefactors in PAs.</h1>
+                <div id="chart1"></div> 
+                <div class="click-me-1"><h2>Who has <span class='untogg'>existential</span><span class='togg'>economical</span> benefits?</h2></div>
+            </div>
+            <div class="slide">
+                <h1>Croatia1</h1>
+                <span id="click-me"></span>
+                <div id="chart2"></div>
+            </div>
+            <div class="slide">
+            <h1>Croatia1</h1>
+                <span id="click-me"></span>
+                <div id="chart3"></div>
+            </div>
+            <div class="slide">
+                <h1>Croatia1</h1>
+                <span id="click-me"></span>
+                <div id="chart4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </header>
+
+    <hr>
 
     <!-- Text Content
     ================================================== -->
@@ -148,6 +176,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/underscore/underscore.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/bower_components/d3/d3.js"></script>
     <script src="/bower_components/c3/c3.js"></script>
     <script src="/bower_components/topojson/topojson.js"></script>

@@ -16,6 +16,10 @@
 
 $icon-font-path: '../fonts/';
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300400,600,500,700|Lato:400,700');
+
+
+$font-family-sans-serif-custom: 'Lato', sans-serif !default;
 
 // bower:scss
 @import "bower_components/bootstrap/scss/bootstrap.scss";
@@ -42,6 +46,9 @@ $icon-font-path: '../fonts/';
 
 .bg-white {
     background-color: #fff;
+    .read-more {
+      color: #365432;
+    }
 }
 
 .section-intro,
@@ -57,16 +64,9 @@ $icon-font-path: '../fonts/';
     }
 }
 
-.section-features,
-.section-pricing,
-.section-text,
-.section-news,
-.section-signup {
-    padding-bottom: 2.8125rem;
-
-    @include media-breakpoint-up(md) {
-        padding-bottom: 5.625rem;
-    }
+.section-title {
+  border-bottom: 1px dotted;
+  padding-bottom: 1em;
 }
 
 @include media-breakpoint-down(sm) {
@@ -78,11 +78,28 @@ $icon-font-path: '../fonts/';
 
 .textselect-off { user-select: none; }
 
+.read-more {
+  font-size: 1.5rem;
+  font-weight: 100;
+  border-bottom: 0px solid;
+  cursor: pointer;
+  transition: border-bottom-width .05s ease-out;
+  &:hover {
+    text-decoration: none;
+    border-bottom-width: 4px;
+    transition: border-bottom-width .15s ease-out;
+  }
+  &::before, &::after {
+    content: '~';
+    padding: 0 0.235em;
+  }
+}
+
 /* ==========================================================================
 1. GENERAL
 ========================================================================== */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 .browserupgrade {
     margin: 0.2em 0;
@@ -95,6 +112,10 @@ body {
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -504,7 +525,7 @@ h6 {
 }
 
 .navbar-form .form-control {
-    padding: 1rem 0 1rem 15px;
+padding: 1rem 0 1rem 15px;
 font-size: 1rem; // prevents tap-zooming on mobile
 font-weight: 600;
 line-height: 1.2;
@@ -681,15 +702,36 @@ $custom-min-height: 37.5em; // 600
             stroke-linejoin: round;
         }
 
-        .others-all {fill :#5D7D75;}
+        .others-all {fill :#027073;}
 
         .others-boundary {
             fill: none;
-            stroke: rgba(0,0,0,0.15);
+            //stroke: rgba(0,0,0,0.15);
             //stroke-dasharray: 4,6;
             stroke-width: 0.8px;
             stroke-linejoin: round;
         }
+    }
+}
+
+.chart-wrapper {
+    .click-me-1 {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .toggled {        
+        .untogg {
+            visibility: hidden;
+            display: none;
+        }
+        .togg {
+            visibility: visible;
+            display: initial;
+        }
+    }
+    .togg {
+        visibility: hidden;
+        display: none;
     }
 }
 
@@ -710,6 +752,26 @@ $custom-min-height: 37.5em; // 600
 //
 // =Text
 // --------------------------------------------------
+.image-block {
+    width: 100%;
+    max-height: 270px;
+    display: block;
+    margin: 20px auto 60px;
+}
+.separator-x {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background-color: #ededed;
+  }
+}
 
 .text-image {
     width: 10rem;
@@ -724,6 +786,168 @@ $custom-min-height: 37.5em; // 600
         margin-bottom: 5rem;
     }
 }
+
+//
+// =Testimonials
+// --------------------------------------------------
+
+.svg-mask {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  
+  &.services-food {
+    mask: url(../images/services_food.svg) no-repeat 73% 50%;
+  }
+  &.services-material {
+    mask: url(../images/services_raw_materials.svg) no-repeat 48% 50%;
+  }
+  &.services-water {
+    mask: url(../images/services_water.svg) no-repeat 46% 50%;
+  }
+  &.services-medicine {
+    mask: url(../images/services_medicine.svg) no-repeat 50% 50%;
+  }
+  .section-testimonials & {
+    background-color: #fcfcfc;
+  }
+  .carousel-indicators & {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.section-testimonials {
+  background: #628773;
+  background-size: cover;
+  color: #fcfcfc;
+
+  .blockquote {
+    margin: 1rem auto 2rem;
+    border-left: 0 none;
+
+    @include media-breakpoint-up(md) {
+      max-width: 60rem;
+    }
+
+    > .svg-mask {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: .4375rem;
+      font-weight: 100;
+      line-height: 1.464;
+
+      &:before {
+        content: '\201c';
+      }
+
+      &:after {
+        content: '\201d';
+      }
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.1875;
+      margin: 1rem auto;
+    }
+  }
+
+  .carousel-indicators {
+    position: inherit;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    margin: 0 0 2.1875rem;
+
+    img {
+      width: 45px;
+      height: 45px;
+      margin: 5.5px auto 0;
+      transition: all .1s ease-in-out;
+    }
+
+    li {
+      width: 60px;
+      height: 60px;
+      margin: 0;
+      text-indent: inherit;
+      border: 0;
+      border-radius: 0;
+      opacity: .25;
+      transition: opacity .2s;
+
+      &:hover { opacity: .9; }
+
+      &.active {
+        margin: 0;
+        background-color: transparent;
+        opacity: 1;
+
+        img {
+          width: 56px;
+          height: 56px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+//
+// =Features
+// --------------------------------------------------
+
+.section-features {
+  .card {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 3rem auto;
+    border: 0 none;
+  }
+
+  .card-block {
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 1.25rem;
+    }
+  }
+}
+
+
+.card-title {
+  margin-bottom: 5px;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.1666;
+}
+
+.card-subtitle {
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 1.5625rem;
+
+    &:after {
+      display: block;
+      width: 80%;
+      height: 1px;
+      margin: 30px auto 0;
+      content: '';
+      background-color: #ededed;
+    }
+  }
+}
+
+.card-text { font-weight: 300; }
 
 //
 // =Footer

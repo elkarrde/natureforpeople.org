@@ -9,7 +9,8 @@
     "c3": "^0.4.10",
     "topojson": "^1.6.24",
     "lodash": "^4.11.2",
-    "textures": "*"
+    "textures": "*",
+    "bxslider": "*"
   },
   "overrides": {
     "bootstrap": {
