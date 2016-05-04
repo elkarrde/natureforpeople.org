@@ -783,7 +783,7 @@ $custom-min-height: 37.5em; // 600
 
 .section-text {
     & div[class^="col-md-"] {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -800,7 +800,7 @@ $custom-min-height: 37.5em; // 600
   &.services-food {
     mask: url(../images/services_food.svg) no-repeat 73% 50%;
   }
-  &.services-material {
+  &.services-materials {
     mask: url(../images/services_raw_materials.svg) no-repeat 48% 50%;
   }
   &.services-water {
@@ -809,8 +809,52 @@ $custom-min-height: 37.5em; // 600
   &.services-medicine {
     mask: url(../images/services_medicine.svg) no-repeat 50% 50%;
   }
+
+  &.services-climate {
+    mask: url(../images/services_climate.svg) no-repeat 50% 50%;
+  }
+  &.services-carbon {
+    mask: url(../images/services_raw_materials.svg) no-repeat 50% 50%;
+  }
+  &.services-moderation {
+    mask: url(../images/services_moderation.svg) no-repeat 50% 50%;
+  }
+  &.services-waste-treatment {
+    mask: url(../images/services_waste_treatment.svg) no-repeat 50% 50%;  }
+
+  &.services-erosion {
+    mask: url(../images/services_erosion.svg) no-repeat 50% 50%;
+  }
+  &.services-pollination {
+    mask: url(../images/services_pollination.svg) no-repeat 50% 50%;
+  }
+  &.services-bio-control {
+    mask: url(../images/services_bio_control.svg) no-repeat 50% 50%;
+  }
+  &.services-habitat {
+    mask: url(../images/services_habitat.svg) no-repeat 50% 50%;
+  }
+  &.services-genetic {
+    mask: url(../images/services_genetic.svg) no-repeat 50% 50%;
+  }
+  &.services-recreation {
+    mask: url(../images/services_recreation.svg) no-repeat 50% 50%;
+  }
+  &.services-tourism {
+    mask: url(../images/services_tourism.svg) no-repeat 50% 50%;
+  }
+  &.services-inspiration {
+    mask: url(../images/services_inspiration.svg) no-repeat 50% 50%;
+  }
+  &.services-spiritual {
+    mask: url(../images/services_spiritual.svg) no-repeat 50% 50%;
+  }
   .section-testimonials & {
     background-color: #fcfcfc;
+  }
+  .section-text & {
+    background-color: $body-color;
+    margin-bottom: 2em;
   }
   .carousel-indicators & {
     width: 50px;
