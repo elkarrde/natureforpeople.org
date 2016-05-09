@@ -33,7 +33,7 @@
 
     <nav class="navbar navbar-light bg-custom navbar-fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <span class="icon-logo"></span>
           <span class="sr-only">WWF Adria</span>
         </a>
@@ -46,10 +46,10 @@
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="/">About PA-BAT</a>
+              <a class="nav-link" href="#">Ecosystem services</a>
             </li>
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="/">WWF Adria</a>
+              <a class="nav-link" href="#">WWF Adria</a>
             </li>
           </ul>
         </div>
@@ -78,13 +78,13 @@
 
     <section class="section-text bg-white">
       <div class="container">
-        <div class="row m-t-3 m-b-1">
+        <div class="row m-t-3 m-b-1 provisioning-services">
           <div class="col-xs-12">
             <h2 class="section-title">Provisioning services</h2>
             <p>Provisioning Services are ecosystem services that describe the material or energy outputs from ecosystems. They include food, water and other resources.</p>
           </div>
         </div> 
-        <div class="row p-y-1">
+        <div class="row p-y-1 provisioning-services">
           <div class="col-md-5">
             <span class="svg-mask services-food"></span>
             <h3 class="wp wp-7 text-center">Food</h3>
@@ -108,13 +108,13 @@
           </div>
         </div>
 
-        <div class="row m-t-3 m-b-1">
+        <div class="row m-t-3 m-b-1 regulating-services">
           <div class="col-xs-12">
             <h2 class="section-title">Regulating services</h2>
             <p>Regulating Services are the services that ecosystems provide by acting as regulators eg. regulating the quality of air and soil or by providing flood and disease control.</p>
           </div>
         </div> 
-        <div class="row p-y-1">
+        <div class="row p-y-1 regulating-services">
           <div class="col-md-5">
             <span class="svg-mask services-climate"></span>
             <h3 class="wp wp-7 text-center">Local climate and air quality</h3>
@@ -155,12 +155,12 @@
           </div>
         </div>
 
-        <div class="row m-t-3 m-b-1">
+        <div class="row m-t-3 m-b-1 supporting-services">
           <div class="col-xs-12">
             <h2 class="section-title">Habitat or supporting services</h2>
           </div>
         </div> 
-        <div class="row p-y-1">
+        <div class="row p-y-1 supporting-services">
           <div class="col-md-5">
             <span class="svg-mask services-habitat"></span>
             <h3 class="wp wp-7 text-center">Habitats for species</h3>
@@ -173,12 +173,12 @@
           </div>
         </div>
 
-        <div class="row m-t-3 m-b-1">
+        <div class="row m-t-3 m-b-1 cultural-services">
           <div class="col-xs-12">
             <h2 class="section-title">Cultural services</h2>
           </div>
         </div> 
-        <div class="row p-y-1">
+        <div class="row p-y-1 cultural-services">
           <div class="col-md-5">
             <span class="svg-mask services-recreation"></span>
             <h3 class="wp wp-7 text-center">Recreation and mental and physical health</h3>
@@ -250,6 +250,7 @@
     <script src="/bower_components/c3/c3.js"></script>
     <script src="/bower_components/topojson/topojson.js"></script>
     <script src="/bower_components/lodash/lodash.js"></script>
+    <script src="/bower_components/bxslider/jquery.bxSlider.min.js"></script>
     <script src="/bower_components/textures/textures.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->

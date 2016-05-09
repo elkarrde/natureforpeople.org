@@ -814,7 +814,7 @@ $custom-min-height: 37.5em; // 600
     mask: url(../images/services_climate.svg) no-repeat 50% 50%;
   }
   &.services-carbon {
-    mask: url(../images/services_raw_materials.svg) no-repeat 50% 50%;
+    mask: url(../images/services_carbon.svg) no-repeat 50% 50%;
   }
   &.services-moderation {
     mask: url(../images/services_moderation.svg) no-repeat 50% 50%;
@@ -853,12 +853,47 @@ $custom-min-height: 37.5em; // 600
     background-color: #fcfcfc;
   }
   .section-text & {
-    background-color: $body-color;
     margin-bottom: 2em;
   }
   .carousel-indicators & {
     width: 50px;
     height: 50px;
+  }
+}
+
+.provisioning-services {
+  h2 {
+    color: #E27A3F;
+  }
+  .svg-mask {
+    background-color: #E27A3F;
+  }
+}
+
+.regulating-services {
+  h2 {
+    color: #45B29D;
+  }
+  .svg-mask {
+    background-color: #45B29D;
+  }
+}
+
+.supporting-services {
+  h2 {
+    color: #EFC94C;
+  }
+  .svg-mask {
+    background-color: #EFC94C;
+  }
+}
+
+.cultural-services {
+  h2 {
+    color: #DF5A49;
+  }
+  .svg-mask {
+    background-color: #DF5A49;
   }
 }
 
@@ -992,6 +1027,11 @@ $custom-min-height: 37.5em; // 600
 }
 
 .card-text { font-weight: 300; }
+
+.card-basic {
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 2em;
+}
 
 //
 // =Footer
