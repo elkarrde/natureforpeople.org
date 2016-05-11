@@ -1,4 +1,7 @@
 $(function() {
+    window.onload = function() {
+  scrollTo(0,0);
+}
     function mapInit() {
         var width = $('.map-wrapper').width();
         var height = $(window).height();
@@ -82,9 +85,6 @@ $(function() {
             d3.selectAll("path").attr('d', path);
         }
     }
-
-
-
     function navMobileCollapse() {
         // avoid having both mobile navs opened at the same time
         $('#collapsingMobileUser').on('show.bs.collapse', function () {
