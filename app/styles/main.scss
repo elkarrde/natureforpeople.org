@@ -229,8 +229,9 @@ $color-secondary-2-4: #BA0035;
 ========================================================================== */
 body {
     font-family: 'Raleway', sans-serif;
-
+    margin-bottom: 60px;
 }
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -272,6 +273,8 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+    position: absolute;
+
 }
 
 .container-narrow > hr {
@@ -1366,4 +1369,39 @@ ol.simple-list > li:before {
             }
         }
     }
+}
+
+
+// =Additional 
+//  Author: Antonio
+// --------------------------------------------------
+
+.img-thumbnail {
+    position:       static;
+    height:         220px;
+    width:          250px;
+    margin:         10px;
+}
+
+.img-thumbnail:hover {
+    background-color: #027073;
+}
+
+#searchform {
+    font-size:      100px;
+    padding:        150px 28% 20px 28%;
+}
+
+#container-links {
+    margin-left:    25%;
+    margin-bottom:  30px;
+}
+
+span:hover {
+    cursor:         pointer;
+}
+
+#container-doc {
+    border: solid 1px;
+    border-color: #000;
 }

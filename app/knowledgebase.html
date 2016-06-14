@@ -27,11 +27,11 @@
 
 
   <body>
-    <!--[if lt IE 10]>
+     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+     <![endif]-->
 
-  <!-- Navigation
+    <!-- Navigation
     ================================================== -->
 
     <nav class="navbar navbar-light bg-custom navbar-fixed-top">
@@ -61,39 +61,50 @@
               <a class="nav-link" href="/recommendations.html">Recommendations</a>
             </li>
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
+              <a class="nav-link" href="#">Knowledge Base</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <br/><br/><br/><br/><br/><br/>
-
-      <!-- Search Button
+    <!-- Search Button
     ================================================== -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <div class="box">
-      <div class="container-1">
-    <input type="search" id="search" placeholder="Search Base..." />
-    <button class="icon"><i class="fa fa-search"></i></button>
-  </div>
-  </div>
-  <br/>
 
-<div class="input-group">
-    <input type="text" class="form-control"/>
-    <span class="input-group-addon">
-        <i class="fa fa-search"></i>
-    </span>
-</div>
+    <form class="" method="get" id="searchform" action="http://www.justfuckinggoogleit.com/">
+      <div class="input-group input-group-lg">
+         <input type="text" class="form-control" placeholder="Search database...">
+          <span class="input-group-addon">
+              <i class="fa fa-search"></i>
+          </span>
+      </div>
+    </form>
 
-<br/><br/><br/><br/><br/><br/>
-
-
-   <!-- Footer
+     <!--  Image Links
     ================================================== -->
+    <div id="container-links">
+      <div class="row">
+        <a href="/"><img src="./images/forest.jpg" alt="Forest" class="img-thumbnail col-md-3"></a>
+        <a href="/"><img src="./images/jobs.jpg" alt="Jobs" class="img-thumbnail col-md-3"></a>
+        <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail col-md-3"></a>
+      </div>
+      <div class="row">
+        <a href="/"><img src="./images/water.jpg" alt="Water" class="img-thumbnail col-md-3"></a>
+        <a href="/"><img src="./images/food.jpg" alt="Food" class="img-thumbnail col-md-3"></a>
+        <a href="/"><img src="./images/tourism.jpg" alt="Tourism" class="img-thumbnail col-md-3"></a>
+      </div>
+      <div class="row">
+        <a href="/"><img src="./images/eco-system.jpg" alt="Eco-system" class="img-thumbnail col-md-3"></a>
+        <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail col-md-3"></a>
+        <a href="doc-page.html"><img src="./images/random.png" alt="Randomize" class="img-thumbnail col-md-3"></a>
+      </div>
+    </div>
 
+    <br/>
+
+    <!-- Footer
+    ================================================== -->
     <footer class="section-footer bg-inverse" role="contentinfo">
       <div class="container">
         <div class="row">
@@ -116,5 +127,67 @@
       </div>
     </footer>
 
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/underscore/underscore.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/d3/d3.js"></script>
+    <script src="/bower_components/c3/c3.js"></script>
+    <script src="/bower_components/topojson/topojson.js"></script>
+    <script src="/bower_components/lodash/lodash.js"></script>
+    <script src="/bower_components/bxslider/jquery.bxSlider.min.js"></script>
+    <script src="/bower_components/textures/textures.min.js"></script>
+    <script src="/bower_components/Chart.js/dist/Chart.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/knowledgebase.js"></script>
+    <!-- endbuild -->
+
+     <script type="text/javascript">
+      window.results = [
+        {
+          title: "Neki članak",
+          summary: "NEKI DUGI STRING",
+          size: 1544,
+          date: "2007-05-11",
+          author: "Mile Milić",
+          url: "http://knowledgebase.wwf.hr/articles/124125",
+        }, {
+          title: "Neki članak",
+          summary: "NEKI DUGI STRING",
+          size: 1544,
+          date: "2007-05-11",
+          author: "Mile Milić",
+          url: "http://knowledgebase.wwf.hr/articles/124125",
+        }, {
+          title: "Neki članak",
+          summary: "NEKI DUGI STRING",
+          size: 1544,
+          date: "2007-05-11",
+          author: "Mile Milić",
+          url: "http://knowledgebase.wwf.hr/articles/124125",
+        }, {
+          title: "Neki članak",
+          summary: "NEKI DUGI STRING",
+          size: 1544,
+          date: "2007-05-11",
+          author: "Mile Milić",
+          url: "http://knowledgebase.wwf.hr/articles/124125",
+        }, {
+          title: "Neki članak",
+          summary: "NEKI DUGI STRING",
+          size: 1544,
+          date: "2007-05-11",
+          author: "Mile Milić",
+          url: "http://knowledgebase.wwf.hr/articles/124125",
+        }
+      ]
+    </script>
    </body>
 </html>    
