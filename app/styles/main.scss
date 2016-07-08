@@ -1376,32 +1376,34 @@ ol.simple-list > li:before {
 //  Author: Antonio
 // --------------------------------------------------
 
+//Image links
 .img-thumbnail {
     position:       static;
-    height:         220px;
-    width:          250px;
-    margin:         10px;
+    height:         270px;
+    width:          290px;
+    margin:         5px;
+    padding:        10px;
+    border-radius:  25px;
 }
 
 .img-thumbnail:hover {
     background-color: #027073;
 }
 
+//Search button
 #searchform {
     font-size:      100px;
-    padding:        150px 28% 20px 28%;
-}
-
-#container-links {
-    margin-left:    25%;
-    margin-bottom:  30px;
+    padding:        100px 28% 20px 28%;
 }
 
 span:hover {
     cursor:         pointer;
 }
 
-#container-doc {
-    border: solid 1px;
-    border-color: #000;
+td h1:hover {
+    cursor:         pointer;
+}
+
+table td a:hover {
+    text-decoration: none;
 }

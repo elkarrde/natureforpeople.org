@@ -22,6 +22,8 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+    <script src="/bower_components/mustache/mustache.js"></script>
   </head>
 
 
@@ -61,7 +63,7 @@
               <a class="nav-link" href="/recommendations.html">Recommendations</a>
             </li>
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="#">Knowledge Base</a>
+              <a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
             </li>
           </ul>
         </div>
@@ -72,10 +74,10 @@
     ================================================== -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <form class="" method="get" id="searchform" action="http://www.justfuckinggoogleit.com/">
+    <form method="get" id="searchform" action="">
       <div class="input-group input-group-lg">
          <input type="text" class="form-control" placeholder="Search database...">
-          <span class="input-group-addon">
+          <span type="button" class="input-group-addon search-btn">
               <i class="fa fa-search"></i>
           </span>
       </div>
@@ -83,25 +85,102 @@
 
      <!--  Image Links
     ================================================== -->
-    <div id="container-links">
+    <div class="container img-links">
       <div class="row">
-        <a href="/"><img src="./images/forest.jpg" alt="Forest" class="img-thumbnail col-md-3"></a>
-        <a href="/"><img src="./images/jobs.jpg" alt="Jobs" class="img-thumbnail col-md-3"></a>
-        <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail col-md-3"></a>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/forest.jpg" alt="Forest" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/jobs.jpg" alt="Jobs" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail"></a>
+        </div>
       </div>
       <div class="row">
-        <a href="/"><img src="./images/water.jpg" alt="Water" class="img-thumbnail col-md-3"></a>
-        <a href="/"><img src="./images/food.jpg" alt="Food" class="img-thumbnail col-md-3"></a>
-        <a href="/"><img src="./images/tourism.jpg" alt="Tourism" class="img-thumbnail col-md-3"></a>
-      </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/water.jpg" alt="Water" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/food.jpg" alt="Food" class="img-thumbnail"></a>
+        </div>
+           <div class="col-md-4">
+            <a href="/"><img src="./images/tourism.jpg" alt="Tourism" class="img-thumbnail"></a>
+        </div>
+        </div>
       <div class="row">
-        <a href="/"><img src="./images/eco-system.jpg" alt="Eco-system" class="img-thumbnail col-md-3"></a>
-        <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail col-md-3"></a>
-        <a href="doc-page.html"><img src="./images/random.png" alt="Randomize" class="img-thumbnail col-md-3"></a>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/eco-system.jpg" alt="Eco-system" class="img-thumbnail "></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/random.png" alt="Randomize" class="img-thumbnail"></a>
+        </div>
       </div>
     </div>
 
-    <br/>
+     <!--  Article Div
+    ================================================== -->
+    <div class="container article-results"></div>
+
+     <!--  Article Template
+    ================================================== -->
+    <script type="x-tmpl-mustache" id="article-tmpl">
+      <table class="table table-striped">
+        <thead class="thead-inverse">
+          <tr class="row">
+            <th>Naziv</th>
+            <th>Sažetak</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#articles}}
+          <tr class="row article" data-article-id={{ id }}>
+            <td><a><span class="title">{{ title }}</span></a></td>
+            <td>{{ summary }}</td>
+          </tr>
+          {{/articles}}
+          <tr>
+            <td colspan="2" align="center"><a href="./knowledgebase.html">Natrag na tražilicu</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </script>
+
+    <!-- <td> <a data-article-id="{{ id }}" data-toggle="modal" href="#modal-results"><h1>{{ title }}</h1></a></td> -->
+    
+     <!--  Modal Window
+    ================================================== -->
+    <div class="modal hide fade" role="dialog" id="modal-results">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Naziv članka</h4>
+          </div>
+
+          <div class="modal-body" id="modal-data"><!-- tu ide mustache --></div>
+          <form method="get" action="file.doc">
+            <button type="submit" class="btn btn-primary btn-block active">Preuzmi članak</button>
+            <!-- ili ovo <a href="path_to_file" download="proposed_file_name">Download</a> -->
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default active" data-dismiss="modal">Zatvori</button>
+          </div>
+        </div>    <!--modal-content -->
+      </div>      <!-- modal-dialog -->
+    </div>        <!-- modal -->
+
+    <script type="x-tmpl-mustache" id="modal-tmpl">
+      <h1>{{ title }}</h1>
+      <p>{{ summary }}</p>
+      <p>{{ size }} MB</p>
+      <p>{{ date }}</p>
+      <p>{{ author }}</p>
+      <p>{{ url }}</p>
+   </script>
 
     <!-- Footer
     ================================================== -->
@@ -149,45 +228,5 @@
     <script src="scripts/knowledgebase.js"></script>
     <!-- endbuild -->
 
-     <script type="text/javascript">
-      window.results = [
-        {
-          title: "Neki članak",
-          summary: "NEKI DUGI STRING",
-          size: 1544,
-          date: "2007-05-11",
-          author: "Mile Milić",
-          url: "http://knowledgebase.wwf.hr/articles/124125",
-        }, {
-          title: "Neki članak",
-          summary: "NEKI DUGI STRING",
-          size: 1544,
-          date: "2007-05-11",
-          author: "Mile Milić",
-          url: "http://knowledgebase.wwf.hr/articles/124125",
-        }, {
-          title: "Neki članak",
-          summary: "NEKI DUGI STRING",
-          size: 1544,
-          date: "2007-05-11",
-          author: "Mile Milić",
-          url: "http://knowledgebase.wwf.hr/articles/124125",
-        }, {
-          title: "Neki članak",
-          summary: "NEKI DUGI STRING",
-          size: 1544,
-          date: "2007-05-11",
-          author: "Mile Milić",
-          url: "http://knowledgebase.wwf.hr/articles/124125",
-        }, {
-          title: "Neki članak",
-          summary: "NEKI DUGI STRING",
-          size: 1544,
-          date: "2007-05-11",
-          author: "Mile Milić",
-          url: "http://knowledgebase.wwf.hr/articles/124125",
-        }
-      ]
-    </script>
    </body>
 </html>    
