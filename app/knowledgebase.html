@@ -63,7 +63,7 @@
               <a class="nav-link" href="/recommendations.html">Recommendations</a>
             </li>
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
+              <a class="nav-link active" href="/knowledgebase.html">Knowledge Base</a>
             </li>
           </ul>
         </div>
@@ -72,6 +72,7 @@
 
     <!-- Search Button
     ================================================== -->
+
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <form method="get" id="searchform" action="">
@@ -85,6 +86,7 @@
 
      <!--  Image Links
     ================================================== -->
+
     <div class="container img-links">
       <div class="row">
         <div class="col-md-4">
@@ -123,63 +125,64 @@
 
      <!--  Article Div
     ================================================== -->
+
     <div class="container article-results"></div>
 
      <!--  Article Template
     ================================================== -->
-    <script type="x-tmpl-mustache" id="article-tmpl">
-      <table class="table table-striped">
-        <thead class="thead-inverse">
-          <tr class="row">
-            <th>Naziv</th>
-            <th>Sažetak</th>
-          </tr>
-        </thead>
-        <tbody>
-          {{#articles}}
-          <tr class="row article" data-article-id={{ id }}>
-            <td><a><span class="title">{{ title }}</span></a></td>
-            <td>{{ summary }}</td>
-          </tr>
-          {{/articles}}
-          <tr>
-            <td colspan="2" align="center"><a href="./knowledgebase.html">Natrag na tražilicu</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </script>
 
-    <!-- <td> <a data-article-id="{{ id }}" data-toggle="modal" href="#modal-results"><h1>{{ title }}</h1></a></td> -->
-    
+   <script type="x-tmpl-mustache" id="articles-tmpl">
+    <ol class="list-group">
+      {{#articles}}
+      <li class="list-group-item" data-article-id={{ id }}> 
+         <a><span class="title"><h2><b> {{ title }} </b></h2></span></a>
+         <p> {{ summary }} </p>
+      </li>
+        {{/articles}}
+      <li class="nostyle">
+        <center><a class="btn btn-primary" href="./knowledgebase.html" role="button">Natrag na tražilicu</a></center>
+      </li>
+    </ol>
+    </br>
+   </script>
+
      <!--  Modal Window
     ================================================== -->
+
     <div class="modal hide fade" role="dialog" id="modal-results">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
+
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Naziv članka</h4>
+            <p class="modal-title"></p>
           </div>
 
-          <div class="modal-body" id="modal-data"><!-- tu ide mustache --></div>
-          <form method="get" action="file.doc">
-            <button type="submit" class="btn btn-primary btn-block active">Preuzmi članak</button>
-            <!-- ili ovo <a href="path_to_file" download="proposed_file_name">Download</a> -->
-          </form>
+          <div class="modal-body" id="modal-data"><!-- tu ide Mustache --></div>
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-default active" data-dismiss="modal">Zatvori</button>
+            <form method="get" action="file.doc">
+              <center><button type="submit" class=418 "btn btn-primary active">Preuzmi članak</button></center>
+            </form>
           </div>
+
         </div>    <!--modal-content -->
       </div>      <!-- modal-dialog -->
     </div>        <!-- modal -->
 
     <script type="x-tmpl-mustache" id="modal-tmpl">
-      <h1>{{ title }}</h1>
-      <p>{{ summary }}</p>
-      <p>{{ size }} MB</p>
-      <p>{{ date }}</p>
-      <p>{{ author }}</p>
-      <p>{{ url }}</p>
+      <b>Sadržaj:</b> {{ summary }}
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> <b>Autor članka:</b> {{ author }}</li>
+          <li class="list-group-item"> <b>Datum:</b> {{ date }} </li>
+          <li class="list-group-item"> <b>Veličina datoteke:</b> {{ size }} MB</li>
+        </ul>
+      </div>
+   </script>
+
+      <script type="x-tmpl-mustache" id="modal-title">
+      <h1><b>{{ title }}</b></h1>
    </script>
 
     <!-- Footer

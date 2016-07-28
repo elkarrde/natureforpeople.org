@@ -1400,10 +1400,46 @@ span:hover {
     cursor:         pointer;
 }
 
-td h1:hover {
+ol li h2:hover {
     cursor:         pointer;
 }
 
-table td a:hover {
+ol li a:hover {
     text-decoration: none;
+}
+
+ol li.list-group-item { 
+    list-style: decimal inside;
+    display: list-item;
+    font-family: 'Raleway', sans-serif;
+}
+
+ol li.nostyle {
+    list-style: none;
+}
+
+ol .list-group-item {
+    font-size: 28px;
+    text-align: justify;
+}
+
+ol li p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+@media (min-width: 1200px) {.modal-lg {width: 900px;}}
+
+ul li{
+    list-style:none;
+    text-align: justify;
+}
+
+.list-group .list-group-item {
+    border: none;
 }
