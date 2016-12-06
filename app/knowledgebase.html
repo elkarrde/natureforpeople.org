@@ -15,8 +15,6 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <link rel="stylesheet" href="/bower_components/bxslider/bx_styles/bx_styles.css">
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -25,13 +23,17 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
+    <script src="/bower_components/mustache/mustache.js"></script>
   </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-  <!-- Navigation
+
+
+  <body>
+     <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+     <![endif]-->
+
+    <!-- Navigation
     ================================================== -->
 
     <nav class="navbar navbar-light bg-custom navbar-fixed-top">
@@ -49,7 +51,7 @@
         <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
           <ul class="nav navbar-nav pull-xs-right">
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link active" href="/">About PA-BAT</a>
+              <a class="nav-link" href="/">About PA-BAT</a>
             </li>
             <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="/ecosystem-services.html">Ecosystem Services</a>
@@ -61,99 +63,130 @@
               <a class="nav-link" href="/recommendations.html">Recommendations</a>
             </li>
             <li class="nav-item nav-item-toggable">
-              <a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
+              <a class="nav-link active" href="/knowledgebase.html">Knowledge Base</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-    <!-- Hero Section
+
+    <!-- Search Button
     ================================================== -->
 
-    <header class="jumbotron text-xs-center center-vertically content" role="banner">
-      <div class="container">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <form method="get" id="searchform" action="">
+      <div class="input-group input-group-lg">
+         <input type="text" class="form-control" placeholder="Search database...">
+          <span type="button" class="input-group-addon search-btn">
+              <i class="fa fa-search"></i>
+          </span>
+      </div>
+    </form>
+
+     <!--  Image Links
+    ================================================== -->
+
+    <div class="container img-links">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-          <div class="bxslider chart-wrapper">
-            <div class="slide1">
-                <h1>Did you know that governments and businesses are sole economical benefactors in PAs.</h1>
-                <div id="chart1"></div> 
-                <div class="click-me-1">
-                  <h2>Who has 
-                    <span class='untogg'>existential</span>
-                    <span class='togg'>economical</span>
-                    benefits?
-                  </h2>
-                </div>
-            </div>
-            <div class="slide">
-                <h1>Croatia1</h1>
-                <span id="click-me"></span>
-                <div id="chart2"></div>
-            </div>
-            <div class="slide">
-            <h1>Croatia1</h1>
-                <span id="click-me"></span>
-                <div id="chart3"></div>
-            </div>
-            <div class="slide">
-                <h1>Croatia1</h1>
-                <span id="click-me"></span>
-                <div id="chart4"></div>
-            </div>
-          </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/forest.jpg" alt="Forest" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/jobs.jpg" alt="Jobs" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail"></a>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="/"><img src="./images/water.jpg" alt="Water" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/food.jpg" alt="Food" class="img-thumbnail"></a>
+        </div>
+           <div class="col-md-4">
+            <a href="/"><img src="./images/tourism.jpg" alt="Tourism" class="img-thumbnail"></a>
+        </div>
+        </div>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="/"><img src="./images/eco-system.jpg" alt="Eco-system" class="img-thumbnail "></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/hero.jpg" alt="Hero" class="img-thumbnail"></a>
+        </div>
+        <div class="col-md-4">
+          <a href="/"><img src="./images/random.png" alt="Randomize" class="img-thumbnail"></a>
+        </div>
       </div>
-    </header>
+    </div>
 
-    <hr>
-
-    <!-- Text Content
+     <!--  Article Div
     ================================================== -->
 
-    <section class="section-text">
-      <div class="container">
-        <h3 class="text-xs-center">Key Ecosystem Values</h3>
-        <div class="row p-y-3">
-          <div class="col-md-6">
-          <img src="/images/water.jpg" alt="" class="img-circle text-image">
-            <h4>Water</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+    <div class="container article-results"></div>
+
+     <!--  Article Template
+    ================================================== -->
+
+   <script type="x-tmpl-mustache" id="articles-tmpl">
+    <ol class="list-group">
+      {{#articles}}
+      <li class="list-group-item" data-article-id={{ id }}> 
+         <a><span class="title"><h2><b> {{ title }} </b></h2></span></a>
+         <p> {{ summary }} </p>
+      </li>
+        {{/articles}}
+      <li class="nostyle">
+        <center><a class="btn btn-primary" href="./knowledgebase.html" role="button">Natrag na tražilicu</a></center>
+      </li>
+    </ol>
+    </br>
+   </script>
+
+     <!--  Modal Window
+    ================================================== -->
+
+    <div class="modal hide fade" role="dialog" id="modal-results">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <p class="modal-title"></p>
           </div>
-           <div class="col-md-6">
-            <img src="/images/forest.jpg" alt="" class="img-circle text-image">
-            <h4>Forest</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
+
+          <div class="modal-body" id="modal-data"><!-- tu ide Mustache --></div>
+
+          <div class="modal-footer">
+            <form method="get" action="file.doc">
+              <center><button type="submit" class=418 "btn btn-primary active">Preuzmi članak</button></center>
+            </form>
           </div>
-          <div class="col-md-6">
-            <img src="/images/jobs.jpg" alt="" class="img-circle text-image">
-            <h4>Jobs</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="/images/food.jpg" alt="" class="img-circle text-image">
-            <h4>Food</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="/images/tourism.jpg" alt="" class="img-circle text-image">
-            <h4>Tourism</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
-          </div>
-          <div class="col-md-6">
-            <img src="/images/eco-system.jpg" alt="" class="img-circle text-image">
-            <h4>Eco-system services</h4>
-            <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem.</p>
-          </div>
-        </div>
+
+        </div>    <!--modal-content -->
+      </div>      <!-- modal-dialog -->
+    </div>        <!-- modal -->
+
+    <script type="x-tmpl-mustache" id="modal-tmpl">
+      <b>Sadržaj:</b> {{ summary }}
+      <div class="card">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> <b>Autor članka:</b> {{ author }}</li>
+          <li class="list-group-item"> <b>Datum:</b> {{ date }} </li>
+          <li class="list-group-item"> <b>Veličina datoteke:</b> {{ size }} MB</li>
+        </ul>
       </div>
-    </section>
+   </script>
+
+      <script type="x-tmpl-mustache" id="modal-title">
+      <h1><b>{{ title }}</b></h1>
+   </script>
 
     <!-- Footer
     ================================================== -->
-
     <footer class="section-footer bg-inverse" role="contentinfo">
       <div class="container">
         <div class="row">
@@ -175,16 +208,6 @@
         </div>
       </div>
     </footer>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -205,7 +228,8 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/knowledgebase.js"></script>
     <!-- endbuild -->
-    <script src="scripts/croatia.js"></script>
-  </body>
-</html>
+
+   </body>
+</html>    

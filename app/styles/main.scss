@@ -229,8 +229,9 @@ $color-secondary-2-4: #BA0035;
 ========================================================================== */
 body {
     font-family: 'Raleway', sans-serif;
-
+    margin-bottom: 60px;
 }
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -272,6 +273,8 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
+    position: absolute;
+
 }
 
 .container-narrow > hr {
@@ -1366,4 +1369,77 @@ ol.simple-list > li:before {
             }
         }
     }
+}
+
+
+// =Additional 
+//  Author: Antonio
+// --------------------------------------------------
+
+//Image links
+.img-thumbnail {
+    position:       static;
+    height:         270px;
+    width:          290px;
+    margin:         5px;
+    padding:        10px;
+    border-radius:  25px;
+}
+
+.img-thumbnail:hover {
+    background-color: #027073;
+}
+
+//Search button
+#searchform {
+    font-size:      100px;
+    padding:        100px 28% 20px 28%;
+}
+
+span:hover {
+    cursor:         pointer;
+}
+
+ol li h2:hover {
+    cursor:         pointer;
+}
+
+ol li a:hover {
+    text-decoration: none;
+}
+
+ol li.list-group-item { 
+    list-style: decimal inside;
+    display: list-item;
+    font-family: 'Raleway', sans-serif;
+}
+
+ol li.nostyle {
+    list-style: none;
+}
+
+ol .list-group-item {
+    font-size: 28px;
+    text-align: justify;
+}
+
+ol li p {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+@media (min-width: 1200px) {.modal-lg {width: 900px;}}
+
+ul li{
+    list-style:none;
+    text-align: justify;
+}
+
+.list-group .list-group-item {
+    border: none;
 }
