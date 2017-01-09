@@ -128,5 +128,5 @@ $(document).ready(function(){
         });
         $(this).addClass('toggled');
     }
-  })
+  });
 });

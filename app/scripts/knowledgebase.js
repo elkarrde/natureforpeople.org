@@ -8,8 +8,8 @@ function fetchLibraryList(event) {
 		$output.empty().append(html);
 		$(document).trigger("resultsRendered"); //Nikica
 		$(".img-links").hide();
-  	}, "json")
-};
+  	}, "json");
+}
 $(document).ready(function() {
 	$("#searchform").on("submit", fetchLibraryList);
 	$(".search-btn").on("click", fetchLibraryList);
@@ -18,7 +18,7 @@ $(document).ready(function() {
 $(document).on("resultsRendered", function(event) { //Nikica
 	$(".article-results a").click(function(event) {
 		var articleId = $(this).closest("li").data("article-id");
-		console.log("zapeceni id", articleId)
+		console.log("zapeceni id", articleId);
 		$("#modal-results").modal(); //zove modal na link naslova
 		var found_article = window.results.find(function(article) {
 			return article.id == articleId; 
@@ -32,7 +32,7 @@ $(document).on("resultsRendered", function(event) { //Nikica
 
     var $outputTitle = $(".modal-title");
     var modalTitle = $("#modal-title").html();
-    var html = Mustache.render(modalTitle, found_article)
+    var html = Mustache.render(modalTitle, found_article);
     $outputTitle.empty().append(html);
 	});
 });
@@ -69,4 +69,4 @@ window.results = [{
   date: "2007-05-11",
   author: "Mile Mirković",
   url: "http://knowledgebase.wwf.hr/articles/124125"
-}]
+}];
