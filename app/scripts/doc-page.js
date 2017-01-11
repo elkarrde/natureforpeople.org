@@ -15,5 +15,5 @@ if ('files' in x) {
             }
         }
     }
-} 
+}
 document.getElementById ("demo").innerHTML = txt;

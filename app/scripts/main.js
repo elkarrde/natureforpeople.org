@@ -8,7 +8,7 @@ $(function() {
 
         var projection = d3.geo.mercator()
         .center([18.23, 43.3])
-        .scale([(Math.min(height,width)*0.75)*6])      
+        .scale([(Math.min(height,width)*0.75)*6])
         .translate([width/2,height/2]);
 
         var path = d3.geo.path().projection(projection);
@@ -33,7 +33,7 @@ $(function() {
                 .attr("d", path);
 
             // Separate paths by states
-            
+
             svg.selectAll(".subunit")
             .data(topojson.feature(dinarides, dinarides.objects.subunits).features)
             .enter().append("path")

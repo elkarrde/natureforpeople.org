@@ -21,7 +21,7 @@ $(document).on("resultsRendered", function(event) { //Nikica
 		console.log("zapeceni id", articleId);
 		$("#modal-results").modal(); //zove modal na link naslova
 		var found_article = window.results.find(function(article) {
-			return article.id == articleId; 
+			return article.id == articleId;
 		});
 
 		console.log(found_article);
