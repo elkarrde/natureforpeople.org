@@ -131,6 +131,24 @@ $(function() {
         navMobileCollapse();
         navSearch();
         mapInit();
+
+        drawDonutChart(
+          '#donut39',
+          $('#donut39').data('donut'),
+          200,
+          200,
+          ".4em"
+        );
+
+        drawDonutChart(
+          '#pie25',
+          $('#pie25').data('donut'),
+          200,
+          200,
+          ".4em"
+        );
+
+        drawBarChart('#chart', [7, 14])
     }
 
     init();
