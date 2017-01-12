@@ -1,0 +1,93 @@
+@mixin long-shadow($type, $color, $length, $fadeout: true, $skew: false, $direction: right){
+	$shadow: '';
+	@if $skew == false or $type == text{
+		@if $direction == right {
+			@for $i from 0 to $length - 1 {
+				$shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $color + ',';
+			}
+		}
+		@if $direction == left {
+			@for $i from 0 to $length - 1 {
+				$shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $color + ',';
+			}
+		}
+	}
+
+	@if $fadeout == true {
+		@for $i from 1 to $length - 1 {
+			@if $type == text or $skew == false {
+				@if $direction == right {
+					$shadow: $shadow + $i + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+				}
+				@if $direction == left {
+					$shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' +       rgba($color, 1 - $i / $length) + ',';
+				}
+			}
+			@if ($type == box) and $skew == true{
+				@if $direction == right {
+					$shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+				}
+				@if $direction == left {
+					$shadow: $shadow + $i * -1 + 'px ' + $i + 'px 0 ' + $i * .2 + 'px ' + rgba($color, 1 - $i / $length) + ',';
+				}
+			}
+		}
+		$shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba($color, 0);
+	}
+	@if $fadeout == false {
+		@if $skew == true and ( $type == box ){
+			@for $i from 0 to $length - 1 {
+				$shadow: $shadow + $i + 'px ' + $i + 'px 0 ' + $i * .1 + 'px ' + $color + ',';
+			}
+		}
+		$shadow: $shadow + $length + 'px ' + $length + 'px 0 ' + rgba(0,0,0,0);
+	}
+	$shadow: unquote($shadow);
+	@if $type == 'box' {box-shadow: $shadow;}
+	@if $type == 'text' {text-shadow: $shadow;}
+}
+
+
+$color-primary-0: #2cc185;  // Main Primary color */
+$color-primary-1: #7be1b8;
+$color-primary-2: #4ed09b;
+$color-primary-3: #09b570;
+$color-primary-4: #008d54;
+
+$color-secondary-1-0: #ffac3a;  // Main Secondary color (1) */
+$color-secondary-1-1: #ffce8b;
+$color-secondary-1-2: #ffbc5f;
+$color-secondary-1-3: #ff990d;
+$color-secondary-1-4: #cf7800;
+
+$color-secondary-2-0: #ec366a;  // Main Secondary color (2) */
+$color-secondary-2-1: #f686a6;
+$color-secondary-2-2: #f05a85;
+$color-secondary-2-3: #e80c4a;
+$color-secondary-2-4: #ba0035;
+
+.color-secondary-1-0 {
+	color: $color-secondary-1-0;
+}
+
+// UTILITY ----------------------------
+
+.border-1 {
+	border: 1px solid black;
+}
+
+.border-top-1 {
+	border-top: 1px solid black;
+}
+
+.border-bottom-1 {
+	border-bottom: 1px solid black;
+}
+
+.border-left-1 {
+	border-left: 1px solid black;
+}
+
+.border-right-1 {
+	border-right: 1px solid black;
+}

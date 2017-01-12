@@ -18,7 +18,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -50,7 +50,7 @@
                 <a class="nav-link active" href="/">Ecosystem Services</a>
               </li>
               <li class="nav-item nav-item-toggable">
-                <a class="nav-link" href="/pp.html">Partnerships</a>
+                <a class="nav-link" href="/partnerships.html">Partnerships</a>
               </li>
               <li class="nav-item nav-item-toggable">
                 <a class="nav-link" href="/recommendations.html">Recommendations</a>
@@ -67,7 +67,7 @@
         <!-- Hero Section
     ================================================== -->
 
-    <header class="jumbotron ecosystem-services bg-inverse text-xs-center center-vertically" role="banner">
+    <header class="ecosystem-services jumbotron bg-inverse text-xs-center center-vertically" role="banner">
       <div class="container">
         <h1 class="display-3">What Ecosystem Services exist and why are they important?</h1>
         <h2 class="mb-3">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit massa ut</h2>
@@ -105,7 +105,7 @@
             <div class="col">
               <p class="quote">Provisioning Services are ecosystem services that describe the material or energy outputs from ecosystems. They include food, water and other resources.</p>
             </div>
-          </div> 
+          </div>
           <div class="row py-1 provisioning-services">
             <div class="col-md-5">
               <span class="svg-mask services-food"></span>
@@ -132,13 +132,13 @@
         </div>
 
         <!-- Second tab content -->
-        
+
         <div class="tab-pane" id="regulating" role="tabpanel">
           <div class="row regulating-services">
             <div class="col">
               <p class="quote">Regulating Services are the services that ecosystems provide by acting as regulators eg. regulating the quality of air and soil or by providing flood and disease control.</p>
             </div>
-          </div> 
+          </div>
           <div class="row py-1 regulating-services">
             <div class="col-md-5">
               <span class="svg-mask services-climate"></span>
@@ -188,7 +188,7 @@
             <div class="col-xs-12">
             <p class="quote">Supporting services underpin almost all other services. ecosystems provide living spaces for plants or animals: they also maintain a diversity of plants and animals.</p>
             </div>
-          </div> 
+          </div>
           <div class="row py-1 supporting-services">
             <div class="col-md-5">
               <span class="svg-mask services-habitat"></span>
@@ -260,7 +260,7 @@
         </div>
       </div>
     </footer>
-    
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -274,6 +274,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/mustache/mustache.js"></script>
     <script src="/bower_components/underscore/underscore.js"></script>
     <script src="/bower_components/tether/dist/js/tether.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -281,13 +282,12 @@
     <script src="/bower_components/c3/c3.js"></script>
     <script src="/bower_components/topojson/topojson.js"></script>
     <script src="/bower_components/lodash/lodash.js"></script>
-    <script src="/bower_components/bxslider/jquery.bxSlider.min.js"></script>
     <script src="/bower_components/textures/textures.min.js"></script>
     <script src="/bower_components/Chart.js/dist/Chart.js"></script>
     <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
