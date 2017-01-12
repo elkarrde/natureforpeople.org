@@ -30,39 +30,37 @@
 		<![endif]-->
 
 		<!-- Navigation ================================================== -->
-		<div class="container-fluid" style="display: none;">
-			<nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-custom">
-				<div class="container">
-					<a class="navbar-brand" href="/">
-						<span class="icon-logo"></span>
-						<span class="sr-only">WWF Adria</span>
-					</a>
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						&#9776;
-					</button>
 
-					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item nav-item-toggable">
-								<a class="nav-link" href="/index.html">About PA-BAT</a>
-							</li>
-							<li class="nav-item nav-item-toggable">
-								<a class="nav-link" href="/ecosystem-services.html">Ecosystem Services</a>
-							</li>
-							<li class="nav-item nav-item-toggable">
-								<a class="nav-link" href="/pp.html">Partnerships</a>
-							</li>
-							<li class="nav-item nav-item-toggable">
-								<a class="nav-link" href="/recommendations.html">Recommendations</a>
-							</li>
-							<li class="nav-item nav-item-toggable">
-								<a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
+		<nav class="navbar navbar-toggleable-sm navbar-light bg-custom">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+			</button>
+
+			<a class="navbar-brand" href="#">
+				<span class="icon-logo"></span>
+			</a>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item nav-item-toggable">
+						<a class="nav-link" href="/index.html">About PA-BAT</a>
+					</li>
+					<li class="nav-item nav-item-toggable">
+						<a class="nav-link" href="/ecosystem-services.html">Ecosystem Services</a>
+					</li>
+					<li class="nav-item nav-item-toggable">
+						<a class="nav-link" href="/partnerships.html">Partnerships</a>
+					</li>
+					<li class="nav-item nav-item-toggable">
+						<a class="nav-link" href="/">Recommendations</a>
+					</li>
+					<li class="nav-item nav-item-toggable">
+						<a class="nav-link" href="/knowledgebase.html">Knowledge Base</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 		<!-- Hero Section ================================================== -->
 
@@ -133,19 +131,29 @@
 				</div>
 
 				<!-- S screen container == 720px -->
-
-				<a class="btn btn-secondary" data-toggle="collapse" href="#moreOptionsCollaper"
-					aria-expanded="false" aria-controls="moreOptionsCollaper">Link with href</a>
-
-				<div class="collapse" id="moreOptionsCollaper">
-					<div class="card">
-						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
+				<div class="hidden-md-up">
+					<div class="d-flex flex-row">
+						<img class="img-fluid" src="https://placeholdit.imgix.net/~text?w=540&h=200&txt=400%C3%97150"/>
 					</div>
+
+					<a class="w-100 btn btn-secondary" data-toggle="collapse" href="#moreOptionsCollaper"
+						aria-expanded="false" aria-controls="moreOptionsCollaper">More options</a>
+
+					<!-- <button class="w-100 btn btn-secondary" type="button" data-toggle="collapse" data-target="#moreOptionsCollaper" -->
+					<!-- 	aria-expanded="false" aria-controls="moreOptionsCollaper">More options</button> -->
+
+					<div class="collapse hidden-md-up" id="moreOptionsCollaper">
+						<div class="card">
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">Recommendations</a></li>
+								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">WWF examples</a></li>
+								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">PA-BAT download</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
+
 
 				<!-- Filters, large screens -->
 
@@ -184,7 +192,7 @@
 			</div>
 		</header>
 
-		<hr>
+		<hr class="hidden-sm-down"/>
 
 		<!-- Text Content ================================================== -->
 
