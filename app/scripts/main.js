@@ -149,7 +149,7 @@ $(function() {
         );
 
         drawBarChart('#chart', [7, 14]);
-        animateValue("counter", 0, parseInt($('#counter').html(), 4000);
+        animateValue("counter", 0, parseInt($('#counter').html()), 4000);
     }
 
     init();
