@@ -340,6 +340,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @include media-breakpoint-down(sm) {
+	.navbar-brand {
+		height: 2rem;
+	}
+
 	.navbar-nav {
 		float: none !important;
 		width: 100%;
@@ -831,8 +835,12 @@ $custom-min-height: 37.5em; // 600
 
 .country-header {
 	@include media-breakpoint-up(md) {
-		margin-top: 10rem;
+		margin-top: 8rem;
 		margin-bottom: 5rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 5rem;
 	}
 
 	.filters {
