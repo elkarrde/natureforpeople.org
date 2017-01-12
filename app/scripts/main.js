@@ -148,7 +148,8 @@ $(function() {
           ".4em"
         );
 
-        drawBarChart('#chart', [7, 14])
+        drawBarChart('#chart', [7, 14]);
+        animateValue("counter", 0, parseInt($('#counter').html(), 4000);
     }
 
     init();
