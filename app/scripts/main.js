@@ -80,9 +80,9 @@ $(function() {
             .translate([width/2,height/2]);
 
             d3.select(".map-wrapper").attr("width",width).attr("height",height);
-            d3.select("svg").attr("width",width).attr("height",height);
+            d3.select(".map-wrapper svg").attr("width",width).attr("height",height);
 
-            d3.selectAll("path").attr('d', path);
+            d3.selectAll(".map-wrapper path").attr('d', path);
         }
     }
     function navMobileCollapse() {
@@ -127,11 +127,7 @@ $(function() {
         });
     }
 
-    function init() {
-        navMobileCollapse();
-        navSearch();
-        mapInit();
-
+    function drawCharts() {
         drawDonutChart(
           '#donut39',
           $('#donut39').data('donut'),
@@ -148,7 +144,16 @@ $(function() {
           ".4em"
         );
 
-        drawBarChart('#chart', [7, 14])
+        drawBarChart('#chart', [7, 14]);
+        animateValue("counter", 0, parseInt($('#counter').html()), 4000);
+
+    }
+
+    function init() {
+        navMobileCollapse();
+        navSearch();
+        mapInit();
+        drawCharts();
     }
 
     init();
