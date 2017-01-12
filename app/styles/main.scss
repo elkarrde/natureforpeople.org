@@ -1197,17 +1197,6 @@ ol.simple-list > li:before {
 		line-height: 1.538;
 	}
 
-
-	.media-left {
-		padding-right: 1.75rem;
-
-		@include media-breakpoint-down(sm) {
-			display: block;
-			padding: 0;
-			margin: 0 0 1rem;
-		}
-	}
-
 	.nav-inline {
 		font-size: .9375rem;
 		font-weight: 600;
