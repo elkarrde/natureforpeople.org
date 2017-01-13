@@ -33,7 +33,7 @@
 
 		<nav class="navbar navbar-toggleable-sm navbar-light bg-custom">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+																							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon">
 			</button>
 
@@ -137,7 +137,7 @@
 					</div>
 
 					<a class="w-100 btn btn-secondary" data-toggle="collapse" href="#moreOptionsCollaper"
-						aria-expanded="false" aria-controls="moreOptionsCollaper">More options</a>
+															   aria-expanded="false" aria-controls="moreOptionsCollaper">More options</a>
 
 					<!-- <button class="w-100 btn btn-secondary" type="button" data-toggle="collapse" data-target="#moreOptionsCollaper" -->
 					<!-- 	aria-expanded="false" aria-controls="moreOptionsCollaper">More options</button> -->
@@ -196,67 +196,81 @@
 
 		<!-- Text Content ================================================== -->
 
-		<section class="section-text">
+		<section class="section-text country">
 			<div class="container">
 				<div class="row py-0 text-center text-md-left">
 					<div class="col-md-6">
 						<h4>Broj posjetitelja</h4>
-            <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
-              <div id="counter" class="counter-text">2590000</div>
-              <span class="mx-lg-3 my-lg-3 mx-xl-3 my-xl-3" style="max-width: 15rem;">posjetitelja u zaštićenim područjima u 2012. godini</span>
-            </div>
+						<div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
+							<div class="counter-text w-100 px-0" id="counter">2590320</div>
+							<div class="col-lg-5 text-center text-md-right">
+								posjetitelja u zaštićenim područjima u 2012. godini
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<h4>Turizam <span>(i)</span></h4>
-						<p>Iako sva zaštićena područja ostvaruju prihode od turizma, u dvije trećine zaštićenih područja turizam je <b>glavni izvor prihoda</b>. Potencijalna je dobrobit lokalnog razvoja u turizmu <b>povezanom sa zaštićenom prirodom</b>.</p>
-						<p><a href="#">Prepoznaju li druge strategije turizam kao pokretač?</a>
+					<div class="col-md-6 d-flex no-gutters justify-content-start">
+						<div class="col-md-12">
+							<h4>Turizam <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
+							<p class="mt-4">Iako sva zaštićena područja ostvaruju prihode od turizma, u dvije trećine zaštićenih područja turizam je <b>glavni izvor prihoda</b>. Potencijalna je dobrobit lokalnog razvoja u turizmu <b>povezanom sa zaštićenom prirodom</b>.</p>
+							<p><a href="#">Prepoznaju li druge strategije turizam kao pokretač?</a>
+						</div>
 					</div>
 				</div>
 				<hr/>
-				<div class="row py-0 text-center text-md-left">
-					<div class="col-md-6">
-						<h4>Vode <span>(i)</span></h4>
-						<p>60 milijuna eura godišnji je prihod dviju velikih hidroelektrana koje ovise o vodi s Velebita. <b>0 eura je njihovo godišnje ulaganje</b> u zaštitu šumskog ekosustava.</p>
-						<p><a href="#">Kojim strategijama vratiti dio prihoda lokalnoj zajednici?</a>
+				<div class="row py-0 text-center text-md-left my-5">
+					<div class="col-md-6 d-flex no-gutters justify-content-start">
+						<div class="col-lg-12">
+							<h4>Vode <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
+							<p class="mt-4">60 milijuna eura godišnji je prihod dviju velikih hidroelektrana koje ovise o vodi s Velebita. <b>0 eura je njihovo godišnje ulaganje</b> u zaštitu šumskog ekosustava.</p>
+							<p><a href="#">Kojim strategijama vratiti dio prihoda lokalnoj zajednici?</a>
+						</div>
 					</div>
 					<div class="col-md-6">
 						<h4>Prihodi od iskorištavanja voda</h4>
-            <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
-              <div id="chart" class="chart-container"></div>
-              <span class="mx-lg-3 my-lg-3 mx-xl-3 my-xl-3">U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode</span>
-            </div>
+						<div class="d-flex justify-content-between no-gutters align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-3">
+							<div class="chart-container" id="chart"></div>
+							<div class="col-lg-6 text-justify">
+								U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode
+							</div>
+						</div>
 					</div>
 				</div>
 				<hr/>
-				<div class="row p-y-0 text-center text-md-left">
-					<div class="col-md-6">
-						<h4>Radna mjesta u zaštiti prirode</h4>
-            <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
-              <div id="donut39" data-donut="39" class="donut"></div>
-              <span class="mx-lg-3 my-lg-3 mx-xl-3 my-xl-3">U samo 39% zaštićenih područja radna mjesta povezana sa zaštitom prirode čine glavni izvor prihoda</span>
-            </div>
+				<div class="row py-0 text-center text-md-left my-5">
+					<div class="col-md-6 px-0">
+						<h4 class="pl-3">Radna mjesta u zaštiti prirode</h4>
+						<div class="d-flex no-gutters justify-content-start align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-5">
+							<div class="donut col-lg-5 mx-md-0 px-0" id="donut39" data-donut="39"></div>
+							<div class="col-lg-5 text-justify">
+								U samo 39% zaštićenih područja radna mjesta povezana sa zaštitom prirode čine glavni izvor prihoda
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<h4>Radna mjesta<span>(i)</span></h4>
-						<p>U nacionalnim parkovima i parkovima prirode zaposleno je tek 1307 osoba, od toga <b>samo 195 u sektoru zaštite prirode</b>.</p>
-						<p><a href="#">Kojim strategijama vratiti dio prihoda lokalnoj zajednici?</a>
+					<div class="col-md-6 d-flex no-gutters justify-content-start">
+						<div class="col-md-12">
+							<h4>Radna mjesta <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
+							<p class="mt-4">U nacionalnim parkovima i parkovima prirode zaposleno je tek 1307 osoba, od toga <b>samo 195 u sektoru zaštite prirode</b>, a često imaju ključnu ulogu u zadržavanju mladih obitelji.</p>
+							<p><a href="#">Razumije li Vlada važnost poslova vezanih uz zaštitu prirode i podršku koju pružaju lokalnoj zajednici?</a>
+						</div>
 					</div>
 				</div>
 				<hr/>
-				<div class="row p-y-0 text-center text-md-left">
-					<div class="col-md-6">
-						<div>
-							<h4>Šumarstvo <span>(i)</span></h4>
-							<p>U 2011. godini šumarski sektor napravio je doprinos od <b>781.7 milijuna USD ili 1.5% BDP-a</b>. Lokalno stanovništvo ostvarilo je dobit od šumarstva <b>u samo jednom</b> od 15 zaštićenih područja.</p>
+				<div class="row p-y-0 text-center text-md-left my-5">
+					<div class="col-md-6 d-flex no-gutters justify-content-start">
+						<div class="col-lg-12">
+							<h4>Šumarstvo <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
+							<p class="mt-4">U 2011. godini šumarski sektor napravio je doprinos od <b>781.7 milijuna USD ili 1.5% BDP-a</b>. Lokalno stanovništvo ostvarilo je dobit od šumarstva <b>u samo jednom</b> od 15 zaštićenih područja.</p>
 							<p><a href="#">Jesu li lokalne zajednice dovoljno informirane i educirane o održivim poslovnim praksama?</a>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<h4>Raspodjela prihoda</h4>
-            <div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
-              <div id="pie25" data-donut="25" class="donut"></div>
-              <span class="mx-lg-3 my-lg-3 mx-xl-3 my-xl-3">Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%)</span>
-            </div>
+						<div class="d-flex no-gutters justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-5">
+							<div class="donut mx-0 px-0" id="pie25" data-donut="25"></div>
+							<div class="col-lg-6 mt-sm-3 text-justify">
+								Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%)
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
