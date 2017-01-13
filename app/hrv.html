@@ -68,66 +68,38 @@
 			<div class="container px-0">
 
 				<!-- XL screen container == 1140px -->
+				<div class="d-flex flex-row no-gutters hidden-md-down">
 
-				<div class="d-flex flex-row no-gutters hidden-lg-down">
-					<div class="d-flex flex-column">
+					<div class="d-flex flex-column col-9 hidden-lg-down">
+						<img src="https://placeholdit.imgix.net/~text?w=960&h=450&txt=960%C3%97450"/>
+					</div>
+
+					<div class="d-flex flex-column col-9 hidden-sm-down hidden-xl-up">
 						<img src="https://placeholdit.imgix.net/~text?w=855&h=450&txt=855%C3%97450"/>
 					</div>
-					<div class="d-flex flex-column">
-						<div class="flex-row">
-							<img src="https://placeholdit.imgix.net/~text?w=285&h=150&txt=285%C3%97150"/>
-						</div>
-						<div class="flex-row">
-							<img src="https://placeholdit.imgix.net/~text?w=285&h=150&txt=320%C3%97150"/>
-						</div>
-						<div class="flex-row">
-							<img src="https://placeholdit.imgix.net/~text?w=285&h=150&txt=320%C3%97150"/>
-						</div>
+
+					<div class="d-flex flex-column col-3 align-items-stretch wwf-links">
+						<a style="flex-grow:1;" class="d-flex justify-content-around align-items-center border-left-0" href="#">Recommendations</a>
+						<a style="flex-grow:1;" class="d-flex justify-content-around align-items-center border-left-0 border-top-0 border-bottom-0" href="#">WWF Recommendations</a>
+						<a style="flex-grow:1;" class="d-flex justify-content-around align-items-center border-left-0" href="#">PA-BAT Download</a>
 					</div>
 				</div>
 
-				<!-- L screens container == 960px -->
+				<!-- L and M screens container == 960px && 720px -->
+				<div class="d-flex flex-column no-gutters hidden-lg-up">
 
-				<div class="d-flex flex-column no-gutters hidden-md-down hidden-xl-up">
-					<div class="d-flex flex-row">
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=320&h=150&txt=320%C3%97150"/>
-						</div>
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=320&h=150&txt=320%C3%97150"/>
-						</div>
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=320&h=150&txt=320%C3%97150"/>
-						</div>
-					</div>
-
-					<div class="d-flex flex-row">
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=960&h=450&txt=960%C3%97450"/>
-						</div>
-					</div>
-				</div>
-
-				<!-- M screen container == 720px -->
-
-				<div class="d-flex flex-column no-gutters hidden-sm-down hidden-lg-up">
-					<div class="d-flex flex-row">
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=240&h=150&txt=240%C3%97150"/>
-						</div>
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=240&h=150&txt=240%C3%97150"/>
-						</div>
-						<div class="d-flex flex-column">
-							<img src="https://placeholdit.imgix.net/~text?w=240&h=150&txt=240%C3%97150"/>
-						</div>
-					</div>
-
-					<div class="d-flex flex-row">
+					<div class="d-flex flex-row hidden-sm-down hidden-lg-up">
 						<div class="d-flex flex-column">
 							<img src="https://placeholdit.imgix.net/~text?w=720&h=450&txt=720%C3%97450"/>
 						</div>
 					</div>
+
+					<div class="d-flex flex-row hidden-sm-down no-gutters wwf-links" style="height: 6rem;">
+						<a style="flex-grow: 1;" class="d-flex justify-content-around align-items-center" href="#">Recommendations</a>
+						<a style="flex-grow: 1;" class="d-flex justify-content-around align-items-center border-left-0 border-right-0" href="#">WWF Recommendations</a>
+						<a style="flex-grow: 1;" class="d-flex justify-content-around align-items-center" href="#">PA-BAT Download</a>
+					</div>
+
 				</div>
 
 				<!-- S screen container == 720px -->
@@ -136,20 +108,18 @@
 						<img class="img-fluid" src="https://placeholdit.imgix.net/~text?w=540&h=200&txt=400%C3%97150"/>
 					</div>
 
-					<a class="w-100 btn btn-secondary" data-toggle="collapse" href="#moreOptionsCollaper"
-															   aria-expanded="false" aria-controls="moreOptionsCollaper">More options</a>
+					<a class="w-100 btn btn-secondary rounded-0" data-toggle="collapse" href="#moreOptionsCollaper"
+																		 aria-expanded="false" aria-controls="moreOptionsCollaper">More options</a>
 
 					<!-- <button class="w-100 btn btn-secondary" type="button" data-toggle="collapse" data-target="#moreOptionsCollaper" -->
 					<!-- 	aria-expanded="false" aria-controls="moreOptionsCollaper">More options</button> -->
 
 					<div class="collapse hidden-md-up" id="moreOptionsCollaper">
-						<div class="card">
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">Recommendations</a></li>
-								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">WWF examples</a></li>
-								<li class="list-group-item"><a href="#" class="w-100 btn btn-secondary">PA-BAT download</a></li>
-							</ul>
-						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item px-0 py-0"><a href="#" class="rounded-0 w-100 btn btn-secondary">Recommendations</a></li>
+							<li class="list-group-item px-0 py-0"><a href="#" class="rounded-0 w-100 btn btn-secondary">WWF examples</a></li>
+							<li class="list-group-item px-0 py-0"><a href="#" class="rounded-0 w-100 btn btn-secondary">PA-BAT download</a></li>
+						</ul>
 					</div>
 
 				</div>
@@ -157,19 +127,11 @@
 
 				<!-- Filters, large screens -->
 
-				<div class="filters d-flex flex-row justify-content-around hidden-sm-down" style="height: 3rem;">
-					<div class="py-0 px-0 col btn btn-secondary">
-						<a class="d-inline-block w-100 h-100" href="#">Turizam</a>
-					</div>
-					<div class="py-0 px-0 col btn btn-secondary">
-						<a class="d-inline-block w-100 h-100" href="#">Voda</a>
-					</div>
-					<div class="py-0 px-0 col btn btn-secondary">
-						<a class="d-inline-block w-100 h-100" href="#">Radna mjesta</a>
-					</div>
-					<div class="py-0 px-0 col btn btn-secondary">
-						<a class="d-inline-block w-100 h-100" href="#">Šumarstvo</a>
-					</div>
+				<div class="filters row flex-row hidden-sm-down no-gutters" style="height: 3rem;">
+					<a class="d-flex flex-col col-3 justify-content-around align-items-center" href="#">Turizam</a>
+					<a class="d-flex flex-col col-3 justify-content-around align-items-center border-left-0" href="#">Voda</a>
+					<a class="d-flex flex-col col-3 justify-content-around align-items-center border-left-0" href="#">Radna mjesta</a>
+					<a class="d-flex flex-col col-3 justify-content-around align-items-center border-left-0" href="#">Šumarstvo</a>
 				</div>
 
 				<!-- Filters, small screens -->
@@ -199,12 +161,12 @@
 		<section class="section-text country">
 			<div class="container">
 				<div class="row py-0 text-center text-md-left">
-					<div class="col-md-6">
+					<div class="col-md-6 d-flex flex-column">
 						<h4>Broj posjetitelja</h4>
-						<div class="d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap">
-							<div class="counter-text w-100 px-0" id="counter">2590320</div>
-							<div class="col-lg-5 text-center text-md-right">
-								posjetitelja u zaštićenim područjima u 2012. godini
+						<div style="flex-grow: 1;" class="justify-content-center align-items-center d-flex flex-wrap flex-lg-nowrap flex-xl-nowrap">
+							<div class="">
+								<div class="counter-text w-100 px-0 text-center" id="counter">2590320</div>
+								<div class="text-center text-md-center font-italic">posjetitelja u zaštićenim područjima u 2012. godini</div>
 							</div>
 						</div>
 					</div>
@@ -221,7 +183,7 @@
 					<div class="col-md-6 d-flex no-gutters justify-content-start">
 						<div class="col-lg-12">
 							<h4>Vode <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
-							<p class="mt-4">60 milijuna eura godišnji je prihod dviju velikih hidroelektrana koje ovise o vodi s Velebita. <b>0 eura je njihovo godišnje ulaganje</b> u zaštitu šumskog ekosustava.</p>
+							<p class="mt-4">60 milijuna eura godišnji je prihod dviju velikih hidroelektrana koje ovise o vodi s Velebita. <b>0 eura je njihovo godišnje ulaganje</b> u zaštitu šumskog ekosustava, iako koriste percepciju čiste i kvalitetne vode iz ZP-a kao dio svoje marketinške strategije.</p>
 							<p><a href="#">Kojim strategijama vratiti dio prihoda lokalnoj zajednici?</a>
 						</div>
 					</div>
@@ -229,7 +191,7 @@
 						<h4>Prihodi od iskorištavanja voda</h4>
 						<div class="d-flex justify-content-between no-gutters align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-3">
 							<div class="chart-container" id="chart"></div>
-							<div class="col-lg-6 text-justify">
+							<div class="font-italic col-lg-6">
 								U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode
 							</div>
 						</div>
@@ -241,7 +203,7 @@
 						<h4 class="pl-3">Radna mjesta u zaštiti prirode</h4>
 						<div class="d-flex no-gutters justify-content-start align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-5">
 							<div class="donut col-lg-5 mx-md-0 px-0" id="donut39" data-donut="39"></div>
-							<div class="col-lg-5 text-justify">
+							<div class="col-lg-5">
 								U samo 39% zaštićenih područja radna mjesta povezana sa zaštitom prirode čine glavni izvor prihoda
 							</div>
 						</div>
@@ -249,7 +211,7 @@
 					<div class="col-md-6 d-flex no-gutters justify-content-start">
 						<div class="col-md-12">
 							<h4>Radna mjesta <i class="material-icons d-inline-block float-right align-sub">info_outline</i></h4>
-							<p class="mt-4">U nacionalnim parkovima i parkovima prirode zaposleno je tek 1307 osoba, od toga <b>samo 195 u sektoru zaštite prirode</b>, a često imaju ključnu ulogu u zadržavanju mladih obitelji.</p>
+							<p class="font-italic mt-4">U nacionalnim parkovima i parkovima prirode zaposleno je tek 1307 osoba, od toga <b>samo 195 u sektoru zaštite prirode</b>, a često imaju ključnu ulogu u zadržavanju mladih obitelji.</p>
 							<p><a href="#">Razumije li Vlada važnost poslova vezanih uz zaštitu prirode i podršku koju pružaju lokalnoj zajednici?</a>
 						</div>
 					</div>
@@ -267,9 +229,7 @@
 						<h4>Raspodjela prihoda</h4>
 						<div class="d-flex no-gutters justify-content-between align-items-center flex-wrap flex-lg-nowrap flex-xl-nowrap mt-lg-5">
 							<div class="donut mx-0 px-0" id="pie25" data-donut="25"></div>
-							<div class="col-lg-6 mt-sm-3 text-justify">
-								Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%)
-							</div>
+							<div class="col-lg-6 mt-sm-3 font-italic">Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%)</div>
 						</div>
 					</div>
 				</div>
@@ -279,20 +239,11 @@
 		<!-- Footer ================================================== -->
 
 		<footer class="section-footer bg-inverse" role="contentinfo">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="media">
-							<span class="media-object icon-logo display-1"></span>
-						</div>
-					</div>
-					<div class="col px-0 mr-3">
-						<ul class="h-100 mt-3 nav nav-inline align-middle d-flex justify-content-end">
-							<li class="nav-item px-0"><a class="nav-link" href="/">About PA-BAT</a></li>
-							<li class="nav-item px-0"><a class="nav-link" href="ui-elements.html">WWF Adria</a></li>
-						</ul>
-					</div>
+			<div class="d-flex align-items-center justify-content-between container">
+				<div class="media">
+					<span class="media-object icon-logo display-1"></span>
 				</div>
+				<span><i class="material-icons align-sub">copyright</i> WWF 2016.</span>
 			</div>
 		</footer>
 
