@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">
+<title>{% block title %}Welcome{% endblock %} — wwf_pabat_site</title>
+<body>
+  <header>
+    <ul class="flex flex-row list-reset justify-end">
+      <li class="m2">HR</li>
+      <li class="m2">EN</li>
+      <li class="m2">About PA-BAT</li>
+      <li class="m2">WWF Examples</li>
+      <li class="m2">Sustainable Business</li>
+      <li class="m2">Recommendations</li>
+      <li class="m2">Protected areas</li>
+      <li class="m2">Knowledge Base</li>
+    </ul>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+  </footer>
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+  <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+</body>
