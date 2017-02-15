@@ -1,6 +1,7 @@
 @import "../node_modules/basscss/css/basscss.min.css";
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,500,700|Bitter:400,700|Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 html {
   font-family: 'Raleway', sans-serif;
@@ -58,6 +59,27 @@ table {
   border-spacing: 0;
 }
 
+//--------------------------------------------//
+
+
+.width-100 {
+  width: 100%;
+}
+
+.max-width-70 {
+  max-width: 70%
+}
+
+//--------------------------------------------//
+
+
+
+
+
+
+
+
+
 .icon-logo {
   position: absolute;
   top: -1rem;
@@ -73,6 +95,7 @@ table {
 .bosnian-header {
   background-color: $bosnian-color;
   min-height: 4.5rem;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
 }
 
 .croatian-header {
@@ -85,9 +108,38 @@ table {
   min-height: 4.5rem;
 }
 
-.nav-links a{
+.nav-links a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.banner {
+  height: 60vh;
+  overflow: hidden;
+}
+
+.bosnian-h1 {
+  font-size: 3.75rem;
+  opacity: 0.2;
+  color: $bosnian-color;
+  font-weight: bold;
+  font-family: "Playfair Display";
+}
+
+.bosnian-question {
+  color: $bosnian-color;
+}
+
+.bosnian-text {
+  color: #4A4A4A;
+}
+
+.second-container-background {
+  background-color: #FAFAFA;
 }
