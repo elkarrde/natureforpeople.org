@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,500,700|Bitter:400,700|Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
+@custom-media --breakpoint-sm (min-width: 40em);
+@custom-media --breakpoint-md (min-width: 52em);
+@custom-media --breakpoint-lg (min-width: 64em);
+
 html {
   font-family: 'Raleway', sans-serif;
 }
@@ -66,11 +70,6 @@ table {
 .width-100 {
   width: 100%;
 }
-
-.max-width-70 {
-  max-width: 70%
-}
-
 //--------------------------------------------//
 
 
@@ -168,7 +167,9 @@ table {
 .cta-image-holder {
   height: 30vh;
   overflow: hidden;
-  background-image: url('/static/images/bosnian_banner.jpg');
+  background-image: url('/static/images/bosnian_cta.png');
+  background-position: center center;
+  background-size: cover;
 }
 
 .cta-white-button {
@@ -180,7 +181,6 @@ table {
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  bottom: 13rem;
 }
 
 .cta-button-position {
