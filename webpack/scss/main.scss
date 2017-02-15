@@ -164,3 +164,25 @@ table {
 .copyright {
   color: #9B9B9B;
 }
+
+.cta-image-holder {
+  height: 30vh;
+  overflow: hidden;
+  background-image: url('/static/images/bosnian_banner.jpg');
+}
+
+.cta-white-button {
+  box-sizing: border-box;
+  border: 3px solid #FFFFFF;
+  min-height: 4rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  bottom: 13rem;
+}
+
+.cta-button-position {
+  position: absolute;
+}
