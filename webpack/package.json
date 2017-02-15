@@ -5,6 +5,11 @@
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
+    "basscss-background-colors": "^2.1.0",
+    "basscss-background-images": "^0.1.1",
+    "basscss-colors": "^2.2.0",
+    "basscss-responsive-margin": "^1.1.0",
+    "basscss-responsive-padding": "^1.1.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "2.0.0-rc.3",
     "file-loader": "^0.10.0",
@@ -15,6 +20,7 @@
     "webpack": "^2.2.1"
   },
   "dependencies": {
-    "basscss": "^8.0.3"
+    "basscss": "^8.0.3",
+    "jquery": "^3.1.1"
   }
 }
