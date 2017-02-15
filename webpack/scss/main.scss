@@ -14,6 +14,7 @@ html {
 $bosnian-color: #27A04C;
 $bosnian-color-2: #0A8C4D;
 $croatian-color: #0B8BB6;
+$footer-color: #212121;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -142,4 +143,24 @@ table {
 
 .second-container-background {
   background-color: #FAFAFA;
+}
+
+.pabat-footer {
+  background-color: $footer-color;
+}
+
+.footer-icon-logo {
+  width: 6.5rem;
+  height: 9.5rem;
+}
+
+.footer-nav-links a {
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright {
+  color: #9B9B9B;
 }
