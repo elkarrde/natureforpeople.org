@@ -1,11 +1,19 @@
-<header class="{{header_class if header_class else default-header}} flex items-center justify-around">
+<header id="navbar" class="{{header_class if header_class else default-header}} flex items-center justify-around">
   <img class="icon-logo" src='/static/images/WWF_logo.svg'/>
-  <ul class="flex flex-row list-reset justify-around nav-links">
-    <li class="m2"><a class="nav-link" href="#">About PA-BAT</a></li>
-    <li class="m2"><a class="nav-link" href="#">WWF Examples</a></li>
-    <li class="m2"><a class="nav-link" href="#">Sustainable Business</a></li>
-    <li class="m2"><a class="nav-link" href="#">Recommendations</a></li>
-    <li class="m2"><a class="nav-link" href="#">Protected areas</a></li>
-    <li class="m2"><a class="nav-link" href="#">Knowledge Base</a></li>
-  </ul>
+  <div class="col-8 mx-auto nav-links">
+    <ul class="flex flex-row list-reset justify-around">
+      <li class="mx2 flex items-center height-100"><a class="nav-link flex items-center" href="#">About PA-BAT</a></li>
+      <li><a class="nav-link flex items-center" href="#">WWF Examples</a></li>
+      <li><a class="nav-link flex items-center" href="#">Sustainable Business</a></li>
+      <li><a class="nav-link flex items-center" href="#">Recommendations</a></li>
+      <li><a class="nav-link flex items-center" href="#">Protected areas</a></li>
+      <li><a class="nav-link flex items-center" href="#">Knowledge Base</a></li>
+    </ul>  
+  </div>
+  <label class="select-wrapper relative">
+    <select id="localization-select" class="flex justify-center items-center border-none">
+        <option>HR</option>
+        <option>EN</option>
+    </select>
+  </label>
 </header>
