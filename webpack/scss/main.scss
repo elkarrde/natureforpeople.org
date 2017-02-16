@@ -2,6 +2,7 @@
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,500,700|Bitter:400,700|Material+Icons');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import "_icons.scss";
 
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
@@ -17,6 +18,7 @@ html {
 
 $bosnian-color: #27A04C;
 $bosnian-color-2: #0A8C4D;
+$bosnian-blue: #56ADC2;
 $croatian-color: #0B8BB6;
 $footer-color: #212121;
 
@@ -115,13 +117,45 @@ table {
   font-weight: bold;
 }
 
-.banner-image {
-  width: 100%;
-}
-
 .banner {
   height: 60vh;
   overflow: hidden;
+  background-image: url('/static/images/bosnian_banner.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner-title {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 4.75rem;
+  color: white;
+  max-width: 30%;
+  margin-left: 10rem;
+}
+
+.banner-quote {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 10rem;
+  max-width: 50%;
+}
+
+.bosnian-banner-button {
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  min-height: 4rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-left: 10rem;
+  -moz-border-image: -moz-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
+  border-image: linear-gradient(to right, $bosnian-blue 0%, $bosnian-color 100%);
+  border-image-slice: 1;
+  border-radius: 0.1rem;
 }
 
 .bosnian-h1 {
@@ -132,12 +166,19 @@ table {
   font-family: "Playfair Display";
 }
 
+.bosnian-icon {
+  font-size: 3.75rem;
+  color: $bosnian-blue
+}
+
 .bosnian-question {
   color: $bosnian-color;
 }
 
 .bosnian-text {
   color: #4A4A4A;
+  font-family: "Raleway";
+  line-height: 2rem;
 }
 
 .second-container-background {
@@ -149,8 +190,8 @@ table {
 }
 
 .footer-icon-logo {
-  width: 6.5rem;
-  height: 9.5rem;
+  width: 5rem;
+  height: 7.5rem;
 }
 
 .footer-nav-links a {

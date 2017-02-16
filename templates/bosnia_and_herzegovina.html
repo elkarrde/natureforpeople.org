@@ -4,14 +4,18 @@
 {% endwith %}
 
 {% block body %}
-<div class="banner flex items-center">
-  <img class="banner-image" src='/static/images/bosnian_banner.jpg'/>
+<div class="banner flex items-start flex-column justify-center">
+  <h1 class="banner-title">Bosnia & Herzegovina</h1>
+  <p class="banner-quote mt3">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</p>
+  <a href="#things" class="block bosnian-banner-button flex items-center justify-center mt3">
+    <p class="mx3">Find out more</p>
+  </a>
 </div>
-<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
+<div id="things" class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
   <div class="col-12 lg-col-6">
     <div class="p4 flex-wrap flex items-center">
       <div class="flex items-center">
-        <i class="mr4">Ikona</i>
+        <i class="mr3 icon-tourism bosnian-icon"/></i>
         <p class="bosnian-h1">Turizam</p>
       </div>
       <div>
@@ -32,7 +36,7 @@
     <div class="col-12 lg-col-6">
       <div class="p4 flex-wrap flex items-center">
         <div class="flex items-center">
-          <i class="mr-auto">Ikona</i>
+          <i class="mr3 icon-jobs bosnian-icon"></i>
           <p class="bosnian-h1">Poslovi</p>
         </div>
         <div>
@@ -48,7 +52,7 @@
   <div class="col-12 lg-col-6">
     <div class="p4 flex-wrap flex items-center">
       <div class="flex items-center">
-        <i class="mr4">Ikona</i>
+        <i class="mr3 icon-fresh-water bosnian-icon"></i>
         <p class="bosnian-h1">Vodni resursi</p>
       </div>
       <div>
@@ -69,7 +73,7 @@
     <div class="col-12 lg-col-6">
       <div class="p4 flex-wrap flex items-center">
         <div class="flex items-center">
-          <i class="mr4">Ikona</i>
+          <i class="mr3 icon-forrest bosnian-icon"></i>
           <p class="bosnian-h1">Šumarstvo</p>
         </div>
         <div>
