@@ -115,6 +115,7 @@ table {
   li {
     padding: 0 1rem;
     height: inherit;
+    max-width: 15vw;
     a {
       color: #fff;
       text-transform: uppercase;
@@ -254,7 +255,6 @@ select {
     cursor: pointer;
     transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
-//-------------------------------------------------//
 
 .select-wrapper {
   &::after {
@@ -270,4 +270,44 @@ select {
     text-align: center;
     color: $bosnian-color;
   }
+}
+//-------------------------------------------------//
+
+#nav {
+    background-color: $bosnian-color-2;
+}
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#nav ul li {
+    display: inline-block;
+}
+#nav ul li:hover {
+    background-color: $bosnian-color;
+}
+#nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#nav ul li:hover ul {
+    display: block;
+}
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $bosnian-color-2;
+    border: 5px solid $bosnian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#nav ul ul li {
+    display: block;
+}
+#nav ul ul li a:hover {
+    color: $bosnian-blue;
 }
