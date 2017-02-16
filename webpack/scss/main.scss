@@ -20,6 +20,8 @@ $bosnian-color: #27A04C;
 $bosnian-color-2: #0A8C4D;
 $bosnian-blue: #56ADC2;
 $croatian-color: #0B8BB6;
+$croatian-color-2: #03769D;
+$croatian-red: #FA555C;
 $footer-color: #212121;
 
 html, body, div, span, applet, object, iframe,
@@ -73,6 +75,58 @@ table {
 .height-100 {
   height: 100%;
 }
+
+.bosnian-background-color-1 {
+  background-color: $bosnian-color;
+}
+
+.bosnian-background-color-2 {
+  background-color: $bosnian-color-2;
+}
+
+.bosnian-background-color-3 {
+  background-color: $bosnian-blue;
+}
+
+.bosnian-color-1 {
+  color: $bosnian-color;
+}
+
+.bosnian-color-2 {
+  color: $bosnian-color-2;
+}
+
+.bosnian-color-3 {
+  color: $bosnian-blue;
+}
+
+.croatian-background-color-1 {
+  background-color: $croatian-color;
+}
+
+.croatian-background-color-2 {
+  background-color: $croatian-color-2;
+}
+
+.croatian-background-color-3 {
+  background-color: $croatian-red;
+}
+
+.croatian-color-1 {
+  color: $croatian-color;
+}
+
+.croatian-color-2 {
+  color: $croatian-color-2;
+}
+
+.croatian-color-3 {
+  color: $croatian-red;
+}
+
+.white-background-color {
+  background-color: white;
+}
 //--------------------------------------------//
 
 .icon-logo {
@@ -87,8 +141,7 @@ table {
   background-size: 100% 100%;
 }
 
-.bosnian-header {
-  background-color: $bosnian-color;
+.header {
   height: 4.5rem;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
   width: 100%;
@@ -96,21 +149,7 @@ table {
   position: fixed;
 }
 
-.croatian-header {
-  background-color: $croatian-color;
-  height: 4.5rem;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
-  width: 100%;
-}
-
-.default-header {
-  background-color: #fff;
-  height: 4.5rem;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
-  width: 100%;
-}
-
-.nav-links {
+.nav-links-bosnian {
   height: inherit;
   li {
     padding: 0 1rem;
@@ -129,8 +168,27 @@ table {
   }
 }
 
+.nav-links-croatian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $croatian-color-2;
+    }
+  }
+}
+
 .banner {
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
   background-image: url('/static/images/bosnian_banner.jpg');
   background-position: center center;
@@ -153,7 +211,7 @@ table {
   max-width: 50%;
 }
 
-.bosnian-banner-button {
+.banner-button {
   box-sizing: border-box;
   border: 3px solid transparent;
   min-height: 4rem;
@@ -163,31 +221,35 @@ table {
   font-size: 1rem;
   text-decoration: none;
   margin-left: 10rem;
+  border-radius: 0.1rem;
+}
+
+.bosnian-border-gradient {
   -moz-border-image: -moz-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
   border-image: linear-gradient(to right, $bosnian-blue 0%, $bosnian-color 100%);
   border-image-slice: 1;
-  border-radius: 0.1rem;
 }
 
-.bosnian-h1 {
+.croatian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $croatian-red 0%, $croatian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $croatian-red 0%, $croatian-color 100%);
+  border-image: linear-gradient(to right, $croatian-red 0%, $croatian-color 100%);
+  border-image-slice: 1;
+}
+
+.country-h1 {
   font-size: 3.75rem;
   opacity: 0.2;
-  color: $bosnian-color;
   font-weight: bold;
   font-family: "Playfair Display";
 }
 
-.bosnian-icon {
+.country-icon {
   font-size: 3.75rem;
-  color: $bosnian-blue
 }
 
-.bosnian-question {
-  color: $bosnian-color;
-}
-
-.bosnian-text {
+.country-text {
   color: #4A4A4A;
   font-family: "Raleway";
   line-height: 2rem;
@@ -247,8 +309,6 @@ select {
     -moz-appearance: button;
     overflow:hidden;
     width: 100%;
-    color: $bosnian-color;
-    background-color: $bosnian-color-2;
     height: 4.5rem;
     width: 4.5rem;
     text-indent: 1.5rem;
@@ -268,36 +328,35 @@ select {
     margin: auto;
     display: block;
     text-align: center;
-    color: $bosnian-color;
   }
 }
 //-------------------------------------------------//
 
-#nav {
+#bosnian-nav {
     background-color: $bosnian-color-2;
 }
-#nav ul {
+#bosnian-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     position: relative;
 }
-#nav ul li {
+#bosnian-nav ul li {
     display: inline-block;
 }
-#nav ul li:hover {
+#bosnian-nav ul li:hover {
     background-color: $bosnian-color;
 }
-#nav ul li a, visited {
+#bosnian-nav ul li a, visited {
     color: white;
     display: block;
     padding: 15px;
     text-decoration: none;
 }
-#nav ul li:hover ul {
+#bosnian-nav ul li:hover ul {
     display: block;
 }
-#nav ul ul {
+#bosnian-nav ul ul {
     display: none;
     position: absolute;
     background-color: $bosnian-color-2;
@@ -305,9 +364,50 @@ select {
     border-top: 0;
     margin-left: -5px;
 }
-#nav ul ul li {
+#bosnian-nav ul ul li {
     display: block;
 }
-#nav ul ul li a:hover {
+#bosnian-nav ul ul li a:hover {
     color: $bosnian-blue;
+}
+
+//////////////////////////
+
+#croatian-nav {
+    background-color: $croatian-color-2;
+}
+#croatian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#croatian-nav ul li {
+    display: inline-block;
+}
+#croatian-nav ul li:hover {
+    background-color: $croatian-color;
+}
+#croatian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#croatian-nav ul li:hover ul {
+    display: block;
+}
+#croatian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $croatian-color-2;
+    border: 5px solid $croatian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#croatian-nav ul ul li {
+    display: block;
+}
+#croatian-nav ul ul li a:hover {
+    color: $croatian-red;
 }
