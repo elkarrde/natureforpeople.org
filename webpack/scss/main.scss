@@ -8,9 +8,6 @@
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
 
-html {
-  font-family: 'Raleway', sans-serif;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -66,6 +63,10 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
 }
 
 //--------------------------------------------//
@@ -127,6 +128,10 @@ table {
 .white-background-color {
   background-color: white;
 }
+
+.capture-color {
+  color: $footer-color;
+}
 //--------------------------------------------//
 
 .icon-logo {
@@ -185,6 +190,10 @@ table {
       background-color: $croatian-color-2;
     }
   }
+}
+
+.menu {
+  height: inherit;
 }
 
 .banner {
@@ -306,12 +315,12 @@ table {
 select {
     font-size: 1rem;
     -webkit-appearance: none;
-    -moz-appearance: button;
+    -moz-appearance: none;
     overflow:hidden;
     width: 100%;
     height: 4.5rem;
     width: 4.5rem;
-    text-indent: 1.5rem;
+    text-align: center;
     cursor: pointer;
     transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
@@ -327,7 +336,7 @@ select {
     bottom: 0;
     margin: auto;
     display: block;
-    text-align: center;
+    text-indent: 1.5rem;
   }
 }
 //-------------------------------------------------//
@@ -410,4 +419,51 @@ select {
 }
 #croatian-nav ul ul li a:hover {
     color: $croatian-color-3;
+}
+
+.icon-visitors {
+  -webkit-mask-image: url('/static/images/visitors.svg');
+  mask-image: url('/static/images/visitors.svg');
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.visitor-wrapper {
+  height: 215px;
+  width: 198px;
+}
+
+.counter {
+  position: absolute;
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.capture {
+  opacity: 0.3;
+  font-size: 0.9rem;
+}
+
+
+#lektor-edit-link {
+  display: none;
+}
+
+path.color0 {
+  fill: #567F3A;
+}
+
+path.color1 {
+  fill: #B0CE9B;
+}
+
+.donut-text {
+  font-family: sans-serif;
+  font-size: 4rem;
+  letter-spacing: -.2rem;
+  font-weight: 600;
+  line-height: 12rem;
+  fill: #567F3A;
 }

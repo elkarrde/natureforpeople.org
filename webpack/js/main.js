@@ -1,5 +1,10 @@
 $ = require("jquery");
 jQuery = $;
+d3 = require('d3');
+c3 = require('c3');
+
+animationHelpers = require('./animationHelpers');
+
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
   var $target = $( event.currentTarget );
@@ -34,4 +39,20 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
         }
     });
 
+    animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
+    animationHelpers.drawBarChart('#chart', [7, 14]);
+    animationHelpers.drawDonutChart(
+      '#donut39',
+      $('#donut39').data('donut'),
+      200,
+      200,
+      ".4em"
+    );
+    animationHelpers.drawDonutChart(
+      '#pie25',
+      $('#pie25').data('donut'),
+      200,
+      200,
+      ".4em"
+    );
 })(jQuery, undefined);

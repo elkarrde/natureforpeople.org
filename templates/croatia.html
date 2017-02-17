@@ -13,7 +13,7 @@
 </div>
 <div id="content" class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
   <div class="col-12 lg-col-6">
-    <div class="p4 flex-wrap flex items-center">
+    <div class="p4 flex-wrap flex items-center justify-center">
       <div class="flex items-center">
         <i class="mr3 icon-tourism country-icon croatian-color-3"/></i>
         <p class="country-h1 croatian-color-1">Broj posjetitelja</p>
@@ -25,9 +25,14 @@
       </div>
     </div>
   </div>
-  <div class="col-12 lg-col-6">
-    <div class="p4 flex items-center justify-center">
-      <p class="h1">2590320</p>
+  <div class="col-12 lg-col-6 flex items-center justify-center">
+    <div class="p4 flex-wrap flex-column flex items-center justify-center">
+      <div class="counter croatian-color-1" id="counter">2590320
+      </div>
+      <div class="visitor-wrapper">
+        <i class="icon-visitors croatian-background-color-3"></i>
+      </div>
+      <p class="capture-color capture mt3">posjetitelja u zaštićenim područjima u 2012. godini</p>
     </div>
   </div>
 </div>
@@ -44,6 +49,12 @@
 
           <a class="my3 croatian-color-1" href="#">Kojim strategijama vratiti dio prihoda lokalnoj zajednici?</a>
         </div>
+      </div>
+    </div>
+    <div class="col-12 lg-col-6 flex items-center justify-center">
+      <div class="p4 flex-wrap flex-column flex items-center justify-center">
+        <div class="chart px-3 py-3" id="chart"></div>
+        <p class="capture-color capture mt3">U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode</p>
       </div>
     </div>
   </div>
@@ -63,8 +74,10 @@
     </div>
   </div>
   <div class="col-12 lg-col-6">
-    <div class="p4 flex items-center justify-center">
-      <p class="h1">2590320</p>
+    <div class="p4 flex-wrap flex-column flex items-center justify-center">
+      <div class="p4 flex items-center justify-center">
+        <div class="donut" id="donut39" data-donut="39"></div>
+      </div>
     </div>
   </div>
 </div>
@@ -82,6 +95,13 @@
         </div>
       </div>
     </div>
+    <div class="col-12 lg-col-6">
+      <div class="p4 flex-wrap flex-column flex items-center justify-center">
+        <div class="p4 flex items-center justify-center">
+          <div class="donut" id="pie25" data-donut="25"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="cta-image-holder flex items-center justify-center">
@@ -90,3 +110,5 @@
   </a>
 </div>
 {% endblock %}
+
+
