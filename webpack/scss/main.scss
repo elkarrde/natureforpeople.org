@@ -16,12 +16,12 @@ html {
    License: none (public domain)
 */
 
-$bosnian-color: #27A04C;
-$bosnian-color-2: #0A8C4D;
-$bosnian-blue: #56ADC2;
+$bosnian-color: #BEB81C;
+$bosnian-color-2: #A8A20A;
+$bosnian-color-3: #17A9AE;
 $croatian-color: #0B8BB6;
 $croatian-color-2: #03769D;
-$croatian-red: #FA555C;
+$croatian-color-3: #FA555C;
 $footer-color: #212121;
 
 html, body, div, span, applet, object, iframe,
@@ -85,7 +85,7 @@ table {
 }
 
 .bosnian-background-color-3 {
-  background-color: $bosnian-blue;
+  background-color: $bosnian-color-3;
 }
 
 .bosnian-color-1 {
@@ -97,7 +97,7 @@ table {
 }
 
 .bosnian-color-3 {
-  color: $bosnian-blue;
+  color: $bosnian-color-3;
 }
 
 .croatian-background-color-1 {
@@ -109,7 +109,7 @@ table {
 }
 
 .croatian-background-color-3 {
-  background-color: $croatian-red;
+  background-color: $croatian-color-3;
 }
 
 .croatian-color-1 {
@@ -121,7 +121,7 @@ table {
 }
 
 .croatian-color-3 {
-  color: $croatian-red;
+  color: $croatian-color-3;
 }
 
 .white-background-color {
@@ -225,16 +225,16 @@ table {
 }
 
 .bosnian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $bosnian-blue 0%, $bosnian-color 100%);
-  border-image: linear-gradient(to right, $bosnian-blue 0%, $bosnian-color 100%);
+  -moz-border-image: -moz-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
+  border-image: linear-gradient(to right, $bosnian-color-3 0%, $bosnian-color 100%);
   border-image-slice: 1;
 }
 
 .croatian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $croatian-red 0%, $croatian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $croatian-red 0%, $croatian-color 100%);
-  border-image: linear-gradient(to right, $croatian-red 0%, $croatian-color 100%);
+  -moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+  border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
   border-image-slice: 1;
 }
 
@@ -368,7 +368,7 @@ select {
     display: block;
 }
 #bosnian-nav ul ul li a:hover {
-    color: $bosnian-blue;
+    color: $bosnian-color-3;
 }
 
 //////////////////////////
@@ -409,5 +409,5 @@ select {
     display: block;
 }
 #croatian-nav ul ul li a:hover {
-    color: $croatian-red;
+    color: $croatian-color-3;
 }
