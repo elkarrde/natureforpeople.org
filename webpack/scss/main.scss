@@ -19,6 +19,9 @@ $bosnian-color-3: #17A9AE;
 $croatian-color: #0B8BB6;
 $croatian-color-2: #03769D;
 $croatian-color-3: #FA555C;
+$default-color: #FEFEFE;
+$default-color-2: #E5E5E5;
+$default-color-3: #4AC2ED;
 $footer-color: #212121;
 
 html, body, div, span, applet, object, iframe,
@@ -70,6 +73,10 @@ html {
 }
 
 //--------------------------------------------//
+p {
+  line-height: 1.5rem;
+  color: #4A4A4A;
+}
 .width-100 {
   width: 100%;
 }
@@ -125,6 +132,22 @@ html {
   color: $croatian-color-3;
 }
 
+.default-background-color-1 {
+  background-color: $default-color;
+}
+
+.default-background-color-2 {
+  background-color: $default-color-2;
+}
+
+.default-color-1 {
+  color: $default-color;
+}
+
+.default-color-2 {
+  color: $default-color-2;
+}
+
 .white-background-color {
   background-color: white;
 }
@@ -160,6 +183,7 @@ html {
     padding: 0 1rem;
     height: inherit;
     max-width: 15vw;
+    cursor: pointer;
     a {
       color: #fff;
       text-transform: uppercase;
@@ -179,6 +203,7 @@ html {
     padding: 0 1rem;
     height: inherit;
     max-width: 15vw;
+    cursor: pointer;
     a {
       color: #fff;
       text-transform: uppercase;
@@ -188,6 +213,26 @@ html {
     }
     &:hover {
       background-color: $croatian-color-2;
+    }
+  }
+}
+
+.nav-links-default {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #4A4A4A;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $default-color-2;
     }
   }
 }
@@ -264,6 +309,11 @@ html {
   line-height: 2rem;
 }
 
+.index-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .second-container-background {
   background-color: #FAFAFA;
 }
@@ -323,6 +373,7 @@ select {
     text-align: center;
     cursor: pointer;
     transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    text-indent: 1.5rem;
 }
 
 .select-wrapper {
@@ -419,6 +470,47 @@ select {
 }
 #croatian-nav ul ul li a:hover {
     color: $croatian-color-3;
+}
+
+//////////////////////////
+
+#default-nav {
+    background-color: $default-color-2;
+}
+#default-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#default-nav ul li {
+    display: inline-block;
+}
+#default-nav ul li:hover {
+    background-color: $default-color;
+}
+#default-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#default-nav ul li:hover ul {
+    display: block;
+}
+#default-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $default-color-2;
+    border: 5px solid $default-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#default-nav ul ul li {
+    display: block;
+}
+#default-nav ul ul li a:hover {
+    color: $default-color-3;
 }
 
 .icon-visitors {
