@@ -260,9 +260,16 @@ p {
 .banner {
   height: 80vh;
   overflow: hidden;
-  background-image: url('/static/images/bosnian_banner.jpg');
   background-position: center center;
   background-size: cover;
+}
+
+.bosnian-banner-image {
+  background-image: url('/static/images/bosnian_banner.jpg');
+}
+
+.croatian-banner-image {
+  background-image: url('/static/images/croatian_banner.jpg');
 }
 
 .banner-title {
@@ -363,9 +370,16 @@ p {
 .cta-image-holder {
   height: 30vh;
   overflow: hidden;
-  background-image: url('/static/images/bosnian_cta.png');
   background-position: center center;
   background-size: cover;
+}
+
+.bosnian-cta-image {
+  background-image: url('/static/images/bosnian_cta.png');  
+}
+
+.croatian-cta-image {
+  background-image: url('/static/images/croatian_cta.jpg');
 }
 
 .cta-white-button {
