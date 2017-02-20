@@ -41,6 +41,7 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
     animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
     animationHelpers.drawBarChart('#chart', [7, 14]);
+    animationHelpers.drawBarChart('#frewhwater-util-chart', [118]);
     animationHelpers.drawDonutChart(
       '#donut39',
       $('#donut39').data('donut'),
@@ -51,6 +52,13 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
     animationHelpers.drawDonutChart(
       '#pie25',
       $('#pie25').data('donut'),
+      200,
+      200,
+      ".4em"
+    );
+    animationHelpers.drawDonutChart(
+      '#pie77',
+      $('#pie77').data('donut'),
       200,
       200,
       ".4em"
