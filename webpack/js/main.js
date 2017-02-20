@@ -39,9 +39,18 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
         }
     });
 
-    animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
+    if ($('#counter').length == 1) {
+      animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
+    }
+
+    if ($('#counter300').length == 1) {
+      animationHelpers.animateValue("counter300", 0, parseInt($('#counter300').html()), 4000);
+    }
+
+
     animationHelpers.drawBarChart('#chart', [7, 14]);
     animationHelpers.drawBarChart('#frewhwater-util-chart', [118]);
+    animationHelpers.drawBarChart('#chart9200', [9200]);
     animationHelpers.drawDonutChart(
       '#donut39',
       $('#donut39').data('donut'),
@@ -52,6 +61,20 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
     animationHelpers.drawDonutChart(
       '#pie25',
       $('#pie25').data('donut'),
+      200,
+      200,
+      ".4em"
+    );
+    animationHelpers.drawDonutChart(
+      '#pie63',
+      $('#pie63').data('donut'),
+      200,
+      200,
+      ".4em"
+    );
+    animationHelpers.drawDonutChart(
+      '#pie2',
+      $('#pie2').data('donut'),
       200,
       200,
       ".4em"
