@@ -18,9 +18,9 @@
     <p class="default-color-1">View map for more info</p>
   </a>
 </div>
-<div class="flex lg-justify-end my3">
-  <p class="background-text sm-hide xs-hide">About</p>
-  <div class="col-12 md-col-8 sm-hide xs-hide">
+<div class="flex justify-center py3 sm-hide xs-hide">
+  <p class="background-text">About</p>
+  <div class="col-12 md-col-8">
     <p class="index-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.</p>
     <p class="mt3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -37,7 +37,7 @@
   </div>
 </div>
 <div class="flex justify-center md-hide lg-hide mb2">
-  <div class="col-10">
+  <div class="col-10 py3">
     <p class="index-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.</p>
     <p class="mt3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -53,47 +53,33 @@
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
   </div>
 </div>
-<div class="facts-container py3">
-  <div class="facts-container lg-flex flex-wrap mx-auto lg-col-10 col-12 flex justify-center">
-    <div class="col-11 lg-col-3 p2">
-      <div class="facts-card">
-        <div class="p4 flex-column flex items-center justify-center center">
-          <p class="index-h3">Number of visitors</p>
-          <div class="index-counter bosnian-color-1" id="counter">2590320
-          </div>
-          <div class="mt4 index-visitor-wrapper">
-            <i class="icon-visitors bosnian-background-color-1"></i>
-          </div>
-          <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-            <p class="">More info</p>
-          </a>
-        </div>
+<div class="facts-container py3 lg-flex justify-center xl-px10">
+  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
+    <p class="index-h3">Number of visitors</p>
+    <div class="mt4 index-visitor-wrapper">
+      <div class="index-counter bosnian-color-1" id="counter">2590320
       </div>
+      <i class="icon-visitors bosnian-background-color-1"></i>
     </div>
-    <div class="col-11 lg-col-3 p2">
-      <div class="facts-card">
-        <div class="p4 flex-column flex items-center justify-center center">
-          <p class="index-h3">Profit distribution</p>
-          <div class="p4 flex items-center justify-center">
-            <div class="donut" id="pie77" data-donut="77"></div>
-          </div>
-          <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-            <p class="">More info</p>
-          </a>
-        </div>
-      </div>
+    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
+      <p class="">More info</p>
+    </a>
+  </div>
+  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
+    <p class="index-h3">Profit distribution</p>
+    <div class="p4 flex items-center justify-center">
+      <div class="donut" id="pie77" data-donut="77"></div>
     </div>
-    <div class="col-11 lg-col-3 p2">
-      <div class="facts-card">
-        <div class="p4 flex-column flex items-center justify-center center">
-          <p class="index-h3">Frewhwater utilization profit</p>
-          <div class="chart px-3 py-3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
-          <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-            <p class="">More info</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
+      <p class="">More info</p>
+    </a>
+  </div>
+  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
+    <p class="index-h3">Frewhwater utilization profit</p>
+    <div class="chart px-3 py-3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
+    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
+      <p class="">More info</p>
+    </a>
   </div>
 </div>
 {% endblock %}

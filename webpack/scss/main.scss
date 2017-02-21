@@ -7,6 +7,7 @@
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
+@custom-media --breakpoint-xl (min-width: 76em);
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -164,6 +165,14 @@ p {
 .mr10 {
   margin-right: 10rem;
 }
+
+@media (--breakpoint-xl) {
+  .xl-px10 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+
 .px10 {
   padding-right: 10rem;
   padding-left: 10rem;
@@ -609,6 +618,8 @@ path.color1 {
   font-family: "Playfair Display";
   font-weight: bold;
   opacity: 0.2;
+  position: absolute;
+  left: 0;
 }
 
 .facts-container {
