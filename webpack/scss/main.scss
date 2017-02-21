@@ -166,7 +166,7 @@ p {
   margin-right: 10rem;
 }
 
-@media (--breakpoint-xl) {
+@media (min-width: 76em) {
   .xl-px10 {
     padding-right: 10rem;
     padding-left: 10rem;
