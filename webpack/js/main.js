@@ -87,3 +87,39 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
       ".4em"
     );
 })(jQuery, undefined);
+
+
+jQuery(document).ready(function(){
+  /**
+   * Check if first li element is hidden
+   * then show
+   */
+  if( jQuery('#carouselNav li:first-child').is(':hidden') ) {
+    // Toggle visibility
+    jQuery('#carouselNav li:first-child').toggle();
+  }
+  // Interval time
+  var carouselInterval = 3000;
+  // Slider
+  function carouselSlide(){
+    // Check if last element was reached
+    if( jQuery('#carouselNav li:visible').next().length == 0 ) {
+      // Hide last li element
+      jQuery('#carouselNav li:last-child').slideUp('fast');
+      // Show the first one
+      jQuery('#carouselNav li:first-child').slideDown('fast');
+    } else {
+      // Rotate elements
+      jQuery('#carouselNav li:visible').slideUp('fast').next('li:hidden').slideDown('fast');
+    }
+  }
+  // Set Interval
+  var carouselScroll = setInterval(carouselSlide,carouselInterval);
+  // Pause on hover
+  jQuery('#carousel').hover(function() {
+    clearInterval(carouselScroll);
+  }, function() {
+    carouselScroll = setInterval(carouselSlide,carouselInterval);
+    carouselSlide();
+  });
+});
