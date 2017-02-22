@@ -23,6 +23,9 @@ $croatian-color-3: #FA555C;
 $serbian-color: #3B2D6B;
 $serbian-color-2: #2E2355;
 $serbian-color-3: #58C186;
+$slovenian-color: #27A04C;
+$slovenian-color-2: #0A8C4D;
+$slovenian-color-3: #56ADC2;
 
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
@@ -161,6 +164,30 @@ p {
   color: $serbian-color-3;
 }
 
+.slovenian-background-color-1 {
+  background-color: $slovenian-color;
+}
+
+.slovenian-background-color-2 {
+  background-color: $slovenian-color-2;
+}
+
+.slovenian-background-color-3 {
+  background-color: $slovenian-color-3;
+}
+
+.slovenian-color-1 {
+  color: $slovenian-color;
+}
+
+.slovenian-color-2 {
+  color: $slovenian-color-2;
+}
+
+.slovenian-color-3 {
+  color: $slovenian-color-3;
+}
+
 .default-background-color-1 {
   background-color: $default-color;
 }
@@ -264,6 +291,26 @@ p {
   }
 }
 
+.nav-links-slovenian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $slovenian-color-2;
+    }
+  }
+}
+
 .nav-links-croatian {
   height: inherit;
   li {
@@ -330,8 +377,8 @@ p {
   background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg');
 }
 
-@media (min-width: 64em) {
-  
+.slovenian-banner-image {
+  background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg');
 }
 
 .banner-title {
@@ -376,6 +423,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
   border-image: linear-gradient(to right, $serbian-color-3 0%, $serbian-color 100%);
+  border-image-slice: 1;
+}
+
+.slovenian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
+  border-image: linear-gradient(to right, $slovenian-color-3 0%, $slovenian-color 100%);
   border-image-slice: 1;
 }
 
@@ -455,6 +509,10 @@ p {
 
 .serbian-cta-image {
   background-image: url('/static/images/Serbia_CTA_image@2x.png');
+}
+
+.slovenian-cta-image {
+  background-image: url('/static/images/Slovenia_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -597,6 +655,47 @@ p {
 }
 #croatian-nav ul ul li a:hover {
     color: $croatian-color-3;
+}
+
+//////////////////////////
+
+#slovenian-nav {
+    background-color: $slovenian-color-2;
+}
+#slovenian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#slovenian-nav ul li {
+    display: inline-block;
+}
+#slovenian-nav ul li:hover {
+    background-color: $slovenian-color;
+}
+#slovenian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#slovenian-nav ul li:hover ul {
+    display: block;
+}
+#slovenian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $slovenian-color-2;
+    border: 5px solid $slovenian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#slovenian-nav ul ul li {
+    display: block;
+}
+#slovenian-nav ul ul li a:hover {
+    color: $slovenian-color-3;
 }
 
 //////////////////////////
@@ -859,7 +958,7 @@ path.color1 {
 }
 @media (min-width: 76em) {
   .xl-min-height-carousel {
-    height: 15rem;    
+    height: 15rem;
   }
 }
 
