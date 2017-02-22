@@ -20,6 +20,10 @@ $bosnian-color-3: #17A9AE;
 $croatian-color: #0B8BB6;
 $croatian-color-2: #03769D;
 $croatian-color-3: #FA555C;
+$serbian-color: #3B2D6B;
+$serbian-color-2: #2E2355;
+$serbian-color-3: #58C186;
+
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
 $default-color-3: #4AC2ED;
@@ -133,6 +137,30 @@ p {
   color: $croatian-color-3;
 }
 
+.serbian-background-color-1 {
+  background-color: $serbian-color;
+}
+
+.serbian-background-color-2 {
+  background-color: $serbian-color-2;
+}
+
+.serbian-background-color-3 {
+  background-color: $serbian-color-3;
+}
+
+.serbian-color-1 {
+  color: $serbian-color;
+}
+
+.serbian-color-2 {
+  color: $serbian-color-2;
+}
+
+.serbian-color-3 {
+  color: $serbian-color-3;
+}
+
 .default-background-color-1 {
   background-color: $default-color;
 }
@@ -216,6 +244,26 @@ p {
   }
 }
 
+.nav-links-serbian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $serbian-color-2;
+    }
+  }
+}
+
 .nav-links-croatian {
   height: inherit;
   li {
@@ -278,6 +326,10 @@ p {
   background-image: url('/static/images/croatian_banner.jpg');
 }
 
+.serbian-banner-image {
+  background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg');
+}
+
 @media (min-width: 64em) {
   
 }
@@ -317,6 +369,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
   border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
+  border-image-slice: 1;
+}
+
+.serbian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
+  border-image: linear-gradient(to right, $serbian-color-3 0%, $serbian-color 100%);
   border-image-slice: 1;
 }
 
@@ -392,6 +451,10 @@ p {
 
 .croatian-cta-image {
   background-image: url('/static/images/croatian_cta.jpg');
+}
+
+.serbian-cta-image {
+  background-image: url('/static/images/Serbia_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -534,6 +597,47 @@ p {
 }
 #croatian-nav ul ul li a:hover {
     color: $croatian-color-3;
+}
+
+//////////////////////////
+
+#serbian-nav {
+    background-color: $serbian-color-2;
+}
+#serbian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#serbian-nav ul li {
+    display: inline-block;
+}
+#serbian-nav ul li:hover {
+    background-color: $serbian-color;
+}
+#serbian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#serbian-nav ul li:hover ul {
+    display: block;
+}
+#serbian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $serbian-color-2;
+    border: 5px solid $serbian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#serbian-nav ul ul li {
+    display: block;
+}
+#serbian-nav ul ul li a:hover {
+    color: $serbian-color-3;
 }
 
 //////////////////////////
