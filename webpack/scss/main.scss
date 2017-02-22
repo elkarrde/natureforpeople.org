@@ -745,3 +745,28 @@ path.color1 {
 #carousel li {
     display: none;
 }
+
+.height-carousel {
+  height: 15rem;
+}
+
+@media (min-width: 40em) {
+  .sm-min-height-carousel {
+    height: 20rem;
+  }
+}
+@media (min-width: 52em) {
+  .md-min-height-carousel {
+    height: 20rem;
+  }
+}
+@media (min-width: 64em) {
+  .lg-min-height-carousel {
+    height: 25rem;
+  }
+}
+@media (min-width: 76em) {
+  .xl-min-height-carousel {
+    height: 15rem;    
+  }
+}

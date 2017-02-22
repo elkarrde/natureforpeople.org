@@ -5,29 +5,14 @@
 
 {% block body %}
 <div class="index-banner flex justify-center items-center flex-column" style="">
-  <div class="col-6">
+  <div class="col-12 md-col-6">
     <h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
   </div>
-  <div class="col-4 mb3">
+  <div class="col-10 md-col-8 lg-col-4 mb3 height-carousel sm-min-height-carousel md-min-height-carousel lg-min-height-carousel xl-min-height-carousel flex justify-center items-center">
     <div id="carousel">
       <ul id="carouselNav">
         <li>
-          <p class="default-color-1 center">{{ this.message_1 }}</p> 
-        </li>
-        <li>
-          <p class="default-color-1 center">{{ this.message_2 }}</p>
-        </li>
-        <li>
-          <p class="default-color-1 center">{{ this.message_3 }}</p>
-        </li>
-        <li>
-          <p class="default-color-1 center">{{ this.message_4 }}</p>
-        </li>
-        <li>
           <p class="default-color-1 center">{{ this.message_5 }}</p>
-        </li>
-        <li>
-          <p class="default-color-1 center">{{ this.message_6 }}</p>
         </li>
       </ul>
     </div>
@@ -42,7 +27,7 @@
   </ul>
 </div>
 <div class="flex justify-center py3 sm-hide xs-hide">
-  <p class="background-text">About</p>
+  <p class="background-text">{{ this.background_text_about }}</p>
   <div class="col-12 md-col-8 mt8 mb4">
     <p class="index-h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.</p>
     <p class="mt3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -106,7 +91,7 @@
   </div>
 </div>
 <div class="py3 lg-flex justify-center xl-px10">
-  <p class="background-text xs-hide md-hide">Learn more</p>
+  <p class="background-text xs-hide md-hide">{{ this.background_text_learn_more }}</p>
   <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
     <div class="image-holder"></div>
     <p class="index-h3 m3">{{ this.learn_more_title }}</p>
