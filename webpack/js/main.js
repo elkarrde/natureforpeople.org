@@ -131,4 +131,20 @@ jQuery(document).ready(function(){
     carouselScroll = setInterval(carouselSlide,carouselInterval);
     carouselSlide();
   });
+
+
+	$('.map-wrapper').on('mousemove', function(e){
+		var width = $(window).innerWidth()
+		var half = width / 2
+		var isLeft = e.pageX <= half;
+		var marginLeft = $(this).find('.map-inner-wrapper').css('margin-left')
+		var fromCenter = 100 - (e.pageX / half * 100);
+
+		$(this).find('.map-inner-wrapper').css('margin-left', ((fromCenter / 5) - 10) + "%")
+
+
+		console.log()
+
+		console.log(isLeft, marginLeft)
+	})
 });
