@@ -4,7 +4,8 @@
 {% endwith %}
 
 {% block body %}
-<div class="index-banner flex justify-center items-center flex-column" style="">
+
+<header class="index-banner flex justify-center items-center flex-column" style="">
   <div class="col-12 md-col-6">
     <h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
   </div>
@@ -21,12 +22,14 @@
     <p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
   </a>
 
-  <ul class="my3 center">
-    <li class="my1"><a href="{{ '/croatia'|url(alt) }}">Hrvatska</a></li>
-    <li class="my1"><a href="{{ '/bosnia_and_herzegovina'|url(alt) }}">Bosna i Hercegovina</a></li>
-    <li class="my1"><a href="{{ '/serbia'|url(alt) }}">Srbija</a></li>
-  </ul>
-</div>
+  <div class="map-wrapper" style="height: 80vh; width: 100%; overflow: hidden; margin-top: -15vh">
+	  <div style="width:120%; margin-left: -10%" class="map-inner-wrapper">
+		  {% include "_countries.html" %}
+	  </div>
+	  </div>
+</header>
+
+
 <div class="flex justify-center py3 sm-hide xs-hide">
   <p class="background-text">{{ this.background_text_about }}</p>
   <div class="col-12 md-col-8 mt8 mb4">
@@ -59,7 +62,7 @@
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </div>
 <div class="facts-container py3 lg-flex justify-center xl-px10">
