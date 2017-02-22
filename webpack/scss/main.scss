@@ -77,7 +77,6 @@ html {
 p {
   line-height: 1.5rem;
   color: #4A4A4A;
-  text-align: justify;
 }
 .width-100 {
   width: 100%;
@@ -177,23 +176,17 @@ p {
   }
 }
 
+@media (min-width: 64em) {
+  .lg-ml10 {
+  margin-left: 10rem;
+}
+}
+
 .px10 {
   padding-right: 10rem;
   padding-left: 10rem;
 }
 //--------------------------------------------//
-
-.icon-logo {
-  position: absolute;
-  top: -1rem;
-  left: 2rem;
-  display: block;
-  z-index: 3;
-  text-indent: -9999px;
-  width: 6.5rem;
-  height: 9.5rem;
-  background-size: 100% 100%;
-}
 
 .header {
   height: 4.5rem;
@@ -294,15 +287,11 @@ p {
   font-weight: bold;
   font-size: 4.75rem;
   color: white;
-  max-width: 30%;
-  margin-left: 10rem;
 }
 
 .banner-quote {
   font-size: 1.5rem;
   color: white;
-  margin-left: 10rem;
-  max-width: 50%;
 }
 
 .banner-button {
@@ -314,7 +303,6 @@ p {
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
-  margin-left: 10rem;
   border-radius: 0.1rem;
 }
 
@@ -769,4 +757,17 @@ path.color1 {
   .xl-min-height-carousel {
     height: 15rem;    
   }
+}
+
+.icon-logo {
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  display: block;
+  z-index: 3;
+  text-indent: -9999px;
+  width: 6.5rem;
+  height: 9.5rem;
+  background: url('/static/images/WWF_logo.svg');
+  background-size: 100% 100%;
 }

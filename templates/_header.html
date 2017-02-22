@@ -1,5 +1,7 @@
 <header id="navbar" class="z1 header {{header_class if header_class else white-background-color}} flex items-center justify-around">
-  <img class="icon-logo" src='/static/images/WWF_logo.svg'/>
+  <a class="navbar-brand" href="{{ '/'|url(alt) }}">
+    <span class="icon-logo"></span>
+  </a>
   <div class="col-8 mx-auto {{nav_links}}">
     <ul class="menu flex flex-row list-reset justify-around xs-hide sm-hide md-hide ml4">
       <li><a class="flex items-center" href="#">About PA-BAT</a></li>
