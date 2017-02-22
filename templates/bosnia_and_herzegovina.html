@@ -5,10 +5,10 @@
 
 {% block body %}
 <div class="banner bosnian-banner-image flex items-start flex-column justify-center">
-  <h1 class="banner-title lg-ml10 mx-auto col-10 lg-col-6">Bosnia & Herzegovina</h1>
-  <p class="banner-quote mt3 lg-ml10 mx-auto col-10 lg-col-6">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</p>
+  <h1 class="banner-title lg-ml10 mx-auto col-10 lg-col-6">{{ this.h1_title }}</h1>
+  <p class="banner-quote mt3 lg-ml10 mx-auto col-10 lg-col-6">{{ this.banner_message }}</p>
   <a href="#content" class="block banner-button bosnian-border-gradient flex items-center justify-center mt3 lg-ml10 mx-auto">
-    <p class="mx3 default-color-1">Find out more</p>
+    <p class="mx3 default-color-1">{{ this.banner_button_text }}</p>
   </a>
 </div>
 <div id="content" class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
@@ -16,13 +16,13 @@
     <div class="p4 flex-wrap flex items-center">
       <div class="flex items-center">
         <i class="mr3 icon-tourism country-icon bosnian-color-3"/></i>
-        <h2 class="country-h1 bosnian-color-1">Turizam</h2>
+        <h2 class="country-h1 bosnian-color-1">{{ this.fact_1_title }}</h2>
       </div>
-      <h3 class="country-h2 bosnian-color-3 mt3">Broj posjetitelja</h3>
+      <h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_1_subtitle }}</h3>
       <div>
-        <p class="my3 country-text">Trenutno je turistički sektor u BiH u početnoj fazi razvoja i prihodi od turizma u BiH su trenutno daleko ispod prosječnih prihoda konkurentnih zemalja. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji.</p>
+        <p class="my3 country-text">{{ this.fact_1_copy }}</p>
 
-        <a class="my3 bosnian-color-1" href="#">Na koji način riješiti evidentne nedostatke turističke ponude i infrastrukture u zaštićenim područjima?</a>
+        <a class="my3 bosnian-color-1" href="#">{{ this.fact_1_question }}</a>
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@
       <div class="p4 flex items-center justify-center">
         <div class="donut" id="pie2" data-donut="2"></div>
       </div>
-      <p class="capture-color capture">2% udio turizma u BDP-u Bosne i Hercegovine</p>
+      <p class="capture-color capture">{{ this.fact_1_caption }}</p>
     </div>
   </div>
 </div>
@@ -41,13 +41,13 @@
       <div class="p4 flex-wrap flex items-center">
         <div class="flex items-center">
           <i class="mr3 icon-jobs country-icon bosnian-color-3"></i>
-          <h2 class="country-h1 bosnian-color-1">Poslovi</h2>
+          <h2 class="country-h1 bosnian-color-1">{{ this.fact_2_title }}</h2>
         </div>
-        <h3 class="country-h2 bosnian-color-3 mt3">Poslovi vezani uz održavanje prirode</h3>
+        <h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_2_subtitle }}</h3>
         <div>
-          <p class="my3 country-text">BiH je teško pogođena nezaposlenošću (stopa nezaposlenosti iznosi 24,2%) i u tim okvirima ova brojka je  važna. Osim ekonomskih koristi, radna mjesta u ZP-ovima nude i mnoge druge društvene dobrobiti poput prilika za formalno i neformalno obrazovanje lokalnog stanovništva.</p>
+          <p class="my3 country-text">{{ this.fact_2_copy }}</p>
 
-          <a class="my3 bosnian-color-1" href="#">Mogućnosti zapošljavanja uveliko ovise o praksi upravljanja. Jesu li zaštićena područja prilagođena modernim pristupima u menadžmentu?</a>
+          <a class="my3 bosnian-color-1" href="#">{{ this.fact_2_question }}</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
         <div class="visitor-wrapper">
           <i class="icon-visitors croatian-background-color-3"></i>
         </div>
-        <p class="capture-color capture mt3">300 ljudi zaposlenih u zaštićenim područjima (177 ljudi u Republici Srpskoj i 132 u FBiH).</p>
+        <p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
       </div>
     </div>
   </div>
@@ -67,20 +67,20 @@
     <div class="p4 flex-wrap flex items-center">
       <div class="flex items-center">
         <i class="mr3 icon-fresh-water country-icon bosnian-color-3"></i>
-        <h2 class="country-h1 bosnian-color-1">Vodni resursi</h2>
+        <h2 class="country-h1 bosnian-color-1">{{ this.fact_3_title }}</h2>
       </div>
-      <h3 class="country-h2 bosnian-color-3 mt3">Prihodi od iskorištavanja voda</h3>
+      <h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_3_subtitle }}</h3>
       <div>
-        <p class="my3 country-text">Oko 45% energije proizvedene u BiH nastalo je u hidroelektranama. Svake godine hidroelektrane u BiH prosječno proizvedu energiju u vrijednosti od 350 miliona EUR, a zauzvrat, dobrobiti za lokalnu zajednicu su malobrojne, naročito ako se posmatra dugoročno.</p>
+        <p class="my3 country-text">{{ this.fact_3_copy }}</p>
 
-        <a class="my3 bosnian-color-1" href="#">Postoji li dovoljna svijest o uslugama ekosistema koje pružaju vode i močvarna područja?</a>
+        <a class="my3 bosnian-color-1" href="#">{{ this.fact_3_question }}</a>
       </div>
     </div>
   </div>
   <div class="col-12 lg-col-6 flex items-center justify-center">
       <div class="p4 flex-wrap flex-column flex items-center justify-center">
         <div class="chart px-3 py-3" id="chart9200"></div>
-        <p class="capture-color capture mt3">Bosna i Hercegovina s više od 9.200 m3 vode po glavi stanovnika najbogatija je zemlja pitkom vodom u regiji i među deset najbogatijih zemalja u Europi</p>
+        <p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
       </div>
     </div>
 </div>
@@ -90,12 +90,12 @@
       <div class="p4 flex-wrap flex items-center">
         <div class="flex items-center">
           <i class="mr3 icon-forrest country-icon bosnian-color-3"></i>
-          <h2 class="country-h1 bosnian-color-1">Šumarstvo</h2>
+          <h2 class="country-h1 bosnian-color-1">{{ this.fact_4_title }}</h2>
         </div>
-        <h3 class="country-h2 bosnian-color-3 mt3">Raspodijela prihoda</h3>
+        <h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_4_subtitle }}</h3>
         <div>
-          <p class="my3 country-text">Od 2012., WWF, u suradnji sa IKEA-om i kroz certificiranje šuma (FSC), pokušava smanjiti nezakonitu sječu i promovirati odgovoran šumski menadžment kako bi se podržao održivi razvoj u Bosni i Hercegovini.</p>
-          <a class="my3 bosnian-color-1" href="#">Gdje leži prilika za ekonomski razvoj u zaštićenim područjima i oko njih?</a>
+          <p class="my3 country-text">{{ this.fact_4_copy }}</p>
+          <a class="my3 bosnian-color-1" href="#">{{ this.fact_4_question }}</a>
         </div>
       </div>
     </div>
@@ -104,14 +104,14 @@
         <div class="p4 flex items-center justify-center">
           <div class="donut" id="pie63" data-donut="63"></div>
         </div>
-        <p class="capture-color capture">63% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.</p>
+        <p class="capture-color capture">{{ this.fact_4_caption }}</p>
       </div>
     </div>
   </div>
 </div>
 <div class="cta-image-holder bosnian-cta-image flex items-center justify-center">
   <a href="#" class="block cta-white-button flex items-center justify-center">
-    <p class="mx3 default-color-1">Let's solve challenges together</p>
+    <p class="mx3 default-color-1">{{ this.cta_button_text }}</p>
   </a>
 </div>
 {% endblock %}
