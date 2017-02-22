@@ -90,6 +90,15 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
 
 jQuery(document).ready(function(){
+  // Check if correct localization string
+
+  if (window.location.pathname.split('/')[1] == 'hr') {
+    $('.local-dropdown button span').html('HR')
+  } else {
+    $('.local-dropdown button span').html('EN')
+  }
+
+
   /**
    * Check if first li element is hidden
    * then show
