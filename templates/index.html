@@ -6,34 +6,34 @@
 {% block body %}
 <div class="index-banner flex justify-center items-center flex-column" style="">
   <div class="col-6">
-    <h1 class="index-banner-quote center">Recognize the value of our nature</h1>
+    <h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
   </div>
   <div class="col-4 mb3">
     <div id="carousel">
       <ul id="carouselNav">
         <li>
-          <p class="default-color-1 center">Dinaric Arc ecoregion is consisted out of Dinaric Alps, the Dalmatian coast and the Adriatic Sea, and it hosts well-preserved forests, a high proportion of endemic plants, important freshwater ecosystems, rich marine habitats and fishing grounds, and populations of large carnivores (lynx, brown bear, and wolf).</p> 
+          <p class="default-color-1 center">{{ this.message_1 }}</p> 
         </li>
         <li>
-          <p class="default-color-1 center">Low-intensity farming practices have created semi-natural habitats throughout the Mediterranean region which integrates forest, pasture and cropland, and provide a home for unique sets of species. These complex mosaics are still present throughout the Dinaric Arc.</p>
+          <p class="default-color-1 center">{{ this.message_2 }}</p>
         </li>
         <li>
-          <p class="default-color-1 center">This region is famous for its unique karstic geology and cave habitats with a diversity of invertebrates, fish, amphibians, and reptiles. Livanjsko Polje in western Bosnia is the largest karstic field in the world. The cave system represents the largest underground river system in Europe and an extremely important source of water for the entire region.</p>
+          <p class="default-color-1 center">{{ this.message_3 }}</p>
         </li>
         <li>
-          <p class="default-color-1 center">Large carnivores use Dinaric mountains as an ecological corridor between the Alps and the mountains of south-eastern Europe. Some of the untouched mountains in Europe are located in the southern end of the region - Prokletije Massif and the “Albanian Alps”.</p>
+          <p class="default-color-1 center">{{ this.message_4 }}</p>
         </li>
         <li>
-          <p class="default-color-1 center">The most extended network of subterranean rivers and lakes in Europe, as well as wetlands of international importance, such as the Neretva delta (Bosnia and Herzegovina/Croatia), and Skadar/Shkodra Lake (Montenegro/Albania), can be found there. They are important nesting populations of endangered bird species, such as Dalmatian pelican, and are an important stopover and wintering site for migrating birds. The river Tara is well known for forming a long and wild canyon which is second deepest in the world.</p>
+          <p class="default-color-1 center">{{ this.message_5 }}</p>
         </li>
         <li>
-          <p class="default-color-1 center">The Eastern Adriatic coast has hundreds of islands and diverse coastal/marine ecosystems which are feeding and breeding grounds for cetaceans, sea birds, and marine turtles, and still, includes unspoilt tracts with limited mass tourism development.</p>
+          <p class="default-color-1 center">{{ this.message_6 }}</p>
         </li>
       </ul>
     </div>
   </div>
   <a href="#" class="index-banner-button flex items-center justify-center my3 px3">
-    <p class="default-color-1">View map for more info</p>
+    <p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
   </a>
 
   <ul class="my3 center">
@@ -78,30 +78,30 @@
 </div>
 <div class="facts-container py3 lg-flex justify-center xl-px10">
   <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">Number of visitors</p>
+    <p class="index-h3">{{ this.facts_card_1_title }}</p>
     <div class="mt4 index-visitor-wrapper">
       <div class="index-counter bosnian-color-1" id="counter">2590320
       </div>
       <i class="icon-visitors bosnian-background-color-1"></i>
     </div>
     <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">More info</p>
+      <p class="">{{ this.facts_cta }}</p>
     </a>
   </div>
   <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">Profit distribution</p>
+    <p class="index-h3">{{ this.facts_card_2_title }}</p>
     <div class="p4 flex items-center justify-center">
       <div class="donut" id="pie77" data-donut="77"></div>
     </div>
     <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">More info</p>
+      <p class="">{{ this.facts_cta }}</p>
     </a>
   </div>
   <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">Frewhwater utilization profit</p>
+    <p class="index-h3">{{ this.facts_card_3_title }}</p>
     <div class="chart px-3 py-3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
     <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">More info</p>
+      <p class="">{{ this.facts_cta }}</p>
     </a>
   </div>
 </div>
@@ -109,23 +109,23 @@
   <p class="background-text xs-hide md-hide">Learn more</p>
   <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
     <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
+    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
     <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">Learn more</p>
+      <p class="">{{ this.learn_more_cta }}</p>
     </a>
   </div>
   <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
     <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
+    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
     <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">Learn more</p>
+      <p class="">{{ this.learn_more_cta }}</p>
     </a>
   </div>
   <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
     <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
+    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
     <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">Learn more</p>
+      <p class="">{{ this.learn_more_cta }}</p>
     </a>
   </div>
 </div>

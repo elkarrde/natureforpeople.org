@@ -25,7 +25,7 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
         y_pos = $navbar.offset().top,
         height = $navbar.height();
         $navbar.css('height', '4.5rem')
-    var $l_select = $('#localization-select')  
+    var $l_select = $('.local-dropdown button')  
 
     $(document).scroll(function() {
         var scrollTop = $(this).scrollTop();

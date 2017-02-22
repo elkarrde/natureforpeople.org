@@ -285,6 +285,10 @@ p {
   background-image: url('/static/images/croatian_banner.jpg');
 }
 
+@media (min-width: 64em) {
+  
+}
+
 .banner-title {
   font-family: "Playfair Display";
   font-weight: bold;
@@ -419,19 +423,20 @@ p {
 
 // ---------- Localization button select ----------//
 .local-dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .local-dropdown .local-dropdown-menu {
-    position: absolute;
-    top: 100%;
-    display: none;
-    margin: 0;
+  position: absolute;
+  top: 100%;
+  display: none;
+  margin: 0;
 
-    list-style: none; /** Remove list bullets */
-    width: 100%; /** Set the width to 100% of it's parent */
-    padding: 0;
+  list-style: none; /** Remove list bullets */
+  width: 100%; /** Set the width to 100% of it's parent */
+  padding: 0;
 }
 
 .local-dropdown:hover .local-dropdown-menu {
