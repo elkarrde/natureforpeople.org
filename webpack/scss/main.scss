@@ -35,6 +35,9 @@ $kosovian-color-3: #F0733D;
 $macedonian-color: #CD4141;
 $macedonian-color-2: #AB3434;
 $macedonian-color-3: #E06C6C;
+$albanian-color: #7AB638;
+$albanian-color-2: #0A8C4D;
+$albanian-color-3: #CBBE10;
 
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
@@ -147,6 +150,30 @@ p {
 
 .croatian-color-3 {
   color: $croatian-color-3;
+}
+
+.albanian-background-color-1 {
+  background-color: $albanian-color;
+}
+
+.albanian-background-color-2 {
+  background-color: $albanian-color-2;
+}
+
+.albanian-background-color-3 {
+  background-color: $albanian-color-3;
+}
+
+.albanian-color-1 {
+  color: $albanian-color;
+}
+
+.albanian-color-2 {
+  color: $albanian-color-2;
+}
+
+.albanian-color-3 {
+  color: $albanian-color-3;
 }
 
 .serbian-background-color-1 {
@@ -352,6 +379,26 @@ p {
   }
 }
 
+.nav-links-albanian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $albanian-color-2;
+    }
+  }
+}
+
 .nav-links-macedonian {
   height: inherit;
   li {
@@ -534,6 +581,10 @@ p {
   background-image: url('/static/images/Golemo-Ezero-(c)-Goran-Stefanovski-Macedonia.jpg');
 }
 
+.albanian-banner-image {
+  background-image: url('/static/images/podaci-TBA-Albania.jpg');
+}
+
 .banner-title {
   font-family: "Playfair Display";
   font-weight: bold;
@@ -604,6 +655,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
   border-image: linear-gradient(to right, $macedonian-color-3 0%, $macedonian-color 100%);
+  border-image-slice: 1;
+}
+
+.albanian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
+  border-image: linear-gradient(to right, $albanian-color-3 0%, $albanian-color 100%);
   border-image-slice: 1;
 }
 
@@ -699,6 +757,10 @@ p {
 
 .macedonian-cta-image {
   background-image: url('/static/images/Macednia_CTA_image@2x.png');
+}
+
+.albanian-cta-image {
+  background-image: url('/static/images/Albania_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -800,6 +862,47 @@ p {
 }
 #bosnian-nav ul ul li a:hover {
     color: $bosnian-color-3;
+}
+
+//////////////////////////
+
+#albanian-nav {
+    background-color: $albanian-color-2;
+}
+#albanian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#albanian-nav ul li {
+    display: inline-block;
+}
+#albanian-nav ul li:hover {
+    background-color: $albanian-color;
+}
+#albanian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#albanian-nav ul li:hover ul {
+    display: block;
+}
+#albanian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $albanian-color-2;
+    border: 5px solid $albanian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#albanian-nav ul ul li {
+    display: block;
+}
+#albanian-nav ul ul li a:hover {
+    color: $albanian-color-3;
 }
 
 //////////////////////////
