@@ -21,22 +21,16 @@
   <a href="#" class="index-banner-button flex items-center justify-center my3 px3 xs-hide sm-hide">
     <p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
   </a>
-  <ul class="my3 center">
-    <li class="my1"><a href="{{ '/croatia'|url(alt) }}">Hrvatska</a></li>
-    <li class="my1"><a href="{{ '/bosnia_and_herzegovina'|url(alt) }}">Bosna i Hercegovina</a></li>
-    <li class="my1"><a href="{{ '/serbia'|url(alt) }}">Srbija</a></li>
-    <li class="my1"><a href="{{ '/slovenia'|url(alt) }}">Slovenija</a></li>
-    <li class="my1"><a href="{{ '/montenegro'|url(alt) }}">Crna Gora</a></li>
-    <li class="my1"><a href="{{ '/kosovo'|url(alt) }}">Kosovo</a></li>
-    <li class="my1"><a href="{{ '/macedonia'|url(alt) }}">Makedonija</a></li>
-    <li class="my1"><a href="{{ '/albania'|url(alt) }}">Albanija</a></li>
-  </ul>
-</div>
-  <div class="map-wrapper" style="height: 80vh; width: 100%; overflow: hidden; margin-top: -15vh">
-	  <div style="width:120%; margin-left: -10%" class="map-inner-wrapper">
-		  {% include "_countries.html" %}
+
+  <div class="map-wrapper">
+	  {% include "_countries.html" %}
+	  <div class="big-map-desc">
+		  <h2 class="country-name">Croatia</h2>
+		  <span class="country-desc">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</span>
 	  </div>
-	  </div>
+	  <div class="arrow-austria">GORE LIJEVO</div>
+	  <div class="arrow-greece">DOLE DESNO</div>
+  </div>
 </header>
 <div class="flex justify-center py3 sm-hide xs-hide">
   <p class="background-text">{{ this.background_text_about }}</p>
