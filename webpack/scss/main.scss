@@ -876,8 +876,63 @@ path.color1 {
   background-size: 100% 100%;
 }
 
-.map-wrapper .country {
-	&:hover {
+.map-wrapper {
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding-top: 70%;
+
+	.big-map {
+		position: absolute;
+		opacity: 0.5;
+		top: 0;
+
+		.country {
+			.flag-icon {
+				cursor: pointer;
+				z-index: 99;
+			}
+		}
+	}
+
+	.big-map-desc {
+		position: absolute;
+		top: 40%;
+		left: 10%;
+		width: 30%;
+
+		.country-name {
+			font-family: "Playfair Display";
+			font-weight: 700;
+			font-size: 7rem;
+			color: white;
+		}
+
+		.country-desc {
+			font-family: "Raleway";
+			font-size: 1.1rem;
+			font-weight: 200;
+			line-height: 1.5;
+			color: white;
+		}
+	}
+
+	.arrow-austria {
+		position: absolute;
+		font-size: 3rem;
+		width: 5%;
+		top: 5%;
+		left: 5%;
+		cursor: pointer;
+	}
+
+	.arrow-greece {
+		position: absolute;
+		font-size: 3rem;
+		width: 5%;
+		top: 85%;
+		left: 85%;
 		cursor: pointer;
 	}
 }
