@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% with header_class="default-background-color-1 default-color-1", select_colors="default-color-1 default-background-color-2", nav_id="default-nav", nav_links="nav-links-default" %}
+  {% include "_header.html" %}
+{% endwith %}
+
+{% block body %}
+  <div class="sm-col-8 flex flex-wrap" style="padding-top: 8rem;">
+    <div id="chart_1" class="pabat-chart"></div>
+    <div id="chart_2" class="pabat-chart"></div>
+    <div id="chart_3" class="pabat-chart"></div>
+    <div id="chart_4" class="pabat-chart"></div>
+  </div>
+{% endblock %}

@@ -4,6 +4,7 @@ d3 = require('d3');
 c3 = require('c3');
 
 animationHelpers = require('./animationHelpers');
+graphs = require('./graphs')
 
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 
@@ -147,4 +148,9 @@ jQuery(document).ready(function(){
 
 		console.log(isLeft, marginLeft)
 	})
+
+  graphs.generateGraphOne('HRV')
+  graphs.generateGraphTwo('HRV')
+  graphs.generateGraphThree('HRV')
+  graphs.generateGraphFour('HRV', 'PP Lonjsko Polje')
 });
