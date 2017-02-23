@@ -29,6 +29,9 @@ $slovenian-color-3: #56ADC2;
 $montenegran-color: #F5A623;
 $montenegran-color-2: #EA8B25;
 $montenegran-color-3: #D62C2C;
+$kosovian-color: #6E386C;
+$kosovian-color-2: #492148;
+$kosovian-color-3: #F0733D;
 
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
@@ -167,6 +170,30 @@ p {
   color: $serbian-color-3;
 }
 
+.kosovian-background-color-1 {
+  background-color: $kosovian-color;
+}
+
+.kosovian-background-color-2 {
+  background-color: $kosovian-color-2;
+}
+
+.kosovian-background-color-3 {
+  background-color: $kosovian-color-3;
+}
+
+.kosovian-color-1 {
+  color: $kosovian-color;
+}
+
+.kosovian-color-2 {
+  color: $kosovian-color-2;
+}
+
+.kosovian-color-3 {
+  color: $kosovian-color-3;
+}
+
 .montenegran-background-color-1 {
   background-color: $montenegran-color;
 }
@@ -294,6 +321,26 @@ p {
     }
     &:hover {
       background-color: $bosnian-color-2;
+    }
+  }
+}
+
+.nav-links-kosovian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $kosovian-color-2;
     }
   }
 }
@@ -432,6 +479,10 @@ p {
   background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg');
 }
 
+.kosovian-banner-image {
+  background-image: url('/static/images/Sharri-National-Park(c)Sharri-National-Park-Kosovo.jpg');
+}
+
 .banner-title {
   font-family: "Playfair Display";
   font-weight: bold;
@@ -488,6 +539,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
   border-image: linear-gradient(to right, $montenegran-color-3 0%, $montenegran-color 100%);
+  border-image-slice: 1;
+}
+
+.kosovian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
+  border-image: linear-gradient(to right, $kosovian-color-3 0%, $kosovian-color 100%);
   border-image-slice: 1;
 }
 
@@ -575,6 +633,10 @@ p {
 
 .montenegran-cta-image {
   background-image: url('/static/images/Montenegro_CTA_image@2x.png');
+}
+
+.kosovian-cta-image {
+  background-image: url('/static/images/Kosovo_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -676,6 +738,47 @@ p {
 }
 #bosnian-nav ul ul li a:hover {
     color: $bosnian-color-3;
+}
+
+//////////////////////////
+
+#kosovian-nav {
+    background-color: $kosovian-color-2;
+}
+#kosovian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#kosovian-nav ul li {
+    display: inline-block;
+}
+#kosovian-nav ul li:hover {
+    background-color: $kosovian-color;
+}
+#kosovian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#kosovian-nav ul li:hover ul {
+    display: block;
+}
+#kosovian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $kosovian-color-2;
+    border: 5px solid $kosovian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#kosovian-nav ul ul li {
+    display: block;
+}
+#kosovian-nav ul ul li a:hover {
+    color: $kosovian-color-3;
 }
 
 //////////////////////////
