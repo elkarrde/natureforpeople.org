@@ -26,6 +26,9 @@ $serbian-color-3: #58C186;
 $slovenian-color: #27A04C;
 $slovenian-color-2: #0A8C4D;
 $slovenian-color-3: #56ADC2;
+$montenegran-color: #F5A623;
+$montenegran-color-2: #EA8B25;
+$montenegran-color-3: #D62C2C;
 
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
@@ -164,6 +167,30 @@ p {
   color: $serbian-color-3;
 }
 
+.montenegran-background-color-1 {
+  background-color: $montenegran-color;
+}
+
+.montenegran-background-color-2 {
+  background-color: $montenegran-color-2;
+}
+
+.montenegran-background-color-3 {
+  background-color: $montenegran-color-3;
+}
+
+.montenegran-color-1 {
+  color: $montenegran-color;
+}
+
+.montenegran-color-2 {
+  color: $montenegran-color-2;
+}
+
+.montenegran-color-3 {
+  color: $montenegran-color-3;
+}
+
 .slovenian-background-color-1 {
   background-color: $slovenian-color;
 }
@@ -267,6 +294,26 @@ p {
     }
     &:hover {
       background-color: $bosnian-color-2;
+    }
+  }
+}
+
+.nav-links-montenegran {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $montenegran-color-2;
     }
   }
 }
@@ -381,6 +428,10 @@ p {
   background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg');
 }
 
+.montenegran-banner-image {
+  background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg');
+}
+
 .banner-title {
   font-family: "Playfair Display";
   font-weight: bold;
@@ -430,6 +481,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
   border-image: linear-gradient(to right, $slovenian-color-3 0%, $slovenian-color 100%);
+  border-image-slice: 1;
+}
+
+.montenegran-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
+  border-image: linear-gradient(to right, $montenegran-color-3 0%, $montenegran-color 100%);
   border-image-slice: 1;
 }
 
@@ -513,6 +571,10 @@ p {
 
 .slovenian-cta-image {
   background-image: url('/static/images/Slovenia_CTA_image@2x.png');
+}
+
+.montenegran-cta-image {
+  background-image: url('/static/images/Montenegro_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -655,6 +717,47 @@ p {
 }
 #croatian-nav ul ul li a:hover {
     color: $croatian-color-3;
+}
+
+//////////////////////////
+
+#montenegran-nav {
+    background-color: $montenegran-color-2;
+}
+#montenegran-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#montenegran-nav ul li {
+    display: inline-block;
+}
+#montenegran-nav ul li:hover {
+    background-color: $montenegran-color;
+}
+#montenegran-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#montenegran-nav ul li:hover ul {
+    display: block;
+}
+#montenegran-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $montenegran-color-2;
+    border: 5px solid $montenegran-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#montenegran-nav ul ul li {
+    display: block;
+}
+#montenegran-nav ul ul li a:hover {
+    color: $montenegran-color-3;
 }
 
 //////////////////////////
