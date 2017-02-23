@@ -32,6 +32,9 @@ $montenegran-color-3: #D62C2C;
 $kosovian-color: #6E386C;
 $kosovian-color-2: #492148;
 $kosovian-color-3: #F0733D;
+$macedonian-color: #CD4141;
+$macedonian-color-2: #AB3434;
+$macedonian-color-3: #E06C6C;
 
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
@@ -168,6 +171,30 @@ p {
 
 .serbian-color-3 {
   color: $serbian-color-3;
+}
+
+.macedonian-background-color-1 {
+  background-color: $macedonian-color;
+}
+
+.macedonian-background-color-2 {
+  background-color: $macedonian-color-2;
+}
+
+.macedonian-background-color-3 {
+  background-color: $macedonian-color-3;
+}
+
+.macedonian-color-1 {
+  color: $macedonian-color;
+}
+
+.macedonian-color-2 {
+  color: $macedonian-color-2;
+}
+
+.macedonian-color-3 {
+  color: $macedonian-color-3;
 }
 
 .kosovian-background-color-1 {
@@ -321,6 +348,26 @@ p {
     }
     &:hover {
       background-color: $bosnian-color-2;
+    }
+  }
+}
+
+.nav-links-macedonian {
+  height: inherit;
+  li {
+    padding: 0 1rem;
+    height: inherit;
+    max-width: 15vw;
+    cursor: pointer;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      height: 100%;
+    }
+    &:hover {
+      background-color: $macedonian-color-2;
     }
   }
 }
@@ -483,6 +530,10 @@ p {
   background-image: url('/static/images/Sharri-National-Park(c)Sharri-National-Park-Kosovo.jpg');
 }
 
+.macedonian-banner-image {
+  background-image: url('/static/images/Golemo-Ezero-(c)-Goran-Stefanovski-Macedonia.jpg');
+}
+
 .banner-title {
   font-family: "Playfair Display";
   font-weight: bold;
@@ -546,6 +597,13 @@ p {
   -moz-border-image: -moz-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
   -webkit-border-image: -webkit-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
   border-image: linear-gradient(to right, $kosovian-color-3 0%, $kosovian-color 100%);
+  border-image-slice: 1;
+}
+
+.macedonian-border-gradient {
+  -moz-border-image: -moz-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
+  -webkit-border-image: -webkit-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
+  border-image: linear-gradient(to right, $macedonian-color-3 0%, $macedonian-color 100%);
   border-image-slice: 1;
 }
 
@@ -637,6 +695,10 @@ p {
 
 .kosovian-cta-image {
   background-image: url('/static/images/Kosovo_CTA_image@2x.png');
+}
+
+.macedonian-cta-image {
+  background-image: url('/static/images/Macednia_CTA_image@2x.png');
 }
 
 .cta-white-button {
@@ -738,6 +800,47 @@ p {
 }
 #bosnian-nav ul ul li a:hover {
     color: $bosnian-color-3;
+}
+
+//////////////////////////
+
+#macedonian-nav {
+    background-color: $macedonian-color-2;
+}
+#macedonian-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#macedonian-nav ul li {
+    display: inline-block;
+}
+#macedonian-nav ul li:hover {
+    background-color: $macedonian-color;
+}
+#macedonian-nav ul li a, visited {
+    color: white;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+#macedonian-nav ul li:hover ul {
+    display: block;
+}
+#macedonian-nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: $macedonian-color-2;
+    border: 5px solid $macedonian-color;
+    border-top: 0;
+    margin-left: -5px;
+}
+#macedonian-nav ul ul li {
+    display: block;
+}
+#macedonian-nav ul ul li a:hover {
+    color: $macedonian-color-3;
 }
 
 //////////////////////////
