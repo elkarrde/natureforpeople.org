@@ -1,7 +1,7 @@
 @import "../node_modules/basscss/css/basscss.min.css";
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,500,700|Bitter:400,700|Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 @import "_icons.scss";
 
 @custom-media --breakpoint-sm (min-width: 40em);
@@ -370,7 +370,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -390,7 +390,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -410,7 +410,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -430,7 +430,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -450,7 +450,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -470,7 +470,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -490,7 +490,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -510,7 +510,7 @@ p {
       color: #fff;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -530,7 +530,7 @@ p {
       color: #4A4A4A;
       text-transform: uppercase;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 900;
       height: 100%;
     }
     &:hover {
@@ -587,7 +587,7 @@ p {
 
 .banner-title {
   font-family: "Playfair Display";
-  font-weight: bold;
+  font-weight: 900;
   font-size: 4.75rem;
   color: white;
 }
@@ -603,7 +603,7 @@ p {
   min-height: 4rem;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 0.1rem;
@@ -668,14 +668,14 @@ p {
 .country-h1 {
   font-size: 3.75rem;
   opacity: 0.2;
-  font-weight: bold;
+  font-weight: 900;
   font-family: "Playfair Display";
   line-height: 4rem;
 }
 
 .country-h2 {
   font-size: 1.75rem;
-  font-weight: bold;
+  font-weight: 900;
   font-family: "Playfair Display";
   line-height: 4rem;
 }
@@ -692,12 +692,12 @@ p {
 
 .index-h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .index-h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .second-container-background {
@@ -717,7 +717,7 @@ p {
   color: #4A4A4A;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .copyright {
@@ -769,7 +769,7 @@ p {
   min-height: 4rem;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -1209,7 +1209,7 @@ p {
 .counter {
   position: absolute;
   font-size: 7rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .capture {
@@ -1243,7 +1243,7 @@ path.color1 {
   color: $default-color-3;
   font-size: 12rem;
   font-family: "Playfair Display";
-  font-weight: bold;
+  font-weight: 900;
   opacity: 0.2;
   position: absolute;
   left: 0;
@@ -1266,7 +1266,7 @@ path.color1 {
   min-height: 4rem;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 0.1rem;
@@ -1279,7 +1279,7 @@ path.color1 {
 .index-counter {
   position: absolute;
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .index-visitor-wrapper {
@@ -1289,11 +1289,11 @@ path.color1 {
 
 .index-banner {
   background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
-  padding-top: 15rem;
+  padding-top: 7rem;
 }
 
 .index-banner-quote {
-  font-weight: bold;
+  font-weight: 900;
   color: white;
   text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
   font-family: "Playfair Display";
@@ -1308,7 +1308,7 @@ path.color1 {
   min-height: 4rem;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
 }
@@ -1323,7 +1323,7 @@ path.color1 {
   min-height: 4rem;
   text-transform: uppercase;
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1rem;
   text-decoration: none;
   border-radius: 0.1rem;
@@ -1350,27 +1350,27 @@ path.color1 {
 }
 
 .height-carousel {
-  height: 15rem;
+  height: 12rem;
 }
 
 @media (min-width: 40em) {
   .sm-min-height-carousel {
-    height: 20rem;
+    height: 12rem;
   }
 }
 @media (min-width: 52em) {
   .md-min-height-carousel {
-    height: 20rem;
+    height: 12rem;
   }
 }
 @media (min-width: 64em) {
   .lg-min-height-carousel {
-    height: 25rem;
+    height: 12rem;
   }
 }
 @media (min-width: 76em) {
   .xl-min-height-carousel {
-    height: 15rem;
+    height: 12rem;
   }
 }
 
