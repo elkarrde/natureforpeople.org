@@ -100,7 +100,6 @@ jQuery(document).ready(function(){
 		$('.local-dropdown button span').html('EN')
 	}
 
-
 	// Check if first li element is hidden then show
 	if( jQuery('#carouselNav li:first-child').is(':hidden') ) {
 		// Toggle visibility
@@ -223,4 +222,5 @@ $( document.body ).on( 'click', '.pa-chooser-menu li', function( event ) {
 
 	graphs.generateGraphFour(country, choosen_pa)
 	graphs.generateGraphFive(country, choosen_pa)
+	graphs.generateGraphSix(country, choosen_pa)
 });

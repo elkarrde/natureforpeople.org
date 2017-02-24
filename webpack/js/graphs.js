@@ -596,6 +596,137 @@ function generateGraphFive(country, pa) {
 }
 
 
+function graphSix(dataset, country, pa) {
+
+  var pas = dataset[country][pa]
+  if (_.isEmpty(pas)) {
+    return null
+  }
+
+  var results_eco = {}
+  var results_egz = {}
+
+  var questions_g1 = ['Flood prevention', 'Genetic material', 'Formal & informal education',
+                      'Specific site value', 'Cultural & historical values', 'Nature conservation',
+                      'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
+                      'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood',
+                      'Climate change mitigation', 'Commercial & non-commercial water use',
+                      'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
+                      'Nature materials', 'Soil stabilization', 'Medicinal herbs']
+
+  for (var i in questions_g1) {
+    question = questions_g1[i]
+    for (var stakeholder in pas[question]) {
+      if (pas[question][stakeholder].Eco !== undefined) {
+        if ((pas[question][stakeholder].Eco.potential == 1 && (pas[question][stakeholder].Eco.value == 1 || pas[question][stakeholder].Eco.value == 2))) {
+          if (results_eco[question] === undefined) {
+            results_eco[question] = 1
+          } else {
+            results_eco[question] += 1
+          }
+        }
+      } 
+      if (pas[question][stakeholder].Eco !== undefined) {
+        if ((pas[question][stakeholder].Eco.potential == 1 && pas[question][stakeholder].Eco.value == 0)) {
+          if (results_egz[question] === undefined) {
+            results_egz[question] = 1
+          } else {
+            results_egz[question] += 1
+          }
+        }
+      }
+    }
+  }
+
+  eco = {}
+  egz = {}
+
+  for (var sector in results_eco) {
+    eco[sector] = Object.keys(results_eco[sector]).length
+  }
+
+  for (var sector in results_egz) {
+    egz[sector] = Object.keys(results_egz[sector]).length
+  }
+
+  return [results_eco, results_egz]
+}
+
+function generateGraphSix(country, pa) {
+  var chartData = graphSix(data, country, pa)
+
+  var eco = chartData[0]
+  var egz = chartData[1]
+
+  var questions_g1 = ['Flood prevention', 'Genetic material', 'Formal & informal education',
+                      'Specific site value', 'Cultural & historical values', 'Nature conservation',
+                      'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
+                      'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood',
+                      'Climate change mitigation', 'Commercial & non-commercial water use',
+                      'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
+                      'Nature materials', 'Soil stabilization', 'Medicinal herbs']
+
+  var egz_line = ['Potential without economic value']
+
+  var eco_line = ['Potential with economic value']
+
+  var stakeholders_line = ['x']
+
+  for (var i in questions_g1) {
+    var qst = questions_g1[i];
+    if (eco[qst] || egz[qst]) {
+      if (egz[qst]) {
+        egz_line.push(egz[qst]); 
+      } else {
+        egz_line.push(0)
+      }
+      if (eco[qst]) {
+        eco_line.push(eco[qst]);
+      } else {
+        eco_line.push(0)
+      }
+      stakeholders_line.push(qst);
+    }
+  }
+
+  var chart = c3.generate({
+    bindto: '#chart_6',
+    padding: {
+      left: 110
+    },
+    data: {
+      x: 'x',
+      columns:
+      [
+        stakeholders_line, egz_line, eco_line
+      ],
+      type: 'bar'
+    },
+    color: {
+      pattern: [ '#007476', '#8dc63f']
+    }, 
+    axis: {
+      rotated: true,
+      x: {
+        type: 'category'
+      }
+    },
+    bar: {
+      width: {
+        ratio: 0.5
+      }
+    },
+    grid: {
+      y: {
+        show: true
+      }
+    },
+    legend: {
+      position: 'inset'
+    }
+  });
+}
+
 
 
 module.exports.generateGraphOne = generateGraphOne;
@@ -603,3 +734,4 @@ module.exports.generateGraphTwo = generateGraphTwo;
 module.exports.generateGraphThree = generateGraphThree;
 module.exports.generateGraphFour = generateGraphFour;
 module.exports.generateGraphFive = generateGraphFive;
+module.exports.generateGraphSix = generateGraphSix;
