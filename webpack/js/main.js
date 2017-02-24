@@ -186,4 +186,5 @@ jQuery(document).ready(function(){
 	graphs.generateGraphTwo('HRV')
 	graphs.generateGraphThree('HRV')
 	graphs.generateGraphFour('HRV', 'PP Lonjsko Polje')
+	graphs.generateGraphFive('HRV', 'PP Lonjsko Polje')
 });

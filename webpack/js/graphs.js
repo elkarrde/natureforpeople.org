@@ -311,15 +311,6 @@ function generateGraphThree(country) {
   });
 }
 
-
-
-
-
-
-
-
-
-
 function graphFour(dataset, country, pa) {
 
   var pas = dataset[country][pa]
@@ -337,9 +328,6 @@ function graphFour(dataset, country, pa) {
                       'Climate change mitigation', 'Commercial & non-commercial water use',
                       'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
                       'Nature materials', 'Soil stabilization', 'Medicinal herbs']
-
-
-
 
   for (var i in questions_g1) {
     question = questions_g1[i]
@@ -382,19 +370,8 @@ function graphFour(dataset, country, pa) {
 function generateGraphFour(country, pa) {
   var chartData = graphFour(data, country, pa)
 
-  console.log(chartData);
-
   var eco = chartData[0]
   var egz = chartData[1]
-
-  console.log(egz['Jobs in Protected Areas'], eco['Jobs in Protected Areas'])
-
-  //'Flood prevention', 'Genetic material', 'Formal & informal education', 'Specific site value', 'Cultural & historical values', 
-  //'Nature conservation', 'Building knowledge', 'Tourism & recreation', 'Pollination & honey production', 'Livestock grazing',
-  //'Fishing', 'Water quality & quantity', 'Hunting', 'Wood', 'Climate change mitigation',
-  //'Commercial & non-commercial water use', 'Traditional agriculture', 'Wild food plants and mushrooms',
-  //'Jobs in Protected Areas', 'Nature materials', 'Soil stabilization', 'Medicinal herbs'
-
 
   var chart = c3.generate({
     bindto: '#chart_4',
@@ -467,7 +444,128 @@ function generateGraphFour(country, pa) {
 
 
 
+
+
+
+function graphFive(dataset, country, pa) {
+
+  var pas = dataset[country][pa]
+  if (_.isEmpty(pas)) {
+    return null
+  }
+
+  var results_eco = {}
+  var results_egz = {}
+
+  var questions_g1 = ['Flood prevention', 'Genetic material', 'Formal & informal education',
+                      'Specific site value', 'Cultural & historical values', 'Nature conservation',
+                      'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
+                      'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood',
+                      'Climate change mitigation', 'Commercial & non-commercial water use',
+                      'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
+                      'Nature materials', 'Soil stabilization', 'Medicinal herbs']
+
+  for (var i in questions_g1) {
+    question = questions_g1[i]
+    for (var stakeholder in pas[question]) {
+      if (pas[question][stakeholder].Eco !== undefined) {
+        if ((pas[question][stakeholder].Eco.value == 2 || pas[question][stakeholder].Eco.value == 1)) {
+          if (results_eco[stakeholder] === undefined) {
+            results_eco[stakeholder] = 1
+          } else {
+            results_eco[stakeholder] += 1
+          }
+        }
+      } 
+      if (pas[question][stakeholder].Exi !== undefined) {
+        if ((pas[question][stakeholder].Exi.value == 2 || pas[question][stakeholder].Exi.value == 1)) {
+          if (results_egz[stakeholder] === undefined) {
+            results_egz[stakeholder] = 1
+          } else {
+            results_egz[stakeholder] += 1
+          }
+        }
+      }
+    }
+  }
+
+  console.log(results_eco, results_egz)
+
+  return [results_eco, results_egz]
+}
+
+function generateGraphFive(country, pa) {
+  var chartData = graphFive(data, country, pa)
+
+  var eco = chartData[0]
+  var egz = chartData[1]
+
+  'Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government',
+  'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'
+
+  var chart = c3.generate({
+    bindto: '#chart_5',
+    padding: {
+      left: 110
+    },
+    data: {
+      x: 'x',
+      columns:
+      [
+        ['x', 'Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government',
+         'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'],
+
+        ['Subsistence', egz['Local people living in the PA'] || 0, egz['Local people living near the PA'] || 0,
+         egz['Civil associations'] || 0, egz['National and regional and local government'] || 0,
+         egz['Non-governmental organizations & experts & scientists'] || 0, egz['National population'] || 0,
+         egz['Global community'] || 0, egz['Bussiness sector'] || 0],
+        ['Economic', eco['Local people living in the PA'] || 0, eco['Local people living near the PA'] || 0,
+         eco['Civil associations'] || 0, eco['National and regional and local government'] || 0,
+         eco['Non-governmental organizations & experts & scientists'] || 0, eco['National population'] || 0,
+         eco['Global community'] || 0, eco['Bussiness sector'] || 0]
+      ],
+      type: 'bar'
+    },
+    color: {
+      pattern: [ '#007476', '#8dc63f']
+    }, 
+    axis: {
+      rotated: true,
+      x: {
+        type: 'category'
+      }
+    },
+    bar: {
+      width: {
+        ratio: 0.5
+      }
+    },
+    grid: {
+      y: {
+        show: true
+      }
+    },
+    legend: {
+      position: 'inset'
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports.generateGraphOne = generateGraphOne;
 module.exports.generateGraphTwo = generateGraphTwo;
 module.exports.generateGraphThree = generateGraphThree;
 module.exports.generateGraphFour = generateGraphFour;
+module.exports.generateGraphFive = generateGraphFive;
