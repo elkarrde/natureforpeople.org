@@ -7,6 +7,8 @@ function generateGraphOne(country) {
   var y_labels = ['Turizam i rekreacija', 'Komercijalna upotreba vode', 'Zapošljavanje u zaštićenom području', 'Kvaliteta i količina vode', 'Zaštita prirode', 'Šumarstvo', "Tradicionalna poljoprivreda", 'Ribarstvo', 'Stočarstvo', 'Lovni turizam', 'Oprašivanje i proizvodnja meda', 'Formalna i neformalna edukacija', 'Istraživanje i nadogradnja znanja', 'Samoniklo jestivo bilje i gljive', 'Prirodni materijali']
   var colors = ['#da1d52', '#743873', '#8dc63f', '#743873', '#8dc63f', '#743873', '#fdbc5f', '#fdbc5f', '#fdbc5f', '#da1d52', '#fdbc5f', '#007476', '#007476', '#fdbc5f', '#743873']
   
+  console.log(results_g1)
+
   for (var i in results_g1) {
     if (results_g1[i] == 0) {
       results_g1.splice(i, 1);
@@ -154,7 +156,31 @@ function graphTwo(dataset, country) {
 function generateGraphTwo(country) {
   var chart_data = graphTwo(data, country)
 
+  var low_eco = chart_data[0]
+  var high_eco = chart_data[1]
+
+  var low_eco_line = ['Low economic value']
+  var high_eco_line = ['High economic value']
+  var stakeholders_line = ['x']
+
   var sectors = ['Bussiness sector', 'National and regional and local government', 'Local people living near the PA', 'Local people living in the PA', 'Civil associations']
+
+  for (var i in sectors) {
+    var stk = sectors[i];
+    if (low_eco[stk] || high_eco[stk]) {
+      if (high_eco[stk]) {
+        high_eco_line.push(high_eco[stk]); 
+      } else {
+        high_eco_line.push(0)
+      }
+      if (low_eco[stk]) {
+        low_eco_line.push(low_eco[stk]);
+      } else {
+        low_eco_line.push(0)
+      }
+      stakeholders_line.push(stk);
+    }
+  }
 
   var chart = c3.generate({
     bindto: '#chart_2',
@@ -164,17 +190,7 @@ function generateGraphTwo(country) {
     data: {
       x: 'x',
       columns:
-      [
-        ['x', 'Poslovni sektor', 'Vlada/javni sektor', ' ',
-         'Stanovništvo u blizini zaštićenog područja', 'Stanovništvo u zaštićenom području', 'Udruženja građana', '  ',
-         'Stručnjaci/ znanstvenici', 'Stanovništvo RH', 'Međunarodna zajednica'],
-        ['Mala ekonomska vrijednost', chart_data[0]['Bussiness sector'] || 0, chart_data[0]['National and regional and local government'] || 0, 0,
-         chart_data[0]['Local people living near the PA'] || 0, chart_data[0]['Local people living in the PA'] || 0, chart_data[0]['Civil associations'] || 0, 0,
-         chart_data[0]['Non-governmental organizations & experts & scientists'] || 0, chart_data[0]['National population'] || 0, chart_data[0]['Global community'] || 0],
-        ['Značajna ekonomska vrijednost', chart_data[1]['Bussiness sector'] || 0, chart_data[1]['National and regional and local government'] || 0, 0,
-         chart_data[1]['Local people living near the PA'] || 0, chart_data[1]['Local people living in the PA'] || 0, chart_data[1]['Civil associations'] || 0, 0,
-         chart_data[1]['Non-governmental organizations & experts & scientists'] || 0, chart_data[1]['National population'] || 0, chart_data[1]['Global community'] || 0]
-      ],
+      [ stakeholders_line, low_eco_line, high_eco_line],
       type: 'bar'
     },
     color: {
