@@ -3,19 +3,22 @@ data_for_graphs = require('./preloadData');
 data = data_for_graphs.timian_data;
 
 function generateGraphOne(country) {
-  var results_g1 = graphOne(data, country)
-  var y_labels = ['Turizam i rekreacija', 'Komercijalna upotreba vode', 'Zapošljavanje u zaštićenom području', 'Kvaliteta i količina vode', 'Zaštita prirode', 'Šumarstvo', "Tradicionalna poljoprivreda", 'Ribarstvo', 'Stočarstvo', 'Lovni turizam', 'Oprašivanje i proizvodnja meda', 'Formalna i neformalna edukacija', 'Istraživanje i nadogradnja znanja', 'Samoniklo jestivo bilje i gljive', 'Prirodni materijali']
-  var colors = ['#da1d52', '#743873', '#8dc63f', '#743873', '#8dc63f', '#743873', '#fdbc5f', '#fdbc5f', '#fdbc5f', '#da1d52', '#fdbc5f', '#007476', '#007476', '#fdbc5f', '#743873']
+  var results_g1_u = graphOne(data, country)
+  var y_labels_u = ['Turizam i rekreacija', 'Komercijalna upotreba vode', 'Zapošljavanje u zaštićenom području', 'Kvaliteta i količina vode', 'Zaštita prirode', 'Šumarstvo', "Tradicionalna poljoprivreda", 'Ribarstvo', 'Stočarstvo', 'Lovni turizam', 'Oprašivanje i proizvodnja meda', 'Formalna i neformalna edukacija', 'Istraživanje i nadogradnja znanja', 'Samoniklo jestivo bilje i gljive', 'Prirodni materijali']
+  var colors_u = ['#da1d52', '#743873', '#8dc63f', '#743873', '#8dc63f', '#743873', '#fdbc5f', '#fdbc5f', '#fdbc5f', '#da1d52', '#fdbc5f', '#007476', '#007476', '#fdbc5f', '#743873']
   
-  console.log(results_g1)
+  var results_g1 = []
+  var y_labels = []
+  var colors = []
 
-  for (var i in results_g1) {
-    if (results_g1[i] == 0) {
-      results_g1.splice(i, 1);
-      y_labels.splice(i, 1);
-      colors.splice(i, 1)
+  for (var i in results_g1_u) {
+    if (results_g1_u[i] != 0) {
+      results_g1.push(results_g1_u[i])
+      y_labels.push(y_labels_u[i])
+      colors.push(colors_u[i])
     } 
   }
+  console.log(results_g1)
 
   results_g1 = [''].concat(results_g1)
   y_labels = ['x'].concat(y_labels)
