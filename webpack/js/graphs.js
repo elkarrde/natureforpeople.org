@@ -261,6 +261,35 @@ function generateGraphThree(country) {
   var with_eco = chartData[1]
   var without_eco = chartData[0]
 
+  var with_eco_line = ['Potential with economic value'];
+  var without_eco_line = ['Potential without economic value']
+  var questions_line = ['x']
+
+  var questions_g1 = ['Flood prevention', 'Genetic material', 'Formal & informal education',
+                      'Specific site value', 'Cultural & historical values', 'Nature conservation',
+                      'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
+                      'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood',
+                      'Climate change mitigation', 'Commercial & non-commercial water use',
+                      'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
+                      'Nature materials', 'Soil stabilization', 'Medicinal herbs']
+
+  for (var i in questions_g1) {
+    var qst = questions_g1[i];
+    if (with_eco[qst] || without_eco[qst]) {
+      if (without_eco[qst]) {
+        without_eco_line.push(without_eco[qst]); 
+      } else {
+        without_eco_line.push(0)
+      }
+      if (with_eco[qst]) {
+        with_eco_line.push(with_eco[qst]);
+      } else {
+        with_eco_line.push(0)
+      }
+      questions_line.push(qst);
+    }
+  }
+
   var chart = c3.generate({
     bindto: '#chart_3',
     padding: {
@@ -270,19 +299,7 @@ function generateGraphThree(country) {
       x: 'x',
       columns:
       [
-        ['x', 'Turizam i rekreacija', 'Stočarstvo', 'Tradicionalna poljoprivreda', 'Zaštita prirode', 'Istraživanje i nadogradnja znanja', 'Kulturne i povijesne vrijednosti', 'Formalna i neformalna edukacija', 'Oprašivanje i proizvodnja meda', 'Komercijalno korištenje vode', 'Zapošljavanje u zaštićenom području', 'Lovni turizam', 'Ljekovito bilje', 'Samoniklo jestivo bilje i gljive', 'Ribarstvo', 'Kvaliteta i količina vode', 'Genetski materijal', 'Ublažavanje klimatskih promijena'],
-        ['Potencijal bez ekonomske vrijednosti', without_eco['Tourism & recreation'] || 0, without_eco['Livestock grazing'] || 0, without_eco['Traditional agriculture'] || 0,
-                                                without_eco['Nature conservation'] || 0, without_eco['Building knowledge'] || 0, without_eco['Cultural & historical values'] || 0,
-                                                without_eco['Formal & informal education'] || 0, without_eco['Pollination & honey production'] || 0, without_eco['Commercial & non-commercial water use'] || 0,
-                                                without_eco['Jobs in PA'] || 0, without_eco['Hunting'] || 0, without_eco['Medicinal herbs'] || 0,
-                                                without_eco['Wild food plants and mushrooms'] || 0, without_eco['Fishing'] || 0, without_eco['Water quality & quantity'] || 0,
-                                                without_eco['Genetic material'] || 0, without_eco['Climate change mitigation'] || 0] || 0,
-        ['Potencijal s ekonomskom vrijednosti', with_eco['Tourism & recreation'] || 0, with_eco['Livestock grazing'] || 0, with_eco['Traditional agriculture'] || 0,
-                                                with_eco['Nature conservation'] || 0, with_eco['Building knowledge'] || 0, with_eco['Cultural & historical values'] || 0,
-                                                with_eco['Formal & informal education'] || 0, with_eco['Pollination & honey production'] || 0, with_eco['Commercial & non-commercial water use'] || 0,
-                                                with_eco['Jobs in PA'] || 0, with_eco['Hunting'] || 0, with_eco['Medicinal herbs'] || 0,
-                                                with_eco['Wild food plants and mushrooms'] || 0, with_eco['Fishing'] || 0, with_eco['Water quality & quantity'] || 0,
-                                                with_eco['Genetic material'] || 0, with_eco['Climate change mitigation'] || 0]
+        questions_line, without_eco_line, with_eco_line
       ],
       type: 'bar'
     },
