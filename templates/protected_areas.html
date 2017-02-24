@@ -4,11 +4,63 @@
 {% endwith %}
 
 {% block body %}
-  <div class="sm-col-8 flex flex-wrap" style="padding-top: 8rem;">
-    <div id="chart_1" class="pabat-chart"></div>
+  <div class="sm-col-8 mx-auto flex flex-wrap" style="padding-top: 8rem;">
+    <div class="flex col-10 mx-auto justify-center">
+      <div>
+        <div class="country-chooser">
+          <!-- trigger button -->
+          <button class="serbian-color-1 macedonian-background-color-2 center border-none flex flex-column justify-center items-center">
+            <span class="mt2">Choose country</span>
+            <i class="icon-arrow-drop-down"></i>
+          </button>
+          <!-- country-chooser menu -->
+          <ul class="country-chooser-menu serbian-color-1 macedonian-background-color-2">
+            <li><a>ALB</a></li>
+            <li><a>BIH</a></li>
+            <li><a>HRV</a></li>
+            <li><a>KOS</a></li>
+            <li><a>MKD</a></li>
+            <li><a>MNE</a></li>
+            <li><a>SRB</a></li>
+            <li><a>SVN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="chart_1" class="pabat-chart mt12"></div>
     <div id="chart_2" class="pabat-chart"></div>
     <div id="chart_3" class="pabat-chart"></div>
+    <!--
     <div id="chart_4" class="pabat-chart"></div>
+    <div id="chart_5" class="pabat-chart"></div>
+    -->
+
+    <div class="flex col-10 mx-auto justify-center">
+      <div>
+        <div class="pa-chooser hide">
+          <!-- trigger button -->
+          <button class="croatian-color-3 bosnian-background-color-2 center border-none flex flex-column justify-center items-center">
+            <span class="mt2">Choose PA</span>
+            <i class="icon-arrow-drop-down"></i>
+          </button>
+          <!-- pa-chooser menu -->
+          <ul class="pa-chooser-menu croatian-color-3 bosnian-background-color-2">
+            <li><a>ALB</a></li>
+            <li><a>BIH</a></li>
+            <li><a>HRV</a></li>
+            <li><a>KOS</a></li>
+            <li><a>MKD</a></li>
+            <li><a>MNE</a></li>
+            <li><a>SRB</a></li>
+            <li><a>SVN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="chart_4" class="pabat-chart mt12"></div>
     <div id="chart_5" class="pabat-chart"></div>
   </div>
 {% endblock %}

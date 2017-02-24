@@ -333,6 +333,10 @@ p {
   margin-top: 7rem;
 }
 
+.mt12 {
+  margin-top: 12rem;
+}
+
 @media (min-width: 76em) {
   .xl-px10 {
     padding-right: 10rem;
@@ -1454,3 +1458,100 @@ path.color1 {
 }
 
 .c3-axis .tick line { display: none; }
+
+///////////////////////////////////////////////////////////////////////
+
+.country-chooser {
+  position: relative;
+  display: inline-block;
+  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.country-chooser .country-chooser-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  margin: 0;
+
+  list-style: none; /** Remove list bullets */
+  width: 100%; /** Set the width to 100% of it's parent */
+  padding: 0;
+}
+
+.country-chooser:hover .country-chooser-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.country-chooser button {
+  font-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow:hidden;
+  cursor: pointer;
+  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/** List Item Styles **/
+.country-chooser a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** List Item Hover Styles **/
+.country-chooser a:hover {
+    background: #BBBBBB;
+}
+//-------------------------------------------------//
+///////////////////////////////////////////////////////////////////////
+
+.pa-chooser {
+  position: relative;
+  display: inline-block;
+  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.pa-chooser .pa-chooser-menu {
+  position: absolute;
+  top: 100%;
+  display: none;
+  margin: 0;
+
+  list-style: none; /** Remove list bullets */
+  width: 100%; /** Set the width to 100% of it's parent */
+  padding: 0;
+}
+
+.pa-chooser:hover .pa-chooser-menu {
+    display: block;
+}
+
+/** Button Styles **/
+.pa-chooser button {
+  font-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow:hidden;
+  cursor: pointer;
+  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/** List Item Styles **/
+.pa-chooser a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** List Item Hover Styles **/
+.pa-chooser a:hover {
+    background: #BBBBBB;
+}
+//-------------------------------------------------//
+
+.hide {
+  display: none;
+}

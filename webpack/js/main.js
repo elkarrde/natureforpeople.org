@@ -182,9 +182,45 @@ jQuery(document).ready(function(){
 	// 	window.clearInterval(interval);
 	// });
 
-	graphs.generateGraphOne('HRV')
-	graphs.generateGraphTwo('HRV')
-	graphs.generateGraphThree('HRV')
-	graphs.generateGraphFour('HRV', 'PP Lonjsko Polje')
-	graphs.generateGraphFive('HRV', 'PP Lonjsko Polje')
+	
+});
+
+
+$( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
+
+	var $target = $( event.currentTarget );
+	country = $target.text();
+
+	graphs.generateGraphOne(country)
+	graphs.generateGraphTwo(country)
+	graphs.generateGraphThree(country)
+
+	protected_areas_by_country = { 'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona',
+																				 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama',
+																				 'NP Shebenik Jabllanica', 'NP Thethi'],
+																 'BIH': ['NP Kozara', 'NP Sutjeska', 'NP Una', 'PP Bijambare', 'PP Hutovo Blato', 'PP Vrelo Bosne'],
+																 'HRV': ['NP Brijuni', 'NP Kornati', 'NP Krka', 'NP Mljet', 'NP Paklenica', 'NP Plitvička Jezera',
+																 				 'NP Risnjak', 'NP Sjeverni Velebit', 'NP Telašćica', 'PP Biokovo', 'PP Kopački Rit',
+																 				 'PP Lastovo', 'PP Lonjsko Polje', 'PP Medvednica', 'PP Papuk', 'PP Velebit',
+																 				 'PP Vransko Jezero', 'PP Žumberak'],
+																 'KOS': ['NP Sharri', 'PP Germia'],
+																 'MKD': ['NP Galičica', 'NP Mavrovo', 'NP Pelister'],
+																 'MNE': ['NP Biogradska Gora', 'NP Durmitor', 'NP Lovćen', 'NP Prokletje', 'NP Skadarsko Jezero'],
+																 'SRB': ['NP Fruška Gora', 'NP Kopaonik', 'NP Tara', 'NP Đerdap', 'PP Gornje Podunavlje', 'PP Vlasina'],
+																 'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje'] }
+
+	$('.pa-chooser').removeClass('hide');
+	$('.pa-chooser ul').empty();
+	for (var i in protected_areas_by_country[country]) {
+		var pa = protected_areas_by_country[country][i];
+		$('.pa-chooser ul').append('<li><a>' + pa + '</a></li>')
+	}
+});
+
+$( document.body ).on( 'click', '.pa-chooser-menu li', function( event ) {
+	var $target = $( event.currentTarget );
+	var choosen_pa = $target.text();
+
+	graphs.generateGraphFour(country, choosen_pa)
+	graphs.generateGraphFive(country, choosen_pa)
 });
