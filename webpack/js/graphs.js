@@ -500,8 +500,33 @@ function generateGraphFive(country, pa) {
   var eco = chartData[0]
   var egz = chartData[1]
 
-  'Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government',
-  'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'
+  var egz_line = ['Subsistence']
+  var eco_line = ['Economic']
+
+  var stakeholders = ['Local people living in the PA', 'Local people living near the PA', 'Civil associations',
+                      'National and regional and local government', 'Non-governmental organizations & experts & scientists',
+                      'National population', 'Global community', 'Bussiness sector']
+
+  var stakeholders_line = ['x']
+
+  for (var i in stakeholders) {
+    var stk = stakeholders[i];
+    if (eco[stk] || egz[stk]) {
+      if (egz[stk]) {
+        egz_line.push(egz[stk]); 
+      } else {
+        egz_line.push(0)
+      }
+      if (eco[stk]) {
+        eco_line.push(eco[stk]);
+      } else {
+        eco_line.push(0)
+      }
+      stakeholders_line.push(stk);
+    }
+  }
+
+  console.log(stakeholders_line, egz_line, eco_line);
 
   var chart = c3.generate({
     bindto: '#chart_5',
@@ -512,17 +537,9 @@ function generateGraphFive(country, pa) {
       x: 'x',
       columns:
       [
-        ['x', 'Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government',
-         'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'],
-
-        ['Subsistence', egz['Local people living in the PA'] || 0, egz['Local people living near the PA'] || 0,
-         egz['Civil associations'] || 0, egz['National and regional and local government'] || 0,
-         egz['Non-governmental organizations & experts & scientists'] || 0, egz['National population'] || 0,
-         egz['Global community'] || 0, egz['Bussiness sector'] || 0],
-        ['Economic', eco['Local people living in the PA'] || 0, eco['Local people living near the PA'] || 0,
-         eco['Civil associations'] || 0, eco['National and regional and local government'] || 0,
-         eco['Non-governmental organizations & experts & scientists'] || 0, eco['National population'] || 0,
-         eco['Global community'] || 0, eco['Bussiness sector'] || 0]
+        stakeholders_line,
+        egz_line,
+        eco_line
       ],
       type: 'bar'
     },
