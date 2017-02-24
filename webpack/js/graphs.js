@@ -373,6 +373,37 @@ function generateGraphFour(country, pa) {
   var eco = chartData[0]
   var egz = chartData[1]
 
+  var questions_g1 = ['Flood prevention', 'Genetic material', 'Formal & informal education',
+                      'Specific site value', 'Cultural & historical values', 'Nature conservation',
+                      'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
+                      'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood',
+                      'Climate change mitigation', 'Commercial & non-commercial water use',
+                      'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA',
+                      'Nature materials', 'Soil stabilization', 'Medicinal herbs']
+
+  var egz_line = ['Subsistence']
+
+  var eco_line = ['Economic']
+
+  var stakeholders_line = ['x']
+
+  for (var i in questions_g1) {
+    var qst = questions_g1[i];
+    if (eco[qst] || egz[qst]) {
+      if (egz[qst]) {
+        egz_line.push(egz[qst]); 
+      } else {
+        egz_line.push(0)
+      }
+      if (eco[qst]) {
+        eco_line.push(eco[qst]);
+      } else {
+        eco_line.push(0)
+      }
+      stakeholders_line.push(qst);
+    }
+  }
+
   var chart = c3.generate({
     bindto: '#chart_4',
     padding: {
@@ -382,25 +413,7 @@ function generateGraphFour(country, pa) {
       x: 'x',
       columns:
       [
-        ['x', 'Flood prevention', 'Genetic material', 'Formal & informal education', 'Specific site value', 'Cultural & historical values',
-         'Nature conservation', 'Building knowledge', 'Tourism & recreation', 'Pollination & honey production',
-         'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood', 'Climate change mitigation',
-         'Commercial & non-commercial water use', 'Traditional agriculture', 'Wild food plants and mushrooms',
-         'Jobs in PA', 'Nature materials', 'Soil stabilization', 'Medicinal herbs'],
-        ['Subsistence', egz['Flood prevention'] || 0, egz['Genetic material'] || 0, egz['Formal & informal education'] || 0,
-         egz['Specific site value'] || 0, egz['Cultural & historical values'] || 0, egz['Nature conservation'] || 0,
-         egz['Building knowledge'] || 0, egz['Tourism & recreation'] || 0, egz['Pollination & honey production'] || 0,
-         egz['Livestock grazing'] || 0, egz['Fishing'] || 0, egz['Water quality & quantity'] || 0, egz['Hunting'] || 0,
-         egz['Wood'] || 0, egz['Climate change mitigation'] || 0, egz['Commercial & non-commercial water use'] || 0,
-         egz['Traditional agriculture'] || 0, egz['Wild food plants and mushrooms'] || 0, egz['Jobs in PA'] || 0,
-         egz['Nature materials'] || 0, egz['Soil stabilization'] || 0, egz['Medicinal herbs'] || 0],
-        ['Economic', eco['Flood prevention'] || 0, eco['Genetic material'] || 0, eco['Formal & informal education'] || 0,
-         eco['Specific site value'] || 0, eco['Cultural & historical values'] || 0, eco['Nature conservation'] || 0,
-         eco['Building knowledge'] || 0, eco['Tourism & recreation'] || 0, eco['Pollination & honey production'] || 0,
-         eco['Livestock grazing'] || 0, eco['Fishing'] || 0, eco['Water quality & quantity'] || 0, eco['Hunting'] || 0,
-         eco['Wood'] || 0, eco['Climate change mitigation'] || 0, eco['Commercial & non-commercial water use'] || 0,
-         eco['Traditional agriculture'] || 0, eco['Wild food plants and mushrooms'] || 0, eco['Jobs in PA'] || 0,
-         eco['Nature materials'] || 0, eco['Soil stabilization'] || 0, eco['Medicinal herbs'] || 0]
+        stakeholders_line, egz_line, eco_line
       ],
       type: 'bar'
     },
@@ -428,24 +441,6 @@ function generateGraphFour(country, pa) {
     }
   });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function graphFive(dataset, country, pa) {
 
@@ -489,8 +484,6 @@ function graphFive(dataset, country, pa) {
     }
   }
 
-  console.log(results_eco, results_egz)
-
   return [results_eco, results_egz]
 }
 
@@ -525,8 +518,6 @@ function generateGraphFive(country, pa) {
       stakeholders_line.push(stk);
     }
   }
-
-  console.log(stakeholders_line, egz_line, eco_line);
 
   var chart = c3.generate({
     bindto: '#chart_5',
@@ -567,16 +558,6 @@ function generateGraphFive(country, pa) {
     }
   });
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
