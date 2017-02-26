@@ -313,6 +313,10 @@ p {
   color: $default-color-2;
 }
 
+.default-color-3 {
+  color: $default-color-3;
+}
+
 .white-background-color {
   background-color: white;
 }
@@ -353,6 +357,10 @@ p {
 .px10 {
   padding-right: 10rem;
   padding-left: 10rem;
+}
+
+.pt8 {
+  padding-top: 6rem;
 }
 //--------------------------------------------//
 
@@ -553,6 +561,13 @@ p {
 
 .banner {
   height: 80vh;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner-recommendations {
+  height: 50vh;
   overflow: hidden;
   background-position: center center;
   background-size: cover;
@@ -1245,7 +1260,6 @@ path.color1 {
 }
 
 .background-text {
-  color: $default-color-3;
   font-size: 12rem;
   font-family: "Playfair Display";
   font-weight: 900;
@@ -1554,4 +1568,33 @@ path.color1 {
 
 .hide {
   display: none;
+}
+
+.recommendations-title {
+  color: #BEB81C;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.recommendations-ol li {
+  line-height: 1.6rem;
+  color: #4A4A4A;
+  counter-increment: step-counter;
+  &::before {
+    content: counter(step-counter) ".";
+    font-size: 1rem;
+    color: $bosnian-color-3;
+    font-weight: bold;
+    margin-right: 1.3rem;
+  }
+
+  ul li {
+    &::before {
+      content: "• ";
+      font-size: 1.5rem;
+      color: $bosnian-color-3;
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+  }
 }
