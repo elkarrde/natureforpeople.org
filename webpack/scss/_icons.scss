@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/static/fonts/icomoon.eot?105lzg');
-  src:  url('/static/fonts/icomoon.eot?105lzg#iefix') format('embedded-opentype'),
-    url('/static/fonts/icomoon.ttf?105lzg') format('truetype'),
-    url('/static/fonts/icomoon.woff?105lzg') format('woff'),
-    url('/static/fonts/icomoon.svg?105lzg#icomoon') format('svg');
+  src:  url('/static/fonts/icomoon.eot?f1xdm7');
+  src:  url('/static/fonts/icomoon.eot?f1xdm7#iefix') format('embedded-opentype'),
+    url('/static/fonts/icomoon.ttf?f1xdm7') format('truetype'),
+    url('/static/fonts/icomoon.woff?f1xdm7') format('woff'),
+    url('/static/fonts/icomoon.svg?f1xdm7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Overall_economic_value_icon:before {
+  content: "\e904";
+}
+.icon-Main_potential_icon:before {
+  content: "\e905";
+}
+.icon-Flow_of_economic_value_icon:before {
+  content: "\e906";
+}
 .icon-forrest:before {
   content: "\e900";
 }

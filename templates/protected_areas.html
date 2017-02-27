@@ -4,65 +4,99 @@
 {% endwith %}
 
 {% block body %}
-
-  <div class="sm-col-8 mx-auto flex flex-wrap" style="padding-top: 8rem;">
-    <div class="flex col-10 mx-auto justify-center">
-      <div>
-        <div class="country-chooser">
-          <!-- trigger button -->
-          <button class="serbian-color-1 macedonian-background-color-2 center border-none flex flex-column justify-center items-center">
-            <span class="mt2">Choose country</span>
-            <i class="icon-arrow-drop-down"></i>
-          </button>
-          <!-- country-chooser menu -->
-          <ul class="country-chooser-menu serbian-color-1 macedonian-background-color-2">
-            <li><a>ALB</a></li>
-            <li><a>BIH</a></li>
-            <li><a>HRV</a></li>
-            <li><a>KOS</a></li>
-            <li><a>MKD</a></li>
-            <li><a>MNE</a></li>
-            <li><a>SRB</a></li>
-            <li><a>SVN</a></li>
-          </ul>
-        </div>
+  <div class="pt8 flex flex-wrap col-11">
+    <div class="lg-col-6 col-10 flex items-center mt4 flex-column">
+      <h2 class="pa-h2 mb3 choose-country country-after-text relative">Choose country from dropdown menu:</h2>
+      <div class="country-chooser">
+        <!-- trigger button -->
+        <button class="p2">
+          <span class="mt2 mr4">Select country</span>
+          <i class="icon-arrow-drop-down ml10 croatian-color-1"></i>
+        </button>
+        <!-- country-chooser menu -->
+        <ul class="country-chooser-menu croatian-background-color-1 z2">
+          <li><a>ALB</a></li>
+          <li><a>BIH</a></li>
+          <li><a>HRV</a></li>
+          <li><a>KOS</a></li>
+          <li><a>MKD</a></li>
+          <li><a>MNE</a></li>
+          <li><a>SRB</a></li>
+          <li><a>SVN</a></li>
+        </ul>
       </div>
     </div>
-
-    <div id="chart_1" class="pabat-chart mt12"></div>
-    <div id="chart_2" class="pabat-chart"></div>
-    <div id="chart_3" class="pabat-chart"></div>
-    <!--
-    <div id="chart_4" class="pabat-chart"></div>
-    <div id="chart_5" class="pabat-chart"></div>
-    -->
-
-    <div class="flex col-10 mx-auto justify-center" style="margin-bottom: 20rem;">
-      <div>
-        <div class="pa-chooser hide">
-          <!-- trigger button -->
-          <button class="croatian-color-3 bosnian-background-color-2 center border-none flex flex-column justify-center items-center">
-            <span class="mt2">Choose PA</span>
-            <i class="icon-arrow-drop-down"></i>
-          </button>
-          <!-- pa-chooser menu -->
-          <ul class="pa-chooser-menu croatian-color-3 bosnian-background-color-2">
-            <li><a>ALB</a></li>
-            <li><a>BIH</a></li>
-            <li><a>HRV</a></li>
-            <li><a>KOS</a></li>
-            <li><a>MKD</a></li>
-            <li><a>MNE</a></li>
-            <li><a>SRB</a></li>
-            <li><a>SVN</a></li>
-          </ul>
-        </div>
+    <div class="lg-col-6 col-10 flex items-center mt4 flex-column">
+      <h2 class="pa-h2 mb3 choose-pa relative">Choose protected area from dropdown menu:</h2>
+      <div class="pa-chooser">
+        <!-- trigger button -->
+        <button class="p2">
+          <span class="mt2 mr4">Select protected area</span>
+          <i class="icon-arrow-drop-down ml10 croatian-color-1"></i>
+        </button>
+        <!-- pa-chooser menu -->
+        <ul class="pa-chooser-menu croatian-background-color-1">
+        </ul>
       </div>
     </div>
+  </div>
+  <h2 class="pa-h2 ml16 mt4 mb3 choose-value relative">Choose values you want displayed on graph:</h2>
+  <div class="lg-flex justify-center xl-px10 mx4">
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph1-card">
+      <i class="icon-Overall_economic_value_icon graph-card-icon"></i>
+      <p class="pa-p croatian-color-1">Overall economic values</p>
+    </div>
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph2-card">
+      <i class="icon-Main_potential_icon graph-card-icon"></i>
+      <p class="pa-p croatian-color-1">Flow of economic value</p>
+    </div>
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph3-card">
+      <i class="icon-Flow_of_economic_value_icon graph-card-icon"></i>
+      <p class="pa-p croatian-color-1">Main potentials</p>
+    </div>
+  </div>
+  <div class="col-10 mx-auto mt4 flex justify-center items-center flex-column">
+    <p class="no-graphs-h1">Nothing to show.</p>
+    <ol class="no-graphs-ol ml4 mb4">
+      <li>Choose country</li>
+      <li>Choose protected area</li>
+      <li>Choose values</li>
+    </ol>
+    <div id="chart_4" class="pabat-chart hide"></div>
+    <div id="chart_5" class="pabat-chart hide"></div>
+    <div id="chart_6" class="pabat-chart hide"></div>
+    <div id="chart_1" class="pabat-chart hide"></div>
+    <div id="chart_2" class="pabat-chart hide"></div>
+    <div id="chart_3" class="pabat-chart hide"></div>
+  </div>
 
-
-    <div id="chart_4" class="pabat-chart mt12"></div>
-    <div id="chart_5" class="pabat-chart"></div>
-    <div id="chart_6" class="pabat-chart"></div>
+  <div class="cta-image-holder croatian-background-color-1 flex items-center justify-center">
+    <a href="#" class="block cta-white-button flex items-center justify-center">
+      <p class="mx3 default-color-1">Lets solve challenges together</p>
+    </a>
+  </div>
+  <div class="py3 lg-flex justify-center xl-px10">
+    <p class="background-text xs-hide md-hide croatian-color-1">Learn more</p>
+    <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+      <div class="image-holder"></div>
+      <p class="index-h3 m3">WWF examples</p>
+      <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+        <p class="">Learn More</p>
+      </a>
+    </div>
+    <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+      <div class="image-holder"></div>
+      <p class="index-h3 m3">WWF examples</p>
+      <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+        <p class="">Learn More</p>
+      </a>
+    </div>
+    <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+      <div class="image-holder"></div>
+      <p class="index-h3 m3">WWF examples</p>
+      <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+        <p class="">Learn More</p>
+      </a>
+    </div>
   </div>
 {% endblock %}

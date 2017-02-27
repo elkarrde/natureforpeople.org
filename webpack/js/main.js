@@ -190,10 +190,6 @@ $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 	var $target = $( event.currentTarget );
 	country = $target.text();
 
-	graphs.generateGraphOne(country)
-	graphs.generateGraphTwo(country)
-	graphs.generateGraphThree(country)
-
 	protected_areas_by_country = { 'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona',
 																				 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama',
 																				 'NP Shebenik Jabllanica', 'NP Thethi'],
@@ -218,9 +214,59 @@ $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 
 $( document.body ).on( 'click', '.pa-chooser-menu li', function( event ) {
 	var $target = $( event.currentTarget );
-	var choosen_pa = $target.text();
+	choosen_pa = $target.text();
+});
 
-	graphs.generateGraphFour(country, choosen_pa)
-	graphs.generateGraphFive(country, choosen_pa)
-	graphs.generateGraphSix(country, choosen_pa)
+$( document.body ).on( 'click', '#graph3-card', function( event ) {
+  if (country && !choosen_pa) {
+    graphs.generateGraphThree(country)
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    $('#chart_1').addClass('hide')
+    $('#chart_2').addClass('hide')
+    $('#chart_3').removeClass('hide')
+  } else if (country && choosen_pa) {
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    graphs.generateGraphSix(country, choosen_pa)
+    $('#chart_4').addClass('hide')
+    $('#chart_5').addClass('hide')
+    $('#chart_6').removeClass('hide')
+  }
+});
+
+$( document.body ).on( 'click', '#graph2-card', function( event ) {
+  if (country && !choosen_pa) {
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    graphs.generateGraphTwo(country)
+    $('#chart_1').addClass('hide')
+    $('#chart_3').addClass('hide')
+    $('#chart_2').removeClass('hide')
+  } else if (country && choosen_pa) {
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    graphs.generateGraphFive(country, choosen_pa)
+    $('#chart_4').addClass('hide')
+    $('#chart_6').addClass('hide')
+    $('#chart_5').removeClass('hide')
+  }
+});
+
+$( document.body ).on( 'click', '#graph1-card', function( event ) {
+  if (country && !choosen_pa) {
+    graphs.generateGraphOne(country)
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    $('#chart_2').addClass('hide')
+    $('#chart_3').addClass('hide')
+    $('#chart_1').removeClass('hide')
+  } else if (country && choosen_pa) {
+    graphs.generateGraphFour(country, choosen_pa)
+    $('.no-graphs-h1').addClass('hide');
+    $('.no-graphs-ol').addClass('hide');
+    $('#chart_5').addClass('hide')
+    $('#chart_6').addClass('hide')
+    $('#chart_4').removeClass('hide')
+  }
 });

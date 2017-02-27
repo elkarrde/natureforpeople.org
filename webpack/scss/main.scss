@@ -337,6 +337,14 @@ p {
   margin-top: 7rem;
 }
 
+.ml12 {
+  margin-left: 12rem;
+}
+
+.ml16 {
+  margin-left: 16rem;
+}
+
 .mt12 {
   margin-top: 12rem;
 }
@@ -1499,11 +1507,16 @@ path.color1 {
 /** Button Styles **/
 .country-chooser button {
   font-size: 1rem;
+  background-color: Transparent;
+  border: 3px solid $croatian-color;
   -webkit-appearance: none;
   -moz-appearance: none;
   overflow:hidden;
   cursor: pointer;
   transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  span {
+    color: #9B9B9B;
+  }
 }
 
 /** List Item Styles **/
@@ -1512,11 +1525,13 @@ path.color1 {
     padding: 0.2em 0.8em;
     text-decoration: none;
     cursor: pointer;
+    color: white;
+    margin: 0.8rem;
 }
 
 /** List Item Hover Styles **/
 .country-chooser a:hover {
-    background: #BBBBBB;
+    background-color: $croatian-color-2;
 }
 //-------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////
@@ -1545,11 +1560,16 @@ path.color1 {
 /** Button Styles **/
 .pa-chooser button {
   font-size: 1rem;
+  background-color: Transparent;
+  border: 3px solid $croatian-color;
   -webkit-appearance: none;
   -moz-appearance: none;
   overflow:hidden;
   cursor: pointer;
   transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  span {
+    color: #9B9B9B;
+  }
 }
 
 /** List Item Styles **/
@@ -1558,11 +1578,13 @@ path.color1 {
     padding: 0.2em 0.8em;
     text-decoration: none;
     cursor: pointer;
+    color: white;
+    margin: 0.8rem;
 }
 
 /** List Item Hover Styles **/
 .pa-chooser a:hover {
-    background: #BBBBBB;
+    background-color: $croatian-color-2;
 }
 //-------------------------------------------------//
 
@@ -1577,6 +1599,9 @@ path.color1 {
 }
 
 .recommendations-ol li {
+  list-style-position: inside;
+  text-indent: -2em;
+  padding-left: 1em;
   line-height: 1.6rem;
   color: #4A4A4A;
   counter-increment: step-counter;
@@ -1596,5 +1621,138 @@ path.color1 {
       font-weight: bold;
       margin-right: 2rem;
     }
+  }
+}
+
+.pa-background-text {
+  font-size: 4rem;
+  font-family: "Playfair Display";
+  font-weight: 900;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  margin-top: 2.5rem;
+  margin-left: 0.5rem;
+}
+
+.pa-h2 {
+
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1.9rem;
+  color: #4A4A4A;
+}
+
+.pa-p {
+  font-family: Raleway;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2rem;
+  color: $croatian-color;
+}
+
+.graph-card-icon {
+  font-size: 8rem;
+  background: linear-gradient(315deg, $croatian-color 0%, $croatian-color-3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.graph-card {
+  background-color: #FAFAFA;
+  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
+  &:hover {
+    background-color: $croatian-color;
+    .graph-card-icon {
+      -webkit-text-fill-color: white;
+    }
+    .pa-p {
+      color: white;
+    }
+  }
+}
+
+.no-graphs-h1 {
+  opacity: 0.6;
+  font-family: "Playfair Display";
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 5rem;
+  color: #4A4A4A;
+}
+
+.no-graphs-ol li{
+  opacity: 0.1;
+  font-family: "Playfair Display";
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 4rem;
+  color: #4A4A4A;
+  list-style-position: inside;
+  counter-increment: step-counter;
+  &::before {
+    content: counter(step-counter) ".";
+    font-size: 3rem;
+    color: #4A4A4A;
+    font-weight: bold;
+    margin-right: 1.3rem;
+  }
+}
+
+.choose-country {
+  &::after {
+    content: "Country";
+    position: absolute;
+    left: -0.2rem;
+    bottom: 1.6rem;
+    font-size: 3.75rem;
+    z-index: 0;
+    opacity: 0.1;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: #4A4A4A;
+    width: 140%;
+    display: block;
+  }
+}
+
+.choose-pa {
+  &::after {
+    content: "Protected area";
+    position: absolute;
+    left: -0.2rem;
+    bottom: 1.6rem;
+    font-size: 3.75rem;
+    z-index: 0;
+    opacity: 0.1;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: #4A4A4A;
+    width: 140%;
+    display: block;
+  }
+}
+
+.choose-value {
+  &::after {
+    content: "Values";
+    position: absolute;
+    left: -0.2rem;
+    bottom: 1.6rem;
+    font-size: 3.75rem;
+    z-index: 0;
+    opacity: 0.1;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: #4A4A4A;
+    width: 140%;
+    display: block;
   }
 }
