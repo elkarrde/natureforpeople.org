@@ -184,11 +184,32 @@ jQuery(document).ready(function(){
 	
 });
 
+country = null;
+chosen_pa = null;
+
 
 $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 
 	var $target = $( event.currentTarget );
 	country = $target.text();
+  console.log(country);
+
+  if (country == '-') {
+    $('#graph1-card').removeClass('graph-card-hover');
+    $('#graph2-card').removeClass('graph-card-hover');
+    $('#graph3-card').removeClass('graph-card-hover');
+  } else {
+    $('#graph1-card').addClass('graph-card-hover');
+    $('#graph2-card').addClass('graph-card-hover');
+    $('#graph3-card').addClass('graph-card-hover');
+  }
+
+  $('#choose-country-init-text').addClass('hide');
+  $('#choose-country-chosen-text').removeClass('hide');
+  $('#choose-country-chosen-text').text(country);
+  $('#choose-pa-chosen-text').text('-');
+  chosen_pa = '-';
+
 
 	protected_areas_by_country = { 'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona',
 																				 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama',
@@ -206,6 +227,7 @@ $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 
 	$('.pa-chooser').removeClass('hide');
 	$('.pa-chooser ul').empty();
+  $('.pa-chooser ul').append('<li><a>-</a></li>')
 	for (var i in protected_areas_by_country[country]) {
 		var pa = protected_areas_by_country[country][i];
 		$('.pa-chooser ul').append('<li><a>' + pa + '</a></li>')
@@ -214,21 +236,26 @@ $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 
 $( document.body ).on( 'click', '.pa-chooser-menu li', function( event ) {
 	var $target = $( event.currentTarget );
-	choosen_pa = $target.text();
+	chosen_pa = $target.text();
+  $('#choose-pa-init-text').addClass('hide');
+  $('#choose-pa-chosen-text').removeClass('hide');
+  $('#choose-pa-chosen-text').text(chosen_pa);
 });
 
 $( document.body ).on( 'click', '#graph3-card', function( event ) {
-  if (country && !choosen_pa) {
+  if (chosen_pa == '-') chosen_pa = null
+  if (country == '-') country = null
+  if (country && !chosen_pa) {
     graphs.generateGraphThree(country)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     $('#chart_1').addClass('hide')
     $('#chart_2').addClass('hide')
     $('#chart_3').removeClass('hide')
-  } else if (country && choosen_pa) {
+  } else if (country && chosen_pa) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
-    graphs.generateGraphSix(country, choosen_pa)
+    graphs.generateGraphSix(country, chosen_pa)
     $('#chart_4').addClass('hide')
     $('#chart_5').addClass('hide')
     $('#chart_6').removeClass('hide')
@@ -236,17 +263,19 @@ $( document.body ).on( 'click', '#graph3-card', function( event ) {
 });
 
 $( document.body ).on( 'click', '#graph2-card', function( event ) {
-  if (country && !choosen_pa) {
+  if (chosen_pa == '-') chosen_pa = null
+  if (country == '-') country = null
+  if (country && !chosen_pa) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     graphs.generateGraphTwo(country)
     $('#chart_1').addClass('hide')
     $('#chart_3').addClass('hide')
     $('#chart_2').removeClass('hide')
-  } else if (country && choosen_pa) {
+  } else if (country && chosen_pa) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
-    graphs.generateGraphFive(country, choosen_pa)
+    graphs.generateGraphFive(country, chosen_pa)
     $('#chart_4').addClass('hide')
     $('#chart_6').addClass('hide')
     $('#chart_5').removeClass('hide')
@@ -254,15 +283,18 @@ $( document.body ).on( 'click', '#graph2-card', function( event ) {
 });
 
 $( document.body ).on( 'click', '#graph1-card', function( event ) {
-  if (country && !choosen_pa) {
+  if (chosen_pa == '-') chosen_pa = null
+  if (country == '-') country = null
+  if (country && !chosen_pa) {
+    console.log('sem tuuu')
     graphs.generateGraphOne(country)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     $('#chart_2').addClass('hide')
     $('#chart_3').addClass('hide')
     $('#chart_1').removeClass('hide')
-  } else if (country && choosen_pa) {
-    graphs.generateGraphFour(country, choosen_pa)
+  } else if (country && chosen_pa) {
+    graphs.generateGraphFour(country, chosen_pa)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     $('#chart_5').addClass('hide')

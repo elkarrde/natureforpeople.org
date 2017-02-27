@@ -1513,6 +1513,7 @@ path.color1 {
   -moz-appearance: none;
   overflow:hidden;
   cursor: pointer;
+  min-width: 25rem;
   transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   span {
     color: #9B9B9B;
@@ -1566,6 +1567,7 @@ path.color1 {
   -moz-appearance: none;
   overflow:hidden;
   cursor: pointer;
+  min-width: 30rem;
   transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   span {
     color: #9B9B9B;
@@ -1668,6 +1670,9 @@ path.color1 {
 .graph-card {
   background-color: #FAFAFA;
   box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
+}
+
+.graph-card-hover {
   &:hover {
     background-color: $croatian-color;
     .graph-card-icon {
@@ -1755,4 +1760,9 @@ path.color1 {
     width: 140%;
     display: block;
   }
+}
+
+.pa-choosen-text {
+  color: #4A4A4A;
+  font-weight: bold;
 }
