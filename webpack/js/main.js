@@ -192,7 +192,6 @@ $( document.body ).on( 'click', '.country-chooser-menu li', function( event ) {
 
 	var $target = $( event.currentTarget );
 	country = $target.text();
-  console.log(country);
 
   if (country == '-') {
     $('#graph1-card').removeClass('graph-card-hover');
@@ -249,15 +248,13 @@ $( document.body ).on( 'click', '#graph3-card', function( event ) {
     graphs.generateGraphThree(country)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
-    $('#chart_1').addClass('hide')
-    $('#chart_2').addClass('hide')
+    hide_other_graphs(3);
     $('#chart_3').removeClass('hide')
   } else if (country && chosen_pa) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     graphs.generateGraphSix(country, chosen_pa)
-    $('#chart_4').addClass('hide')
-    $('#chart_5').addClass('hide')
+    hide_other_graphs(6)
     $('#chart_6').removeClass('hide')
   }
 });
@@ -269,15 +266,13 @@ $( document.body ).on( 'click', '#graph2-card', function( event ) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     graphs.generateGraphTwo(country)
-    $('#chart_1').addClass('hide')
-    $('#chart_3').addClass('hide')
+    hide_other_graphs(2)
     $('#chart_2').removeClass('hide')
   } else if (country && chosen_pa) {
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
     graphs.generateGraphFive(country, chosen_pa)
-    $('#chart_4').addClass('hide')
-    $('#chart_6').addClass('hide')
+    hide_other_graphs(5)
     $('#chart_5').removeClass('hide')
   }
 });
@@ -286,19 +281,30 @@ $( document.body ).on( 'click', '#graph1-card', function( event ) {
   if (chosen_pa == '-') chosen_pa = null
   if (country == '-') country = null
   if (country && !chosen_pa) {
-    console.log('sem tuuu')
     graphs.generateGraphOne(country)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
-    $('#chart_2').addClass('hide')
-    $('#chart_3').addClass('hide')
+    hide_other_graphs(1)
     $('#chart_1').removeClass('hide')
   } else if (country && chosen_pa) {
     graphs.generateGraphFour(country, chosen_pa)
     $('.no-graphs-h1').addClass('hide');
     $('.no-graphs-ol').addClass('hide');
-    $('#chart_5').addClass('hide')
-    $('#chart_6').addClass('hide')
+    hide_other_graphs(4)
     $('#chart_4').removeClass('hide')
   }
 });
+
+
+function hide_other_graphs(graph_number) {
+  var graph_array = [1, 2, 3, 4, 5, 6]
+  var removeIndex = graph_array.indexOf(graph_number)
+  if (removeIndex > -1) {
+      graph_array.splice(removeIndex, 1);
+  }
+  for(var i in graph_array) {
+    var chart_to_hide = graph_array[i];
+    var graph = $('#chart_'+chart_to_hide);
+    graph.addClass('hide');
+  }
+}
