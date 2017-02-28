@@ -18,4 +18,4 @@ locale = hr
 name = Production
 enabled = yes
 default = yes
-target = rsync://floatingpoint/home/www/pabat-beta.floatingpoint.io
+target = rsync://root@floatingpoint.io/home/www/pabat-beta.floatingpoint.io
