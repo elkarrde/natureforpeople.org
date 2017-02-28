@@ -358,8 +358,18 @@ p {
 
 @media (min-width: 64em) {
   .lg-ml10 {
-  margin-left: 10rem;
+    margin-left: 10rem;
+  }
+
+  .lg-ml16 {
+    margin-left: 16rem;
+  }
 }
+
+@media (min-width: 52em) {
+  .sm-ml6 {
+    margin-left: 6rem;
+  }
 }
 
 .px10 {
