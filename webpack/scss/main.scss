@@ -630,6 +630,13 @@ p {
   color: white;
 }
 
+@media (max-width: 44em) {
+  .sm-banner-title {
+    font-size: 3rem;
+  }
+
+}
+
 .banner-quote {
   font-size: 1.5rem;
   color: white;
