@@ -160,6 +160,16 @@ jQuery(document).ready(function(){
 
 		var countryName = this.parentNode.getAttribute("mydata:country_name");
 		var countryDesc = this.parentNode.getAttribute("mydata:country_about");
+    var countryUrl = this.parentNode.getAttribute("mydata:country_url");
+
+    var localizationLocation = window.location.pathname.split('/')[1];
+
+    if (localizationLocation == 'hr') {
+      $("#country_path").prop("href", '/' + localizationLocation + countryUrl);
+    } else {
+      $("#country_path").prop("href", countryUrl);
+    }
+
 
 		switchCountry(countryName, countryDesc);
 		svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");

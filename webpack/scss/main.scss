@@ -1464,6 +1464,7 @@ path.color1 {
 			font-weight: 700;
 			font-size: 7rem;
 			color: white;
+      width: 250%;
 		}
 
 		.country-desc {
@@ -1477,8 +1478,9 @@ path.color1 {
 		.country-prev,
 		.country-next {
 			cursor: pointer;
-			border: 1px solid red;
-			margin: 3px;
+			margin: 1rem;
+      font-size: 6rem;
+      color: $default-color;
 		}
 	}
 
@@ -1803,4 +1805,8 @@ path.color1 {
 .pa-choosen-text {
   color: #4A4A4A;
   font-weight: bold;
+}
+
+#country_path {
+  width: 20rem;
 }
