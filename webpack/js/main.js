@@ -138,13 +138,15 @@ jQuery(document).ready(function(){
 		flags = d3.selectAll(".map-wrapper svg .flag-icon"),
 		duration = 500,
 		panning,
-		interval;
+		interval,
+		countries = ["albania", "bosnia", "croatia", "kosovo"],
+		currentCountry = "croatia";
 
-	var arrowAustria = $(".map-wrapper .arrow-austria"),
-		arrowGreece = $(".map-wrapper .arrow-greece");
 
-	var switchCountryName = function(name) {
-		$(".big-map-desc .country-name").html(name);
+	var switchCountry= function(countryName, countryDesc) {
+		$(".big-map-desc .country-name").html(countryName);
+		$(".big-map-desc .country-desc").html(countryDesc);
+		$(".big-map-desc .more-about-name").html(countryName);
 	}
 
 	var panToViewBox = function(vpx, vpy) {
@@ -157,22 +159,30 @@ jQuery(document).ready(function(){
 		var vpx = d3.select(this).select(".flag").node().getAttribute("mydata:vpx");
 		var vpy = d3.select(this).select(".flag").node().getAttribute("mydata:vpy");
 
-		var countryName = this.parentNode.getAttribute("mydata:countryname")
-		var kita = d3.select(this.parentNode).node().getAttribute("mydata:countryname");
+		var countryName = this.parentNode.getAttribute("mydata:country_name");
+		var countryDesc = this.parentNode.getAttribute("mydata:country_about");
 
-		switchCountryName(countryName);
+		switchCountry(countryName, countryDesc);
 		svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
 	}
 
-	flags.on("click", panToCountry);
+	$('.map-wrapper svg .flag-icon').on("click", panToCountry);
 
-
-	arrowAustria.on("click", function() {
+	$(".map-wrapper .arrow-austria").click(function() {
 		panToViewBox(-50, -50);
 	});
 
-	arrowGreece.hover(function() {
+	$(".map-wrapper .arrow-greece").click(function() {
 		panToViewBox(300, 300);
+	});
+
+	$('.map-wrapper .big-map-desc .country-prev').click(function() {
+		countries.indexOf(this.country)
+		$('.map-wrapper svg .macedonia .flag-icon').click();
+	});
+
+	$('.map-wrapper .big-map-desc .country-next').click(function() {
+		$('.map-wrapper svg .slovenia .flag-icon').click();
 	});
 
 	// arrowGreece.hover(function() {
@@ -180,8 +190,6 @@ jQuery(document).ready(function(){
 	// }, function() {
 	// 	window.clearInterval(interval);
 	// });
-
-	
 });
 
 
