@@ -139,7 +139,6 @@ jQuery(document).ready(function(){
 		duration = 500,
 		panning,
 		interval,
-		countries = ["albania", "bosnia", "croatia", "kosovo"],
 		currentCountry = "croatia";
 
 
@@ -166,6 +165,18 @@ jQuery(document).ready(function(){
 		svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
 	}
 
+	var nextCountry = function(currCntry) {
+		var order = ["albania", "bosnia", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"],
+			currIdx = order.indexOf(currCntry),
+			len = order.length;
+
+		if (currIdx >= len-1) {
+			return order[currIdx + 1 - len];
+		} else {
+			return order[currIdx + 1];
+		}
+	}
+
 	$('.map-wrapper svg .flag-icon').on("click", panToCountry);
 
 	$(".map-wrapper .arrow-austria").click(function() {
@@ -177,19 +188,14 @@ jQuery(document).ready(function(){
 	});
 
 	$('.map-wrapper .big-map-desc .country-prev').click(function() {
-		countries.indexOf(this.country)
-		$('.map-wrapper svg .macedonia .flag-icon').click();
+		currentCountry = nextCountry(currentCountry);
+		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
 
 	$('.map-wrapper .big-map-desc .country-next').click(function() {
-		$('.map-wrapper svg .slovenia .flag-icon').click();
+		currentCountry = nextCountry(currentCountry);
+		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
-
-	// arrowGreece.hover(function() {
-	// 	interval = window.setInterval(panToBottomRight, 50);
-	// }, function() {
-	// 	window.clearInterval(interval);
-	// });
 });
 
 country = null;
@@ -315,7 +321,3 @@ function hide_other_graphs(graph_number) {
     graph.addClass('hide');
   }
 }
-	graphs.generateGraphFour(country, choosen_pa)
-	graphs.generateGraphFive(country, choosen_pa)
-	graphs.generateGraphSix(country, choosen_pa)
-});
