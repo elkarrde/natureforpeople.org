@@ -20,15 +20,15 @@
         </button>
         <!-- country-chooser menu -->
         <ul class="country-chooser-menu croatian-background-color-1 z2">
-          <li><a>-</a></li>
-          <li><a>ALB</a></li>
-          <li><a>BIH</a></li>
-          <li><a>HRV</a></li>
-          <li><a>KOS</a></li>
-          <li><a>MKD</a></li>
-          <li><a>MNE</a></li>
-          <li><a>SRB</a></li>
-          <li><a>SVN</a></li>
+          <li data-countrycode="-"><a>-</a></li>
+		  <li data-countrycode="ALB" data-countryname={{ bag('country-names', this.alt, 'albania') }}>    <a>{{ bag('country-names', this.alt, 'albania') }}</a></li>
+          <li data-countrycode="BIH" data-countryname={{ bag('country-names', this.alt, 'bosnia') }}>     <a>{{ bag('country-names', this.alt, 'bosnia') }}</a></li>
+          <li data-countrycode="HRV" data-countryname={{ bag('country-names', this.alt, 'croatia') }}>    <a>{{ bag('country-names', this.alt, 'croatia') }}</a></li>
+          <li data-countrycode="KOS" data-countryname={{ bag('country-names', this.alt, 'kosovo') }}>     <a>{{ bag('country-names', this.alt, 'kosovo') }}</a></li>
+          <li data-countrycode="MKD" data-countryname={{ bag('country-names', this.alt, 'macedonia') }}>  <a>{{ bag('country-names', this.alt, 'macedonia') }}</a></li>
+          <li data-countrycode="MNE" data-countryname={{ bag('country-names', this.alt, 'montenegro') }}> <a>{{ bag('country-names', this.alt, 'montenegro') }}</a></li>
+          <li data-countrycode="SRB" data-countryname={{ bag('country-names', this.alt, 'serbia') }}>     <a>{{ bag('country-names', this.alt, 'serbia') }}</a></li>
+		  <li data-countrycode="SVN" data-countryname={{ bag('country-names', this.alt, 'slovenia') }}>   <a>{{ bag('country-names', this.alt, 'slovenia') }}</a></li>
         </ul>
       </div>
     </div>
@@ -47,17 +47,19 @@
       </div>
     </div>
   </div>
-  <h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 choose-value relative">Choose values you want displayed on graph:</h2>
-  <div class="lg-flex justify-center xl-px10 mx4">
-    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph1-card">
+  <div>
+	  <h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 choose-value relative">Choose values you want displayed on graph:</h2>
+  </div>
+  <div class="graph-type-picker lg-flex justify-center xl-px10 mx4">
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="1">
       <i class="icon-Overall_economic_value_icon graph-card-icon"></i>
       <p class="pa-p croatian-color-1">Overall economic values</p>
     </div>
-    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph2-card">
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="2">
       <i class="icon-Flow_of_economic_value_icon graph-card-icon"></i>
       <p class="pa-p croatian-color-1">Flow of economic value</p>
     </div>
-    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" id="graph3-card">
+    <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="3">
       <i class="icon-Main_potential_icon graph-card-icon"></i>
       <p class="pa-p croatian-color-1">Main potentials</p>
     </div>
@@ -69,12 +71,12 @@
       <li>Choose protected area</li>
       <li>Choose values</li>
     </ol>
-    <div id="chart_4" class="pabat-chart hide"></div>
-    <div id="chart_5" class="pabat-chart hide"></div>
-    <div id="chart_6" class="pabat-chart hide"></div>
-    <div id="chart_1" class="pabat-chart hide"></div>
-    <div id="chart_2" class="pabat-chart hide"></div>
-    <div id="chart_3" class="pabat-chart hide"></div>
+	<div id="chart_1" class="pabat-chart hide"></div>
+	<div id="chart_2" class="pabat-chart hide"></div>
+	<div id="chart_3" class="pabat-chart hide"></div>
+	<div id="chart_4" class="pabat-chart hide"></div>
+	<div id="chart_5" class="pabat-chart hide"></div>
+	<div id="chart_6" class="pabat-chart hide"></div>
   </div>
 
   <div class="cta-image-holder croatian-background-color-1 flex items-center justify-center">

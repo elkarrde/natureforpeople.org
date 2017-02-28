@@ -1379,6 +1379,10 @@ path.color1 {
   border-image-slice: 1;
 }
 
+.learn-more-button.about-country {
+  min-height: 3rem;
+}
+
 .image-holder {
   background-image: url('/static/images/Croatia_CTA_image.png');
   width: 100%;
@@ -1455,7 +1459,7 @@ path.color1 {
 
 	.big-map-desc {
 		position: absolute;
-		top: 40%;
+		top: 30%;
 		left: 10%;
 		width: 30%;
 
@@ -1464,7 +1468,6 @@ path.color1 {
 			font-weight: 700;
 			font-size: 7rem;
 			color: white;
-      width: 250%;
 		}
 
 		.country-desc {
@@ -1797,7 +1800,7 @@ path.color1 {
     font-family: "Playfair Display";
     font-weight: bold;
     color: #4A4A4A;
-    width: 140%;
+    width: 100%;
     display: block;
   }
 }
