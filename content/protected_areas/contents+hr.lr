@@ -2,3 +2,27 @@ _model: protected_areas
 ---
 title: PABAT
 ---
+headline: Zaštićena područja
+---
+step_1: Odaberite zemlju iz padajućeg izbornika:
+---
+1_country: Odaberite zemlju
+---
+step_2: Odaberite zaštićeno područje iz padajućeg izbornika:
+---
+2_pa: Odaberite zaštićeno područje
+---
+graph_values: Odaberite vrijednosti koje želite prikazati na grafu
+---
+econ_value: Glavne ekonomske vrijednosti
+---
+flow_econ: Tijek prihoda dionicima
+---
+potential: Glavni potencijali
+---
+message_head: Nema odabranih vrijednosti za prikazati.
+---
+message_1: Odaberite zemlju i/ili zaštićeno područje
+---
+message_2: Odaberite vrijednost
+---

@@ -2,3 +2,27 @@ _model: protected_areas
 ---
 title: PABAT
 ---
+headline: Protected areas
+---
+step_1: Choose country from dropdown menu:
+---
+1_country: Select country
+---
+step_2: Choose protected area from dropdown menu:
+---
+2_pa: Select protected area
+---
+graph_values: Choose values you want displayed on graph:
+---
+econ_value: Overall economic values
+---
+flow_econ: Flow of economic value
+---
+potential: Main potentials
+---
+message_head: Nothing to show.
+---
+message_1: Choose country and/or protected area
+---
+message_2: Choose values
+---
