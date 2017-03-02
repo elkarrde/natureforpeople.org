@@ -6,11 +6,11 @@ headline: Protected areas
 ---
 step_1: Choose country from dropdown menu:
 ---
-1_country: Select country
+country_1: Select country
 ---
 step_2: Choose protected area from dropdown menu:
 ---
-2_pa: Select protected area
+pa_2: Select protected area
 ---
 graph_values: Choose values you want displayed on graph:
 ---
@@ -22,7 +22,9 @@ potential: Main potentials
 ---
 message_head: Nothing to show.
 ---
-message_1: Choose country and/or protected area
+message_1: Choose country and/or PA
 ---
 message_2: Choose values
+---
+cta_button_text: Riješimo izazove zajedno
 ---

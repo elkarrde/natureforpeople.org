@@ -6,11 +6,11 @@ headline: Zaštićena područja
 ---
 step_1: Odaberite zemlju iz padajućeg izbornika:
 ---
-1_country: Odaberite zemlju
+country_!: Odaberite zemlju
 ---
 step_2: Odaberite zaštićeno područje iz padajućeg izbornika:
 ---
-2_pa: Odaberite zaštićeno područje
+pa_2: Odaberite zaštićeno područje
 ---
 graph_values: Odaberite vrijednosti koje želite prikazati na grafu
 ---
@@ -22,7 +22,9 @@ potential: Glavni potencijali
 ---
 message_head: Nema odabranih vrijednosti za prikazati.
 ---
-message_1: Odaberite zemlju i/ili zaštićeno područje
+message_1: Odaberite zemlju i/ili ZP
 ---
 message_2: Odaberite vrijednost
+---
+cta_button_text: Riješimo izazove zajedno
 ---
