@@ -10,10 +10,18 @@
 @custom-media --breakpoint-lg (min-width: 64em);
 @custom-media --breakpoint-xl (min-width: 76em);
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Vars --------------------------------------- */
+
+$title-font-family: 'Playfair Display', serif;
+$body-font-family: 'Raleway', sans-serif;
+
+@mixin title-font {
+	font-family: $title-font-family;
+	font-weight: 900;
+	line-height: 4rem;
+}
+
+/* Country colors ----------------------------- */
 
 $bosnian-color: #BEB81C;
 $bosnian-color-2: #A8A20A;
@@ -43,1398 +51,1099 @@ $albanian-color-3: #CBBE10;
 $default-color: #FEFEFE;
 $default-color-2: #E5E5E5;
 $default-color-3: #4AC2ED;
+
 $footer-color: #212121;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+/* Global settings ----------------------------- */
 
 html {
-  font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
-//--------------------------------------------//
 p {
-  line-height: 1.5rem;
-  color: #4A4A4A;
-}
-.width-100 {
-  width: 100%;
-}
-.height-100 {
-  height: 100%;
+	line-height: 1.5rem;
+	color: #4A4A4A;
 }
 
-.bosnian-background-color-1 {
-  background-color: $bosnian-color;
+.capture-color { color: $footer-color; }
+.white-background-color { background-color: white; }
+
+.bosnian-background-color-1 { background-color: $bosnian-color; }
+.bosnian-background-color-2 { background-color: $bosnian-color-2; }
+.bosnian-background-color-3 { background-color: $bosnian-color-3; }
+.bosnian-color-1 { color: $bosnian-color; }
+.bosnian-color-2 { color: $bosnian-color-2; }
+.bosnian-color-3 { color: $bosnian-color-3; }
+.croatian-background-color-1 { background-color: $croatian-color; }
+.croatian-background-color-2 { background-color: $croatian-color-2; }
+.croatian-background-color-3 { background-color: $croatian-color-3; }
+.croatian-color-1 { color: $croatian-color; }
+.croatian-color-2 { color: $croatian-color-2; }
+.croatian-color-3 { color: $croatian-color-3; }
+.albanian-background-color-1 { background-color: $albanian-color; }
+.albanian-background-color-2 { background-color: $albanian-color-2; }
+.albanian-background-color-3 { background-color: $albanian-color-3; }
+.albanian-color-1 { color: $albanian-color; }
+.albanian-color-2 { color: $albanian-color-2; }
+.albanian-color-3 { color: $albanian-color-3; }
+.serbian-background-color-1 { background-color: $serbian-color; }
+.serbian-background-color-2 { background-color: $serbian-color-2; }
+.serbian-background-color-3 { background-color: $serbian-color-3; }
+.serbian-color-1 { color: $serbian-color; }
+.serbian-color-2 { color: $serbian-color-2; }
+.serbian-color-3 { color: $serbian-color-3; }
+.macedonian-background-color-1 { background-color: $macedonian-color; }
+.macedonian-background-color-2 { background-color: $macedonian-color-2; }
+.macedonian-background-color-3 { background-color: $macedonian-color-3; }
+.macedonian-color-1 { color: $macedonian-color; }
+.macedonian-color-2 { color: $macedonian-color-2; }
+.macedonian-color-3 { color: $macedonian-color-3; }
+.kosovian-background-color-1 { background-color: $kosovian-color; }
+.kosovian-background-color-2 { background-color: $kosovian-color-2; }
+.kosovian-background-color-3 { background-color: $kosovian-color-3; }
+.kosovian-color-1 { color: $kosovian-color; }
+.kosovian-color-2 { color: $kosovian-color-2; }
+.kosovian-color-3 { color: $kosovian-color-3; }
+.montenegran-background-color-1 { background-color: $montenegran-color; }
+.montenegran-background-color-2 { background-color: $montenegran-color-2; }
+.montenegran-background-color-3 { background-color: $montenegran-color-3; }
+.montenegran-color-1 { color: $montenegran-color; }
+.montenegran-color-2 { color: $montenegran-color-2; }
+.montenegran-color-3 { color: $montenegran-color-3; }
+.slovenian-background-color-1 { background-color: $slovenian-color; }
+.slovenian-background-color-2 { background-color: $slovenian-color-2; }
+.slovenian-background-color-3 { background-color: $slovenian-color-3; }
+.slovenian-color-1 { color: $slovenian-color; }
+.slovenian-color-2 { color: $slovenian-color-2; }
+.slovenian-color-3 { color: $slovenian-color-3; }
+.default-background-color-1 { background-color: $default-color; }
+.default-background-color-2 { background-color: $default-color-2; }
+.default-color-1 { color: $default-color; }
+.default-color-2 { color: $default-color-2; }
+.default-color-3 { color: $default-color-3; }
+
+
+/* Utilities ------------------------------------- */
+
+.w-100 {
+	width: 100%;
 }
 
-.bosnian-background-color-2 {
-  background-color: $bosnian-color-2;
+.h-100 {
+	height: 100%;
 }
 
-.bosnian-background-color-3 {
-  background-color: $bosnian-color-3;
-}
+/* Custom media breakpoints ---------------------- */
 
-.bosnian-color-1 {
-  color: $bosnian-color;
-}
-
-.bosnian-color-2 {
-  color: $bosnian-color-2;
-}
-
-.bosnian-color-3 {
-  color: $bosnian-color-3;
-}
-
-.croatian-background-color-1 {
-  background-color: $croatian-color;
-}
-
-.croatian-background-color-2 {
-  background-color: $croatian-color-2;
-}
-
-.croatian-background-color-3 {
-  background-color: $croatian-color-3;
-}
-
-.croatian-color-1 {
-  color: $croatian-color;
-}
-
-.croatian-color-2 {
-  color: $croatian-color-2;
-}
-
-.croatian-color-3 {
-  color: $croatian-color-3;
-}
-
-.albanian-background-color-1 {
-  background-color: $albanian-color;
-}
-
-.albanian-background-color-2 {
-  background-color: $albanian-color-2;
-}
-
-.albanian-background-color-3 {
-  background-color: $albanian-color-3;
-}
-
-.albanian-color-1 {
-  color: $albanian-color;
-}
-
-.albanian-color-2 {
-  color: $albanian-color-2;
-}
-
-.albanian-color-3 {
-  color: $albanian-color-3;
-}
-
-.serbian-background-color-1 {
-  background-color: $serbian-color;
-}
-
-.serbian-background-color-2 {
-  background-color: $serbian-color-2;
-}
-
-.serbian-background-color-3 {
-  background-color: $serbian-color-3;
-}
-
-.serbian-color-1 {
-  color: $serbian-color;
-}
-
-.serbian-color-2 {
-  color: $serbian-color-2;
-}
-
-.serbian-color-3 {
-  color: $serbian-color-3;
-}
-
-.macedonian-background-color-1 {
-  background-color: $macedonian-color;
-}
-
-.macedonian-background-color-2 {
-  background-color: $macedonian-color-2;
-}
-
-.macedonian-background-color-3 {
-  background-color: $macedonian-color-3;
-}
-
-.macedonian-color-1 {
-  color: $macedonian-color;
-}
-
-.macedonian-color-2 {
-  color: $macedonian-color-2;
-}
-
-.macedonian-color-3 {
-  color: $macedonian-color-3;
-}
-
-.kosovian-background-color-1 {
-  background-color: $kosovian-color;
-}
-
-.kosovian-background-color-2 {
-  background-color: $kosovian-color-2;
-}
-
-.kosovian-background-color-3 {
-  background-color: $kosovian-color-3;
-}
-
-.kosovian-color-1 {
-  color: $kosovian-color;
-}
-
-.kosovian-color-2 {
-  color: $kosovian-color-2;
-}
-
-.kosovian-color-3 {
-  color: $kosovian-color-3;
-}
-
-.montenegran-background-color-1 {
-  background-color: $montenegran-color;
-}
-
-.montenegran-background-color-2 {
-  background-color: $montenegran-color-2;
-}
-
-.montenegran-background-color-3 {
-  background-color: $montenegran-color-3;
-}
-
-.montenegran-color-1 {
-  color: $montenegran-color;
-}
-
-.montenegran-color-2 {
-  color: $montenegran-color-2;
-}
-
-.montenegran-color-3 {
-  color: $montenegran-color-3;
-}
-
-.slovenian-background-color-1 {
-  background-color: $slovenian-color;
-}
-
-.slovenian-background-color-2 {
-  background-color: $slovenian-color-2;
-}
-
-.slovenian-background-color-3 {
-  background-color: $slovenian-color-3;
-}
-
-.slovenian-color-1 {
-  color: $slovenian-color;
-}
-
-.slovenian-color-2 {
-  color: $slovenian-color-2;
-}
-
-.slovenian-color-3 {
-  color: $slovenian-color-3;
-}
-
-.default-background-color-1 {
-  background-color: $default-color;
-}
-
-.default-background-color-2 {
-  background-color: $default-color-2;
-}
-
-.default-color-1 {
-  color: $default-color;
-}
-
-.default-color-2 {
-  color: $default-color-2;
-}
-
-.default-color-3 {
-  color: $default-color-3;
-}
-
-.white-background-color {
-  background-color: white;
-}
-
-.capture-color {
-  color: $footer-color;
-}
-
-.ml10 {
-  margin-left: 10rem;
-}
-
-.mr10 {
-  margin-right: 10rem;
-}
-
-.mt8 {
-  margin-top: 7rem;
-}
-
-.ml12 {
-  margin-left: 12rem;
-}
-
-.ml16 {
-  margin-left: 16rem;
-}
-
-.mt12 {
-  margin-top: 12rem;
-}
 
 @media (min-width: 76em) {
-  .xl-px10 {
-    padding-right: 10rem;
-    padding-left: 10rem;
-  }
+	.xl-px10 {
+		padding-right: 10rem;
+		padding-left: 10rem;
+	}
 }
 
 @media (min-width: 64em) {
-  .lg-ml10 {
-    margin-left: 10rem;
-  }
+	.lg-ml10 {
+		margin-left: 10rem;
+	}
 
-  .lg-ml16 {
-    margin-left: 16rem;
-  }
+	.lg-ml16 {
+		margin-left: 16rem;
+	}
 }
 
 @media (min-width: 52em) {
-  .sm-ml6 {
-    margin-left: 6rem;
-  }
+	.sm-ml6 {
+		margin-left: 6rem;
+	}
 }
 
-.px10 {
-  padding-right: 10rem;
-  padding-left: 10rem;
-}
-
-.pt8 {
-  padding-top: 6rem;
-}
 //--------------------------------------------//
 
 .header {
-  height: 4.5rem;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
-  width: 100%;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  position: fixed;
+	height: 4.5rem;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
+	width: 100%;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	position: fixed;
 }
 
-.nav-links-bosnian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $bosnian-color-2;
-    }
-  }
+@mixin nav-list-item {
+	padding: 0 1rem;
+	height: inherit;
+	cursor: pointer;
+}
+
+@mixin nav-link {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 900;
+	height: 100%;
 }
 
 .nav-links-albanian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $albanian-color-2;
-    }
-  }
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover { background-color: $albanian-color-2; }
+	}
 }
 
-.nav-links-macedonian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $macedonian-color-2;
-    }
-  }
-}
-
-.nav-links-kosovian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $kosovian-color-2;
-    }
-  }
-}
-
-.nav-links-montenegran {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $montenegran-color-2;
-    }
-  }
-}
-
-.nav-links-serbian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $serbian-color-2;
-    }
-  }
-}
-
-.nav-links-slovenian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $slovenian-color-2;
-    }
-  }
+.nav-links-bosnian {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover { background-color: $bosnian-color-2; }
+	}
 }
 
 .nav-links-croatian {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $croatian-color-2;
-    }
-  }
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $croatian-color-2;
+		}
+	}
+}
+
+.nav-links-kosovian {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $kosovian-color-2;
+		}
+	}
+}
+
+.nav-links-macedonian {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $macedonian-color-2;
+		}
+	}
+}
+
+.nav-links-montenegran {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $montenegran-color-2;
+		}
+	}
+}
+
+.nav-links-serbian {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $serbian-color-2;
+		}
+	}
+}
+
+.nav-links-slovenian {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover {
+			background-color: $slovenian-color-2;
+		}
+	}
 }
 
 .nav-links-default {
-  height: inherit;
-  li {
-    padding: 0 1rem;
-    height: inherit;
-    max-width: 15vw;
-    cursor: pointer;
-    a {
-      color: #4A4A4A;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 900;
-      height: 100%;
-    }
-    &:hover {
-      background-color: $default-color-2;
-    }
-  }
+	height: inherit;
+	li {
+		padding: 0 1rem;
+		height: inherit;
+		cursor: pointer;
+		a {
+			color: #4A4A4A;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-weight: 900;
+			height: 100%;
+		}
+		&:hover {
+			background-color: $default-color-2;
+		}
+	}
 }
 
 .menu {
-  height: inherit;
-  li {
-    cursor: pointer;
-  }
+	height: inherit;
+	li {
+		cursor: pointer;
+	}
 }
 
 .banner {
-  height: 80vh;
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
+	height: 80vh;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
 }
 
 .banner-recommendations {
-  height: 50vh;
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
+	height: 50vh;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
 }
 
 .bosnian-banner-image {
-  background-image: url('/static/images/Livanjsko-polje-(c)-Andrija-Vrdoljak-BIH.jpg');
+	background-image: url('/static/images/Livanjsko-polje-(c)-Andrija-Vrdoljak-BIH.jpg');
 }
 
 .croatian-banner-image {
-  background-image: url('/static/images/Lastovo-lanterna-Struga-(c)-Park-prirode-Lastovsko-otocje-Croatia.jpg');
+	background-image: url('/static/images/Lastovo-lanterna-Struga-(c)-Park-prirode-Lastovsko-otocje-Croatia.jpg');
 }
 
 .serbian-banner-image {
-  background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg');
+	background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg');
 }
 
 .slovenian-banner-image {
-  background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg');
+	background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg');
 }
 
 .montenegran-banner-image {
-  background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg');
+	background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg');
 }
 
 .kosovian-banner-image {
-  background-image: url('/static/images/Sharri-National-Park(c)Sharri-National-Park-Kosovo.jpg');
+	background-image: url('/static/images/Sharri-National-Park(c)Sharri-National-Park-Kosovo.jpg');
 }
 
 .macedonian-banner-image {
-  background-image: url('/static/images/Golemo-Ezero-(c)-Goran-Stefanovski-Macedonia.jpg');
+	background-image: url('/static/images/Golemo-Ezero-(c)-Goran-Stefanovski-Macedonia.jpg');
 }
 
 .albanian-banner-image {
-  background-image: url('/static/images/podaci-TBA-Albania.jpg');
+	background-image: url('/static/images/podaci-TBA-Albania.jpg');
 }
 
 .banner-title {
-  font-family: "Playfair Display";
-  font-weight: 900;
-  font-size: 4.75rem;
-  color: white;
+	@include title-font;
+	font-size: 4.75rem;
+	color: white;
 }
 
 @media (max-width: 44em) {
-  .sm-banner-title {
-    font-size: 3rem;
-  }
+	.sm-banner-title {
+		font-size: 3rem;
+	}
 
 }
 
 .banner-quote {
-  font-size: 1.5rem;
-  color: white;
+	font-size: 1.5rem;
+	color: white;
 }
 
 .banner-button {
-  box-sizing: border-box;
-  border: 3px solid transparent;
-  min-height: 4rem;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 0.1rem;
+	box-sizing: border-box;
+	border: 3px solid transparent;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0.1rem;
 }
 
 .bosnian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
-  border-image: linear-gradient(to right, $bosnian-color-3 0%, $bosnian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $bosnian-color-3 0%, $bosnian-color 100%);
+	border-image: linear-gradient(to right, $bosnian-color-3 0%, $bosnian-color 100%);
+	border-image-slice: 1;
 }
 
 .croatian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-  border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+	border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
+	border-image-slice: 1;
 }
 
 .serbian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
-  border-image: linear-gradient(to right, $serbian-color-3 0%, $serbian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $serbian-color-3 0%, $serbian-color 100%);
+	border-image: linear-gradient(to right, $serbian-color-3 0%, $serbian-color 100%);
+	border-image-slice: 1;
 }
 
 .slovenian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
-  border-image: linear-gradient(to right, $slovenian-color-3 0%, $slovenian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $slovenian-color-3 0%, $slovenian-color 100%);
+	border-image: linear-gradient(to right, $slovenian-color-3 0%, $slovenian-color 100%);
+	border-image-slice: 1;
 }
 
 .montenegran-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
-  border-image: linear-gradient(to right, $montenegran-color-3 0%, $montenegran-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $montenegran-color-3 0%, $montenegran-color 100%);
+	border-image: linear-gradient(to right, $montenegran-color-3 0%, $montenegran-color 100%);
+	border-image-slice: 1;
 }
 
 .kosovian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
-  border-image: linear-gradient(to right, $kosovian-color-3 0%, $kosovian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $kosovian-color-3 0%, $kosovian-color 100%);
+	border-image: linear-gradient(to right, $kosovian-color-3 0%, $kosovian-color 100%);
+	border-image-slice: 1;
 }
 
 .macedonian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
-  border-image: linear-gradient(to right, $macedonian-color-3 0%, $macedonian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $macedonian-color-3 0%, $macedonian-color 100%);
+	border-image: linear-gradient(to right, $macedonian-color-3 0%, $macedonian-color 100%);
+	border-image-slice: 1;
 }
 
 .albanian-border-gradient {
-  -moz-border-image: -moz-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
-  border-image: linear-gradient(to right, $albanian-color-3 0%, $albanian-color 100%);
-  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $albanian-color-3 0%, $albanian-color 100%);
+	border-image: linear-gradient(to right, $albanian-color-3 0%, $albanian-color 100%);
+	border-image-slice: 1;
 }
 
 .country-h1 {
-  font-size: 3.75rem;
-  opacity: 0.2;
-  font-weight: 900;
-  font-family: "Playfair Display";
-  line-height: 4rem;
+	@include title-font;
+	font-size: 3.75rem;
+	opacity: 0.2;
 }
 
 .country-h2 {
-  font-size: 1.75rem;
-  font-weight: 900;
-  font-family: "Playfair Display";
-  line-height: 4rem;
+	@include title-font;
+	font-size: 1.75rem;
 }
 
 .country-icon {
-  font-size: 3.75rem;
+	font-size: 3.75rem;
 }
 
 .country-text {
-  color: #4A4A4A;
-  font-family: "Raleway";
-  line-height: 2rem;
+	color: #4A4A4A;
+	font-family: "Raleway";
+	line-height: 2rem;
 }
 
 .index-h2 {
-  font-size: 2rem;
-  font-weight: 900;
+	font-size: 2rem;
+	font-weight: 900;
 }
 
 .index-h3 {
-  font-size: 1.5rem;
-  font-weight: 900;
+	font-size: 1.5rem;
+	font-weight: 900;
 }
 
 .second-container-background {
-  background-color: #FAFAFA;
+	background-color: #FAFAFA;
 }
 
 .pabat-footer {
-  background-color: $footer-color;
+	background-color: $footer-color;
 }
 
 .footer-icon-logo {
-  width: 5rem;
-  height: 7.5rem;
+	width: 5rem;
+	height: 7.5rem;
 }
 
 .footer-nav-links a {
-  color: #4A4A4A;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 900;
+	color: #4A4A4A;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 900;
 }
 
 .copyright {
-  color: #9B9B9B;
+	color: #9B9B9B;
 }
 
 .cta-image-holder {
-  height: 30vh;
-  overflow: hidden;
-  background-position: center center;
-  background-size: cover;
+	height: 30vh;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
 }
 
 .bosnian-cta-image {
-  background-image: url('/static/images/Bosnia_CTA_image@2x.png');
+	background-image: url('/static/images/Bosnia_CTA_image@2x.png');
 }
 
 .croatian-cta-image {
-  background-image: url('/static/images/Croatia_CTA_image.png');
+	background-image: url('/static/images/Croatia_CTA_image.png');
 }
 
 .serbian-cta-image {
-  background-image: url('/static/images/Serbia_CTA_image@2x.png');
+	background-image: url('/static/images/Serbia_CTA_image@2x.png');
 }
 
 .slovenian-cta-image {
-  background-image: url('/static/images/Slovenia_CTA_image@2x.png');
+	background-image: url('/static/images/Slovenia_CTA_image@2x.png');
 }
 
 .montenegran-cta-image {
-  background-image: url('/static/images/Montenegro_CTA_image@2x.png');
+	background-image: url('/static/images/Montenegro_CTA_image@2x.png');
 }
 
 .kosovian-cta-image {
-  background-image: url('/static/images/Kosovo_CTA_image@2x.png');
+	background-image: url('/static/images/Kosovo_CTA_image@2x.png');
 }
 
 .macedonian-cta-image {
-  background-image: url('/static/images/Macednia_CTA_image@2x.png');
+	background-image: url('/static/images/Macednia_CTA_image@2x.png');
 }
 
 .albanian-cta-image {
-  background-image: url('/static/images/Albania_CTA_image@2x.png');
+	background-image: url('/static/images/Albania_CTA_image@2x.png');
 }
 
 .cta-white-button {
-  box-sizing: border-box;
-  border: 3px solid #FFFFFF;
-  min-height: 4rem;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  text-decoration: none;
+	box-sizing: border-box;
+	border: 3px solid #FFFFFF;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
 }
 
 .cta-button-position {
-  position: absolute;
+	position: absolute;
 }
 
 // ---------- Localization button select ----------//
 .local-dropdown {
-  position: relative;
-  display: inline-block;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	position: relative;
+	display: inline-block;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .local-dropdown .local-dropdown-menu {
-  position: absolute;
-  top: 100%;
-  display: none;
-  margin: 0;
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
 
-  list-style: none; /** Remove list bullets */
-  width: 100%; /** Set the width to 100% of it's parent */
-  padding: 0;
+	list-style: none; /** Remove list bullets */
+	width: 100%; /** Set the width to 100% of it's parent */
+	padding: 0;
 }
 
 .local-dropdown:hover .local-dropdown-menu {
-    display: block;
+	display: block;
 }
 
 /** Button Styles **/
 .local-dropdown button {
-  font-size: 1rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  overflow:hidden;
-  height: 4.5rem;
-  width: 4.5rem;
-  cursor: pointer;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	font-size: 1rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	overflow:hidden;
+	height: 4.5rem;
+	width: 4.5rem;
+	cursor: pointer;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 /** List Item Styles **/
 .local-dropdown a {
-    display: block;
-    padding: 0.2em 0.8em;
-    text-decoration: none;
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
 }
 
 /** List Item Hover Styles **/
 .local-dropdown a:hover {
-    background: #BBBBBB;
+	background: #BBBBBB;
 }
 //-------------------------------------------------//
 
 #bosnian-nav {
-    background-color: $bosnian-color-2;
+	background-color: $bosnian-color-2;
 }
 #bosnian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #bosnian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #bosnian-nav ul li:hover {
-    background-color: $bosnian-color;
+	background-color: $bosnian-color;
 }
 #bosnian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #bosnian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #bosnian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $bosnian-color-2;
-    border: 5px solid $bosnian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $bosnian-color-2;
+	border: 5px solid $bosnian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #bosnian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #bosnian-nav ul ul li a:hover {
-    color: $bosnian-color-3;
+	color: $bosnian-color-3;
 }
 
 //////////////////////////
 
 #albanian-nav {
-    background-color: $albanian-color-2;
+	background-color: $albanian-color-2;
 }
 #albanian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #albanian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #albanian-nav ul li:hover {
-    background-color: $albanian-color;
+	background-color: $albanian-color;
 }
 #albanian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #albanian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #albanian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $albanian-color-2;
-    border: 5px solid $albanian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $albanian-color-2;
+	border: 5px solid $albanian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #albanian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #albanian-nav ul ul li a:hover {
-    color: $albanian-color-3;
+	color: $albanian-color-3;
 }
 
 //////////////////////////
 
 #macedonian-nav {
-    background-color: $macedonian-color-2;
+	background-color: $macedonian-color-2;
 }
 #macedonian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #macedonian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #macedonian-nav ul li:hover {
-    background-color: $macedonian-color;
+	background-color: $macedonian-color;
 }
 #macedonian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #macedonian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #macedonian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $macedonian-color-2;
-    border: 5px solid $macedonian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $macedonian-color-2;
+	border: 5px solid $macedonian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #macedonian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #macedonian-nav ul ul li a:hover {
-    color: $macedonian-color-3;
+	color: $macedonian-color-3;
 }
 
 //////////////////////////
 
 #kosovian-nav {
-    background-color: $kosovian-color-2;
+	background-color: $kosovian-color-2;
 }
 #kosovian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #kosovian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #kosovian-nav ul li:hover {
-    background-color: $kosovian-color;
+	background-color: $kosovian-color;
 }
 #kosovian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #kosovian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #kosovian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $kosovian-color-2;
-    border: 5px solid $kosovian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $kosovian-color-2;
+	border: 5px solid $kosovian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #kosovian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #kosovian-nav ul ul li a:hover {
-    color: $kosovian-color-3;
+	color: $kosovian-color-3;
 }
 
 //////////////////////////
 
 #croatian-nav {
-    background-color: $croatian-color-2;
+	background-color: $croatian-color-2;
 }
 #croatian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #croatian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #croatian-nav ul li:hover {
-    background-color: $croatian-color;
+	background-color: $croatian-color;
 }
 #croatian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #croatian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #croatian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $croatian-color-2;
-    border: 5px solid $croatian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $croatian-color-2;
+	border: 5px solid $croatian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #croatian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #croatian-nav ul ul li a:hover {
-    color: $croatian-color-3;
+	color: $croatian-color-3;
 }
 
 //////////////////////////
 
 #montenegran-nav {
-    background-color: $montenegran-color-2;
+	background-color: $montenegran-color-2;
 }
 #montenegran-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #montenegran-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #montenegran-nav ul li:hover {
-    background-color: $montenegran-color;
+	background-color: $montenegran-color;
 }
 #montenegran-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #montenegran-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #montenegran-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $montenegran-color-2;
-    border: 5px solid $montenegran-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $montenegran-color-2;
+	border: 5px solid $montenegran-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #montenegran-nav ul ul li {
-    display: block;
+	display: block;
 }
 #montenegran-nav ul ul li a:hover {
-    color: $montenegran-color-3;
+	color: $montenegran-color-3;
 }
 
 //////////////////////////
 
 #slovenian-nav {
-    background-color: $slovenian-color-2;
+	background-color: $slovenian-color-2;
 }
 #slovenian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #slovenian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #slovenian-nav ul li:hover {
-    background-color: $slovenian-color;
+	background-color: $slovenian-color;
 }
 #slovenian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #slovenian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #slovenian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $slovenian-color-2;
-    border: 5px solid $slovenian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $slovenian-color-2;
+	border: 5px solid $slovenian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #slovenian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #slovenian-nav ul ul li a:hover {
-    color: $slovenian-color-3;
+	color: $slovenian-color-3;
 }
 
 //////////////////////////
 
 #serbian-nav {
-    background-color: $serbian-color-2;
+	background-color: $serbian-color-2;
 }
 #serbian-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #serbian-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #serbian-nav ul li:hover {
-    background-color: $serbian-color;
+	background-color: $serbian-color;
 }
 #serbian-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #serbian-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #serbian-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $serbian-color-2;
-    border: 5px solid $serbian-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $serbian-color-2;
+	border: 5px solid $serbian-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #serbian-nav ul ul li {
-    display: block;
+	display: block;
 }
 #serbian-nav ul ul li a:hover {
-    color: $serbian-color-3;
+	color: $serbian-color-3;
 }
 
 //////////////////////////
 
 #default-nav {
-    background-color: $default-color-2;
+	background-color: $default-color-2;
 }
 #default-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
 }
 #default-nav ul li {
-    display: inline-block;
+	display: inline-block;
 }
 #default-nav ul li:hover {
-    background-color: $default-color;
+	background-color: $default-color;
 }
 #default-nav ul li a, visited {
-    color: white;
-    display: block;
-    padding: 15px;
-    text-decoration: none;
+	color: white;
+	display: block;
+	padding: 15px;
+	text-decoration: none;
 }
 #default-nav ul li:hover ul {
-    display: block;
+	display: block;
 }
 #default-nav ul ul {
-    display: none;
-    position: absolute;
-    background-color: $default-color-2;
-    border: 5px solid $default-color;
-    border-top: 0;
-    margin-left: -5px;
+	display: none;
+	position: absolute;
+	background-color: $default-color-2;
+	border: 5px solid $default-color;
+	border-top: 0;
+	margin-left: -5px;
 }
 #default-nav ul ul li {
-    display: block;
+	display: block;
 }
 #default-nav ul ul li a:hover {
-    color: $default-color-3;
+	color: $default-color-3;
 }
 
 .icon-visitors {
-  -webkit-mask-image: url('/static/images/visitors.svg');
-  mask-image: url('/static/images/visitors.svg');
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
+	-webkit-mask-image: url('/static/images/visitors.svg');
+	mask-image: url('/static/images/visitors.svg');
+	display: block;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
 }
 
 .visitor-wrapper {
-  height: 215px;
-  width: 198px;
+	height: 215px;
+	width: 198px;
 }
 
 .counter {
-  position: absolute;
-  font-size: 7rem;
-  font-weight: 900;
+	position: absolute;
+	font-size: 7rem;
+	font-weight: 900;
 }
 
 .capture {
-  opacity: 0.3;
-  font-size: 0.9rem;
+	opacity: 0.3;
+	font-size: 0.9rem;
 }
 
 
 #lektor-edit-link {
-  display: none;
+	display: none;
 }
 
 path.color0 {
-  fill: #567F3A;
+	fill: #567F3A;
 }
 
 path.color1 {
-  fill: #B0CE9B;
+	fill: #B0CE9B;
 }
 
 .donut-text {
-  font-family: sans-serif;
-  font-size: 4rem;
-  letter-spacing: -.2rem;
-  font-weight: 600;
-  line-height: 12rem;
-  fill: #567F3A;
+	font-family: sans-serif;
+	font-size: 4rem;
+	letter-spacing: -.2rem;
+	font-weight: 600;
+	line-height: 12rem;
+	fill: #567F3A;
 }
 
 .background-text {
-  font-size: 12rem;
-  font-family: "Playfair Display";
-  font-weight: 900;
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  margin-top: 2.5rem;
-  margin-left: 0.5rem;
+	@include title-font;
+	font-size: 12rem;
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	margin-top: 2.5rem;
+	margin-left: 0.5rem;
 }
 
 .facts-container {
-  background: linear-gradient(135deg, #0A8C4D 0%, #56ADC2 100%);
+	background: linear-gradient(135deg, #0A8C4D 0%, #56ADC2 100%);
 }
 
 .facts-card {
-  background-color: #FAFAFA;
-  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
+	background-color: #FAFAFA;
+	box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
 }
 
 .facts-button {
-  box-sizing: border-box;
-  border: 3px solid transparent;
-  min-height: 4rem;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 0.1rem;
-  -moz-border-image: -moz-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
-  border-image: linear-gradient(to right, $default-color-3 0%, $bosnian-color 100%);
-  border-image-slice: 1;
+	box-sizing: border-box;
+	border: 3px solid transparent;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0.1rem;
+	-moz-border-image: -moz-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
+	border-image: linear-gradient(to right, $default-color-3 0%, $bosnian-color 100%);
+	border-image-slice: 1;
 }
 
 .index-counter {
-  position: absolute;
-  font-size: 4rem;
-  font-weight: 900;
+	position: absolute;
+	font-size: 4rem;
+	font-weight: 900;
 }
 
 .index-visitor-wrapper {
-  height: 151px;
-  width: 138px;
+	height: 151px;
+	width: 138px;
 }
 
 .index-banner {
-  background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
-  padding-top: 7rem;
-  overflow: hidden;
+	background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
+	padding-top: 7rem;
+	overflow: hidden;
 }
 
 .index-banner-quote {
-  font-weight: 900;
-  color: white;
-  text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
-  font-family: "Playfair Display";
-  font-size: 5rem;
-  line-height: 7rem;
-  margin-bottom: 2rem;
+	@include title-font;
+	color: white;
+	text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
+	font-size: 5rem;
+	line-height: 7rem;
+	margin-bottom: 2rem;
 }
 
 .index-banner-button {
-  background: linear-gradient(315deg, #BEB81C 0%, #17A9AE 100%);
-  border-radius: 100px;
-  min-height: 4rem;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  text-decoration: none;
-  z-index: 10;
+	background: linear-gradient(315deg, #BEB81C 0%, #17A9AE 100%);
+	border-radius: 100px;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	z-index: 10;
 }
 
 .learn-more-card {
-  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
+	box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
 }
 
 .learn-more-button {
-  box-sizing: border-box;
-  border: 3px solid transparent;
-  min-height: 4rem;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 900;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 0.1rem;
-  -moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-  -webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-  border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
-  border-image-slice: 1;
+	box-sizing: border-box;
+	border: 3px solid transparent;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0.1rem;
+	-moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+	border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
+	border-image-slice: 1;
 }
 
 .learn-more-button.about-country {
-  min-height: 3rem;
+	min-height: 3rem;
 }
 
 .image-holder {
-  background-image: url('/static/images/Croatia_CTA_image.png');
-  width: 100%;
-  height: 16rem;
+	background-image: url('/static/images/Croatia_CTA_image.png');
+	width: 100%;
+	height: 16rem;
 }
 
 #carousel {
-    text-align: center;
+	text-align: center;
 }
 #carousel ul {
-    list-style: none;
+	list-style: none;
 }
 #carousel li {
-    display: none;
+	display: none;
 }
 
 .height-carousel {
-  height: 12rem;
+	height: 12rem;
 }
 
 @media (min-width: 40em) {
-  .sm-min-height-carousel {
-    height: 12rem;
-  }
+	.sm-min-height-carousel {
+		height: 12rem;
+	}
 }
 @media (min-width: 52em) {
-  .md-min-height-carousel {
-    height: 12rem;
-  }
+	.md-min-height-carousel {
+		height: 12rem;
+	}
 }
 @media (min-width: 64em) {
-  .lg-min-height-carousel {
-    height: 12rem;
-  }
+	.lg-min-height-carousel {
+		height: 12rem;
+	}
 }
 @media (min-width: 76em) {
-  .xl-min-height-carousel {
-    height: 12rem;
-  }
+	.xl-min-height-carousel {
+		height: 12rem;
+	}
 }
 
 .icon-logo {
-  position: absolute;
-  top: -1rem;
-  left: 2rem;
-  display: block;
-  z-index: 3;
-  text-indent: -9999px;
-  width: 6.5rem;
-  height: 9.5rem;
-  background: url('/static/images/WWF_logo.svg');
-  background-size: 100% 100%;
+	position: absolute;
+	top: -1rem;
+	left: 2rem;
+	display: block;
+	z-index: 3;
+	text-indent: -9999px;
+	width: 6.5rem;
+	height: 9.5rem;
+	background: url('/static/images/WWF_logo.svg');
+	background-size: 100% 100%;
 }
 
 .map-wrapper {
@@ -1459,12 +1168,12 @@ path.color1 {
 
 	.big-map-desc {
 		position: absolute;
-		top: 30%;
+		top: 20%;
 		left: 10%;
 		width: 30%;
 
 		.country-name {
-			font-family: "Playfair Display";
+			font-family: $title-font-family;
 			font-weight: 700;
 			font-size: 7rem;
 			color: white;
@@ -1482,8 +1191,8 @@ path.color1 {
 		.country-next {
 			cursor: pointer;
 			margin: 1rem;
-      font-size: 6rem;
-      color: $default-color;
+			font-size: 6rem;
+			color: $default-color;
 		}
 	}
 
@@ -1515,7 +1224,7 @@ path.color1 {
 }
 
 .pabat-chart {
-  height: 38rem;
+	height: 38rem;
 }
 
 .index-about {
@@ -1527,289 +1236,288 @@ path.color1 {
 ///////////////////////////////////////////////////////////////////////
 
 .country-chooser {
-  position: relative;
-  display: inline-block;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	position: relative;
+	display: inline-block;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .country-chooser .country-chooser-menu {
-  position: absolute;
-  top: 100%;
-  display: none;
-  margin: 0;
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
 
-  list-style: none; /** Remove list bullets */
-  width: 100%; /** Set the width to 100% of it's parent */
-  padding: 0;
+	list-style: none; /** Remove list bullets */
+	width: 100%; /** Set the width to 100% of it's parent */
+	padding: 0;
 }
 
 .country-chooser:hover .country-chooser-menu {
-    display: block;
+	display: block;
 }
 
 /** Button Styles **/
 .country-chooser button {
-  font-size: 1rem;
-  background-color: Transparent;
-  border: 3px solid $croatian-color;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  overflow:hidden;
-  cursor: pointer;
-  min-width: 25rem;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  span {
-    color: #9B9B9B;
-  }
+	font-size: 1rem;
+	background-color: Transparent;
+	border: 3px solid $croatian-color;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	overflow:hidden;
+	cursor: pointer;
+	min-width: 25rem;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	span {
+		color: #9B9B9B;
+	}
 }
 
 /** List Item Styles **/
 .country-chooser a {
-    display: block;
-    padding: 0.2em 0.8em;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    margin: 0.8rem;
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	margin: 0.8rem;
 }
 
 /** List Item Hover Styles **/
 .country-chooser a:hover {
-    background-color: $croatian-color-2;
+	background-color: $croatian-color-2;
 }
 //-------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////
 
 .pa-chooser {
-  position: relative;
-  display: inline-block;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	position: relative;
+	display: inline-block;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .pa-chooser .pa-chooser-menu {
-  position: absolute;
-  top: 100%;
-  display: none;
-  margin: 0;
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
 
-  list-style: none; /** Remove list bullets */
-  width: 100%; /** Set the width to 100% of it's parent */
-  padding: 0;
+	list-style: none; /** Remove list bullets */
+	width: 100%; /** Set the width to 100% of it's parent */
+	padding: 0;
 }
 
 .pa-chooser:hover .pa-chooser-menu {
-    display: block;
+	display: block;
 }
 
 /** Button Styles **/
 .pa-chooser button {
-  font-size: 1rem;
-  background-color: Transparent;
-  border: 3px solid $croatian-color;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  overflow:hidden;
-  cursor: pointer;
-  min-width: 30rem;
-  transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  span {
-    color: #9B9B9B;
-  }
+	font-size: 1rem;
+	background-color: Transparent;
+	border: 3px solid $croatian-color;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	overflow:hidden;
+	cursor: pointer;
+	min-width: 30rem;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	span {
+		color: #9B9B9B;
+	}
 }
 
 /** List Item Styles **/
 .pa-chooser a {
-    display: block;
-    padding: 0.2em 0.8em;
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    margin: 0.8rem;
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	margin: 0.8rem;
 }
 
 /** List Item Hover Styles **/
 .pa-chooser a:hover {
-    background-color: $croatian-color-2;
+	background-color: $croatian-color-2;
 }
 //-------------------------------------------------//
 
 .hide {
-  display: none;
+	display: none;
 }
 
 .recommendations-title {
-  color: #BEB81C;
-  font-weight: bold;
-  font-size: 2rem;
+	color: #BEB81C;
+	font-weight: bold;
+	font-size: 2rem;
 }
 
 .recommendations-ol li {
-  list-style-position: inside;
-  text-indent: -2em;
-  padding-left: 1em;
-  line-height: 1.6rem;
-  color: #4A4A4A;
-  counter-increment: step-counter;
-  &::before {
-    content: counter(step-counter) ".";
-    font-size: 1rem;
-    color: $bosnian-color-3;
-    font-weight: bold;
-    margin-right: 1.3rem;
-  }
+	list-style-position: inside;
+	text-indent: -2em;
+	padding-left: 1em;
+	line-height: 1.6rem;
+	color: #4A4A4A;
+	counter-increment: step-counter;
+	&::before {
+		content: counter(step-counter) ".";
+		font-size: 1rem;
+		color: $bosnian-color-3;
+		font-weight: bold;
+		margin-right: 1.3rem;
+	}
 
-  ul li {
-    &::before {
-      content: "• ";
-      font-size: 1.5rem;
-      color: $bosnian-color-3;
-      font-weight: bold;
-      margin-right: 2rem;
-    }
-  }
+	ul li {
+		&::before {
+			content: "• ";
+			font-size: 1.5rem;
+			color: $bosnian-color-3;
+			font-weight: bold;
+			margin-right: 2rem;
+		}
+	}
 }
 
 .pa-background-text {
-  font-size: 4rem;
-  font-family: "Playfair Display";
-  font-weight: 900;
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  margin-top: 2.5rem;
-  margin-left: 0.5rem;
+	@include title-font;
+	font-size: 4rem;
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	margin-top: 2.5rem;
+	margin-left: 0.5rem;
 }
 
 .pa-h2 {
 
-  font-family: Raleway;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: justify;
-  line-height: 1.9rem;
-  color: #4A4A4A;
+	font-family: Raleway;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: justify;
+	line-height: 1.9rem;
+	color: #4A4A4A;
 }
 
 .pa-p {
-  font-family: Raleway;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-  line-height: 2rem;
-  color: $croatian-color;
+	font-family: Raleway;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2rem;
+	color: $croatian-color;
 }
 
 .graph-card-icon {
-  font-size: 8rem;
-  background: linear-gradient(315deg, $croatian-color 0%, $croatian-color-3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	font-size: 8rem;
+	background: linear-gradient(315deg, $croatian-color 0%, $croatian-color-3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .pointer-cursor {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .graph-card {
-  background-color: #FAFAFA;
-  box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
+	background-color: #FAFAFA;
+	box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
 }
 
 .graph-card-hover {
-  &:hover {
-    background-color: $croatian-color;
-    .graph-card-icon {
-      -webkit-text-fill-color: white;
-    }
-    .pa-p {
-      color: white;
-    }
-  }
+	&:hover {
+		background-color: $croatian-color;
+		.graph-card-icon {
+			-webkit-text-fill-color: white;
+		}
+		.pa-p {
+			color: white;
+		}
+	}
 }
 
 .no-graphs-h1 {
-  opacity: 0.6;
-  font-family: "Playfair Display";
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 5rem;
-  color: #4A4A4A;
+	font-family: $title-font-family;
+	opacity: 0.6;
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 5rem;
+	color: #4A4A4A;
 }
 
 .no-graphs-ol li{
-  opacity: 0.1;
-  font-family: "Playfair Display";
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 4rem;
-  color: #4A4A4A;
-  list-style-position: inside;
-  counter-increment: step-counter;
-  &::before {
-    content: counter(step-counter) ".";
-    font-size: 3rem;
-    color: #4A4A4A;
-    font-weight: bold;
-    margin-right: 1.3rem;
-  }
+	font-family: $title-font-family;
+	opacity: 0.1;
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 4rem;
+	color: #4A4A4A;
+	list-style-position: inside;
+	counter-increment: step-counter;
+	&::before {
+		content: counter(step-counter) ".";
+		font-size: 3rem;
+		color: #4A4A4A;
+		font-weight: bold;
+		margin-right: 1.3rem;
+	}
 }
 
 .choose-country {
-  &::after {
-    content: "Country";
-    position: absolute;
-    left: -0.2rem;
-    bottom: 1.6rem;
-    font-size: 3.75rem;
-    z-index: 0;
-    opacity: 0.1;
-    font-family: "Playfair Display";
-    font-weight: bold;
-    color: #4A4A4A;
-    width: 140%;
-    display: block;
-  }
+	&::after {
+		font-family: $title-font-family;
+		font-weight: 700;
+		content: "Country";
+		position: absolute;
+		left: -0.2rem;
+		bottom: 1.6rem;
+		font-size: 3.75rem;
+		z-index: 0;
+		opacity: 0.1;
+		color: #4A4A4A;
+		width: 140%;
+		display: block;
+	}
 }
 
 .choose-pa {
-  &::after {
-    content: "Protected area";
-    position: absolute;
-    left: -0.2rem;
-    bottom: 1.6rem;
-    font-size: 3.75rem;
-    z-index: 0;
-    opacity: 0.1;
-    font-family: "Playfair Display";
-    font-weight: bold;
-    color: #4A4A4A;
-    width: 140%;
-    display: block;
-  }
+	&::after {
+		font-family: $title-font-family;
+		font-weight: 700;
+		content: "Protected area";
+		position: absolute;
+		left: -0.2rem;
+		bottom: 1.6rem;
+		font-size: 3.75rem;
+		z-index: 0;
+		opacity: 0.1;
+		color: #4A4A4A;
+		width: 140%;
+		display: block;
+	}
 }
 
 .choose-value {
-  &::after {
-    content: "Values";
-    position: absolute;
-    left: -0.2rem;
-    bottom: 1.6rem;
-    font-size: 3.75rem;
-    z-index: 0;
-    opacity: 0.1;
-    font-family: "Playfair Display";
-    font-weight: bold;
-    color: #4A4A4A;
-    width: 100%;
-    display: block;
-  }
+	&::after {
+		font-family: $title-font-family;
+		font-weight: 700;
+		content: "Values";
+		position: absolute;
+		left: -0.2rem;
+		bottom: 1.6rem;
+		font-size: 3.75rem;
+		z-index: 0;
+		opacity: 0.1;
+		color: #4A4A4A;
+		width: 100%;
+		display: block;
+	}
 }
 
 .pa-choosen-text {
-  color: #4A4A4A;
-  font-weight: bold;
+	color: #4A4A4A;
+	font-weight: bold;
 }
 
 #country_path {
-  width: 20rem;
+	width: 20rem;
 }

@@ -24,6 +24,8 @@ protected_areas_by_country = {
 	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
 }
 
+countriesOrder = ["albania", "bosnia", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"];
+
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	var $target = $( event.currentTarget );
 
@@ -124,7 +126,7 @@ jQuery(document).ready(function(){
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
 
 	$('.map-wrapper .big-map-desc .country-prev').click(function() {
-		currentCountry = nextCountry(currentCountry);
+		currentCountry = prevCountry(currentCountry);
 		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
 
@@ -241,15 +243,29 @@ function hide_other_graphs(graph_number) {
 // Functions for manipulating the map on the landing page
 // ------------------------------------------------------
 
+function prevCountry(currCntry) {
+	var currIdx = countriesOrder.indexOf(currCntry), len = countriesOrder.length;
+
+	console.log(currIdx);
+
+	if (currIdx <= 0) {
+		console.log("BU");
+		return countriesOrder[len - 1];
+	} else {
+		console.log("BA");
+		return countriesOrder[currIdx - 1];
+	}
+}
+
 function nextCountry(currCntry) {
-	var order = ["albania", "bosnia", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"],
-		currIdx = order.indexOf(currCntry),
-		len = order.length;
+	var currIdx = countriesOrder.indexOf(currCntry), len = countriesOrder.length;
+
+	console.log(currIdx);
 
 	if (currIdx >= len-1) {
-		return order[currIdx + 1 - len];
+		return countriesOrder[currIdx + 1 - len];
 	} else {
-		return order[currIdx + 1];
+		return countriesOrder[currIdx + 1];
 	}
 }
 
