@@ -25,6 +25,7 @@ protected_areas_by_country = {
 }
 
 countriesOrder = ["albania", "bosnia", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"];
+currentCountry = "croatia";
 
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	var $target = $( event.currentTarget );
@@ -85,53 +86,79 @@ jQuery(document).ready(function(){
 		$('.local-dropdown button span').html('EN')
 	}
 
-	// Check if first li element is hidden then show
-	if( jQuery('#carouselNav li:first-child').is(':hidden') ) {
-		// Toggle visibility
-		jQuery('#carouselNav li:first-child').toggle();
-	}
+	$('.landing-page-carousel .message-prev').click(function() {
+		$messages = $('.carousel-messages li');
+		$active_msg = $('.carousel-messages li.show');
+		$active_msg.addClass("hide").removeClass("show");
 
-	// Interval time
-	var carouselInterval = 3000;
+		curr_index = $messages.index($active_msg);
+		next_index = crawlArray($messages, curr_index, -1);
 
-	// Slider
-	function carouselSlide(){
-		// Check if last element was reached
-		if( jQuery('#carouselNav li:visible').next().length == 0 ) {
-			// Hide last li element
-			jQuery('#carouselNav li:last-child').slideUp('fast');
-			// Show the first one
-			jQuery('#carouselNav li:first-child').slideDown('fast');
-		} else {
-			// Rotate elements
-			jQuery('#carouselNav li:visible').slideUp('fast').next('li:hidden').slideDown('fast');
-		}
-	}
+		$next_active_msg = $messages.eq(next_index);
+		$next_active_msg.removeClass("hide").addClass("show");
 
-	// Set Interval
-	var carouselScroll = setInterval(carouselSlide,carouselInterval);
-
-	// Pause on hover
-	jQuery('#carousel').hover(function() {
-		clearInterval(carouselScroll);
-	}, function() {
-		carouselScroll = setInterval(carouselSlide,carouselInterval);
-		carouselSlide();
 	});
 
-	var currentCountry = "croatia";
+	$('.landing-page-carousel .message-next').click(function() {
+		$messages = $('.carousel-messages li');
+		$active_msg = $('.carousel-messages li.show');
+		$active_msg.addClass("hide").removeClass("show");
+
+		curr_index = $messages.index($active_msg);
+		next_index = crawlArray($messages, curr_index, 1);
+
+		$next_active_msg = $messages.eq(next_index);
+		$next_active_msg.removeClass("hide").addClass("show");
+	});
+
+	// // Check if first li element is hidden then show
+	// if( jQuery('#carouselNav li:first-child').is(':hidden') ) {
+	// 	// Toggle visibility
+	// 	jQuery('#carouselNav li:first-child').toggle();
+	// }
+
+	// // Interval time
+	// var carouselInterval = 3000;
+
+	// // Slider
+	// function carouselSlide(){
+	// 	// Check if last element was reached
+	// 	if( jQuery('#carouselNav li:visible').next().length == 0 ) {
+	// 		// Hide last li element
+	// 		jQuery('#carouselNav li:last-child').slideUp('fast');
+	// 		// Show the first one
+	// 		jQuery('#carouselNav li:first-child').slideDown('fast');
+	// 	} else {
+	// 		// Rotate elements
+	// 		jQuery('#carouselNav li:visible').slideUp('fast').next('li:hidden').slideDown('fast');
+	// 	}
+	// }
+
+	// // Set Interval
+	// var carouselScroll = setInterval(carouselSlide,carouselInterval);
+
+	// // Pause on hover
+	// jQuery('#carousel').hover(function() {
+	// 	clearInterval(carouselScroll);
+	// }, function() {
+	// 	carouselScroll = setInterval(carouselSlide,carouselInterval);
+	// 	carouselSlide();
+	// });
+
 
 	$('.map-wrapper svg .flag-icon').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
 
 	$('.map-wrapper .big-map-desc .country-prev').click(function() {
-		currentCountry = prevCountry(currentCountry);
+		nextCountryIdx = crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1);
+		currentCountry = countriesOrder[nextCountryIdx];
 		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
 
 	$('.map-wrapper .big-map-desc .country-next').click(function() {
-		currentCountry = nextCountry(currentCountry);
+		nextCountryIdx = crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1);
+		currentCountry = countriesOrder[nextCountryIdx];
 		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
 });
@@ -243,32 +270,6 @@ function hide_other_graphs(graph_number) {
 // Functions for manipulating the map on the landing page
 // ------------------------------------------------------
 
-function prevCountry(currCntry) {
-	var currIdx = countriesOrder.indexOf(currCntry), len = countriesOrder.length;
-
-	console.log(currIdx);
-
-	if (currIdx <= 0) {
-		console.log("BU");
-		return countriesOrder[len - 1];
-	} else {
-		console.log("BA");
-		return countriesOrder[currIdx - 1];
-	}
-}
-
-function nextCountry(currCntry) {
-	var currIdx = countriesOrder.indexOf(currCntry), len = countriesOrder.length;
-
-	console.log(currIdx);
-
-	if (currIdx >= len-1) {
-		return countriesOrder[currIdx + 1 - len];
-	} else {
-		return countriesOrder[currIdx + 1];
-	}
-}
-
 function panToViewBox(vpx, vpy) {
 	var svg = d3.select(".map-wrapper svg");
 	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
@@ -298,4 +299,8 @@ function switchCountry(countryName, countryDesc) {
 	$(".big-map-desc .country-name").html(countryName);
 	$(".big-map-desc .country-desc").html(countryDesc);
 	$(".big-map-desc .more-about-name").html(countryName);
+}
+
+function crawlArray(array, index, step) {
+    return ((index + step) % array.length + array.length) % array.length;
 }

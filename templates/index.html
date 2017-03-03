@@ -1,107 +1,122 @@
 {% extends "layout.html" %}
 
 {% with header_class="default-background-color-1 default-color-1", select_colors="default-color-1 default-background-color-2", nav_id="default-nav", nav_links="nav-links-default" %}
-  {% include "_header.html" %}
+	{% include "_header.html" %}
 {% endwith %}
 
 {% block body %}
+	<header class="index-banner flex justify-center items-center flex-column" style="">
+		<div class="col-12 md-col-6">
+			<h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
+		</div>
+		<div class="col-10 md-col-9 lg-col-6 mb3 height-carousel sm-min-height-carousel md-min-height-carousel lg-min-height-carousel xl-min-height-carousel flex justify-center items-center">
+			<div class="landing-page-carousel flex justify-around">
+				<i class="message-prev inline-block icon-navigate_before"></i>
+				<ul class="carousel-messages max-width-2">
+					<li id="carousel-msg-0" class="carousel-msg show"><p class="default-color-1 center">{{ this.message_0 }}</p></li>
+					<li id="carousel-msg-1" class="carousel-msg show"><p class="default-color-1 center">{{ this.message_1 }}</p></li>
+					<li id="carousel-msg-2" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_2 }}</p></li>
+					<li id="carousel-msg-3" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_3 }}</p></li>
+					<li id="carousel-msg-4" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_4 }}</p></li>
+					<li id="carousel-msg-5" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_5 }}</p></li>
+					<li id="carousel-msg-6" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_6 }}</p></li>
+				</ul>
+				<i class="message-next inline-block icon-navigate_next"></i>
+			</div>
+		</div>
+		<a href="#" class="index-banner-button flex items-center justify-center my3 px3 xs-hide sm-hide">
+			<p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
+		</a>
 
-<header class="index-banner flex justify-center items-center flex-column" style="">
-  <div class="col-12 md-col-6">
-    <h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
-  </div>
-  <div class="col-10 md-col-8 lg-col-4 mb3 height-carousel sm-min-height-carousel md-min-height-carousel lg-min-height-carousel xl-min-height-carousel flex justify-center items-center">
-    <div id="carousel">
-      <ul id="carouselNav">
-        <li>
-          <p class="default-color-1 center">{{ this.message_0 }}</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <a href="#" class="index-banner-button flex items-center justify-center my3 px3 xs-hide sm-hide">
-    <p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
-  </a>
+		<div class="map-wrapper">
+			{% include "_countries.html" %}
+			<div class="big-map-desc">
+				<h2 class="country-name ml3">Croatia</h2>
+				<p class="country-desc ml3">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</p>
+				<a href="{{ '/croatia'|url }}" id="country_path" class="learn-more-button about-country m3 flex items-center justify-center">
+					<p class="default-color-1">More about <span class="more-about-name">Croatia</span></p>
+				</a>
+				<i class="country-prev icon-navigate_before"></i>
+				<i class="country-next icon-navigate_next"></i>
+			</div>
+			<div class="arrow-austria"></div>
+			<div class="arrow-greece"></div>
+		</div>
+	</header>
 
-  <div class="map-wrapper">
-	  {% include "_countries.html" %}
-	  <div class="big-map-desc">
-		  <h2 class="country-name ml3">Croatia</h2>
-		  <p class="country-desc ml3">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</p>
-		  <a href="{{ '/croatia'|url }}" id="country_path" class="learn-more-button about-country m3 flex items-center justify-center">
-			  <p class="default-color-1">More about <span class="more-about-name">Croatia</span></p>
-		  </a>
-      <i class="country-prev icon-navigate_before"></i>
-      <i class="country-next icon-navigate_next"></i>
-	  </div>
-	  <div class="arrow-austria"></div>
-	  <div class="arrow-greece"></div>
-  </div>
-</header>
-<div class="index-about flex justify-center py3 sm-hide xs-hide">
-  <p class="background-text default-color-3">{{ this.background_text_about }}</p>
-  <div class="col-12 md-col-8 mt8 mb4">
-    <p class="index-h2">{{ this.about_headline }}</p>
-    <p class="mt3">{{ this.about_body }}</p>
-  </div>
-</div>
-<div class="flex justify-center md-hide lg-hide mb2">
-  <div class="col-10 py3">
-    <p class="index-h2">{{ this.about_headline }}</p>
-    <p class="mt3">{{ this.about_body }}</p>
-  </div>
-</div>
-<div class="facts-container py3 lg-flex justify-center xl-px10">
-  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">{{ this.facts_card_1_title }}</p>
-    <div class="mt4 index-visitor-wrapper">
-      <div class="index-counter bosnian-color-1" id="counter">2590320
-      </div>
-      <i class="icon-visitors bosnian-background-color-1"></i>
-    </div>
-    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">{{ this.facts_cta }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">{{ this.facts_card_2_title }}</p>
-    <div class="p4 flex items-center justify-center">
-      <div class="donut" id="pie77" data-donut="77"></div>
-    </div>
-    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">{{ this.facts_cta }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mx-auto my1 facts-card flex justify-between flex-column items-center p3">
-    <p class="index-h3">{{ this.facts_card_3_title }}</p>
-    <div class="chart px-3 py-3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
-    <a href="#" class="facts-button flex items-center justify-center mt3 px3">
-      <p class="">{{ this.facts_cta }}</p>
-    </a>
-  </div>
-</div>
-<div class="py3 lg-flex justify-center xl-px10">
-  <p class="background-text xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_cta }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_cta }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">{{ this.learn_more_title }}</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_cta }}</p>
-    </a>
-  </div>
-</div>
+	<div class="index-about">
+		<p class="background-text default-color-3 sm-hide xs-hide">{{ this.background_text_about }}</p>
+
+		<div class="col-12 md-col-9 lg-col-6 mx-auto my4 p2">
+			<p class="index-h2">{{ this.about_headline }}</p>
+			<p class="mt3">{{ this.about_body }}</p>
+		</div>
+	</div>
+
+	<div class="flex justify-center md-hide lg-hide mb2">
+	</div>
+
+	<div class="facts-container py3 lg-flex justify-center xl-px10">
+
+		<div class="facts-card lg-col-4 col-10 p3 z1 mx2 my1 flex justify-between flex-column items-center">
+			<p class="index-h3">{{ this.facts_card_1_title }}</p>
+			<div class="mt4 index-visitor-wrapper">
+				<div class="index-counter bosnian-color-1" id="counter">2590320</div>
+				<i class="icon-visitors bosnian-background-color-1"></i>
+			</div>
+			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+				<p class="">{{ this.facts_cta }}</p>
+			</a>
+		</div>
+
+		<div class="facts-card lg-col-4 col-10 p3 z1 mx2 my1 flex justify-between flex-column items-center">
+			<p class="index-h3">{{ this.facts_card_2_title }}</p>
+			<div class="p1 mt3 flex items-center justify-center">
+				<div class="donut" id="pie77" data-donut="77"></div>
+			</div>
+			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+				<p class="">{{ this.facts_cta }}</p>
+			</a>
+		</div>
+
+		<div class="facts-card lg-col-4 col-10 p3 mx2 my1 flex justify-between flex-column items-center">
+			<p class="index-h3">{{ this.facts_card_3_title }}</p>
+			<div class="chart px3 py3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
+			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+				<p class="">{{ this.facts_cta }}</p>
+			</a>
+		</div>
+
+	</div>
+
+	<div class="learn-more-links py3 xl-px10">
+		<p class="pt3 background-text xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
+
+		<div class="links-container lg-flex justify-center" style="margin-top:100px;">
+
+			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
+				<div class="image-holder"></div>
+				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+					<p class="">{{ this.learn_more_cta }}</p>
+				</a>
+			</div>
+
+			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
+				<div class="image-holder"></div>
+				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+					<p class="">{{ this.learn_more_cta }}</p>
+				</a>
+			</div>
+
+			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
+				<div class="image-holder"></div>
+				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+					<p class="">{{ this.learn_more_cta }}</p>
+				</a>
+			</div>
+		</div>
+	</div>
 {% endblock %}
