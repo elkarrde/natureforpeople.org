@@ -1,16 +1,11 @@
 {% extends "layout.html" %}
+
 {% with header_class="bosnian-background-color-1", select_colors="bosnian-color-1 bosnian-background-color-2", nav_id="bosnian-nav", nav_links="nav-links-bosnian" %}
-	{% include "_header.html" %}
+	{% include "_navigation.html" %}
 {% endwith %}
 
 {% block body %}
-	<div class="banner bosnian-banner-image flex items-start flex-column justify-center">
-		<h1 class="banner-title lg-ml10 mx-auto col-10 lg-col-6">{{ this.h1_title }}</h1>
-		<p class="banner-quote mt3 lg-ml10 mx-auto col-10 lg-col-6">{{ this.banner_message }}</p>
-		<a href="#content" class="block banner-button bosnian-border-gradient flex items-center justify-center mt3 lg-ml10 mx-auto">
-			<p class="mx3 default-color-1">{{ this.banner_button_text }}</p>
-		</a>
-	</div>
+	{% include "bosnia/_header.html" %}
 
 	<div id="content" class="country-facts facts-bosnia">
 
@@ -30,7 +25,7 @@
 				<div class="col-12 lg-col-6">
 					{% include "bosnia/_row_2_col_1.html" %}
 				</div>
-				<div class="col-12 lg-col-6 flex items-center justify-center">
+				<div class="col-12 lg-col-6 flex items-center">
 					{% include "bosnia/_row_2_col_2.html" %}
 				</div>
 			</div>
@@ -41,7 +36,7 @@
 				<div class="col-12 lg-col-6">
 					{% include "bosnia/_row_3_col_1.html" %}
 				</div>
-				<div class="col-12 lg-col-6 flex items-center justify-center">
+				<div class="col-12 lg-col-6">
 					{% include "bosnia/_row_3_col_2.html" %}
 				</div>
 			</div>

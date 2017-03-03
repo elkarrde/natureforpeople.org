@@ -1,75 +1,75 @@
 {% extends "layout.html" %}
 {% with header_class="default-background-color-1 default-color-1", select_colors="default-color-1 default-background-color-2", nav_id="default-nav", nav_links="nav-links-default" %}
-  {% include "_header.html" %}
+	{% include "_navigation.html" %}
 {% endwith %}
 
 {% block body %}
 
-<div class="banner-recommendations croatian-banner-image pt8 flex justify-center items center flex-column">
-  <h1 class="banner-title sm-banner-title lg-col-6 col-12 mx-auto center">{{ this.main_headline }}</h1>
-  <p class="banner-quote col-6 mx-auto center">{{ this.subheadline }}</p>
-</div>
+	<div class="banner-recommendations croatian-banner-image pt8 flex justify-center items center flex-column">
+		<h1 class="banner-title sm-banner-title lg-col-6 col-12 mx-auto center">{{ this.main_headline }}</h1>
+		<p class="banner-quote col-6 mx-auto center">{{ this.subheadline }}</p>
+	</div>
 
-<div class="col-12 p2">
-  <p class="background-text xs-hide sm-hide">{{ this.background_title }}</p>
-  <div class="md-col-6 col-10 mx-auto">
-    <h2 class="recommendations-title mt8">{{ this.section_1_headline }}</h2>
-    <ol class="recommendations-ol">
-      <li class="mt3">{{ this.bullet_1 }}</li>
-      <li class="mt3">{{ this.bullet_2 }}</li>
-      <li class="mt3">{{ this.bullet_3 }}</li>
-      <li class="mt3">{{ this.bullet_4 }}</li>
-      <li class="mt3">{{ this.bullet_5 }}</li>
-      <li class="mt3">{{ this.bullet_6 }}</li>
-      <li class="mt3">{{ this.bullet_7 }}</li>
-      <li class="mt3">{{ this.bullet_8 }}
-        <ul class="ml3">
-          <li class="mt3">{{ this.bullet_8_1 }}</li>
-          <li class="mt3">{{ this.bullet_8_2 }}</li>
-          <li class="mt3">{{ this.bullet_8_3 }}</li>
-          <li class="mt3">{{ this.bullet_8_4 }}</li>
-          <li class="mt3">{{ this.bullet_8_5 }}</li>
-        </ul>
-      </li>
-    </ol>
+	<div class="col-12 p2">
+		<p class="background-text xs-hide sm-hide">{{ this.background_title }}</p>
+		<div class="md-col-6 col-10 mx-auto">
+			<h2 class="recommendations-title mt8">{{ this.section_1_headline }}</h2>
+			<ol class="recommendations-ol">
+				<li class="mt3">{{ this.bullet_1 }}</li>
+				<li class="mt3">{{ this.bullet_2 }}</li>
+				<li class="mt3">{{ this.bullet_3 }}</li>
+				<li class="mt3">{{ this.bullet_4 }}</li>
+				<li class="mt3">{{ this.bullet_5 }}</li>
+				<li class="mt3">{{ this.bullet_6 }}</li>
+				<li class="mt3">{{ this.bullet_7 }}</li>
+				<li class="mt3">{{ this.bullet_8 }}
+					<ul class="ml3">
+						<li class="mt3">{{ this.bullet_8_1 }}</li>
+						<li class="mt3">{{ this.bullet_8_2 }}</li>
+						<li class="mt3">{{ this.bullet_8_3 }}</li>
+						<li class="mt3">{{ this.bullet_8_4 }}</li>
+						<li class="mt3">{{ this.bullet_8_5 }}</li>
+					</ul>
+				</li>
+			</ol>
 
-    <h2 class="recommendations-title mt4">{{ this.section_2_headline }}</h2>
-    <ol class="recommendations-ol mb4">
-      <li class="mt3">{{ this.bullet_9 }}</li>
-      <li class="mt3">{{ this.bullet_10 }}
-      </li>
-      <li class="mt3">{{ this.bullet_11 }}</li>
-      <li class="mt3">{{ this.bullet_12 }}</li>
-      <li class="mt3">{{ this.bullet_13 }}</li>
-      <li class="mt3">{{ this.bullet_14 }}</li>
-      <li class="mt3">{{ this.bullet_15 }}</li>
-    </ol>
-  </div>
-</div>
+			<h2 class="recommendations-title mt4">{{ this.section_2_headline }}</h2>
+			<ol class="recommendations-ol mb4">
+				<li class="mt3">{{ this.bullet_9 }}</li>
+				<li class="mt3">{{ this.bullet_10 }}
+				</li>
+				<li class="mt3">{{ this.bullet_11 }}</li>
+				<li class="mt3">{{ this.bullet_12 }}</li>
+				<li class="mt3">{{ this.bullet_13 }}</li>
+				<li class="mt3">{{ this.bullet_14 }}</li>
+				<li class="mt3">{{ this.bullet_15 }}</li>
+			</ol>
+		</div>
+	</div>
 
-<div class="py3 lg-flex justify-center xl-px10">
-  <p class="background-text xs-hide md-hide bosnian-color-1">{{ this.learn_more }}</p>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_button }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_button }}</p>
-    </a>
-  </div>
-  <div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-    <div class="image-holder"></div>
-    <p class="index-h3 m3">WWF examples</p>
-    <a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-      <p class="">{{ this.learn_more_button }}</p>
-    </a>
-  </div>
-</div>
+	<div class="py3 lg-flex justify-center xl-px10">
+		<p class="background-text xs-hide md-hide bosnian-color-1">{{ this.learn_more }}</p>
+		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+			<div class="image-holder"></div>
+			<p class="index-h3 m3">WWF examples</p>
+			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+				<p class="">{{ this.learn_more_button }}</p>
+			</a>
+		</div>
+		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+			<div class="image-holder"></div>
+			<p class="index-h3 m3">WWF examples</p>
+			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+				<p class="">{{ this.learn_more_button }}</p>
+			</a>
+		</div>
+		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
+			<div class="image-holder"></div>
+			<p class="index-h3 m3">WWF examples</p>
+			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
+				<p class="">{{ this.learn_more_button }}</p>
+			</a>
+		</div>
+	</div>
 
 {% endblock %}
