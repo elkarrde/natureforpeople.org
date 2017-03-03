@@ -57,8 +57,8 @@ var drawBarChart = function(element, dataSet, canvasHeight, canvasWidth) {
       .append('text');
 
   canvas.selectAll('text')
-  .attr('x', function(d,i){return i*( rectWidth ) + barPadding * 2 ;})
-  .attr('y',  function(d, i){return canvasHeight - d/heightRatio + 20;})
+  .attr('x', function(d, i){return i*( rectWidth ) + barPadding * 2 ;})
+  .attr('y', function(d, i){return canvasHeight - d/heightRatio + 20;})
   .style("text-anchor", "middle")
   .attr("font-size", "14px")
   .attr("font-weight", "600")

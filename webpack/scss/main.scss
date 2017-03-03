@@ -11,6 +11,62 @@
 @custom-media --breakpoint-lg (min-width: 64em);
 @custom-media --breakpoint-xl (min-width: 76em);
 
+/* Reset CSS ---------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom: Fix box sizing on everything */
+* {
+  box-sizing: border-box;
+}
+
 /* Vars --------------------------------------- */
 
 $title-font-family: 'Playfair Display', serif;
@@ -456,6 +512,71 @@ p {
 .serbian-banner-image { background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg'); }
 .slovenian-banner-image { background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg'); }
 
+.country-facts {
+	a {
+		text-decoration: none;
+		line-height: 1.5;
+		font-weight: bold;
+		&:hover { text-decoration: underline; }
+	}
+}
+
+.facts-albania {
+	.donut {
+		path.color0 { fill: $albanian-color; }
+		path.color1 { fill: $albanian-color-2; }
+	}
+}
+
+.facts-bosnia {
+	.donut {
+		path.color0 { fill: $bosnian-color; }
+		path.color1 { fill: $bosnian-color-2; }
+	}
+}
+
+.facts-croatia {
+	.donut {
+		path.color0 { fill: $croatian-color; }
+		path.color1 { fill: $croatian-color-2; }
+	}
+}
+
+.facts-kosovo {
+	.donut {
+		path.color0 { fill: $kosovian-color; }
+		path.color1 { fill: $kosovian-color-2; }
+	}
+}
+
+.facts-macedonia {
+	.donut {
+		path.color0 { fill: $macedonian-color; }
+		path.color1 { fill: $macedonian-color-2; }
+	}
+}
+
+.facts-montenegro {
+	.donut {
+		path.color0 { fill: $montenegran-color; }
+		path.color1 { fill: $montenegran-color-2; }
+	}
+}
+
+.facts-serbia {
+	.donut {
+		path.color0 { fill: $serbian-color; }
+		path.color1 { fill: $serbian-color-2; }
+	}
+}
+
+.facts-slovenia {
+	.donut {
+		path.color0 { fill: $slovenian-color; }
+		path.color1 { fill: $slovenian-color-2; }
+	}
+}
+
 .albanian-cta-image { background-image: url('/static/images/Albania_CTA_image@2x.png'); }
 .bosnian-cta-image { background-image: url('/static/images/Bosnia_CTA_image@2x.png'); }
 .croatian-cta-image { background-image: url('/static/images/Croatia_CTA_image.png'); }
@@ -651,14 +772,6 @@ p {
 
 #lektor-edit-link {
 	display: none;
-}
-
-path.color0 {
-	fill: #567F3A;
-}
-
-path.color1 {
-	fill: #B0CE9B;
 }
 
 .donut-text {
