@@ -2,7 +2,9 @@ _model: index
 ---
 title: PABAT
 ---
-banner_quote: Prepoznati vrijednost naše prirode
+banner_quote: Prepoznajte vrijednost naše prirode
+---
+message_0: Lako se izgubiti između tisuću otoka ili u gustim šumama. Još je lakše pronaći mir na vrhovima magičnih planina ili uz žuborenje netaknutih rijeka. Otkrijte koliko bi koštalo ono što vas ne košta ništa!
 ---
 message_1: Dinarski luk ekoregija se sastoji iz Dinarida, dalmatinske obale i Jadranskog mora, a domaćini dobro očuvane šume, visoki udio endemske biljke, važne slatkovodnih ekosustava, bogata morska staništa i lovište, i populacije velikih zvijeri (Lynx, smeđi medvjed, vuk i).
 ---
@@ -20,7 +22,7 @@ facts_card_1_title: Broj posjetitelja
 ---
 facts_card_2_title: Raspodjela dobiti
 ---
-facts_card_3_title: Dobit Slatkovodna korištenje
+facts_card_3_title: Dobit od korištenja voda
 ---
 learn_more_title: WWF primjeri
 ---
@@ -33,3 +35,8 @@ scroll_to_map_button_text: Prouči mapu za više informacija
 background_text_about: O PA-BAT-u
 ---
 background_text_learn_more: Prouči više
+---
+about_headline: Zaštićena područja za prirodu i ljude
+---
+about_body: Prirodu uzimamo zdravo za gotovo. A ona vrijedi puno više no što uopće možemo pomisliti. Ovom stranicom želimo prikazati prirodu kroz vrijednosti vode, šume i drugih ekosustava bez kojih život na Zemlji ne bi bio moguć. Prirodu bismo trebali koristiti na održiv način. WWF stoga potiče dijalog s vladama da im prirodne vrijednosti postanu glavna tema, a s poslovnim sektorom da prirodi vrate ono što im ona daje za njihovo bolje poslovanje. U svom radu sa zaštićenim područjima WWF uključuje lokalnu zajednicu u proces upravljanja, kojoj tako osigurava direktnu dobrobit od samog područja. Rješenja kako bolje vrednovati prirodu WWF pronalazi kroz program "Zaštićena područja za prirodu i ljude".
+---
