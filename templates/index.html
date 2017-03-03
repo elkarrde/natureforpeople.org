@@ -11,17 +11,17 @@
 		</div>
 		<div class="col-10 md-col-9 lg-col-6 mb3 height-carousel sm-min-height-carousel md-min-height-carousel lg-min-height-carousel xl-min-height-carousel flex justify-center items-center">
 			<div class="landing-page-carousel flex justify-around">
-				<i class="message-prev inline-block icon-navigate_before"></i>
+				<!--<i class="message-prev inline-block icon-navigate_before"></i>-->
 				<ul class="carousel-messages max-width-2">
 					<li id="carousel-msg-0" class="carousel-msg show"><p class="default-color-1 center">{{ this.message_0 }}</p></li>
-					<li id="carousel-msg-1" class="carousel-msg show"><p class="default-color-1 center">{{ this.message_1 }}</p></li>
+					<!--<li id="carousel-msg-1" class="carousel-msg show"><p class="default-color-1 center">{{ this.message_1 }}</p></li>
 					<li id="carousel-msg-2" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_2 }}</p></li>
 					<li id="carousel-msg-3" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_3 }}</p></li>
 					<li id="carousel-msg-4" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_4 }}</p></li>
 					<li id="carousel-msg-5" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_5 }}</p></li>
-					<li id="carousel-msg-6" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_6 }}</p></li>
+					<li id="carousel-msg-6" class="carousel-msg hide"><p class="default-color-1 center">{{ this.message_6 }}</p></li>-->
 				</ul>
-				<i class="message-next inline-block icon-navigate_next"></i>
+				<!--<i class="message-next inline-block icon-navigate_next"></i>-->
 			</div>
 		</div>
 		<a href="#" class="index-banner-button flex items-center justify-center my3 px3 xs-hide sm-hide">
@@ -34,7 +34,7 @@
 				<h2 class="country-name ml3">Croatia</h2>
 				<p class="country-desc ml3">Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.</p>
 				<a href="{{ '/croatia'|url }}" id="country_path" class="learn-more-button about-country m3 flex items-center justify-center">
-					<p class="default-color-1">More about <span class="more-about-name">Croatia</span></p>
+					<p class="default-color-1">{{ this.more_about}} <span class="more-about-name"><span>Croatia</span></p>
 				</a>
 				<i class="country-prev icon-navigate_before"></i>
 				<i class="country-next icon-navigate_next"></i>
@@ -96,7 +96,7 @@
 
 			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
 				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<p class="index-h3 m3">{{ this.learn_more_title_1 }}</p>
 				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
 					<p class="">{{ this.learn_more_cta }}</p>
 				</a>
@@ -104,7 +104,7 @@
 
 			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
 				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<p class="index-h3 m3">{{ this.learn_more_title_2 }}</p>
 				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
 					<p class="">{{ this.learn_more_cta }}</p>
 				</a>
@@ -112,7 +112,7 @@
 
 			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
 				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title }}</p>
+				<p class="index-h3 m3">{{ this.learn_more_title_3 }}</p>
 				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
 					<p class="">{{ this.learn_more_cta }}</p>
 				</a>
