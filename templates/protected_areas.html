@@ -10,7 +10,10 @@
 
   <div class="pt8 flex flex-wrap col-11">
     <div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-      <h2 class="pa-h2 mb3 choose-country country-after-text relative">{{ this.step_1 }}</h2>
+      <h2 class="pa-h2 mb3 relative">
+        <div class="chooser-headline">{{ this.country }}</div>
+        {{ this.step_1 }}
+        </h2>
       <div class="country-chooser">
         <!-- trigger button -->
         <button class="p2">
@@ -33,7 +36,9 @@
       </div>
     </div>
     <div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-      <h2 class="pa-h2 mb3 choose-pa relative">{{ this.step_2 }}</h2>
+      <h2 class="pa-h2 mb3 relative">
+      <div class="chooser-headline">{{ this.pa }}</div>
+      {{ this.step_2 }}</h2>
       <div class="pa-chooser ml2">
         <!-- trigger button -->
         <button class="p2">
@@ -48,7 +53,9 @@
     </div>
   </div>
   <div>
-	  <h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 choose-value relative">{{ this.graph_values }}</h2>
+	  <h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 relative">
+    <div class="chooser-headline">{{ this.values }}</div>
+    {{ this.graph_values }}</h2>
   </div>
   <div class="graph-type-picker lg-flex justify-center xl-px10 mx4">
     <div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="1">
