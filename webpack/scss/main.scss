@@ -858,6 +858,7 @@ p {
 	background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
 	padding-top: 7rem;
 	overflow: hidden;
+	z-index: 25;
 }
 
 .index-banner-quote {
@@ -956,6 +957,7 @@ p {
 	position: relative;
 	width: 100%;
 	height: calc(100vh - 100px);
+	z-index: 50;
 
 	.big-map {
 		position: absolute;
