@@ -283,21 +283,23 @@ function panToCountry() {
 		countryName = this.parentNode.getAttribute("mydata:country_name"),
 		countryDesc = this.parentNode.getAttribute("mydata:country_about"),
 		countryUrl = this.parentNode.getAttribute("mydata:country_url"),
-		localizationLocation = window.location.pathname.split('/')[1];
+		localizationLocation = window.location.pathname.split('/')[1],
+		fullCountryUrl;
 
 	if (localizationLocation == 'hr') {
-      $("#country_path").prop("href", '/' + localizationLocation + countryUrl);
+      fullCountryUrl = '/' + localizationLocation + countryUrl;
     } else {
-      $("#country_path").prop("href", countryUrl);
+      fullCountryUrl = countryUrl;
     }
 
-	switchCountry(countryName, countryDesc);
+	switchCountry(countryName, countryDesc, fullCountryUrl);
 	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
 }
 
-function switchCountry(countryName, countryDesc) {
+function switchCountry(countryName, countryDesc, countryUrl) {
 	$(".big-map-desc .country-name").html(countryName);
 	$(".big-map-desc .country-desc").html(countryDesc);
+	$(".big-map-desc .about-country-button").attr("href", countryUrl);
 	$(".big-map-desc .more-about-name").html(countryName);
 }
 

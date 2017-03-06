@@ -901,11 +901,6 @@ p {
 	}
 }
 
-.about-country-button {
-	@include button-w-gradient($croatian-color-3, $croatian-color);
-	min-height: 3rem;
-}
-
 .landing-page-carousel {
 	text-align: center;
 
@@ -976,7 +971,7 @@ p {
 		position: absolute;
 		top: 20%;
 		left: 10%;
-		width: 30%;
+		width: 45%;
 
 		.country-name {
 			font-family: $title-font-family;
@@ -991,6 +986,13 @@ p {
 			font-weight: 200;
 			line-height: 1.5;
 			color: white;
+			width: 60%;
+		}
+
+		.about-country-button {
+			@include button-w-gradient($croatian-color-3, $croatian-color);
+			min-height: 3rem;
+			width: 50%;
 		}
 
 		.country-prev,
