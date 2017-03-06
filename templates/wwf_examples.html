@@ -15,17 +15,17 @@
 
 	<p class="background-text xs-hide sm-hide">{{ this.bg_text }}</p>
 
-	<section class="intro col-12 md-col-6 mt4 pt4 mx-auto">
+	<section class="intro col-9 md-col-6 mt4 pt4 mx-auto">
 		<h1 class="title h1 bold">{{ this.intro_title }}</h1>
 		<div class="body mt2">
 			{{ this.intro_body }}
 		</div>
 	</section>
 
-	<div class="py3 lg-flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.example_1, '/factsheet/bears'|url) }}
-		{{ cards.card_w_img(this.example_2, '/factsheet/una'|url) }}
-		{{ cards.card_w_img(this.example_3, '/factsheet/una'|url) }}
+	<div class="cards-container py3 mxn2 max-width-4 mx-auto flex justify-center flex-wrap">
+		{{ cards.card_w_img(this.example_1, '/factsheet/bears'|url, cols=3) }}
+		{{ cards.card_w_img(this.example_2, '/factsheet/una'|url, cols=3) }}
+		{{ cards.card_w_img(this.example_3, '/factsheet/una'|url, cols=3) }}
 	</div>
 
 	{% include "shared/_short_cta.html" %}

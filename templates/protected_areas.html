@@ -12,12 +12,10 @@
 	<h1 class="banner-title col-6 mx-auto center">{{ this.headline }}</h1>
 </div>
 
-<div class="pt8 flex flex-wrap col-11">
+<div class="pt8 col-11 flex flex-wrap">
+
 	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-		<h2 class="pa-h2 mb3 relative">
-			<div class="chooser-headline">{{ this.country }}</div>
-			{{ this.step_1 }}
-		</h2>
+		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.country }}</div>{{ this.step_1 }}</h2>
 		<div class="country-chooser">
 			<!-- trigger button -->
 			<button class="p2">
@@ -39,11 +37,10 @@
 			</ul>
 		</div>
 	</div>
+
 	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-		<h2 class="pa-h2 mb3 relative">
-			<div class="chooser-headline">{{ this.pa }}</div>
-			{{ this.step_2 }}</h2>
-		<div class="pa-chooser ml2">
+		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.pa }}</div>{{ this.step_2 }}</h2>
+		<div class="pa-chooser">
 			<!-- trigger button -->
 			<button class="p2">
 				<span class="mt2 mr4" id="choose-pa-init-text">{{ this.pa_2 }}</span>
@@ -55,23 +52,23 @@
 			</ul>
 		</div>
 	</div>
-</div>
-<div>
-	<h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 relative">
-		<div class="chooser-headline">{{ this.values }}</div>
-		{{ this.graph_values }}</h2>
+
 </div>
 
-<div class="graph-type-picker lg-flex justify-center xl-px10 mx4">
-	<div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="1">
+<div class="col-11">
+	<h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 relative"><div class="chooser-headline">{{ this.values }}</div>{{ this.graph_values }}</h2>
+</div>
+
+<div class="graph-type-picker max-width-4 mx-auto flex justify-center flex-wrap">
+	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="1">
 		<i class="icon-Overall_economic_value_icon graph-card-icon"></i>
 		<p class="pa-p croatian-color-1">{{ this.econ_value }}</p>
 	</div>
-	<div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="2">
+	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="2">
 		<i class="icon-Flow_of_economic_value_icon graph-card-icon"></i>
 		<p class="pa-p croatian-color-1">{{ this.flow_econ }}</p>
 	</div>
-	<div class="lg-col-3 col-10 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="3">
+	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="3">
 		<i class="icon-Main_potential_icon graph-card-icon"></i>
 		<p class="pa-p croatian-color-1">{{ this.potential }}</p>
 	</div>
@@ -100,10 +97,10 @@
 <div class="py3">
 	<p class="background-text xs-hide md-hide croatian-color-1">{{ this.learn_more }}</p>
 
-	<div class="cards-container after-txt-bg lg-flex justify-center">
-		{{ cards.card_w_img(this.case_study_1, '/factsheet/una'|url, cols=4) }}
-		{{ cards.card_w_img(this.case_study_2, '/factsheet/una'|url, cols=4) }}
-		{{ cards.card_w_img(this.case_study_3, '/factsheet/una'|url, cols=4) }}
+	<div class="cards-container py3 mxn2 max-width-4 mx-auto flex justify-center flex-wrap">
+		{{ cards.card_w_img(this.case_study_1, '/factsheet/una'|url, cols=3) }}
+		{{ cards.card_w_img(this.case_study_2, '/factsheet/una'|url, cols=3) }}
+		{{ cards.card_w_img(this.case_study_3, '/factsheet/una'|url, cols=3) }}
 	</div>
 </div>
 {% endblock %}

@@ -83,7 +83,8 @@ function drawDonutChart(element, percent, width, height, text_y) {
 
   var arc = d3.svg.arc()
         .innerRadius(radius - 20)
-        .outerRadius(radius)
+        .outerRadius(radius);
+
   pie.startAngle(0 * (Math.PI/180));
   pie.endAngle(360 * (Math.PI/180));
 

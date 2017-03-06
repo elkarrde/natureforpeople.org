@@ -70,7 +70,7 @@ jQuery(document).ready(function(){
 	}
 
 	animationHelpers.drawBarChart('#chart', [7, 14]);
-	animationHelpers.drawBarChart('#frewhwater-util-chart', [118, 13]);
+	animationHelpers.drawBarChart('#frewhwater-util-chart', [21]);
 	animationHelpers.drawBarChart('#chart9200', [9200]);
 	animationHelpers.drawDonutChart('#donut39', $('#donut39').data('donut'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#pie25', $('#pie25').data('donut'), 200, 200, ".4em");

@@ -50,43 +50,56 @@
 	<div class="flex justify-center md-hide lg-hide mb2">
 	</div>
 
-	<div class="facts-container py3 lg-flex justify-center xl-px10">
+	<div class="facts-container py3">
 
-		<div class="facts-card lg-col-4 col-10 p3 z1 mx2 my1 flex justify-between flex-column items-center">
-			<p class="index-h3">{{ this.facts_card_1_title }}</p>
-			<div class="mt4 index-visitor-wrapper">
-				<div class="index-counter bosnian-color-1" id="counter">2590320</div>
-				<i class="icon-visitors bosnian-background-color-1"></i>
+		<div class="max-width-4 mxn2 mx-auto flex justify-center flex-wrap">
+
+			<div class="lg-col-4 col-9 z1 px2 my2 flex">
+				<div class="facts-card flex flex-column justify-between items-center p3">
+					<p class="index-h3">{{ this.facts_card_1_title }}</p>
+					<div class="mt4 index-visitor-wrapper">
+						<div class="index-counter bosnian-color-1" id="counter">2590320</div>
+						<i class="icon-visitors bosnian-background-color-1"></i>
+					</div>
+					<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+						<p class="">{{ this.facts_cta }}</p>
+					</a>
+				</div>
 			</div>
-			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
-				<p class="">{{ this.facts_cta }}</p>
-			</a>
-		</div>
 
-		<div class="facts-card lg-col-4 col-10 p3 z1 mx2 my1 flex justify-between flex-column items-center">
-			<p class="index-h3">{{ this.facts_card_2_title }}</p>
-			<div class="p1 mt3 flex items-center justify-center">
-				<div class="donut" id="pie77" data-donut="77"></div>
+			<div class="lg-col-4 col-9 z1 px2 my2 flex">
+				<div class="facts-card flex flex-column justify-between items-center p3">
+					<p class="index-h3">{{ this.facts_card_2_title }}</p>
+					<div class="p1 mt3 flex items-center justify-center">
+						<div class="donut" id="pie77" data-donut="77"></div>
+					</div>
+					<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+						<p class="">{{ this.facts_cta }}</p>
+					</a>
+				</div>
 			</div>
-			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
-				<p class="">{{ this.facts_cta }}</p>
-			</a>
-		</div>
 
-		<div class="facts-card lg-col-4 col-10 p3 mx2 my1 flex justify-between flex-column items-center">
-			<p class="index-h3">{{ this.facts_card_3_title }}</p>
-			<div class="chart px3 py3 mt3" style="margin-left: 2.3rem;" id="frewhwater-util-chart"></div>
-			<a href="#" class="facts-button flex items-center justify-center mt3 px3">
-				<p class="">{{ this.facts_cta }}</p>
-			</a>
+			<div class="lg-col-4 col-9 z1 px2 my2 flex">
+				<div class="facts-card flex flex-column justify-between items-center p3">
+
+					<p class="index-h3">{{ this.facts_card_3_title }}</p>
+					<div class="p1 mt3 flex items-center justify-center">
+						<div class="donut" id="pie77" data-donut="77"></div>
+					</div>
+					<a href="#" class="facts-button flex items-center justify-center mt3 px3">
+						<p class="">{{ this.facts_cta }}</p>
+					</a>
+				</div>
+			</div>
+
 		</div>
 
 	</div>
 
-	<div class="learn-more-links py3 xl-px10">
+	<div class="learn-more-links py3">
 		<p class="pt3 background-text xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
 
-		<div class="cards-container after-txt-bg lg-flex justify-center">
+		<div class="cards-container mxn2 max-width-4 mx-auto flex justify-center flex-wrap">
 			{{ cards.card_w_img(this.learn_more_title_1, '/factsheet/una'|url, cols=3) }}
 			{{ cards.card_w_img(this.learn_more_title_2, '/factsheet/una'|url, cols=3) }}
 			{{ cards.card_w_img(this.learn_more_title_3, '/factsheet/una'|url, cols=3) }}

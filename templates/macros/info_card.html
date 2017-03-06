@@ -1,5 +1,6 @@
-{% macro card_w_img(title, url, cols=3, img_class='default', btn_text='Learn more') -%}
-<div class="lg-col-{{12//cols}} col-10 p2 z1 flex justify-center flex-column">
+{% macro card_w_img(title, url, cols=3, mw=2, img_class='default', btn_text='Learn more') -%}
+
+<div class="lg-col-{{12//cols}} col-9 px2 my2 z1 flex flex flex-column justify-center ">
 	<div class="learn-more-card">
 		<div class="image-holder {{img_class}}"></div>
 		<p class="index-h3 my3 mx1 center">{{ title }}</p>
@@ -8,4 +9,5 @@
 		</a>
 	</div>
 </div>
+
 {%- endmacro %}
