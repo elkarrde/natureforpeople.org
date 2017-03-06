@@ -26,7 +26,7 @@ message_1: Choose country and/or PA
 ---
 message_2: Choose values
 ---
-cta_button_text: Riješimo izazove zajedno
+cta_button_text: Let's solve challenges together
 ---
 learn_more: Learn more
 ---
@@ -37,4 +37,10 @@ country: Country
 pa: Protected areas
 ---
 values: Values
---- 
+---
+case_study_1: WWF Examples
+---
+case_study_2: Sustainable Business
+---
+case_study_3: Protected Areas
+---

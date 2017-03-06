@@ -2,13 +2,13 @@ _model: wwf_examples
 ---
 title: WABAT
 ---
-bg_text: Examples
+bg_text: Primjeri
 ---
-main_headline: WWF Examples
+main_headline: WWF Primjeri
 ---
 learn_more_button: Learn more
 ---
-intro_title: WWF Examples
+intro_title: WWF Primjeri
 ---
 intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasnije koristiti kao primjere dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve aktivnosti koje WWF provodi u konačnici će rezultirati:</p>
 <ul class="mt2">
@@ -19,16 +19,19 @@ intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasni
 <li>ublažavanjem prijetnji vezanih za očuvanu prirodu.</li>
 </ul>
 ---
-example_1: NP Germia
+learn_more: Više
 ---
-example_2: NP Una
+wwf_example_1: Urbani park
 ---
-example_3: NP Sutjeska
+wwf_example_2: Lokalna ponuda
 ---
-example_4: NP Fourth
+wwf_example_3: Turizam na rijeci
 ---
-example_5: NP Fifth
+wwf_example_4: Prmatranje medvjeda
 ---
-example_6: NP Sixth
+wwf_example_5: Edukacija
 ---
-cta_button_text: Let's solve challenges together
+wwf_example_6: Suradnička vijeća
+---
+cta_button_text: Riješimo izazove zajedno
+---
