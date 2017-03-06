@@ -971,13 +971,14 @@ p {
 		position: absolute;
 		top: 20%;
 		left: 10%;
-		width: 45%;
+		width: 30%;
 
 		.country-name {
 			font-family: $title-font-family;
 			font-weight: 700;
 			font-size: 7rem;
 			color: white;
+			overflow: show;
 		}
 
 		.country-desc {
@@ -992,7 +993,7 @@ p {
 		.about-country-button {
 			@include button-w-gradient($croatian-color-3, $croatian-color);
 			min-height: 3rem;
-			width: 50%;
+			width: 70%;
 		}
 
 		.country-prev,
@@ -1017,8 +1018,8 @@ p {
 	.arrow-greece {
 		position: absolute;
 		font-size: 3rem;
-		top: 85%;
-		left: 85%;
+		bottom: 15%;
+		right: 5%;
 		cursor: pointer;
 		border-width: 0 3px 3px 0;
 		border-style: solid;

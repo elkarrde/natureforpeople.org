@@ -70,7 +70,7 @@ jQuery(document).ready(function(){
 	}
 
 	animationHelpers.drawBarChart('#chart', [7, 14]);
-	animationHelpers.drawBarChart('#frewhwater-util-chart', [118]);
+	animationHelpers.drawBarChart('#frewhwater-util-chart', [118, 13]);
 	animationHelpers.drawBarChart('#chart9200', [9200]);
 	animationHelpers.drawDonutChart('#donut39', $('#donut39').data('donut'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#pie25', $('#pie25').data('donut'), 200, 200, ".4em");
@@ -281,6 +281,7 @@ function panToCountry() {
 		vpx = d3.select(this).select(".flag").node().getAttribute("mydata:vpx"),
 		vpy = d3.select(this).select(".flag").node().getAttribute("mydata:vpy"),
 		countryName = this.parentNode.getAttribute("mydata:country_name"),
+		countryBtn = this.parentNode.getAttribute("mydata:country_btn"),
 		countryDesc = this.parentNode.getAttribute("mydata:country_about"),
 		countryUrl = this.parentNode.getAttribute("mydata:country_url"),
 		localizationLocation = window.location.pathname.split('/')[1],
@@ -292,15 +293,15 @@ function panToCountry() {
       fullCountryUrl = countryUrl;
     }
 
-	switchCountry(countryName, countryDesc, fullCountryUrl);
+	switchCountry(countryName, countryDesc, countryBtn, fullCountryUrl);
 	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
 }
 
-function switchCountry(countryName, countryDesc, countryUrl) {
+function switchCountry(countryName, countryDesc, countryBtn, countryUrl) {
 	$(".big-map-desc .country-name").html(countryName);
 	$(".big-map-desc .country-desc").html(countryDesc);
 	$(".big-map-desc .about-country-button").attr("href", countryUrl);
-	$(".big-map-desc .more-about-name").html(countryName);
+	$(".big-map-desc .more-about-name").html(countryBtn);
 }
 
 function crawlArray(array, index, step) {
