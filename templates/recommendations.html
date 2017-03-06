@@ -1,20 +1,22 @@
 {% extends "layout.html" %}
-{% with header_class="default-background-color-1 default-color-1", select_colors="default-color-1 default-background-color-2", nav_id="default-nav", nav_links="nav-links-default" %}
-	{% include "_navigation.html" %}
-{% endwith %}
+
+{% set header_class        = "default-background-color-1 default-color-1" %}
+{% set select_colors_class = "default-color-1 default-background-color-2" %}
+{% set nav_id              = "default-nav" %}
+{% set nav_links_class     = "nav-links-default" %}
 
 {% block body %}
 
-	<div class="banner-recommendations croatian-banner-image pt8 flex justify-center items center flex-column">
+	<div class="short-banner recommendations-banner-image pt8 flex justify-center items center flex-column">
 		<h1 class="banner-title sm-banner-title lg-col-6 col-12 mx-auto center">{{ this.main_headline }}</h1>
 		<p class="banner-quote col-6 mx-auto center">{{ this.subheadline }}</p>
 	</div>
 
 	<div class="col-12 p2">
 		<p class="background-text xs-hide sm-hide">{{ this.background_title }}</p>
-		<div class="md-col-6 col-10 mx-auto">
-			<h2 class="recommendations-title mt8">{{ this.section_1_headline }}</h2>
-			<ol class="recommendations-ol">
+		<div class="recommendations md-col-6 col-10 mx-auto">
+			<h2 class="title mt8">{{ this.section_1_headline }}</h2>
+			<ol class="list">
 				<li class="mt3">{{ this.bullet_1 }}</li>
 				<li class="mt3">{{ this.bullet_2 }}</li>
 				<li class="mt3">{{ this.bullet_3 }}</li>

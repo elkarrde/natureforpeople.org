@@ -1,61 +1,105 @@
-{% extends "layout.html" %}
+{% extends "country_layout.html" %}
 
-{% with header_class="bosnian-background-color-1", select_colors="bosnian-color-1 bosnian-background-color-2", nav_id="bosnian-nav", nav_links="nav-links-bosnian" %}
-	{% include "_navigation.html" %}
-{% endwith %}
+{% set header_class                  = 'bosnian-background-color-1' %}
+{% set select_colors_class           = 'bosnian-color-1 bosnian-background-color-2' %}
+{% set nav_id                        = 'bosnian-nav' %}
+{% set nav_links_class               = 'nav-links-bosnian' %}
+{% set country_facts_class           = 'facts-bosnia' %}
+{% set country_cta_image_class       = 'bosnian-cta-image' %}
+{% set country_banner_image_class    = 'bosnian-banner-image' %}
+{% set country_border_gradient_class = 'bosnian-border-gradient' %}
 
-{% block body %}
-	{% include "bosnia/_header.html" %}
-
-	<div id="content" class="country-facts facts-bosnia">
-
-		<div class="first-container-background">
-			<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_1_col_1.html" %}
-				</div>
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_1_col_2.html" %}
-				</div>
-			</div>
-		</div>
-
-		<div class="second-container-background">
-			<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_2_col_1.html" %}
-				</div>
-				<div class="col-12 lg-col-6 flex items-center">
-					{% include "bosnia/_row_2_col_2.html" %}
-				</div>
-			</div>
-		</div>
-
-		<div class="first-container-background">
-			<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_3_col_1.html" %}
-				</div>
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_3_col_2.html" %}
-				</div>
-			</div>
-		</div>
-
-		<div class="second-container-background">
-			<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_4_col_1.html" %}
-				</div>
-				<div class="col-12 lg-col-6">
-					{% include "bosnia/_row_4_col_2.html" %}
-				</div>
-			</div>
-		</div>
+{% block row_1_col_1 %}
+<div class="p4 flex-wrap flex flex-column justify-center">
+	<div class="flex items-center">
+		<i class="mr3 icon-fresh-water country-icon bosnian-color-3"></i>
+		<h2 class="country-h1 bosnian-color-1">{{ this.fact_4_title }}</h2>
 	</div>
+	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_4_subtitle }}</h3>
+	<div>
+		<p class="my3 country-text">{{ this.fact_4_copy }}</p>
 
-	{% with country_cta_image="bosnian-cta-image"  %}
-		{% include "_country_cta_footer.html" %}
-	{% endwith %}
+		<a class="my3 bosnian-color-1" href="#">{{ this.fact_4_question }}</a>
+	</div>
+</div>
+{% endblock %}
 
+{% block row_1_col_2 %}
+<div class="p4 flex-wrap flex-column flex items-center justify-center">
+	<div class="p4 flex items-center justify-center">
+		<div class="donut" id="pie63" data-donut="63"></div>
+	</div>
+	<p class="capture-color capture">{{ this.fact_4_caption }}</p>
+</div>
+{% endblock %}
+
+{% block row_2_col_1 %}
+<div class="p4 flex-wrap flex flex-column justify-center">
+	<div class="flex items-center">
+		<i class="mr3 icon-jobs country-icon bosnian-color-3"></i>
+		<h2 class="country-h1 bosnian-color-1">{{ this.fact_2_title }}</h2>
+	</div>
+	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_2_subtitle }}</h3>
+	<div>
+		<p class="my3 country-text">{{ this.fact_2_copy }}</p>
+
+		<a class="my3 bosnian-color-1" href="#">{{ this.fact_2_question }}</a>
+	</div>
+</div>
+{% endblock %}
+
+{% block row_2_col_2 %}
+<div class="p4 flex-wrap flex-column flex items-center justify-center">
+	<div class="counter bosnian-color-1" id="counter300">300</div>
+	<div class="visitor-wrapper">
+		<i class="icon-visitors bosnian-background-color-3"></i>
+	</div>
+	<p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
+</div>
+{% endblock %}
+
+{% block row_3_col_1 %}
+<div class="p4 flex-wrap flex flex-column justify-center">
+	<div class="flex items-center">
+		<i class="mr3 icon-fresh-water country-icon bosnian-color-3"></i>
+		<h2 class="country-h1 bosnian-color-1">{{ this.fact_3_title }}</h2>
+	</div>
+	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_3_subtitle }}</h3>
+	<div>
+		<p class="my3 country-text">{{ this.fact_3_copy }}</p>
+
+		<a class="my3 bosnian-color-1" href="#">{{ this.fact_3_question }}</a>
+	</div>
+</div>
+{% endblock %}
+
+{% block row_3_col_2 %}
+<div class="p4 flex-wrap flex-column flex items-center justify-center">
+	<div class="chart px-3 py-3" id="chart9200"></div>
+	<p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
+</div>
+{% endblock %}
+
+{% block row_4_col_1 %}
+<div class="p4 flex-wrap flex flex-column justify-center">
+	<div class="flex items-center">
+		<i class="mr3 icon-tourism country-icon bosnian-color-3"/></i>
+		<h2 class="country-h1 bosnian-color-1">{{ this.fact_1_title }}</h2>
+	</div>
+	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_1_subtitle }}</h3>
+	<div>
+		<p class="my3 country-text">{{ this.fact_1_copy }}</p>
+
+		<a class="my3 bosnian-color-1" href="#">{{ this.fact_1_question }}</a>
+	</div>
+</div>
+{% endblock %}
+
+{% block row_4_col_2 %}
+<div class="p4 flex-wrap flex-column flex items-center justify-center">
+	<div class="p4 flex items-center justify-center">
+		<div class="donut" id="pie2" data-donut="2"></div>
+	</div>
+	<p class="capture-color capture">{{ this.fact_1_caption }}</p>
+</div>
 {% endblock %}

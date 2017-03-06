@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 
-{% with header_class="default-background-color-1 default-color-1", select_colors="default-color-1 default-background-color-2", nav_id="default-nav", nav_links="nav-links-default" %}
-	{% include "_navigation.html" %}
-{% endwith %}
+{% set header_class        = "default-background-color-1 default-color-1" %}
+{% set select_colors_class = "default-color-1 default-background-color-2" %}
+{% set nav_id              = "default-nav" %}
+{% set nav_links_class     = "nav-links-default" %}
 
 {% block body %}
 	<header class="index-banner flex justify-center items-center flex-column" style="">

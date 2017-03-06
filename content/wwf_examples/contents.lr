@@ -2,11 +2,24 @@ _model: wwf_examples
 ---
 title: WABAT
 ---
-main_headline: HUI
+bg_text: Examples
 ---
-subheadline: BUI
+main_headline: WWF Examples
+---
+subheadline: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit vel dui ultricies lobortis. Praesent et fermentum dui. Cras tempor neque urna, at tempus nisi pulvinar sed. Fusce consectetur elit a libero sodales gravida.
 ---
 learn_more_button: Learn more
+---
+intro_title: WWF Examples
+---
+intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasnije koristiti kao primjere dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve aktivnosti koje WWF provodi u konačnici će rezultirati:</p>
+<ul class="mt2">
+<li>novim turističkim proizvodima,</li>
+<li>ekonomskom koristi za lokalnu zajednicu,</li>
+<li>poboljšanjem životnih uvjeta</li>
+<li>boljim upravljanjem nacionalnim parkom,</li>
+<li>ublažavanjem prijetnji vezanih za očuvanu prirodu.</li>
+</ul>
 ---
 example_1: NP Germia
 ---
@@ -20,3 +33,4 @@ example_5: NP Fifth
 ---
 example_6: NP Sixth
 ---
+cta_button_text: Let's solve challenges together

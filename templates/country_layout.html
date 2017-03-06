@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+	{% include "country/_banner.html" %}
+
+	<div id="content" class="country-facts {{ country_facts_class }}">
+
+		<div class="first-container-background">
+			<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
+				<div class="col-12 lg-col-6">
+					{% block row_1_col_1 %}{% endblock %}
+				</div>
+				<div class="col-12 lg-col-6">
+					{% block row_1_col_2 %}{% endblock %}
+				</div>
+			</div>
+		</div>
+
+		<div class="second-container-background">
+			<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
+				<div class="col-12 lg-col-6">
+					{% block row_2_col_1 %}{% endblock %}
+				</div>
+				<div class="col-12 lg-col-6 flex items-center">
+					{% block row_2_col_2 %}{% endblock %}
+				</div>
+			</div>
+		</div>
+
+		<div class="first-container-background">
+			<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
+				<div class="col-12 lg-col-6">
+					{% block row_3_col_1 %}{% endblock %}
+				</div>
+				<div class="col-12 lg-col-6">
+					{% block row_3_col_2 %}{% endblock %}
+				</div>
+			</div>
+		</div>
+
+		<div class="second-container-background">
+			<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
+				<div class="col-12 lg-col-6">
+					{% block row_4_col_1 %}{% endblock %}
+				</div>
+				<div class="col-12 lg-col-6">
+					{% block row_4_col_2 %}{% endblock %}
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	{% include "country/_cta.html" %}
+
+{% endblock %}

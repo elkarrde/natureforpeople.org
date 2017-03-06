@@ -1,41 +1,16 @@
 <!doctype html>
 
-<head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="{{ '/static/reset.css'|asseturl }}">
-	<link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">
-	<title>{% block title %}Welcome{% endblock %} — wwf_pabat_site</title>
-</head>
+{% include "shared/_head.html" %}
 
 <body>
-	<div class="page">
+	{% include "shared/_global_nav.html" %}
+
+	<div class="page {{ page_name }}">
 		{% block body %}{% endblock %}
 	</div>
 
-	<footer class="pabat-footer p1">
-		<div class="flex justify-center items-end">
-			<img class="footer-icon-logo mr4" src='/static/images/WWF_logo.svg'/>
-			<div class="flex items-center flex-column justify-end mb2">
-				<ul class="flex md-hide xs-hide sm-hide mb2 flex-row list-reset justify-around footer-nav-links">
-					<li class="m2"><a class="nav-link" href="#">About PA-BAT</a></li>
-					<li class="m2"><a class="nav-link" href="#">WWF Examples</a></li>
-					<li class="m2"><a class="nav-link" href="#">Sustainable Business</a></li>
-					<li class="m2"><a class="nav-link" href="#">Recommendations</a></li>
-					<li class="m2"><a class="nav-link" href="#">Protected areas</a></li>
-					<li class="m2"><a class="nav-link" href="#">Knowledge Base</a></li>
-				</ul>
-				<span class="copyright">&copy 2017 World Wildlife Fund</span>
-			</div>
-		</div>
-	</footer>
-
-	<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-	e.src='https://www.google-analytics.com/analytics.js';
-	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','UA-XXXXX-X');ga('send','pageview');
-	</script>
+	{% include "shared/_global_footer.html" %}
+	{% include "shared/_ga_script.html" %}
 
 	<script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
 </body>

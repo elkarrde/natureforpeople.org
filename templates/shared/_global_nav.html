@@ -1,8 +1,8 @@
-<header id="navbar" class="z1 header {{header_class if header_class else white-background-color}} flex items-center justify-around">
+<header id="navbar" class="z1 header {{header_class if header_class else "white-background-color"}} flex items-center justify-around">
   <a class="navbar-brand" href="{{ '/'|url(alt) }}">
     <span class="icon-logo"></span>
   </a>
-  <div class="col-9 mx-auto {{nav_links}}">
+  <div class="col-9 mx-auto {{nav_links_class}}">
     <ul class="menu flex flex-row list-reset justify-around xs-hide sm-hide md-hide ml4">
       <li><a class="flex items-center" href="{{ '/wwf_examples'|url }}">{{ bag('main-navigation', this.alt, 'link_1') }}</a></li>
       <li><a class="flex items-center" href="{{ '/sustainable_business'|url }}">{{ bag('main-navigation', this.alt, 'link_2') }}</a></li>
@@ -24,14 +24,14 @@
   </div>
   <div class="local-dropdown">
     <!-- trigger button -->
-    <button class="{{select_colors}} center border-none flex flex-column justify-center items-center">
+    <button class="{{select_colors_class}} center border-none flex flex-column justify-center items-center">
       <span class="mt2">HR</span>
       <i class="icon-arrow-drop-down"></i>
     </button>
     <!-- local-dropdown menu -->
-    <ul class="local-dropdown-menu {{select_colors}}">
-      <li><a class="{{select_colors}} center" href="{{ '.'|url(alt='hr') }}">HR</a></li>
-      <li><a class="{{select_colors}} center" href="{{ '.'|url(alt='en') }}">EN</a></li>
+    <ul class="local-dropdown-menu {{select_colors_class}}">
+      <li><a class="{{select_colors_class}} center" href="{{ '.'|url(alt='hr') }}">HR</a></li>
+      <li><a class="{{select_colors_class}} center" href="{{ '.'|url(alt='en') }}">EN</a></li>
     </ul>
   </div>
 </header>

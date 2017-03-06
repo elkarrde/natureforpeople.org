@@ -268,7 +268,7 @@ p {
 	background-size: cover;
 }
 
-.banner-recommendations {
+.short-banner {
 	height: 50vh;
 	overflow: hidden;
 	background-position: center center;
@@ -511,6 +511,20 @@ p {
 .montenegran-banner-image { background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg'); }
 .serbian-banner-image { background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg'); }
 .slovenian-banner-image { background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg'); }
+
+.pa-banner-image,
+.examples-banner-image,
+.recommendations-banner-image,
+.sust-business-banner-image {
+	background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=2440%C3%97813&w=2440&h=813');
+}
+
+.pa-cta-image,
+.examples-cta-image,
+.recommendations-cta-image,
+.sust-business-cta-image {
+	background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=2440%C3%97813&w=2440&h=620');
+}
 
 .country-facts {
 	a {
@@ -853,7 +867,7 @@ p {
 }
 
 .index-banner-button {
-	background: linear-gradient(315deg, #BEB81C 0%, #17A9AE 100%);
+	background: linear-gradient(315deg, $bosnian-color 0%, $bosnian-color-3 100%);
 	border-radius: 100px;
 	min-height: 4rem;
 	text-transform: uppercase;
@@ -866,33 +880,38 @@ p {
 
 .learn-more-card {
 	box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
-}
 
-.learn-more-button {
-	box-sizing: border-box;
-	border: 3px solid transparent;
-	min-height: 4rem;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 900;
-	font-size: 1rem;
-	text-decoration: none;
-	border-radius: 0.1rem;
-	-moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-	-webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-	border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
-	border-image-slice: 1;
+	.image-holder {
+		width: 100%;
+		height: 16rem;
+	}
+
+	.image-holder.default {
+		background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=360%C3%97235&w=360&h=235');
+	}
+
+	.learn-more-button {
+		p { line-height: 4rem; }
+
+		border: 3px solid transparent;
+		min-height: 4rem;
+		text-transform: uppercase;
+		color: white;
+		font-weight: 900;
+		font-size: 1rem;
+		text-decoration: none;
+		border-radius: 0.1rem;
+		-moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+		-webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
+		border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
+		border-image-slice: 1;
+	}
 }
 
 .learn-more-button.about-country {
 	min-height: 3rem;
 }
 
-.image-holder {
-	background-image: url('/static/images/Croatia_CTA_image.png');
-	width: 100%;
-	height: 16rem;
-}
 
 .landing-page-carousel {
 	text-align: center;
@@ -1135,43 +1154,63 @@ p {
 .pa-chooser a:hover {
 	background-color: $croatian-color-2;
 }
+
 //-------------------------------------------------//
 
 .hide {
 	display: none;
 }
 
-.recommendations-title {
-	color: #BEB81C;
-	font-weight: bold;
-	font-size: 2rem;
-}
-
-.recommendations-ol li {
-	list-style-position: inside;
-	text-indent: -2em;
-	padding-left: 1em;
-	line-height: 1.6rem;
-	color: $body-color;
-	counter-increment: step-counter;
-	&::before {
-		content: counter(step-counter) ".";
-		font-size: 1rem;
-		color: $bosnian-color-3;
+.recommendations {
+	.title {
+		color: $bosnian-color;
 		font-weight: bold;
-		margin-right: 1.3rem;
+		font-size: 2rem;
 	}
 
-	ul li {
+	.list li {
+		list-style-position: inside;
+		text-indent: -2em;
+		padding-left: 1em;
+		line-height: 1.6rem;
+		color: $body-color;
+		counter-increment: step-counter;
+		&::before {
+			content: counter(step-counter) ".";
+			font-size: 1rem;
+			color: $bosnian-color-3;
+			font-weight: bold;
+			margin-right: 1.3rem;
+		}
+
+		ul li {
+			&::before {
+				content: "• ";
+				font-size: 1.5rem;
+				color: $bosnian-color-3;
+				font-weight: bold;
+				margin-right: 2rem;
+			}
+		}
+	}
+}
+
+.wwf-examples {
+	.title {
+		color: $macedonian-color;
+	}
+
+	.body ul li {
 		&::before {
 			content: "• ";
 			font-size: 1.5rem;
-			color: $bosnian-color-3;
+			color: $macedonian-color;
 			font-weight: bold;
 			margin-right: 2rem;
 		}
 	}
 }
+
 
 .pa-background-text {
 	@include title-font;

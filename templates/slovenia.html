@@ -1,126 +1,34 @@
-{% extends "layout.html" %}
-{% with header_class="slovenian-background-color-1 slovenian-color-1", select_colors="slovenian-color-1 slovenian-background-color-2", nav_id="slovenian-nav", nav_links="nav-links-slovenian" %}
-  {% include "_navigation.html" %}
-{% endwith %}
+{% extends "country_layout.html" %}
 
-{% block body %}
-<div class="banner slovenian-banner-image flex items-start flex-column justify-center">
-  <h1 class="banner-title lg-ml10 mx-auto col-10 lg-col-6">{{ this.h1_title }}</h1>
-  <p class="banner-quote mt3 lg-ml10 mx-auto col-10 lg-col-6">{{ this.banner_message }}</p>
-  <a href="#content" class="block banner-button slovenian-border-gradient flex items-center justify-center mt3 lg-ml10 mx-auto">
-    <p class="mx3 default-color-1">{{ this.banner_button_text }}</p>
-  </a>
-</div>
+{% set header_class                  = 'slovenian-background-color-1' %}
+{% set select_colors_class           = 'slovenian-color-1 slovenian-background-color-2' %}
+{% set nav_id                        = 'slovenian-nav' %}
+{% set nav_links_class               = 'nav-links-slovenian'%}
+{% set country_facts_class           = 'facts-slovenia' %}
+{% set country_cta_image_class       = 'slovenian-cta-image' %}
+{% set country_banner_image_class    = 'slovenian-banner-image' %}
+{% set country_border_gradient_class = 'slovenian-border-gradient' %}
 
-<div class="country-facts facts-kosovo">
+{% block row_1_col_1 %}
+{% endblock %}
 
-	<div id="content" class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
-		<div class="col-12 lg-col-6">
-			<div class="p4 flex-wrap flex flex-column justify-center">
-				<div class="flex items-center">
-					<i class="mr3 icon-tourism country-icon slovenian-color-3"/></i>
-					<h2 class="country-h1 slovenian-color-1">{{ this.fact_1_title }}</h2>
-				</div>
-				<h3 class="country-h2 slovenian-color-3 mt3">{{ this.fact_1_subtitle }}</h3>
-				<div>
-					<p class="my3 country-text">{{ this.fact_1_copy }}</p>
+{% block row_1_col_2 %}
+{% endblock %}
 
-					<a class="my3 slovenian-color-1" href="#">{{ this.fact_1_question }}</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 lg-col-6">
-			<div class="p4 flex-wrap flex-column flex items-center justify-center">
-				<div class="p4 flex items-center justify-center">
-					<div class="donut" id="pie2" data-donut="2"></div>
-				</div>
-				<p class="capture-color capture">{{ this.fact_1_caption }}</p>
-			</div>
-		</div>
-	</div>
+{% block row_2_col_1 %}
+{% endblock %}
 
-	<div class="second-container-background">
-		<div class="lg-flex flex-wrap mx-auto lg-col-8 col-12">
-			<div class="col-12 lg-col-6">
-				<div class="p4 flex-wrap flex flex-column justify-center">
-					<div class="flex items-center">
-						<i class="mr3 icon-jobs country-icon slovenian-color-3"></i>
-						<h2 class="country-h1 slovenian-color-1">{{ this.fact_2_title }}</h2>
-					</div>
-					<h3 class="country-h2 slovenian-color-3 mt3">{{ this.fact_2_subtitle }}</h3>
-					<div>
-						<p class="my3 country-text">{{ this.fact_2_copy }}</p>
+{% block row_2_col_2 %}
+{% endblock %}
 
-						<a class="my3 slovenian-color-1" href="#">{{ this.fact_2_question }}</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 lg-col-6 flex items-center justify-center">
-				<div class="p4 flex-wrap flex-column flex items-center justify-center">
-					<div class="counter croatian-color-1" id="counter300">300</div>
-					<div class="visitor-wrapper">
-						<i class="icon-visitors croatian-background-color-3"></i>
-					</div>
-					<p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
-				</div>
-			</div>
-		</div>
-	</div>
+{% block row_3_col_1 %}
+{% endblock %}
 
-	<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
-		<div class="col-12 lg-col-6">
-			<div class="p4 flex-wrap flex flex-column justify-center">
-				<div class="flex items-center">
-					<i class="mr3 icon-fresh-water country-icon slovenian-color-3"></i>
-					<h2 class="country-h1 slovenian-color-1">{{ this.fact_3_title }}</h2>
-				</div>
-				<h3 class="country-h2 slovenian-color-3 mt3">{{ this.fact_3_subtitle }}</h3>
-				<div>
-					<p class="my3 country-text">{{ this.fact_3_copy }}</p>
+{% block row_3_col_2 %}
+{% endblock %}
 
-					<a class="my3 slovenian-color-1" href="#">{{ this.fact_3_question }}</a>
-				</div>
-			</div>
-		</div>
-		<div class="col-12 lg-col-6 flex items-center justify-center">
-			<div class="p4 flex-wrap flex-column flex items-center justify-center">
-				<div class="chart px-3 py-3" id="chart9200"></div>
-				<p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
-			</div>
-		</div>
-	</div>
+{% block row_4_col_1 %}
+{% endblock %}
 
-	<div class="second-container-background">
-		<div class="lg-flex flex-wrap mx-auto md-col-8 col-12">
-			<div class="col-12 lg-col-6">
-				<div class="p4 flex-wrap flex flex-column justify-center">
-					<div class="flex items-center">
-						<i class="mr3 icon-forrest country-icon slovenian-color-3"></i>
-						<h2 class="country-h1 slovenian-color-1">{{ this.fact_4_title }}</h2>
-					</div>
-					<h3 class="country-h2 slovenian-color-3 mt3">{{ this.fact_4_subtitle }}</h3>
-					<div>
-						<p class="my3 country-text">{{ this.fact_4_copy }}</p>
-						<a class="my3 slovenian-color-1" href="#">{{ this.fact_4_question }}</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 lg-col-6">
-				<div class="p4 flex-wrap flex-column flex items-center justify-center">
-					<div class="p4 flex items-center justify-center">
-						<div class="donut" id="pie63" data-donut="63"></div>
-					</div>
-					<p class="capture-color capture">{{ this.fact_4_caption }}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</div>
-
-<div class="cta-image-holder slovenian-cta-image flex items-center justify-center">
-  <a href="#" class="block cta-white-button flex items-center justify-center">
-    <p class="mx3 default-color-1">{{ this.cta_button_text }}</p>
-  </a>
-</div>
+{% block row_4_col_2 %}
 {% endblock %}
