@@ -166,6 +166,17 @@ $slovenian-color-3: #56ADC2;
 	color: $default-color;
 }
 
+@mixin button-w-gradient($color1, $color2) {
+	border: 3px solid transparent;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0.1rem;
+	@include country-border-gradient($color2, $color1);
+}
 
 /* Global settings ----------------------------- */
 
@@ -817,19 +828,7 @@ p {
 }
 
 .facts-button {
-	box-sizing: border-box;
-	border: 3px solid transparent;
-	min-height: 4rem;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 900;
-	font-size: 1rem;
-	text-decoration: none;
-	border-radius: 0.1rem;
-	-moz-border-image: -moz-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
-	-webkit-border-image: -webkit-linear-gradient(left, $default-color-3 0%, $bosnian-color 100%);
-	border-image: linear-gradient(to right, $default-color-3 0%, $bosnian-color 100%);
-	border-image-slice: 1;
+	@include button-w-gradient($default-color-3, $bosnian-color);
 }
 
 .index-counter {
@@ -898,26 +897,14 @@ p {
 
 	.learn-more-button {
 		p { line-height: 4rem; }
-
-		border: 3px solid transparent;
-		min-height: 4rem;
-		text-transform: uppercase;
-		color: white;
-		font-weight: 900;
-		font-size: 1rem;
-		text-decoration: none;
-		border-radius: 0.1rem;
-		-moz-border-image: -moz-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-		-webkit-border-image: -webkit-linear-gradient(left, $croatian-color-3 0%, $croatian-color 100%);
-		border-image: linear-gradient(to right, $croatian-color-3 0%, $croatian-color 100%);
-		border-image-slice: 1;
+		@include button-w-gradient($croatian-color-3, $croatian-color);
 	}
 }
 
-.learn-more-button.about-country {
+.about-country-button {
+	@include button-w-gradient($croatian-color-3, $croatian-color);
 	min-height: 3rem;
 }
-
 
 .landing-page-carousel {
 	text-align: center;
