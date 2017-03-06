@@ -4,15 +4,12 @@
 {% set select_colors_class = "default-color-1 default-background-color-2" %}
 {% set nav_id              = "default-nav" %}
 {% set nav_links_class     = "nav-links-default" %}
+{% set banner_image_class  = "sust-business-banner-image" %}
 
 {% import "macros/info_card.html" as cards %}
 
 {% block body %}
-
-	<div class="short-banner recommendations-banner-image pt8 flex justify-center items center flex-column">
-		<h1 class="banner-title sm-banner-title lg-col-6 col-12 mx-auto center">{{ this.main_headline }}</h1>
-		<p class="banner-quote col-6 mx-auto center">{{ this.subheadline }}</p>
-	</div>
+	{% include "shared/_short_banner.html" %}
 
 	<div class="col-12 p2">
 		<p class="background-text xs-hide sm-hide">{{ this.background_title }}</p>

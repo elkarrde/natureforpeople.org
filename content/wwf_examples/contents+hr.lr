@@ -4,16 +4,14 @@ title: WABAT
 ---
 bg_text: Examples
 ---
-main_headline: HUI
----
-subheadline: BUI
+main_headline: WWF Examples
 ---
 learn_more_button: Learn more
 ---
 intro_title: WWF Examples
 ---
 intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasnije koristiti kao primjere dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve aktivnosti koje WWF provodi u konačnici će rezultirati:</p>
-<ul>
+<ul class="mt2">
 <li>novim turističkim proizvodima,</li>
 <li>ekonomskom koristi za lokalnu zajednicu,</li>
 <li>poboljšanjem životnih uvjeta</li>
