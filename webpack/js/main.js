@@ -278,6 +278,7 @@ function panToViewBox(vpx, vpy) {
 function panToCountry() {
 	var svg = d3.select(".map-wrapper svg"),
 		currentViewBox = svg[0][0].viewBox.baseVal,
+		countryG = this.parentNode,
 		vpx = d3.select(this).select(".flag").node().getAttribute("mydata:vpx"),
 		vpy = d3.select(this).select(".flag").node().getAttribute("mydata:vpy"),
 		countryName = this.parentNode.getAttribute("mydata:country_name"),
@@ -294,6 +295,8 @@ function panToCountry() {
     }
 
 	switchCountry(countryName, countryDesc, countryBtn, fullCountryUrl);
+	d3.selectAll(".country").transition().style("opacity", 1);
+	d3.select(countryG).transition().style("opacity", 0.5);
 	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
 }
 

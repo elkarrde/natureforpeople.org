@@ -246,6 +246,10 @@ p {
 	position: fixed;
 }
 
+#navbar {
+	z-index: 99;
+}
+
 .nav-links-default {
 	height: inherit;
 	li {
