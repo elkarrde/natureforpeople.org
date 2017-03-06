@@ -5,6 +5,8 @@
 {% set nav_id              = "default-nav" %}
 {% set nav_links_class     = "nav-links-default" %}
 
+{% import "macros/info_card.html" as cards %}
+
 {% block body %}
 	<header class="index-banner flex justify-center items-center flex-column" style="">
 		<div class="col-12 md-col-6">
@@ -93,31 +95,10 @@
 	<div class="learn-more-links py3 xl-px10">
 		<p class="pt3 background-text xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
 
-		<div class="links-container lg-flex justify-center" style="margin-top:100px;">
-
-			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title_1 }}</p>
-				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-					<p class="">{{ this.learn_more_cta }}</p>
-				</a>
-			</div>
-
-			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title_2 }}</p>
-				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-					<p class="">{{ this.learn_more_cta }}</p>
-				</a>
-			</div>
-
-			<div class="learn-more-card lg-col-4 col-10 p2 z1 mx2 flex justify-between flex-column">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.learn_more_title_3 }}</p>
-				<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-					<p class="">{{ this.learn_more_cta }}</p>
-				</a>
-			</div>
+		<div class="cards-container after-txt-bg lg-flex justify-center">
+			{{ cards.card_w_img(this.learn_more_title_1, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_2, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_3, cols=3) }}
 		</div>
 	</div>
 {% endblock %}

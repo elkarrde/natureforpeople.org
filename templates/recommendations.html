@@ -5,6 +5,8 @@
 {% set nav_id              = "default-nav" %}
 {% set nav_links_class     = "nav-links-default" %}
 
+{% import "macros/info_card.html" as cards %}
+
 {% block body %}
 
 	<div class="short-banner recommendations-banner-image pt8 flex justify-center items center flex-column">
@@ -35,8 +37,8 @@
 				</li>
 			</ol>
 
-			<h2 class="recommendations-title mt4">{{ this.section_2_headline }}</h2>
-			<ol class="recommendations-ol mb4">
+			<h2 class="title mt4">{{ this.section_2_headline }}</h2>
+			<ol class="list mb4">
 				<li class="mt3">{{ this.bullet_9 }}</li>
 				<li class="mt3">{{ this.bullet_10 }}
 				</li>
@@ -49,28 +51,13 @@
 		</div>
 	</div>
 
-	<div class="py3 lg-flex justify-center xl-px10">
+	<div class="py3 xl-px10 second-container-background">
 		<p class="background-text xs-hide md-hide bosnian-color-1">{{ this.learn_more }}</p>
-		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-			<div class="image-holder"></div>
-			<p class="index-h3 m3">WWF examples</p>
-			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-				<p class="">{{ this.learn_more_button }}</p>
-			</a>
-		</div>
-		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-			<div class="image-holder"></div>
-			<p class="index-h3 m3">WWF examples</p>
-			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-				<p class="">{{ this.learn_more_button }}</p>
-			</a>
-		</div>
-		<div class="lg-col-3 col-10 mt8 z1 mx-auto my1 learn-more-card flex justify-between flex-column items-center">
-			<div class="image-holder"></div>
-			<p class="index-h3 m3">WWF examples</p>
-			<a href="#" class="learn-more-button m3 flex items-center justify-center mt3 px4">
-				<p class="">{{ this.learn_more_button }}</p>
-			</a>
+
+		<div class="cards-container after-txt-bg lg-flex justify-center">
+			{{ cards.card_w_img(this.learn_more_button, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_button, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_button, cols=3) }}
 		</div>
 	</div>
 
