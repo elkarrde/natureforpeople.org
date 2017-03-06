@@ -1,9 +1,9 @@
-{% macro render(title, img_class='default', btn_text='Learn more') -%}
-<div class="lg-col-4 col-10 p2 z1 flex justify-between flex-column">
+{% macro card_w_img(title, cols=3, img_class='default', btn_text='Learn more') -%}
+<div class="lg-col-{{12//cols}} col-10 p2 z1 flex justify-between flex-column">
 	<div class="learn-more-card">
 		<div class="image-holder {{img_class}}"></div>
-		<p class="index-h3 m3">{{ title }}</p>
-		<a href="#" class="learn-more-button m3 flex mt3 px4">
+		<p class="index-h3 m3 center">{{ title }}</p>
+		<a href="#" class="learn-more-button m3 flex mt3 px4 justify-around">
 			<p class="">{{ btn_text }}</p>
 		</a>
 	</div>

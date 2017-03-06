@@ -4,56 +4,20 @@
 {% set select_colors_class = "default-color-1 default-background-color-2" %}
 {% set nav_id              = "default-nav" %}
 {% set nav_links_class     = "nav-links-default" %}
+{% set banner_image_class  = "sust-business-banner-image" %}
+{% set cta_image_class     = "sust-business-cta-image" %}
+
+{% import "macros/info_card.html" as cards %}
 
 {% block body %}
-
-	<div class="short-banner sust-business-banner-image pt8 flex justify-center items center flex-column">
-		<h1 class="banner-title sm-banner-title lg-col-6 col-12 mx-auto center">{{ this.main_headline }}</h1>
-		<p class="banner-quote col-6 mx-auto center">{{ this.subheadline }}</p>
-	</div>
-
-	<p class="background-text xs-hide md-hide bosnian-color-1">{{ this.learn_more }}</p>
+	{% include "shared/_short_banner.html" %}
 
 	<div class="py3 lg-flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-
-		<div class="lg-col-6 col-10 p2 z1 flex justify-between flex-column">
-			<div class="learn-more-card">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.case_study_1 }}</p>
-				<a href="#" class="learn-more-button m3 flex mt3 px4">
-					<p class="">{{ this.learn_more_button }}</p>
-				</a>
-			</div>
-		</div>
-
-		<div class="lg-col-6 col-10 p2 z1 flex justify-between flex-column">
-			<div class="learn-more-card">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.case_study_2 }}</p>
-				<a href="#" class="learn-more-button m3 flex mt3 px4">
-					<p class="">{{ this.learn_more_button }}</p>
-				</a>
-			</div>
-		</div>
-
-		<div class="lg-col-6 col-10 p2 z1 flex justify-between flex-column">
-			<div class="learn-more-card">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.case_study_3 }}</p>
-				<a href="#" class="learn-more-button m3 flex mt3 px4">
-					<p class="">{{ this.learn_more_button }}</p>
-				</a>
-			</div>
-		</div>
-
-		<div class="lg-col-6 col-10 p2 z1 flex justify-between flex-column">
-			<div class="learn-more-card">
-				<div class="image-holder"></div>
-				<p class="index-h3 m3">{{ this.case_study_4 }}</p>
-				<a href="#" class="learn-more-button m3 flex mt3 px4">
-					<p class="">{{ this.learn_more_button }}</p>
-				</a>
-			</div>
-		</div>
+		{{ cards.card_w_img(this.case_study_1, cols=2) }}
+		{{ cards.card_w_img(this.case_study_2, cols=2) }}
+		{{ cards.card_w_img(this.case_study_3, cols=2) }}
+		{{ cards.card_w_img(this.case_study_4, cols=2) }}
 	</div>
+
+	{% include "shared/_short_cta.html" %}
 {% endblock %}

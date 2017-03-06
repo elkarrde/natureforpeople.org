@@ -2,9 +2,9 @@ _model: sustainable_business
 ---
 title: WABAT
 ---
-main_headline: HUI
+main_headline: Sustainable business
 ---
-subheadline: BUI
+subheadline: Donec faucibus cursus ante, eu aliquam ligula pharetra imperdiet. Etiam dignissim leo vitae turpis faucibus, id ultricies nisi placerat.
 ---
 learn_more_button: Learn more
 ---
@@ -16,3 +16,4 @@ case_study_3: Solar
 ---
 case_study_4: Nuclear (best)
 ---
+cta_button_text: Let's solve challenges together

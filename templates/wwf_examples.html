@@ -8,7 +8,7 @@
 {% set banner_image_class  = "examples-banner-image" %}
 {% set cta_image_class     = "examples-cta-image" %}
 
-{% import "macros/info_card.html" as info_card %}
+{% import "macros/info_card.html" as cards %}
 
 {% block body %}
 	{% include "shared/_short_banner.html" %}
@@ -23,9 +23,9 @@
 	</section>
 
 	<div class="py3 lg-flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ info_card.render(this.example_1) }}
-		{{ info_card.render(this.example_2) }}
-		{{ info_card.render(this.example_3) }}
+		{{ cards.card_w_img(this.example_1) }}
+		{{ cards.card_w_img(this.example_2) }}
+		{{ cards.card_w_img(this.example_3) }}
 	</div>
 
 	{% include "shared/_short_cta.html" %}
