@@ -14,10 +14,10 @@
 	{% include "shared/_short_banner.html" %}
 
 	<div class="py3 lg-flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.case_study_1, cols=2) }}
-		{{ cards.card_w_img(this.case_study_2, cols=2) }}
-		{{ cards.card_w_img(this.case_study_3, cols=2) }}
-		{{ cards.card_w_img(this.case_study_4, cols=2) }}
+		{{ cards.card_w_img(this.case_study_1, '/factsheet/una'|url, cols=2) }}
+		{{ cards.card_w_img(this.case_study_2, '/factsheet/una'|url, cols=2) }}
+		{{ cards.card_w_img(this.case_study_3, '/factsheet/una'|url, cols=2) }}
+		{{ cards.card_w_img(this.case_study_4, '/factsheet/una'|url, cols=2) }}
 	</div>
 
 	{% include "shared/_short_cta.html" %}
