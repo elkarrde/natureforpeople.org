@@ -2,15 +2,17 @@ _model: sustainable_business
 ---
 title: WABAT
 ---
-main_headline: Sustainable business
+main_headline: Održivo poslovanje
 ---
-learn_more_button: Learn more
+learn_more_button: Više
 ---
-case_study_1: Hydro
+case_study_1: Hidroenergetika
 ---
-case_study_2: Wind
+case_study_2: Turizam
 ---
-case_study_3: Solar
+case_study_3: Šumarstvo
 ---
-case_study_4: Nuclear (best)
+case_study_4: Ribarstvo
+---
+cta_button_text: Riješimo izazove zajedno
 ---

@@ -6,7 +6,7 @@ headline: Zaštićena područja
 ---
 step_1: Odaberite zemlju iz padajućeg izbornika:
 ---
-country_!: Odaberite zemlju
+country_1: Odaberite zemlju
 ---
 step_2: Odaberite zaštićeno područje iz padajućeg izbornika:
 ---
@@ -37,4 +37,10 @@ country: Zemlja
 pa: Zaštićena područja
 ---
 values: Vrijednosti
---- 
+---
+case_study_1: WWF Primjeri
+---
+case_study_2: Održivo poslovanje
+---
+case_study_3: Zaštićena područja
+---
