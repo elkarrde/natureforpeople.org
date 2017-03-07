@@ -24,7 +24,7 @@ protected_areas_by_country = {
 	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
 }
 
-countriesOrder = ["albania", "bosnia", "croatia", "kosovo", "macedonia", "montenegro", "serbia", "slovenia"];
+countriesOrder = ["slovenia", "croatia", "bosnia", "serbia", "kosovo", "montenegro", "albania", "macedonia"];
 currentCountry = "croatia";
 
 $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
