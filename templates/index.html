@@ -59,7 +59,7 @@
 	<div class="flex justify-center md-hide lg-hide mb2">
 	</div>
 
-	<div class="facts-container py3">
+	<div class="facts-container">
 
 		<div class="max-width-4 mxn2 mx-auto flex justify-center flex-wrap">
 
@@ -105,13 +105,13 @@
 
 	</div>
 
-	<div class="learn-more-links py3">
-		<p class="pt3 background-text xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
+	<div class="learn-more-links py0">
+		<p class="pt3 card-background-text sm-hide xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
 
-		<div class="cards-container mxn2 max-width-4 mx-auto flex justify-center flex-wrap">
-			{{ cards.card_w_img(this.learn_more_title_1, '/factsheet/una'|url, cols=3) }}
-			{{ cards.card_w_img(this.learn_more_title_2, '/factsheet/una'|url, cols=3) }}
-			{{ cards.card_w_img(this.learn_more_title_3, '/factsheet/una'|url, cols=3) }}
+		<div class="cards-container mxn2 max-width-4 mx-auto flex justify-center flex-wrap py5 md-py5">
+			{{ cards.card_w_img(this.learn_more_title_1, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_2, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_3, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
 		</div>
 	</div>
 {% endblock %}

@@ -823,6 +823,30 @@ p {
 	margin-top: 2.5rem;
 }
 
+.card-background-text {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    line-height: 7rem;
+    font-size: 12rem;
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    margin-left: 0.5rem;
+    padding-top: 1.4rem;
+}
+
+.py5 {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 64em) {
+	.md-py5 {
+		padding-top: 2rem;
+    	padding-bottom: 2rem;
+	}
+}
+
 .facts-container {
 	background: linear-gradient(135deg, #0A8C4D 0%, #56ADC2 100%);
 }
