@@ -53,11 +53,11 @@ jQuery(document).ready(function(){
 		var scrollTop = $(this).scrollTop();
 
 		if (scrollTop > y_pos + height) {
-			$navbar.css('height', '2.5rem');
-			$l_select.css('height', '2.5rem');
+			$navbar.css('height', '1.5rem');
+			$l_select.css('height', '1.5rem');
 		} else if (scrollTop <= y_pos) {
-			$navbar.css('height', '4.5rem');
-			$l_select.css('height', '4.5rem');
+			$navbar.css('height', '2.5rem');
+			$l_select.css('height', 'r.5rem');
 		}
 	});
 
@@ -111,55 +111,28 @@ jQuery(document).ready(function(){
 		$next_active_msg.removeClass("hide").addClass("show");
 	});
 
-	// // Check if first li element is hidden then show
-	// if( jQuery('#carouselNav li:first-child').is(':hidden') ) {
-	// 	// Toggle visibility
-	// 	jQuery('#carouselNav li:first-child').toggle();
-	// }
-
-	// // Interval time
-	// var carouselInterval = 3000;
-
-	// // Slider
-	// function carouselSlide(){
-	// 	// Check if last element was reached
-	// 	if( jQuery('#carouselNav li:visible').next().length == 0 ) {
-	// 		// Hide last li element
-	// 		jQuery('#carouselNav li:last-child').slideUp('fast');
-	// 		// Show the first one
-	// 		jQuery('#carouselNav li:first-child').slideDown('fast');
-	// 	} else {
-	// 		// Rotate elements
-	// 		jQuery('#carouselNav li:visible').slideUp('fast').next('li:hidden').slideDown('fast');
-	// 	}
-	// }
-
-	// // Set Interval
-	// var carouselScroll = setInterval(carouselSlide,carouselInterval);
-
-	// // Pause on hover
-	// jQuery('#carousel').hover(function() {
-	// 	clearInterval(carouselScroll);
-	// }, function() {
-	// 	carouselScroll = setInterval(carouselSlide,carouselInterval);
-	// 	carouselSlide();
-	// });
-
-
 	$('.map-wrapper svg .flag-icon').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
 
 	$('.map-wrapper .big-map-desc .country-prev').click(function() {
-		nextCountryIdx = crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1);
-		currentCountry = countriesOrder[nextCountryIdx];
+		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
 		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
 	});
 
 	$('.map-wrapper .big-map-desc .country-next').click(function() {
-		nextCountryIdx = crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1);
-		currentCountry = countriesOrder[nextCountryIdx];
+		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
 		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+	});
+
+	$(document).keyup(function(e) {
+		if (e.which === 37) {
+			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
+			$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+		} else if (e.which === 39) {
+			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
+			$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+		}
 	});
 });
 
@@ -272,7 +245,7 @@ function hide_other_graphs(graph_number) {
 
 function panToViewBox(vpx, vpy) {
 	var svg = d3.select(".map-wrapper svg");
-	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
+	panMapToPoint(svg, vpx, vpy);
 }
 
 function panToCountry() {
@@ -295,9 +268,10 @@ function panToCountry() {
     }
 
 	switchCountry(countryName, countryDesc, countryBtn, fullCountryUrl);
-	d3.selectAll(".country").transition().style("opacity", 1);
-	d3.select(countryG).transition().style("opacity", 0.5);
-	svg.transition().duration(500).attr("viewBox", vpx + " " + vpy + " 800 800");
+	d3.selectAll(".country").style("opacity", 0.2);
+	d3.select(countryG).style("opacity", 1);
+	panMapToPoint(svg, vpx, vpy);
+
 }
 
 function switchCountry(countryName, countryDesc, countryBtn, countryUrl) {
@@ -309,4 +283,27 @@ function switchCountry(countryName, countryDesc, countryBtn, countryUrl) {
 
 function crawlArray(array, index, step) {
     return ((index + step) % array.length + array.length) % array.length;
+}
+
+
+function panMapToPoint(svg, x, y) {
+	var $svg = $(d3.select(".map-wrapper svg")[0]),
+		x = parseInt(x, 10),
+		y = parseInt(y, 10),
+		w =  $svg.width(),
+		h = $svg.height(),
+		vb = parseViewBox($svg.attr("viewBox"));
+
+	var real_x = x * (w / vb.w),
+		real_y = y * (h / vb.h);
+
+	console.log("Delta X: ", x, real_x);
+	console.log("Delta Y: ", y, real_y);
+
+	svg.style("transform", "translate3d(" + (real_x*-1) + "px, " + (real_y*-1) + "px, 0.1px)");
+}
+
+function parseViewBox(viewBoxStr) {
+	var vbAttrs = viewBoxStr.split(" ").map(function(istr) { return parseInt(istr, 10) });
+	return { "w": vbAttrs[2], "h": vbAttrs[3] };
 }

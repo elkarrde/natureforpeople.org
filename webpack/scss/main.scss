@@ -859,7 +859,7 @@ p {
 	background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
 	padding-top: 7rem;
 	overflow: hidden;
-	z-index: 25;
+	z-index: 75;
 }
 
 .index-banner-quote {
@@ -880,7 +880,7 @@ p {
 	font-weight: 900;
 	font-size: 1rem;
 	text-decoration: none;
-	z-index: 10;
+	z-index: 99;
 }
 
 .cards-container.after-txt-bg {
@@ -1033,6 +1033,41 @@ p {
 		border-color: white;
 		height: 50px;
 		width: 50px;
+	}
+
+	svg {
+		transition: transform 500ms;
+
+		.country {
+			transition: opacity 500ms;
+
+			path { stroke: white; }
+
+			.flag-icon * {
+				stroke-width: 0.5;
+				fill: transparent;
+				stroke: white;
+			}
+
+			.flag-icon:nth-child(1) { stroke-opacity: 0.1; }
+			.flag-icon:nth-child(2) { stroke-opacity: 0.5; }
+			.flag-icon:nth-child(3) { stroke-opacity: 0.9; }
+
+			.flag-icon:last-child {
+				stroke-width: 1;
+				fill: black;
+			}
+
+		}
+
+		.albania    path { fill: url(#al); }
+		.bosnia     path { fill: url(#ba); }
+		.croatia    path { fill: url(#hr); }
+		.kosovo     path { fill: url(#xk); }
+		.macedonia  path { fill: url(#mk); }
+		.montenegro path { fill: url(#me); }
+		.serbia     path { fill: url(#rs); }
+		.slovenia   path { fill: url(#si); }
 	}
 }
 
@@ -1353,8 +1388,4 @@ p {
 .pa-choosen-text {
 	color: $body-color;
 	font-weight: bold;
-}
-
-#country_path {
-	width: 20rem;
 }
