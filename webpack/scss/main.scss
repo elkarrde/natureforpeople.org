@@ -535,11 +535,21 @@ p {
 	background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=2440%C3%97813&w=2440&h=813');
 }
 
+.urbanpark-banner-image {
+	background-image: url('/static/images/germia-urban-park.jpg');
+	background-size: cover;
+}
+
 .pa-cta-image,
 .examples-cta-image,
 .recommendations-cta-image,
 .sust-business-cta-image {
 	background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=2440%C3%97813&w=2440&h=620');
+}
+
+.urbanpark-cta-image {
+	background-image: url('/static/images/germia-urban-park-together.jpg');
+	background-size: cover;
 }
 
 .country-facts {
@@ -925,6 +935,36 @@ p {
 		background-image: url('https://placeholdit.imgix.net/~text?txtsize=33&txt=360%C3%97235&w=360&h=235');
 	}
 
+	.image-holder.urban_park {
+		background-image: url('/static/images/germia-urban-park-cta.jpg');
+		background-size: cover;
+	}
+
+	.image-holder.local_una {
+		background-image: url('/static/images/local-una.jpg');
+		background-size: cover;
+	}
+
+	.image-holder.sutjeska_tourism {
+		background-image: url('/static/images/sutjeska-river-tourism.jpg');
+		background-size: cover;
+	}
+
+	.image-holder.tara_bear_watching {
+		background-image: url('/static/images/tara-bear-watching.jpg');
+		background-size: cover;
+	}
+
+	.image-holder.education {
+		background-image: url('/static/images/edukacija.jpg');
+		background-size: cover;
+	}
+
+	.image-holder.stakeholders {
+		background-image: url('/static/images/stakeholders.jpg');
+		background-size: cover;
+	}
+
 	.learn-more-button {
 		p { line-height: 4rem; }
 		@include button-w-gradient($croatian-color-3, $croatian-color);
@@ -1279,6 +1319,13 @@ p {
 	}
 }
 
+.urban-park {
+	.title {
+		color: $bosnian-color;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+}
 .wwf-examples {
 	.title {
 		color: $macedonian-color;
