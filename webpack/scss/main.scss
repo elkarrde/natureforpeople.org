@@ -1243,6 +1243,15 @@ p {
 		font-size: 2rem;
 	}
 
+	ul.body li {
+		&::before {
+			content: "• ";
+			font-size: 1.5rem;
+			color: $bosnian-color;
+			font-weight: bold;
+			margin-right: 2rem;
+		}
+	}
 	.list li {
 		list-style-position: inside;
 		text-indent: -2em;
