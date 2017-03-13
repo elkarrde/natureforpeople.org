@@ -1160,23 +1160,28 @@ p {
 
 		.country {
 			transition: opacity 500ms;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.5;
+			}
 
 			path { stroke: white; }
 
-			.flag-icon * {
-				stroke-width: 0.5;
-				fill: transparent;
-				stroke: white;
-			}
+			// .flag-icon * {
+			// 	stroke-width: 0.5;
+			// 	fill: transparent;
+			// 	stroke: white;
+			// }
 
-			.flag-icon:nth-child(1) { stroke-opacity: 0.1; }
-			.flag-icon:nth-child(2) { stroke-opacity: 0.5; }
-			.flag-icon:nth-child(3) { stroke-opacity: 0.9; }
+			// .flag-icon:nth-child(1) { stroke-opacity: 0.1; }
+			// .flag-icon:nth-child(2) { stroke-opacity: 0.5; }
+			// .flag-icon:nth-child(3) { stroke-opacity: 0.9; }
 
-			.flag-icon:last-child {
-				stroke-width: 1;
-				fill: black;
-			}
+			// .flag-icon:last-child {
+			// 	stroke-width: 1;
+			// 	fill: black;
+			// }
 
 		}
 

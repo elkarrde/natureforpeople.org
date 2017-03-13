@@ -111,27 +111,27 @@ jQuery(document).ready(function(){
 		$next_active_msg.removeClass("hide").addClass("show");
 	});
 
-	$('.map-wrapper svg .flag-icon').click(panToCountry);
+	$('.map-wrapper svg .country').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
 
 	$('.map-wrapper .big-map-desc .country-prev').click(function() {
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
-		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+		$('.map-wrapper svg .' + currentCountry).click();
 	});
 
 	$('.map-wrapper .big-map-desc .country-next').click(function() {
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
-		$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+		$('.map-wrapper svg .' + currentCountry).click();
 	});
 
 	$(document).keyup(function(e) {
 		if (e.which === 37) {
 			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
-			$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+			$('.map-wrapper svg .' + currentCountry).click();
 		} else if (e.which === 39) {
 			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
-			$('.map-wrapper svg .' + currentCountry + ' .flag-icon').click();
+			$('.map-wrapper svg .' + currentCountry).click();
 		}
 	});
 });
@@ -251,13 +251,13 @@ function panToViewBox(vpx, vpy) {
 function panToCountry() {
 	var svg = d3.select(".map-wrapper svg"),
 		currentViewBox = svg[0][0].viewBox.baseVal,
-		countryG = this.parentNode,
-		vpx = d3.select(this).select(".flag").node().getAttribute("mydata:vpx"),
-		vpy = d3.select(this).select(".flag").node().getAttribute("mydata:vpy"),
-		countryName = this.parentNode.getAttribute("mydata:country_name"),
-		countryBtn = this.parentNode.getAttribute("mydata:country_btn"),
-		countryDesc = this.parentNode.getAttribute("mydata:country_about"),
-		countryUrl = this.parentNode.getAttribute("mydata:country_url"),
+		countryG = d3.select(this),
+		vpx = countryG.node().getAttribute("mydata:vpx"),
+		vpy = countryG.node().getAttribute("mydata:vpy"),
+		countryName = countryG.node().getAttribute("mydata:country_name"),
+		countryBtn = countryG.node().getAttribute("mydata:country_btn"),
+		countryDesc = countryG.node().getAttribute("mydata:country_about"),
+		countryUrl = countryG.node().getAttribute("mydata:country_url"),
 		localizationLocation = window.location.pathname.split('/')[1],
 		fullCountryUrl;
 
@@ -268,8 +268,8 @@ function panToCountry() {
     }
 
 	switchCountry(countryName, countryDesc, countryBtn, fullCountryUrl);
-	d3.selectAll(".country").style("opacity", 0.2);
-	d3.select(countryG).style("opacity", 1);
+	d3.selectAll("svg .country").style("opacity", 1);
+	countryG.style("opacity", 0.5);
 	panMapToPoint(svg, vpx, vpy);
 
 }
