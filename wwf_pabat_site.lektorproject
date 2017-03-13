@@ -14,8 +14,14 @@ name = Croatian
 url_prefix = /hr/
 locale = hr
 
+[servers.staging]
+name = Staging
+enabled = yes
+default = yes
+target = rsync://root@floatingpoint.io/home/www/pabat-beta.floatingpoint.io
+
 [servers.production]
 name = Production
 enabled = yes
 default = yes
-target = rsync://root@floatingpoint.io/home/www/pabat-beta.floatingpoint.io
+target = rsync://root@natureforpeople.org/var/www/natureforpeople.org
