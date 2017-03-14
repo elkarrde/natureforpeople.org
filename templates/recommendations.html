@@ -37,8 +37,7 @@
 			<h2 class="title mt4">{{ this.section_2_headline }}</h2>
 			<ol class="list mb4">
 				<li class="mt3">{{ this.bullet_9 }}</li>
-				<li class="mt3">{{ this.bullet_10 }}
-				</li>
+				<li class="mt3">{{ this.bullet_10 }}</li>
 				<li class="mt3">{{ this.bullet_11 }}</li>
 				<li class="mt3">{{ this.bullet_12 }}</li>
 				<li class="mt3">{{ this.bullet_13 }}</li>
@@ -52,9 +51,9 @@
 		<p class="card-background-text md-hide sm-hide xs-hide bosnian-color-1">{{ this.learn_more }}</p>
 
 		<div class="cards-container after-txt-bg mxn2 max-width-4 mx-auto flex flex-wrap justify-center py5 md-py5">
-			{{ cards.card_w_img(this.case_study_1, btn_text=this.learn_more_button, cols=3) }}
-			{{ cards.card_w_img(this.case_study_2, btn_text=this.learn_more_button, cols=3) }}
-			{{ cards.card_w_img(this.case_study_3, btn_text=this.learn_more_button, cols=3) }}
+			{{ cards.card_w_img(this.case_study_1, '/wwf_examples'|url, img_class='urban_park', btn_text=this.learn_more_button, cols=3) }}
+			{{ cards.card_w_img(this.case_study_2, '/sustainable_business'|url, img_class='odrzivo_poslovanje', btn_text=this.learn_more_button, cols=3) }}
+			{{ cards.card_w_img(this.case_study_3, '/protected-areas'|url, img_class='zast_podrucja', btn_text=this.learn_more_button, cols=3) }}
 		</div>
 	</div>
 

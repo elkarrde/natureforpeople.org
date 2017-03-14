@@ -889,6 +889,16 @@ p {
 	margin-top: 2.5rem;
 }
 
+.background-text-small {
+	@include title-font;
+	font-size: 9.5rem;
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	margin-left: 0.5rem;
+	margin-top: 2rem;
+}
+
 .card-background-text {
     font-family: "Playfair Display", serif;
     font-weight: 900;
@@ -1018,6 +1028,14 @@ p {
 
 	.image-holder.stakeholders {
 		background-image: url('/static/images/stakeholders.jpg');
+		background-size: cover;
+	}
+	.image-holder.zast_podrucja {
+		background-image: url('/static/images/zasticena-podrucja.jpg');
+		background-size: cover;
+	}
+	.image-holder.odrzivo_poslovanje {
+		background-image: url('/static/images/odrzivo-poslovanje.jpg');
 		background-size: cover;
 	}
 
@@ -1345,12 +1363,17 @@ p {
 	}
 
 	ul.body li {
+		list-style-position: inside;
+		position: relative;
+		padding-left: 4rem;
 		&::before {
 			content: "• ";
+			top: -0.2rem;
 			font-size: 1.5rem;
 			color: $bosnian-color;
 			font-weight: bold;
-			margin-right: 2rem;
+			margin-left: -3rem;
+		    position: absolute;
 		}
 	}
 	.list li {

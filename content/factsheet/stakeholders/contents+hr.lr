@@ -1,4 +1,4 @@
-_model: urban_park
+_model: stakeholders
 ---
 title: NACIONALNI PARKOVI TARA, ĐERDAP I FRUŠKA GORA
 ---
@@ -27,7 +27,7 @@ intro_body: <div class="recommendations"><p class="mt2">Kako bi se jednim zašti
 	<li class="mt3">razvoju modela savjeta korisnika, u skladu sa Zakonom o nacionalnim parkovima</li>
 	<li class="mt3">podršci upravljačima u pripremi i uspostavljanju rada savjeta,</li>
 	<li class="mt3">izradi akcijskih i komunikacijskih planova za svaki savjet,</li>
-	<li class="mt3">procjeni potrebe za podizanjem kapaciteta kako upravljača, tako i ostalih članova savjeta,</li>
+	<li class="mt3">procjeni potrebe za podizanjem kapaciteta, kako upravljača tako i ostalih članova savjeta,</li>
 	<li class="mt3">uspostavljanju monitoringa i evaluacije rada savjeta korisnika.</li>
 </ul>
 

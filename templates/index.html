@@ -53,6 +53,7 @@
 		<div class="col-12 md-col-9 lg-col-6 mx-auto my4 p2">
 			<p class="index-h2">{{ this.about_headline }}</p>
 			<p class="mt3">{{ this.about_body }}</p>
+			<p class="mt2">{{ this.about_body2 }}</p>
 		</div>
 	</div>
 
@@ -109,9 +110,9 @@
 		<p class="pt3 card-background-text sm-hide xs-hide md-hide default-color-3">{{ this.background_text_learn_more }}</p>
 
 		<div class="cards-container mxn2 max-width-4 mx-auto flex justify-center flex-wrap py5 md-py5">
-			{{ cards.card_w_img(this.learn_more_title_1, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
-			{{ cards.card_w_img(this.learn_more_title_2, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
-			{{ cards.card_w_img(this.learn_more_title_3, '/factsheet/una'|url, btn_text=this.learn_more_cta, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_1, '/wwf_examples'|url, img_class='urban_park', btn_text=this.learn_more_cta, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_2, '/sustainable_business'|url, img_class='odrzivo_poslovanje', btn_text=this.learn_more_cta, cols=3) }}
+			{{ cards.card_w_img(this.learn_more_title_3, '/protected-areas'|url, img_class='zast_podrucja', btn_text=this.learn_more_cta, cols=3) }}
 		</div>
 	</div>
 {% endblock %}
