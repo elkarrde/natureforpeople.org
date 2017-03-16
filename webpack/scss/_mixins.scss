@@ -1,0 +1,71 @@
+/* Mixins ------------------------------------------ */
+
+@mixin country-border-gradient($color1, $color2) {
+	-moz-border-image: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+	border-image: linear-gradient(to right, $color1 0%, $color2 100%);
+	border-image-slice: 1;
+}
+
+@mixin country-hamburger-nav($color1, $color2) {
+	display: none;
+	position: absolute;
+	background-color: $bosnian-color-2;
+	border: 5px solid $bosnian-color;
+	border-top: 0;
+	margin-left: -5px;
+}
+
+@mixin nav-list-item {
+	padding: 0 1rem;
+	height: inherit;
+	cursor: pointer;
+}
+
+@mixin nav-link {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 900;
+	height: 100%;
+}
+
+@mixin country-nav-link($color) {
+	height: inherit;
+	li {
+		@include nav-list-item;
+		a { @include nav-link }
+		&:hover { background-color: $color; }
+	}
+}
+
+@mixin title-font {
+	font-family: $title-font-family;
+	font-weight: 900;
+	line-height: 4rem;
+}
+
+@mixin body-font {
+	font-family: $body-font-family;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+@mixin icon-prevnext {
+	cursor: pointer;
+	margin: 1rem;
+	font-size: 4rem;
+	color: $default-color;
+}
+
+@mixin button-w-gradient($color1, $color2) {
+	border: 3px solid transparent;
+	min-height: 4rem;
+	text-transform: uppercase;
+	color: white;
+	font-weight: 900;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0.1rem;
+	@include country-border-gradient($color2, $color1);
+}
