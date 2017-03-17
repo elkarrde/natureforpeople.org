@@ -252,12 +252,13 @@ function panToCountry() {
 	var svg = d3.select(".map-wrapper svg"),
 		currentViewBox = svg[0][0].viewBox.baseVal,
 		countryG = d3.select(this),
-		vpx = countryG.node().getAttribute("mydata:vpx"),
-		vpy = countryG.node().getAttribute("mydata:vpy"),
-		countryName = countryG.node().getAttribute("mydata:country_name"),
-		countryBtn = countryG.node().getAttribute("mydata:country_btn"),
-		countryDesc = countryG.node().getAttribute("mydata:country_about"),
-		countryUrl = countryG.node().getAttribute("mydata:country_url"),
+		countryNode = countryG.node(),
+		vpx = countryNode.getAttribute("mydata:vpx"),
+		vpy = countryNode.getAttribute("mydata:vpy"),
+		countryName = countryNode.getAttribute("mydata:country_name"),
+		countryBtn = countryNode.getAttribute("mydata:country_btn"),
+		countryDesc = countryNode.getAttribute("mydata:country_about"),
+		countryUrl = countryNode.getAttribute("mydata:country_url"),
 		localizationLocation = window.location.pathname.split('/')[1],
 		fullCountryUrl;
 
@@ -296,9 +297,6 @@ function panMapToPoint(svg, x, y) {
 
 	var real_x = x * (w / vb.w),
 		real_y = y * (h / vb.h);
-
-	console.log("Delta X: ", x, real_x);
-	console.log("Delta Y: ", y, real_y);
 
 	svg.style("transform", "translate3d(" + (real_x*-1) + "px, " + (real_y*-1) + "px, 0.1px)");
 }
