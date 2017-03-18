@@ -1,0 +1,38 @@
+<section id="countries" class="countries-map relative flex justify-center items-center flex-column">
+
+	<div class="col-12 lg-col-9" style="z-index: 100">
+
+		<div class="col-12 md-col-6 mx-auto">
+			<h1 class="index-banner-quote center">{{ this.banner_quote }}</h1>
+		</div>
+
+		<div class="col-10 md-col-9 lg-col-6 mb3 flex mx-auto justify-center items-center">
+			<div class="landing-page-carousel flex justify-around">
+				<ul class="carousel-messages max-width-2">
+					<li id="carousel-msg-0" class="carousel-msg show">
+						<p class="default-color-1 center">{{ this.message_0 }}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	<a href="#map" class="index-banner-button mx-auto flex items-center justify-center my3 px3 xs-hide sm-hide">
+		<p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
+	</a>
+
+	<div class="map-wrapper" id="map">
+		{% include "_countries.html" %}
+		<div class="big-map-desc">
+			<h2 class="country-name ml3">{{ bag('country-names', this.alt, 'croatia') }}</h2>
+			<a href="{{ '/croatia'|url }}" class="about-country-button mx3 mt2 mb1 flex items-center justify-center">
+				<p class="default-color-1">{{ this.more_about}} <span class="more-about-name"><span>{{ bag('country-names', this.alt, 'croatia_btn') }}</span></p>
+			</a>
+			<i class="country-prev icon-navigate_before"></i>
+			<i class="country-next icon-navigate_next"></i>
+		</div>
+		<div class="arrow-austria"></div>
+		<div class="arrow-greece"></div>
+	</div>
+</section>

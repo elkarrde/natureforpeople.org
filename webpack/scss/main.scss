@@ -1,12 +1,15 @@
-@import "./reset.css";
-@import "./variables.scss";
-@import "./mixins.scss";
+/* @import "reset.css"; */
+@import "normalize.scss";
 @import "../node_modules/basscss/css/basscss.min.css";
 @import "../node_modules/basscss-responsive-margin/css/responsive-margin.css";
 @import "../node_modules/basscss-responsive-padding/css/responsive-padding.css";
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+@import "variables.scss";
+@import "typography.scss";
+@import "colors.scss";
+@import "images.scss";
+@import "utilities.scss";
+@import "mixins.scss";
 @import "_icons.scss";
 @import "../node_modules/c3/c3.min.css";
 
@@ -32,18 +35,6 @@ sub {
 }
 
 /* Global settings ----------------------------- */
-
-html {
-	font-family: $body-font-family;
-  font-size: $document-font-size-md;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-p {
-	line-height: 1.5rem;
-	color: $body-color;
-}
 
 .capture-color { color: $footer-color; }
 .white-background-color { background-color: white; }
@@ -792,33 +783,35 @@ p {
 	}
 }
 
-.index-banner {
+section.countries-map {
 	background: linear-gradient(0deg, #48C6EF 0%, #6F86D6 100%);
 	padding-top: 7rem;
 	overflow: hidden;
 	z-index: 75;
+
+  /* TODO: clean this shit */
+  .index-banner-quote {
+	  @include title-font;
+	  color: white;
+	  text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
+	  font-size: 5rem;
+	  line-height: 6rem;
+	  margin-bottom: 2rem;
+  }
+
+  .index-banner-button {
+	  background: linear-gradient(315deg, $bosnian-color 0%, $bosnian-color-3 100%);
+	  border-radius: 100px;
+	  min-height: 4rem;
+	  text-transform: uppercase;
+	  color: white;
+	  font-weight: 900;
+	  font-size: 1rem;
+	  text-decoration: none;
+	  z-index: 99;
+  }
 }
 
-.index-banner-quote {
-	@include title-font;
-	color: white;
-	text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
-	font-size: 5rem;
-	line-height: 6rem;
-	margin-bottom: 2rem;
-}
-
-.index-banner-button {
-	background: linear-gradient(315deg, $bosnian-color 0%, $bosnian-color-3 100%);
-	border-radius: 100px;
-	min-height: 4rem;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 900;
-	font-size: 1rem;
-	text-decoration: none;
-	z-index: 99;
-}
 
 .cards-container.after-txt-bg {
 	@media (min-width: 52em) {

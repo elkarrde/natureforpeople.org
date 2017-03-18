@@ -1,0 +1,41 @@
+/* Text colors */
+
+.white {
+  color: $white;
+}
+
+.grey-dark {
+  color: $grey-dark;
+}
+
+.light-blue {
+  color: $light-blue;
+}
+
+/* Backgrounds */
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-white-dirty {
+  background-color: $white-dirty;
+}
+
+.bg-si-green-cyan {
+  background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);
+}
+
+/* Borders */
+
+.border-hr-red-blue {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $hr-red 0%, $hr-blue-dark 100%);
+  border-image-slice: 1;
+}
+
+.border-ba-blue-yellow {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $ba-blue 0%, $ba-yellow-dark 100%);
+  border-image-slice: 1;
+}
