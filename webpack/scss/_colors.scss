@@ -4,6 +4,10 @@
   color: $white;
 }
 
+.grey-light {
+  color: $grey-light;
+}
+
 .grey-dark {
   color: $grey-dark;
 }
@@ -20,6 +24,14 @@
 
 .bg-white-dirty {
   background-color: $white-dirty;
+}
+
+.bg-grey-light {
+  background-color: $grey-light;
+}
+
+.bg-grey-light-hover:hover {
+  background-color: $grey-light;
 }
 
 .bg-si-green-cyan {

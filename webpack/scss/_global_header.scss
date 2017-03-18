@@ -1,0 +1,33 @@
+$global-header-height: 70px;
+
+.global-header {
+	height: $global-header-height;
+	z-index: 99;
+  background-color: $white;
+
+  .brand-logo {
+	  display: block;
+	  position: absolute;
+	  top: -1.4rem;
+	  left: 2rem;
+	  width: 6rem;
+	  height: 9rem;
+	  background: url('/static/images/WWF_logo.svg');
+	  background-size: 100% 100%;
+  }
+
+  .main-nav {
+    a {
+      height: $global-header-height;
+    }
+  }
+
+  .lang-dropdown {
+    button {
+      height: $global-header-height;
+    }
+    &:hover #lang-dropdown-options {
+      display: block;
+    }
+  }
+}

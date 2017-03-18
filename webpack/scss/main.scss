@@ -4,19 +4,58 @@
 @import "../node_modules/basscss-responsive-margin/css/responsive-margin.css";
 @import "../node_modules/basscss-responsive-padding/css/responsive-padding.css";
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
+@import "../node_modules/c3/c3.min.css";
+
 @import "variables.scss";
 @import "typography.scss";
 @import "colors.scss";
 @import "images.scss";
 @import "utilities.scss";
 @import "mixins.scss";
-@import "_icons.scss";
-@import "../node_modules/c3/c3.min.css";
+@import "icons.scss";
+@import "global_header.scss";
 
 /* Custom: Fix box sizing on everything */
 * {
   box-sizing: border-box;
 }
+
+/* TODO: delete everything(!) below */
+
+$albanian-color: #7AB638;
+$albanian-color-2: #0A8C4D;
+$albanian-color-3: #CBBE10;
+$bosnian-color: #BEB81C;
+$bosnian-color-2: #A8A20A;
+$bosnian-color-3: #17A9AE;
+$croatian-color: #0B8BB6;
+$croatian-color-2: #03769D;
+$croatian-color-3: #FA555C;
+$kosovian-color: #6E386C;
+$kosovian-color-2: #492148;
+$kosovian-color-3: #F0733D;
+$macedonian-color: #CD4141;
+$macedonian-color-2: #AB3434;
+$macedonian-color-3: #E06C6C;
+$montenegran-color: #F5A623;
+$montenegran-color-2: #EA8B25;
+$montenegran-color-3: #D62C2C;
+$serbian-color: #3B2D6B;
+$serbian-color-2: #2E2355;
+$serbian-color-3: #58C186;
+$slovenian-color: #27A04C;
+$slovenian-color-2: #0A8C4D;
+$slovenian-color-3: #56ADC2;
+
+$title-font-family: 'Playfair Display', serif;
+$body-font-family: 'Raleway', sans-serif;
+
+$default-color: #FEFEFE;
+$default-color-2: #E5E5E5;
+$default-color-3: #4AC2ED;
+$footer-color: #212121;
+$body-color: #4A4A4A;
+$light-background-color: #FAFAFA;
 
 /* sup, sub ----------------------------------- */
 sub, sup {
@@ -82,44 +121,6 @@ sub {
 }
 
 //--------------------------------------------//
-
-.header {
-	height: 4.5rem;
-	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.1);
-	width: 100%;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-	position: fixed;
-}
-
-#navbar {
-	z-index: 99;
-}
-
-.nav-links-default {
-	height: inherit;
-	li {
-		padding: 0 1rem;
-		height: inherit;
-		cursor: pointer;
-		a {
-			color: $body-color;
-			text-transform: uppercase;
-			text-decoration: none;
-			font-weight: 900;
-			height: 100%;
-		}
-		&:hover {
-			background-color: $default-color-2;
-		}
-	}
-}
-
-.menu {
-	height: inherit;
-	li {
-		cursor: pointer;
-	}
-}
 
 .banner {
 	height: 80vh;
@@ -244,51 +245,6 @@ sub {
 	position: absolute;
 }
 
-// ---------- Localization button select ----------//
-.local-dropdown {
-	position: relative;
-	display: inline-block;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.local-dropdown .local-dropdown-menu {
-	position: absolute;
-	top: 100%;
-	display: none;
-	margin: 0;
-
-	list-style: none; /** Remove list bullets */
-	width: 100%; /** Set the width to 100% of it's parent */
-	padding: 0;
-}
-
-.local-dropdown:hover .local-dropdown-menu {
-	display: block;
-}
-
-/** Button Styles **/
-.local-dropdown button {
-	font-size: 1rem;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	overflow:hidden;
-	height: 4.5rem;
-	width: 4.5rem;
-	cursor: pointer;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-/** List Item Styles **/
-.local-dropdown a {
-	display: block;
-	padding: 0.2em 0.8em;
-	text-decoration: none;
-}
-
-/** List Item Hover Styles **/
-.local-dropdown a:hover {
-	background: #BBBBBB;
-}
 
 /* Countries ----------------------------------------------- */
 
