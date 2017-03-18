@@ -8,12 +8,24 @@
   color: $grey-light;
 }
 
+.grey {
+  color: $grey;
+}
+
+.grey-hover:hover {
+  color: $grey;
+}
+
 .grey-dark {
   color: $grey-dark;
 }
 
 .light-blue {
   color: $light-blue;
+}
+
+.black-light {
+  color: $black-light;
 }
 
 /* Backgrounds */
@@ -26,8 +38,12 @@
   background-color: $white-dirty;
 }
 
-.bg-grey-light {
-  background-color: $grey-light;
+.bg-black-light {
+  background-color: $black-light;
+}
+
+.bg-black-light {
+  color: $black-light;
 }
 
 .bg-grey-light-hover:hover {
