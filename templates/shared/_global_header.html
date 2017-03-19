@@ -1,44 +1,59 @@
 <header id="global-header" class="global-header uppercase bold fixed top-0 right-0 left-0 box-shadow }}">
 
-  <a class="brand-logo" href="{{ '/'|url(alt) }}"><img src="/static/images/WWF_logo.svg" alt="WWF panda"></a>
+  <!-- WWF brand logo -->
+  <a class="brand-logo" href="{{ '/'|url(alt) }}">
+    <img src="{{ '/static/images/WWF_logo.svg'|asseturl }}" alt="WWF panda">
+  </a>
 
-  <!-- TODO: make loop -->
+  <!-- WWF main navigation - Countries dropdown + pages -->
   <nav id="main-nav" class="main-nav col-9 mx-auto">
     <ul class="list-reset m0 flex flex-row justify-around xs-hide sm-hide md-hide">
       <li>
+
+        <!-- Countries dropdown -->
+        {% set countries = bag('country-navigation', this.alt).iteritems() %}
         <div id="countries-dropdown" class="nav-dropdown">
           <button class=" white bg-grey-light pointer border-none px2 flex flex-row justify-center items-center">
-            <span class="mr1">COUNTRY<br>SELECT</span>
+            <span class="mr1 uppercase left-align">{{ countries.next()[1] }}</span>
             <i class="icon-arrow-drop-down"></i>
           </button>
           <ul class="nav-dropdown-options hidden list-reset m0">
-            <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='hr') }}">Hrvatska</a></li>
-            <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='en') }}">Srbija</a></li>
+            {% for path, label in countries %}
+            <li>
+              <a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ path|url }}">{{ label }}</a>
+            </li>
+            {% endfor %}
           </ul>
         </div>
+
       </li>
-      <li><a class="block px3 flex items-center grey-dark bg-grey-light-hover" href="{{ '/wwf_examples'|url }}">{{ bag('main-navigation', this.alt, 'link_1') }}</a></li>
-      <li><a class="block px3 flex items-center grey-dark bg-grey-light-hover" href="{{ '/sustainable_business'|url }}">{{ bag('main-navigation', this.alt, 'link_2') }}</a></li>
-      <li><a class="block px3 flex items-center grey-dark bg-grey-light-hover" href="{{ '/recommendations'|url }}">{{ bag('main-navigation', this.alt, 'link_3') }}</a></li>
-      <li><a class="block px3 flex items-center grey-dark bg-grey-light-hover" href="{{ '/protected_areas'|url }}">{{ bag('main-navigation', this.alt, 'link_4') }}</a></li>
+
+      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
+      <li>
+        <a class="block px3 flex items-center grey-dark bg-grey-light-hover" href="{{ path|url(alt) }}">{{ label }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </nav>
 
+  <!-- Mobile navigation -->
   <div id="mobile-nav" class="nav-dropdown absolute top-0 right-0 lg-hide">
     <button class=" white bg-grey-light ml-auto pointer border-none px2 flex flex-column justify-center items-center">
       <span class="icon-menu-bars"></span>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
-      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/wwf_examples'|url }}">{{ bag('main-navigation', this.alt, 'link_1') }}</a></li>
-      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/sustainable_business'|url }}">{{ bag('main-navigation', this.alt, 'link_2') }}</a></li>
-      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/recommendations'|url }}">{{ bag('main-navigation', this.alt, 'link_3') }}</a></li>
-      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/protected_areas'|url }}">{{ bag('main-navigation', this.alt, 'link_4') }}</a></li>
+      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
+      <li>
+        <a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ path|url(alt) }}">{{ label }}</a>
+      </li>
+      {% endfor %}
     </ul>
   </div>
 
+  <!-- Language dropdown -->
   <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0 xs-hide sm-hide md-hide">
     <button class=" white bg-grey-light pointer border-none px2 flex flex-column justify-center items-center">
-      <span class="mt2">HR</span>
+      <span class="mt2 uppercase">{{ this.alt }}</span>
       <i class="icon-arrow-drop-down"></i>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
