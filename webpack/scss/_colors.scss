@@ -46,9 +46,18 @@
   color: $black-light;
 }
 
+.bg-grey-light {
+  background-color: $grey-light;
+}
+
 .bg-grey-light-hover:hover {
   background-color: $grey-light;
 }
+
+.bg-grey-hover:hover {
+  background-color: $grey;
+}
+
 
 .bg-si-green-cyan {
   background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);

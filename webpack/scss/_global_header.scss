@@ -16,13 +16,11 @@ $global-header-height: 70px;
 	  background-size: 100% 100%;
   }
 
-  .main-nav {
-    a {
-      height: $global-header-height;
-    }
+  .main-nav > ul > li > a {
+    height: $global-header-height;
   }
 
-  .lang-dropdown {
+  .nav-dropdown {
     button {
       height: $global-header-height;
     }
