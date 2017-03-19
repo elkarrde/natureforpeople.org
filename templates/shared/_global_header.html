@@ -1,6 +1,6 @@
 <header id="global-header" class="global-header uppercase bold fixed top-0 right-0 left-0 box-shadow }}">
 
-  <a class="brand-logo" href="{{ '/'|url(alt) }}"></a>
+  <a class="brand-logo" href="{{ '/'|url(alt) }}"><img src="/static/images/WWF_logo.svg" alt="WWF panda"></a>
 
   <!-- TODO: make loop -->
   <nav id="main-nav" class="main-nav col-9 mx-auto">
@@ -11,7 +11,7 @@
             <span class="mr1">COUNTRY<br>SELECT</span>
             <i class="icon-arrow-drop-down"></i>
           </button>
-          <ul id="lang-dropdown-options" class="hidden list-reset m0">
+          <ul class="nav-dropdown-options hidden list-reset m0">
             <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='hr') }}">Hrvatska</a></li>
             <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='en') }}">Srbija</a></li>
           </ul>
@@ -24,26 +24,24 @@
     </ul>
   </nav>
 
-  <!-- TODO: mobile nav - fix later -->
-  <div id={{nav_id}} class="mr4 lg-hide">
-    <ul>
-      <li> <a href="#" class="icon-menu-bars"></a>
-        <ul>
-          <li><a class="flex items-center" href="{{ '/wwf_examples'|url }}">{{ bag('main-navigation', this.alt, 'link_1') }}</a></li>
-          <li><a class="flex items-center" href="{{ '/sustainable_business'|url }}">{{ bag('main-navigation', this.alt, 'link_2') }}</a></li>
-          <li><a class="flex items-center" href="{{ '/recommendations'|url }}">{{ bag('main-navigation', this.alt, 'link_3') }}</a></li>
-          <li><a class="flex items-center" href="{{ '/protected_areas'|url }}">{{ bag('main-navigation', this.alt, 'link_4') }}</a></li>
-        </ul>
-      </li>
+  <div id="mobile-nav" class="nav-dropdown absolute top-0 right-0 lg-hide">
+    <button class=" white bg-grey-light ml-auto pointer border-none px2 flex flex-column justify-center items-center">
+      <span class="icon-menu-bars"></span>
+    </button>
+    <ul class="nav-dropdown-options hidden list-reset m0">
+      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/wwf_examples'|url }}">{{ bag('main-navigation', this.alt, 'link_1') }}</a></li>
+      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/sustainable_business'|url }}">{{ bag('main-navigation', this.alt, 'link_2') }}</a></li>
+      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/recommendations'|url }}">{{ bag('main-navigation', this.alt, 'link_3') }}</a></li>
+      <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '/protected_areas'|url }}">{{ bag('main-navigation', this.alt, 'link_4') }}</a></li>
     </ul>
   </div>
 
-  <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0">
+  <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0 xs-hide sm-hide md-hide">
     <button class=" white bg-grey-light pointer border-none px2 flex flex-column justify-center items-center">
       <span class="mt2">HR</span>
       <i class="icon-arrow-drop-down"></i>
     </button>
-    <ul id="lang-dropdown-options" class="hidden list-reset m0">
+    <ul class="nav-dropdown-options hidden list-reset m0">
       <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a></li>
       <li><a class="white bg-grey-light bg-grey-hover block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a></li>
     </ul>
