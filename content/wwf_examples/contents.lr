@@ -1,6 +1,6 @@
 _model: wwf_examples
 ---
-title: WABAT
+title: WWF Examples
 ---
 bg_text: Examples
 ---
@@ -8,15 +8,15 @@ main_headline: WWF Examples
 ---
 learn_more_button: Learn more
 ---
-intro_title: WWF Examples
+intro_title: WWF examples of good practice
 ---
-intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasnije koristiti kao primjere dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve aktivnosti koje WWF provodi u konačnici će rezultirati:</p>
+intro_body: <p>The WWF has carried out field projects in the region and the results will later be used as good practice examples, with a tendency of being replicated in other regional protected areas. All the activities implemented by the WWF will results in:</p>
 <ul class="mt2">
-<li>novim turističkim proizvodima,</li>
-<li>ekonomskom koristi za lokalnu zajednicu,</li>
-<li>poboljšanjem životnih uvjeta</li>
-<li>boljim upravljanjem nacionalnim parkom,</li>
-<li>ublažavanjem prijetnji vezanih za očuvanu prirodu.</li>
+<li>new tourism products,</li>
+<li>economic benefits for the local community,</li>
+<li>better living conditions,</li>
+<li>better national park management,</li>
+<li>mitigation of threats connected with the conserved nature.</li>
 </ul>
 ---
 learn_more: Learn more

@@ -13,6 +13,15 @@
 {% block body %}
 	{% include "shared/_short_banner.html" %}
 
+	<p class="background-text xs-hide sm-hide">{{ this.bg_text }}</p>
+
+	<section class="intro col-9 md-col-6 mt4 pt4 mx-auto">
+		<h1 class="title h1 bold">{{ this.intro_title }}</h1>
+		<div class="body mt2">
+			{{ this.intro_body }}
+		</div>
+	</section> 
+
 	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
 		{{ cards.card_w_img(this.case_study_1, '/factsheet/hydropower'|url, btn_text=this.learn_more_button, cols=2) }}
 		{{ cards.card_w_img(this.case_study_2, '/factsheet/tourism'|url, btn_text=this.learn_more_button, cols=2) }}

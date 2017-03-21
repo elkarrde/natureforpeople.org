@@ -1,10 +1,23 @@
 _model: sustainable_business
 ---
-title: WABAT
+title: Sustainable business
+---
+bg_text: Sustainable business
 ---
 main_headline: Sustainable business
 ---
 learn_more_button: Learn more
+---
+intro_title: Sustainable business
+---
+intro_body: <p>The WWF has carried out numerous projects in the region in cooperation with business sector, resource managers and local community. Their activities have been guided by the WWF to use natural resources in a sustainable way – forests, fish stocks, tourism in MPAs and hydropower.</p>
+<p class="mt2">Sustainable business activities have a number of benefits for:</p>
+<ul class="mt2">
+<li>nature, </li>
+<li>local community,</li>
+<li>companies who do business sustainably,</li>
+<li>end users.</li>
+</ul>
 ---
 case_study_1: Hydropower
 ---
