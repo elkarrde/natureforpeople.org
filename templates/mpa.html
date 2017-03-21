@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% set page_name           = "hydropower" %}
+{% set page_name           = "mpa" %}
 {% set header_class        = "default-background-color-1 default-color-1" %}
 {% set select_colors_class = "default-color-1 default-background-color-2" %}
 {% set nav_id              = "default-nav" %}
@@ -23,7 +23,7 @@
 	</section>
 
 	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.sust_business_1, '/factsheet/mpa'|url, img_class='urban_park', btn_text=this.learn_more) }}
+		{{ cards.card_w_img(this.sust_business_1, '/factsheet/hydropower'|url, img_class='urban_park', btn_text=this.learn_more) }}
 		{{ cards.card_w_img(this.sust_business_2, '/factsheet/forestry'|url, img_class='local_una', btn_text=this.learn_more) }}
 		{{ cards.card_w_img(this.sust_business_3, '/factsheet/fishery'|url, img_class='sutjeska_tourism', btn_text=this.learn_more) }}
 	</div>
