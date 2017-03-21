@@ -13,16 +13,26 @@ $mobile-header-height: 50px;
 	  width: 6rem;
   }
 
-  .main-nav > ul > li > a {
+  button, .main-nav > ul > li > a {
     height: $global-header-height;
   }
 
-  .nav-dropdown {
-    button {
-      height: $global-header-height;
+  .nav-dropdown:hover .nav-dropdown-options {
+    display: block;
+  }
+
+  .link {
+    color: $grey-dark;
+    &:hover {
+      background-color: $grey-light;
     }
-    &:hover .nav-dropdown-options {
-      display: block;
+  }
+  .link-invert {
+    color: $white;
+    background-color: $grey-light;
+
+    &:hover {
+      color: $grey-dark;
     }
   }
 }
@@ -38,6 +48,50 @@ $mobile-header-height: 50px;
     .nav-dropdown {
       button {
         height: $mobile-header-height;
+      }
+    }
+  }
+}
+
+/* Country specific coloring */
+
+body.country-hr {
+  .global-header {
+    background-color: $hr-blue;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $hr-blue-dark;
+      }
+    }
+    .link-invert {
+      color: $hr-blue;
+      background-color: $hr-blue-dark;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+body.country-ba {
+  .global-header {
+    background-color: $ba-yellow;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $ba-yellow-dark;
+      }
+    }
+    .link-invert {
+      color: $ba-yellow;
+      background-color: $ba-yellow-dark;
+
+      &:hover {
+        color: $white;
       }
     }
   }
