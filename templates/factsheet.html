@@ -9,13 +9,15 @@
 {% set page_name		   = "factsheet" %}
 
 {% block body %}
-	{% include "shared/_short_banner.html" %}
+  {% include "shared/_short_banner.html" %}
+
+	<p class="background-text xs-hide sm-hide">{{ this.bg_text }}</p>
 
 	<div class="col-12 md-col-9 lg-col-6 mx-auto">
-		<h1>{{ this.heading }}</h1>
+		<h1>{{ this.intro_title }}</h1>
 
-		{{ this.body }}
+		{{ this.intro_body }}
 	</div>
 
+	{% include "shared/_short_cta.html" %}
 {% endblock %}
-

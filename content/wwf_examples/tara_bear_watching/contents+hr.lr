@@ -1,4 +1,4 @@
-_model: tara_bear_watching
+_model: factsheet
 ---
 title: NACIONALNI PARKOVI BIOGRADSKA GORA I TARA
 ---
@@ -8,7 +8,7 @@ main_headline: Promatranje medvjeda
 ---
 learn_more_button: Saznaj više
 ---
-intro_title: Promatranjem medvjeda do boljeg života lokalne zajednice 
+intro_title: Promatranjem medvjeda do boljeg života lokalne zajednice
 ---
 intro_body: <div class="recommendations"><p class="mt2">Ako bismo trebali izdvojiti karizmatične vrste prisutne u svim zemljama regije Dinarskog luka, to su nedvojbeno tri velike zvijeri: smeđi medvjed (Ursus arctos), ris (Lynx lynx) i vuk (Canis lupus). Sve su tri podjednako posebne, ali i ugrožene.</p>
 
