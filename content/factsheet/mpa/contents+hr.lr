@@ -24,11 +24,11 @@ intro_body: <div class="recommendations"><p class="mt2">Jadransko more izloženo
 
 <p class="mt2">U Albaniji je WWF sudjelovao u uspostavi morskih zaštićenih područja s konkretnim rezultatom osnivanja Nacionalnog parka Karaburun-Sazan. I za ovaj su park napravljeni plan upravljanja i plan održivog turizma, zaposlenicima su pojačani kapaciteti, a javnost je upoznata s vrijednostima tog područja.</p>
 
-<p class="mt2">PROVEDENO ISTRAŽIVANJA I STUDIJA: 20<br />
-
-UKLJUČENO INSTITUCIJA: 51<br />
-
-UKLJUČENO POJEDINACA: 500+ </p>
+<div class="mt2 pb2 pl2 pr2" style="border: 1px solid black; background-color: yellow;">
+	<p class="mt2">PROVEDENO ISTRAŽIVANJA I STUDIJA: 20<br />
+	UKLJUČENO INSTITUCIJA: 51<br />
+	UKLJUČENO POJEDINACA: 500+ </p>
+</div>
 
 <p class="mt2">Danas WWF provodi dva projekta u morskim zaštićenim područjima u regiji. Kako se naš rad na moru temelji i na održivom ribarstvu i akvakulturi, na problem lošeg stanja u moru želimo ukazati i u svom radu s morskim zaštićenim područjima. Tako u okviru projekta  <a href="http://croatia.panda.org/projekti/projekt_fishmpablue2/">FishMPABlue 2</a> radimo na unapređenju upravljanja ribljim resursima u morskim zaštićenim područjima na Sredozemlju štiteći ekosustave i vrste te osiguravajući održivost priobalnog ribolova u ovim područjima i oko njih. Kroz <a href="http://croatia.panda.org/projekti/mediteran_kao_destinacija_ekoturizma___destimed/">DestiMED</a> pak naglasak stavljamo na destinacijski turizam u cilju praćenja stanja održivosti ekoturističkih proizvoda u morskim zaštićenim područjima u Sredozemnom moru.</p>
 
@@ -40,7 +40,9 @@ sust_business_1: Hidroenergetika
 ---
 sust_business_2: Morska zaštićena područja
 ---
-sust_business_3: Ribarstvo
+sust_business_3: Šumarstvo
+---
+sust_business_4: Ribarstvo
 ---
 cta_button_text: Riješimo izazove zajedno
 ---

@@ -24,11 +24,11 @@ intro_body: <div class="recommendations"><p class="mt2">The Adriatic Sea has bee
 
 <p class="mt2">In Albania the WWF has participated in the setting up of marine protected areas by founding the Karaburun-Sazan National Park. Management plan and sustainable tourism plan have been prepared for this park as well; the employees had their capacities strengthened and the public was introduced to the values of the area.</p>
 
-<p class="mt2">NUMBER OF RESEARCH AND STUDIES CARRIED OUT: 20<br />
-
-NUMBER OF INSTITUTIONS INVOLVED: 51<br />
-
-NUMBER OF INDIVIDUALS INVOLVED: 500+</p>
+<div class="mt2 pb2 pl2 pr2" style="border: 1px solid black; background-color: yellow;">
+	<p class="mt2">NUMBER OF RESEARCH AND STUDIES CARRIED OUT: 20<br />
+	NUMBER OF INSTITUTIONS INVOLVED: 51<br />
+	NUMBER OF INDIVIDUALS INVOLVED: 500+</p>
+</div>
 
 <p class="mt2">WWF has currently been implementing two projects in marine protected areas in the region. Since our work regarding the sea has also been based on sustainable fisheries and aquaculture, with our work on marine protected areas we would like to stress the poor state in the sea. Thus within <a href="http://croatia.panda.org/en/what_we_do/seas/fishmpablue2_project/">FishMPABlue 2</a> project we have been working on the improvement of fish resource management in marine protected areas in the Mediterranean by protecting ecosystems and species and by ensuring the sustainability of the coastal fishing in these areas and in their surrounding. Within <a href="http://croatia.panda.org/en/what_we_do/seas/mediterranean_ecotourism_destination___destimed/">DestiMED</a> project we have been emphasising the destination tourism with the goal of tracking the sustainability situation of eco-tourism products in marine protected areas in the Mediterranean Sea.</p>
 
@@ -36,9 +36,11 @@ NUMBER OF INDIVIDUALS INVOLVED: 500+</p>
 ---
 learn_more: Learn more
 ---
-sust_business_1: Tourism
+sust_business_1: Hydropower
 ---
-sust_business_2: Forestry
+sust_business_2: Marine protected areas
+---
+sust_business_3: Forestry
 ---
 sust_business_3: Fishery
 ---

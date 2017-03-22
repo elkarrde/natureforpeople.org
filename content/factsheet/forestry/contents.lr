@@ -54,11 +54,13 @@ intro_body: <div class="recommendations"><p class="mt2">According to WWF data, t
 ---
 learn_more: Learn more
 ---
-sust_business_1: Tourism
+sust_business_1: Hydropower
 ---
-sust_business_2: Forestry
+sust_business_2: Marine protected areas
 ---
-sust_business_3: Fishery
+sust_business_3: Forestry
+---
+sust_business_4: Fishery
 ---
 cta_button_text: Let's solve challenges together
 ---
