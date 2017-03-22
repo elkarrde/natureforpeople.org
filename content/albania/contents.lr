@@ -1,4 +1,6 @@
-_model: albania
+_model: country
+---
+_template: albania.html
 ---
 title: PABAT
 ---
@@ -21,8 +23,6 @@ fact_1_caption: visitors in protected areas in 2012
 fact_2_title: Water Resources
 ---
 fact_2_subtitle: Income from exploitation of water
----
-fact_2_copy 60 million annual income is two large hydropower plants that depend on water from Velebit. 0 euros, their annual investment in the protection of forest ecosystems.
 ---
 fact_2_question: What strategies back part of the revenue the local community?
 ---

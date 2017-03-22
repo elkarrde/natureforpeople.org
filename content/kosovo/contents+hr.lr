@@ -1,4 +1,6 @@
-_model: kosovo
+_model: country
+---
+_template: kosovo.html
 ---
 title: PABAT
 ---
