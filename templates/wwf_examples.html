@@ -11,16 +11,31 @@
 {% import "macros/info_card.html" as cards %}
 
 {% block body %}
-	{% include "shared/_short_banner.html" %}
 
-	<p class="background-text xs-hide sm-hide">{{ this.bg_text }}</p>
+  {% include "shared/_short_banner.html" %}
 
-	<section class="intro col-9 md-col-6 mt4 pt4 mx-auto">
-		<h1 class="title h1 bold">{{ this.intro_title }}</h1>
-		<div class="body mt2">
-			{{ this.intro_body }}
-		</div>
-	</section> 
+<section id="wwf-examples-intro" class="relative">
+  <h2 class="absolute m0 ml2 playfair-bold h1 lh0 opacity-20 grey sm-hide xs-hide">{{ this.bg_text }}</h2>
+
+  <div class="max-width-4 mx-auto pt3">
+    <div class="clearfix">
+      <div class="sm-col-12 md-col-8 mx-auto px2 my4">
+        <h3 class="h3 bold red">{{ this.intro_title }}</h3>
+        <p>{{ this.intro_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="wwf-examples-facts">
+  <div class="max-width-4 mx-auto">
+    <div class="clearfix">
+
+      <!-- loop here -->
+
+    </div>
+  </div>
+
 
 	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
 		{{ cards.card_w_img(this.wwf_example_1, '/factsheet/urban_park'|url, img_class='urban_park', btn_text=this.learn_more) }}
@@ -30,6 +45,7 @@
 		{{ cards.card_w_img(this.wwf_example_5, '/factsheet/education'|url, img_class='education', btn_text=this.learn_more) }}
 		{{ cards.card_w_img(this.wwf_example_6, '/factsheet/stakeholders'|url, img_class='stakeholders', btn_text=this.learn_more) }}
 	</div>
+</section>
 
 	{% include "shared/_short_cta.html" %}
 {% endblock %}
