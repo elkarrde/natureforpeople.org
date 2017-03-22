@@ -2,21 +2,9 @@ _model: index
 ---
 title: PABAT
 ---
-banner_quote: Prepoznajte vrijednost naše prirode
+headline: Prepoznajte vrijednost naše prirode
 ---
-message_0: Lako se izgubiti između tisuću otoka ili u gustim šumama. Još je lakše pronaći mir na vrhovima magičnih planina ili uz žuborenje netaknutih rijeka. Otkrijte koliko bi koštalo ono što vas ne košta ništa!
----
-message_1: Dinarski luk ekoregija se sastoji iz Dinarida, dalmatinske obale i Jadranskog mora, a domaćini dobro očuvane šume, visoki udio endemske biljke, važne slatkovodnih ekosustava, bogata morska staništa i lovište, i populacije velikih zvijeri (Lynx, smeđi medvjed, vuk i).
----
-message_2: Od niskih intenziteta poljoprivredne prakse stvorili su polu-prirodnih staništa diljem mediteranske regije, koji integrira šuma, pašnjaka i obradivih površina, te osigurati dom za jedinstvene skupove vrsta. Ovi složeni mozaici su još uvijek prisutni u cijelom Dinarskog luka.
----
-message_3: Ova regija je poznata po svojim jedinstvenim krškim geološko špiljskih staništa s raznolikošću beskralješnjaka, riba, vodozemaca, gmazova i. Livanjskog polja u zapadnoj Bosni je najveći krško polje u svijetu. Špilja sustav predstavlja najveći podzemni sustav rijeka u Europi i iznimno važan izvor vode za cijelu regiju.
----
-message_4: Velike zvijeri koristiti Dinaride kao ekološki koridor između Alpa i planinama jugoistočne Europe. Neki od netaknutih planine u Europi nalaze se na južnom kraju regiji - Prokletije masiva, a "albanskih Alpa".
----
-message_5: Najviše proširena mreža podzemnih rijeka i jezera u Europi, kao i močvara od međunarodnog značaja, kao što su delte Neretve (Bosna i Hercegovina / Hrvatska), i Skadarsko / Skadar Lake (Crna Gora / Albanija), mogu se naći tamo , Oni su važni gnijezde populacije ugroženih vrsta ptica, kao što je dalmatinski pelikan, a važan zaustavljanja i zimovalište za migraciju ptica. Rijeka Tara je dobro poznat za formiranje dugu i divlji kanjon koji je drugi najdubljih u svijetu.
----
-message_6: Istočna obala Jadrana ima na stotine otoka i raznolikih obalnih / morskih ekosustava koji su hranjenje i razmnožavanje, za kitove, morske ptice i morske kornjače, i dalje, uključuje neiskvarenu traktate s ograničenom razvoja masovnog turizma.
+message: Lako se izgubiti između tisuću otoka ili u gustim šumama. Još je lakše pronaći mir na vrhovima magičnih planina ili uz žuborenje netaknutih rijeka. Otkrijte koliko bi koštalo ono što vas ne košta ništa!
 ---
 more_about: Više o
 ---
@@ -36,17 +24,14 @@ facts_cta: Više
 ---
 learn_more_cta: Prouči više
 ---
-learn_more: Više
----
 scroll_to_map_button_text: Prouči mapu za više informacija
 ---
-background_text_about: O nama
+learn_more_backline: Saznaj više
 ---
-background_text_learn_more: Saznaj više
+about_backline: O nama
 ---
 about_headline: Zaštićena područja za prirodu i ljude
 ---
-about_body: Prirodu uzimamo zdravo za gotovo. A ona vrijedi puno više no što uopće možemo pomisliti. Ovom stranicom želimo prikazati prirodu kroz vrijednosti vode, šume i drugih ekosustava bez kojih život na Zemlji ne bi bio moguć. Prirodu bismo trebali koristiti na održiv način.
----
-about_body2: WWF stoga potiče dijalog s vladama da im prirodne vrijednosti postanu glavna tema, a s poslovnim sektorom da prirodi vrate ono što im ona daje za njihovo bolje poslovanje. U svom radu sa zaštićenim područjima WWF uključuje lokalnu zajednicu u proces upravljanja, kojoj tako osigurava direktnu dobrobit od samog područja. Rješenja kako bolje vrednovati prirodu WWF pronalazi kroz program "Zaštićena područja za prirodu i ljude".
+about_content: <p>Prirodu uzimamo zdravo za gotovo. A ona vrijedi puno više no što uopće možemo pomisliti. Ovom stranicom želimo prikazati prirodu kroz vrijednosti vode, šume i drugih ekosustava bez kojih život na Zemlji ne bi bio moguć. Prirodu bismo trebali koristiti na održiv način.</p>
+<p>WWF stoga potiče dijalog s vladama da im prirodne vrijednosti postanu glavna tema, a s poslovnim sektorom da prirodi vrate ono što im ona daje za njihovo bolje poslovanje. U svom radu sa zaštićenim područjima WWF uključuje lokalnu zajednicu u proces upravljanja, kojoj tako osigurava direktnu dobrobit od samog područja. Rješenja kako bolje vrednovati prirodu WWF pronalazi kroz program "Zaštićena područja za prirodu i ljude".</p>
 ---
