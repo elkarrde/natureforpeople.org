@@ -19,6 +19,7 @@ p {
 }
 
 a {
+  color: $grey-dark;
   text-decoration: none;
 }
 
@@ -60,8 +61,9 @@ a {
 // .h6 { font-size: 0.75rem; }
 // .h7 { font-size: 0.5rem; }
 
-.h1 { font-size: 12rem; }
-.h2 { font-size: 7rem; }
+.h0 { font-size: 12rem; }
+.h1 { font-size: 7rem; }
+.h2 { font-size: 4rem; }
 .h3 { font-size: 2rem; }
 .h4 { font-size: 1.5rem; }
 .h5 { font-size: 1.25rem; }

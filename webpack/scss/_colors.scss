@@ -69,14 +69,18 @@
 
 /* Borders */
 
-.border-hr-red-blue {
+body.country-hr .border-gradient, .border-hr-red-blue {
   border: 3px solid transparent;
   border-image: linear-gradient(to right, $hr-red 0%, $hr-blue-dark 100%);
   border-image-slice: 1;
 }
 
-.border-ba-blue-yellow {
+body.country-ba .border-gradient, .border-ba-blue-yellow {
   border: 3px solid transparent;
   border-image: linear-gradient(to right, $ba-blue 0%, $ba-yellow-dark 100%);
   border-image-slice: 1;
+}
+
+.border-white {
+  border: 3px solid $white;
 }

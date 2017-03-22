@@ -14,6 +14,7 @@
 @import "mixins.scss";
 @import "icons.scss";
 @import "global_header.scss";
+@import "countries.scss";
 
 /* Custom: Fix box sizing on everything */
 * {
@@ -299,15 +300,6 @@ sub {
 .nav-links-serbian { @include country-nav-link($serbian-color-2); }
 .nav-links-slovenian { @include country-nav-link($slovenian-color-2); }
 
-.albanian-banner-image { background-image: url('/static/images/podaci-TBA-Albania.jpg'); }
-.bosnian-banner-image { background-image: url('/static/images/Livanjsko-polje-(c)-Andrija-Vrdoljak-BIH.jpg'); }
-.croatian-banner-image { background-image: url('/static/images/Lastovo-lanterna-Struga-(c)-Park-prirode-Lastovsko-otocje-Croatia.jpg'); }
-.kosovian-banner-image { background-image: url('/static/images/Sharri-National-Park(c)Sharri-National-Park-Kosovo.jpg'); }
-.macedonian-banner-image { background-image: url('/static/images/Golemo-Ezero-(c)-Goran-Stefanovski-Macedonia.jpg'); }
-.montenegran-banner-image { background-image: url('/static/images/Biogradska-gora(c)JPNPCG-Montenegro.jpg'); }
-.serbian-banner-image { background-image: url('/static/images/Gornje-Podunavlje-(c)Vojvodinasume-Serbia.jpg'); }
-.slovenian-banner-image { background-image: url('/static/images/Logarska-dolina(c)Grega-Zorz-Slovenia.jpg'); }
-
 .pa-banner-image,
 .examples-banner-image,
 .recommendations-banner-image,
@@ -436,15 +428,6 @@ sub {
 		path.color1 { fill: $slovenian-color-2; }
 	}
 }
-
-.albanian-cta-image { background-image: url('/static/images/Albania_CTA_image@2x.png'); }
-.bosnian-cta-image { background-image: url('/static/images/Bosnia_CTA_image@2x.png'); }
-.croatian-cta-image { background-image: url('/static/images/Croatia_CTA_image.png'); }
-.kosovian-cta-image { background-image: url('/static/images/Kosovo_CTA_image@2x.png'); }
-.macedonian-cta-image { background-image: url('/static/images/Macednia_CTA_image@2x.png'); }
-.montenegran-cta-image { background-image: url('/static/images/Montenegro_CTA_image@2x.png'); }
-.serbian-cta-image { background-image: url('/static/images/Serbia_CTA_image@2x.png'); }
-.slovenian-cta-image { background-image: url('/static/images/Slovenia_CTA_image@2x.png'); }
 
 #albanian-nav ul,
 #bosnian-nav ul,

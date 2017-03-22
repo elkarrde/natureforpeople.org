@@ -1,6 +1,10 @@
 $global-header-height: 70px;
 $mobile-header-height: 50px;
 
+.page {
+  padding-top: $global-header-height;
+}
+
 .global-header {
 	height: $global-header-height;
 	z-index: 99;
@@ -38,6 +42,10 @@ $mobile-header-height: 50px;
 }
 
 @media (max-width: $breakpoint-sm) {
+  .page {
+    padding-top: $mobile-header-height;
+  }
+
   .global-header {
     height: $mobile-header-height;
 
