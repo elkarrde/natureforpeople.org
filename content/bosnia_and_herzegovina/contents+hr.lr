@@ -1,4 +1,6 @@
-_model: bosnia_and_herzegovina
+_model: country
+---
+_template: bosnia_and_herzegovina.html
 ---
 title: PABAT
 ---

@@ -1,4 +1,6 @@
-_model: croatia
+_model: country
+---
+_template: croatia.html
 ---
 title: PABAT
 ---

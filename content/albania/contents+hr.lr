@@ -1,4 +1,6 @@
-_model: albania
+_model: country
+---
+_template: albania.html
 ---
 title: PABAT
 ---
