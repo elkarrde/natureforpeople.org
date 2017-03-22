@@ -1,8 +1,21 @@
 _model: sustainable_business
 ---
-title: WABAT
+title: Održivo poslovanje
+---
+bg_text: Održivo poslovanje
 ---
 main_headline: Održivo poslovanje
+---
+intro_title: Održivo poslovanje
+---
+intro_body: <p>WWF provodi brojne projekte u regiji u kojima surađuje s poslovnim sektorom, upravljačima resursa i lokalnim stanovništvom. WWF usmjerava njihovo poslovanje kako bi na održivi način upotrebljavali prirodne resurse - šume, riblje stokove, turizam u morskim zaštićenim područjima i hidroenergiju.</p>
+<p class="mt2">Održivo poslovanje nosi brojne dobrobiti za:</p>
+<ul class="mt2">
+<li>prirodu,</li>
+<li>lokalnu zajednicu,</li>
+<li>poduzeća koja posluju na održiv način,</li>
+<li>krajnjeg korisnika.</li>
+</ul>
 ---
 learn_more_button: Više
 ---

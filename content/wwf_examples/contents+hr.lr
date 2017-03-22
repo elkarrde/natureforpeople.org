@@ -1,22 +1,22 @@
 _model: wwf_examples
 ---
-title: WABAT
+title: WWF Primjeri
 ---
 bg_text: Primjeri
 ---
 main_headline: WWF Primjeri
 ---
-learn_more_button: Learn more
+learn_more_button: Saznaj više
 ---
-intro_title: WWF Primjeri
+intro_title: WWF primjeri dobre prakse
 ---
-intro_body: <p>WWF u regiji provodi projekte na terenu čije će rezultate kasnije koristiti kao primjere dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve aktivnosti koje WWF provodi u konačnici će rezultirati:</p>
+intro_body: <p>WWF u regiji provodi projekte na terenu čijim će se rezultatima poslije koristiti kao primjerima dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve će aktivnosti koje WWF provodi u konačnici rezultirati:</p>
 <ul class="mt2">
 <li>novim turističkim proizvodima,</li>
 <li>ekonomskom koristi za lokalnu zajednicu,</li>
-<li>poboljšanjem životnih uvjeta</li>
+<li>poboljšanjem životnih uvjeta,</li>
 <li>boljim upravljanjem nacionalnim parkom,</li>
-<li>ublažavanjem prijetnji vezanih za očuvanu prirodu.</li>
+<li>ublažavanjem prijetnji povezanih s očuvanom prirodom.</li>
 </ul>
 ---
 learn_more: Više

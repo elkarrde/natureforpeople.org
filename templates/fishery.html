@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
+{% set page_name           = "fishery" %}
 {% set header_class        = "default-background-color-1 default-color-1" %}
 {% set select_colors_class = "default-color-1 default-background-color-2" %}
 {% set nav_id              = "default-nav" %}
 {% set nav_links_class     = "nav-links-default" %}
-{% set banner_image_class  = "sust-business-banner-image" %}
-{% set cta_image_class     = "sust-business-cta-image" %}
-{% set page_name		   = "protected-areas" %}
+{% set banner_image_class  = "una-banner-image" %}
+{% set cta_image_class     = "una-cta-image" %}
 
 {% import "macros/info_card.html" as cards %}
 
@@ -20,13 +20,13 @@
 		<div class="body mt2">
 			{{ this.intro_body }}
 		</div>
-	</section> 
+	</section>
 
 	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.case_study_1, '/factsheet/hydropower'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_2, '/factsheet/mpa'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_3, '/factsheet/forestry'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_4, '/factsheet/fishery'|url, btn_text=this.learn_more_button, cols=2) }}
+		{{ cards.card_w_img(this.sust_business_1, '/factsheet/hydropower'|url, img_class='urban_park', btn_text=this.learn_more) }}
+		{{ cards.card_w_img(this.sust_business_2, '/factsheet/mpa'|url, img_class='local_una', btn_text=this.learn_more) }}
+		{{ cards.card_w_img(this.sust_business_3, '/factsheet/forestry'|url, img_class='sutjeska_tourism', btn_text=this.learn_more) }}
+		{{ cards.card_w_img(this.sust_business_4, '/factsheet/fishery'|url, img_class='sutjeska_tourism', btn_text=this.learn_more) }}
 	</div>
 
 	{% include "shared/_short_cta.html" %}
