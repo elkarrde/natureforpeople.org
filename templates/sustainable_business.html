@@ -8,26 +8,42 @@
 {% set cta_image_class     = "sust-business-cta-image" %}
 {% set page_name		   = "protected-areas" %}
 
-{% import "macros/info_card.html" as cards %}
-
 {% block body %}
 	{% include "shared/_short_banner.html" %}
 
-	<p class="background-text xs-hide sm-hide">{{ this.bg_text }}</p>
+<section id="sustainable-business-intro" class="relative">
+  <h2 class="absolute m0 ml2 playfair-bold h1 lh0 opacity-20 grey sm-hide xs-hide">{{ this.bg_text }}</h2>
 
-	<section class="intro col-9 md-col-6 mt4 pt4 mx-auto">
-		<h1 class="title h1 bold">{{ this.intro_title }}</h1>
-		<div class="body mt2">
-			{{ this.intro_body }}
-		</div>
-	</section> 
+  <div class="max-width-4 mx-auto pt4">
+    <div class="clearfix">
+      <div class="sm-col-12 md-col-8 mx-auto px2 my4">
+        <h3 class="h3 bold red">{{ this.intro_title }}</h3>
+        <p>{{ this.intro_body }}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.case_study_1, '/factsheet/hydropower'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_2, '/factsheet/mpa'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_3, '/factsheet/forestry'|url, btn_text=this.learn_more_button, cols=2) }}
-		{{ cards.card_w_img(this.case_study_4, '/factsheet/fishery'|url, btn_text=this.learn_more_button, cols=2) }}
-	</div>
+<section id="wwf-examples-facts" class="pb4">
+  <div class="max-width-4 mx-auto">
+    <div class="clearfix">
+
+      {% for case_study in this.children %}
+      <div class="md-col md-col-6 p2">
+        <div class="box-shadow center bg-white">
+          <div class="card-image {{ case_study.slug }}"></div>
+          <div class="px2 pb3">
+            <h3 class="h4 bold">{{ case_study.bg_text }}</h3>
+            <a href="{{ case_study|url }}" class="btn border-xk-magenta-orange">{{ case_study.learn_more_button }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</section>
 
 	{% include "shared/_short_cta.html" %}
 {% endblock %}

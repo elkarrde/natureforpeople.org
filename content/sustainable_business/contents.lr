@@ -1,4 +1,4 @@
-_model: sustainable_business
+_model: factsheet
 ---
 title: Sustainable business
 ---
@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: Sustainable business
 ---
-intro_body: <p>The WWF has carried out numerous projects in the region in cooperation with business sector, resource managers and local community. Their activities have been guided by the WWF to use natural resources in a sustainable way – forests, fish stocks, tourism in MPAs and hydropower.</p>
+intro_body:
+
+<p>The WWF has carried out numerous projects in the region in cooperation with business sector, resource managers and local community. Their activities have been guided by the WWF to use natural resources in a sustainable way – forests, fish stocks, tourism in MPAs and hydropower.</p>
 <p class="mt2">Sustainable business activities have a number of benefits for:</p>
 <ul class="mt2">
 <li>nature, </li>
@@ -19,13 +21,6 @@ intro_body: <p>The WWF has carried out numerous projects in the region in cooper
 <li>end users.</li>
 </ul>
 ---
-case_study_1: Hydropower
----
-case_study_2: Tourism
----
-case_study_3: Forestry
----
-case_study_4: Fishery
----
 cta_button_text: Let's solve challenges together
 ---
+_template: sustainable_business.html

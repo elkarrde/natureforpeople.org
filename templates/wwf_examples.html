@@ -8,8 +8,6 @@
 {% set banner_image_class  = "examples-banner-image" %}
 {% set cta_image_class     = "examples-cta-image" %}
 
-{% import "macros/info_card.html" as cards %}
-
 {% block body %}
 
   {% include "shared/_short_banner.html" %}
@@ -31,7 +29,6 @@
   <div class="max-width-4 mx-auto">
     <div class="clearfix">
 
-      <!-- loop here -->
       {% for fact in this.children %}
       <div class="md-col md-col-4 p2">
         <div class="box-shadow center bg-white">

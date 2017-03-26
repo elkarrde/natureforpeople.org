@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: Cooperation with the local community for a better marine park management
 ---
-intro_body: <div class="recommendations"><p class="mt2">The Adriatic Sea has been exposed to a number of pressures to its spatial and natural resources, from overfishing of marine organisms to the intensive urbanisation of the coast, sea pollution and intensified traffic of people and goods stimulated by mass tourism. Above all, the effect of global climate changes will undoubtedly be increased. The effective response to this threats have so far been marine protected areas. These include the sea and the coast that have been singled out because of their environmental, cultural and aesthetic values, and they enable the conservation of the sea bed and stimulate the local community economy.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">The Adriatic Sea has been exposed to a number of pressures to its spatial and natural resources, from overfishing of marine organisms to the intensive urbanisation of the coast, sea pollution and intensified traffic of people and goods stimulated by mass tourism. Above all, the effect of global climate changes will undoubtedly be increased. The effective response to this threats have so far been marine protected areas. These include the sea and the coast that have been singled out because of their environmental, cultural and aesthetic values, and they enable the conservation of the sea bed and stimulate the local community economy.</p>
 
 <p class="mt2">In practice, the biggest challenge has been to find the balance between the utilisation and the protection of marine protected areas. That is why the WWF has been trying to focus on achieving an effective management of these areas, thus ensuring the conservation of spatial and natural resources and stimulating the economy and the conservation of local community tradition. The visitors can discover the connection of man and environment by learning, understanding and experiencing the nature in a unique way.</p>
 
@@ -42,7 +44,6 @@ sust_business_2: Marine protected areas
 ---
 sust_business_3: Forestry
 ---
-sust_business_3: Fishery
----
 cta_button_text: Let's solve challenges together
 ---
+slug: mpa

@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: Sustainable hydropower as the only right way
 ---
-intro_body: <div class="recommendations"><p class="mt2">From Alpine rapids through broad, winding lowland rivers to karst underground streams, our region is rich in rivers of all types and sizes. According to the <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf">Analyses of ecological status of rivers</a>, carried out by WWF in 2014, on average 70% of the rivers are in an exceptional state. Our rivers are truly a lifeline and constitute great wealth. If we also look at the numerous lakes and marshes, it comes as no surprise that the WWF considers the 'freshwater systems of the Western Balkans' among the <a href="http://wwf.panda.org/about_our_earth/ecoregions/balkan_rivers_streams.cfm">200 most important eco-regions</a> in the world.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">From Alpine rapids through broad, winding lowland rivers to karst underground streams, our region is rich in rivers of all types and sizes. According to the <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf">Analyses of ecological status of rivers</a>, carried out by WWF in 2014, on average 70% of the rivers are in an exceptional state. Our rivers are truly a lifeline and constitute great wealth. If we also look at the numerous lakes and marshes, it comes as no surprise that the WWF considers the 'freshwater systems of the Western Balkans' among the <a href="http://wwf.panda.org/about_our_earth/ecoregions/balkan_rivers_streams.cfm">200 most important eco-regions</a> in the world.</p>
 
 <p class="mt2">The rivers, lakes and marshes of the Western Balkans are home to numerous plant and animal species. More than 250 species of fish and 70 species of amphibians are found here, many of them endemic. Unique water-rich marshes, such as Lake Skadar, Livanjsko polje, Hutovo blato, delta of the Neretva River, are an important habitat for birds, especially migratory birds which rest here and find their food. A unique karst system, home to a magnificent and mostly unexplored wildlife, is found underground, in the dark of the caves and underground tunnels.</p>
 
@@ -58,3 +60,4 @@ sust_business_4: Fishery
 ---
 cta_button_text: Let's solve challenges together
 ---
+slug: hydropower

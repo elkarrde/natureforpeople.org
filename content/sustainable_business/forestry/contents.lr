@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: Responsible forest management
 ---
-intro_body: <div class="recommendations"><p class="mt2">According to WWF data, the survival of more than two-thirds of terrestrial species depends on forests. <a href="http://www.un.org/esa/forests/wp-content/uploads/bsk-pdf-manager/83_FACT_SHEET_FORESTSANDPEOPLE.PDF">1.6 billion people</a> depend on their preservation and proper use. We often hear that forests are the "lungs of the world" responsible for producing the oxygen we breathe. They are the best regulator of greenhouse gas emissions, the direct cause of global warming.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">According to WWF data, the survival of more than two-thirds of terrestrial species depends on forests. <a href="http://www.un.org/esa/forests/wp-content/uploads/bsk-pdf-manager/83_FACT_SHEET_FORESTSANDPEOPLE.PDF">1.6 billion people</a> depend on their preservation and proper use. We often hear that forests are the "lungs of the world" responsible for producing the oxygen we breathe. They are the best regulator of greenhouse gas emissions, the direct cause of global warming.</p>
 
 <p class="mt2">Deforestation leads to disruption of the entire terrestrial ecosystem. Forests do not imply just the trees, but also all the plant and animal life that lives in them, while forest cover is of crucial importance for the surrounding agricultural habitats for protection from erosion and preservation of the water regime. Forests are also one of the most important economic resources.</p>
 
@@ -64,3 +66,4 @@ sust_business_4: Fishery
 ---
 cta_button_text: Let's solve challenges together
 ---
+slug: forestry

@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: Sustainable fisheries in the region
 ---
-intro_body: <div class="recommendations"><p class="mt2">Fishery is an activity that has been taking place in the Mediterranean for several thousand years now and it started when this coastal area was first populated – today it presents the subsistence basis of many inhabitants in this area. Although fishery resources have enabled the survival of a countless generations, the fishery in the Mediterranean Sea has for the last fifty years been at the verge of collapse due to the exponential technological development. Seafood is in demand on the market due to its high nutritional value, and because of the population growth and increase of standards, the market has become the main driving force of their irrational exploitation.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">Fishery is an activity that has been taking place in the Mediterranean for several thousand years now and it started when this coastal area was first populated – today it presents the subsistence basis of many inhabitants in this area. Although fishery resources have enabled the survival of a countless generations, the fishery in the Mediterranean Sea has for the last fifty years been at the verge of collapse due to the exponential technological development. Seafood is in demand on the market due to its high nutritional value, and because of the population growth and increase of standards, the market has become the main driving force of their irrational exploitation.</p>
 
 <p class="mt2">Today fisheries can be divided into two basic groups: fishing and aquaculture. The total quantity of products originating in aquaculture was in 2015 levelled with the quantity of products from fishing, which made the year 2015 a breaking point in human history regarding the fisheries (FAO).</p>
 
@@ -50,3 +52,4 @@ sust_business_4: Fishery
 ---
 cta_button_text: Let's solve challenges together
 ---
+slug: fishery

@@ -86,6 +86,18 @@ body.country-me .border-gradient, .border-me-orange-red {
   border-image-slice: 1;
 }
 
+body.country-me .border-gradient, .border-me-orange-red {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $me-orange-dark 0%, $me-red 100%);
+  border-image-slice: 1;
+}
+
+body.country-xk .border-gradient, .border-xk-magenta-orange {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $xk-magenta-dark 0%, $xk-orange 100%);
+  border-image-slice: 1;
+}
+
 .border-white {
   border: 3px solid $white;
 }
