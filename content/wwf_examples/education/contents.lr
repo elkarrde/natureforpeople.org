@@ -1,5 +1,7 @@
 _model: factsheet
 ---
+slug: education
+---
 title: Education
 ---
 link_button: Education
@@ -12,7 +14,9 @@ learn_more_button: Learn more
 ---
 intro_title: Education for an important change in the awareness of people
 ---
-intro_body: <div class="recommendations"><p class="mt2">Is there a better way of learning about nature than to do it in the nature itself? Today we have children who associate word mouse with a computer and not with an animal. While numerous gadgets in children's hands replace hours spent in the nature, with "Protected areas for nature and people" programme WWF in Serbia is working on developing special educational programmes that aim at reducing human impact on biological diversity, but also on taking children back to the nature. In order to achieve it, we educate teachers on the importance of nature protection so that they could pass these information to younger generations.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">Is there a better way of learning about nature than to do it in the nature itself? Today we have children who associate word mouse with a computer and not with an animal. While numerous gadgets in children's hands replace hours spent in the nature, with "Protected areas for nature and people" programme WWF in Serbia is working on developing special educational programmes that aim at reducing human impact on biological diversity, but also on taking children back to the nature. In order to achieve it, we educate teachers on the importance of nature protection so that they could pass these information to younger generations.</p>
 
 <p class="mt2">The awareness of the importance of protected areas is extremely poor in our region, as well as them being used for raising the environmental awareness among adults and children. Serbia lacks the information on biological diversity and protected areas in its school curriculum. Although protected areas have educational role according to the National Park Act of the Republic of Serbia, they are as such used rarely or not at all.</p>
 

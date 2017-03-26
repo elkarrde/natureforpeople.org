@@ -2,7 +2,7 @@ _model: factsheet
 ---
 title: Nacionalni park Una
 ---
-link_button: Turizam na rijeci
+link_button: Lokalna ponuda
 ---
 bg_text: NP Una
 ---
@@ -12,7 +12,9 @@ learn_more_button: Saznaj više
 ---
 intro_title: Doprinos boljem životu lokalne zajednice
 ---
-intro_body: <div class="recommendations"><p class="mt2">WWF je Nacionalni park Una prepoznao kao jednog od pokretača razvoja u regiji koji posljednjih godina bilježi najveći napredak u upravljanju parkom, kao i u suradnji s dionicima i njihovim uključivanjem u rad parka. Uspostavljeno je partnerstvo između NP-a Una i lokalnih ponuđača turističkih usluga, a park svake godine bilježi dvostruko više posjeta u odnosu na prethodnu godinu.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">WWF je Nacionalni park Una prepoznao kao jednog od pokretača razvoja u regiji koji posljednjih godina bilježi najveći napredak u upravljanju parkom, kao i u suradnji s dionicima i njihovim uključivanjem u rad parka. Uspostavljeno je partnerstvo između NP-a Una i lokalnih ponuđača turističkih usluga, a park svake godine bilježi dvostruko više posjeta u odnosu na prethodnu godinu.</p>
 
 <p class="mt2">Suradnja WWF-a i Nacionalnog parka Una započela je 2012. godine projektom "Parkovi Dinarskog luka". Nakon što su kroz radionicu s dionicima procijenjene dobrobiti samog zaštićenog područja, analiza je pokazala potencijal za lokalno stanovništvo u turizmu. WWF je pomogao u procesu nominacije za Europski certifikat za održivi turizam koji je park 2014. godine i dobio. Tako je ovaj projekt postao jedan od šest terenskih projekata unutar regionalnog programa "Zaštićena područja za prirodu i ljude".</p>
 
@@ -35,3 +37,4 @@ learn_more: Više
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
+slug: local-offer

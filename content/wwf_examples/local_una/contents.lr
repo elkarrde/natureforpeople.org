@@ -2,7 +2,7 @@ _model: factsheet
 ---
 title: WABAT
 ---
-link_button: River Tourism
+link_button: Local Offer
 ---
 bg_text: Una National Park
 ---
@@ -12,7 +12,9 @@ learn_more_button: Learn more
 ---
 intro_title: Contributing to a better local community life
 ---
-intro_body: <div class="recommendations"><p class="mt2">WWF has recognized Una National Park as being one of the regional development drivers that has for the last couple of years been recording the biggest progress in park management, as well as in the cooperation with stakeholders and their involvement in the Park activities. The partnership between Una National Park and local tourist service providers has been established, and the number of visits to the Park doubles every year in comparison to the previous year.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">WWF has recognized Una National Park as being one of the regional development drivers that has for the last couple of years been recording the biggest progress in park management, as well as in the cooperation with stakeholders and their involvement in the Park activities. The partnership between Una National Park and local tourist service providers has been established, and the number of visits to the Park doubles every year in comparison to the previous year.</p>
 
 <p class="mt2">The cooperation between WWF and Una NP started in 2012 with the "Dinaric Arc Parks" project. After benefits of the protected area were assessed within a workshop with stakeholders, the analysis showed a potential in tourism for the local population. WWF helped in the nomination process for the European Sustainable Tourism Certificate, which the Park received in 2014. Thus this project became one of the six field projects within "Protected areas for nature and people" programme.</p>
 
@@ -33,3 +35,4 @@ intro_body: <div class="recommendations"><p class="mt2">WWF has recognized Una N
 ---
 cta_button_text: Let's solve challenges together
 ---
+slug: local-offer

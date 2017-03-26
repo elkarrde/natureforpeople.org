@@ -12,7 +12,9 @@ learn_more_button: Saznaj više
 ---
 intro_title: Promatranjem medvjeda do boljeg života lokalne zajednice
 ---
-intro_body: <div class="recommendations"><p class="mt2">Ako bismo trebali izdvojiti karizmatične vrste prisutne u svim zemljama regije Dinarskog luka, to su nedvojbeno tri velike zvijeri: smeđi medvjed (Ursus arctos), ris (Lynx lynx) i vuk (Canis lupus). Sve su tri podjednako posebne, ali i ugrožene.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">Ako bismo trebali izdvojiti karizmatične vrste prisutne u svim zemljama regije Dinarskog luka, to su nedvojbeno tri velike zvijeri: smeđi medvjed (Ursus arctos), ris (Lynx lynx) i vuk (Canis lupus). Sve su tri podjednako posebne, ali i ugrožene.</p>
 
 <p class="mt2">Terenski projekt "Promatranje medvjeda" zajedno provode WWF i mreža zaštićenih područja Parkovi Dinarida u okviru programa "Zaštićena područja za prirodu i ljude" u nacionalnim parkovima Biogradska gora u Crnoj Gori i Tara u Srbiji. Posvećen je razvoju održivog turizma i suživota lokalne zajednice i smeđeg medvjeda uz njegovu zaštitu i poboljšanje staništa. Osnovna je ideja podići svijest o važnosti očuvanja medvjeda kao vrste koja nam puno više vrijedi živa, nego kao meta lovcima. Zaštitimo li medvjeda od neodrživa lovstva, kroz jačanje brojnosti populacije veća je vjerojatnost da će turisti u navedenim nacionalnim parkovima moći vidjeti medvjeda uživo, čime će i lokalna zajednica imati veće koristi. WWF u cijelom svijetu radi po sistemu misli globalno, djeluj lokalno. Tako i u slučaju medvjeda: globalno želimo zaštititi vrstu, a regionalno u njegovu zaštitu uključujemo lokalnu zajednicu koja će imati razloga ostati u tom kraju zbog bolje kvalitete života uzrokovane novim radnim mjestima i većem broju turista koji posjećuju zaštićeno područje.</p>
 
@@ -57,3 +59,4 @@ learn_more: Više
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
+slug: bear-watching

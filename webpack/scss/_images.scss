@@ -1,9 +1,14 @@
 .card-image {
   background-size: cover;
-  height: 200px;
+  height: 235px;
+
+  &.education { background-image: url('/static/images/cards/education.jpg') };
+  &.urban-park { background-image: url('/static/images/cards/urban-park.jpg') };
+  &.local-offer { background-image: url('/static/images/cards/local-offer.jpg') };
+  &.river-tourism { background-image: url('/static/images/cards/river-tourism.jpg') };
+  &.bear-watching { background-image: url('/static/images/cards/bear-watching.jpg') };
+  &.stakeholders { background-image: url('/static/images/cards/stakeholders.jpg') };
 }
-
-
 
 .img-urban-park-cta {
 	background-image: url('/static/images/germia-urban-park-cta.jpg');

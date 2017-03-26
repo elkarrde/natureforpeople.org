@@ -12,7 +12,9 @@ learn_more_button: Saznaj više
 ---
 intro_title: Urbani park - Park Germia
 ---
-intro_body: <div class="recommendations"><p class="mt2">Iako toga često nismo svjesni, zahvaljujući dobro očuvanoj prirodi živimo puno kvalitetniji život. Upravo ta činjenica potaknula je udruge WWF Adria i Ecopana da na Kosovu<sup>1</sup> provedu terenski projekt Germia kao dio programa "Zaštićena područja za prirodu i ljude". Na primjeru tog gradskog parka uz Prištinu dokazat ćemo koliko zaštićena područja mogu pomoći u društvenom i ekonomskom razvoju. Aktivnostima koje se provode u Germiji podići će se svijest ljudi o važnosti jedne takve prirodne oaze za njihovo zdravlje i blagostanje, a sama Germia postat će odlično mjesto za obrazovanje učenika i studenata o prirodnim vrijednostima.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">Iako toga često nismo svjesni, zahvaljujući dobro očuvanoj prirodi živimo puno kvalitetniji život. Upravo ta činjenica potaknula je udruge WWF Adria i Ecopana da na Kosovu<sup>1</sup> provedu terenski projekt Germia kao dio programa "Zaštićena područja za prirodu i ljude". Na primjeru tog gradskog parka uz Prištinu dokazat ćemo koliko zaštićena područja mogu pomoći u društvenom i ekonomskom razvoju. Aktivnostima koje se provode u Germiji podići će se svijest ljudi o važnosti jedne takve prirodne oaze za njihovo zdravlje i blagostanje, a sama Germia postat će odlično mjesto za obrazovanje učenika i studenata o prirodnim vrijednostima.</p>
 
 <p class="mt2">Suradnja WWF Adrije s parkom Germia započela je prije nekoliko godina na radionici procjene vrijednosti i potencijala tog parka uz sudjelovanje svih dionika. Istaknuto je da park predstavlja veliki potencijal za stvaranje novih radnih mjesta, gospodarski rast te za obrazovanje o prirodnim, zdravstvenim i kulturološkim vrijednostima. WWF i Ecopana vjeruju da turističke, rekreativne, zdravstvene i edukativne koristi parka nisu u potpunosti iskorištene te će nastojati osigurati gospodarski rast razvijanjem različitih paketa.</p>
 
@@ -48,3 +50,4 @@ learn_more: Više
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
+slug: urban-park

@@ -1,4 +1,4 @@
-_model: wwf_examples
+_model: factsheet
 ---
 title: WWF Primjeri
 ---
@@ -20,18 +20,6 @@ intro_body: <p>WWF u regiji provodi projekte na terenu čijim će se rezultatima
 </ul>
 ---
 learn_more: Više
----
-wwf_example_1: Urbani park
----
-wwf_example_2: Lokalna ponuda
----
-wwf_example_3: Turizam na rijeci
----
-wwf_example_4: Promatranje medvjeda
----
-wwf_example_5: Edukacija
----
-wwf_example_6: Suradnička vijeća
 ---
 cta_button_text: Riješimo izazove zajedno
 ---

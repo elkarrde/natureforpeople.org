@@ -1,4 +1,4 @@
-_model: wwf_examples
+_model: factsheet
 ---
 title: WWF Examples
 ---
@@ -10,7 +10,9 @@ learn_more_button: Learn more
 ---
 intro_title: WWF examples of good practice
 ---
-intro_body: <p>The WWF has carried out field projects in the region and the results will later be used as good practice examples, with a tendency of being replicated in other regional protected areas. All the activities implemented by the WWF will results in:</p>
+intro_body:
+
+<p>The WWF has carried out field projects in the region and the results will later be used as good practice examples, with a tendency of being replicated in other regional protected areas. All the activities implemented by the WWF will results in:</p>
 <ul class="mt2">
 <li>new tourism products,</li>
 <li>economic benefits for the local community,</li>
@@ -21,17 +23,6 @@ intro_body: <p>The WWF has carried out field projects in the region and the resu
 ---
 learn_more: Learn more
 ---
-wwf_example_1: Urban Park
----
-wwf_example_2: Local Offer
----
-wwf_example_3: River Tourism
----
-wwf_example_4: Bear Watching
----
-wwf_example_5: Education
----
-wwf_example_6: Stakeholders
----
 cta_button_text: Let's solve challenges together
 ---
+_template: wwf_examples.html

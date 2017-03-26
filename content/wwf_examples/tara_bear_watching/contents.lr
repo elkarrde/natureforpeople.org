@@ -12,7 +12,9 @@ learn_more_button: Learn more
 ---
 intro_title: Bear Watching for a better local community life
 ---
-intro_body: <div class="recommendations"><p class="mt2">If we were to single out charismatic species in all the Dinaric Arc region countries, these would undoubtedly be three large carnivores: brown bear (Ursus arctos), lynx (Lynx lynx) and wolf (Canis lupus). All three equally unique, but also endangered.</p>
+intro_body:
+
+<div class="recommendations"><p class="mt2">If we were to single out charismatic species in all the Dinaric Arc region countries, these would undoubtedly be three large carnivores: brown bear (Ursus arctos), lynx (Lynx lynx) and wolf (Canis lupus). All three equally unique, but also endangered.</p>
 
 <p class="mt2">"Bear Watching" field project has been carried out by WWF and the Dinaric Arc Parks network of protected areas within the "Protected areas for nature and people" programme in national parks Biogradska gora in Montenegro and Tara in Serbia. It has been dedicated to the development of sustainable tourism and co-existence of the local community and brown bears with their protection and habitat improvement. The basic idea is to raise the awareness on the importance of the conservation of bears as a species that is more valuable to us alive than as a hunting target. If we protect bears from unsustainable hunting, the increase of specimens would make it possible for the tourists to see a bear in specified national parks, thus providing benefits for the local community. WWF has globally been functioning by Think globally, act locally strategy. This is also the case with bears: we would like to protect the species globally, and for its protection we involve local community that will have reasons to stay in the region because they will have better quality of life due to new jobs and increased number of tourists visiting the protected area.</p>
 
@@ -57,3 +59,4 @@ learn_more: Learn more
 ---
 cta_button_text: Let's solve challenges together
 ---
+slug: bear-watching

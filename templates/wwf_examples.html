@@ -27,7 +27,7 @@
   </div>
 </section>
 
-<section id="wwf-examples-facts">
+<section id="wwf-examples-facts" class="pb4">
   <div class="max-width-4 mx-auto">
     <div class="clearfix">
 
@@ -35,9 +35,7 @@
       {% for fact in this.children %}
       <div class="md-col md-col-4 p2">
         <div class="box-shadow center bg-white">
-          {% if fact.attachments.images[0] %}
-          <div class="cover" style="height: 200px; background-image: url({{ fact.attachments.images[0]|url }})"></div>
-          {% endif %}
+          <div class="card-image {{ fact.slug }}"></div>
           <div class="px2 pb3">
             <h3 class="h4 bold">{{ fact.link_button }}</h3>
             <a href="{{ fact|url }}" class="btn border-me-orange-red">{{ fact.learn_more_button }}</a>
@@ -48,6 +46,7 @@
 
     </div>
   </div>
+</section>
 
 	{% include "shared/_short_cta.html" %}
 {% endblock %}
