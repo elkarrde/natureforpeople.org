@@ -15,9 +15,9 @@
   {% include "shared/_short_banner.html" %}
 
 <section id="wwf-examples-intro" class="relative">
-  <h2 class="absolute m0 ml2 playfair-bold h1 lh0 opacity-20 grey sm-hide xs-hide">{{ this.bg_text }}</h2>
+  <h2 class="absolute m0 ml2 playfair-bold h0 lh0 opacity-20 grey sm-hide xs-hide">{{ this.bg_text }}</h2>
 
-  <div class="max-width-4 mx-auto pt3">
+  <div class="max-width-4 mx-auto pt4">
     <div class="clearfix">
       <div class="sm-col-12 md-col-8 mx-auto px2 my4">
         <h3 class="h3 bold red">{{ this.intro_title }}</h3>
@@ -32,20 +32,22 @@
     <div class="clearfix">
 
       <!-- loop here -->
+      {% for fact in this.children %}
+      <div class="md-col md-col-4 p2">
+        <div class="box-shadow center bg-white">
+          {% if fact.attachments.images[0] %}
+          <div class="cover" style="height: 200px; background-image: url({{ fact.attachments.images[0]|url }})"></div>
+          {% endif %}
+          <div class="px2 pb3">
+            <h3 class="h4 bold">{{ fact.link_button }}</h3>
+            <a href="{{ fact|url }}" class="btn border-me-orange-red">{{ fact.learn_more_button }}</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
 
     </div>
   </div>
-
-
-	<div class="py3 flex justify-center mxn2 flex-wrap max-width-4 mx-auto">
-		{{ cards.card_w_img(this.wwf_example_1, '/wwf_examples/urban_park'|url, img_class='urban_park', btn_text=this.learn_more) }}
-		{{ cards.card_w_img(this.wwf_example_2, '/wwf_examples/local_una'|url, img_class='local_una', btn_text=this.learn_more) }}
-		{{ cards.card_w_img(this.wwf_example_3, '/wwf_examples/sutjeska_tourism'|url, img_class='sutjeska_tourism', btn_text=this.learn_more) }}
-		{{ cards.card_w_img(this.wwf_example_4, '/wwf_examples/tara_bear_watching'|url, img_class='tara_bear_watching', btn_text=this.learn_more) }}
-		{{ cards.card_w_img(this.wwf_example_5, '/wwf_examples/education'|url, img_class='education', btn_text=this.learn_more) }}
-		{{ cards.card_w_img(this.wwf_example_6, '/wwf_examples/stakeholders'|url, img_class='stakeholders', btn_text=this.learn_more) }}
-	</div>
-</section>
 
 	{% include "shared/_short_cta.html" %}
 {% endblock %}

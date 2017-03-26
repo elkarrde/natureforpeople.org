@@ -62,7 +62,6 @@
   background-color: $grey;
 }
 
-
 .bg-si-green-cyan {
   background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);
 }
@@ -78,6 +77,12 @@ body.country-hr .border-gradient, .border-hr-red-blue {
 body.country-ba .border-gradient, .border-ba-blue-yellow {
   border: 3px solid transparent;
   border-image: linear-gradient(to right, $ba-blue 0%, $ba-yellow-dark 100%);
+  border-image-slice: 1;
+}
+
+body.country-me .border-gradient, .border-me-orange-red {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $me-orange-dark 0%, $me-red 100%);
   border-image-slice: 1;
 }
 

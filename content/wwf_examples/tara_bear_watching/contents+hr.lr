@@ -2,6 +2,8 @@ _model: factsheet
 ---
 title: NACIONALNI PARKOVI BIOGRADSKA GORA I TARA
 ---
+link_button: Promatranje medvjeda
+---
 bg_text: Tara, Biogradska gora
 ---
 main_headline: Promatranje medvjeda
@@ -52,18 +54,6 @@ intro_body: <div class="recommendations"><p class="mt2">Ako bismo trebali izdvoj
 </div>
 ---
 learn_more: Više
----
-wwf_example_1: Urbani park
----
-wwf_example_2: Lokalna ponuda
----
-wwf_example_3: Turizam na rijeci
----
-wwf_example_4: Promatranje medvjeda
----
-wwf_example_5: Edukacija
----
-wwf_example_6: Suradnička vijeća
 ---
 cta_button_text: Riješimo izazove zajedno
 ---

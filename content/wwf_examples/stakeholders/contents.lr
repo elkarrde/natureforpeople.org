@@ -2,6 +2,8 @@ _model: factsheet
 ---
 title: Stakeholder council
 ---
+link_button: Stakeholders
+---
 bg_text: Stakeholder council
 ---
 main_headline: Stakeholder council
@@ -43,18 +45,6 @@ intro_body: <div class="recommendations"><p class="mt2">In order to achieve the 
 </div>
 ---
 learn_more: Learn more
----
-wwf_example_1: Urban Park
----
-wwf_example_2: Local Offer
----
-wwf_example_3: River Tourism
----
-wwf_example_4: Bear Watching
----
-wwf_example_5: Education
----
-wwf_example_6: Stakeholders
 ---
 cta_button_text: Let's solve challenges together
 ---

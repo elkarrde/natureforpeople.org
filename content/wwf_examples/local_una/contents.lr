@@ -2,6 +2,8 @@ _model: factsheet
 ---
 title: WABAT
 ---
+link_button: River Tourism
+---
 bg_text: Una National Park
 ---
 main_headline: Una National Park
@@ -28,20 +30,6 @@ intro_body: <div class="recommendations"><p class="mt2">WWF has recognized Una N
 
 <p class="mt2">Apart from natural values, Una NP and WWF have also been promoting cultural values of the area, such as traditional knitting of rugs, old recipes on food preparation, making of traditional souvenirs and objects. Also, they have taken care that minority and vulnerable groups with a limited approach to decision-making processes and to employment opportunities in regional tourism development are included.</p>
 </div>
----
-learn_more: Learn more
----
-wwf_example_1: Urban Park
----
-wwf_example_2: Local Offer
----
-wwf_example_3: River Tourism
----
-wwf_example_4: Bear Watching
----
-wwf_example_5: Education
----
-wwf_example_6: Stakeholders
 ---
 cta_button_text: Let's solve challenges together
 ---
