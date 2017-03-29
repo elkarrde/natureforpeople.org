@@ -1,5 +1,7 @@
 _model: factsheet
 ---
+_template: wwf_examples_factsheet.html
+---
 title: NACIONALNI PARKOVI TARA, ĐERDAP I FRUŠKA GORA
 ---
 link_button: Suradnička vijeća

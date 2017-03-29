@@ -1,5 +1,7 @@
 _model: factsheet
 ---
+_template: wwf_examples_factsheet.html
+---
 title: Edukacija
 ---
 link_button: Edukacija

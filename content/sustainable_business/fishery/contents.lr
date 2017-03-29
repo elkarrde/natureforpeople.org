@@ -1,5 +1,7 @@
 _model: factsheet
 ---
+_template: sustainable_business_factsheet.html
+---
 title: FISHERIES
 ---
 bg_text: Fisheries

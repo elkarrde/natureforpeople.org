@@ -1,5 +1,7 @@
 _model: factsheet
 ---
+_template: wwf_examples_factsheet.html
+---
 title: Sutjeska - River Tourism
 ---
 link_button: River Tourism
