@@ -16,6 +16,7 @@
 @import "global_header.scss";
 @import "countries.scss";
 @import "graphs.scss";
+@import "pickers.scss";
 
 /* Custom: Fix box sizing on everything */
 * {
@@ -947,59 +948,6 @@ section.countries-map {
 
 ///////////////////////////////////////////////////////////////////////
 
-.country-chooser {
-	position: relative;
-	display: inline-block;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.country-chooser .country-chooser-menu {
-	position: absolute;
-	top: 100%;
-	display: none;
-	margin: 0;
-
-	list-style: none; /** Remove list bullets */
-	width: 100%; /** Set the width to 100% of it's parent */
-	padding: 0;
-}
-
-.country-chooser:hover .country-chooser-menu {
-	display: block;
-}
-
-/** Button Styles **/
-.country-chooser button {
-	font-size: 1rem;
-	background-color: Transparent;
-	border: 3px solid $croatian-color;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	overflow:hidden;
-	cursor: pointer;
-	min-width: 25rem;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-	span {
-		color: #9B9B9B;
-	}
-}
-
-/** List Item Styles **/
-.country-chooser a {
-	display: block;
-	padding: 0.2em 0.8em;
-	text-decoration: none;
-	cursor: pointer;
-	color: white;
-	margin: 0.8rem;
-}
-
-/** List Item Hover Styles **/
-.country-chooser a:hover {
-	background-color: $croatian-color-2;
-}
-//-------------------------------------------------//
-///////////////////////////////////////////////////////////////////////
 
 .chooser-headline {
   font-family: "Playfair Display", serif;
@@ -1012,58 +960,6 @@ section.countries-map {
   color: #4A4A4A;
   width: 140%;
   display: block;
-}
-
-.pa-chooser {
-	position: relative;
-	display: inline-block;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.pa-chooser .pa-chooser-menu {
-	position: absolute;
-	top: 100%;
-	display: none;
-	margin: 0;
-
-	list-style: none; /** Remove list bullets */
-	width: 100%; /** Set the width to 100% of it's parent */
-	padding: 0;
-}
-
-.pa-chooser:hover .pa-chooser-menu {
-	display: block;
-}
-
-/** Button Styles **/
-.pa-chooser button {
-	font-size: 1rem;
-	background-color: Transparent;
-	border: 3px solid $croatian-color;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	overflow:hidden;
-	cursor: pointer;
-	min-width: 30rem;
-	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-	span {
-		color: #9B9B9B;
-	}
-}
-
-/** List Item Styles **/
-.pa-chooser a {
-	display: block;
-	padding: 0.2em 0.8em;
-	text-decoration: none;
-	cursor: pointer;
-	color: white;
-	margin: 0.8rem;
-}
-
-/** List Item Hover Styles **/
-.pa-chooser a:hover {
-	background-color: $croatian-color-2;
 }
 
 //-------------------------------------------------//
@@ -1189,15 +1085,13 @@ section.countries-map {
 	box-shadow: 4px 4px 4px 0 rgba(0,0,0,0.09);
 }
 
-.graph-card-hover {
-	&:hover {
-		background-color: $croatian-color;
-		.graph-card-icon {
-			-webkit-text-fill-color: white;
-		}
-		.pa-p {
-			color: white;
-		}
+.graph-card:hover {
+	background-color: $croatian-color;
+	.graph-card-icon {
+		-webkit-text-fill-color: white;
+	}
+	.pa-p {
+		color: white;
 	}
 }
 

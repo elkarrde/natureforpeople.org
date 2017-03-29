@@ -6,22 +6,14 @@ jQuery = $;
 
 animationHelpers = require('./animationHelpers');
 graphs = require('./graphs')
+pickers = require('./pickers')
+
+pickers.initPickerPlugins($);
 
 graph_choices = {
 	country: null,
-	protected_area: null,
+	pa: null,
 	graph_type: null
-}
-
-protected_areas_by_country = {
-	'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona', 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama', 'NP Shebenik Jabllanica', 'NP Thethi'],
-	'BIH': ['NP Kozara', 'NP Sutjeska', 'NP Una', 'PP Bijambare', 'PP Hutovo Blato', 'PP Vrelo Bosne'],
-	'HRV': ['NP Brijuni', 'NP Kornati', 'NP Krka', 'NP Mljet', 'NP Paklenica', 'NP Plitvička Jezera', 'NP Risnjak', 'NP Sjeverni Velebit', 'NP Telašćica', 'PP Biokovo', 'PP Kopački Rit', 'PP Lastovo', 'PP Lonjsko Polje', 'PP Medvednica', 'PP Papuk', 'PP Velebit', 'PP Vransko Jezero', 'PP Žumberak'],
-	'KOS': ['NP Sharri', 'PP Germia'],
-	'MKD': ['NP Galičica', 'NP Mavrovo', 'NP Pelister'],
-	'MNE': ['NP Biogradska Gora', 'NP Durmitor', 'NP Lovćen', 'NP Prokletje', 'NP Skadarsko Jezero'],
-	'SRB': ['NP Fruška Gora', 'NP Kopaonik', 'NP Tara', 'NP Đerdap', 'PP Gornje Podunavlje', 'PP Vlasina'],
-	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
 }
 
 countriesOrder = ["slovenia", "croatia", "bosnia", "serbia", "kosovo", "montenegro", "albania", "macedonia"];
@@ -38,13 +30,27 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	return false;
 });
 
+
 jQuery(document).ready(function(){
-	$('.country-chooser-menu li').click(pickCountry);
-	$('.graph-type-picker .graph-card').click(pickGraphType);
+	$('.country-picker').countryPicker(function(choice) {
+		graph_choices.country = choice;
+		console.log(graph_choices);
+	}, '.pa-picker');
+
+	$('.pa-picker').paPicker(function(choice) {
+		graph_choices.pa = choice;
+		console.log(graph_choices);
+	});
+
+	$('.graph-type-picker').graphTypePicker(function(choice) {
+		graph_choices.graph_type = choice;
+		console.log(graph_choices);
+	});
 
 	var $navbar = $("#main-nav"),
 		y_pos = $navbar.offset().top,
 		height = $navbar.height();
+
 
 	$navbar.css('height', '4.5rem');
 	var $l_select = $('.local-dropdown button');
@@ -134,53 +140,6 @@ jQuery(document).ready(function(){
 // ---------------------------------------------------------
 // Functions for manipulating graphs on Protected Areas page
 // ---------------------------------------------------------
-
-function pickCountry(event) {
-	var chosen_country_data = $(event.currentTarget).data('countrycode'),
-		chosen_country_text = $(event.currentTarget).data('countryname');
-
-	if (chosen_country_text == '-') {
-		$('.graph-card').removeClass('graph-card-hover');
-	} else {
-		$('.graph-card').addClass('graph-card-hover');
-	};
-
-	$('#choose-country-init-text').addClass('hide');
-	$('#choose-country-chosen-text').removeClass('hide');
-	$('#choose-country-chosen-text').text(chosen_country_text);
-	$('#choose-pa-chosen-text').text('-');
-
-	$('.pa-chooser').removeClass('hide');
-	$('.pa-chooser ul').html('<li><a>-</a></li>')
-
-	for (var i in protected_areas_by_country[chosen_country_data]) {
-		var pa = protected_areas_by_country[chosen_country_data][i];
-		$('.pa-chooser ul').append('<li><a>' + pa + '</a></li>')
-	}
-
-	$('.pa-chooser-menu li').click(pickProtectedArea);
-
-	set_choices({chosen_country_text: chosen_country_data})
-	render_graph();
-};
-
-function pickProtectedArea(event) {
-	var chosen_pa_text = $(event.currentTarget).text();
-	console.log(chosen_pa_text);
-
-	$('#choose-pa-init-text').addClass('hide');
-	$('#choose-pa-chosen-text').removeClass('hide');
-	$('#choose-pa-chosen-text').text(chosen_pa_text);
-
-	set_choices({chosen_pa_text: chosen_pa_text});
-	render_graph();
-}
-
-function pickGraphType( event ) {
-	var graph_type_text = $(event.currentTarget).data('graphid');
-	set_choices({chosen_graph_type_text: graph_type_text})
-	render_graph();
-};
 
 function set_choices(choice) {
 	if (choice['chosen_country_text']) {
