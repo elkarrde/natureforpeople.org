@@ -26,3 +26,5 @@ learn_more: Learn more
 cta_button_text: Let's solve challenges together
 ---
 _template: wwf_examples.html
+---
+slug: wwf-examples

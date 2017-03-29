@@ -2,22 +2,57 @@
   background-size: cover;
   height: 235px;
 
+  &.wwf-examples { background-image: url('/static/images/cards/wwf-examples.jpg') };
+  &.sustainable-business { background-image: url('/static/images/cards/sustainable-business.jpg') };
+  &.protected-areas { background-image: url('/static/images/cards/protected-areas.jpg') };
+
   &.education { background-image: url('/static/images/cards/education.jpg') };
   &.urban-park { background-image: url('/static/images/cards/urban-park.jpg') };
   &.local-offer { background-image: url('/static/images/cards/local-offer.jpg') };
   &.river-tourism { background-image: url('/static/images/cards/river-tourism.jpg') };
   &.bear-watching { background-image: url('/static/images/cards/bear-watching.jpg') };
   &.stakeholders { background-image: url('/static/images/cards/stakeholders.jpg') };
+
+  &.fishery { background-image: url('/static/images/cards/fishery.jpg') };
+  &.forestry { background-image: url('/static/images/cards/forestry.jpg') };
+  &.hydropower { background-image: url('/static/images/cards/hydropower.jpg') };
+  &.mpa { background-image: url('/static/images/cards/mpa.jpg') };
 }
 
-.img-urban-park-cta {
-	background-image: url('/static/images/germia-urban-park-cta.jpg');
+.short-banner {
+    &.wwf-examples { background-image: url('/static/images/banners/wwf-examples.jpg') };
+    &.sustainable-business { background-image: url('/static/images/banners/sustainable-business.jpg') };
+    &.recommendations { background-image: url('/static/images/banners/recommendations.jpg') };
+    &.protected-areas { background-image: url('/static/images/banners/protected-areas.jpg') };
+
+    &.education { background-image: url('/static/images/banners/education.jpg') };
+    &.urban-park { background-image: url('/static/images/banners/urban-park.jpg') };
+    &.local-offer { background-image: url('/static/images/banners/local-offer.jpg') };
+    &.river-tourism { background-image: url('/static/images/banners/river-tourism.jpg') };
+    &.bear-watching { background-image: url('/static/images/banners/bear-watching.jpg') };
+    &.stakeholders { background-image: url('/static/images/banners/stakeholders.jpg') };
+
+    &.fishery { background-image: url('/static/images/banners/fishery.jpg') };
+    &.forestry { background-image: url('/static/images/banners/forestry.jpg') };
+    &.hydropower { background-image: url('/static/images/banners/hydropower.jpg') };
+    &.mpa { background-image: url('/static/images/banners/mpa.jpg') };
 }
 
-.img-sustainable-business-cta {
-	background-image: url('/static/images/odrzivo-poslovanje.jpg');
-}
+.short-cta {
+    &.wwf-examples { background-image: url('/static/images/ctas/wwf-examples.jpg') };
+    &.sustainable-business { background-image: url('/static/images/ctas/sustainable-business.jpg') };
+    &.recommendations { background-image: url('/static/images/ctas/recommendations.jpg') };
+    &.protected-areas { background-image: url('/static/images/ctas/protected-areas.jpg') };
 
-.img-protected-areas-cta {
-	background-image: url('/static/images/zasticena-podrucja.jpg');
+    &.education { background-image: url('/static/images/ctas/education.jpg') };
+    &.urban-park { background-image: url('/static/images/ctas/urban-park.jpg') };
+    &.local-offer { background-image: url('/static/images/ctas/local-offer.jpg') };
+    &.river-tourism { background-image: url('/static/images/ctas/river-tourism.jpg') };
+    &.bear-watching { background-image: url('/static/images/ctas/bear-watching.jpg') };
+    &.stakeholders { background-image: url('/static/images/ctas/stakeholders.jpg') };
+
+    &.fishery { background-image: url('/static/images/ctas/fishery.jpg') };
+    &.forestry { background-image: url('/static/images/ctas/forestry.jpg') };
+    &.hydropower { background-image: url('/static/images/ctas/hydropower.jpg') };
+    &.mpa { background-image: url('/static/images/ctas/mpa.jpg') };
 }

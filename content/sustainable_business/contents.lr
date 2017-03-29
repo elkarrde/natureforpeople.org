@@ -24,3 +24,5 @@ intro_body:
 cta_button_text: Let's solve challenges together
 ---
 _template: sustainable_business.html
+---
+slug: sustainable-business
