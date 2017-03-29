@@ -1,4 +1,6 @@
-_model: montenegro
+_model: country
+---
+_template: montenegro.html
 ---
 title: PABAT
 ---

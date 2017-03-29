@@ -1,4 +1,6 @@
-_model: serbia
+_model: country
+---
+_template: serbia.html
 ---
 title: PABAT
 ---

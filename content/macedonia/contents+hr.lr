@@ -1,4 +1,6 @@
-_model: macedonia
+_model: country
+---
+_template: macedonia.html
 ---
 title: PABAT
 ---

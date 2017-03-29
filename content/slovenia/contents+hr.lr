@@ -1,4 +1,6 @@
-_model: slovenia
+_model: country
+---
+_template: slovenia.html
 ---
 title: PABAT
 ---
