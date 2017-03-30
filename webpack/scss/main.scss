@@ -21,6 +21,14 @@
   box-sizing: border-box;
 }
 
+.short-cta {
+	  height: 30vh;
+}
+
+.short-banner {
+	  height: 50vh;
+}
+
 /* TODO: delete everything(!) below */
 
 $albanian-color: #7AB638;
@@ -130,29 +138,11 @@ sub {
 	background-size: cover;
 }
 
-.short-banner {
-	height: 50vh;
-	overflow: hidden;
-	background-position: center center;
-	background-size: cover;
-}
-
-.banner-title {
-	@include title-font;
-	font-size: 4.75rem;
-	color: white;
-}
 
 @media (max-width: 44em) {
 	.sm-banner-title {
 		font-size: 3rem;
 	}
-}
-
-.banner-quote {
-	font-size: 1.5rem;
-	font-weight: 400;
-	color: white;
 }
 
 .banner-button {
@@ -202,28 +192,6 @@ sub {
 
 .second-container-background {
 	background-color: $light-background-color;
-}
-
-.cta-image-holder {
-	height: 30vh;
-	overflow: hidden;
-	background-position: center center;
-	background-size: cover;
-}
-
-.cta-white-button {
-	box-sizing: border-box;
-	border: 3px solid #FFFFFF;
-	min-height: 4rem;
-	text-transform: uppercase;
-	color: white;
-	font-weight: 900;
-	font-size: 1rem;
-	text-decoration: none;
-}
-
-.cta-button-position {
-	position: absolute;
 }
 
 

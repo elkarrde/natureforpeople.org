@@ -14,13 +14,21 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-p {
+.page p {
 	line-height: 1.75em;
+}
+
+.page li {
+  padding: 0.25em 0;
 }
 
 a {
   color: $grey-dark;
   text-decoration: none;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.25);
 }
 
 /* Fonts */

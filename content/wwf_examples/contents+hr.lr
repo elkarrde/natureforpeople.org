@@ -10,8 +10,10 @@ learn_more_button: Saznaj više
 ---
 intro_title: WWF primjeri dobre prakse
 ---
-intro_body: <p>WWF u regiji provodi projekte na terenu čijim će se rezultatima poslije koristiti kao primjerima dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve će aktivnosti koje WWF provodi u konačnici rezultirati:</p>
-<ul class="mt2">
+intro_body:
+
+<p>WWF u regiji provodi projekte na terenu čijim će se rezultatima poslije koristiti kao primjerima dobre prakse te ih nastojati replicirati u ostalim zaštićenim područjima regije. Sve će aktivnosti koje WWF provodi u konačnici rezultirati:</p>
+<ul>
 <li>novim turističkim proizvodima,</li>
 <li>ekonomskom koristi za lokalnu zajednicu,</li>
 <li>poboljšanjem životnih uvjeta,</li>
@@ -23,3 +25,6 @@ learn_more: Više
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
+_template: wwf_examples.html
+---
+slug: wwf-examples
