@@ -87,31 +87,6 @@ jQuery(document).ready(function(){
 		$('.local-dropdown button span').html('EN')
 	}
 
-	$('.landing-page-carousel .message-prev').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
-
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, -1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
-
-	});
-
-	$('.landing-page-carousel .message-next').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
-
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, 1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
-	});
-
 	$('.map-wrapper svg .country').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
