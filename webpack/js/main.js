@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
 	$('.country-chooser-menu li').click(pickCountry);
 	$('.graph-type-picker .graph-card').click(pickGraphType);
 
-	var $navbar = $("#navbar"),
+	var $navbar = $("#main-nav"),
 		y_pos = $navbar.offset().top,
 		height = $navbar.height();
 
