@@ -1,0 +1,22 @@
+// .donut {
+// 	font-family: sans-serif;
+// 	font-size: 4rem;
+// 	letter-spacing: -.2rem;
+// 	font-weight: 600;
+// 	line-height: 12rem;
+// 	fill: $macedonian-color;
+// }
+
+#homepage-facts .donut {
+	font-family: sans-serif;
+	font-size: 4rem;
+	letter-spacing: -.2rem;
+	font-weight: 600;
+	line-height: 12rem;
+	fill: $al-yellow !important;
+}
+
+#homepage-facts .donut svg {
+	path.color0 { fill: $ba-yellow; }
+	path.color1 { fill: $ba-yellow-dark; }
+}

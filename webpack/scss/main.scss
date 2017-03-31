@@ -15,6 +15,7 @@
 @import "icons.scss";
 @import "global_header.scss";
 @import "countries.scss";
+@import "graphs.scss";
 
 /* Custom: Fix box sizing on everything */
 * {
@@ -583,15 +584,6 @@ sub {
 
 #lektor-edit-link {
 	display: none;
-}
-
-.donut-text {
-	font-family: sans-serif;
-	font-size: 4rem;
-	letter-spacing: -.2rem;
-	font-weight: 600;
-	line-height: 12rem;
-	fill: #567F3A;
 }
 
 .background-text {
