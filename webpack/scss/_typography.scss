@@ -19,12 +19,19 @@ sup {
 	vertical-align:super;
 }
 
-.page p {
-	line-height: 1.75em;
-}
+.page {
+  p {
+    line-height: 1.75em;
+  }
 
-.page li {
-	padding: 0.25em 0;
+  li {
+    line-height: 1.75em;
+    padding: 0.25em 0 0.25em 1em;
+  }
+
+  ol, ul {
+    padding-left: 1em;
+  }
 }
 
 a {
