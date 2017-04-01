@@ -80,6 +80,24 @@ body.country-ba {
     .cc-secondary { color: $ba-blue }
 }
 
+body.wwf-examples {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-red }
+}
+
+body.sustainable-business {
+    .cc-primary { color: $xk-magenta }
+    .cc-primary-dark { color: $xk-magenta-dark }
+    .cc-secondary { color: $xk-orange }
+}
+
+body.recommendations {
+    .cc-primary { color: $al-green }
+    .cc-primary-dark { color: $al-green-dark }
+    .cc-secondary { color: $al-yellow }
+}
+
 /* Borders */
 
 body.country-hr .border-gradient, .border-hr-red-blue {
