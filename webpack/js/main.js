@@ -12,7 +12,7 @@ pickers.initPickerPlugins($);
 
 graph_choices = {
 	country: null,
-	pa: null,
+	protected_area: null,
 	graph_type: null
 }
 
@@ -34,23 +34,22 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 jQuery(document).ready(function(){
 	$('.country-picker').countryPicker(function(choice) {
 		graph_choices.country = choice;
-		console.log(graph_choices);
+		renderGraph();
 	}, '.pa-picker');
 
 	$('.pa-picker').paPicker(function(choice) {
-		graph_choices.pa = choice;
-		console.log(graph_choices);
+		graph_choices.protected_area = choice;
+		renderGraph();
 	});
 
 	$('.graph-type-picker').graphTypePicker(function(choice) {
 		graph_choices.graph_type = choice;
-		console.log(graph_choices);
+		renderGraph();
 	});
 
 	var $navbar = $("#main-nav"),
 		y_pos = $navbar.offset().top,
 		height = $navbar.height();
-
 
 	$navbar.css('height', '4.5rem');
 	var $l_select = $('.local-dropdown button');
@@ -116,56 +115,34 @@ jQuery(document).ready(function(){
 // Functions for manipulating graphs on Protected Areas page
 // ---------------------------------------------------------
 
-function set_choices(choice) {
-	if (choice['chosen_country_text']) {
-		graph_choices.protected_area = null;
-
-		if (choice.chosen_country_text != '-') {
-			graph_choices.country = choice.chosen_country_text;
-		} else {
-			graph_choices.country = null;
-		}
-
-	} else if (choice['chosen_pa_text']) {
-		if (choice.chosen_pa_text != '-') {
-			graph_choices.protected_area = choice.chosen_pa_text;
-		} else {
-			graph_choices.protected_area = null;
-		}
-
-	} else if (choice['chosen_graph_type_text']) {
-		graph_choices.graph_type = parseInt(choice.chosen_graph_type_text, 10);
-	}
-}
-
-function render_graph() {
-	var country = graph_choices.country;
-	var protected_area = graph_choices.protected_area;
-	var graphType;
-
-	if (protected_area) {
-		graphType = graph_choices.graph_type + 3;
+function renderGraph() {
+	if (!graphRenderable()) {
+		hideGraphs();
+		$('.no-graphs').removeClass('hide');
 	} else {
-		graphType = graph_choices.graph_type;
-	};
-
-	if (!country || !graphType) { return };
-
-	graphs.generateGraph(graphType, country, protected_area)
-
-	$('.no-graphs-h1').addClass('hide');
-	$('.no-graphs-ol').addClass('hide');
-
-	hide_other_graphs(graphType)
-
-	$('#chart_' + graphType).removeClass('hide')
+		graphs.renderGraph(graph_choices)
+		hideGraphs();
+		$('.no-graphs').addClass('hide');
+		showGraph(graph_choices.graph_type, graph_choices.protected_area);
+	}
 }
 
-function hide_other_graphs(graph_number) {
-	for(var i = 0; i <= 5; i++) {
-		if (i + 1 == graph_number) { continue };
-		$('#chart_'+(i+1)).addClass('hide');
-	}
+function graphRenderable() {
+	return graph_choices.country && graph_choices.graph_type;
+}
+
+function hideGraphs() {
+	_.each(_.range(1, 4), function(i) {
+		$('#country_chart_'+i).addClass('hide');
+		$('#pa_chart_'+i).addClass('hide');
+	})
+}
+
+function showGraph(graph_number, protected_area) {
+	var graph_prefix = !!protected_area ? "pa" : "country",
+		graph_id = "#" + graph_prefix + "_chart_" + graph_number;
+
+	$(graph_id).removeClass('hide');
 }
 
 // ------------------------------------------------------

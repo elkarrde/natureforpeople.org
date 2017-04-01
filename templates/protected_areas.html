@@ -26,17 +26,19 @@
 {% include "pa/_graph_type_picker.html" %}
 
 <div class="col-10 sm-col-8 md-col-8 mx-auto my4 flex justify-center items-center flex-column">
-	<p class="no-graphs-h1">{{ this.message_head }}</p>
-	<ol class="no-graphs-ol ml4 mb4">
-		<li>{{ this.message_1 }}</li>
-		<li>{{ this.message_2 }}</li>
-	</ol>
-	<div id="chart_1" class="pabat-chart hide"></div>
-	<div id="chart_2" class="pabat-chart hide"></div>
-	<div id="chart_3" class="pabat-chart hide"></div>
-	<div id="chart_4" class="pabat-chart hide"></div>
-	<div id="chart_5" class="pabat-chart hide"></div>
-	<div id="chart_6" class="pabat-chart hide"></div>
+	<div class="no-graphs">
+		<p class="no-graphs-h1">{{ this.message_head }}</p>
+		<ol class="no-graphs-ol ml4 mb4">
+			<li>{{ this.message_1 }}</li>
+			<li>{{ this.message_2 }}</li>
+		</ol>
+	</div>
+	<div id="country_chart_1" class="pabat-chart hide"></div>
+	<div id="country_chart_2" class="pabat-chart hide"></div>
+	<div id="country_chart_3" class="pabat-chart hide"></div>
+	<div id="pa_chart_1" class="pabat-chart hide"></div>
+	<div id="pa_chart_2" class="pabat-chart hide"></div>
+	<div id="pa_chart_3" class="pabat-chart hide"></div>
 </div>
 
 <div class="cta-image-holder croatian-background-color-1 flex items-center justify-center">

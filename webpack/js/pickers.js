@@ -9,6 +9,7 @@ protected_areas_by_country = {
 	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
 }
 
+function valCleaner(val) { if (val == '-') { return null } else { return val }};
 
 function initPickerPlugins($) {
 	$.fn.countryPicker = function(callback, pa_chooser_class) {
@@ -29,10 +30,7 @@ function initPickerPlugins($) {
 					$pa_chooser.find('ul').append('<li><a>' + pa + '</a></li>')
 				})
 
-				callback({
-					code: chosen_country_code,
-					name: chosen_country_text
-				});
+				callback(valCleaner(chosen_country_code));
 			});
 		});
 
@@ -50,7 +48,7 @@ function initPickerPlugins($) {
 				$t.find('button span').removeClass('hide');
 				$t.find('button span').text(chosen_pa_text);
 
-				callback({ name: chosen_pa_text });
+				callback(valCleaner(chosen_pa_text));
 			});
 		});
 
@@ -68,7 +66,7 @@ function initPickerPlugins($) {
 
 				$tgt.addClass('graph-card-hover');
 
-				callback({chosen_graph_type_text: chosen_gt_text});
+				callback(valCleaner(chosen_gt_text));
 			});
 		});
 
