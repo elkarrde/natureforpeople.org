@@ -69,14 +69,9 @@ jQuery(document).ready(function(){
 		animationHelpers.animateValue("counter300", 0, parseInt($('#counter300').html()), 4000);
 	}
 
-	animationHelpers.drawBarChart('#chart', [7, 14]);
-	animationHelpers.drawBarChart('#frewhwater-util-chart', [21]);
-	animationHelpers.drawBarChart('#chart9200', [9200]);
-	animationHelpers.drawDonutChart('#donut39', $('#donut39').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie25', $('#pie25').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie63', $('#pie63').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie2', $('#pie2').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie77', $('#pie77').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-1', $('#homepage-fact-1').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-2', $('#homepage-fact-2').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-3', $('#homepage-fact-3').data('donut'), 200, 200, ".4em");
 
 	// Check if correct localization string
 

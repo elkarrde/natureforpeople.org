@@ -1,0 +1,12 @@
+.donut {
+	font-size: 4rem;
+	letter-spacing: -.2rem;
+	line-height: 12rem;
+	fill: black;
+}
+
+#homepage-facts .donut svg {
+	text { fill: $ba-yellow; }
+	path.color0 { fill: $ba-yellow; }
+	path.color1 { fill: $ba-yellow-dark; }
+}
