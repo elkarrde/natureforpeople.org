@@ -66,6 +66,20 @@
   background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);
 }
 
+/* Text colors - 'cc' prefix as 'country color' */
+
+body.country-hr {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-red }
+}
+
+body.country-ba {
+    .cc-primary { color: $ba-yellow}
+    .cc-primary-dark { color: $ba-yellow-dark }
+    .cc-secondary { color: $ba-blue }
+}
+
 /* Borders */
 
 body.country-hr .border-gradient, .border-hr-red-blue {

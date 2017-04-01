@@ -1,0 +1,11 @@
+{% macro info(title, title_icon, subtitle, copy, question) -%}
+<div class="px2">
+    <div class="">
+        <span class="mr3 icon-{{ title_icon }} h2 cc-secondary"/></span>
+        <h2 class="inline h2 playfair-bold opacity-20 cc-primary">{{ title }}</h2>
+    </div>
+    <h3 class="h4 cc-secondary">{{ subtitle }}</h3>
+    <p class="my3">{{ copy }}</p>
+    <p><a class="my3 cc-primary" href="{{ '/recommendations'|url }}">{{ question }}</a></p>
+</div>
+{%- endmacro %}

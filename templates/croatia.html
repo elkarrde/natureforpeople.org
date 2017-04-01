@@ -1,106 +1,93 @@
-{% extends "country_layout.html" %}
+{% extends "layout.html" %}
 
 {% set body_class = 'country-hr' %}
 
-{% set header_class                  = 'croatian-background-color-1' %}
-{% set select_colors_class           = 'croatian-color-1 croatian-background-color-2' %}
-{% set nav_id                        = 'croatian-nav' %}
-{% set nav_links_class               = 'nav-links-croatian'%}
-{% set country_facts_class           = 'facts-croatia' %}
-{% set country_cta_image_class       = 'croatian-cta-image' %}
-{% set country_banner_image_class    = 'croatian-banner-image' %}
-{% set country_border_gradient_class = 'croatian-border-gradient' %}
+{% import 'country/_facts.html' as facts %}
 
-{% block row_1_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-tourism country-icon croatian-color-3"/></i>
-		<h2 class="country-h1 croatian-color-1">{{ this.fact_1_title }}</h2>
-	</div>
-	<h3 class="country-h2 croatian-color-3 mt3">{{ this.fact_1_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_1_copy }}</p>
+{% block body %}
 
-		<a class="my3 croatian-color-1" href="#">{{ this.fact_1_question }}</a>
-	</div>
-</div>
-{% endblock %}
+{% include "country/_banner.html" %}
 
-{% block row_1_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="counter croatian-color-1" id="counter">2590320</div>
-	<div class="visitor-wrapper">
-		<i class="icon-visitors croatian-background-color-3"></i>
-	</div>
-	<p class="capture-color capture mt3">{{ this.fact_1_caption }}</p>
-</div>
-{% endblock %}
+<section id="hr-facts-1" class="py4">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+            <div class="col md-col-6">
+                {{ facts.info(this.fact_1_title, this.fact_1_title_icon, this.fact_1_subtitle, this.fact_1_copy, this.fact_1_question) }}
+            </div>
+            <div class="col md-col-6">
 
-{% block row_2_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-fresh-water country-icon croatian-color-3"></i>
-		<h2 class="country-h1 croatian-color-1">{{ this.fact_2_title }}</h2>
-	</div>
-	<h3 class="country-h2 croatian-color-3 mt3">{{ this.fact_2_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_2_copy }}</p>
+                <!-- FIX -->
+                <div class="p4 flex-wrap flex-column flex items-center justify-center">
+	                  <div class="chart px-3 py-3" id="chart"></div>
+	                  <p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
+                </div>
 
-		<a class="my3 croatian-color-1" href="#">{{ this.fact_2_question }}</a>
-	</div>
-</div>
-{% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
 
-{% block row_2_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="chart px-3 py-3" id="chart"></div>
-	<p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
-</div>
-{% endblock %}
+<section id="hr-facts-2" class="py4 bg-white-dirty">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+            <div class="col md-col-6">
+                {{ facts.info(this.fact_2_title, this.fact_2_title_icon, this.fact_2_subtitle, this.fact_2_copy, this.fact_2_question) }}
+            </div>
+            <div class="col md-col-6">
 
-{% block row_3_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-jobs country-icon croatian-color-3"></i>
-		<h2 class="country-h1 croatian-color-1">{{ this.fact_3_title }}</h2>
-	</div>
-	<h3 class="country-h2 croatian-color-3 mt3">{{ this.fact_3_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_3_copy }}</p>
+                <!-- FIX -->
+                <div class="p4 flex-wrap flex-column flex items-center justify-center">
+                    <div class="chart px-3 py-3" id="chart"></div>
+                    <p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
+                </div>
 
-		<a class="my3 croatian-color-1" href="#">{{ this.fact_3_question }}</a>
-	</div>
-</div>
-{% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
 
-{% block row_3_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="p4 flex items-center justify-center flex-column">
-		<div class="donut" id="donut39" data-donut="39"></div>
-		<p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
-	</div>
-</div>
-{% endblock %}
+<section id="hr-facts-3" class="py4">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+            <div class="col md-col-6">
+                {{ facts.info(this.fact_3_title, this.fact_3_title_icon, this.fact_3_subtitle, this.fact_3_copy, this.fact_3_question) }}
+            </div>
+            <div class="col md-col-6">
 
-{% block row_4_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-forrest country-icon croatian-color-3"></i>
-		<h2 class="country-h1 croatian-color-1">{{ this.fact_4_title }}</h2>
-	</div>
-	<h3 class="country-h2 croatian-color-3 mt3">{{ this.fact_4_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_4_copy }}</p>
-		<a class="my3 croatian-color-1" href="#">{{ this.fact_4_question }}</a>
-	</div>
-</div>
-{% endblock %}
+                <!-- FIX -->
+                <div class="p4 flex-wrap flex-column flex items-center justify-center">
+	                  <div class="p4 flex items-center justify-center flex-column">
+		                    <div class="donut" id="donut39" data-donut="39"></div>
+		                    <p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
+	                  </div>
+                </div>
 
-{% block row_4_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="p4 flex items-center justify-center flex-column">
-		<div class="donut" id="pie25" data-donut="25"></div>
-		<p class="capture-color capture mt3">{{ this.fact_4_caption }}</p>
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hr-facts-4" class="py4 bg-white-dirty">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+            <div class="col md-col-6">
+                {{ facts.info(this.fact_4_title, this.fact_4_title_icon, this.fact_4_subtitle, this.fact_4_copy, this.fact_4_question) }}
+            </div>
+            <div class="col md-col-6">
+
+                <!-- FIX -->
+                <div class="p4 flex-wrap flex-column flex items-center justify-center">
+	                  <div class="p4 flex items-center justify-center flex-column">
+		                    <div class="donut" id="pie25" data-donut="25"></div>
+		                    <p class="capture-color capture mt3">{{ this.fact_4_caption }}</p>
+	                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "country/_cta.html" %}
+
 {% endblock %}
