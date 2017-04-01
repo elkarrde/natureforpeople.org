@@ -30,12 +30,16 @@ $mobile-header-height: 50px;
     &:hover {
       background-color: $grey-light;
     }
+
+    &.active {
+        border-bottom: 3px solid $grey;
+    }
   }
   .link-invert {
-    color: $white;
+    color: $grey;
     background-color: $grey-light;
 
-    &:hover {
+    &:hover, &.active {
       color: $grey-dark;
     }
   }
@@ -74,10 +78,10 @@ body.country-hr {
       }
     }
     .link-invert {
-      color: $hr-blue;
+      color: $grey-light;
       background-color: $hr-blue-dark;
 
-      &:hover {
+      &:hover, &.active {
         color: $white;
       }
     }
@@ -95,10 +99,10 @@ body.country-ba {
       }
     }
     .link-invert {
-      color: $ba-yellow;
+      color: $grey-light;
       background-color: $ba-yellow-dark;
 
-      &:hover {
+      &:hover, &.active {
         color: $white;
       }
     }

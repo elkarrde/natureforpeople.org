@@ -9,7 +9,7 @@
       </li>
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
       <li>
-        <a class="grey-dark grey-hover" href="{{ path|url(alt) }}">{{ label }}</a>
+        <a class="{% if this.path == path %}grey{% else %}grey-dark{% endif %} grey-hover" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
     </ul>

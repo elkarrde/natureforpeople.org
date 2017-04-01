@@ -30,7 +30,7 @@
 
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
       <li>
-        <a class="link block px3 flex items-center" href="{{ path|url(alt) }}">{{ label }}</a>
+        <a class="link block px3 flex items-center {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -44,7 +44,19 @@
     <ul class="nav-dropdown-options hidden list-reset m0">
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
       <li>
-        <a class="link-invert block px2 py1" href="{{ path|url(alt) }}">{{ label }}</a>
+        <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
+      </li>
+      {% endfor %}
+
+      <!-- countries -->
+      {% set countries = bag('country-navigation', this.alt).iteritems() %}
+      <li>
+        <hr class="link-inverted block px2 py0 m0">
+        <span class="hidden">{{ countries.next()[1] }}</span>
+      </li>
+      {% for path, label in countries %}
+      <li>
+        <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
     </ul>
