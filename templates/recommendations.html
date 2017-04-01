@@ -4,41 +4,7 @@
 
 {% include "shared/_short_banner.html" %}
 
-<div class="col-12 p2">
-    <p class="background-text xs-hide sm-hide">{{ this.background_title }}</p>
-    <div class="recommendations md-col-6 col-10 mx-auto">
-        <h2 class="title mt8">{{ this.section_1_headline }}</h2>
-        <ol class="list">
-            <li class="mt3">{{ this.bullet_1 }}</li>
-            <li class="mt3">{{ this.bullet_2 }}</li>
-            <li class="mt3">{{ this.bullet_3 }}</li>
-            <li class="mt3">{{ this.bullet_4 }}</li>
-            <li class="mt3">{{ this.bullet_5 }}</li>
-            <li class="mt3">{{ this.bullet_6 }}</li>
-            <li class="mt3">{{ this.bullet_7 }}</li>
-            <li class="mt3">{{ this.bullet_8 }}
-                <ul class="ml3">
-                    <li class="mt3">{{ this.bullet_8_1 }}</li>
-                    <li class="mt3">{{ this.bullet_8_2 }}</li>
-                    <li class="mt3">{{ this.bullet_8_3 }}</li>
-                    <li class="mt3">{{ this.bullet_8_4 }}</li>
-                    <li class="mt3">{{ this.bullet_8_5 }}</li>
-                </ul>
-            </li>
-        </ol>
-
-        <h2 class="title mt4">{{ this.section_2_headline }}</h2>
-        <ol class="list mb4">
-            <li class="mt3">{{ this.bullet_9 }}</li>
-            <li class="mt3">{{ this.bullet_10 }}</li>
-            <li class="mt3">{{ this.bullet_11 }}</li>
-            <li class="mt3">{{ this.bullet_12 }}</li>
-            <li class="mt3">{{ this.bullet_13 }}</li>
-            <li class="mt3">{{ this.bullet_14 }}</li>
-				    <li class="mt3">{{ this.bullet_15 }}</li>
-			  </ol>
-		</div>
-</div>
+{% include "shared/_intro.html" %}
 
 {% include 'homepage/_learn_more.html' %}
 

@@ -6,51 +6,59 @@ main_headline: Smjernice
 ---
 subheadline: Preporuke za korištenje rezultata
 ---
-background_title: Smjernice
+bg_text: Smjernice
 ---
-section_1_headline: Integriranje prirodnih vrijednosti u postupke odlučivanja
+intro_title: Integriranje prirodnih vrijednosti u postupke odlučivanja
 ---
-section_2_headline: Bolje upravljanje zaštićenim područjem
----
-bullet_1: Obavijestiti donosioce odluka i osobe odgovorne za razvoj politika o vrijednostima i koristima zaštićenih područja i zagovarati integraciju pitanja povezanih sa zaštićenim područjem sa sektorskim strateškim dokumentima;
----
-bullet_2: Inicirati raspravu među sektorima u vezi s prepoznatim vrijednostima i mogućim rješenjima za uklanjanje pravnih prepreka u provedbi inicijativa za održivi razvoj;
----
-bullet_3: Poticati sinergiju zakonodavstva i tijela nadležnih za upravljanje zaštićenim područjima (prostorno planiranje, prijevoz, gospodarstvo, poljoprivreda, šumarstvo, energija, turizam, ribarstvo, sektor voda) na nacionalnoj razini, probna rješenja za smanjenje/uklanjanje loših mjera (npr. tijela koja upravljaju zaštićenim područjem moraju plaćati naknadu za uređenje voda dok ekosustavi u zaštićenim područjima proizvode vodu i podupiru upravljanje vodom);
----
-bullet_4: Promicati održivu poslovnu praksu u sektorima koji se koriste resursima;
----
-bullet_5: Uzeti u obzir prirodne vrijednosti i potencijale utvrđene alatom za procjenu vrijednosti zaštićenih područja (PA-BAT) kao dobru osnovu za razvoj održivih financijskih mehanizama za zaštićeno područje, stvoriti argumente za zaštitu i razviti strategije kako bi se prihod vratio lokalnom stanovništvu;
----
-bullet_6: Omogućiti pristup financijskim sredstvima EU-a kao što su poticaji kroz program za poljoprivredu i okoliš;
----
-bullet_7: Organizirati redovite procjene alatom PA-BAT s lokalnim dionicima kako bi se ponovo procijenile vrijednosti i istražili najučinkovitiji načini kojima se od njih ostvaruje korist;
----
-bullet_8: Povećati razumijevanje društveno-gospodarske uloge zaštićenih područja što je neophodno za ruralno gospodarstvo u kojemu se nude prilike za povezivanje razvoja i očuvanje bioraznolikosti. Taj "novi" ruralni razvoj isto je tako važan alat za promjenu trenda depopulacije i napuštanja zemljišta.
----
-bullet_8_1: Radna mjesta: informirati ministarstva financija i gospodarstva da su radna mjesta povezana s očuvanjem primarni izvor prihoda u mnogim upravljanim/procijenjenim zaštićenim područjima (odnosno 40 % u slučaju Hrvatske);
----
-bullet_8_2: Turizam: razviti snažnu suradnju s turističkim sektorom na nacionalnoj razini (državne institucije, turističke organizacije i agencije) te raditi na strateškom razvoju kako bi se spriječilo propadanje prirodnih vrijednosti;
----
-bullet_8_3: Aktiviranje lokalnog gospodarstva: razvoj zajedničkih mjera (obiteljska gospodarstva, udruge), pružanje marketinške potpore lokalnoj zajednici, upotreba povijesnog i lokalnog znanja (tradicijski obrti i prakse), brendiranje lokalne ponude (lokalni proizvodi, suveniri, usluge rekreacije, smještaja i prehrane);
----
-bullet_8_4: Obrazovanje: omogućiti unos informacija iz sektora očuvanja prirode u nacionalne nastavne planove (osnovno i srednjoškolsko obrazovanje) te promicanje bliske suradnje s državnim tijelima za obrazovanje i znanost, uključujući sveučilišta;
----
-bullet_8_5: Kultura: razvoj strategija za uključivanje potencijala kulture u gospodarsku korist za zaštićeno područje i dionike.
----
-bullet_9: Osigurati redovitu i transparentnu razmjenu informacija među donosiocima odluka (lokalna državna tijela i uprava zaštićenog područja) u vezi s lokalnim razvojnim programima;
----
-bullet_10: Iskoristiti suradnju među različitim razinama uprave jer koristi zaštićenog područja imaju utjecaj i izvan granica parka;
----
-bullet_11: Razviti trajne mehanizme za konzultacije s dionicima (npr. vijeća dionika);
----
-bullet_12: Informirati i educirati lokalne zajednice i posjetioce o vrijednostima i koristima zaštićenog područja kako bi se povećala potpora lokalnog stanovništva, poslovnih subjekata, javnog sektora i javnosti općenito za zaštićena područja;
----
-bullet_13: Razmotriti kapacitete i resurse dionika u planiranju upravljanja i razviti primjerene mehanizme za podizanje i podupiranje njihove konkurentnosti;
----
-bullet_14: Upotrijebiti alat za procjenu vrijednosti zaštićenih područja u planiranju upravljanja i za razvoj stručnog osposobljavanja i obuke u skladu s utvrđenim vrijednostima;
----
-bullet_15: Naći prostora za ljude u zaštićenim područjima, raditi na rješenju specifičnom za lokaciju kako bi s omogućila zaštita prirode i ispunjavanje egzistencijalnih potreba lokalne zajednice: ukloniti administrativne prepreke, poboljšati provedbu pravnog i upravljačkog okvira kojim se regulira upotreba prirodnih resursa (biljke za hranu, ljekovite biljke, vađenje materijala, sječa šuma, lov i ribolov) u zaštićenim područjima i osiguravanje alternativnih načina za ekonomski razvoj, uvođenje ekoloških mjera u javnu nabavu.
+intro_body:
+<ol>
+<li>Obavijestiti donosioce odluka i osobe odgovorne za razvoj politika o vrijednostima i koristima zaštićenih područja i zagovarati integraciju pitanja povezanih sa zaštićenim područjem sa sektorskim strateškim dokumentima;</li>
+
+<li>Inicirati raspravu među sektorima u vezi s prepoznatim vrijednostima i mogućim rješenjima za uklanjanje pravnih prepreka u provedbi inicijativa za održivi razvoj;</li>
+
+<li>Poticati sinergiju zakonodavstva i tijela nadležnih za upravljanje zaštićenim područjima (prostorno planiranje, prijevoz, gospodarstvo, poljoprivreda, šumarstvo, energija, turizam, ribarstvo, sektor voda) na nacionalnoj razini, probna rješenja za smanjenje/uklanjanje loših mjera (npr. tijela koja upravljaju zaštićenim područjem moraju plaćati naknadu za uređenje voda dok ekosustavi u zaštićenim područjima proizvode vodu i podupiru upravljanje vodom);</li>
+
+<li>Promicati održivu poslovnu praksu u sektorima koji se koriste resursima;</li>
+
+<li>Uzeti u obzir prirodne vrijednosti i potencijale utvrđene alatom za procjenu vrijednosti zaštićenih područja (PA-BAT) kao dobru osnovu za razvoj održivih financijskih mehanizama za zaštićeno područje, stvoriti argumente za zaštitu i razviti strategije kako bi se prihod vratio lokalnom stanovništvu;</li>
+
+<li>Omogućiti pristup financijskim sredstvima EU-a kao što su poticaji kroz program za poljoprivredu i okoliš;</li>
+
+<li>Organizirati redovite procjene alatom PA-BAT s lokalnim dionicima kako bi se ponovo procijenile vrijednosti i istražili najučinkovitiji načini kojima se od njih ostvaruje korist;</li>
+
+<li>Povećati razumijevanje društveno-gospodarske uloge zaštićenih područja što je neophodno za ruralno gospodarstvo u kojemu se nude prilike za povezivanje razvoja i očuvanje bioraznolikosti. Taj "novi" ruralni razvoj isto je tako važan alat za promjenu trenda depopulacije i napuštanja zemljišta.
+<ul>
+
+  <li>Radna mjesta: informirati ministarstva financija i gospodarstva da su radna mjesta povezana s očuvanjem primarni izvor prihoda u mnogim upravljanim/procijenjenim zaštićenim područjima (odnosno 40 % u slučaju Hrvatske);</li>
+
+  <li>Turizam: razviti snažnu suradnju s turističkim sektorom na nacionalnoj razini (državne institucije, turističke organizacije i agencije) te raditi na strateškom razvoju kako bi se spriječilo propadanje prirodnih vrijednosti;</li>
+
+  <li>Aktiviranje lokalnog gospodarstva: razvoj zajedničkih mjera (obiteljska gospodarstva, udruge), pružanje marketinške potpore lokalnoj zajednici, upotreba povijesnog i lokalnog znanja (tradicijski obrti i prakse), brendiranje lokalne ponude (lokalni proizvodi, suveniri, usluge rekreacije, smještaja i prehrane);</li>
+
+  <li>Obrazovanje: omogućiti unos informacija iz sektora očuvanja prirode u nacionalne nastavne planove (osnovno i srednjoškolsko obrazovanje) te promicanje bliske suradnje s državnim tijelima za obrazovanje i znanost, uključujući sveučilišta;</li>
+
+  <li>Kultura: razvoj strategija za uključivanje potencijala kulture u gospodarsku korist za zaštićeno područje i dionike.
+</ul></li>
+
+</ol>
+
+<h3>Bolje upravljanje zaštićenim područjem</h3>
+
+<ol>
+<li>Osigurati redovitu i transparentnu razmjenu informacija među donosiocima odluka (lokalna državna tijela i uprava zaštićenog područja) u vezi s lokalnim razvojnim programima;</li>
+
+<li>Iskoristiti suradnju među različitim razinama uprave jer koristi zaštićenog područja imaju utjecaj i izvan granica parka;</li>
+
+<li>Razviti trajne mehanizme za konzultacije s dionicima (npr. vijeća dionika);</li>
+
+<li>Informirati i educirati lokalne zajednice i posjetioce o vrijednostima i koristima zaštićenog područja kako bi se povećala potpora lokalnog stanovništva, poslovnih subjekata, javnog sektora i javnosti općenito za zaštićena područja;</li>
+
+<li>Razmotriti kapacitete i resurse dionika u planiranju upravljanja i razviti primjerene mehanizme za podizanje i podupiranje njihove konkurentnosti;</li>
+
+<li>Upotrijebiti alat za procjenu vrijednosti zaštićenih područja u planiranju upravljanja i za razvoj stručnog osposobljavanja i obuke u skladu s utvrđenim vrijednostima;</li>
+
+<li>Naći prostora za ljude u zaštićenim područjima, raditi na rješenju specifičnom za lokaciju kako bi s omogućila zaštita prirode i ispunjavanje egzistencijalnih potreba lokalne zajednice: ukloniti administrativne prepreke, poboljšati provedbu pravnog i upravljačkog okvira kojim se regulira upotreba prirodnih resursa (biljke za hranu, ljekovite biljke, vađenje materijala, sječa šuma, lov i ribolov) u zaštićenim područjima i osiguravanje alternativnih načina za ekonomski razvoj, uvođenje ekoloških mjera u javnu nabavu.</li>
+</ol>
 ---
 learn_more_backline: Saznajte više
 ---
