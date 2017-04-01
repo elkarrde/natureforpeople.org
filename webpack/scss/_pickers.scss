@@ -1,0 +1,49 @@
+$button-border-color: #0B8BB6;
+$link-bg-color: #03769D;
+$span-text-grey: #9B9B9B;
+
+.picker {
+	position: relative;
+	display: inline-block;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.picker ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+	margin: 0;
+
+	background-color: $button-border-color;
+	list-style: none;
+	width: 100%;
+	padding: 0;
+}
+
+.picker button {
+	font-size: 1rem;
+	background-color: Transparent;
+	border: 3px solid $button-border-color;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	overflow:hidden;
+	cursor: pointer;
+	min-width: 25rem;
+	transition: height 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	span {
+		color: $span-text-grey;
+	}
+}
+
+.picker a {
+	display: block;
+	padding: 0.2em 0.8em;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	margin: 0.8rem;
+}
+
+.picker:hover ul { display: block; }
+.picker a:hover { background-color: $link-bg-color; }
+.picker button i { color: $button-border-color; }

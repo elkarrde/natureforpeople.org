@@ -6,22 +6,14 @@ jQuery = $;
 
 animationHelpers = require('./animationHelpers');
 graphs = require('./graphs')
+pickers = require('./pickers')
+
+pickers.initPickerPlugins($);
 
 graph_choices = {
 	country: null,
 	protected_area: null,
 	graph_type: null
-}
-
-protected_areas_by_country = {
-	'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona', 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama', 'NP Shebenik Jabllanica', 'NP Thethi'],
-	'BIH': ['NP Kozara', 'NP Sutjeska', 'NP Una', 'PP Bijambare', 'PP Hutovo Blato', 'PP Vrelo Bosne'],
-	'HRV': ['NP Brijuni', 'NP Kornati', 'NP Krka', 'NP Mljet', 'NP Paklenica', 'NP Plitvička Jezera', 'NP Risnjak', 'NP Sjeverni Velebit', 'NP Telašćica', 'PP Biokovo', 'PP Kopački Rit', 'PP Lastovo', 'PP Lonjsko Polje', 'PP Medvednica', 'PP Papuk', 'PP Velebit', 'PP Vransko Jezero', 'PP Žumberak'],
-	'KOS': ['NP Sharri', 'PP Germia'],
-	'MKD': ['NP Galičica', 'NP Mavrovo', 'NP Pelister'],
-	'MNE': ['NP Biogradska Gora', 'NP Durmitor', 'NP Lovćen', 'NP Prokletje', 'NP Skadarsko Jezero'],
-	'SRB': ['NP Fruška Gora', 'NP Kopaonik', 'NP Tara', 'NP Đerdap', 'PP Gornje Podunavlje', 'PP Vlasina'],
-	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
 }
 
 countriesOrder = ["slovenia", "croatia", "bosnia", "serbia", "kosovo", "montenegro", "albania", "macedonia"];
@@ -38,9 +30,22 @@ $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
 	return false;
 });
 
+
 jQuery(document).ready(function(){
-	$('.country-chooser-menu li').click(pickCountry);
-	$('.graph-type-picker .graph-card').click(pickGraphType);
+	$('.country-picker').countryPicker(function(choice) {
+		graph_choices.country = choice;
+		renderGraph();
+	}, '.pa-picker');
+
+	$('.pa-picker').paPicker(function(choice) {
+		graph_choices.protected_area = choice;
+		renderGraph();
+	});
+
+	$('.graph-type-picker').graphTypePicker(function(choice) {
+		graph_choices.graph_type = choice;
+		renderGraph();
+	});
 
 	var $navbar = $("#main-nav"),
 		y_pos = $navbar.offset().top,
@@ -81,31 +86,6 @@ jQuery(document).ready(function(){
 		$('.local-dropdown button span').html('EN')
 	}
 
-	$('.landing-page-carousel .message-prev').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
-
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, -1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
-
-	});
-
-	$('.landing-page-carousel .message-next').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
-
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, 1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
-	});
-
 	$('.map-wrapper svg .country').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
 	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
@@ -135,103 +115,34 @@ jQuery(document).ready(function(){
 // Functions for manipulating graphs on Protected Areas page
 // ---------------------------------------------------------
 
-function pickCountry(event) {
-	var chosen_country_data = $(event.currentTarget).data('countrycode'),
-		chosen_country_text = $(event.currentTarget).data('countryname');
-
-	if (chosen_country_text == '-') {
-		$('.graph-card').removeClass('graph-card-hover');
+function renderGraph() {
+	if (!graphRenderable()) {
+		hideGraphs();
+		$('.no-graphs').removeClass('hide');
 	} else {
-		$('.graph-card').addClass('graph-card-hover');
-	};
-
-	$('#choose-country-init-text').addClass('hide');
-	$('#choose-country-chosen-text').removeClass('hide');
-	$('#choose-country-chosen-text').text(chosen_country_text);
-	$('#choose-pa-chosen-text').text('-');
-
-	$('.pa-chooser').removeClass('hide');
-	$('.pa-chooser ul').html('<li><a>-</a></li>')
-
-	for (var i in protected_areas_by_country[chosen_country_data]) {
-		var pa = protected_areas_by_country[chosen_country_data][i];
-		$('.pa-chooser ul').append('<li><a>' + pa + '</a></li>')
-	}
-
-	$('.pa-chooser-menu li').click(pickProtectedArea);
-
-	set_choices({chosen_country_text: chosen_country_data})
-	render_graph();
-};
-
-function pickProtectedArea(event) {
-	var chosen_pa_text = $(event.currentTarget).text();
-	console.log(chosen_pa_text);
-
-	$('#choose-pa-init-text').addClass('hide');
-	$('#choose-pa-chosen-text').removeClass('hide');
-	$('#choose-pa-chosen-text').text(chosen_pa_text);
-
-	set_choices({chosen_pa_text: chosen_pa_text});
-	render_graph();
-}
-
-function pickGraphType( event ) {
-	var graph_type_text = $(event.currentTarget).data('graphid');
-	set_choices({chosen_graph_type_text: graph_type_text})
-	render_graph();
-};
-
-function set_choices(choice) {
-	if (choice['chosen_country_text']) {
-		graph_choices.protected_area = null;
-
-		if (choice.chosen_country_text != '-') {
-			graph_choices.country = choice.chosen_country_text;
-		} else {
-			graph_choices.country = null;
-		}
-
-	} else if (choice['chosen_pa_text']) {
-		if (choice.chosen_pa_text != '-') {
-			graph_choices.protected_area = choice.chosen_pa_text;
-		} else {
-			graph_choices.protected_area = null;
-		}
-
-	} else if (choice['chosen_graph_type_text']) {
-		graph_choices.graph_type = parseInt(choice.chosen_graph_type_text, 10);
+		graphs.renderGraph(graph_choices)
+		hideGraphs();
+		$('.no-graphs').addClass('hide');
+		showGraph(graph_choices.graph_type, graph_choices.protected_area);
 	}
 }
 
-function render_graph() {
-	var country = graph_choices.country;
-	var protected_area = graph_choices.protected_area;
-	var graphType;
-
-	if (protected_area) {
-		graphType = graph_choices.graph_type + 3;
-	} else {
-		graphType = graph_choices.graph_type;
-	};
-
-	if (!country || !graphType) { return };
-
-	graphs.generateGraph(graphType, country, protected_area)
-
-	$('.no-graphs-h1').addClass('hide');
-	$('.no-graphs-ol').addClass('hide');
-
-	hide_other_graphs(graphType)
-
-	$('#chart_' + graphType).removeClass('hide')
+function graphRenderable() {
+	return graph_choices.country && graph_choices.graph_type;
 }
 
-function hide_other_graphs(graph_number) {
-	for(var i = 0; i <= 5; i++) {
-		if (i + 1 == graph_number) { continue };
-		$('#chart_'+(i+1)).addClass('hide');
-	}
+function hideGraphs() {
+	_.each(_.range(1, 4), function(i) {
+		$('#country_chart_'+i).addClass('hide');
+		$('#pa_chart_'+i).addClass('hide');
+	})
+}
+
+function showGraph(graph_number, protected_area) {
+	var graph_prefix = !!protected_area ? "pa" : "country",
+		graph_id = "#" + graph_prefix + "_chart_" + graph_number;
+
+	$(graph_id).removeClass('hide');
 }
 
 // ------------------------------------------------------

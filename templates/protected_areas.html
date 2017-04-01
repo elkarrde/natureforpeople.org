@@ -8,79 +8,37 @@
 </div>
 
 <div class="pt8 col-11 flex flex-wrap">
-
 	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
 		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.country }}</div>{{ this.step_1 }}</h2>
-		<div class="country-chooser">
-			<!-- trigger button -->
-			<button class="p2">
-				<span class="mt2 mr4" id="choose-country-init-text">{{ this.country_1 }}</span>
-				<span class="mt2 mr4 hide pa-choosen-text" id="choose-country-chosen-text"></span>
-				<i class="icon-arrow-drop-down ml10 croatian-color-1"></i>
-			</button>
-			<!-- country-chooser menu -->
-			<ul class="country-chooser-menu croatian-background-color-1 z2">
-				<li data-countrycode="-"><a>-</a></li>
-				<li data-countrycode="ALB" data-countryname={{ bag('country-names', this.alt, 'albania') }}>    <a>{{ bag('country-names', this.alt, 'albania') }}</a></li>
-				<li data-countrycode="BIH" data-countryname={{ bag('country-names', this.alt, 'bosnia') }}>     <a>{{ bag('country-names', this.alt, 'bosnia') }}</a></li>
-				<li data-countrycode="HRV" data-countryname={{ bag('country-names', this.alt, 'croatia') }}>    <a>{{ bag('country-names', this.alt, 'croatia') }}</a></li>
-				<li data-countrycode="KOS" data-countryname={{ bag('country-names', this.alt, 'kosovo') }}>     <a>{{ bag('country-names', this.alt, 'kosovo') }}</a></li>
-				<li data-countrycode="MKD" data-countryname={{ bag('country-names', this.alt, 'macedonia') }}>  <a>{{ bag('country-names', this.alt, 'macedonia') }}</a></li>
-				<li data-countrycode="MNE" data-countryname={{ bag('country-names', this.alt, 'montenegro') }}> <a>{{ bag('country-names', this.alt, 'montenegro') }}</a></li>
-				<li data-countrycode="SRB" data-countryname={{ bag('country-names', this.alt, 'serbia') }}>     <a>{{ bag('country-names', this.alt, 'serbia') }}</a></li>
-				<li data-countrycode="SVN" data-countryname={{ bag('country-names', this.alt, 'slovenia') }}>   <a>{{ bag('country-names', this.alt, 'slovenia') }}</a></li>
-			</ul>
-		</div>
+		{% include "pa/_country_picker.html" %}
 	</div>
 
 	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
 		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.pa }}</div>{{ this.step_2 }}</h2>
-		<div class="pa-chooser">
-			<!-- trigger button -->
-			<button class="p2">
-				<span class="mt2 mr4" id="choose-pa-init-text">{{ this.pa_2 }}</span>
-				<span class="mt2 mr4 hide pa-choosen-text" id="choose-pa-chosen-text"></span>
-				<i class="icon-arrow-drop-down ml10 croatian-color-1"></i>
-			</button>
-			<!-- pa-chooser menu -->
-			<ul class="pa-chooser-menu croatian-background-color-1 z2">
-			</ul>
-		</div>
+		{% include "pa/_pa_picker.html" %}
 	</div>
-
 </div>
 
 <div class="col-11">
 	<h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 relative"><div class="chooser-headline">{{ this.values }}</div>{{ this.graph_values }}</h2>
 </div>
 
-<div class="graph-type-picker max-width-4 mx-auto flex justify-center flex-wrap">
-	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="1">
-		<i class="icon-Overall_economic_value_icon graph-card-icon"></i>
-		<p class="pa-p croatian-color-1">{{ this.econ_value }}</p>
-	</div>
-	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="2">
-		<i class="icon-Flow_of_economic_value_icon graph-card-icon"></i>
-		<p class="pa-p croatian-color-1">{{ this.flow_econ }}</p>
-	</div>
-	<div class="lg-col-3 col-9 mx-auto my1 flex justify-between flex-column items-center p3 pointer-cursor graph-card" data-graphid="3">
-		<i class="icon-Main_potential_icon graph-card-icon"></i>
-		<p class="pa-p croatian-color-1">{{ this.potential }}</p>
-	</div>
-</div>
+{% include "pa/_graph_type_picker.html" %}
 
 <div class="col-10 sm-col-8 md-col-8 mx-auto my4 flex justify-center items-center flex-column">
-	<p class="no-graphs-h1">{{ this.message_head }}</p>
-	<ol class="no-graphs-ol ml4 mb4">
-		<li>{{ this.message_1 }}</li>
-		<li>{{ this.message_2 }}</li>
-	</ol>
-	<div id="chart_1" class="pabat-chart hide"></div>
-	<div id="chart_2" class="pabat-chart hide"></div>
-	<div id="chart_3" class="pabat-chart hide"></div>
-	<div id="chart_4" class="pabat-chart hide"></div>
-	<div id="chart_5" class="pabat-chart hide"></div>
-	<div id="chart_6" class="pabat-chart hide"></div>
+	<div class="no-graphs">
+		<p class="no-graphs-h1">{{ this.message_head }}</p>
+		<ol class="no-graphs-ol ml4 mb4">
+			<li>{{ this.message_1 }}</li>
+			<li>{{ this.message_2 }}</li>
+		</ol>
+	</div>
+	<div id="country_chart_1" class="pabat-chart hide"></div>
+	<div id="country_chart_2" class="pabat-chart hide"></div>
+	<div id="country_chart_3" class="pabat-chart hide"></div>
+	<div id="pa_chart_1" class="pabat-chart hide"></div>
+	<div id="pa_chart_2" class="pabat-chart hide"></div>
+	<div id="pa_chart_3" class="pabat-chart hide"></div>
 </div>
 
 <div class="cta-image-holder croatian-background-color-1 flex items-center justify-center">
