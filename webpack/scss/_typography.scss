@@ -8,8 +8,8 @@ $raleway: 'Raleway', sans-serif;
 
 html {
 	font-family: $raleway;
-  font-size: 16px;
-  color: $grey-dark;
+	font-size: 16px;
+	color: $grey-dark;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -24,43 +24,43 @@ sup {
 }
 
 .page li {
-  padding: 0.25em 0;
+	padding: 0.25em 0;
 }
 
 a {
-  color: $grey-dark;
-  text-decoration: none;
+	color: $grey-dark;
+	text-decoration: none;
 }
 
 .text-shadow {
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.25);
 }
 
 /* Fonts */
 
 .raleway {
 	font-family: $raleway;
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .raleway-light {
 	font-family: $raleway;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .raleway-bold {
 	font-family: $raleway;
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .playfair {
 	font-family: $playfair;
-  font-weight: normal;
+	font-weight: normal;
 }
 
 .playfair-bold {
 	font-family: $playfair;
-  font-weight: 900;
+	font-weight: 900;
 }
 
 /* Sizes */
