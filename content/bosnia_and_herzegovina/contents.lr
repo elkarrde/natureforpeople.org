@@ -10,15 +10,15 @@ banner_message: Appropriate management provides a greater appreciation and impro
 ---
 banner_button_text: Find out more
 ---
-fact_1_title: Tourism
+fact_4_title: Tourism
 ---
-fact_1_subtitle: The number of visitors
+fact_4_subtitle: The number of visitors
 ---
-fact_1_copy: Tourism sector in Bosnia and Herzegovina is in its initial development phase, and profit from tourism is far below average profit of competitive countries. Potential in tourism in Bosnia and Herzegovina is considered to be a big opportunity for economic recovery in the country.
+fact_4_copy: Tourism sector in Bosnia and Herzegovina is in its initial development phase, and profit from tourism is far below average profit of competitive countries. Potential in tourism in Bosnia and Herzegovina is considered to be a big opportunity for economic recovery in the country.
 ---
-fact_1_question: How to solve obvious flaws of tourism offer and infrastructure in protected areas?
+fact_4_question: How to solve obvious flaws of tourism offer and infrastructure in protected areas?
 ---
-fact_1_caption: 2% share of tourism in GDP in Bosnia and Herzegovina
+fact_4_caption: 2% share of tourism in GDP in Bosnia and Herzegovina
 ---
 fact_2_title: Jobs
 ---
@@ -40,22 +40,22 @@ fact_3_question: Is the local community aware of the benefits of the ecosystem s
 ---
 fact_3_caption: Bosnia and Herzegovina with more than 9,200 m3 of water per capita in the richest country of drinking water in the region and among the ten richest countries in Europe.
 ---
-fact_4_title: Forestry
+fact_1_title: Forestry
 ---
-fact_4_subtitle: Distribution of income
+fact_1_subtitle: Distribution of income
 ---
-fact_4_copy: In cooperation with IKEA and through the forest certification (FSC) WWF is trying to reduce illegal cutting and to promote responsible forest management in order to support a sustainable development in Bosnia and Herzegovina.
+fact_1_copy: In cooperation with IKEA and through the forest certification (FSC) WWF is trying to reduce illegal cutting and to promote responsible forest management in order to support a sustainable development in Bosnia and Herzegovina.
 ---
-fact_4_question: Are natural resource in B&H used in a sustainable way?
+fact_1_question: Are natural resource in B&H used in a sustainable way?
 ---
-fact_4_caption: 63% of the territory of Bosnia and Herzegovina is covered by forests and forest land.
+fact_1_caption: 63% of the territory of Bosnia and Herzegovina is covered by forests and forest land.
 ---
 cta_button_text: Let's solve challenges together
 ---
-fact_1_title_icon: tourism
+fact_4_title_icon: tourism
 ---
 fact_2_title_icon: jobs
 ---
 fact_3_title_icon: fresh-water
 ---
-fact_4_title_icon: forrest
+fact_1_title_icon: forrest

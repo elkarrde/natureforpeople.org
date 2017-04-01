@@ -10,15 +10,15 @@ banner_message: Odgovarajuće upravljanje pruža veću zahvalnost i poboljšanu 
 ---
 banner_button_text: Saznajte više
 ---
-fact_1_title: Turizam
+fact_4_title: Turizam
 ---
-fact_1_subtitle: Broj posjetitelja
+fact_4_subtitle: Broj posjetitelja
 ---
-fact_1_copy: Turistički sektor u Bosni i Hercegovini u početnoj je fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda konkurentnih zemalja. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji.
+fact_4_copy: Turistički sektor u Bosni i Hercegovini u početnoj je fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda konkurentnih zemalja. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji.
 ---
-fact_1_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
+fact_4_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
 ---
-fact_1_caption: 2% udio turizma u BDP-u Bosne i Hercegovine
+fact_4_caption: 2% udio turizma u BDP-u Bosne i Hercegovine
 ---
 fact_2_title: Poslovi
 ---
@@ -40,22 +40,22 @@ fact_3_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosust
 ---
 fact_3_caption: Bosna i Hercegovina s više od 9.200 m3 vode po glavi stanovnika najbogatija je zemlja pitkom vodom u regiji i među deset najbogatijih zemalja u Europi.
 ---
-fact_4_title: Šumarstvo
+fact_1_title: Šumarstvo
 ---
-fact_4_subtitle: Raspodijela prihoda
+fact_1_subtitle: Raspodijela prihoda
 ---
-fact_4_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) pokušava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
+fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) pokušava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
 ---
-fact_4_question: Koriste li se prirodni resursi u BiH na održivi način?
+fact_1_question: Koriste li se prirodni resursi u BiH na održivi način?
 ---
-fact_4_caption: 63% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
+fact_1_caption: 63% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
-fact_1_title_icon: tourism
+fact_4_title_icon: tourism
 ---
 fact_2_title_icon: jobs
 ---
 fact_3_title_icon: fresh-water
 ---
-fact_4_title_icon: forrest
+fact_1_title_icon: forrest
