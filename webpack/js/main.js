@@ -66,17 +66,17 @@ jQuery(document).ready(function(){
 		}
 	});
 
-	if ($('#counter').length == 1) {
-		animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
-	}
-
-	if ($('#counter300').length == 1) {
-		animationHelpers.animateValue("counter300", 0, parseInt($('#counter300').html()), 4000);
-	}
-
 	animationHelpers.drawDonutChart('#homepage-fact-1', $('#homepage-fact-1').data('donut'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#homepage-fact-2', $('#homepage-fact-2').data('donut'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#homepage-fact-3', $('#homepage-fact-3').data('donut'), 200, 200, ".4em");
+
+	animationHelpers.animateValue("#croatia-fact-1", 4000);
+	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
+
+	animationHelpers.animateValue("#bosnia-fact-2", 4000);
+	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
 
 	// Check if correct localization string
 
