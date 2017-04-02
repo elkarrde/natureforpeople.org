@@ -675,7 +675,6 @@ section.countries-map {
 	  text-shadow: 4px 4px 10px 0 rgba(0,0,0,0.15);
 	  font-size: 5rem;
 	  line-height: 6rem;
-	  margin-bottom: 2rem;
   }
 
   .index-banner-button {
@@ -687,7 +686,6 @@ section.countries-map {
 	  font-weight: 900;
 	  font-size: 1rem;
 	  text-decoration: none;
-	  z-index: 99;
   }
 }
 
@@ -814,7 +812,6 @@ section.countries-map {
 	position: relative;
 	width: 100%;
 	height: calc(100vh - 100px);
-	z-index: 50;
 
 	.big-map {
 		position: absolute;
