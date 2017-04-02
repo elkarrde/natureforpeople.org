@@ -7,6 +7,35 @@
 
 #homepage-facts .donut svg {
 	text { fill: $ba-yellow; }
-	path.color0 { fill: $ba-yellow; }
-	path.color1 { fill: $ba-yellow-dark; }
+	.arc0 { fill: $ba-yellow; }
+	.arc1 { fill: $ba-yellow-dark; }
+}
+
+#croatia-fact-1 {
+	color: $hr-red;
+}
+
+#croatia-fact-3 svg,
+#croatia-fact-4 svg {
+	text { fill: $hr-blue-dark; }
+	.arc0 { fill: $hr-red; }
+	.arc1 { fill: $hr-blue-dark; }
+}
+
+#croatia-fact-2 {
+	text { fill: $hr-red; }
+	.bar0 { fill: $hr-blue; }
+	.bar1 { fill: $hr-blue-dark; }
+}
+
+#bosnia-fact-1 svg,
+#bosnia-fact-4 svg {
+	text { fill: $ba-yellow; }
+	.arc0 { fill: $ba-yellow; }
+	.arc1 { fill: $ba-yellow-dark; }
+}
+
+#bosnia-fact-2,
+#bosnia-fact-3 {
+	color: $ba-yellow-dark;
 }

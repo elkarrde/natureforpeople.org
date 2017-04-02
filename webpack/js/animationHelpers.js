@@ -2,8 +2,6 @@ var animateValue = function(elem_id, duration) {
 	var start = 0;
 	var end = parseInt($(elem_id).html(), 10);
 
-	console.log(start, end);
-
 	var range = end - start;
 	var current = start;
 	var factor = Math.ceil(Math.log10(Math.abs(start-end))*1000)
@@ -24,6 +22,8 @@ var animateValue = function(elem_id, duration) {
 }
 
 var drawBarChart = function(element, dataSet, canvasHeight, canvasWidth) {
+	if (!dataSet) { return }
+
 	var canvasHeight = typeof canvasHeight !== 'undefined' ? canvasHeight : 200
 	var canvasWidth = typeof canvasWidth !== 'undefined' ? canvasWidth : 200
 	var heightRatio = d3.max(dataSet) / canvasHeight;
@@ -46,13 +46,13 @@ var drawBarChart = function(element, dataSet, canvasHeight, canvasWidth) {
 		.attr('y',  function(d){return canvasHeight;})
 		.attr("height", function(d){return 0;})
 		.attr("width", rectWidth - barPadding)
-		.attr("fill", function(d){ return "rgb(0, " + Math.floor(176 - d/d3.max(dataSet) * 33 )   +", 155)"; });
 
 	//Animate the chart
 	canvas.selectAll('rect')
 		.transition().duration(3000)
 		.attr('y',  function(d){return canvasHeight - d/heightRatio;})
-		.attr("height", function(d){return d/heightRatio;});
+		.attr("height", function(d){return d/heightRatio})
+		.attr("class", function(d, i) { return "bar" + i })
 
 	// Text
 	canvas.selectAll('text')
@@ -71,6 +71,8 @@ var drawBarChart = function(element, dataSet, canvasHeight, canvasWidth) {
 }
 
 function drawDonutChart(element, percent, width, height, text_y) {
+	if (!percent) { return }
+
 	width = typeof width !== 'undefined' ? width : 200;
 	height = typeof height !== 'undefined' ? height : 200;
 	text_y = typeof text_y !== 'undefined' ? text_y : "-.10em";
@@ -101,7 +103,7 @@ function drawDonutChart(element, percent, width, height, text_y) {
 	var path = svg.selectAll("path")
 		.data(pie(dataset.lower))
 		.enter().append("path")
-		.attr("class", function(d, i) { return "color" + i })
+		.attr("class", function(d, i) { return "arc" + i })
 		.attr("d", arc)
 		.each(function(d) { this._current = d; });
 

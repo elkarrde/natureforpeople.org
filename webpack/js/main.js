@@ -71,6 +71,7 @@ jQuery(document).ready(function(){
 	animationHelpers.drawDonutChart('#homepage-fact-3', $('#homepage-fact-3').data('donut'), 200, 200, ".4em");
 
 	animationHelpers.animateValue("#croatia-fact-1", 4000);
+	animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
 	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
 
@@ -210,4 +211,9 @@ function panMapToPoint(svg, x, y) {
 function parseViewBox(viewBoxStr) {
 	var vbAttrs = viewBoxStr.split(" ").map(function(istr) { return parseInt(istr, 10) });
 	return { "w": vbAttrs[2], "h": vbAttrs[3] };
+}
+
+function parseDataSet(bars) {
+	if (!bars) { return }
+	return _.map(bars.split(','), function(num) { return parseInt(num, 10) });
 }
