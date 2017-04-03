@@ -1,55 +1,68 @@
 {% extends "layout.html" %}
 
-{% import "macros/info_card.html" as cards %}
+{% set body_class = 'protected-areas' %}
 
 {% block body %}
-<div class="short-banner pa-banner-image pt8 flex justify-center items center flex-column">
-	<h1 class="banner-title col-6 mx-auto center">{{ this.headline }}</h1>
+
+{% include "shared/_short_banner.html" %}
+
+<section id="pa-pickers" class="pt4">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+
+            <div class="col md-col-6 p2">
+                <div class="playfair-bold h2 opacity-10 lh0">{{ this.country }}</div>
+                <p class="h6 bold" style="margin-top: -1rem">{{ this.step_1 }}</p>
+                {% include "pa/_country_picker.html" %}
+            </div>
+
+            <div class="col md-col-6 p2">
+                <div class="playfair-bold h2 opacity-10 lh0">{{ this.pa }}</div>
+                <p class="h6 bold" style="margin-top: -1rem">{{ this.step_2 }}</p>
+                {% include "pa/_pa_picker.html" %}
+            </div>
+
+            <div class="col sm-col-12 p2 mt3">
+                <div class="playfair-bold h2 opacity-10 lh0">{{ this.values }}</div>
+                <p class="h6 bold" style="margin-top: -1rem">{{ this.graph_values }}</p>
+            </div>
+
+            <div class="col sm-col-12 p2">
+                {% include "pa/_graph_type_picker.html" %}
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="pa-graphs" class="py4">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix">
+
+            <div class="no-graphs sm-col-12 md-col-8 px2 mx-auto">
+		            <p class="playfair-bold h2 opacity-50 mb0 center">{{ this.message_head }}</p>
+		            <ol class="playfair-bold h3 opacity-20">
+			              <li>{{ this.message_1 }}</li>
+			              <li>{{ this.message_2 }}</li>
+		            </ol>
+            </div>
+
+            <div class="sm-col-12 px2">
+	              <div id="country_chart_1" class="pabat-chart hide"></div>
+	              <div id="country_chart_2" class="pabat-chart hide"></div>
+	              <div id="country_chart_3" class="pabat-chart hide"></div>
+	              <div id="pa_chart_1" class="pabat-chart hide"></div>
+	              <div id="pa_chart_2" class="pabat-chart hide"></div>
+	              <div id="pa_chart_3" class="pabat-chart hide"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg-hr-blue py4 center">
+	  <a href="{{ '/recommendations' | url(alt) }}" class="btn white border-white">{{ this.cta_button_text }}</a>
 </div>
 
-<div class="pt8 col-11 flex flex-wrap">
-	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.country }}</div>{{ this.step_1 }}</h2>
-		{% include "pa/_country_picker.html" %}
-	</div>
-
-	<div class="lg-col-5 mx-auto col-10 flex items-center mt4 flex-column">
-		<h2 class="pa-h2 mb3 relative"><div class="chooser-headline">{{ this.pa }}</div>{{ this.step_2 }}</h2>
-		{% include "pa/_pa_picker.html" %}
-	</div>
-</div>
-
-<div class="col-11">
-	<h2 class="pa-h2 sm-ml6 ml4 lg-ml16 mt4 mb3 relative"><div class="chooser-headline">{{ this.values }}</div>{{ this.graph_values }}</h2>
-</div>
-
-{% include "pa/_graph_type_picker.html" %}
-
-<div class="col-10 sm-col-8 md-col-8 mx-auto my4 flex justify-center items-center flex-column">
-	<div class="no-graphs">
-		<p class="no-graphs-h1">{{ this.message_head }}</p>
-		<ol class="no-graphs-ol ml4 mb4">
-			<li>{{ this.message_1 }}</li>
-			<li>{{ this.message_2 }}</li>
-		</ol>
-	</div>
-	<div id="country_chart_1" class="pabat-chart hide"></div>
-	<div id="country_chart_2" class="pabat-chart hide"></div>
-	<div id="country_chart_3" class="pabat-chart hide"></div>
-	<div id="pa_chart_1" class="pabat-chart hide"></div>
-	<div id="pa_chart_2" class="pabat-chart hide"></div>
-	<div id="pa_chart_3" class="pabat-chart hide"></div>
-</div>
-
-<div class="cta-image-holder croatian-background-color-1 flex items-center justify-center">
-	<a href="#" class="block cta-white-button flex items-center justify-center">
-		<p class="mx3 default-color-1">{{ this.cta_button_text }}</p>
-	</a>
-</div>
-
-<div class="second-container-background">
-	<p class="card-background-text md-hide sm-hide xs-hide croatian-color-1">{{ this.learn_more }}</p>
-
-  {% include "homepage/_learn_more.html" %}
+{% include "homepage/_learn_more.html" %}
 
 {% endblock %}

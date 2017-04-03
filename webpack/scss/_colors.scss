@@ -50,6 +50,10 @@
   color: $black-light;
 }
 
+.bg-hr-blue {
+    background-color: $hr-blue;
+}
+
 .bg-grey-light {
   background-color: $grey-light;
 }
@@ -136,4 +140,8 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
 
 .border-white {
   border: 3px solid $white;
+}
+
+.border-hr-blue {
+  border: 3px solid $hr-blue;
 }

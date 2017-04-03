@@ -2,7 +2,7 @@ _model: protected_areas
 ---
 title: PABAT
 ---
-headline: Protected areas
+main_headline: Protected areas
 ---
 step_1: Choose country from dropdown menu:
 ---
