@@ -2,6 +2,10 @@
 
 {% set body_class = 'wwf-examples' %}
 
+{% block title %}
+  {{ this.title }}
+{% endblock %}
+
 {% block body %}
 
 {% include "shared/_short_banner.html" %}
@@ -17,7 +21,7 @@
         <div class="box-shadow center bg-white">
           <div class="card-image {{ fact.slug }}"></div>
           <div class="px2 pb3">
-            <h3 class="h4 bold">{{ fact.bg_text }}</h3>
+            <h3 class="h4 bold">{{ fact.link_button }}</h3>
             <a href="{{ fact|url }}" class="btn border-me-orange-red">{{ fact.learn_more_button }}</a>
           </div>
         </div>

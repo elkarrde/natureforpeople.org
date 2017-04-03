@@ -4,6 +4,10 @@
 
 {% import 'country/_facts.html' as facts %}
 
+{% block title %}
+    {{ this.title }}
+{% endblock %}
+
 {% block body %}
 
 {% include "country/_banner.html" %}

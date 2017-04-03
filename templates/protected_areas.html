@@ -2,6 +2,10 @@
 
 {% import "macros/info_card.html" as cards %}
 
+{% block title %}
+	{{ this.title }}
+{% endblock %}
+
 {% block body %}
 <div class="short-banner pa-banner-image pt8 flex justify-center items center flex-column">
 	<h1 class="banner-title col-6 mx-auto center">{{ this.headline }}</h1>
