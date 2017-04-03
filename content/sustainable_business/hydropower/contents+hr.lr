@@ -20,7 +20,7 @@ intro_body: <p>Od alpskih brzaca preko širokih i vijugavih ravničarskih tokova
 
 <p>Temelj su zdravog okoliša zdravi i očuvani slatkovodni sustavi zbog čega je dugoročno očuvanje vodnih ekosustava značajno za opstanak i prosperitet našeg društva. Nažalost, većini rijeka, jezera i močvara zapadnog Balkana danas prijete nekontrolirane ljudske aktivnosti, kao što su regulacija vodotoka i uništavanje staništa, izgradnja brana i stvaranje akumulacija, prekomjerno crpljenje vode za piće, industriju i navodnjavanje, unošenje stranih vrsta te onečišćenje. Sve ove prijetnje mogu se svesti pod zajednički nazivnik neadekvatnog upravljanja vodnim resursima, što uključuje neprovođenje zakona, korištenje zastarjelih praksi, nedostatak strateškog i multidisciplinarnog planiranja te izbjegavanje provođenja mjera ublažavanja.</p>
 
-<div style="padding-left: 1em; border: 1px solid black; background-color: yellow;">
+<div class="py1 px3 my3 bg-emphasize-yellow">
 	<p>Cilj WWF-ova slatkovodnog programa je:</p>
 	<ul>
 		<li>osigurati zdrave ekosustave u riječnim slivovima zapadnog Balkana,</li>
