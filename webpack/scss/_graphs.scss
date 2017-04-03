@@ -1,6 +1,7 @@
 .counter {
-	  font-size: 5rem;
-	  font-weight: 900;
+	font-size: 5rem;
+	font-weight: 900;
+	line-height: 11rem;
 }
 
 .donut {
@@ -15,8 +16,17 @@
 	.arc1 { fill: $ba-blue; }
 }
 
-#croatia-fact-1 {
+#croatia-fact-1,
+#croatia-fact-2 {
 	color: $hr-red;
+}
+
+#hr-facts-1 .counter-wrapper {
+	background: url('/static/images/visitors.svg') no-repeat center;
+}
+
+#hr-facts-2 .counter-wrapper {
+	background: url('/static/images/funds.svg') no-repeat center;
 }
 
 #croatia-fact-3 svg,
@@ -24,12 +34,6 @@
 	text { fill: $hr-blue-dark; }
 	.arc0 { fill: $hr-red; }
 	.arc1 { fill: $hr-blue-dark; }
-}
-
-#croatia-fact-2 {
-	text { fill: $hr-red; }
-	.bar0 { fill: $hr-blue; }
-	.bar1 { fill: $hr-blue-dark; }
 }
 
 #bosnia-fact-1 svg,
