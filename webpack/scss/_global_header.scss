@@ -1,4 +1,4 @@
-$global-header-height: 70px;
+$global-header-height: 60px;
 $mobile-header-height: 50px;
 
 .page {
@@ -44,6 +44,11 @@ $mobile-header-height: 50px;
     }
   }
 }
+
+body.wwf-examples .global-header .link.active { border-color: $hr-red; }
+body.sustainable-business .global-header .link.active { border-color: $xk-orange; }
+body.recommendations .global-header .link.active { border-color: $al-yellow; }
+body.protected-areas .global-header .link.active { border-color: $hr-blue; }
 
 @media (max-width: $breakpoint-sm) {
   .page {
