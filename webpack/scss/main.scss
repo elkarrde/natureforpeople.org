@@ -31,6 +31,20 @@
 	  height: 30vh;
 }
 
+.highlight {
+    background-color: $grey-light;
+    padding: 2rem 2rem 2rem 3rem;
+    border-left: 3px solid transparent;
+}
+
+.sustainable-business .highlight {
+    border-image: linear-gradient(to bottom, $xk-magenta-dark 0%, $xk-orange 100%) 1;
+}
+
+.wwf-examples .highlight {
+    border-image: linear-gradient(to bottom, $hr-blue-dark 0%, $hr-red 100%) 1;
+}
+
 /* TODO: delete everything(!) below */
 
 $albanian-color: #7AB638;
