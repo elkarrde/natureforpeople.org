@@ -1,35 +1,26 @@
 <section id="homepage-countries" class="countries-map relative flex justify-center items-center flex-column">
 
-	<div class="col-12 lg-col-9 z1">
-		<div class="col-12 md-col-9 mx-auto center">
-			<h1 class="index-banner-quote center mb0 pb0">{{ this.headline }}</h1>
-		</div>
+    <div class="z1 px2 md-col-8 lg-col-6">
+        <h1 class="playfair-bold white h2 center mt4 text-shadow">{{ this.headline }}</h1>
+    </div>
 
-		<div class="col-10 md-col-9 lg-col-6 mb2 flex mx-auto justify-center items-center">
-			<div class="landing-page-carousel flex justify-around">
-				<ul class="carousel-messages max-width-2">
-					<li id="carousel-msg-0" class="carousel-msg show">
-						<p class="default-color-1 center">{{ this.message }}</p>
-					</li>
-				</ul>
-			</div>
-		</div>
+    <div class="z1 px2 sm-col-10 md-col-6 lg-col-4">
+        <p class="white center">{{ this.message }}</p>
+    </div>
 
-	</div>
+    <a href="#map" class="index-banner-button btn rounded white bg-ba-yellow-blue mx-auto my3 xs-hide sm-hide">{{ this.scroll_to_map_button_text }}</a>
 
-	<a href="#map" class="index-banner-button mx-auto flex items-center justify-center mb3 px3 xs-hide sm-hide">
-		<p class="default-color-1">{{ this.scroll_to_map_button_text }}</p>
-	</a>
+    <div class="map-wrapper z2" id="map">
 
-	<div class="map-wrapper z2" id="map">
-		{% include "homepage/_countries_map.html" %}
-		<div class="big-map-desc">
-			<h2 class="country-name ml3 mb0">{{ bag('country-names', this.alt, 'croatia') }}</h2>
-			<a href="{{ '/croatia'|url }}" class="about-country-button mx3 mt2 mb1 flex items-center justify-center">
-				<p class="default-color-1"><span class="more-about-name"><span>{{ bag('country-names', this.alt, 'croatia_btn') }}</span></p>
-			</a>
-			<i class="country-prev icon-navigate_before"></i>
-			<i class="country-next icon-navigate_next"></i>
-		</div>
-	</div>
+        {% include "homepage/_countries_map.html" %}
+
+        <div class="big-map-desc white">
+            <h2 class="playfair-bold h1 ml3 mb0 text-shadow">{{ bag('country-names', this.alt, 'croatia') }}</h2>
+            <a href="{{ '/croatia'|url }}" class="about-country-button h5 text-shadow btn border-hr-red-blue mx3 mt2 mb1 white bold">{{ bag('country-names', this.alt, 'croatia_btn') }}</a>
+            <div>
+                <i class="country-prev pointer h1 icon-navigate_before text-shadow"></i>
+                <i class="country-next pointer h1 icon-navigate_next text-shadow"></i>
+            </div>
+		    </div>
+	  </div>
 </section>

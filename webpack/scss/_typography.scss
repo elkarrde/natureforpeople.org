@@ -92,3 +92,34 @@ a {
 
 .lh0 { line-height: 0.75em }
 .lh1 { line-height: 0.9em }
+
+sub, sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// Highlight section
+
+.highlight {
+    background-color: $grey-light;
+    padding: 2rem 2rem 2rem 3rem;
+    border-left: 3px solid transparent;
+}
+
+.sustainable-business .highlight {
+    border-image: linear-gradient(to bottom, $xk-magenta-dark 0%, $xk-orange 100%) 1;
+}
+
+.wwf-examples .highlight {
+    border-image: linear-gradient(to bottom, $me-red 0%, $me-orange-dark 100%) 1;
+}
