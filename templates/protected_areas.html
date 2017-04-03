@@ -50,11 +50,6 @@
 <div class="second-container-background">
 	<p class="card-background-text md-hide sm-hide xs-hide croatian-color-1">{{ this.learn_more }}</p>
 
-	<!--<div class="cards-container after-txt-bg flex flex-wrap mxn2 max-width-4 mx-auto justify-center">-->
-  <div class="cards-container after-txt-bg mxn2 max-width-4 mx-auto flex flex-wrap justify-center py5 md-py5">
-  		{{ cards.card_w_img(this.case_study_1, '/wwf_examples'|url, img_class='urban_park', btn_text=this.learn_more, cols=3) }}
-		{{ cards.card_w_img(this.case_study_2, '/sustainable_business'|url, img_class='odrzivo_poslovanje', btn_text=this.learn_more, cols=3) }}
-		{{ cards.card_w_img(this.case_study_3, '/protected-areas'|url, img_class='zast_podrucja', btn_text=this.learn_more, cols=3) }}
-	</div>
-</div>
+  {% include "homepage/_learn_more.html" %}
+
 {% endblock %}

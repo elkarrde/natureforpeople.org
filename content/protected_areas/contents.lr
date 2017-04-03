@@ -28,20 +28,20 @@ message_2: Choose values
 ---
 cta_button_text: Let's solve challenges together
 ---
-learn_more: Learn more
----
-learn_more_button: Learn more
----
 country: Country
 ---
 pa: Protected areas
 ---
 values: Values
 ---
-case_study_1: WWF Examples
+learn_more_backline: Learn more
 ---
-case_study_2: Sustainable Business
+learn_more_cta: Learn more
 ---
-case_study_3: Protected Areas
+learn_more_title_1: WWF Examples
+---
+learn_more_title_2: Sustainable Business
+---
+learn_more_title_3: Protected Areas
 ---
 slug: protected-areas
