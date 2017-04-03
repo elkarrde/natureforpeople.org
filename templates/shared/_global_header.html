@@ -59,6 +59,13 @@
         <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
+
+      <!-- languages -->
+      <li>
+        <hr class="link-inverted block px2 py0 m0">
+      </li>
+        <a class="link-invert block px2 py1 {% if this.alt == 'hr' %}active{% endif %}"  href="{{ '.'|url(alt='hr') }}">Hrvatski</a>
+        <a class="link-invert block px2 py1 {% if this.alt == 'en' %}active{% endif %}"  href="{{ '.'|url(alt='en') }}">English</a>
     </ul>
   </div>
 
