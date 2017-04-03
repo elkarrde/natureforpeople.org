@@ -28,8 +28,7 @@
 }
 
 .short-banner {
-	  height: 30vh;
-    min-height: 300px;
+	  height: 50vh;
 }
 
 .highlight {
@@ -43,7 +42,7 @@
 }
 
 .wwf-examples .highlight {
-    border-image: linear-gradient(to bottom, $hr-blue-dark 0%, $hr-red 100%) 1;
+    border-image: linear-gradient(to bottom, $me-red 0%, $me-orange-dark 100%) 1;
 }
 
 /* TODO: delete everything(!) below */
