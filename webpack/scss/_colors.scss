@@ -4,6 +4,10 @@
   color: $white;
 }
 
+.white-hover:hover {
+  color: $white;
+}
+
 .grey-light {
   color: $grey-light;
 }
@@ -30,6 +34,10 @@
 
 .red {
   color: $red;
+}
+
+.hr-blue {
+  color: $hr-blue;
 }
 
 /* Backgrounds */
@@ -66,12 +74,20 @@
   background-color: $grey;
 }
 
+.bg-hr-blue-hover:hover {
+  background-color: $hr-blue;
+}
+
+.bg-hr-blue-red {
+  background: linear-gradient(135deg, $hr-red 0%, $hr-blue-dark 100%);
+}
+
 .bg-si-green-cyan {
   background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);
 }
 
-.bg-emphasize-yellow {
-  background-color: rgba(255,255,0,0.5);
+.bg-ba-yellow-blue {
+  background: linear-gradient(315deg, $ba-yellow 0%, $ba-blue 100%);
 }
 
 /* Text colors - 'cc' prefix as 'country color' */

@@ -6,14 +6,14 @@
   </a>
 
   <!-- WWF main navigation - Countries dropdown + pages -->
-  <nav id="main-nav" class="main-nav col-9 mx-auto">
+  <nav id="main-nav" class="main-nav px2 max-width-4 mx-auto">
     <ul class="list-reset m0 flex flex-row justify-around xs-hide sm-hide md-hide">
-      <li>
+      <li class="flex-1">
 
         <!-- Countries dropdown -->
         {% set countries = bag('country-navigation', this.alt).iteritems() %}
         <div id="countries-dropdown" class="nav-dropdown">
-          <button class="link-invert pointer border-none px2 flex flex-row justify-center items-center">
+          <button class="w100 link-invert pointer border-none px2 flex flex-row justify-center items-center">
             <span class="mr1 uppercase left-align">{{ countries.next()[1] }}</span>
             <i class="icon-arrow-drop-down"></i>
           </button>
@@ -29,7 +29,7 @@
       </li>
 
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
-      <li>
+      <li class="flex-1">
         <a class="link block px3 flex items-center {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
@@ -38,8 +38,8 @@
 
   <!-- Mobile navigation -->
   <div id="mobile-nav" class="nav-dropdown absolute top-0 right-0 lg-hide">
-    <button class="link-invert ml-auto pointer border-none px2 flex flex-column justify-center items-center">
-      <span class="icon-menu-bars"></span>
+    <button class="link-invert ml-auto pointer border-none px2 flex">
+      <span class="icon-menu-bars self-center"></span>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
@@ -59,6 +59,13 @@
         <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}
+
+      <!-- languages -->
+      <li>
+        <hr class="link-inverted block px2 py0 m0">
+      </li>
+        <a class="link-invert block px2 py1 {% if this.alt == 'hr' %}active{% endif %}"  href="{{ '.'|url(alt='hr') }}">Hrvatski</a>
+        <a class="link-invert block px2 py1 {% if this.alt == 'en' %}active{% endif %}"  href="{{ '.'|url(alt='en') }}">English</a>
     </ul>
   </div>
 

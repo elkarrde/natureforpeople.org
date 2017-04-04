@@ -33,3 +33,25 @@
 
     &:hover ul { display: block; }
 }
+
+.protected-areas .graph-card {
+    color: $hr-blue;
+    background-color: $white-dirty;
+
+    i {
+        background: linear-gradient(135deg, $hr-red 0%, $hr-blue-dark 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        color: $white;
+        background-color: $hr-blue;
+
+        i {
+            background: $white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
