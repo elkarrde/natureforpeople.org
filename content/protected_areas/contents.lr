@@ -14,9 +14,11 @@ pa_2: Select protected area
 ---
 graph_values: Choose values you want displayed on graph:
 ---
-econ_value: Overall economic values
+overall_values: Overall values
 ---
-flow_econ: Flow of economic value
+econ_values: Overall economic values
+---
+flow_econ_value: Flow of economic value
 ---
 potential: Main potentials
 ---

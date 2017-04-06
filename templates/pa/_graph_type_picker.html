@@ -1,20 +1,27 @@
-<div class="max-width-4 mx-auto">
-    <div class="clearfix graph-type-picker flex flex-wrap">
+<div class="max-width-4 mx-auto xs-hide sm-hide">
 
-        <div class="sm-col sm-col-4 p2 flex-1">
-            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="1">
+    <div class="clearfix graph-type-picker flex flex-wrap" id='graph-type-picker-wide'>
+
+        <div class="sm-col sm-col-3 p2 flex-1">
+            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="overall">
                 <i class="h1 icon-Overall_economic_value_icon"></i>
-                <p class="h5 bold mb0">{{ this.econ_value }}</p>
+                <p class="h5 bold mb0">{{ this.overall_values }}</p>
             </a>
         </div>
-        <div class="sm-col sm-col-4 p2 flex-1">
-            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="2">
+        <div class="sm-col sm-col-3 p2 flex-1">
+            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="overall_econ">
+                <i class="h1 icon-Overall_economic_value_icon"></i>
+                <p class="h5 bold mb0">{{ this.econ_values }}</p>
+            </a>
+        </div>
+        <div class="sm-col sm-col-3 p2 flex-1">
+            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="flow_econ">
                 <i class="h1 icon-Flow_of_economic_value_icon"></i>
-                <p class="h5 bold mb0">{{ this.flow_econ }}</p>
+                <p class="h5 bold mb0">{{ this.flow_econ_value }}</p>
             </a>
         </div>
-        <div class="sm-col sm-col-4 p2 flex-1">
-            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="3">
+        <div class="sm-col sm-col-3 p2 flex-1">
+            <a href="javascript://" class="graph-card block box-shadow h-100 center p3" data-graphid="potentials">
                 <i class="h1 icon-Main_potential_icon"></i>
                 <p class="h5 bold mb0">{{ this.potential }}</p>
             </a>

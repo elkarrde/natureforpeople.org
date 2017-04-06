@@ -7,7 +7,6 @@ questions_g3 = ['Tourism & recreation', 'Livestock grazing', 'Traditional agricu
 questions_g4 = ['Flood prevention', 'Genetic material', 'Formal & informal education', 'Specific site value', 'Cultural & historical values', 'Nature conservation', 'Building knowledge', 'Tourism & recreation', 'Pollination & honey production', 'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood', 'Climate change mitigation', 'Commercial & non-commercial water use', 'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA', 'Nature materials', 'Soil stabilization', 'Medicinal herbs'];
 sectors = ['Bussiness sector', 'National and regional and local government', 'Local people living near the PA', 'Local people living in the PA', 'Civil associations'];
 stakeholder = ['Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government', 'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'];
-overallEconColors = ['#da1d52', '#743873', '#8dc63f', '#743873', '#8dc63f', '#743873', '#fdbc5f', '#fdbc5f', '#fdbc5f', '#da1d52', '#fdbc5f', '#007476', '#007476', '#fdbc5f', '#743873']
 
 translations = {
 	'Flood prevention'                      : '___PREVENCIJA POPLAVE',
@@ -36,49 +35,58 @@ translations = {
 
 function renderGraph(graph_choices) {
 	if (!!graph_choices.protected_area) {
-		if (graph_choices.graph_type == 1) { renderPAOverallEconomic(graph_choices) }
-		else if (graph_choices.graph_type == 2) { renderPAFlowEconValue(graph_choices) }
-		else if (graph_choices.graph_type == 3) { renderPAMainPotentials(graph_choices) }
+		if (graph_choices.graph_type == "overall") { renderPAOverall(graph_choices) }
+		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(graph_choices) }
+		else if (graph_choices.graph_type == "flow_econ") { renderPAFlowEconValue(graph_choices) }
+		else if (graph_choices.graph_type == "potentials") { renderPAMainPotentials(graph_choices) }
 	} else {
-		if (graph_choices.graph_type == 1) { renderCountryOverallEconomic(graph_choices) }
-		else if (graph_choices.graph_type == 2) { renderCountryFlowEconValue(graph_choices) }
-		else if (graph_choices.graph_type == 3) { renderCountryMainPotentials(graph_choices) }
+		if (graph_choices.graph_type == "overall") { renderCountryOverall(graph_choices) }
+		else if (graph_choices.graph_type == "overall_econ") { renderCountryOverallEconomic(graph_choices) }
+		else if (graph_choices.graph_type == "flow_econ") { renderCountryFlowEconValue(graph_choices) }
+		else if (graph_choices.graph_type == "potentials") { renderCountryMainPotentials(graph_choices) }
 	}
+}
+
+function renderCountryOverall(graph_choices) {
+	var dataset = pluckDataCountryOverall(graph_choices.country)
+		, questions = questions_g1
+		, only_counts = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
+		, eco_line =  ['Economic values'].concat(_.map(only_counts, 'eco_v'))
+		, exi_line =  ['Subsistence values'].concat(_.map(only_counts, 'exi_v'))
+		, questions_line = ['x'].concat(questions);
+
+	renderTwicePartedXGraph({
+		id: '#country_chart_overall',
+		columns: [questions_line, eco_line, exi_line],
+		colors: ['#fdbc5f', '#da1d52']
+	});
 }
 
 function renderCountryOverallEconomic(graph_choices) {
 	var dataset = pluckDataCountryOverallEconomic(graph_choices.country)
-		, [labels, values] = _.unzip(_.reverse(_.sortBy(_.toPairs(countVals(dataset, sizeOf)), function(p) { return p[1] } )));
+		, questions = questions_g1
+		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
+		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line =  ['High economic values'].concat(_.map(only_counts, 'high_eco'))
+		, questions_line = ['x'].concat(questions);
 
-	c3.generate({
-		bindto: '#country_chart_1',
-		padding: { left: 110 },
-		data: {
-			x: 'x',
-			type: 'bar',
-			columns: [["x"].concat(translateLables(labels)), [""].concat(values)],
-			color: function (color, d) { return overallEconColors[d.index] }
-		},
-		axis: {
-			rotated: true,
-			x: { type: 'category' }
-		},
-		bar: { width: { ratio: 0.5 } },
-		grid: { y: { show: true } },
-		legend: { show: false }
+	renderTwicePartedXGraph({
+		id: '#country_chart_overall_econ',
+		columns: [questions_line, low_eco_line, high_eco_line],
+		colors: ['#fdbc5f', '#da1d52']
 	});
 }
 
 function renderCountryFlowEconValue(graph_choices) {
 	var dataset = pluckDataCountryFlowOfEconValue(graph_choices.country)
 		, datasetForSectors = _.pick(dataset, sectors)
-		, only_counts = countNestedVals(datasetForSectors, ['low', 'high'], sizeOf)
-		, low_eco_line =  ['Low economic value'].concat(_.map(only_counts, 'low'))
-		, high_eco_line =  ['High economic value'].concat(_.map(only_counts, 'high'))
+		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
+		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line =  ['High economic values'].concat(_.map(only_counts, 'high_eco'))
 		, stakeholders_line = ['x'].concat(sectors);
 
 	renderTwicePartedXGraph({
-		id: '#country_chart_2',
+		id: '#country_chart_flow_econ',
 		columns: [stakeholders_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
 	});
@@ -93,23 +101,38 @@ function renderCountryMainPotentials(graph_choices) {
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
-		id: '#country_chart_3',
+		id: '#country_chart_potentials',
 		columns: [questions_line, eco_pots_line, exi_pots_line],
 		colors: [ '#8dc63f', '#007476']
+	})
+}
+
+function renderPAOverall(graph_choices) {
+	var dataset = pluckDataPAOverall(graph_choices.country, graph_choices.protected_area)
+		, questions = questions_g4
+		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
+		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
+		, exi_vals_line = ['Subsistence values'].concat(_.map(only_non_empty, 'exi_v'))
+		, questions_line = ['x'].concat(questions);
+
+	renderTwicePartedXGraph({
+		id: '#pa_chart_overall',
+		columns: [ questions_line, eco_vals_line, exi_vals_line ],
+		colors: [ '#007476', '#8dc63f']
 	})
 }
 
 function renderPAOverallEconomic(graph_choices) {
 	var dataset = pluckDataPAOverallEconomic(graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
-		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_vals_line = ['Economic'].concat(_.map(only_non_empty, 'eco_v'))
-		, exi_vals_line = ['Subsistence'].concat(_.map(only_non_empty, 'exi_v'))
+		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['low_eco', 'high_eco'], sizeOf)
+		, low_eco_line = ['Low economic values'].concat(_.map(only_non_empty, 'low_eco'))
+		, high_eco_line = ['High economic values'].concat(_.map(only_non_empty, 'high_eco'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
-		id: '#pa_chart_1',
-		columns: [ questions_line, exi_vals_line, eco_vals_line ],
+		id: '#pa_chart_overall_econ',
+		columns: [ questions_line, low_eco_line, high_eco_line ],
 		colors: [ '#007476', '#8dc63f']
 	})
 }
@@ -117,12 +140,12 @@ function renderPAOverallEconomic(graph_choices) {
 function renderPAFlowEconValue(graph_choices) {
 	var dataset = pluckDataPAFlowEconValue(graph_choices.country, graph_choices.protected_area)
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_vals_line = ['Economic'].concat(_.map(only_non_empty, 'eco_v'))
-		, exi_vals_line = ['Subsistence'].concat(_.map(only_non_empty, 'exi_v'))
+		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
+		, exi_vals_line = ['Subsistence values'].concat(_.map(only_non_empty, 'exi_v'))
 		, stakeholders_line = ['x'].concat(_.keys(only_non_empty));
 
 	renderTwicePartedXGraph({
-		id: '#pa_chart_2',
+		id: '#pa_chart_flow_econ',
 		columns: [ stakeholders_line, exi_vals_line, eco_vals_line ],
 		colors: [ '#007476', '#8dc63f']
 	});
@@ -138,10 +161,34 @@ function renderPAMainPotentials(graph_choices) {
 		, stakeholders_line = ['x'].concat(_.keys(sorted));
 
 	renderTwicePartedXGraph({
-		id: '#pa_chart_3',
+		id: '#pa_chart_potentials',
 		columns: [stakeholders_line, p_plus_vals_line, p_minus_vals_line],
 		colors: [ '#007476', '#8dc63f']
 	})
+}
+
+function pluckDataCountryOverall(country) {
+	var country_data = data[country]
+		, questions = questions_g1
+		, results = {};
+
+	if (_.isEmpty(country_data)) { return };
+
+	_.each(questions, function(q) {
+		results[q] = {'eco_v': new Set(), 'exi_v': new Set()};
+		_.each(country_data, function(pa_data, pa_name) {
+			_.each(pa_data[q], function(sh_data, sh_name) {
+
+				if (sh_data.Eco && sh_data.Eco.value > 0) {
+					results[q]['eco_v'].add(pa_name)
+				} else if (sh_data.Exi && sh_data.Exi.value > 0) {
+					results[q]['exi_v'].add(pa_name)
+				}
+			});
+		});
+	});
+
+	return results;
 }
 
 function pluckDataCountryOverallEconomic(country) {
@@ -152,10 +199,15 @@ function pluckDataCountryOverallEconomic(country) {
 	if (_.isEmpty(country_data)) { return };
 
 	_.each(questions, function(q) {
-		results[q] = new Set();
+		results[q] = {'high_eco': new Set(), 'low_eco': new Set()};
 		_.each(country_data, function(pa_data, pa_name) {
 			_.each(pa_data[q], function(sh_data, sh_name) {
-				if (sh_data.Eco && sh_data.Eco.value == 2) { results[q].add(pa_name) };
+
+				if (sh_data.Eco && sh_data.Eco.value == 2) {
+					results[q]['high_eco'].add(pa_name)
+				} else if (sh_data.Eco && sh_data.Eco.value == 1) {
+					results[q]['low_eco'].add(pa_name)
+				}
 			});
 		});
 	});
@@ -173,14 +225,12 @@ function pluckDataCountryFlowOfEconValue(country) {
 	_.each(questions, function(q) {
 		_.each(country_data, function(pa_data, pa_name) {
 			_.each(pa_data[q], function(sh_data, sh_name) {
-				results[sh_name] = results[sh_name] || {'low': new Set(), 'high': new Set()};
+				results[sh_name] = results[sh_name] || {'low_eco': new Set(), 'high_eco': new Set()};
 
 				if (sh_data.Eco && sh_data.Eco.value == 2) {
-					results[sh_name]['high'].add(pa_name)
-				}
-
-				if (sh_data.Eco && sh_data.Eco.value == 1) {
-					results[sh_name]['low'].add(pa_name)
+					results[sh_name]['high_eco'].add(pa_name)
+				} else if (sh_data.Eco && sh_data.Eco.value == 1) {
+					results[sh_name]['low_eco'].add(pa_name)
 				}
 			});
 		});
@@ -213,7 +263,8 @@ function pluckDataCountryMainPotentials(country) {
 	return results;
 }
 
-function pluckDataPAOverallEconomic(country, pa) {
+
+function pluckDataPAOverall(country, pa) {
 	var pa_data = data[country][pa]
 		, questions = questions_g4
 		, results = {};
@@ -228,6 +279,28 @@ function pluckDataPAOverallEconomic(country, pa) {
 				results[q]['eco_v'].add(sh_name);
 			} else if(sh_data.Exi && sh_data.Exi.value > 0) {
 				results[q]['exi_v'].add(sh_name);
+			}
+		});
+	});
+
+	return results;
+}
+
+function pluckDataPAOverallEconomic(country, pa) {
+	var pa_data = data[country][pa]
+		, questions = questions_g4
+		, results = {};
+
+	if (_.isEmpty(pa_data)) { return }
+
+	_.each(questions, function(q) {
+		results[q] = {'low_eco': new Set(), 'high_eco': new Set()};
+		_.each(pa_data[q], function(sh_data, sh_name) {
+
+			if (sh_data.Eco && sh_data.Eco.value == 1) {
+				results[q]['low_eco'].add(sh_name);
+			} else if(sh_data.Eco && sh_data.Eco.value == 2) {
+				results[q]['high_eco'].add(sh_name);
 			}
 		});
 	});

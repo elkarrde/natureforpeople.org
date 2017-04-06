@@ -8,7 +8,6 @@
     }
 
     ul {
-        display: none;
         width: 100%;
         padding: 0px;
         margin: 0px;
@@ -30,8 +29,6 @@
             }
         }
     }
-
-    &:hover ul { display: block; }
 }
 
 .protected-areas .graph-card {

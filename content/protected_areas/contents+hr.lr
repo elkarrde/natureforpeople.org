@@ -14,9 +14,11 @@ pa_2: Odaberite zaštićeno područje
 ---
 graph_values: Odaberite vrijednosti koje želite prikazati na grafu
 ---
-econ_value: Glavne ekonomske vrijednosti
+overall_values: Sve vrijednosti
 ---
-flow_econ: Tijek prihoda dionicima
+econ_values: Glavne ekonomske vrijednosti
+---
+flow_econ_value: Tijek prihoda dionicima
 ---
 potential: Glavni potencijali
 ---
