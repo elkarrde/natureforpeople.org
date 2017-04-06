@@ -1,49 +1,53 @@
-/* breakpoints */
+/* Breakpoints */
 
 $breakpoint-sm: 40em;
 $breakpoint-md: 52em;
 $breakpoint-lg: 64em;
 $breakpoint-xl: 76em;
 
-/* vars */
+/* Colors */
 
-$title-font-family: 'Playfair Display', serif;
-$body-font-family: 'Raleway', sans-serif;
-
-$document-font-size-xs: 24px;
-$document-font-size-sm: 18px;
-$document-font-size-md: 16px;
-
-$default-color: #FEFEFE;
-$default-color-2: #E5E5E5;
-$default-color-3: #4AC2ED;
-$footer-color: #212121;
-$body-color: #4A4A4A;
-$light-background-color: #FAFAFA;
+$white: #FFFFFF;
+$white-dirty: #FAFAFA;
+$grey-light: #E5E5E5;
+$grey: #9B9B9B;
+$grey-dark: #4A4A4A;
+$red: #CD4141;
+$blue-light: #4AC2ED;
+$black-light: #212121;
+$homepage-dark-blue: #48C6EF;
+$homepage-blue: #6F86D6;
 
 /* Country colors */
 
-$albanian-color: #7AB638;
-$albanian-color-2: #0A8C4D;
-$albanian-color-3: #CBBE10;
-$bosnian-color: #BEB81C;
-$bosnian-color-2: #A8A20A;
-$bosnian-color-3: #17A9AE;
-$croatian-color: #0B8BB6;
-$croatian-color-2: #03769D;
-$croatian-color-3: #FA555C;
-$kosovian-color: #6E386C;
-$kosovian-color-2: #492148;
-$kosovian-color-3: #F0733D;
-$macedonian-color: #CD4141;
-$macedonian-color-2: #AB3434;
-$macedonian-color-3: #E06C6C;
-$montenegran-color: #F5A623;
-$montenegran-color-2: #EA8B25;
-$montenegran-color-3: #D62C2C;
-$serbian-color: #3B2D6B;
-$serbian-color-2: #2E2355;
-$serbian-color-3: #58C186;
-$slovenian-color: #27A04C;
-$slovenian-color-2: #0A8C4D;
-$slovenian-color-3: #56ADC2;
+$hr-red: #FA555C;
+$hr-blue: #0B8BB6;
+$hr-blue-dark: #03769D;
+
+$ba-blue: #17A9AE;
+$ba-yellow: #BEB81C;
+$ba-yellow-dark: #A8A20A;
+
+$rs-green: #58C186;
+$rs-blue: #3B2D6B;
+$rs-blue-dark: #2E2355;
+
+$si-cyan: #56ADC2;
+$si-green: #27A04C;
+$si-green-dark: #0A8C4D;
+
+$me-red: #D62C2C;
+$me-orange: #F5A623;
+$me-orange-dark: #EA8B25;
+
+$mk-red-light: #E06C6C;
+$mk-red: #CD4141;
+$mk-red-dark: #AB3434;
+
+$al-yellow: #CBBE10;
+$al-green: #7AB638;
+$al-green-dark: #0A8C4D;
+
+$xk-orange: #F0733D;
+$xk-magenta: #6E386C;
+$xk-magenta-dark: #492148;

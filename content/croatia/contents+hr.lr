@@ -2,9 +2,9 @@ _model: country
 ---
 _template: croatia.html
 ---
-title: PABAT
+title: Hrvatska
 ---
-h1_title: Hrvatska
+banner_title: Hrvatska
 ---
 banner_message: Odgovarajuće upravljanje pruža veću zahvalnost i poboljšanu kvalitetu prirodnog okoliša, što pak privlači turiste i osigurava radna mjesta.
 ---
@@ -20,15 +20,15 @@ fact_1_question: Prepoznaju li strategije turizma zaštićena područja kao pokr
 ---
 fact_1_caption: posjetitelja u zaštićenim područjima u 2012. godini
 ---
-fact_2_title: Vodni resursi
+fact_2_title: Voda
 ---
 fact_2_subtitle: Prihodi od iskorištavanja voda
 ---
-fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura.
+fact_2_copy: U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode.
 ---
 fact_2_question: Kojim strategijama vratiti dio prihoda zaštićenim područjima i lokalnim zajednicama?
 ---
-fact_2_caption: U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode
+fact_2_caption: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura.
 ---
 fact_3_title: Poslovi
 ---
@@ -51,3 +51,11 @@ fact_4_question: Jesu li lokalne zajednice dovoljno informirane i educirane o od
 fact_4_caption: Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%).
 ---
 cta_button_text: Riješimo izazove zajedno
+---
+fact_1_title_icon: tourism
+---
+fact_2_title_icon: fresh-water
+---
+fact_3_title_icon: jobs
+---
+fact_4_title_icon: forrest

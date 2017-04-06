@@ -2,9 +2,9 @@ _model: country
 ---
 _template: croatia.html
 ---
-title: PABAT
+title: Croatia
 ---
-h1_title: Croatia
+banner_title: Croatia
 ---
 banner_message: Appropriate management provides a greater appreciation and improved quality of the natural environment, which in turn attracts tourists and ensures jobs.
 ---
@@ -20,13 +20,15 @@ fact_1_question: Has tourism been recognized as a development driver?
 ---
 fact_1_caption: visitors in protected areas in 2012
 ---
-fact_2_title: Water Resources
+fact_2_title: Water
 ---
 fact_2_subtitle: Income from exploitation of water
 ---
+fact_2_copy: In 14 and the water is of existential importance for the local population; In 7 of the PA's only the public and the business sector realized a huge profit from the commercial use of water
+---
 fact_2_question: How to give part of the income back to the local community?
 ---
-fact_2_caption: In 14 PAs and the water is of existential importance for the local population; In 7 of the JV only the public and the business sector realized a huge profit from the commercial use of water
+fact_2_caption: Two large hydroelectric power plants have an annual revenue of EUR 60 million, but at the same time they do not contribute to the protection of forest ecosystem.
 ---
 fact_3_title: Jobs
 ---
@@ -49,3 +51,11 @@ fact_4_question: Are local communities informed and educated enough regarding su
 fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
 ---
 cta_button_text: Let's solve challenges together
+---
+fact_1_title_icon: tourism
+---
+fact_2_title_icon: fresh-water
+---
+fact_3_title_icon: jobs
+---
+fact_4_title_icon: forrest

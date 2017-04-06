@@ -1,8 +1,8 @@
 _model: protected_areas
 ---
-title: PABAT
+title: Protected areas
 ---
-headline: Protected areas
+bg_text: Protected areas
 ---
 step_1: Choose country from dropdown menu:
 ---
@@ -14,9 +14,11 @@ pa_2: Select protected area
 ---
 graph_values: Choose values you want displayed on graph:
 ---
-econ_value: Overall economic values
+overall_values: Overall values
 ---
-flow_econ: Flow of economic value
+econ_values: Overall economic values
+---
+flow_econ_value: Flow of economic value
 ---
 potential: Main potentials
 ---
@@ -28,19 +30,20 @@ message_2: Choose values
 ---
 cta_button_text: Let's solve challenges together
 ---
-learn_more: Learn more
----
-learn_more_button: Learn more
----
 country: Country
 ---
 pa: Protected areas
 ---
 values: Values
 ---
-case_study_1: WWF Examples
+learn_more_backline: Learn more
 ---
-case_study_2: Sustainable Business
+learn_more_cta: Learn more
 ---
-case_study_3: Protected Areas
+learn_more_title_1: WWF Examples
 ---
+learn_more_title_2: Sustainable Business
+---
+learn_more_title_3: Protected Areas
+---
+slug: protected-areas

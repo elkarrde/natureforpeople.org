@@ -2,114 +2,250 @@ $ = require("jquery");
 d3 = require('d3');
 c3 = require('c3');
 _ = require('lodash');
+Vue = require('vue');
+
 jQuery = $;
 
 animationHelpers = require('./animationHelpers');
 graphs = require('./graphs')
+pickers = require('./pickers')
 
-graph_choices = {
-	country: null,
-	protected_area: null,
-	graph_type: null
+pickers.initPickerPlugins($);
+
+countries = _.each([{
+	name: {
+		'en': "Albania",
+		'hr': "Albania"
+	},
+	code: "ALB",
+	protected_areas: [ { name: 'NP Bredhi i Drenoves', code: '' }, { name: 'NP Bredhi i Hotoves', code: '' }, { name: 'NP Butrinti', code: '' }, { name: 'NP Dajti', code: '' }, { name: 'NP Divjakë-Karavasta', code: '' }, { name: 'NP Dolina Valbona', code: '' }, { name: 'NP Karaburun-Sazan', code: '' }, { name: 'NP Llogara', code: '' }, { name: 'NP Mali i Tomorrit', code: '' }, { name: 'NP Prespa', code: '' }, { name: 'NP Qaf Shtama', code: '' }, { name: 'NP Shebenik Jabllanica', code: '' }, { name: 'NP Thethi', code: '' }]
+}, {
+	name: {
+		'en': "Bosnia & Herzegovina",
+		'hr': "Bosnia i Hercegovina"
+	},
+	code: "BIH",
+	protected_areas: [ { name: 'NP Kozara', code: '' }, { name: 'NP Sutjeska', code: '' }, { name: 'NP Una', code: '' }, { name: 'PP Bijambare', code: '' }, { name: 'PP Hutovo Blato', code: '' }, { name: 'PP Vrelo Bosne', code: '' } ]
+}, {
+	name: {
+		'en': "Croatia",
+		'hr': "Hrvatska"
+	},
+	code: "HRV",
+	protected_areas: [ { name: 'NP Brijuni', code: '' }, { name: 'NP Kornati', code: '' }, { name: 'NP Krka', code: '' }, { name: 'NP Mljet', code: '' }, { name: 'NP Paklenica', code: '' }, { name: 'NP Plitvička Jezera', code: '' }, { name: 'NP Risnjak', code: '' }, { name: 'NP Sjeverni Velebit', code: '' }, { name: 'NP Telašćica', code: '' }, { name: 'PP Biokovo', code: '' }, { name: 'PP Kopački Rit', code: '' }, { name: 'PP Lastovo', code: '' }, { name: 'PP Lonjsko Polje', code: '' }, { name: 'PP Medvednica', code: '' }, { name: 'PP Papuk', code: '' }, { name: 'PP Velebit', code: '' }, { name: 'PP Vransko Jezero', code: '' }, { name: 'PP Žumberak', code: '' } ]
+}, {
+	name: {
+		'en': "Kosovo",
+		'hr': "Kosovo",
+	},
+	code: "KOS",
+	protected_areas: [ { name: 'NP Sharri', code: '' }, { name: 'PP Germia', code: '' } ]
+}, {
+	name: {
+		'en': "Macedonia",
+		'hr': "Makedonija",
+	},
+	code: "MKD",
+	protected_areas: [ { name: 'NP Galičica', code: '' }, { name: 'NP Mavrovo', code: '' }, { name: 'NP Pelister', code: '' }]
+}, {
+	name: {
+		'en': "Montenegro",
+		'hr': "Crna Gora",
+	},
+	code: "MNE",
+	protected_areas: [ { name: 'NP Biogradska Gora', code: '' }, { name: 'NP Durmitor', code: '' }, { name: 'NP Lovćen', code: '' }, { name: 'NP Prokletje', code: '' }, { name: 'NP Skadarsko Jezero', code: '' } ]
+}, {
+	name: {
+		'en': "Serbia",
+		'hr': "Srbija",
+	},
+	code: "SRB",
+	protected_areas: [ { name: 'NP Fruška Gora', code: '' }, { name: 'NP Kopaonik', code: '' }, { name: 'NP Tara', code: '' }, { name: 'NP Đerdap', code: '' }, { name: 'PP Gornje Podunavlje', code: '' }, { name: 'PP Vlasina', code: '' } ]
+}, {
+	name: {
+		'en': "Slovenia",
+		'hr': "Slovenija",
+	},
+	code: "SVN",
+	protected_areas: [ { name: 'NP Triglav', code: '' }, { name: 'PP Krajinski Park Goričko', code: '' }, { name: 'PP Logarska Dolina', code: '' }, { name: 'PP Sečovlje', code: '' } ]
+}], function (country) {
+	_.each(country.protected_areas, function(pa) {
+		var new_name = { 'en': pa.name, 'hr': pa.name };
+		pa.name = new_name;
+	})
+});
+
+graph_types = [{
+	name: {
+		'en': "Overall values",
+		'hr': "Sve vrijednosti",
+	},
+	code: "overall"
+}, {
+	name: {
+		'en': "Overall economic values",
+		'hr': "Glavne ekonomske vrijednosti",
+	},
+	code: "overall_econ"
+}, {
+	name: {
+		'en': "Flow of economic benefits",
+		'hr': "Tijek prihoda dionicima",
+	},
+	code: "flow_econ"
+}, {
+	name: {
+		'en': "Main potentials",
+		'hr': "Glavni potencijali",
+	},
+	code: "potentials"
+}];
+
+translations = {
+	default_choice: {
+		'en': "Please choose",
+		'hr': "Izaberite"
+	}
 }
 
-protected_areas_by_country = {
-	'ALB': ['NP Bredhi i Drenoves', 'NP Bredhi i Hotoves', 'NP Butrinti', 'NP Dajti', 'NP Divjakë-Karavasta', 'NP Dolina Valbona', 'NP Karaburun-Sazan', 'NP Llogara', 'NP Mali i Tomorrit', 'NP Prespa', 'NP Qaf Shtama', 'NP Shebenik Jabllanica', 'NP Thethi'],
-	'BIH': ['NP Kozara', 'NP Sutjeska', 'NP Una', 'PP Bijambare', 'PP Hutovo Blato', 'PP Vrelo Bosne'],
-	'HRV': ['NP Brijuni', 'NP Kornati', 'NP Krka', 'NP Mljet', 'NP Paklenica', 'NP Plitvička Jezera', 'NP Risnjak', 'NP Sjeverni Velebit', 'NP Telašćica', 'PP Biokovo', 'PP Kopački Rit', 'PP Lastovo', 'PP Lonjsko Polje', 'PP Medvednica', 'PP Papuk', 'PP Velebit', 'PP Vransko Jezero', 'PP Žumberak'],
-	'KOS': ['NP Sharri', 'PP Germia'],
-	'MKD': ['NP Galičica', 'NP Mavrovo', 'NP Pelister'],
-	'MNE': ['NP Biogradska Gora', 'NP Durmitor', 'NP Lovćen', 'NP Prokletje', 'NP Skadarsko Jezero'],
-	'SRB': ['NP Fruška Gora', 'NP Kopaonik', 'NP Tara', 'NP Đerdap', 'PP Gornje Podunavlje', 'PP Vlasina'],
-	'SVN': ['NP Triglav', 'PP Krajinski Park Goričko', 'PP Logarska Dolina', 'PP Sečovlje']
-}
+locale = 'hr';
 
 countriesOrder = ["slovenia", "croatia", "bosnia", "serbia", "kosovo", "montenegro", "albania", "macedonia"];
 currentCountry = "croatia";
 
-$( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
-	var $target = $( event.currentTarget );
-
-	$target.closest( '.btn-group' )
-		.find( '[data-bind="label"]' ).text( $target.text() )
-		.end()
-		.children( '.dropdown-toggle' ).dropdown( 'toggle' );
-
-	return false;
+var Dropdown = Vue.extend({
+	template: `
+		<div class=\"country-picker picker relative inline-block\">
+			<button @focus=\"toggled = true\" @blur=\"toggled = false\" class=\"btn border-hr-blue p2 grey-dark pointer-cursor\">
+				<span>{{ pickedText }}</span>
+				<i class=\"icon-arrow-drop-down right\"></i>
+			</button>
+			<ul v-show=\"toggled\" class=\"z2 m0 absolute bg-hr-blue list-reset\">
+				<li v-for=\"c in choices\">
+					<a @mousedown=\"pick(c.name, c.code, $event)\">{{ c.name | localize }}</a>
+				</li>
+			</ul>
+		</div>
+	`,
+	filters: {
+		localize: function(value) {
+			return value[this.locale];
+		}
+	},
+	methods: {
+		pick: function (picked, code, event) {
+			var selected = _.first(_.filter(this.choices, { code: code }));
+			this.picked = picked[this.locale];
+			this.shared.setState(this.prop_name, selected);
+		}
+	},
 });
 
-jQuery(document).ready(function(){
-	$('.country-chooser-menu li').click(pickCountry);
-	$('.graph-type-picker .graph-card').click(pickGraphType);
-
-	var $navbar = $("#navbar"),
-		y_pos = $navbar.offset().top,
-		height = $navbar.height();
-
-	$navbar.css('height', '4.5rem');
-	var $l_select = $('.local-dropdown button');
-
-	$(document).scroll(function() {
-		var scrollTop = $(this).scrollTop();
-
-		if (scrollTop > y_pos + height) {
-			$navbar.css('height', '1.5rem');
-			$l_select.css('height', '1.5rem');
-		} else if (scrollTop <= y_pos) {
-			$navbar.css('height', '2.5rem');
-			$l_select.css('height', 'r.5rem');
+var store = {
+	debug: true,
+	state: {
+		country: null,
+		protected_area: null,
+		graph_type: null,
+	},
+	setState: function(prop, newValue) {
+		if (prop == 'country') { this.state.protected_area = null }
+		if (prop == 'graph_type') {
+			$('.graph-card').removeClass('active');
+			$('#graph-card-'+newValue.code).addClass('active');
 		}
-	});
+		this.state[prop] = newValue
+		renderGraph(this);
+	},
+	toChoice: function() {
+		return {
+			country: this.state.country['code'],
+			protected_area: this.state.protected_area && this.state.protected_area['name'][locale],
+			graph_type: this.state['graph_type']['code']
+		}
+	}
+}
 
-	if ($('#counter').length == 1) {
-		animationHelpers.animateValue("counter", 0, parseInt($('#counter').html()), 4000);
+var countryPicker = new Dropdown({
+	el: '#graphs-country-picker',
+	data: function() {
+		return {
+			toggled: false,
+			picked: translations.default_choice[locale],
+			shared: store,
+			prop_name: 'country',
+			choices: countries,
+			locale: locale
+		}
+	},
+	computed: {
+		pickedText: function() { return this.picked }
 	}
 
-	if ($('#counter300').length == 1) {
-		animationHelpers.animateValue("counter300", 0, parseInt($('#counter300').html()), 4000);
+})
+
+var paPicker = new Dropdown({
+	el: '#graphs-pa-picker',
+	data: function() {
+		return {
+			toggled: false,
+			picked: "-",
+			shared: store,
+			prop_name: 'protected_area',
+			locale: locale
+		}
+	},
+	computed: {
+		choices: function() {
+			var country = this.shared.state.country;
+			return country && country.protected_areas || [];
+		},
+		pickedText: function() {
+			return this.shared.state[this.prop_name] ? this.picked : "-";
+		}
 	}
+})
 
-	animationHelpers.drawBarChart('#chart', [7, 14]);
-	animationHelpers.drawBarChart('#frewhwater-util-chart', [21]);
-	animationHelpers.drawBarChart('#chart9200', [9200]);
-	animationHelpers.drawDonutChart('#donut39', $('#donut39').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie25', $('#pie25').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie63', $('#pie63').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie2', $('#pie2').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#pie77', $('#pie77').data('donut'), 200, 200, ".4em");
-
-	// Check if correct localization string
-
-	if (window.location.pathname.split('/')[1] == 'hr') {
-		$('.local-dropdown button span').html('HR')
-	} else {
-		$('.local-dropdown button span').html('EN')
+var graphTypePicker = new Dropdown({
+	el: '#graphs-type-picker-narrow',
+	data: function() {
+		return {
+			toggled: false,
+			picked: translations.default_choice[locale],
+			shared: store,
+			prop_name: 'graph_type',
+			choices: graph_types,
+			locale: locale
+		}
+	},
+	computed: {
+		pickedText: function() { return this.picked }
 	}
+})
 
-	$('.landing-page-carousel .message-prev').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
+jQuery(document).ready(function(){
+	setLocale();
 
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, -1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
-
+	$('.graph-type-picker').graphTypePicker(function(choice) {
+		store.setState('graph_type', choice)
 	});
 
-	$('.landing-page-carousel .message-next').click(function() {
-		$messages = $('.carousel-messages li');
-		$active_msg = $('.carousel-messages li.show');
-		$active_msg.addClass("hide").removeClass("show");
-
-		curr_index = $messages.index($active_msg);
-		next_index = crawlArray($messages, curr_index, 1);
-
-		$next_active_msg = $messages.eq(next_index);
-		$next_active_msg.removeClass("hide").addClass("show");
+	$('#homepage-view-map-btn').click(function() {
+		$('html,body').animate({scrollTop: $('#homepage-map').offset().top}, 'slow');
 	});
+
+	animationHelpers.drawDonutChart('#homepage-fact-1', $('#homepage-fact-1').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-2', $('#homepage-fact-2').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-3', $('#homepage-fact-3').data('donut'), 200, 200, ".4em");
+
+	animationHelpers.animateValue("#croatia-fact-1", 4000);
+	animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
+	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
+
+	animationHelpers.animateValue("#bosnia-fact-2", 4000);
+	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
 
 	$('.map-wrapper svg .country').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
@@ -140,103 +276,25 @@ jQuery(document).ready(function(){
 // Functions for manipulating graphs on Protected Areas page
 // ---------------------------------------------------------
 
-function pickCountry(event) {
-	var chosen_country_data = $(event.currentTarget).data('countrycode'),
-		chosen_country_text = $(event.currentTarget).data('countryname');
-
-	if (chosen_country_text == '-') {
-		$('.graph-card').removeClass('graph-card-hover');
+function renderGraph(store) {
+	if (!graphRenderable(store)) {
+		$('.graphs-container .pabat-chart').addClass('hide');
+		$('.no-graphs').removeClass('hide');
 	} else {
-		$('.graph-card').addClass('graph-card-hover');
-	};
-
-	$('#choose-country-init-text').addClass('hide');
-	$('#choose-country-chosen-text').removeClass('hide');
-	$('#choose-country-chosen-text').text(chosen_country_text);
-	$('#choose-pa-chosen-text').text('-');
-
-	$('.pa-chooser').removeClass('hide');
-	$('.pa-chooser ul').html('<li><a>-</a></li>')
-
-	for (var i in protected_areas_by_country[chosen_country_data]) {
-		var pa = protected_areas_by_country[chosen_country_data][i];
-		$('.pa-chooser ul').append('<li><a>' + pa + '</a></li>')
-	}
-
-	$('.pa-chooser-menu li').click(pickProtectedArea);
-
-	set_choices({chosen_country_text: chosen_country_data})
-	render_graph();
-};
-
-function pickProtectedArea(event) {
-	var chosen_pa_text = $(event.currentTarget).text();
-	console.log(chosen_pa_text);
-
-	$('#choose-pa-init-text').addClass('hide');
-	$('#choose-pa-chosen-text').removeClass('hide');
-	$('#choose-pa-chosen-text').text(chosen_pa_text);
-
-	set_choices({chosen_pa_text: chosen_pa_text});
-	render_graph();
-}
-
-function pickGraphType( event ) {
-	var graph_type_text = $(event.currentTarget).data('graphid');
-	set_choices({chosen_graph_type_text: graph_type_text})
-	render_graph();
-};
-
-function set_choices(choice) {
-	if (choice['chosen_country_text']) {
-		graph_choices.protected_area = null;
-
-		if (choice.chosen_country_text != '-') {
-			graph_choices.country = choice.chosen_country_text;
-		} else {
-			graph_choices.country = null;
-		}
-
-	} else if (choice['chosen_pa_text']) {
-		if (choice.chosen_pa_text != '-') {
-			graph_choices.protected_area = choice.chosen_pa_text;
-		} else {
-			graph_choices.protected_area = null;
-		}
-
-	} else if (choice['chosen_graph_type_text']) {
-		graph_choices.graph_type = parseInt(choice.chosen_graph_type_text, 10);
+		graphs.renderGraph(store.toChoice())
+		$('.graphs-container .pabat-chart').addClass('hide');
+		$('.no-graphs').addClass('hide');
+		$(graphId(store)).removeClass('hide');
 	}
 }
 
-function render_graph() {
-	var country = graph_choices.country;
-	var protected_area = graph_choices.protected_area;
-	var graphType;
-
-	if (protected_area) {
-		graphType = graph_choices.graph_type + 3;
-	} else {
-		graphType = graph_choices.graph_type;
-	};
-
-	if (!country || !graphType) { return };
-
-	graphs.generateGraph(graphType, country, protected_area)
-
-	$('.no-graphs-h1').addClass('hide');
-	$('.no-graphs-ol').addClass('hide');
-
-	hide_other_graphs(graphType)
-
-	$('#chart_' + graphType).removeClass('hide')
+function graphRenderable(store) {
+	return store.state.country && store.state.graph_type;
 }
 
-function hide_other_graphs(graph_number) {
-	for(var i = 0; i <= 5; i++) {
-		if (i + 1 == graph_number) { continue };
-		$('#chart_'+(i+1)).addClass('hide');
-	}
+function graphId(store) {
+	var graph_prefix = !!store.state.protected_area ? "pa" : "country";
+	return "#" + graph_prefix + "_chart_" + store.state.graph_type.code;
 }
 
 // ------------------------------------------------------
@@ -304,4 +362,19 @@ function panMapToPoint(svg, x, y) {
 function parseViewBox(viewBoxStr) {
 	var vbAttrs = viewBoxStr.split(" ").map(function(istr) { return parseInt(istr, 10) });
 	return { "w": vbAttrs[2], "h": vbAttrs[3] };
+}
+
+function parseDataSet(bars) {
+	if (!bars) { return }
+	return _.map(bars.split(','), function(num) { return parseInt(num, 10) });
+}
+
+function setLocale() {
+	if (window.location.pathname.split('/')[1] == 'hr') {
+		locale = 'hr';
+		$('.local-dropdown button span').html('HR');
+	} else {
+		locale = 'en';
+		$('.local-dropdown button span').html('EN');
+	}
 }

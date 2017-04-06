@@ -1,60 +1,66 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('/static/fonts/icomoon.eot?j95jjv');
-  src:  url('/static/fonts/icomoon.eot?j95jjv#iefix') format('embedded-opentype'),
-    url('/static/fonts/icomoon.ttf?j95jjv') format('truetype'),
-    url('/static/fonts/icomoon.woff?j95jjv') format('woff'),
-    url('/static/fonts/icomoon.svg?j95jjv#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icomoon';
+	src:  url('/static/fonts/icomoon.eot?j95jjv');
+	src:  url('/static/fonts/icomoon.eot?j95jjv#iefix') format('embedded-opentype'),
+	url('/static/fonts/icomoon.ttf?j95jjv') format('truetype'),
+	url('/static/fonts/icomoon.woff?j95jjv') format('woff'),
+	url('/static/fonts/icomoon.svg?j95jjv#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Overall_value_icon:before {
+	content: "\e99c";
+}
 .icon-Overall_economic_value_icon:before {
-  content: "\e904";
+	content: "\e904";
 }
 .icon-Main_potential_icon:before {
-  content: "\e905";
+	content: "\e905";
 }
 .icon-Flow_of_economic_value_icon:before {
-  content: "\e906";
+	content: "\e906";
 }
 .icon-forrest:before {
-  content: "\e900";
+	content: "\e900";
 }
 .icon-fresh-water:before {
-  content: "\e901";
+	content: "\e901";
 }
 .icon-jobs:before {
-  content: "\e902";
+	content: "\e902";
+}
+.icon-close:before {
+	content: 'X';
 }
 .icon-tourism:before {
-  content: "\e903";
+	content: "\e903";
 }
 .icon-arrow-drop-down:before {
-  content: "\e5c5";
+	content: "\e5c5";
 }
 .icon-navigate_before:before {
-  content: "\e408";
+	content: "\e408";
 }
 .icon-navigate_next:before {
-  content: "\e409";
+	content: "\e409";
 }
 .icon-menu-bars:before {
-  content: "\e3c7";
+	content: "\e3c7";
 }
 

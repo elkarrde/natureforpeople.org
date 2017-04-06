@@ -1,53 +1,47 @@
-_model: sutjeska-tourism
+_model: factsheet
+---
+_template: wwf_examples_factsheet.html
 ---
 title: Sutjeska - River Tourism
 ---
+link_button: River Tourism
+---
 bg_text: Sutjeska
 ---
-main_headline: River Tourism
+main_headline:
 ---
 learn_more_button: Learn more
 ---
 intro_title: New tourism product against devastating hydropower
 ---
-intro_body: <div class="recommendations"><p class="mt2">Sutjeska National Park is the oldest national park in Bosnia and Herzegovina. It is one of the most diverse areas biologically-wise in the south-eastern Europe, with more plant species than in Poland, and it has one of the last virgin forests in Europe – Perućica, strict natural reserve.</p>
+intro_body:
 
-<p class="mt2">WWF has been cooperating with Sutjeska Park for years now, and the Park has been connected with a network of other regional parks through the membership in Dinaric Art Parks protected area network.</p> 
+<p>Sutjeska National Park is the oldest national park in Bosnia and Herzegovina. It is one of the most diverse areas biologically-wise in the south-eastern Europe, with more plant species than in Poland, and it has one of the last virgin forests in Europe – Perućica, strict natural reserve.</p>
 
-<p class="mt2">In July 2014, when the Park was threatened by a construction of a hydropower plant, WWF joined local NGOs in the "Battle for Sutjeska" campaign against the construction plan. The response from the public was huge, and the court revoked the decision on approving the Environmental impact study on small hydropower plants planned to be built in the Hrčavka River canyon.</p>
+<p>WWF has been cooperating with Sutjeska Park for years now, and the Park has been connected with a network of other regional parks through the membership in Dinaric Art Parks protected area network.</p>
 
-<p class="mt2">The plans for the construction of four small hydropower plants in the centre of the park still exist. If they would be realized, ecosystem would suffer irreparable damage with questionable benefits for the local community.</p>
+<p>In July 2014, when the Park was threatened by a construction of a hydropower plant, WWF joined local NGOs in the "Battle for Sutjeska" campaign against the construction plan. The response from the public was huge, and the court revoked the decision on approving the Environmental impact study on small hydropower plants planned to be built in the Hrčavka River canyon.</p>
 
-<p class="mt2">The area of Sutjeska National Park has a unique potential for the development of sustainable economic activities and can represent a continuous source of profit for the local community. Better tourism offer is developed through activities such as organic agriculture, collection and processing of non-wood forest products (berries, mushrooms, medicinal and aromatic herbs).</p>
+<p>The plans for the construction of four small hydropower plants in the centre of the park still exist. If they would be realized, ecosystem would suffer irreparable damage with questionable benefits for the local community.</p>
 
-<p class="mt2">By gathering a Cooperation Council, WWF encourages all the park stakeholders to closely cooperate with the management of the park through a better communication and cooperation of different interest groups. Only by a joint vision of Sutjeska NP development, which also includes vulnerable and deprived community groups, can local community achieve improvement. We are trying to make people aware that free river, as it is today, is worth a lot more than the one hindered by a hydropower plant. In order to prove it with an example, we help in creating sustainable tourism products such as canyoning.</p>
+<p class="highlight">The area of Sutjeska National Park has a unique potential for the development of sustainable economic activities and can represent a continuous source of profit for the local community. Better tourism offer is developed through activities such as organic agriculture, collection and processing of non-wood forest products (berries, mushrooms, medicinal and aromatic herbs).</p>
 
-<h2 class="title mt3">What are we doing?</h2>
-<p class="mt2">WWF has been facilitating a process that will enable the creation of canyoning as a tourism offer, which includes the training of guides, procuring equipment and securing trails, as well as the regulation of obligations and responsibility of all the partners in the future 'utilisation' of the Hrčavka River canyon for tourism purposes.</p>
+<p>By gathering a Cooperation Council, WWF encourages all the park stakeholders to closely cooperate with the management of the park through a better communication and cooperation of different interest groups. Only by a joint vision of Sutjeska NP development, which also includes vulnerable and deprived community groups, can local community achieve improvement. We are trying to make people aware that free river, as it is today, is worth a lot more than the one hindered by a hydropower plant. In order to prove it with an example, we help in creating sustainable tourism products such as canyoning.</p>
 
-<p class="mt2">With the professional help and in the cooperation with Cooperation Council we have been working on a further development of poorly developed tourist activities (cycling, mountaineering...). The collected data have been presented to the rangers to be distributed to tourists, thus familiarizing them with nature that we all must protect, and the new acquired knowledge will be shared with the local population. With better living conditions of the local community and better national park management, threats for conserved nature are also mitigated. That is why WWF has initiated the founding of the Cooperation Council so that we could jointly achieve a high-quality and recognizable tourism offer. The results of new scientific research have also been used for the development of activities connected with canyoning so that animals and plants would not be threatened, if possible.</p>
+<h3 class="h3 cc-secondary">What are we doing?</h3>
+<p class="highlight">WWF has been facilitating a process that will enable the creation of canyoning as a tourism offer, which includes the training of guides, procuring equipment and securing trails, as well as the regulation of obligations and responsibility of all the partners in the future 'utilisation' of the Hrčavka River canyon for tourism purposes.</p>
 
-<p class="mt2">Regular distribution of benefits from the protected area is necessary for all the stakeholders: protected area, business sector and local community. Good cooperation of the park management and local population who understands the park's values, as well as the cooperation with business sector that sees its opportunity for investments, guarantees a success.</p>
+<p>With the professional help and in the cooperation with Cooperation Council we have been working on a further development of poorly developed tourist activities (cycling, mountaineering...). The collected data have been presented to the rangers to be distributed to tourists, thus familiarizing them with nature that we all must protect, and the new acquired knowledge will be shared with the local population. With better living conditions of the local community and better national park management, threats for conserved nature are also mitigated. That is why WWF has initiated the founding of the Cooperation Council so that we could jointly achieve a high-quality and recognizable tourism offer. The results of new scientific research have also been used for the development of activities connected with canyoning so that animals and plants would not be threatened, if possible.</p>
 
-<h2 class="title mt3">What are we achieving?</h2>
-<p class="mt2">The canyon of the Hrčavka River is the first canyon in Bosnia and Herzegovina that will be a part of tourism offer and contribute to the local community profit increase. The recognition of ecological values of Sutjeska NP at the country level will minimize the threats connected with unsustainable development in the park.</p>
+<p>Regular distribution of benefits from the protected area is necessary for all the stakeholders: protected area, business sector and local community. Good cooperation of the park management and local population who understands the park's values, as well as the cooperation with business sector that sees its opportunity for investments, guarantees a success.</p>
 
-<p class="mt2">Regular communication will enable a better exchange of information important for the protected area management, but also for the local community development. Local community will gain a better insight in the protected area management by participating in the Cooperation Council and will recognize and use the park values.</p>
-</div>
+<h3 class="h3 cc-secondary">What are we achieving?</h3>
+<p>The canyon of the Hrčavka River is the first canyon in Bosnia and Herzegovina that will be a part of tourism offer and contribute to the local community profit increase. The recognition of ecological values of Sutjeska NP at the country level will minimize the threats connected with unsustainable development in the park.</p>
+
+<p class="highlight">Regular communication will enable a better exchange of information important for the protected area management, but also for the local community development. Local community will gain a better insight in the protected area management by participating in the Cooperation Council and will recognize and use the park values.</p>
 ---
 learn_more: Learn more
 ---
-wwf_example_1: Urban Park
----
-wwf_example_2: Local Offer
----
-wwf_example_3: River Tourism
----
-wwf_example_4: Bear Watching
----
-wwf_example_5: Education
----
-wwf_example_6: Stakeholders
----
 cta_button_text: Let's solve challenges together
 ---
+slug: river-tourism

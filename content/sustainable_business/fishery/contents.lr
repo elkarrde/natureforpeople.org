@@ -1,0 +1,63 @@
+_model: factsheet
+---
+_template: sustainable_business_factsheet.html
+---
+title: Sustainable fisheries
+---
+bg_text: Sustainable fisheries
+---
+main_headline:
+---
+learn_more_button: Learn more
+---
+intro_title: Sustainable fisheries in the region
+---
+intro_body:
+
+<p>Fishery is an activity that has been taking place in the Mediterranean for several thousand years now and it started when this coastal area was first populated – today it presents the subsistence basis of many inhabitants in this area. Although fishery resources have enabled the survival of a countless generations, the fishery in the Mediterranean Sea has for the last fifty years been at the verge of collapse due to the exponential technological development. Seafood is in demand on the market due to its high nutritional value, and because of the population growth and increase of standards, the market has become the main driving force of their irrational exploitation.</p>
+
+<p>Today fisheries can be divided into two basic groups: fishing and aquaculture. The total quantity of products originating in aquaculture was in 2015 levelled with the quantity of products from fishing, which made the year 2015 a breaking point in human history regarding the fisheries (FAO).</p>
+
+<h3 class="h3 cc-secondary">Sustainable fishing</h3>
+
+<p>Sustainable fishing practices are the basis of the WWF's engagement in fisheries, and the activities so far have ensured our recognition in the sector and have enabled an open communication with all the stakeholders in the fisheries. The foundation for a sustainable fisheries is fishing that does not harm fish resources nor environment and that provides a long-term subsistence value to the people living from fishing.</p>
+
+<p class="highlight">The current situation with fish resources in the Mediterranean and in the Adriatic is extremely bad – more than 90% of assessed fish stocks are managed in unsustainable way.</p>
+
+<p>In order to change that, we need a thorough transformation of fishing in whole of the Mediterranean. We know that the change is possible due to positive results in fish stock management in the areas of Atlantic and Baltic Sea, which are under the jurisdiction of the EU.</p>
+
+<h3 class="h3 cc-secondary">Responsible aquaculture</h3>
+
+<p>Aquaculture is globally the fastest growing food production sector. Although aquaculture in the Mediterranean underwent an intensive development in the last 50 years, today it has become a very important fishery branch providing food and jobs to many coastal inhabitants. However, in order for it to become long-term, it should also be responsible. The responsibility is based on complying with the good farming practices and fish food origin which is the basis of fish species farming in the Mediterranean. Aquaculture is a significant consumer of fish meal for the production of which fish resources from all over the world are used.</p>
+
+<p class="highlight">The WWF's initiative includes the reduction of fish meal usage in aquaculture and the usage of fish meal coming from sustainable resources, as well as the management of farms in line with the good production practice. One of the certificates supported by the WWF is ASC certificate (Aquaculture Stewardship Council) which is a guarantee of a responsible aquaculture.</p>
+
+<p>In line with the alarming situation with the fish resources status in the Mediterranean and the Adriatic, WWF Adria has been working on different levels in order to have a direct positive impact on the fishing resource status and relating issues. If the issue of overfishing is not solved as soon as possible, the fisheries in the Mediterranean will be threatened to collapse completely, which will not only have negative effects on the ecosystem, but also on a large number of people who are directly or indirectly living from fisheries.</p>
+
+<h3 class="h3 cc-secondary">What is the WWF doing?</h3>
+
+<p>The change in fish resources management is also necessary for ensuring sufficient quantities of food from the sea for the growing population since scientific data have concluded that better fishing regulation could increase the quantity of food coming from the sea.</p>
+
+<p class="highlight">The WWF has thus been implementing a number of projects by which we are trying to change the situation in the fisheries and to raise the public awareness by being careful which fish we are buying and consuming. The WWF with its activities stimulates numerous changes regarding the improvement of fishing resource status in the Adriatic and in the whole Mediterranean sea.</p>
+
+<p>We started dealing with the subject with <a href="http://www.fishforward.eu/hr/">Fish Forward</a> project where we are trying to educate as many people as possible on the subject of sustainable fisheries with a media campaign. It is due to the results of the project, within which we have also created <a href="http://www.kojuribukupiti.org">www.kojuribukupiti.org</a> web site, that WWF has been invited to participate in the <a href="http://croatia.panda.org/en/what_we_do/seas/blue_smart_/">Blue Smart</a> project that has been carried out with our partners at the University of Zadar. Since the scientific approach is the basis of the WWF's work, we have the responsibility to participate in the making of a graduate study programme that would have sustainable fishery as its basis, thus educating generations of young people on the importance of sustainable fisheries. By the help of the education we can reach the ones who will eventually help us spread the word on the necessity of a sustainable usage of natural resources to the decision-makers.</p>
+
+<p>Apart from educational projects, we have also been carrying out projects on fisheries improvement. Small blue fish fishing presents the most important fishery segment in Croatia, with over 80% of total catch. That is why we have used FIP (<a href="http://croatia.panda.org/en/what_we_do/seas/fishery_improvement_project_/">Fishery Improvement Project</a>) to promote a tool used by many fisheries worldwide in order to stop unsustainable fishery practice, and it is based on compliance with the standard prescribed by the MSC (Marine Stewardship Council). We have been implementing the project with Omega 3, a producers' cooperative whose catch amounts to 20% of small blue fish catches in Croatia, with a goal of a long-term preservation of ecosystems and jobs.</p>
+
+<p>The specified ASC certificate is a global certificate for a responsible aquaculture that WWF has recognized as being the best in its class. We have been participating in creating ASC standard for gilthead seabream and European seabass (most common farmed Mediterranean species), and Cromaris, the biggest company for the farming of the specified species in Croatia, has been included in the pilot-testing of the standard.</p>
+
+<p>WWF is also working in marine protected areas where there also exits the need for fish resource management improvement. This is carried out within the <a href="http://croatia.panda.org/en/what_we_do/seas/fishmpablue2_project/">FishMPABlue</a> project that has been implemented in the whole of the Mediterranean sea, protecting the ecosystems and species and ensuring the sustainability of the coastal fishing in these and surrounding areas.</p>
+---
+learn_more: Learn more
+---
+sust_business_1: Hydropower
+---
+sust_business_2: Marine protected areas
+---
+sust_business_3: Forestry
+---
+sust_business_4: Fishery
+---
+cta_button_text: Let's solve challenges together
+---
+slug: fishery

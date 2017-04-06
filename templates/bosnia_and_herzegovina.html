@@ -1,105 +1,89 @@
-{% extends "country_layout.html" %}
+{% extends "layout.html" %}
 
-{% set header_class                  = 'bosnian-background-color-1' %}
-{% set select_colors_class           = 'bosnian-color-1 bosnian-background-color-2' %}
-{% set nav_id                        = 'bosnian-nav' %}
-{% set nav_links_class               = 'nav-links-bosnian' %}
-{% set country_facts_class           = 'facts-bosnia' %}
-{% set country_cta_image_class       = 'bosnian-cta-image' %}
-{% set country_banner_image_class    = 'bosnian-banner-image' %}
-{% set country_border_gradient_class = 'bosnian-border-gradient' %}
+{% set body_class = 'country-ba' %}
 
-{% block row_1_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-fresh-water country-icon bosnian-color-3"></i>
-		<h2 class="country-h1 bosnian-color-1">{{ this.fact_4_title }}</h2>
+{% import 'country/_facts.html' as facts %}
+
+{% block body %}
+
+{% include "country/_banner.html" %}
+
+<section id="ba-facts-1">
+	<div class="max-width-4 mx-auto">
+    <div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2">
+				{{ facts.info(this.fact_1_title, this.fact_1_title_icon, this.fact_1_subtitle, this.fact_1_copy, this.fact_1_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2">
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="flex items-center justify-center">
+						<div class="donut" id="bosnia-fact-1" data-percent="63"></div>
+					</div>
+					<p class="px2">{{ this.fact_1_caption }}</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_4_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_4_copy }}</p>
+</section>
 
-		<a class="my3 bosnian-color-1" href="#">{{ this.fact_4_question }}</a>
+<section id="ba-facts-2" class="bg-white-dirty">
+	<div class="max-width-4 mx-auto">
+    <div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2">
+				{{ facts.info(this.fact_2_title, this.fact_2_title_icon, this.fact_2_subtitle, this.fact_2_copy, this.fact_2_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2">
+				<div class="flex-wrap flex-column flex items-center justify-center">
+
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="bosnia-fact-2">300</div>
+					</div>
+
+					<p class="px2">{{ this.fact_2_caption }}</p>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
-{% endblock %}
+</section>
 
-{% block row_1_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="p4 flex items-center justify-center">
-		<div class="donut" id="pie63" data-donut="63"></div>
+<section id="ba-facts-3">
+	<div class="max-width-4 mx-auto">
+    <div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2">
+				{{ facts.info(this.fact_3_title, this.fact_3_title_icon, this.fact_3_subtitle, this.fact_3_copy, this.fact_3_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2">
+				<div class="flex-wrap flex-column flex items-center justify-center">
+
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="bosnia-fact-3">9200</div>
+					</div>
+
+					<p class="px2">{{ this.fact_3_caption }}</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<p class="capture-color capture">{{ this.fact_4_caption }}</p>
-</div>
-{% endblock %}
+</section>
 
-{% block row_2_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-jobs country-icon bosnian-color-3"></i>
-		<h2 class="country-h1 bosnian-color-1">{{ this.fact_2_title }}</h2>
+<section id="ba-facts-4" class="bg-white-dirty">
+	<div class="max-width-4 mx-auto">
+    <div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2">
+				{{ facts.info(this.fact_4_title, this.fact_4_title_icon, this.fact_4_subtitle, this.fact_4_copy, this.fact_4_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2">
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="flex items-center justify-center">
+						<div class="donut" id="bosnia-fact-4" data-percent="2"></div>
+					</div>
+					<p class="px2">{{ this.fact_4_caption }}</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_2_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_2_copy }}</p>
+</section>
 
-		<a class="my3 bosnian-color-1" href="#">{{ this.fact_2_question }}</a>
-	</div>
-</div>
-{% endblock %}
+{% include "country/_cta.html" %}
 
-{% block row_2_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="counter bosnian-color-1" id="counter300">300</div>
-	<div class="visitor-wrapper">
-		<i class="icon-visitors bosnian-background-color-3"></i>
-	</div>
-	<p class="capture-color capture mt3">{{ this.fact_2_caption }}</p>
-</div>
-{% endblock %}
-
-{% block row_3_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-fresh-water country-icon bosnian-color-3"></i>
-		<h2 class="country-h1 bosnian-color-1">{{ this.fact_3_title }}</h2>
-	</div>
-	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_3_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_3_copy }}</p>
-
-		<a class="my3 bosnian-color-1" href="#">{{ this.fact_3_question }}</a>
-	</div>
-</div>
-{% endblock %}
-
-{% block row_3_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="chart px-3 py-3" id="chart9200"></div>
-	<p class="capture-color capture mt3">{{ this.fact_3_caption }}</p>
-</div>
-{% endblock %}
-
-{% block row_4_col_1 %}
-<div class="p4 flex-wrap flex flex-column justify-center">
-	<div class="flex items-center">
-		<i class="mr3 icon-tourism country-icon bosnian-color-3"/></i>
-		<h2 class="country-h1 bosnian-color-1">{{ this.fact_1_title }}</h2>
-	</div>
-	<h3 class="country-h2 bosnian-color-3 mt3">{{ this.fact_1_subtitle }}</h3>
-	<div>
-		<p class="my3 country-text">{{ this.fact_1_copy }}</p>
-
-		<a class="my3 bosnian-color-1" href="#">{{ this.fact_1_question }}</a>
-	</div>
-</div>
-{% endblock %}
-
-{% block row_4_col_2 %}
-<div class="p4 flex-wrap flex-column flex items-center justify-center">
-	<div class="p4 flex items-center justify-center">
-		<div class="donut" id="pie2" data-donut="2"></div>
-	</div>
-	<p class="capture-color capture">{{ this.fact_1_caption }}</p>
-</div>
 {% endblock %}

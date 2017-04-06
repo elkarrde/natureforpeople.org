@@ -1,0 +1,63 @@
+.picker {
+    width: 80%;
+
+    button {
+        background-color: transparent;
+        width: 100%;
+        text-align: left;
+    }
+
+    ul {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        li  {
+            padding: 0px;
+            margin: 0px;
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: $white;
+                cursor: pointer;
+                padding: 0.3em 2em;
+
+                &:hover {
+                    background-color: $hr-blue-dark;
+                }
+            }
+        }
+    }
+}
+
+
+@mixin active-card {
+	color: $white;
+	background-color: $hr-blue;
+
+	i {
+		background: $white;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.protected-areas .graph-card {
+    color: $hr-blue;
+    background-color: $white-dirty;
+
+    i {
+        background: linear-gradient(135deg, $hr-red 0%, $hr-blue-dark 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+		@include active-card;
+	}
+}
+
+.protected-areas .graph-card.active {
+	@include active-card;
+}

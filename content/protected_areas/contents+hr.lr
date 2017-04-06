@@ -1,8 +1,8 @@
 _model: protected_areas
 ---
-title: PABAT
+title: Zaštićena područja
 ---
-headline: Zaštićena područja
+bg_text: Zaštićena područja
 ---
 step_1: Odaberite zemlju iz padajućeg izbornika:
 ---
@@ -14,9 +14,11 @@ pa_2: Odaberite zaštićeno područje
 ---
 graph_values: Odaberite vrijednosti koje želite prikazati na grafu
 ---
-econ_value: Glavne ekonomske vrijednosti
+overall_values: Sve vrijednosti
 ---
-flow_econ: Tijek prihoda dionicima
+econ_values: Glavne ekonomske vrijednosti
+---
+flow_econ_value: Tijek prihoda dionicima
 ---
 potential: Glavni potencijali
 ---
@@ -28,19 +30,19 @@ message_2: Odaberite vrijednost
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
-learn_more: Saznajte više
+country: Država
 ---
-learn_more_button: Više
----
-country: Zemlja
----
-pa: Zaštićena područja
+pa: Zaštićeno područje
 ---
 values: Vrijednosti
 ---
-case_study_1: WWF Primjeri
+learn_more_backline: Saznajte više
 ---
-case_study_2: Održivo poslovanje
+learn_more_cta: Saznajte više
 ---
-case_study_3: Zaštićena područja
+learn_more_title_1: WWF Primjeri
+---
+learn_more_title_2: Održivo poslovanje
+---
+learn_more_title_3: Zaštićena područja
 ---

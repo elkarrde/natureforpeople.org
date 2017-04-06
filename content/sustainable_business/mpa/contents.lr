@@ -1,0 +1,51 @@
+_model: factsheet
+---
+_template: sustainable_business_factsheet.html
+---
+title: Marine protected areas
+---
+bg_text: Marine protected areas
+---
+main_headline:
+---
+learn_more_button: Learn more
+---
+intro_title: Cooperation with the local community for a better marine park management
+---
+intro_body:
+
+<p>The Adriatic Sea has been exposed to a number of pressures to its spatial and natural resources, from overfishing of marine organisms to the intensive urbanisation of the coast, sea pollution and intensified traffic of people and goods stimulated by mass tourism. Above all, the effect of global climate changes will undoubtedly be increased. The effective response to this threats have so far been marine protected areas. These include the sea and the coast that have been singled out because of their environmental, cultural and aesthetic values, and they enable the conservation of the sea bed and stimulate the local community economy.</p>
+
+<p>In practice, the biggest challenge has been to find the balance between the utilisation and the protection of marine protected areas. That is why the WWF has been trying to focus on achieving an effective management of these areas, thus ensuring the conservation of spatial and natural resources and stimulating the economy and the conservation of local community tradition. The visitors can discover the connection of man and environment by learning, understanding and experiencing the nature in a unique way.</p>
+
+<p>Within its projects the WWF has been developing stakeholder cooperation, most of all between the representative of nature protection sector, tourism and fisheries, as well as with the institutions and individuals with the goal of achieving the sustainability of economic activities that have been taking place in these areas.</p>
+
+<h3 class="h3 cc-secondary">What is the WWF doing?</h3>
+
+<p>Since 2009 we have been working with marine protected areas in the region within the cooperation with Sunce association and other partners. Within two projects, <a href="http://adria.panda.org/projekti/jaanje_mree_zatienih_morskih_podruja_u_hrvatskoj/">MedPAN South</a> and <a href="http://adria.panda.org/projekti/sea_med/">SEA-Med</a>, we have made a considerable step forward in the capacity building and financial independence of public institutions that have been managing marine protected areas in Croatia. Croatian marine protected areas have thus become a part of the international network of Mediterranean (MedPAN) and Adriatic (AdriaPAN) protected areas, while the employees have gained new knowledge and the institutions gave gained from management plans, sustainable tourism plans and numerous marketing and communication strategies.</p>
+
+<p>The basic prerequisite for creating a good strategy for a sustainable tourism is to include local population in the making of the plans, as well as to set up advisory councils which would directly include the local community in the management of theses areas. We are proud that we have contributed with our work to increased appreciation, support and understanding of the local community and businessmen regarding environmental, social and economic values of marine protected areas.</p>
+
+<p>In Albania the WWF has participated in the setting up of marine protected areas by founding the Karaburun-Sazan National Park. Management plan and sustainable tourism plan have been prepared for this park as well; the employees had their capacities strengthened and the public was introduced to the values of the area.</p>
+
+<div class="highlight">
+	<ul>
+	  <li>Number of research and studies carried out: <strong>20</strong></li>
+		<li>Number of institutions involved: <strong>51</strong></li>
+		<li>Number of individuals involved: <strong>500+</strong></li>
+	</ul>
+</div>
+
+<p>WWF has currently been implementing two projects in marine protected areas in the region. Since our work regarding the sea has also been based on sustainable fisheries and aquaculture, with our work on marine protected areas we would like to stress the poor state in the sea. Thus within <a href="http://croatia.panda.org/en/what_we_do/seas/fishmpablue2_project/">FishMPABlue 2</a> project we have been working on the improvement of fish resource management in marine protected areas in the Mediterranean by protecting ecosystems and species and by ensuring the sustainability of the coastal fishing in these areas and in their surrounding. Within <a href="http://croatia.panda.org/en/what_we_do/seas/mediterranean_ecotourism_destination___destimed/">DestiMED</a> project we have been emphasising the destination tourism with the goal of tracking the sustainability situation of eco-tourism products in marine protected areas in the Mediterranean Sea.</p>
+---
+learn_more: Learn more
+---
+sust_business_1: Hydropower
+---
+sust_business_2: Marine protected areas
+---
+sust_business_3: Forestry
+---
+cta_button_text: Let's solve challenges together
+---
+slug: mpa

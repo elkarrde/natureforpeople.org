@@ -1,0 +1,25 @@
+<section id="homepage-header" class="bg-homepage-dark-blue overflow-hidden z3 relative flex justify-center items-center flex-column">
+
+	<div class="z1 px2 md-col-8 lg-col-6">
+		<h1 class="playfair-bold white h2 center mt4 text-shadow">{{ this.headline }}</h1>
+	</div>
+
+	<div class="z1 px2 sm-col-10 md-col-6 lg-col-4">
+		<p class="white center">{{ this.message }}</p>
+	</div>
+
+	<a href="javascript://" id="homepage-view-map-btn" class="btn rounded white bg-ba-yellow-blue mx-auto my3 xs-hide sm-hide">{{ this.scroll_to_map_button_text }}</a>
+
+	<div id="homepage-map" class="z2 xs-hide sm-hide">
+		{% include "homepage/_map.html" %}
+
+		<div class="big-map-desc white">
+			<h2 class="playfair-bold h1 ml3 mb0 text-shadow">{{ bag('country-names', this.alt, 'croatia') }}</h2>
+			<a href="{{ '/croatia'|url }}" class="about-country-button h5 text-shadow btn border-hr-red-blue mx3 mt2 mb1 white bold">{{ bag('country-names', this.alt, 'croatia_btn') }}</a>
+			<div>
+				<i class="country-prev pointer h1 icon-navigate_before text-shadow"></i>
+				<i class="country-next pointer h1 icon-navigate_next text-shadow"></i>
+			</div>
+		</div>
+	</div>
+</section>

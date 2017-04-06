@@ -1,0 +1,167 @@
+/* Text colors */
+
+.white {
+  color: $white;
+}
+
+.white-hover:hover {
+  color: $white;
+}
+
+.grey-light {
+  color: $grey-light;
+}
+
+.grey {
+  color: $grey;
+}
+
+.grey-hover:hover {
+  color: $grey;
+}
+
+.grey-dark {
+  color: $grey-dark;
+}
+
+.blue-light {
+  color: $blue-light;
+}
+
+.black-light {
+  color: $black-light;
+}
+
+.red {
+  color: $red;
+}
+
+.hr-blue {
+  color: $hr-blue;
+}
+
+/* Backgrounds */
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-white-dirty {
+  background-color: $white-dirty;
+}
+
+.bg-black-light {
+  background-color: $black-light;
+}
+
+.bg-black-light {
+  color: $black-light;
+}
+
+.bg-hr-blue {
+    background-color: $hr-blue;
+}
+
+.bg-grey-light {
+  background-color: $grey-light;
+}
+
+.bg-grey-light-hover:hover {
+  background-color: $grey-light;
+}
+
+.bg-grey-hover:hover {
+  background-color: $grey;
+}
+
+.bg-hr-blue-hover:hover {
+  background-color: $hr-blue;
+}
+
+.bg-hr-blue-red {
+  background: linear-gradient(135deg, $hr-red 0%, $hr-blue-dark 100%);
+}
+
+.bg-si-green-cyan {
+  background: linear-gradient(135deg, $si-green-dark 0%, $si-cyan 100%);
+}
+
+.bg-ba-yellow-blue {
+  background: linear-gradient(315deg, $ba-yellow 0%, $ba-blue 100%);
+}
+
+.bg-homepage-dark-blue {
+  background: linear-gradient(0deg, $homepage-dark-blue 0%, $homepage-blue 100%);
+}
+
+/* Text colors - 'cc' prefix as 'country color' */
+
+body.country-hr {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-red }
+}
+
+body.country-ba {
+    .cc-primary { color: $ba-yellow}
+    .cc-primary-dark { color: $ba-yellow-dark }
+    .cc-secondary { color: $ba-blue }
+}
+
+body.wwf-examples {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-red }
+}
+
+body.sustainable-business {
+    .cc-primary { color: $xk-magenta }
+    .cc-primary-dark { color: $xk-magenta-dark }
+    .cc-secondary { color: $xk-orange }
+}
+
+body.recommendations {
+    .cc-primary { color: $al-green }
+    .cc-primary-dark { color: $al-green-dark }
+    .cc-secondary { color: $al-yellow }
+}
+
+/* Borders */
+
+body.country-hr .border-gradient, .border-hr-red-blue {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $hr-red 0%, $hr-blue-dark 100%);
+  border-image-slice: 1;
+}
+
+body.country-ba .border-gradient, .border-ba-blue-yellow {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $ba-blue 0%, $ba-yellow-dark 100%);
+  border-image-slice: 1;
+}
+
+body.country-me .border-gradient, .border-me-orange-red {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $me-orange-dark 0%, $me-red 100%);
+  border-image-slice: 1;
+}
+
+body.country-me .border-gradient, .border-me-orange-red {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $me-orange-dark 0%, $me-red 100%);
+  border-image-slice: 1;
+}
+
+body.country-xk .border-gradient, .border-xk-magenta-orange {
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, $xk-magenta-dark 0%, $xk-orange 100%);
+  border-image-slice: 1;
+}
+
+.border-white {
+  border: 3px solid $white;
+}
+
+.border-hr-blue {
+  border: 3px solid $hr-blue;
+}

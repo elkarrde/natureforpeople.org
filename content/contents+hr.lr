@@ -1,30 +1,30 @@
 _model: index
 ---
-title: PABAT
+title: Vrijednost naše prirode
 ---
-banner_quote: Prepoznajte vrijednost naše prirode
+headline: Prepoznajte vrijednost naše prirode
 ---
-message_0: Lako se izgubiti između tisuću otoka ili u gustim šumama. Još je lakše pronaći mir na vrhovima magičnih planina ili uz žuborenje netaknutih rijeka. Otkrijte koliko bi koštalo ono što vas ne košta ništa!
+message: Lako se izgubiti između tisuću otoka ili u gustim šumama. Još je lakše pronaći mir na vrhovima magičnih planina ili uz žuborenje netaknutih rijeka. Otkrijte koliko bi koštalo ono što vas ne košta ništa!
 ---
-message_1: Dinarski luk ekoregija se sastoji iz Dinarida, dalmatinske obale i Jadranskog mora, a domaćini dobro očuvane šume, visoki udio endemske biljke, važne slatkovodnih ekosustava, bogata morska staništa i lovište, i populacije velikih zvijeri (Lynx, smeđi medvjed, vuk i).
+facts_card_1_title: Zaštićena područja čine 14 % ukupne površine regije
 ---
-message_2: Od niskih intenziteta poljoprivredne prakse stvorili su polu-prirodnih staništa diljem mediteranske regije, koji integrira šuma, pašnjaka i obradivih površina, te osigurati dom za jedinstvene skupove vrsta. Ovi složeni mozaici su još uvijek prisutni u cijelom Dinarskog luka.
+facts_card_1_body: Površina zaštićenih područja u regiji iznosi 52150 km<sup>2</sup>
 ---
-message_3: Ova regija je poznata po svojim jedinstvenim krškim geološko špiljskih staništa s raznolikošću beskralješnjaka, riba, vodozemaca, gmazova i. Livanjskog polja u zapadnoj Bosni je najveći krško polje u svijetu. Špilja sustav predstavlja najveći podzemni sustav rijeka u Europi i iznimno važan izvor vode za cijelu regiju.
+facts_card_2_title: 43 % šuma u regiji je certificirano<br/><br/>
 ---
-message_4: Velike zvijeri koristiti Dinaride kao ekološki koridor između Alpa i planinama jugoistočne Europe. Neki od netaknutih planine u Europi nalaze se na južnom kraju regiji - Prokletije masiva, a "albanskih Alpa".
+facts_card_2_body: Ukupna površina pod šumama jest 110853 km<sup>2</sup>
 ---
-message_5: Najviše proširena mreža podzemnih rijeka i jezera u Europi, kao i močvara od međunarodnog značaja, kao što su delte Neretve (Bosna i Hercegovina / Hrvatska), i Skadarsko / Skadar Lake (Crna Gora / Albanija), mogu se naći tamo , Oni su važni gnijezde populacije ugroženih vrsta ptica, kao što je dalmatinski pelikan, a važan zaustavljanja i zimovalište za migraciju ptica. Rijeka Tara je dobro poznat za formiranje dugu i divlji kanjon koji je drugi najdubljih u svijetu.
+facts_card_3_title: Iznimni riječni dijelovi čine 66% ukupnih riječnog toka
 ---
-message_6: Istočna obala Jadrana ima na stotine otoka i raznolikih obalnih / morskih ekosustava koji su hranjenje i razmnožavanje, za kitove, morske ptice i morske kornjače, i dalje, uključuje neiskvarenu traktate s ograničenom razvoja masovnog turizma.
+facts_card_3_body: Ukupna duljina analiziranih riječnih tokova jest 8.739 km
 ---
-more_about: Više o
+facts_card_1_link: https://www.protectedplanet.net/country/HRV
 ---
-facts_card_1_title: Broj posjetitelja ZP-a u regiji
+facts_card_2_link: http://www.globalforestwatch.org/countries
 ---
-facts_card_2_title: Broj certificiranih šuma u regiji
+facts_card_3_link: http://awsassets.panda.org/downloads/wwf_brosura_print_eng_1.pdf
 ---
-facts_card_3_title: Uključivanje građana u zaštitu prirode
+facts_cta: Izvor
 ---
 learn_more_title_1: WWF Primjeri
 ---
@@ -32,21 +32,16 @@ learn_more_title_2: Održivo poslovanje
 ---
 learn_more_title_3: Zaštićena područja
 ---
-facts_cta: Više
----
-learn_more_cta: Prouči više
----
-learn_more: Više
+learn_more_cta: Saznaj više
 ---
 scroll_to_map_button_text: Prouči mapu za više informacija
 ---
-background_text_about: O nama
+learn_more_backline: Saznaj više
 ---
-background_text_learn_more: Saznaj više
+about_backline: O nama
 ---
 about_headline: Zaštićena područja za prirodu i ljude
 ---
-about_body: Prirodu uzimamo zdravo za gotovo. A ona vrijedi puno više no što uopće možemo pomisliti. Ovom stranicom želimo prikazati prirodu kroz vrijednosti vode, šume i drugih ekosustava bez kojih život na Zemlji ne bi bio moguć. Prirodu bismo trebali koristiti na održiv način.
----
-about_body2: WWF stoga potiče dijalog s vladama da im prirodne vrijednosti postanu glavna tema, a s poslovnim sektorom da prirodi vrate ono što im ona daje za njihovo bolje poslovanje. U svom radu sa zaštićenim područjima WWF uključuje lokalnu zajednicu u proces upravljanja, kojoj tako osigurava direktnu dobrobit od samog područja. Rješenja kako bolje vrednovati prirodu WWF pronalazi kroz program "Zaštićena područja za prirodu i ljude".
+about_content: <p>Prirodu uzimamo zdravo za gotovo. A ona vrijedi puno više no što uopće možemo pomisliti. Ovom stranicom želimo prikazati prirodu kroz vrijednosti vode, šume i drugih ekosustava bez kojih život na Zemlji ne bi bio moguć. Prirodu bismo trebali koristiti na održiv način.</p>
+<p>WWF stoga potiče dijalog s vladama da im prirodne vrijednosti postanu glavna tema, a s poslovnim sektorom da prirodi vrate ono što im ona daje za njihovo bolje poslovanje. U svom radu sa zaštićenim područjima WWF uključuje lokalnu zajednicu u proces upravljanja, kojoj tako osigurava direktnu dobrobit od samog područja. Rješenja kako bolje vrednovati prirodu WWF pronalazi kroz program "Zaštićena područja za prirodu i ljude".</p>
 ---

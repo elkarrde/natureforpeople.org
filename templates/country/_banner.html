@@ -1,7 +1,11 @@
-<div class="country-banner banner {{ country_banner_image_class }} flex items-start flex-column justify-center">
-	<h1 class="banner-title lg-ml10 mx-auto col-10 lg-col-6">{{ this.h1_title }}</h1>
-	<p class="banner-quote mt3 lg-ml10 mx-auto col-10 lg-col-6">{{ this.banner_message }}</p>
-	<a href="#content" class="block banner-button {{ country_border_gradient_class }} flex items-center justify-center mt3 lg-ml10 mx-auto">
-		<p class="mx3 default-color-1">{{ this.banner_button_text }}</p>
-	</a>
-</div>
+<section id="country-banner" class="cover white">
+  <div class="max-width-4 mx-auto py4">
+    <div class="clearfix">
+      <div class="sm-col-12 px2">
+        <h1 class="playfair-bold h2">{{ this.banner_title }}</h1>
+        <p class="h4 md-col-8 lg-col-6 mb4">{{ this.banner_message }}</p>
+        <!-- <a href="#" class="btn border-gradient white">{{ this.banner_button_text }}</a> -->
+      </div>
+    </div>
+  </div>
+</section>

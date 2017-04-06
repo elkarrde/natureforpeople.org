@@ -1,33 +1,37 @@
 _model: index
 ---
-title: PABAT
+title: The value of nature
 ---
-banner_quote: Recognize the value of our nature
+headline: Recognize the value of our nature
 ---
-message_0: It is easy to lose oneself among thousand of islands or in dense forests. But it is even easier to find peace on the tops of magical mountains or near the untouched river babbles. Find out how much things that don't cost a thing would actually cost us!
+message: It is easy to lose oneself among thousand of islands or in dense forests. But it is even easier to find peace on the tops of magical mountains or near the untouched river babbles. Find out how much things that don't cost a thing would actually cost us!
+
+
+
 ---
-message_1: Dinaric Arc ecoregion is consisted out of Dinaric Alps, the Dalmatian coast and the Adriatic Sea, and it hosts well-preserved forests, a high proportion of endemic plants, important freshwater ecosystems, rich marine habitats and fishing grounds, and populations of large carnivores (lynx, brown bear, and wolf).
+facts_card_1_title: Protected areas make up 14 % of the total area of the region
 ---
-message_2: Low-intensity farming practices have created semi-natural habitats throughout the Mediterranean region which integrates forest, pasture and cropland, and provide a home for unique sets of species. These complex mosaics are still present throughout the Dinaric Arc.
+facts_card_1_body: Total surface of protected areas is 52150 km<sup>2</sup>
 ---
-message_3: This region is famous for its unique karstic geology and cave habitats with a diversity of invertebrates, fish, amphibians, and reptiles. Livanjsko Polje in western Bosnia is the largest karstic field in the world. The cave system represents the largest underground river system in Europe and an extremely important source of water for the entire region.
+facts_card_2_title: 43 % of forest areas in the region are certified<br/><br/>
 ---
-message_4: Large carnivores use Dinaric mountains as an ecological corridor between the Alps and the mountains of south-eastern Europe. Some of the untouched mountains in Europe are located in the southern end of the region - Prokletije Massif and the “Albanian Alps”.
+facts_card_2_body: Area covered by forrests is 110853 km<sup>2</sup>
 ---
-message_5: The most extended network of subterranean rivers and lakes in Europe, as well as wetlands of international importance, such as the Neretva delta (Bosnia and Herzegovina/Croatia), and Skadar/Shkodra Lake (Montenegro/Albania), can be found there. They are important nesting populations of endangered bird species, such as Dalmatian pelican, and are an important stopover and wintering site for migrating birds. The river Tara is well known for forming a long and wild canyon which is second deepest in the world.
+facts_card_3_title: Exceptional river parts make 66 % of total watercourse
 ---
-message_6: The Eastern Adriatic coast has hundreds of islands and diverse coastal/marine ecosystems which are feeding and breeding grounds for cetaceans, sea birds, and marine turtles, and still, includes unspoilt tracts with limited mass tourism development.
+facts_card_3_body: Total length of ananlyzed rivers 8.739 km
 ---
-more_about: More about
+facts_card_1_link: https://www.protectedplanet.net/country/HRV
 ---
-facts_card_1_title: Broj posjetitelja ZP-a u regiji
+facts_card_2_link: http://www.globalforestwatch.org/countries
 ---
-facts_card_2_title: Broj certificiranih šuma u regiji
+facts_card_3_link: http://awsassets.panda.org/downloads/wwf_brosura_print_eng_1.pdf
 ---
-facts_card_3_title: Uključivanje građana u zaštitu prirode
+facts_cta: Source
 ---
-facts_cta: More info
----
+
+
+
 learn_more_title_1: WWF Examples
 ---
 learn_more_title_2: Sustainable Business
@@ -36,17 +40,14 @@ learn_more_title_3: Protected Areas
 ---
 learn_more_cta: Learn more
 ---
-learn_more: Learn more
----
 scroll_to_map_button_text: View map for more info
 ---
-background_text_about: About
+learn_more_backline: Learn more
 ---
-background_text_learn_more: Learn more
+about_backline: About
 ---
-about_headline: Zaštićena područja za prirodu i ljude
+about_headline: Protected areas for nature and people
 ---
-about_body: We take nature for granted. And it is worth much more than we can even think of. On this page we would like to show nature through the value of water, forest and other ecosystems without which the life on Earth would not be possible.
----
-about_body2: WWF with associates presents simple facts on economic and social values of the nature. We hope that these arguments will encourage decision makers in all sectors to become involved in the sustainable usage of natural values, and business sector to compensate to the nature what the nature provides for their better functioning. Local communities should be actively included in the decision-making for the regular and sustainable usage of natural goods - we hope that a better understanding will contribute to this goal. WWF has been finding solutions on how to appreciate the nature more within the "Protected areas for nature and people" programme.
+about_content: <p>We take nature for granted. And it is worth much more than we can even think of. On this page we would like to show nature through the value of water, forest and other ecosystems without which the life on Earth would not be possible.</p>
+<p>WWF with associates presents simple facts on economic and social values of the nature. We hope that these arguments will encourage decision makers in all sectors to become involved in the sustainable usage of natural values, and business sector to compensate to the nature what the nature provides for their better functioning. Local communities should be actively included in the decision-making for the regular and sustainable usage of natural goods - we hope that a better understanding will contribute to this goal. WWF has been finding solutions on how to appreciate the nature more within the "Protected areas for nature and people" programme.</p>
 ---

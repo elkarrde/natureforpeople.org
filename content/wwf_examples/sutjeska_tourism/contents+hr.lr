@@ -1,51 +1,47 @@
-_model: sutjeska-tourism
+_model: factsheet
+---
+_template: wwf_examples_factsheet.html
 ---
 title: Sutjeska - Turizam na rijeci
 ---
+link_button: Turizam na rijeci
+---
 bg_text: NP Sutjeska
 ---
-main_headline: Turizam na rijeci
+main_headline:
 ---
 learn_more_button: Saznaj više
 ---
 intro_title: Novim turističkim proizvodom protiv devastirajuće hidroenergetike
 ---
-intro_body: <div class="recommendations"><p class="mt2">Nacionalni park Sutjeska najstariji je nacionalni park u Bosni i Hercegovini. Jedno je od biološki najraznovrsnijih područja u jugoistočnoj Europi u kojem se nalazi više vrsta biljaka nego u cijeloj Poljskoj te sadrži jednu od posljednjih prašuma u Europi – Perućicu, strogi prirodni rezervat.</p>
+intro_body:
 
-<p class="mt2">WWF s Nacionalnim parkom Sutjeska surađuje duži niz godina, a park je umrežen i s ostalim parkovima regije kroz članstvo u mreži zaštićenih područja Parkovi Dinarida.</p> 
+<p>Nacionalni park Sutjeska najstariji je nacionalni park u Bosni i Hercegovini. Jedno je od biološki najraznovrsnijih područja u jugoistočnoj Europi u kojem se nalazi više vrsta biljaka nego u cijeloj Poljskoj te sadrži jednu od posljednjih prašuma u Europi – Perućicu, strogi prirodni rezervat.</p>
 
-<p class="mt2">Kada je u srpnju 2014. godine ovom parku prijetila izgradnja hidroelektrana, WWF se pridružio lokalnim nevladinim organizacijama u kampanji "Bitka za Sutjesku" protiv tog plana izgradnje. Odaziv javnosti bio je velik te je sud poništio rješenje o odobravanju Studije utjecaja na okoliš malih hidroelektrana planiranih u kanjonu rijeke Hrčavke.</p>
+<p>WWF s Nacionalnim parkom Sutjeska surađuje duži niz godina, a park je umrežen i s ostalim parkovima regije kroz članstvo u mreži zaštićenih područja Parkovi Dinarida.</p>
 
-<p class="mt2">Planovi za izgradnju četiriju malih hidroelektrana u samom srcu parka i dalje postoje. Njihovim bi ostvarivanjem ekosustavu bila nanesena nepovratna šteta dok dobit lokalnoj zajednici ostaje upitna.</p>
+<p>Kada je u srpnju 2014. godine ovom parku prijetila izgradnja hidroelektrana, WWF se pridružio lokalnim nevladinim organizacijama u kampanji "Bitka za Sutjesku" protiv tog plana izgradnje. Odaziv javnosti bio je velik te je sud poništio rješenje o odobravanju Studije utjecaja na okoliš malih hidroelektrana planiranih u kanjonu rijeke Hrčavke.</p>
 
-<p class="mt2">Prostor Nacionalnog parka Sutjeska ima jedinstveni potencijal za razvoj održivih gospodarskih aktivnosti i može predstavljati trajni izvor prihoda za lokalno stanovništvo. Kroz aktivnosti poput organske poljoprivrede, sakupljanja i prerade nedrvnih šumskih proizvoda (bobičasto voće, gljive, med, medicinsko i aromatično bilje) razvija se bolja turistička ponuda.  WWF okupljanjem Suradničkog vijeća potiče sve dionike parka da blisko surađuju s njegovom upravom kroz poboljšanu komunikaciju i suradnju različitih interesnih grupa. Jedino zajedničkom vizijom razvoja NP-a Sutjeska, u koju su uključene i ranjive i ugrožene skupine društva, može se doći do boljitka za lokalnu zajednicu. Njih nastojimo osvijestiti da slobodna rijeka kakva je danas puno više vrijedi od one čija bi sloboda bila okovana hidroelektranom. Kako bismo to i dokazali na primjeru, pomažemo u kreiranju održivih turističkih proizvoda poput kanjoninga.</p>
+<p>Planovi za izgradnju četiriju malih hidroelektrana u samom srcu parka i dalje postoje. Njihovim bi ostvarivanjem ekosustavu bila nanesena nepovratna šteta dok dobit lokalnoj zajednici ostaje upitna.</p>
 
-<h2 class="title mt3">Što činimo?</h2>
-<p class="mt2">WWF moderira proces koji će omogućiti stvaranje turističke ponude kanjoninga, što uključuje obuku vodiča, nabavu opreme, pripremu i osiguranje staza te reguliranje obveza i odgovornosti svih partnera u budućoj "upotrebi" kanjona Hrčavke u turističke svrhe.</p>
+<p class="highlight">Prostor Nacionalnog parka Sutjeska ima jedinstveni potencijal za razvoj održivih gospodarskih aktivnosti i može predstavljati trajni izvor prihoda za lokalno stanovništvo. Kroz aktivnosti poput organske poljoprivrede, sakupljanja i prerade nedrvnih šumskih proizvoda (bobičasto voće, gljive, med, medicinsko i aromatično bilje) razvija se bolja turistička ponuda.</p>
 
-<p class="mt2">Uz stručnu pomoć u suradnji sa Suradničkim vijećem radimo i na daljnjem razvoju slabije razvijenih turističkih aktivnosti (planinarenje, biciklizam...). Prikupljene su informacije predstavljene i rendžerima da ih podijele s turistima i upoznaju s prirodom o čijoj zaštiti svi moramo brinuti, a novostečeno znanje podijelit će s lokalnim stanovništvom.  Poboljšanjem životnih uvjeta lokalne zajednice i upravljanjem nacionalnim parkom ublažavaju se i prijetnje povezane s očuvanom prirodom. WWF stoga inicira razvoj Suradničkog vijeća kako bi zajedno postigli kvalitetnu i prepoznatljivu turističku ponudu. Rezultati novih znanstvenih istraživanja iskorišteni su i za razvoj aktivnosti povezanih s kanjoningom kako bi se što manje ugrozio biljni i životinjski svijet.</p>
+<p>WWF okupljanjem Suradničkog vijeća potiče sve dionike parka da blisko surađuju s njegovom upravom kroz poboljšanu komunikaciju i suradnju različitih interesnih grupa. Jedino zajedničkom vizijom razvoja NP-a Sutjeska, u koju su uključene i ranjive i ugrožene skupine društva, može se doći do boljitka za lokalnu zajednicu. Njih nastojimo osvijestiti da slobodna rijeka kakva je danas puno više vrijedi od one čija bi sloboda bila okovana hidroelektranom. Kako bismo to i dokazali na primjeru, pomažemo u kreiranju održivih turističkih proizvoda poput kanjoninga.</p>
 
-<p class="mt2">Pravilna raspodjela dobrobiti od zaštićenog područja nužna je za sve dionike: zaštićeno područje, poslovni sektor i lokalnu zajednicu. Uz dobru suradnju uprave parka s lokalnim stanovništvom koje razumije njegove vrijednosti, kao i poslovnim sektorom koji vidi priliku za investicije, uspjeh je zajamčen.</p>
+<h3 class="h3 cc-secondary">Što činimo?</h3>
+<p class="highlight">WWF moderira proces koji će omogućiti stvaranje turističke ponude kanjoninga, što uključuje obuku vodiča, nabavu opreme, pripremu i osiguranje staza te reguliranje obveza i odgovornosti svih partnera u budućoj "upotrebi" kanjona Hrčavke u turističke svrhe.</p>
 
-<h2 class="title mt3">Što ćemo postići?</h2>
-<p class="mt2">Kanjon rijeke Hrčavke prvi je kanjon u Bosni i Hercegovini koji će biti dio turističke ponude i doprinijeti povećanju prihoda lokalne zajednice. Priznanje ekoloških vrijednosti NP-a Sutjeske na državnoj razini umanjit će prijetnje povezane s neodrživim razvojem u parku.</p>
+<p>Uz stručnu pomoć u suradnji sa Suradničkim vijećem radimo i na daljnjem razvoju slabije razvijenih turističkih aktivnosti (planinarenje, biciklizam...). Prikupljene su informacije predstavljene i rendžerima da ih podijele s turistima i upoznaju s prirodom o čijoj zaštiti svi moramo brinuti, a novostečeno znanje podijelit će s lokalnim stanovništvom.  Poboljšanjem životnih uvjeta lokalne zajednice i upravljanjem nacionalnim parkom ublažavaju se i prijetnje povezane s očuvanom prirodom. WWF stoga inicira razvoj Suradničkog vijeća kako bi zajedno postigli kvalitetnu i prepoznatljivu turističku ponudu. Rezultati novih znanstvenih istraživanja iskorišteni su i za razvoj aktivnosti povezanih s kanjoningom kako bi se što manje ugrozio biljni i životinjski svijet.</p>
 
-<p class="mt2">Redovnom komunikacijom omogućit će se bolja razmjena informacija važnih za upravljanje zaštićenim područjima, ali i za razvoj lokalnih zajednica. Lokalno stanovništvo dobit će bolji uvid u upravljanje zaštićenim područjima sudjelovanjem u  Suradničkom vijeću te prepoznati i iskoristiti vrijednosti parka.</p>
-</div>
+<p>Pravilna raspodjela dobrobiti od zaštićenog područja nužna je za sve dionike: zaštićeno područje, poslovni sektor i lokalnu zajednicu. Uz dobru suradnju uprave parka s lokalnim stanovništvom koje razumije njegove vrijednosti, kao i poslovnim sektorom koji vidi priliku za investicije, uspjeh je zajamčen.</p>
+
+<h3 class="h3 cc-secondary">Što ćemo postići?</h3>
+<p>Kanjon rijeke Hrčavke prvi je kanjon u Bosni i Hercegovini koji će biti dio turističke ponude i doprinijeti povećanju prihoda lokalne zajednice. Priznanje ekoloških vrijednosti NP-a Sutjeske na državnoj razini umanjit će prijetnje povezane s neodrživim razvojem u parku.</p>
+
+<p class="highlight">Redovnom komunikacijom omogućit će se bolja razmjena informacija važnih za upravljanje zaštićenim područjima, ali i za razvoj lokalnih zajednica. Lokalno stanovništvo dobit će bolji uvid u upravljanje zaštićenim područjima sudjelovanjem u  Suradničkom vijeću te prepoznati i iskoristiti vrijednosti parka.</p>
 ---
 learn_more: Više
 ---
-wwf_example_1: Urbani park
----
-wwf_example_2: Lokalna ponuda
----
-wwf_example_3: Turizam na rijeci
----
-wwf_example_4: Promatranje medvjeda
----
-wwf_example_5: Edukacija
----
-wwf_example_6: Suradnička vijeća
----
 cta_button_text: Riješimo izazove zajedno
 ---
+slug: river-tourism
