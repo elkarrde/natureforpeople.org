@@ -24,6 +24,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Overall_value_icon:before {
+	content: "\e99c";
+}
 .icon-Overall_economic_value_icon:before {
 	content: "\e904";
 }

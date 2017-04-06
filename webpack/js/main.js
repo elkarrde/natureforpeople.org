@@ -115,14 +115,14 @@ currentCountry = "croatia";
 
 var Dropdown = Vue.extend({
 	template: `
-		<div class="country-picker picker relative inline-block">
-			<button @focus="toggled = true" @blur="toggled = false" class="btn border-hr-blue p2 grey-dark pointer-cursor">
+		<div class=\"country-picker picker relative inline-block\">
+			<button @focus=\"toggled = true\" @blur=\"toggled = false\" class=\"btn border-hr-blue p2 grey-dark pointer-cursor\">
 				<span>{{ pickedText }}</span>
-				<i class="icon-arrow-drop-down right"></i>
+				<i class=\"icon-arrow-drop-down right\"></i>
 			</button>
-			<ul v-show="toggled" class="z2 m0 absolute bg-hr-blue list-reset">
-				<li v-for="c in choices">
-					<a @mousedown="pick(c.name, c.code, $event)">{{ c.name | localize }}</a>
+			<ul v-show=\"toggled\" class=\"z2 m0 absolute bg-hr-blue list-reset\">
+				<li v-for=\"c in choices\">
+					<a @mousedown=\"pick(c.name, c.code, $event)\">{{ c.name | localize }}</a>
 				</li>
 			</ul>
 		</div>
@@ -150,6 +150,10 @@ var store = {
 	},
 	setState: function(prop, newValue) {
 		if (prop == 'country') { this.state.protected_area = null }
+		if (prop == 'graph_type') {
+			$('.graph-card').removeClass('active');
+			$('#graph-card-'+newValue.code).addClass('active');
+		}
 		this.state[prop] = newValue
 		renderGraph(this);
 	},
@@ -219,29 +223,15 @@ var graphTypePicker = new Dropdown({
 	}
 })
 
-
 jQuery(document).ready(function(){
+	setLocale();
+
 	$('.graph-type-picker').graphTypePicker(function(choice) {
 		store.setState('graph_type', choice)
 	});
 
-	var $navbar = $("#main-nav"),
-		y_pos = $navbar.offset().top,
-		height = $navbar.height();
-
-	$navbar.css('height', '4.5rem');
-	var $l_select = $('.local-dropdown button');
-
-	$(document).scroll(function() {
-		var scrollTop = $(this).scrollTop();
-
-		if (scrollTop > y_pos + height) {
-			$navbar.css('height', '1.5rem');
-			$l_select.css('height', '1.5rem');
-		} else if (scrollTop <= y_pos) {
-			$navbar.css('height', '2.5rem');
-			$l_select.css('height', 'r.5rem');
-		}
+	$('#homepage-view-map-btn').click(function() {
+		$('html,body').animate({scrollTop: $('#homepage-map').offset().top}, 'slow');
 	});
 
 	animationHelpers.drawDonutChart('#homepage-fact-1', $('#homepage-fact-1').data('donut'), 200, 200, ".4em");
@@ -256,14 +246,6 @@ jQuery(document).ready(function(){
 	animationHelpers.animateValue("#bosnia-fact-2", 4000);
 	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
-
-	// Check if correct localization string
-
-	if (window.location.pathname.split('/')[1] == 'hr') {
-		$('.local-dropdown button span').html('HR')
-	} else {
-		$('.local-dropdown button span').html('EN')
-	}
 
 	$('.map-wrapper svg .country').click(panToCountry);
 	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
@@ -387,3 +369,12 @@ function parseDataSet(bars) {
 	return _.map(bars.split(','), function(num) { return parseInt(num, 10) });
 }
 
+function setLocale() {
+	if (window.location.pathname.split('/')[1] == 'hr') {
+		locale = 'hr';
+		$('.local-dropdown button span').html('HR');
+	} else {
+		locale = 'en';
+		$('.local-dropdown button span').html('EN');
+	}
+}

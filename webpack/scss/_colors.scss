@@ -90,6 +90,10 @@
   background: linear-gradient(315deg, $ba-yellow 0%, $ba-blue 100%);
 }
 
+.bg-homepage-dark-blue {
+  background: linear-gradient(0deg, $homepage-dark-blue 0%, $homepage-blue 100%);
+}
+
 /* Text colors - 'cc' prefix as 'country color' */
 
 body.country-hr {

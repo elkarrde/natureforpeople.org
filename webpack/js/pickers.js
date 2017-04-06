@@ -5,9 +5,11 @@ function initPickerPlugins($) {
 
 			$t.find('.graph-card').click(function(event) {
 				var $tgt = $(event.currentTarget),
-					chosen_gt = $tgt.data('graphid');
+					chosen_gt = $tgt.data('graphid'),
+					graph_card_id = '#graph-card-' + chosen_gt;
 
-				$tgt.addClass('graph-card-hover');
+				$t.find('.graph-card').removeClass('active');
+				$(graph_card_id).addClass('active');
 
 				callback({name: '', code: chosen_gt});
 			});

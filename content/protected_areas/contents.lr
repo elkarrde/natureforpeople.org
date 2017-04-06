@@ -2,7 +2,7 @@ _model: protected_areas
 ---
 title: Protected areas
 ---
-main_headline:
+bg_text: Protected areas
 ---
 step_1: Choose country from dropdown menu:
 ---
