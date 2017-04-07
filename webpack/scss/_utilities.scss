@@ -19,10 +19,10 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+}
 
-  &.rounded {
-      border-radius: 100px;
-  }
+.rounded {
+    border-radius: 2em;
 }
 
 .uppercase {
@@ -58,4 +58,21 @@
 
 .pointer-cursor {
 	  cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &.closed {
+        display: none;
+    }
+
+    .modal-dialog {
+    }
+
+    .close-modal {
+    }
 }
