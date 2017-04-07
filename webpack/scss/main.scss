@@ -22,11 +22,14 @@
   box-sizing: border-box;
 }
 
-.short-cta {
-	  height: 30vh;
+.short-banner {
+	height: 50vh;
+	@media (min-width: $breakpoint-xxl) {
+		height: 30vh;
+	}
 }
 
-.short-banner {
+.short-cta {
 	  height: 30vh;
 }
 

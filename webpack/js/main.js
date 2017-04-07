@@ -110,10 +110,11 @@ translations = {
 	}
 }
 
+geolocation = null;
 locale = 'hr';
 
-countriesOrder = ["slovenia", "croatia", "bosnia", "serbia", "kosovo", "montenegro", "albania", "macedonia"];
-currentCountry = "croatia";
+countriesOrder = ["si", "hr", "ba", "rs", "xk", "me", "al", "mk"];
+currentCountry = randomElement(countriesOrder);
 
 var Dropdown = Vue.extend({
 	template: `
@@ -227,6 +228,7 @@ var graphTypePicker = new Dropdown({
 
 jQuery(document).ready(function(){
 	setLocale();
+	setGeolocation();
 
 	$('.graph-type-picker').graphTypePicker(function(choice) {
 		store.setState('graph_type', choice)
@@ -249,16 +251,16 @@ jQuery(document).ready(function(){
 	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
 
-	$('.map-wrapper svg .country').click(panToCountry);
-	$(".map-wrapper .arrow-austria").click(function() { panToViewBox(-50, -50) });
-	$(".map-wrapper .arrow-greece").click(function() { panToViewBox(300, 300) });
+	$("#homepage-map .country").click(function() {
+		panToCountry(this);
+	});
 
-	$('.map-wrapper .big-map-desc .country-prev').click(function() {
+	$('#homepage-map-desc .country-prev').click(function() {
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
 		$('.map-wrapper svg .' + currentCountry).click();
 	});
 
-	$('.map-wrapper .big-map-desc .country-next').click(function() {
+	$('#homepage-map-desc .country-next').click(function() {
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
 		$('.map-wrapper svg .' + currentCountry).click();
 	});
@@ -266,10 +268,10 @@ jQuery(document).ready(function(){
 	$(document).keyup(function(e) {
 		if (e.which === 37) {
 			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
-			$('.map-wrapper svg .' + currentCountry).click();
+			$('#homepage-map .' + currentCountry).click();
 		} else if (e.which === 39) {
 			currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
-			$('.map-wrapper svg .' + currentCountry).click();
+			$('#homepage-map .' + currentCountry).click();
 		}
 	});
 
@@ -311,47 +313,39 @@ function panToViewBox(vpx, vpy) {
 	panMapToPoint(svg, vpx, vpy);
 }
 
-function panToCountry() {
-	var svg = d3.select(".map-wrapper svg"),
-		currentViewBox = svg[0][0].viewBox.baseVal,
-		countryG = d3.select(this),
-		countryNode = countryG.node(),
-		vpx = countryNode.getAttribute("mydata:vpx"),
-		vpy = countryNode.getAttribute("mydata:vpy"),
-		countryName = countryNode.getAttribute("mydata:country_name"),
-		countryBtn = countryNode.getAttribute("mydata:country_btn"),
-		countryDesc = countryNode.getAttribute("mydata:country_about"),
-		countryUrl = countryNode.getAttribute("mydata:country_url"),
-		localizationLocation = window.location.pathname.split('/')[1],
-		fullCountryUrl;
+function panToCountry(country) {
+	var svg = d3.select("#homepage-map")
+		, currentViewBox = svg[0][0].viewBox.baseVal
+		, country_group = d3.select(country)
+		, country_node = country_group.node()
+		, vpx = country_node.getAttribute("mydata:vpx")
+		, vpy = country_node.getAttribute("mydata:vpy")
 
-	if (localizationLocation == 'hr') {
-      fullCountryUrl = '/' + localizationLocation + countryUrl;
-    } else {
-      fullCountryUrl = countryUrl;
-    }
-
-	switchCountry(countryName, countryDesc, countryBtn, fullCountryUrl);
+	switchCountry.apply(window, country_node);
 	d3.selectAll("svg .country").style("opacity", 1);
-	countryG.style("opacity", 0.5);
+	country_group.style("opacity", 0.5);
 	panMapToPoint(svg, vpx, vpy);
 
 }
 
-function switchCountry(countryName, countryDesc, countryBtn, countryUrl) {
-	$(".big-map-desc .country-name").html(countryName);
-	$(".big-map-desc .country-desc").html(countryDesc);
-	$(".big-map-desc .about-country-button").attr("href", countryUrl);
-	$(".big-map-desc .more-about-name").html(countryBtn);
+function switchCountry(country_node) {
+	[country_name, country_btn, country_url] = countryInfo(country_node);
+	$("#homepage-map-desc h2").html(country_name);
+	$("#homepage-map-desc a").html(country_btn);
+	$("#homepage-map-desc a").attr("href", country_url);
 }
 
-function crawlArray(array, index, step) {
-    return ((index + step) % array.length + array.length) % array.length;
-}
+function countryInfo(country_node) {
+	var $c = $(country_node)
+		, country_name = $c.attr("mydata:country_name")
+		, country_btn = $c.attr("mydata:country_btn")
+		, country_url = $c.attr("mydata:country_url");
 
+	return [country_name, country_btn, localizedUrl(country_url, locale)];
+}
 
 function panMapToPoint(svg, x, y) {
-	var $svg = $(d3.select(".map-wrapper svg")[0]),
+	var $svg = $(d3.select("#homepage-map")[0]),
 		x = parseInt(x, 10),
 		y = parseInt(y, 10),
 		w =  $svg.width(),
@@ -382,4 +376,33 @@ function setLocale() {
 		locale = 'en';
 		$('.local-dropdown button span').html('EN');
 	}
+}
+
+function setGeolocation() {
+	$.getJSON({
+		url: "https://eu-js-geolocation.appspot.com/api/geolocation?format=jsonp&callback=?",
+		dataType: "jsonp",
+	}, function(json) {
+		geolocation = json;
+		var currentCountry = json.country.toLowerCase();
+		var $country = $('.'+currentCountry);
+		switchCountry($country);
+	});
+}
+
+function randomElement(array) {
+	var idx = Math.floor(Math.random() * array.length);
+	return array[idx];
+}
+
+function localizedUrl(url, locale) {
+	if (locale == 'hr') {
+		return '/' + locale + url;
+	} else {
+		return url;
+	}
+}
+
+function crawlArray(array, index, step) {
+    return ((index + step) % array.length + array.length) % array.length;
 }
