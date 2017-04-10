@@ -4,9 +4,9 @@ _template: wwf_examples_factsheet.html
 ---
 title: Una National Park and local community
 ---
-link_button: Local Offer
+link_button: Local offer
 ---
-bg_text: Una National Park
+bg_text:
 ---
 main_headline:
 ---
