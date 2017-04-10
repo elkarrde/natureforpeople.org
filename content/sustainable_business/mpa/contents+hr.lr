@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: sustainable_business_factsheet.html
 ---
-title: Morska zaštićena područja
+title: Turizam
 ---
-bg_text: Morska zaštićena područja
+bg_text: Turizam
 ---
 main_headline:
 ---
@@ -40,7 +40,7 @@ learn_more: Više
 ---
 sust_business_1: Hidroenergetika
 ---
-sust_business_2: Morska zaštićena područja
+sust_business_2: Turizam
 ---
 sust_business_3: Šumarstvo
 ---

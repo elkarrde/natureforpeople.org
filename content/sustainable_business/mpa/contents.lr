@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: sustainable_business_factsheet.html
 ---
-title: Marine protected areas
+title: Tourism
 ---
-bg_text: Marine protected areas
+bg_text: Tourism
 ---
 main_headline:
 ---
@@ -42,7 +42,7 @@ learn_more: Learn more
 ---
 sust_business_1: Hydropower
 ---
-sust_business_2: Marine protected areas
+sust_business_2: Tourism
 ---
 sust_business_3: Forestry
 ---
