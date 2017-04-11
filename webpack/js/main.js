@@ -117,19 +117,7 @@ countriesOrder = ["si", "hr", "ba", "rs", "xk", "me", "al", "mk"];
 currentCountry = randomElement(countriesOrder);
 
 var Dropdown = Vue.extend({
-	template: `
-		<div class=\"country-picker picker relative inline-block\">
-			<button @focus=\"toggled = true\" @blur=\"toggled = false\" class=\"btn border-hr-blue p2 grey-dark pointer-cursor\">
-				<span>{{ pickedText }}</span>
-				<i class=\"icon-arrow-drop-down right\"></i>
-			</button>
-			<ul v-show=\"toggled\" class=\"z2 m0 absolute bg-hr-blue list-reset\">
-				<li v-for=\"c in choices\">
-					<a @mousedown=\"pick(c.name, c.code, $event)\">{{ c.name | localize }}</a>
-				</li>
-			</ul>
-		</div>
-	`,
+	template: "<div class=\"country-picker picker relative inline-block\"> <button @focus=\"toggled = true\" @blur=\"toggled = false\" class=\"btn border-hr-blue p2 grey-dark pointer-cursor\"> <span>{{ pickedText }}</span> <i class=\"icon-arrow-drop-down right\"></i> </button> <ul v-show=\"toggled\" class=\"z2 m0 absolute bg-hr-blue list-reset\"> <li v-for=\"c in choices\"> <a @mousedown=\"pick(c.name, c.code, $event)\">{{ c.name | localize }}</a> </li> </ul> </div>",
 	filters: {
 		localize: function(value) {
 			return value[this.locale];
