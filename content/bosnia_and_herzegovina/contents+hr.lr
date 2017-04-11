@@ -59,3 +59,19 @@ fact_2_title_icon: jobs
 fact_3_title_icon: fresh-water
 ---
 fact_1_title_icon: forrest
+---
+fact_1_infobox:
+
+<p>Fact 1 infobox</p>
+---
+fact_2_infobox:
+
+<p>Fact 2 infobox</p>
+---
+fact_3_infobox:
+
+<p>Fact 3 infobox</p>
+---
+fact_4_infobox:
+
+<p>Fact 4 infobox</p>
