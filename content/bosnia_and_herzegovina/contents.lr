@@ -50,7 +50,19 @@ fact_1_question: Are natural resource in B&H used in a sustainable way?
 ---
 fact_1_caption: 63% of the territory of Bosnia and Herzegovina is <strong>covered by forests and forest land</strong>.
 ---
+fact_5_title: Local development
+---
+fact_5_subtitle: NP Una
+---
+fact_5_copy: Una National Park is one of the drivers of the economic development in the region. In the cooperation with local tourist service providers, the visits to the park double every year in comparison to the previous year.
+---
+fact_5_question: Where do opportunities for the economic growth in protected and surrounding areas lie?
+---
+fact_5_caption: 16 fold increase of number of visitors since the park was founded in 2008.
+---
 cta_button_text: Let's solve challenges together
+---
+fact_5_title_icon: development
 ---
 fact_4_title_icon: tourism
 ---
@@ -63,18 +75,16 @@ fact_1_title_icon: forrest
 fact_1_infobox:
 
 <p>Fact 1 infobox</p>
-
 ---
 fact_2_infobox:
 
 <p>Fact 2 infobox</p>
-
 ---
 fact_3_infobox:
 
 <p>Fact 3 infobox</p>
-
 ---
 fact_4_infobox:
 
 <p>Fact 4 infobox</p>
+---
