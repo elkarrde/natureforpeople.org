@@ -1,0 +1,24 @@
+{% macro modal(id, content) -%}
+<a id="{{ id }}"
+   href="javascript://"
+   data-toggle="modal"
+   data-target="#modal-{{ id }}"
+   class="absolute playfair-bold h6 white italic bg-grey-light bg-grey-hover flex items-center justify-center rounded"
+   style="width: 1.5em; height: 1.5em; top: 1.5em; right: 1.5em;">i</a>
+
+<div id="modal-{{ id }}" class="modal closed top-0 right-0 bottom-0 left-0 z4 bg-black-75">
+    <div class="max-width-3 mx-auto">
+        <div class="clearfix px2">
+            <div class="modal-dialog bg-white px3 py2 my4 mx-auto relative md-col-12">
+
+                <a data-dismiss="modal" class="h3 top-0 right-0 grey-light grey-hover absolute lh0 mt1 mr1" href="javascript://">&times;</a>
+
+                <div class="clearfix">
+                    <div class="sm-col-12 mx-auto">{{ content }}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{%- endmacro %}

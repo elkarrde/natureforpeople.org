@@ -7,8 +7,10 @@ Vue = require('vue');
 jQuery = $;
 
 animationHelpers = require('./animationHelpers');
-graphs = require('./graphs')
-pickers = require('./pickers')
+graphs = require('./graphs');
+pickers = require('./pickers');
+
+require('./modal.js');
 
 pickers.initPickerPlugins($);
 
@@ -272,6 +274,9 @@ jQuery(document).ready(function(){
 			$('#homepage-map .' + currentCountry).click();
 		}
 	});
+
+  // initialize modals
+  $('[data-toggle="modal"]').modal();
 });
 
 // ---------------------------------------------------------
