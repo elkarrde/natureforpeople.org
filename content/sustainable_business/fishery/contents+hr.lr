@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: sustainable_business_factsheet.html
 ---
-title: Održivo ribarstvo
+title: Ribarstvo
 ---
-bg_text: Održivo ribarstvo
+bg_text: Ribarstvo
 ---
 main_headline:
 ---
@@ -50,7 +50,7 @@ learn_more: Više
 ---
 sust_business_1: Hidroenergetika
 ---
-sust_business_2: Morska zaštićena područja
+sust_business_2: Turizam
 ---
 sust_business_3: Šumarstvo
 ---

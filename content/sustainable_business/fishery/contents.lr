@@ -2,7 +2,7 @@ _model: factsheet
 ---
 _template: sustainable_business_factsheet.html
 ---
-title: Sustainable fisheries
+title: Fishery
 ---
 bg_text: Sustainable fisheries
 ---
@@ -52,7 +52,7 @@ learn_more: Learn more
 ---
 sust_business_1: Hydropower
 ---
-sust_business_2: Marine protected areas
+sust_business_2: Tourism
 ---
 sust_business_3: Forestry
 ---
