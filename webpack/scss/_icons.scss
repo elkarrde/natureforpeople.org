@@ -24,43 +24,65 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Overall_value_icon:before {
-	content: "\e99c";
+.icon-close:before {
+	content: '\e901';
 }
-.icon-Overall_economic_value_icon:before {
-	content: "\e904";
-}
-.icon-Main_potential_icon:before {
-	content: "\e905";
-}
-.icon-Flow_of_economic_value_icon:before {
-	content: "\e906";
-}
-.icon-forrest:before {
-	content: "\e900";
-}
-.icon-fresh-water:before {
-	content: "\e901";
-}
-.icon-jobs:before {
+.icon-three-bars:before {
 	content: "\e902";
 }
-.icon-close:before {
-	content: 'X';
+
+.icon-chevron-down:before {
+	content: '\e903';
 }
-.icon-tourism:before {
-	content: "\e903";
+.icon-chevron-left:before {
+	content: '\e90c';
 }
-.icon-arrow-drop-down:before {
-	content: "\e5c5";
+.icon-chevron-right:before {
+	content: '\e90d';
 }
-.icon-navigate_before:before {
-	content: "\e408";
-}
-.icon-navigate_next:before {
-	content: "\e409";
-}
-.icon-menu-bars:before {
-	content: "\e3c7";
+.icon-chevron-up:before {
+	content: '\e90e';
 }
 
+
+.icon-triangle-down:before {
+	content: '\e90f';
+}
+.icon-triangle-left:before {
+	content: '\e910';
+}
+.icon-triangle-right:before {
+	content: '\e911';
+}
+.icon-triangle-up:before {
+	content: '\e912';
+}
+
+.icon-economic-value:before {
+	content: "\e909";
+}
+.icon-overall-value:before {
+	content: "\e90a";
+}
+.icon-potentials:before {
+	content: "\e908";
+}
+.icon-flow-of-value:before {
+	content: "\e90b";
+}
+
+.icon-forest:before {
+	content: "\e905";
+}
+.icon-jobs:before {
+	content: "\e906";
+}
+.icon-water:before {
+	content: "\e907";
+}
+.icon-tourism:before {
+	content: "\e900";
+}
+.icon-growth:before {
+	content: "\e904";
+}
