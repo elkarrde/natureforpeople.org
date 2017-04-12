@@ -4,9 +4,9 @@ _template: wwf_examples_factsheet.html
 ---
 title: Sutjeska - Turizam na rijeci
 ---
-link_button: Turizam i rekreacija
+link_button: Turizam<br /> i rekreacija
 ---
-bg_text: NP Sutjeska
+bg_text: 
 ---
 main_headline:
 ---

@@ -4,7 +4,7 @@ _template: sustainable_business_factsheet.html
 ---
 title: Tourism
 ---
-bg_text: Tourism
+bg_text:
 ---
 main_headline:
 ---
