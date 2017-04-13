@@ -2,7 +2,7 @@ _model: protected_areas
 ---
 title: Protected areas
 ---
-bg_text: Protected areas
+bg_text:
 ---
 step_1: Choose country from dropdown menu:
 ---
@@ -40,10 +40,10 @@ learn_more_backline: Learn more
 ---
 learn_more_cta: Learn more
 ---
-learn_more_title_1: WWF Examples
+learn_more_title_1: Nature & People
 ---
 learn_more_title_2: Sustainable Business
 ---
-learn_more_title_3: Protected Areas
+learn_more_title_3: Protected area values
 ---
 slug: protected-areas
