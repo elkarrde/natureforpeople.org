@@ -21,6 +21,7 @@
 	color: $hr-red;
 }
 
+#ba-facts-5 .counter-wrapper,
 #ba-facts-2 .counter-wrapper,
 #hr-facts-1 .counter-wrapper {
 	background: url('/static/images/visitors.svg') no-repeat center;
@@ -49,6 +50,7 @@
 }
 
 #bosnia-fact-2,
-#bosnia-fact-3 {
+#bosnia-fact-3,
+#bosnia-fact-5 {
 	color: $ba-yellow-dark;
 }
