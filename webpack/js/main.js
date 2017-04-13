@@ -309,7 +309,7 @@ function panToCountry(country) {
 		, vpx = country_node.getAttribute("mydata:vpx")
 		, vpy = country_node.getAttribute("mydata:vpy")
 
-	switchCountry.apply(window, country_node);
+	switchCountry.call(window, country_node);
 	d3.selectAll("svg .country").style("opacity", 1);
 	country_group.style("opacity", 0.5);
 	panMapToPoint(svg, vpx, vpy);
