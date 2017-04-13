@@ -6,7 +6,7 @@ title: Bosna i Hercegovina
 ---
 banner_title: Bosna i Hercegovina
 ---
-banner_message: Odgovarajuće upravljanje pruža veću zahvalnost i poboljšanu kvalitetu prirodnog okoliša, što pak privlači turiste i osigurava radna mjesta.
+banner_message: Odgovarajuće upravljanje omogućava poboljšanje kvalitete okoliša i veće uvažavanje prirode, što pak privlači turiste i osigurava radna mjesta.
 ---
 banner_button_text: Saznajte više
 ---
@@ -14,7 +14,7 @@ fact_4_title: Turizam
 ---
 fact_4_subtitle: Broj posjetitelja
 ---
-fact_4_copy: Turistički sektor u Bosni i Hercegovini u početnoj je fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda konkurentnih zemalja. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji.
+fact_4_copy: Turistički sektor u Bosni i Hercegovini u početnoj je fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda konkurentnih zemalja u regiji. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji na održiv način.
 ---
 fact_4_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
 ---
@@ -24,7 +24,7 @@ fact_2_title: Poslovi
 ---
 fact_2_subtitle: Radna mjesta u zaštiti prirode
 ---
-fact_2_copy: BiH je teško pogođena nezaposlenošću u stopi od 24,2 %. Radna mjesta u zaštićenim područjima osim ekonomske koristi nude i mnoge druge društvene dobrobiti, kao što su prilike za obrazovanje lokalnog stanovništva.
+fact_2_copy: BiH je teško pogođena nezaposlenošću u stopi od 24,2 %. Radna mjesta u zaštićenim područjima osim ekonomske koristi nude i mnoge druge društvene dobrobiti, kao što su prilike za obrazovanje i osvješćivanje lokalnog stanovništva potičući skrbnički stav prema prirodi.
 ---
 fact_2_question: Mogućnosti zapošljavanja uvelike ovise o praksi upravljanja zaštićenim područjem. Jesu li zaštićena područja prilagođena modernim pristupima upravljanja?
 ---
@@ -34,17 +34,17 @@ fact_3_title: Voda
 ---
 fact_3_subtitle: Prihodi od iskorištavanja voda
 ---
-fact_3_copy: Oko 45 % energije proizvedene u BiH nastalo je radom hidroelektrana. Svake godine hidroelektrane u BiH prosječno proizvedu energiju u vrijednosti od 350 miljuna eura, a zauzvrat su dobrobiti za lokalnu zajednicu malobrojne, naročito ako ih se promatra dugoročno.
+fact_3_copy: Oko 45 % energije proizvedene u BiH nastaje radom hidroelektrana. Svake godine hidroelektrane u BiH prosječno proizvedu energiju u vrijednosti od 350 miljuna eura, međutim zauzvrat su dobrobiti za lokalnu zajednicu malobrojne, naročito ako ih se promatra dugoročno.
 ---
-fact_3_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosustava koje pružaju vode i močvarna područja, kao i s potencijalom za njihovo iskorištavanje? Kako se novac iz nadoknada vraća u zaštićena područja i lokalne zajednice?
+fact_3_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosustava koje pružaju vode i močvarna područja, kao i s potencijalom za njihovo održivo korištenje? Kako se novac iz nadoknada vraća u zaštićena područja i u lokalne zajednice?
 ---
 fact_3_caption: Bosna i Hercegovina s više od 9.200 m3 vode po glavi stanovnika najbogatija je zemlja pitkom vodom u regiji i među deset najbogatijih zemalja u Europi.
 ---
 fact_1_title: Šumarstvo
 ---
-fact_1_subtitle: Raspodijela prihoda
+fact_1_subtitle: Raspodjela prihoda
 ---
-fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) pokušava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
+fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
 ---
 fact_1_question: Koriste li se prirodni resursi u BiH na održivi način?
 ---
@@ -52,7 +52,7 @@ fact_1_caption: 63% površine Bosne i Hercegovine pokriveno je šumom i šumskim
 ---
 fact_5_title: Lokalni razvoj
 ---
-fact_5_subtitle: NP Una
+fact_5_subtitle: Pokretač rasta
 ---
 fact_5_copy: Nacionalni park Una jedan je od pokretača ekonomskog razvoja regije. Uz suradnju s lokalnim ponuđačima turističkih usluga park svake godine bilježi dvostruko više posjeta u odnosu na prethodnu godinu.
 ---
@@ -74,16 +74,36 @@ fact_1_title_icon: forest
 ---
 fact_1_infobox:
 
-<p>Fact 1 infobox</p>
+<p>Ekonomske aktivnosti u vezi sa drvnom proizvodnjom nisu prepoznate kao nosioci velike ekonomske vrijednosti u procijenjenim ZP-ovima. U svim trima nacionalnim parkovima sječa je svedena samo na sječu bolesnih i starih stabala. Ekonomsku vrijednost šumarstva prepoznala je pak vlada u nacionalnim parkovima Kozara i Sutjeska. Važnost šume kao egzistencijalnog resursa za lokalnu zajednicu, prvenstveno zbog pribavljanja drva za ogrijev, prepoznata je u polovini procijenjenih ZP-ova (nacionalnim parkovima Kozara i Una i Zaštićenom pejzažu Bijambare).</p>
+ 
+<p>Više od pola površine Bosne i Hercegovina (63%) pokriveno je šumom i šumskim zemljištem. Šumarski sektor doprinosi BDP-u cca 1% i zapošljava više od 10.000 ljudi. Od 2012., WWF, u suradnji sa IKEA-om i kroz certificiranje šuma (FSC), pokušava smanjiti nezakonitu sječu i promovirati odgovoran šumski menadžment kako bi se podržao održivi razvoj u Bosni i Hercegovini.</p>
 ---
 fact_2_infobox:
 
-<p>Fact 2 infobox</p>
+<p>Važnost zaštićenih područja kao ponuđača poslova je prepoznata u većini procijenjenih lokalnih zajednica. U Bosni i Hercegovini je oko 300 ljudi zaposlenih u zaštićenim područjima (177 ljudi u Republici Srpskoj i 132 u FBiH). Tri nacionalna parka sama pružaju oko 200 radnih mjesta. Ove se brojke mogu jednostavno zanemariti i podcijeniti uporede li se sa ukupnim statističkim podacima o zaposlenosti. Da bi se shvatio značaj ZP-a u smislu poslova i ekonomije, trebali bismo bolje proučiti podatke na lokalnom nivou. Mnoge općine u Bosni i Hercegovini pogođene su velikom stopom nezaposlenosti i veoma niskim ukupnim brojem postojećih radnih mjesta.   Stopa nezaposlenosti na državnom nivou je 2015. iznosila 24,2%, dok je u nekim općinama poput Foče, Donjeg Vakufa i Hadžića  znatno viša stopa nezaposlenosti, iznad 30%.</p>
+ 
+<p>Osim ekonomskih koristi u užem smislu, radna mjesta u ZP-ovima nude i mnoge druge društvene dobrobiti. ZP-ovi pružaju mnoge prilike za formalno i neformalno obrazovanje lokalnog stanovništva. Aktivnosti i događaji koji se organiziraju unutar ZP-a dovode do većeg broja posjetilaca, omogućavaju razmjenu znanja i povećavaju primjećenost regije te svi na koncu podižu konkurentnost lokalnih zajednica.</p>
+ 
+<p>Međutim, mogućnosti zapošljavanja ZP-a uveliko ovise o praksi upravljanja. Neki od ZP-ova s dugom tradicijom, poput NP-a Sutjeska i NP-a Kozara, nisu prilagođeni modernim pristupima u menadžmentu ZP-a i još uvijek nemaju dobro razvijeno partnerstvo i mehanizme participacije sa lokalnim dionicima. Model upravljanja novoosnovanog NP-a Una se od samog početka fokusira na intenzivnu suradnju s lokalnim dionicima i sada efikasnije doprinosi lokalnom ekonomskom razvoju.</p>
 ---
 fact_3_infobox:
 
-<p>Fact 3 infobox</p>
+<p>Ljudi su tradicionalno osjetljivi na vodne resurse i jako dobro prepoznaju njihovu važnost. U svim procijenjenim ZP-ovima, vodni resursi su od velike egzistencijalne važnosti lokalnoj zajednici. U dvama područjima (Prirodnom spomeniku Vrelo Bosne i Parku prirode Hutovo blato) od velike su ekonomske vrijednost vladinom i poslovnom sektoru.</p>
+ 
+<p>Zaštićena područja služe za zaštitu vode, kako u smislu kvaliteta tako i kvantiteta (npr., filtracija, obnova podzemnih voda i očuvanje prirodnih tokova) što omogućava komercijalnu eksploataciju vode, ali bez prihoda za zaštićena područja. Važnost ZP-ova i drugih prirodnih područja za komercijalne upotrebe vode često je zanemarivana ili podcjenjivana obično zbog udaljenosti između ZP-ova i mjesta gdje se voda ustvari koristi. Velika šumska područja izuzetno su važna za snabdijevanje vodom budući da su ona obično regije odakle potiču najveće količine površinskih voda. Samim tim, menadžment šumskih ekosistema unutar ZP-ova je veoma bitan za sigurnost vode.</p>
+ 
+<p>Vodni resursi u ZP-ovima imaju i druge upotrebe pored snabdijevanja stanovništva vodom; u pitanju su proizvodnja energije, poljoprivreda, turizam i industrija.</p>
 ---
 fact_4_infobox:
 
-<p>Fact 4 infobox</p>
+<p>Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji. Trenutno je turistički sektor u BiH u početnoj fazi razvoja. Prema službenoj statistici, udio turizma u BDP-u je cca 2% i obezbjeđuje cca 33.000 radnih mjesta. Prihodi od turizma u BiH su trenutno daleko ispod prosječnih prihoda konkurentnih zemalja. Ruralni i turizam u prirodi su glavne prilike za razvoj.</p>
+ 
+<p>Uprkos njihovom relativno malom broju i maloj pokrivenosti (cca 2% nacionalne teritorije), zaštićena područja u Bosni i Hercegovini privlače veliki broj domaćih i stranih turista. Dva nacionalna parka (Una i Kozara) imaju godišnju posjetu od skoro 150.000 turista što je oko 15% ukupnih godišnjih turističkih posjeta u Bosni i Hercegovini.</p>
+ 
+<p>Turizam se u zaštićenim područjima općenito vidi kao promotor razvoja drugih sektora poput tradicionalne poljoprivrede i proizvodnje hrane. Poljoprivredna proizvodnja u ZP-ovima u BiH trenutno nije od velike važnosti, ali razvoj turizma bi mogao ojačati postojeću proizvodnju egzistencijalnih dobara i omogućiti veći protok prihoda za lokalno stanovništvo. Podržavajući održivi razvoj i upotrebu prirodnih resursa, turizam zasnovan na prirodi također podržava potpuno i efikasno upravljanje zaštićenim područjima. ZP-ovi su održivi i korisni jedino ako su integrirani u lokalne ekonomije. Nadalje, turizam često pruža lokalne, poslove koji ne zahtijevaju iskustvo i posebne vještine, a koji mogu pomoći da nezaposleni i ranjive grupe (omladini, manjinama, ženama) uđu u tržište radne snage.</p>
+ 
+<p>Međutim, jedan od glavnih izazova turizma u ZP-ovima je uravnotežen intenzitet turizma. Stepen utjecaja turizma (broj posjetilaca, sadržaji, infrastruktura i saobraćaj) trebao bi se održati na nivou koji ne nanosi štetu prirodnim dragocjenostima područja. Inače, ekonomske dobrobiti mogle bi biti tek privremene, a kasnije bi prevagnuo negativan, dugoročan gubitak.</p>
+---
+fact_5_infobox:
+
+<p>Nacionalni park Una jedan je od pokretača ekonomskog razvoja regije. Uz suradnju s lokalnim ponuđačima turističkih usluga park svake godine bilježi dvostruko više posjeta u odnosu na prethodnu godinu.</p>

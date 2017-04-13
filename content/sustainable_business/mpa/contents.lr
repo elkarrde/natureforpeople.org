@@ -4,7 +4,9 @@ _template: sustainable_business_factsheet.html
 ---
 title: Tourism
 ---
-bg_text: Tourism
+bg_text:
+---
+link_button: Tourism
 ---
 main_headline:
 ---
@@ -20,7 +22,7 @@ intro_body:
 
 <p>Within its projects the WWF has been developing stakeholder cooperation, most of all between the representative of nature protection sector, tourism and fisheries, as well as with the institutions and individuals with the <strong>goal of achieving the sustainability of economic activities</strong> that have been taking place in these areas.</p>
 
-<h3 class="h3 cc-secondary">What is the WWF doing?</h3>
+<h3 class="h3 cc-secondary">What are we doing?</h3>
 
 <p>Since 2009 we have been working with marine protected areas in the region within the cooperation with Sunce association and other partners. Within two projects, <a href="http://adria.panda.org/projekti/jaanje_mree_zatienih_morskih_podruja_u_hrvatskoj/">MedPAN South</a> and <a href="http://adria.panda.org/projekti/sea_med/">SEA-Med</a>, we have made a considerable step forward in the capacity building and financial independence of public institutions that have been managing marine protected areas in Croatia. Croatian marine protected areas have thus become a part of the international network of Mediterranean (MedPAN) and Adriatic (AdriaPAN) protected areas, while the employees have gained new knowledge and the institutions gave gained from management plans, sustainable tourism plans and numerous marketing and communication strategies.</p>
 

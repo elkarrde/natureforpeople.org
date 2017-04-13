@@ -4,7 +4,9 @@ _template: sustainable_business_factsheet.html
 ---
 title: Slatkovodni ekosustavi i održiva hidroenergetika
 ---
-bg_text: Hidroenergetika
+bg_text:
+---
+link_button: Hidroenergetika
 ---
 main_headline:
 ---

@@ -4,7 +4,9 @@ _template: sustainable_business_factsheet.html
 ---
 title: Ribarstvo
 ---
-bg_text: Ribarstvo
+bg_text:
+---
+link_button: Ribarstvo
 ---
 main_headline:
 ---

@@ -6,7 +6,7 @@ main_headline:
 ---
 subheadline:
 ---
-bg_text: Guidance
+bg_text: 
 ---
 intro_title: Integrating natural values into decision making processes
 ---
@@ -62,10 +62,10 @@ learn_more_backline: Learn more
 ---
 learn_more_cta: Learn more
 ---
-learn_more_title_1: WWF Examples
+learn_more_title_1: Nature & People
 ---
 learn_more_title_2: Sustainable Business
 ---
-learn_more_title_3: Protected Areas
+learn_more_title_3: Protected area values
 ---
 slug: recommendations

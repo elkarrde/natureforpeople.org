@@ -4,7 +4,9 @@ _template: sustainable_business_factsheet.html
 ---
 title: Turizam
 ---
-bg_text: Turizam
+bg_text:
+---
+link_button: Turizam
 ---
 main_headline:
 ---
