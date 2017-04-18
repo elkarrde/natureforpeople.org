@@ -74,19 +74,24 @@ fact_1_title_icon: forest
 ---
 fact_1_infobox:
 
-<p>Fact 1 infobox</p>
+<p>Source and more information:<br />
+<a href="http://www.fao.org/3/a-au015o.pdf" target="_blank">http://www.fao.org/3/a-au015o.pdf</a></p>
 ---
 fact_2_infobox:
 
-<p>Fact 2 infobox</p>
+<p>Source and more information:<br />
+Data on number of employed people in Republika Srpska provided by the Institute for Protection of Cultural-Historical and Natural Heritage of Republic of Srpska.<br />
+Data on number of employed people in the Federation of Bosna and Herzegovina provided by the Federal Ministry of Environment and Tourism.</p>
 ---
 fact_3_infobox:
 
-<p>Fact 3 infobox</p>
+<p>Source and more information:<br />
+World Bank <a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC" target="_blank">http://data.worldbank.org/indicator/ER.H2O.INTR.PC</a></p>
 ---
 fact_4_infobox:
 
-<p>Fact 4 infobox</p>
+<p>Source and more information:<br />
+Agency for Statistics of Bosnia and Herzegovina. <a href="http://www.bhas.ba/" target="_blank">http://www.bhas.ba/</a></p>
 ---
 fact_5_infobox:
 

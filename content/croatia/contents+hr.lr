@@ -24,7 +24,7 @@ fact_2_title: Voda
 ---
 fact_2_subtitle: Prihodi od iskorištavanja voda
 ---
-fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura. <!--U 14 ZP-a voda je od egzistencijalne važnosti za lokalno stanovništvo; U 7 ZP-a samo javni i poslovni sektor ostvaruju veliku dobit od komercijalnog korištenja vode.-->
+fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura.
 ---
 fact_2_question: Kojim strategijama vratiti dio prihoda zaštićenim područjima i lokalnim zajednicama?
 ---
@@ -62,19 +62,24 @@ fact_4_title_icon: forest
 ---
 fact_1_infobox:
 
-<p>Fact 1 infobox</p>
+<p>Izvor i više informacija:<br />
+Nacrt izvješća o stanju prirode u Republici Hrvatskoj za razdoblje 2008. – 2012., Državni zavod za zaštitu prirode, Zagreb, 2014.</p>
 
 ---
 fact_2_infobox:
 
-<p>Fact 2 infobox</p>
+<p>Izvor i više informacija:<br />
+</p>
 
 ---
 fact_3_infobox:
 
-<p>Fact 3 infobox</p>
+<p>Lokalne zajednice u 17 ZP-ova imaju dobrobiti od radnih mjesta povezanih sa zaštitom prirode, dok je u sedam njih (39 %) to glavni izvor prihoda:<br />
+Brijuni, Krka, Mljet, Paklenica, Plitvička jezera, Risnjak, Telašćica
+</p>
 
 ---
 fact_4_infobox:
 
-<p>Fact 4 infobox</p>
+<p>Izvor i više informacija:<br />
+</p>
