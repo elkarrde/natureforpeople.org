@@ -34,21 +34,23 @@ fact_3_title: Jobs
 ---
 fact_3_subtitle: Jobs in Nature Protection
 ---
-fact_3_copy: In 39% of protected areas employment in protected area management is the main source of income for local people.
+fact_3_copy: Eight national parks and 11 nature parks employ more than 1,300 people, of whom only 15 percent works on nature conservation while others work mostly in the accompanying activities (hospitality, maintenance ...). From the total number of employees in these protected areas two thirds work in only one protected area.
+
+Do decision makers understand the opportunities that nature protection provides for keeping a highly educated young people in rural areas and their contribution to the local development?
 ---
 fact_3_question: Do decision makers understand the opportunities that nature protection provides for keeping a highly educated young people in rural areas and their contribution to the local development?
 ---
 fact_3_caption: In 39% of protected areas employment in protected area management is the main source of income for local people.
 ---
-fact_4_title: Fishery
+fact_6_title: Fishery
 ---
-fact_4_subtitle: Sustainable fishery in Adriatic sea
+fact_6_subtitle: Sustainable fishery in Adriatic sea
 ---
-fact_4_copy: It is estimated that 93% of fish stock in Mediterranean Sea, and thus in Adriatic, are in poor condition, and one of the main causes for this is unsustainable fishing. If we continue with this pace soon we wouldn’t have any fish in the sea.
+fact_6_copy: It is estimated that 93% of fish stock in Mediterranean Sea, and thus in Adriatic, are in poor condition, and one of the main causes for this is unsustainable fishing. If we continue with this pace soon we wouldn’t have any fish in the sea.
 ---
-fact_4_question: Do decision makers and fishermen understand that sustainable fishing (not harmful to fish resources and the environment) is the only way towards long-term survival and enough fish stocks in Adriatic Sea? Mutual agreement of all stakeholders on the improvement of fish stocks management in Adriatic Sea is needed.
+fact_6_question: Do decision makers and fishermen understand that sustainable fishing (not harmful to fish resources and the environment) is the only way towards long-term survival and enough fish stocks in Adriatic Sea? Mutual agreement of all stakeholders on the improvement of fish stocks management in Adriatic Sea is needed.
 ---
-fact_4_caption: In 2015 more than 7000 boats less than 12 was fishing in the Croatian part of Adriatic Sea
+fact_6_caption: In 2015 more than 7000 boats less than 12 was fishing in the Croatian part of Adriatic Sea
 ---
 fact_5_title: Aquaculture
 ---
@@ -60,15 +62,15 @@ fact_5_question: Does fishery sector monitor trends of sustainable aquaculture a
 ---
 fact_5_caption: 12 to 17 kilos of small blue fish is necessary for breeding one kilogram of tuna in the Adriatic
 ---
-fact_6_title: Forestry
+fact_4_title: Forestry
 ---
-fact_6_subtitle: Distribution of income
+fact_4_subtitle: Distribution of income
 ---
-fact_6_copy: In 2015 the forestry sector had a profit of 2 billion HRK, or 1.4 percent of GDP. However local populations profited from forestry in one out of 10 protected areas (nature parks) only through forest/fire food sale.
+fact_4_copy: In 2015 the forestry sector had a profit of 2 billion HRK, or 1.4 percent of GDP. However local populations profited from forestry in one out of 10 protected areas (nature parks) only through forest/fire food sale.
 ---
-fact_6_question: Are local communities and advisory services well informed about opportunities and sustainable business practices, which are not only based on its cutting? Do they have sufficient support to develop those sustainable business practices?
+fact_4_question: Are local communities and advisory services well informed about opportunities and sustainable business practices, which are not only based on its cutting? Do they have sufficient support to develop those sustainable business practices?
 ---
-fact_6_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
+fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
 ---
 fact_7_title: Rivers
 ---
@@ -78,7 +80,7 @@ fact_7_copy: Analysis of rivers under threat of unsustainable hydropower develop
 ---
 fact_7_question: How to ensure that investors build and manage hydropower plants in accordance with globally recognized guidelines for the sustainable development of hydropower? How to ensure that the government declare the areas in which the construction of hydropower plants is not allowed.
 ---
-fact_7_caption: One family of sand martins eats more than 10 000 mosquitos daily. 
+fact_7_caption: One family of sand martins eats more than 10 000 mosquitos daily.
 ---
 cta_button_text: Let's solve challenges together
 ---
@@ -88,11 +90,11 @@ fact_2_title_icon: water
 ---
 fact_3_title_icon: jobs
 ---
-fact_4_title_icon: water
+fact_6_title_icon: water
 ---
 fact_5_title_icon: water
 ---
-fact_6_title_icon: forest
+fact_4_title_icon: forest
 ---
 fact_7_title_icon: water
 ---
@@ -132,18 +134,18 @@ fact_7_infobox:
 
 <p>Source and more information:<br />
 Najvažniji prijedlozi za povećanje održivosti brana uključuju:<br />
-• Dobivanje potpore javnosti na temelju pouzdanih informacija koje 
-institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno 
+• Dobivanje potpore javnosti na temelju pouzdanih informacija koje
+institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno
 sudjelovanje u odlučivanju.<br />
-• Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim 
-aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s 
+• Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim
+aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s
 tehničkog i društvenog aspekta.<br />
 • Izvlačenje maksimuma koristi iz postojećih brana prije izgradnje novih.<br />
-• Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž 
+• Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž
 cijelog riječnog sliva.<br />
 • Dijeljenje koristi brana.<br />
 • Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
-• Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju 
+• Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
 preusmjeravanje vode.<br />
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">Source</a></p>
 ---
@@ -161,7 +163,7 @@ picto_3_infobox:
 
 <p>Source and more information:<br />
 Local communities in 17 PAs benefit from jobs associated with nature protection, while in these seven PAs (39%) this is the major source of profit:<br />
-Brijuni, Krka, Mljet, Paklenica, Plitvice Lakes, Risnjak, Telašćica<br />
+Brijuni, Krka, Mljet, Paklenica, Plitvice Lakes, Risnjak, Telašćica<br />
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_web_1355739158.pdf">PA BAT methodology</a</p>
 ---
 picto_4_infobox:
