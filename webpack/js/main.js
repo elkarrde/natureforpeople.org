@@ -37,8 +37,8 @@ countries = _.each([{
 	protected_areas: [ { name: 'NP Brijuni', code: '' }, { name: 'NP Kornati', code: '' }, { name: 'NP Krka', code: '' }, { name: 'NP Mljet', code: '' }, { name: 'NP Paklenica', code: '' }, { name: 'NP Plitvička Jezera', code: '' }, { name: 'NP Risnjak', code: '' }, { name: 'NP Sjeverni Velebit', code: '' }, { name: 'NP Telašćica', code: '' }, { name: 'PP Biokovo', code: '' }, { name: 'PP Kopački Rit', code: '' }, { name: 'PP Lastovo', code: '' }, { name: 'PP Lonjsko Polje', code: '' }, { name: 'PP Medvednica', code: '' }, { name: 'PP Papuk', code: '' }, { name: 'PP Velebit', code: '' }, { name: 'PP Vransko Jezero', code: '' }, { name: 'PP Žumberak', code: '' } ]
 }, {
 	name: {
-		'en': "Kosovo",
-		'hr': "Kosovo",
+		'en': "Kosovo*",
+		'hr': "Kosovo*",
 	},
 	code: "KOS",
 	protected_areas: [ { name: 'NP Sharri', code: '' }, { name: 'PP Germia', code: '' } ]

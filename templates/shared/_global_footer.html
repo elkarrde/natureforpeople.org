@@ -1,23 +1,16 @@
 <footer id="global-footer" class="bg-black-light py2">
   <div class="max-width-4 mx-auto px2">
 
-      <ul class="list-reset mb0 uppercase bold flex flex-row items-center justify-between md-hide xs-hide sm-hide">
-      <li>
-        <a href="http://adria.panda.org">
+	<div class="grey h7 center">
+        <a href="http://adria.panda.org" class="left">
           <img style="width: 5rem; height: 7.5rem" class="footer-icon-logo mr4" src='/static/images/WWF_logo.svg'/>
         </a>
-      </li>
-      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
-      <li>
-        <a class="{% if this.path == path %}grey{% else %}grey-dark{% endif %} grey-hover" href="{{ path|url(alt) }}">{{ label }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-
+		<div class="clearfix">
+			<p id="disclaimer1" class="left-align">{{ bag('global', this.alt, 'disclaimer1') }}</p>
+			<p id="disclaimer2" class="left-align">{{ bag('global', this.alt, 'disclaimer2') }}</p>
+			<p class="mt2"><span>&copy 2017 World Wildlife Fund | Contact: </span> <a class="grey underline" href="mailto:natureforpeople@wwfadria.org">natureforpeople@wwfadria.org</a></p>
+		</div>
+	</div>
   </div>
 
-  <div class="grey h7 center">
-    <span>&copy 2017 World Wildlife Fund | Contact: </span>
-    <a class="grey underline" href="mailto:natureforpeople@wwfadria.org">natureforpeople@wwfadria.org</a>
-  </div>
 </footer>
