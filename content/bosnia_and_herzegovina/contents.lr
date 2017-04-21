@@ -10,15 +10,15 @@ banner_message: Appropriate management provides a greater appreciation and impro
 ---
 banner_button_text: Find out more
 ---
-fact_4_title: Tourism
+fact_1_title: Forestry
 ---
-fact_4_subtitle: The number of visitors
+fact_1_subtitle: Distribution of income
 ---
-fact_4_copy: The tourism sector in Bosnia and Herzegovina is still in its initial development phase, and profit from tourism is far below the average of neighbouring countries. However, potential growth in tourism in Bosnia and Herzegovina is a big opportunity for economic recovery in the country in a sustainable way.
+fact_1_copy: In cooperation with IKEA and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
 ---
-fact_4_question: How to solve the obvious shortcomings in the tourism offer and infrastructure in protected areas?
+fact_1_question: Can more natural resources in Bosnia and Herzegovina used in a sustainable way?
 ---
-fact_4_caption: 2% share of tourism in GDP in Bosnia and Herzegovina
+fact_1_caption: 53% of the territory of Bosnia and Herzegovina is <strong>covered by forests and forest land</strong>.
 ---
 fact_2_title: Jobs
 ---
@@ -40,15 +40,15 @@ fact_3_question: Are local communities aware of the benefits of ecosystem servic
 ---
 fact_3_caption: Bosnia and Herzegovina with more than 9,200 m3 of water per capita in the richest country of drinking water in the region and among the ten richest countries in Europe.
 ---
-fact_1_title: Forestry
+fact_4_title: Tourism
 ---
-fact_1_subtitle: Distribution of income
+fact_4_subtitle: The number of visitors
 ---
-fact_1_copy: In cooperation with IKEA and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
+fact_4_copy: The tourism sector in Bosnia and Herzegovina is still in its initial development phase, and profit from tourism is far below the average of neighbouring countries. However, potential growth in tourism in Bosnia and Herzegovina is a big opportunity for economic recovery in the country in a sustainable way.
 ---
-fact_1_question: Can more natural resources in Bosnia and Herzegovina used in a sustainable way?
+fact_4_question: How to solve the obvious shortcomings in the tourism offer and infrastructure in protected areas?
 ---
-fact_1_caption: 53% of the territory of Bosnia and Herzegovina is <strong>covered by forests and forest land</strong>.
+fact_4_caption: 2% share of tourism in GDP in Bosnia and Herzegovina
 ---
 fact_5_title: Local development
 ---
@@ -72,22 +72,22 @@ fact_6_caption: Sutjeska National park which is under the threat of hydropower d
 ---
 cta_button_text: Let's solve challenges together
 ---
-fact_6_title_icon: water
----
-fact_5_title_icon: growth
----
-fact_4_title_icon: tourism
+fact_1_title_icon: forest
 ---
 fact_2_title_icon: jobs
 ---
 fact_3_title_icon: water
 ---
-fact_1_title_icon: forest
+fact_4_title_icon: tourism
+---
+fact_5_title_icon: growth
+---
+fact_6_title_icon: water
 ---
 fact_1_infobox:
 
 <p>Source and more information:<br />
-<a href="http://www.fao.org/3/a-au015o.pdf" target="_blank">http://www.fao.org/3/a-au015o.pdf</a></p>
+<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">http://www.usitfbih.ba/sumarstvo_bih.html</a></p>
 ---
 fact_2_infobox:
 
@@ -107,7 +107,14 @@ Agency for Statistics of Bosnia and Herzegovina. <a href="http://www.bhas.ba/" t
 ---
 fact_5_infobox:
 
-<p>Fact 5 infobox</p>
+<p>Source and more information:<br />
+<a href="http://croatia.panda.org/?294899/Samo-suradnja-lokalne-zajednice-i-uprave-Nacionalnog-parka-Una-donijet-e-vrhunske-rezultate#">http://croatia.panda.org/?294899/Samo-suradnja-lokalne-zajednice-i-uprave-Nacionalnog-parka-Una-donijet-e-vrhunske-rezultate</a></p>
+---
+fact_6_infobox:
+
+<p>Source and more information:<br />
+<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf</a><br />
+<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf</a></p>
 ---
 banner_image_meta: Livanja fields
 ---

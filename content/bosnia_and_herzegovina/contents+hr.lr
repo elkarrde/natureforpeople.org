@@ -10,15 +10,15 @@ banner_message: Odgovarajuće upravljanje omogućava poboljšanje kvalitete okol
 ---
 banner_button_text: Saznajte više
 ---
-fact_4_title: Turizam
+fact_1_title: Šumarstvo
 ---
-fact_4_subtitle: Broj posjetitelja
+fact_1_subtitle: Raspodjela prihoda
 ---
-fact_4_copy: Turistički sektor u Bosni i Hercegovini još uvijek je u početnoj fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda susjednih  zemalja u regiji. Međutim, turistički potencijal Bosne i Hercegovine smatra se velikom prilikom za obnovu ekonomije u zemlji na održiv način.
+fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
 ---
-fact_4_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
+fact_1_question: Može li se više prirodnih resursi u Bosni i Hercegovini koristiti  na održivi način?
 ---
-fact_4_caption: 2% je udio turizma u BDP-u Bosne i Hercegovine.
+fact_1_caption: <a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">53% površine Bosne i Hercegovine</a> pokriveno je šumom i šumskim zemljištem.
 ---
 fact_2_title: Poslovi
 ---
@@ -28,7 +28,7 @@ fact_2_copy: Bosna i Hercegovina je teško pogođena nezaposlenošću sa procije
 ---
 fact_2_question: Mogućnosti zapošljavanja uvelike ovise o praksi upravljanja zaštićenim područjem. Jesu li zaštićena područja prilagođena modernim pristupima upravljanja?
 ---
-fact_2_caption: 300 ljudi zaposleno je u zaštićenim područjima Bosne i Hercegovine (177 ljudi u Republici Srpskoj i 132 u FBiH).
+fact_2_caption: 300 ljudi zaposleno je u zaštićenim područjima Bosne i Hercegovine 177 ljudi u Republici Srpskoj i 132 u FBiH).
 ---
 fact_3_title: Voda
 ---
@@ -40,15 +40,15 @@ fact_3_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosust
 ---
 fact_3_caption: Bosna i Hercegovina s više od 9.200 m<sup>3</sup> vode po glavi stanovnika najbogatija je zemlja pitkom vodom u regiji i među deset najbogatijih zemalja u Europi.
 ---
-fact_1_title: Šumarstvo
+fact_4_title: Turizam
 ---
-fact_1_subtitle: Raspodjela prihoda
+fact_4_subtitle: Broj posjetitelja
 ---
-fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
+fact_4_copy: Turistički sektor u Bosni i Hercegovini još uvijek je u početnoj fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda susjednih  zemalja u regiji. Međutim, turistički potencijal Bosne i Hercegovine smatra se velikom prilikom za obnovu ekonomije u zemlji na održiv način.
 ---
-fact_1_question: Može li se više prirodnih resursi u Bosni i Hercegovini koristiti  na održivi način?
+fact_4_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
 ---
-fact_1_caption: 53% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
+fact_4_caption: 2% je udio turizma u BDP-u Bosne i Hercegovine.
 ---
 fact_5_title: Lokalni razvoj
 ---
@@ -68,26 +68,26 @@ fact_6_copy: Analiza rijeka koje su pod prijetnjom neodrživog hidroenergetskog 
 ---
 fact_6_question: Kako osigurati da investitori grade i upravljaju hidroelektranama sukladno svjetski prepoznatim smjernicama za održivi razvoj hidroenergetike? Kako osigurati da vlada proglasi područja u kojima gradnja hidroelektrana nije dozvoljena?
 ---
-fact_6_caption: Nacionalni park Sutjeska kojem prijeti gradnje hidroelektrane ima više vrsta biljaka (1800) nego u cijeloj Poljskoj.
+fact_6_caption: Nacionalni park Sutjeska kojem prijeti gradnje hidroelektrane ima više vrsta biljaka (<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf" target="_blank">1800</a>) nego u cijeloj Poljskoj.
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
-fact_6_title_icon: water
----
-fact_5_title_icon: growth
----
-fact_4_title_icon: tourism
+fact_1_title_icon: forest
 ---
 fact_2_title_icon: jobs
 ---
 fact_3_title_icon: water
 ---
-fact_1_title_icon: forest
+fact_4_title_icon: tourism
+---
+fact_5_title_icon: growth
+---
+fact_6_title_icon: water
 ---
 fact_1_infobox:
 
 <p>Izvor i više informacija:<br />
-<a href="http://www.fao.org/3/a-au015o.pdf" target="_blank">http://www.fao.org/3/a-au015o.pdf</a></p>
+<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">http://www.usitfbih.ba/sumarstvo_bih.html</a></p>
 ---
 fact_2_infobox:
 
@@ -107,6 +107,14 @@ Agencija za statistiku Bosne i Hercegovine. <a href="http://www.bhas.ba/" target
 ---
 fact_5_infobox:
 
+<p>Izvor i više informacija:<br />
+<a href="http://croatia.panda.org/?294899/Samo-suradnja-lokalne-zajednice-i-uprave-Nacionalnog-parka-Una-donijet-e-vrhunske-rezultate#">Samo suradnja lokalne zajednice i uprave Nacionalnog parka Una donijet će vrhunske rezultate</a></p>
+---
+fact_6_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf</a><br />
+<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf</a></p>
 ---
 banner_image_meta: Livanjsko polje
 ---
