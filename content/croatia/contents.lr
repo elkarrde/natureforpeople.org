@@ -14,41 +14,71 @@ fact_1_title: Tourism
 ---
 fact_1_subtitle: The number of visitors
 ---
-fact_1_copy: All protected areas make a profit from tourism, and in two thirds of the protected areas the tourism has been the main source of profit for the community. Welfare of the local development in tourism has been connected with the protected nature.
+fact_1_copy: All protected areas make a profit from tourism, and in two thirds of protected areas tourism has been the main source of profit for nearby communities. Areas of protected nature are connected to local development of tourism.
 ---
-fact_1_question: Do tourism strategies recognize protected areas as development drivers?
+fact_1_question: Do tourism strategies recognize protected areas and their preserved natural values as drivers of development?
 ---
-fact_1_caption: visitors in protected areas in 2012
+fact_1_caption: 3,484,331 of sold tickets in national and nature parks in 2016 visitors in protected areas in 2012
 ---
 fact_2_title: Water
 ---
 fact_2_subtitle: Income from usage of water
 ---
-fact_2_copy: Annual profit of two hydropower plants using water from protected areas on Velebit amounts to EUR 60 million. Their annual investment in the protection of 200.000 hectares of forest ecosystem amounts to EUR 0.
+fact_2_copy: The annual profit of two hydropower plants using water from protected areas on Velebit is EUR 60 million. Their annual investment in the protection of 200.000 hectares of forest ecosystem is only 0, 0265% of hydropower plant’s income. These revenues go to Croatian forests that should spend that money on conservation measures for the forest ecosystem, because without quality forest cover there wouldn’t be available water to produce electricity in hydropower plants.
 ---
-fact_2_question: What strategies should be used for the compensation of a part of the profit to protected areas and local communities?
+fact_2_question: What strategies should be used for recognising and valuing ecosystem services that nature provides and ensure that part of profits are used to compensate protected areas?
 ---
-fact_2_caption: <strong>Two large hydropower plants</strong> have an annual revenue of EUR 60 million, but at the same time they <strong>do not contribute to the protection of forest ecosystem</strong>.
+fact_2_caption: Only 2.76% of the rivers in Croatia flows freely and has no barriers from the source to embouchere.
 ---
 fact_3_title: Jobs
 ---
 fact_3_subtitle: Jobs in Nature Protection
 ---
-fact_3_copy: There are 1,307 employees in national parks and nature parks, out of which only 195 in the nature protection sector.
+fact_3_copy: In 39% of protected areas employment in protected area management is the main source of income for local people.
 ---
-fact_3_question: Does the government understand the importance of jobs connected with nature protection and retention of young families in rural areas?
+fact_3_question: Do decision makers understand the opportunities that nature protection provides for keeping a highly educated young people in rural areas and their contribution to the local development?
 ---
-fact_3_caption: In only 39% of protected areas of jobs associated with the <strong>protection of nature are the main source of income</strong>.
+fact_3_caption: In 39% of protected areas employment in protected area management is the main source of income for local people.
 ---
-fact_4_title: Forestry
+fact_4_title: Fishery
 ---
-fact_4_subtitle: Distribution of income
+fact_4_subtitle: Sustainable fishery in Adriatic sea
 ---
-fact_4_copy: In 2011 forestry sector had a profit of USD 781.70 million or 1.5% of the GDP. Local population profited from forestry in only one out of 15 protected areas.
+fact_4_copy: It is estimated that 93% of fish stock in Mediterranean Sea, and thus in Adriatic, are in poor condition, and one of the main causes for this is unsustainable fishing. If we continue with this pace soon we wouldn’t have any fish in the sea.
 ---
-fact_4_question: Are the local communities informed and educated enough regarding sustainable business practices? Do they have enough support in their development?
+fact_4_question: Do decision makers and fishermen understand that sustainable fishing (not harmful to fish resources and the environment) is the only way towards long-term survival and enough fish stocks in Adriatic Sea? Mutual agreement of all stakeholders on the improvement of fish stocks management in Adriatic Sea is needed.
 ---
-fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
+fact_4_caption: In 2015 more than 7000 boats less than 12 was fishing in the Croatian part of Adriatic Sea
+---
+fact_5_title: Aquaculture
+---
+fact_5_subtitle: Fastest growing food sector in the world
+---
+fact_5_copy: Aquaculture today represents almost 50% of the fishery products that are on the market. Only responsible aquaculture can guarantee a stabile production that wouldn’t have a negative impact on the environment. Europe is the largest importer of fishery products in the world. By choosing fishery products which are sustainable, we can provide the future for our seas and people.
+---
+fact_5_question: Does fishery sector monitor trends of sustainable aquaculture and do they include them in national legislation? Do you buy certified fish products - MSC certification for fishery products from catch or ASC for fishery products from breeding?
+---
+fact_5_caption: 12 to 17 kilos of small blue fish is necessary for breeding one kilogram of tuna in the Adriatic
+---
+fact_6_title: Forestry
+---
+fact_6_subtitle: Distribution of income
+---
+fact_6_copy: In 2015 the forestry sector had a profit of 2 billion HRK, or 1.4 percent of GDP. However local populations profited from forestry in one out of 10 protected areas (nature parks) only through forest/fire food sale.
+---
+fact_6_question: Are local communities and advisory services well informed about opportunities and sustainable business practices, which are not only based on its cutting? Do they have sufficient support to develop those sustainable business practices?
+---
+fact_6_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
+---
+fact_7_title: Rivers
+---
+fact_7_subtitle: Natural Flow
+---
+fact_7_copy: Analysis of rivers under threat of unsustainable hydropower development has shown that 73 percent of Croatia’s rivers are intact (3.301 km), and are rich in biodiversity. At the same time, there is an increasing demand for using the rivers for electric energy production, which very often have extremely negative consequences for the natural values of the river as well as usual way of using space and natural resources.
+---
+fact_7_question: How to ensure that investors build and manage hydropower plants in accordance with globally recognized guidelines for the sustainable development of hydropower? How to ensure that the government declare the areas in which the construction of hydropower plants is not allowed.
+---
+fact_7_caption: One family of sand martins eats more than 10 000 mosquitos daily. 
 ---
 cta_button_text: Let's solve challenges together
 ---
@@ -58,7 +88,13 @@ fact_2_title_icon: water
 ---
 fact_3_title_icon: jobs
 ---
-fact_4_title_icon: forest
+fact_4_title_icon: water
+---
+fact_5_title_icon: water
+---
+fact_6_title_icon: forest
+---
+fact_7_title_icon: water
 ---
 fact_1_infobox:
 

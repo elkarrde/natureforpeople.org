@@ -14,27 +14,27 @@ fact_4_title: Turizam
 ---
 fact_4_subtitle: Broj posjetitelja
 ---
-fact_4_copy: Turistički sektor u Bosni i Hercegovini u početnoj je fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda konkurentnih zemalja u regiji. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji na održiv način.
+fact_4_copy: Turistički sektor u Bosni i Hercegovini još uvijek je u početnoj fazi razvoja, a prihodi od turizma daleko su ispod prosječnih prihoda susjednih  zemalja u regiji. Međutim, turistički potencijal Bosne i Hercegovine smatra se velikom prilikom za obnovu ekonomije u zemlji na održiv način.
 ---
 fact_4_question: Na koji način riješiti očite nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
 ---
-fact_4_caption: 2% udio turizma u BDP-u Bosne i Hercegovine
+fact_4_caption: 2% je udio turizma u BDP-u Bosne i Hercegovine.
 ---
 fact_2_title: Poslovi
 ---
 fact_2_subtitle: Radna mjesta u zaštiti prirode
 ---
-fact_2_copy: BiH je teško pogođena nezaposlenošću u stopi od 24,2 %. Radna mjesta u zaštićenim područjima osim ekonomske koristi nude i mnoge druge društvene dobrobiti, kao što su prilike za obrazovanje i osvješćivanje lokalnog stanovništva potičući skrbnički stav prema prirodi.
+fact_2_copy: Bosna i Hercegovina je teško pogođena nezaposlenošću sa procijenjenom stopom od 47%, što čini više od 511 tisuća registriranih nezaposlenih osoba. Radna mjesta u zaštićenim područjima osim ekonomske koristi nude i mnoge druge društvene dobrobiti, kao što su prilike za obrazovanje lokalnog stanovništva potičući skrbnički stav prema prirodi.
 ---
 fact_2_question: Mogućnosti zapošljavanja uvelike ovise o praksi upravljanja zaštićenim područjem. Jesu li zaštićena područja prilagođena modernim pristupima upravljanja?
 ---
-fact_2_caption: 300 ljudi zaposlenih u zaštićenim područjima (177 ljudi u Republici Srpskoj i 132 u FBiH).
+fact_2_caption: 300 ljudi zaposleno je u zaštićenim područjima Bosne i Hercegovine (177 ljudi u Republici Srpskoj i 132 u FBiH).
 ---
 fact_3_title: Voda
 ---
-fact_3_subtitle: Prihodi od iskorištavanja voda
+fact_3_subtitle: Prihodi od korištenja voda
 ---
-fact_3_copy: Oko 45 % energije proizvedene u BiH nastaje radom hidroelektrana. Svake godine hidroelektrane u BiH prosječno proizvedu energiju u vrijednosti od 350 miljuna eura, međutim zauzvrat su dobrobiti za lokalnu zajednicu malobrojne, naročito ako ih se promatra dugoročno.
+fact_3_copy: Oko 45 % električne energije proizvedene u Bosni i Hercegovini nastaje radom hidroelektrana. Svake godine hidroelektrane u zemlji prosječno proizvedu električnu energiju u vrijednosti od 350 milijuna eura. Međutim, dobrobiti za lokalnu zajednicu od proizvodnje hidroelektrana su malobrojne, naročito ako ih se promatra dugoročno.
 ---
 fact_3_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosustava koje pružaju vode i močvarna područja, kao i s potencijalom za njihovo održivo korištenje? Kako se novac iz nadoknada vraća u zaštićena područja i u lokalne zajednice?
 ---
@@ -46,21 +46,33 @@ fact_1_subtitle: Raspodjela prihoda
 ---
 fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
 ---
-fact_1_question: Koriste li se prirodni resursi u BiH na održivi način?
+fact_1_question: Može li se više prirodnih resursi u Bosni i Hercegovini koristiti  na održivi način?
 ---
-fact_1_caption: 63% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
+fact_1_caption: 53% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
 ---
 fact_5_title: Lokalni razvoj
 ---
 fact_5_subtitle: Pokretač rasta
 ---
-fact_5_copy: Nacionalni park Una jedan je od pokretača ekonomskog razvoja regije. Uz suradnju s lokalnim ponuđačima turističkih usluga park svake godine bilježi dvostruko više posjeta u odnosu na prethodnu godinu.
+fact_5_copy: Nacionalni park Una jedan je od pokretača ekonomskog razvoja regije. Uz suradnju s lokalnim ponuđačima turističkih usluga park svake godine bilježi dvostruko više posjeta.
 ---
 fact_5_question: Gdje leži prilika za ekonomski razvoj u zaštićenim područjima i oko njih?
 ---
-fact_5_caption: <strong>16 puta povećanje broja posjetitelja</strong> od osnivanja parka 2008 godine.
+fact_5_caption: 16 puta se povećao broj posjetitelja nacionalnog parka Una od njegovog osnivanja 2008 godine.
+---
+fact_6_title: Rijeke
+---
+fact_6_subtitle: Prirodni tokovi
+---
+fact_6_copy: Analiza rijeka koje su pod prijetnjom neodrživog hidroenergetskog razvoja je ukazala da Bosna i Hercegovina ima 60% (2.632 km)  netaknutih riječnih tokova bogatih biološkom raznolikošću. Istovremeno sve je veća potražnja u korištenju rijeka za proizvodnju električne energije, što vrlo često ima iznimno negativne posljedice za prirodne vrijednosti rijeka kao i uobičajen način korištenja prostora i prirodnih resursa.
+---
+fact_6_question: Kako osigurati da investitori grade i upravljaju hidroelektranama sukladno svjetski prepoznatim smjernicama za održivi razvoj hidroenergetike? Kako osigurati da vlada proglasi područja u kojima gradnja hidroelektrana nije dozvoljena?
+---
+fact_6_caption: Nacionalni park Sutjeska kojem prijeti gradnje hidroelektrane ima više vrsta biljaka (1800) nego u cijeloj Poljskoj.
 ---
 cta_button_text: Riješimo izazove zajedno
+---
+fact_6_title_icon: water
 ---
 fact_5_title_icon: growth
 ---

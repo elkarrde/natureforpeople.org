@@ -14,41 +14,71 @@ fact_1_title: Turizam
 ---
 fact_1_subtitle: Broj posjetitelja
 ---
-fact_1_copy: Sva zaštićena područja ostvaruju prihode od turizma, a u dvije trećine zaštićenih područja turizam je glavni izvor prihoda za zajednicu. Dobrobit lokalnog razvoja u turizmu povezana je sa zaštićenom prirodom.
+fact_1_copy: Sva zaštićena područja ostvaruju prihode od turizma, a u čak dvije trećine zaštićenih područja turizam je glavni izvor prihoda za lokalnu zajednicu. Dobrobit lokalne zajednice  turizmu povezana je sa zaštićenom prirodom.
 ---
 fact_1_question: Prepoznaju li strategije turizma zaštićena područja kao pokretače razvoja?
 ---
-fact_1_caption: posjetitelja u zaštićenim područjima u 2012. godini
+fact_1_caption: 3,484,331 prodanih ulaznica u nacionalnim parkovima i parkovima prirode u 2016. godini
 ---
 fact_2_title: Voda
 ---
-fact_2_subtitle: Prihodi od iskorištavanja voda
+fact_2_subtitle: Prihodi od korištenja voda
 ---
-fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura.
+fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200.000 hektara šumskog ekosustava iznosi samo 0,0265% od ukupnog prihoda hidroelektrana. Ti prihodi odlaze Hrvatskim šumama koje bi trebale sredstava namjenski trošiti na mjere očuvanja šumskog ekosustava, jer bez kvalitetnog šumskog pokrova neće biti niti vode dostupne za proizvodnju električne energije u hidroelektranama.
 ---
-fact_2_question: Kojim strategijama vratiti dio prihoda zaštićenim područjima i lokalnim zajednicama?
+fact_2_question: Kojim strategijama prepoznati i vrednovati usluge ekosustava koje pruža očuvana priroda te vratiti dio prihoda zaštićenim područjima?
 ---
-fact_2_caption: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi <b>60 milijuna eura</b>. Njihovo godišnje ulaganje u zaštitu 200 000 hektara šumskog ekosustava iznosi 0,00 eura.
+fact_2_caption: U Hrvatskoj je samo 2,76 % rijeka koje slobodno teku i nemaju prepreka od izvora do ušća.
 ---
 fact_3_title: Poslovi
 ---
 fact_3_subtitle: Radna mjesta u zaštiti prirode
 ---
-fact_3_copy: U nacionalnim parkovima i parkovima prirode zaposleno je 1307 osoba, a od toga je samo 195 u sektoru zaštite prirode.
+fact_3_copy: U 8 nacionalnih parkova i 11 parkova prirode zaposleno je više od 1300 ljudi, od kojih samo 15 posto radi na poslovima zaštite prirode dok ostali većinom rade u popratnim djelatnostima (ugostiteljstvo, održavanje...).  Od sveukupnog broja zaposlenih u navedenim zaštićenim područjima dvije trećine radi u samo jednom zaštićenom području.
 ---
-fact_3_question: Razumije li vlada važnost poslova vezanih uz zaštitu prirode i zadržavanje mladih obitelji u ruralnim dijelovima?
+fact_3_question: Razumiju li  donosioci odluka prilike koje zaštita prirode pruža za zadržavanje visokoobrazovanih mladih ljudi u ruralnim dijelovima i njihov doprinos lokalnom razvoju.
 ---
-fact_3_caption: U samo 39% zaštićenih područja radna mjesta povezana sa zaštitom prirode čine glavni izvor prihoda.
+fact_3_caption: Poslovi u zaštićenim područjima su glavni izvor prihoda lokalnom stanovništvu u 39% parkova.
 ---
-fact_4_title: Šumarstvo
+fact_4_title: Ribarstvo
 ---
-fact_4_subtitle: Raspodijela prihoda
+fact_4_subtitle: Održivo ribarstvo u Jadranu
 ---
-fact_4_copy: Šumarski je sektor 2011. godine imao prihod od 781,70 milijuna USD ili 1,5 % BDP-a. Lokalno stanovništvo ostvarilo je dobit od šumarstva u samo jednom od 15 zaštićenih područja.
+fact_4_copy: Procijenjeno je da je 93% ribljih stokova u Sredozemnom moru, a samim time i u Jadranu u lošem statusu, a jedan od glavnih uzroka tome je neodrživ ribolov. Ukoliko se nastavi ovim tempom uskoro bi mogli ostati bez ribe u Jadranu.
 ---
-fact_4_question: Jesu li lokalne zajednice dovoljno informirane i educirane o održivim poslovnim praksama? Pruža li im se dovoljna podrška u njihovu razvijanju?
+fact_4_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo (ne šteti ribljim resursima i okolišu) jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Jadranu? Potrebna je suglasnost svih dionika za poboljšanje regulacije i unaprijeđenje upravljanja ribljim resursima u Jadranu.
 ---
-fact_4_caption: Poslovni sektor ostvaruje značajnu dobit u 3 zaštićena područja, dok lokalno stanovništvo zajedno sa poslovnim sektorom samo u jednom (25%).
+fact_4_caption: U 2015 više od 7000 brodica manjih od 12 metara obavljalo je ribolov u Hrvatskom dijelu Jadrana.
+---
+fact_5_title: Akvakultura
+---
+fact_5_subtitle: Najbrže rastući oblik proizvodnje hrane svijetu
+---
+fact_5_copy: Akvakultura danas predstavlja gotovo 50% proizvoda iz ribarstva koje se nalazi na tržištu. Samo odgovorna akvakultura može garantirati stabilnu proizvodnju koja neće imati negativne utjecaje na okoliš. Evropa je najveći uvoznik proizvoda iz ribarstva na svijetu. Odabirom proizvoda iz ribarstva koji su uzgojeni na održiv način možemo osigurati budućnost morima i ljudima.
+---
+fact_5_question: Prati li sektor ribarstva trendove održive akvakulture i uključuje li ih u nacionalno zakonodavstvo? Kupujete li certificirane riblje proizvode – MSC (Marine Stewardship Council) certifikat za proizvode iz ribarstva iz ulova ili ASC (Aquaculture Stewardship Council) za proizvode iz ribarstva iz uzgoja?
+---
+fact_5_caption: Za uzgoj jednog kilograma tune u Jadranu potrebno je od 12 do 17 kilograma male plave ribe.
+---
+fact_6_title: Šumarstvo
+---
+fact_6_subtitle: Raspodjela prihoda
+---
+fact_6_copy: Šumarski je sektor 2015. godine imao prihod od 2 milijarde kuna ili 1,4 % BDP-a. Lokalno stanovništvo ostvarilo je prihod od šumarstva u jednom od 10 zaštićenih područja (parkova prirode), i to jedino putem prodaje drva/šume.
+---
+fact_6_question: Jesu li lokalne zajednice i savjetodavne službe dovoljno informirane o mogućnostima koje vlasnici šuma imaju u korištenju šuma, a koje nije bazirano samo na njezinoj sječi? Pruža li im se dovoljna podrška u njihovu razvijanju?
+---
+fact_6_caption: Poslovni sektor ostvaruje značajni prihod u 4 zaštićena područja, dok lokalno stanovništvo ostvaruje značajan prihod od šumarstva u jednom zaštićenom području.
+---
+fact_7_title: Rijeke
+---
+fact_7_subtitle: Prirodni tokovi
+---
+fact_7_copy: Analiza rijeka koji su pod prijetnjom neodrživog hidroenergetskog razvoja je pokazala da Hrvatska ima čak 73% (3.301 km) iznimnih netaknutih riječnih tokova bogatih biološkom raznolikošću. Istovremeno sve je veća potražnja u korištenju rijeka za proizvodnju električne energije, što vrlo često ima iznimno negativne posljedice za prirodne vrijednosti rijeka kao i uobičajen način korištenja prostora i prirodnih resursa.
+---
+fact_7_question: Kako osigurati da investitori grade i upravljaju hidroelektranama sukladno svjetski prepoznatim smjernicama za održivi razvoj hidroenergetike? Kako osigurati da vlada proglasi područja u kojima gradnja hidroelektrana nije dozvoljena?
+---
+fact_7_caption: Jedna obitelj bregunica dnevno pojede oko 10.000 komaraca
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
@@ -58,7 +88,13 @@ fact_2_title_icon: water
 ---
 fact_3_title_icon: jobs
 ---
-fact_4_title_icon: forest
+fact_4_title_icon: water
+---
+fact_5_title_icon: water
+---
+fact_6_title_icon: forest
+---
+fact_7_title_icon: water
 ---
 fact_1_infobox:
 
@@ -80,6 +116,27 @@ Brijuni, Krka, Mljet, Paklenica, Plitvička jezera, Risnjak, Telašćica
 
 ---
 fact_4_infobox:
+
+<p>Fact 4 infobox</p>
+<p>Izvor i više informacija:<br />
+</p>
+
+---
+fact_5_infobox:
+
+<p>Fact 4 infobox</p>
+<p>Izvor i više informacija:<br />
+</p>
+
+---
+fact_6_infobox:
+
+<p>Fact 4 infobox</p>
+<p>Izvor i više informacija:<br />
+</p>
+
+---
+fact_7_infobox:
 
 <p>Fact 4 infobox</p>
 <p>Izvor i više informacija:<br />
