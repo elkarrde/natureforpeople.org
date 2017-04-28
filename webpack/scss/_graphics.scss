@@ -1,0 +1,77 @@
+.counter {
+	font-size: 5rem;
+	font-weight: 900;
+	line-height: 11rem;
+}
+
+.donut {
+	font-size: 4rem;
+	letter-spacing: -.2rem;
+	fill: black;
+}
+
+#homepage-facts .donut svg {
+	text { fill: $ba-yellow; }
+	.arc0 { fill: $ba-yellow; }
+	.arc1 { fill: $ba-blue; }
+}
+
+#homepage-fact-1 { background: url('/static/images/vectors/landscape_bg.svg') no-repeat center; }
+#homepage-fact-2 { background: url('/static/images/vectors/forest_bg.svg') no-repeat center; }
+#homepage-fact-3 { background: url('/static/images/vectors/river_bg.svg') no-repeat center; }
+
+#croatia-fact-1,
+#croatia-fact-5,
+#croatia-fact-6,
+#croatia-fact-7,
+#croatia-fact-2 {
+	color: $hr-red;
+}
+
+#ba-facts-5 .counter-wrapper,
+#ba-facts-2 .counter-wrapper,
+#hr-facts-1 .counter-wrapper {
+	background: url('/static/images/vectors/visitors_bg.svg') no-repeat center;
+}
+
+#hr-facts-2 .counter-wrapper,
+#ba-facts-3 .counter-wrapper {
+	background: url('/static/images/vectors/water_bg.svg') no-repeat center;
+}
+
+#hr-facts-5 .counter-wrapper {
+	background: url('/static/images/vectors/fish_bg.svg') no-repeat center;
+}
+
+#hr-facts-6 .counter-wrapper {
+	background: url('/static/images/vectors/boat_bg.svg') no-repeat center;
+}
+
+#hr-facts-7 .counter-wrapper {
+	background: url('/static/images/vectors/bird_bg.svg') no-repeat center;
+}
+
+#ba-facts-6 .counter-wrapper {
+	background: url('/static/images/vectors/leaf_bg.svg') no-repeat center;
+}
+
+#croatia-fact-3 svg,
+#croatia-fact-4 svg {
+	text { fill: $hr-blue-dark; }
+	.arc0 { fill: $hr-red; }
+	.arc1 { fill: $hr-blue-dark; }
+}
+
+#bosnia-fact-1 svg,
+#bosnia-fact-4 svg {
+	text { fill: $ba-yellow; }
+	.arc0 { fill: $ba-blue; }
+	.arc1 { fill: $ba-yellow; }
+}
+
+#bosnia-fact-2,
+#bosnia-fact-3,
+#bosnia-fact-5,
+#bosnia-fact-6 {
+	color: $ba-yellow-dark;
+}

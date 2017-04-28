@@ -115,6 +115,28 @@
 	</div>
 </section>
 
+
+<section id="ba-facts-6">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2">
+				{{ facts.info(this.fact_6_title, this.fact_6_title_icon, this.fact_6_subtitle, this.fact_6_copy, this.fact_6_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('ba-development-infobox', this.fact_6_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="bosnia-fact-6">1800</div>
+					</div>
+
+					<p class="px2">{{ this.fact_6_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 {% include "country/_cta.html" %}
 
 {% endblock %}
