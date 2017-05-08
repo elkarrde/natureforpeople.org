@@ -17,10 +17,11 @@
 }
 
 #croatia-fact-1,
-#croatia-fact-5,
+#croatia-fact-2,
+#croatia-fact-4,
 #croatia-fact-6,
-#croatia-fact-7,
-#croatia-fact-2 {
+#croatia-fact-5,
+#croatia-fact-7 {
 	color: $hr-red;
 }
 
@@ -28,6 +29,10 @@
 #ba-facts-2 .counter-wrapper,
 #hr-facts-1 .counter-wrapper {
 	background: url('/static/images/vectors/visitors_bg.svg') no-repeat center;
+}
+
+#hr-facts-4 .counter-wrapper {
+	background: url('/static/images/vectors/forest_bg.svg') no-repeat center;
 }
 
 #hr-facts-2 .counter-wrapper,
