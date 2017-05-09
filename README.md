@@ -1,4 +1,4 @@
-# wwf_pabat_site
+# natureforpeople.org
 WWF Adria PA-BAT website
 
 ## How to run locally
