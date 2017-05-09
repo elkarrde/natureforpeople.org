@@ -42,15 +42,15 @@ fact_3_question: Do decision makers understand the opportunities that nature pro
 ---
 fact_3_caption: In 39% of protected areas employment in protected area management is the main source of income for local people.
 ---
-fact_6_title: Fishery
+fact_4_title: Forestry
 ---
-fact_6_subtitle: Sustainable fishery in Adriatic sea
+fact_4_subtitle: Distribution of income
 ---
-fact_6_copy: It is estimated that 93% of fish stock in Mediterranean Sea, and thus in Adriatic, are in poor condition, and one of the main causes for this is unsustainable fishing. If we continue with this pace soon we wouldn’t have any fish in the sea.
+fact_4_copy: In 2015 the forestry sector had a profit of 2 billion HRK, or 1.4 percent of GDP. However local populations profited from forestry in one out of 10 protected areas (nature parks) only through forest/fire food sale.
 ---
-fact_6_question: Do decision makers and fishermen understand that sustainable fishing (not harmful to fish resources and the environment) is the only way towards long-term survival and enough fish stocks in Adriatic Sea? Mutual agreement of all stakeholders on the improvement of fish stocks management in Adriatic Sea is needed.
+fact_4_question: Are local communities and advisory services well informed about opportunities and sustainable business practices, which are not only based on its cutting? Do they have sufficient support to develop those sustainable business practices?
 ---
-fact_6_caption: In 2015 more than 7000 boats shorter than 12 meters were fishing in the Croatian part of Adriatic Sea
+fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
 ---
 fact_5_title: Aquaculture
 ---
@@ -62,15 +62,15 @@ fact_5_question: Does fishery sector monitor trends of sustainable aquaculture a
 ---
 fact_5_caption: 12 to 17 kilos of small blue fish is necessary for breeding one kilogram of tuna in the Adriatic
 ---
-fact_4_title: Forestry
+fact_6_title: Fishery
 ---
-fact_4_subtitle: Distribution of income
+fact_6_subtitle: Sustainable fishery in Adriatic sea
 ---
-fact_4_copy: In 2015 the forestry sector had a profit of 2 billion HRK, or 1.4 percent of GDP. However local populations profited from forestry in one out of 10 protected areas (nature parks) only through forest/fire food sale.
+fact_6_copy: It is estimated that 93% of fish stock in Mediterranean Sea, and thus in Adriatic, are in poor condition, and one of the main causes for this is unsustainable fishing. If we continue with this pace soon we wouldn’t have any fish in the sea.
 ---
-fact_4_question: Are local communities and advisory services well informed about opportunities and sustainable business practices, which are not only based on its cutting? Do they have sufficient support to develop those sustainable business practices?
+fact_6_question: Do decision makers and fishermen understand that sustainable fishing (not harmful to fish resources and the environment) is the only way towards long-term survival and enough fish stocks in Adriatic Sea? Mutual agreement of all stakeholders on the improvement of fish stocks management in Adriatic Sea is needed.
 ---
-fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
+fact_6_caption: In 2015 more than 7000 boats shorter than 12 meters were fishing in the Croatian part of Adriatic Sea
 ---
 fact_7_title: Rivers
 ---
@@ -90,11 +90,11 @@ fact_2_title_icon: water
 ---
 fact_3_title_icon: jobs
 ---
-fact_6_title_icon: water
+fact_4_title_icon: forest
 ---
 fact_5_title_icon: water
 ---
-fact_4_title_icon: forest
+fact_6_title_icon: water
 ---
 fact_7_title_icon: water
 ---
@@ -178,7 +178,8 @@ Gjurčević, Emil. Feeding and Fish Health. Croatian Academy of Science and Arts
 picto_6_infobox:
 
 <p>Source and more information:<br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__eng__verzija_za_web.pdf">Protected areas benefit assessment (PA-BAT) in Croatia</a></p>
+Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
+<a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm" target="_blank">Izvor</a></p>
 ---
 picto_7_infobox:
 
