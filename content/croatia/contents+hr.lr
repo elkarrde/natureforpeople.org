@@ -66,7 +66,7 @@ fact_6_subtitle: Održivo ribarstvo u Jadranu
 ---
 fact_6_copy: Procijenjeno je da je 93% ribljih stokova u Sredozemnom moru, a samim time i u Jadranu u <a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">lošem statusu</a>, a jedan od glavnih uzroka tome je neodrživ ribolov. Ukoliko se nastavi ovim tempom uskoro bi mogli ostati bez ribe u Jadranu.
 ---
-fact_6_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo (ne šteti ribljim resursima i okolišu) jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Jadranu? Potrebna je suglasnost svih dionika za poboljšanje regulacije i unaprijeđenje upravljanja ribljim resursima u Jadranu.
+fact_6_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Jadranu?
 ---
 fact_6_caption: U 2015 više od 7000 brodica manjih od 12 metara obavljalo je ribolov u Hrvatskom dijelu Jadrana.
 ---
@@ -99,7 +99,7 @@ fact_7_title_icon: water
 fact_1_infobox:
 
 <p>Izvor i više informacija:<br />
-Hrvatska agencija za okoliš i prirodu, 2016.</p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
 
 ---
 fact_2_infobox:
@@ -145,7 +145,7 @@ fact_7_infobox:
 picto_1_infobox:
 
 <p>Izvor i više informacija:<br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+Hrvatska agencija za okoliš i prirodu, 2016.</p>
 
 ---
 picto_2_infobox:
