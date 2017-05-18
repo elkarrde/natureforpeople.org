@@ -1,3 +1,192 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'country-me' %}
+
+{% import 'country/_facts.html' as facts %}
+{% import 'country/_infobox.html' as infobox %}
+
+{% block body %}
+
+{% include "country/_banner.html" %}
+
+<section id="me-facts-1">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix flex flex-wrap items-center">
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-tourism-fact-infobox', this.fact_1_infobox, top="6.5em") }}
+                {{ facts.info(this.fact_1_title, this.fact_1_title_icon, this.fact_1_subtitle, this.fact_1_copy, this.fact_1_question) }}
+            </div>
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-tourism-picto-infobox', this.picto_1_infobox) }}
+                <div class="flex-wrap flex-column flex items-center justify-center">
+                    <div class="w100 center counter-wrapper">
+                        <div class="counter h3" id="montenegro-fact-1">172</div>
+                    </div>
+                    <p class="px2">{{ this.fact_1_caption }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="me-facts-2" class="bg-white-dirty">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix flex flex-wrap items-center">
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-tourism-fact-infobox', this.fact_2_infobox, top="7.5em") }}
+                {{ facts.info(this.fact_2_title, this.fact_2_title_icon, this.fact_2_subtitle, this.fact_2_copy, this.fact_2_question) }}
+            </div>
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-water-picto-infobox', this.picto_2_infobox, top="-0.5em") }}
+                <div class="flex-wrap flex-column flex items-center justify-center">
+                    <div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-2">500 000</div>
+                    </div>
+                    <p class="px2">{{ this.fact_2_caption }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="me-facts-3">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix flex flex-wrap items-center">
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-jobs-fact-infobox', this.fact_3_infobox, top="7em") }}
+                {{ facts.info(this.fact_3_title, this.fact_3_title_icon, this.fact_3_subtitle, this.fact_3_copy, this.fact_3_question) }}
+            </div>
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-jobs-picto-infobox', this.picto_3_infobox) }}
+                <div class="flex-wrap flex-column flex items-center justify-center">
+                    <div class="flex items-center justify-center flex-column">
+                        <div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-2">7 700</div>
+                    </div>
+                        <p class="px2">{{ this.fact_3_caption }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="me-facts-4" class="bg-white-dirty">
+    <div class="max-width-4 mx-auto">
+        <div class="clearfix flex flex-wrap items-center">
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-rivers-fact-infobox', this.fact_4_infobox, top="2.5em") }}
+                {{ facts.info(this.fact_4_title, this.fact_4_title_icon, this.fact_4_subtitle, this.fact_4_copy, this.fact_4_question) }}
+            </div>
+            <div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-forestry-picto-infobox', this.fact_4_infobox, top="-0.5em") }}
+                <div class="flex-wrap flex-column flex items-center justify-center">
+                    <div class="w100 center counter-wrapper">
+                        <div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-2">1</div>
+                    </div>
+                        <p class="px2">{{ this.fact_4_caption }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="me-facts-5">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2 relative">
+				{{ facts.info(this.fact_5_title, this.fact_5_title_icon, this.fact_5_subtitle, this.fact_5_copy, this.fact_5_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('me-water-infobox', this.fact_5_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-2">59,7%</div>
+                    </div>
+					<p class="px2">{{ this.fact_5_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="me-facts-6" class="bg-white-dirty">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2 relative">
+				{{ facts.info(this.fact_6_title, this.fact_6_title_icon, this.fact_6_subtitle, this.fact_6_copy, this.fact_6_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('me-forestry-infobox', this.fact_6_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-6">0</div>
+					</div>
+					<p class="px2">{{ this.fact_6_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="me-facts-7">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2 relative">
+				{{ facts.info(this.fact_7_title, this.fact_7_title_icon, this.fact_7_subtitle, this.fact_7_copy, this.fact_7_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('me-fishery-infobox', this.fact_7_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="donut" id="montenegro-fact-3" data-percent="95"></div>
+					<p class="px2">{{ this.fact_7_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="me-facts-8" class="bg-white-dirty">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2 relative">
+				{{ facts.info(this.fact_8_title, this.fact_8_title_icon, this.fact_8_subtitle, this.fact_8_copy, this.fact_8_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('me-manufacture-infobox', this.fact_8_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-7">7500</div>
+					</div>
+					<p class="px2">{{ this.fact_8_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="me-facts-9">
+	<div class="max-width-4 mx-auto">
+		<div class="clearfix flex flex-wrap items-center">
+			<div class="col md-col-6 py4 px2 relative">
+				{{ facts.info(this.fact_9_title, this.fact_9_title_icon, this.fact_9_subtitle, this.fact_9_copy, this.fact_9_question) }}
+			</div>
+			<div class="col md-col-6 py4 px2 relative">
+				{{ infobox.modal('me-plants-infobox', this.fact_9_infobox) }}
+				<div class="flex-wrap flex-column flex items-center justify-center">
+					<div class="w100 center counter-wrapper">
+						<div class="counter h2" id="montenegro-fact-7">970</div>
+					</div>
+					<p class="px2">{{ this.fact_9_caption }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% include "country/_cta.html" %}
+
+{% endblock %}
+	

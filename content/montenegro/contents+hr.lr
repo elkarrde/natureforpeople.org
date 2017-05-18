@@ -12,42 +12,205 @@ banner_button_text: Saznajte više
 ---
 fact_1_title: Turizam
 ---
-fact_1_subtitle: Broj posjetitelja
+fact_1_subtitle: Prihod od zaštićenih područja
 ---
-fact_1_copy: Trenutno je turistički sektor u BiH u početnoj fazi razvoja i prihodi od turizma u BiH su trenutno daleko ispod prosječnih prihoda konkurentnih zemalja. Turistički potencijali Bosne i Hercegovine smatraju se velikom prilikom za obnovu ekonomije u zemlji.
+fact_1_copy: Ekonomija Crne Gore se u velikoj mjeri oslanja na turizam. Direktno učešće sektora turizma u BDP-u se procjenjuje na 11% u 2016. godini, dok se indirektno učešće procjenjuje do 22,15%.
 ---
-fact_1_question: Na koji način riješiti evidentne nedostatke turističke ponude i infrastrukture u zaštićenim područjima?
+fact_1_question: Je li poslovni sektor na odgovarajući način uključen u upravljanje? Potrebno je uspostaviti poslovne forume u cilju boljeg ispitivanja mogućnosti i pokretanja aktivnosti koje bi pretvorile utvrđene vrijednosti u dobiti.
 ---
-fact_1_caption: 2% udio turizma u BDP-u Bosne i Hercegovine
+fact_1_caption: Direktno učešće turizma u zaštićenim područjima u bruto domaćem proizvodu Crne Gore je izračunato u iznosu od 172 miliona EUR.
 ---
-fact_2_title: Poslovi
+fact_2_title: Turizam
 ---
-fact_2_subtitle: Radna mjesta u zaštiti prirode
+fact_2_subtitle: Broj posjetitelja
 ---
-fact_2_copy: BiH je teško pogođena nezaposlenošću (stopa nezaposlenosti iznosi 24,2%) i u tim okvirima ova brojka je  važna. Osim ekonomskih koristi, radna mjesta u ZP-ovima nude i mnoge druge društvene dobrobiti poput prilika za formalno i neformalno obrazovanje lokalnog stanovništva.
+fact_2_copy: Ukupan broj turističkih posjeta u 2016. godini iznosio je 1.713.109 dok je preko 400.000 osoba posjetilo zaštićena područja u Crnoj Gori. Postojeća zaštićena područja pokrivaju 9,05% (oko 125.000 ha) teritorija države.
 ---
-fact_2_question: Mogućnosti zapošljavanja uveliko ovise o praksi upravljanja. Jesu li zaštićena područja prilagođena modernim pristupima u menadžmentu?
+fact_2_question: Radi li se na diversifikaciji turističke ponude i na razvoju turističke infrastrukture u zaštićenim područjima?
 ---
-fact_2_caption: 300 ljudi zaposlenih u zaštićenim područjima (177 ljudi u Republici Srpskoj i 132 u FBiH).
+fact_2_caption: Prihodi za upravu nacionalnih parkova Crne Gore u od 2009. do 2013. godine porasli su za 500.000 EUR zbog naplate ulaznica i povećanja broja turista.
 ---
-fact_3_title: Vodni resursi
+fact_3_title: Poslovi
 ---
-fact_3_subtitle: Prihodi od iskorištavanja voda
+fact_3_subtitle: Poslovi u zaštićenom području
 ---
-fact_3_copy: Oko 45% energije proizvedene u BiH nastalo je u hidroelektranama. Svake godine hidroelektrane u BiH prosječno proizvedu energiju u vrijednosti od 350 miliona EUR, a zauzvrat, dobrobiti za lokalnu zajednicu su malobrojne, naročito ako se posmatra dugoročno.
+fact_3_copy: Oko 160 osoba je direktno zaposleno u pet nacionalnih parkova, dok preko 200 privrednih subjekata koji nude turističke usluge dodatno zapošljava lokalno stanovništvo. Taj broj je veći u toku ljetnje turističke  sezone, kada se otvaraju radna mjesta na određeno vrijeme. Najveća vrijednost radnih mjesta u zaštićenim područjima nije samo u njihovom broju, već i u tome što se njima ekonomski osnažuje stanovništvo iz udaljenih i seoskih područja, čime su mogućnosti za razvoj poslovanja ograničene.
 ---
-fact_3_question: Postoji li dovoljna svijest o uslugama ekosistema koje pružaju vode i močvarna područja?
+fact_3_question: Promoviraju li se prostori zaštićenih  područja kao "generatori novih radnih mjesta" i imaju li pritom podršku relevantnih institucija (šeme subvencija, kreditne linije za pokretanje novih zelenih biznisa, programi zapošljavanja itd)?
 ---
-fact_3_caption: Bosna i Hercegovina s više od 9.200 m3 vode po glavi stanovnika najbogatija je zemlja pitkom vodom u regiji i među deset najbogatijih zemalja u Europi.
+fact_3_caption: Procjene za 2011. godinu su pokazale da turizam u zaštićenim područjima potencijalno učestvuje sa ukupno 172 miliona EUR godišnje u bruto domaćem proizvodu i kreira ekvivalent od oko 7.700 stalnih radnih mjesta.
 ---
-fact_4_title: Šumarstvo
+fact_4_title: Rijeke
 ---
-fact_4_subtitle: Raspodijela prihoda
+fact_4_subtitle: Prirodni tokovi
 ---
-fact_4_copy: Od 2012., WWF, u suradnji sa IKEA-om i kroz certificiranje šuma (FSC), pokušava smanjiti nezakonitu sječu i promovirati odgovoran šumski menadžment kako bi se podržao održivi razvoj u Bosni i Hercegovini.
+fact_4_copy: Analiza rijeka koje su pod prijetnjom neodrživog hidroenergetskog razvoja je ukazala da Crna Gora ima najviše 76% (899 km) netaknutih riječnih tokova bogatih biodiverzitetom u regiji. Istovremeno sve je veća potražnja u korištenju rijeka za proizvodnju električne energije, što vrlo često ima iznimno negativne posljedice za prirodne vrijednosti rijeka kao i uobičajen način korištenja prostora i prirodnih resursa.
 ---
-fact_4_question: Gdje leži prilika za ekonomski razvoj u zaštićenim područjima i oko njih?
+fact_4_question: Kako osigurati da investitori grade i upravljaju hidroelektranama sukladno svjetski prepoznatim smjernicama za održivi razvoj hidroenergetike? Kako osigurati da vlada proglasi područja u kojima gradnja hidroelektrana nije dozvoljena?
 ---
-fact_4_caption: 63% površine Bosne i Hercegovine pokriveno je šumom i šumskim zemljištem.
+fact_4_caption: Kanjon rijeke Tare koji je dio Nacionalnog parka Durmitor je najdublji kanjon u Europi i drugi najduži na svijetu nakon Grand Canyona.
+---
+fact_5_title: Voda
+---
+fact_5_subtitle: Prihodi od korištenja voda
+---
+fact_5_copy: Crna Gora pripada grupi vodom bogatih zemalja, a vodni resursi predstavljaju jedan od glavnih razvojnih potencijala države. Oko 59,7% električne energije proizvedene 2016. nastalo je radom hidroelektrana. U 2016. hidroelektrane u zemlji proizvele su električnu energiju od 1800 GWh. Međutim, dobrobiti za lokalnu zajednicu od proizvodnje hidroelektrana su malobrojne, naročito ako ih se promatra dugoročno.
+---
+fact_5_question: Je li lokalno stanovništvo upoznato s koristima usluge ekosustava koje pružaju vode i močvarna područja, kao i s potencijalom za njihovo održivo korištenje? Kako se novac iz nadoknada vraća u zaštićena područja i u lokalne zajednice? 
+---
+fact_5_caption: 59,7% je procenat učešća elektrana u ukupnoj proizvodnji. 
+---
+fact_6_title: Šumarstvo
+---
+fact_6_subtitle: Odgovorno upravljanje
+---
+fact_6_copy: Šumarski je sektor 2011. godine imao prihod od 17.9 milijuna dolara ili 0,5% BDP-a. Lokalno stanovništvo u Nacionalnom parku Prokletije egzistencijalno su vezani za šume između ostalog i zbog drva za ogrjev. U 2014. u Crnoj Gori je 4.757m<sup>3</sup> šuma bespravno posječeno.
+---
+fact_6_question: Jesu li lokalne zajednice i službe zaštićenih područja dovoljno informirane o mogućnostima koje vlasnici šuma imaju u korištenju šuma, a koje nije bazirano samo na njezinoj sječi? Može li certifikacija šume (FSC) biti rješenje za ilegalnu sječu i odgovorno upravljanje šumama u Crnoj Gori?
+---
+fact_6_caption: Ukupno područje sa certificiranim šumama u Crnoj Gori iznosi 0 ha.
+---
+fact_7_title: Ribarstvo
+---
+fact_7_subtitle: Održivo ribarstvo u Skadarskom jezeru
+---
+fact_7_copy: Duga je tradicija ribolova na Skadarskom jezeru koja pritom godišnje donosi cca 1.8 miliona EUR lokalnoj ekonomiji i omogućava egzistenciju oko 400 ribara na jezeru sa godišnjim ulovom oko 1000 t.
+---
+fact_7_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Skadarskom jezeru? Potrebna je suglasnost svih dionika za poboljšanje regulacije i unaprjeđenje upravljanja ribljim resursima u Skadarskom jezeru.
+---
+fact_7_caption: Oko 95% fonda slatkovodne ribe u Crnoj Gori dolazi iz Skadarskog jezera.
+---
+fact_8_title: Proizvodnja meda
+---
+fact_8_subtitle: Zeleni poslovi
+---
+fact_8_copy: Ukupan broj košnica u Crnoj Gori se procjenjuje na 50.000. Samo tri nacionalna parka (Biogradska gora, Prokletije i Skadarsko jezero) zajedno imaju više od 10.000 košnica proizvodeći 134 tone meda. Može se smatrati da očuvani ekosistemi u zaštićenim područjima predstavljaju centralna područja za pčelarstvo u Crnoj Gori.
+---
+fact_8_question: Sarađuju li sa preduzetnicima u zaštićenim područjima koja posluju su u skladu sa ciljevima očuvanja zaštićenih područja i njihovim planskim dokumentima? Podržavaju li njihove inicijative?
+---
+fact_8_caption: Pčelarstvo je veoma razvijeno na području Skadarskog jezera gdje prema procjenama, postoji cca 7500 košnica sa godišnjom proizvodnjom od blizu 80 tona meda.
+---
+fact_9_title: Divlje jestivo bilje
+---
+fact_9_subtitle: Opće korisne funkcije šuma
+---
+fact_9_copy: Procjenjuje se da se godišnje ubere 170 t bobičastog voća, 30 t ljekovitog bilja i 70 t pečuraka u NP Biogradska gora. Na taj način se generiše cca 1 milijon EUR godišnje dok je na razini zemlje procjena 5 milijona.
+---
+fact_9_question: Zaštićeno područje ima značajnu ulogu u zaštiti ekosistema koji omogućuju proizvodnja meda, sakupljanje divljeg jestivog bilja i u kontroli održivog korišćenja prirodnih resursa. Razvija li se tržišna infrastruktura za lokalne proizvode i divlje jestive proizvode u cilju poboljšanja i stabilizovanja prihoda za lokalne stanovnike?
+---
+fact_9_caption: Procjenjuje se da se 970 tona bobičastog voća sakupi u nacionalnim parkovima Prokletije i Biogradska gora.
 ---
 cta_button_text: Riješimo izazove zajedno
+---
+fact_1_title_icon: tourism
+---
+fact_2_title_icon: tourism
+---
+fact_3_title_icon: jobs
+---
+fact_4_title_icon: water
+---
+fact_5_title_icon: water
+---
+fact_6_title_icon: forest
+---
+fact_7_title_icon: fishery
+---
+fact_8_title_icon: manufactura
+---
+fact_9_title_icon: plants
+---
+fact_1_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="https://www.wttc.org/-/media/files/reports/economic-impact-research/countries-2017/montenegro2017.pdf" target="_blank">Ekonomski uticaj putovanja i turizma u 2017. godini - Crna Gora. Svjetski  savjet za putovanja i turizam.</a></p>
+---
+fact_2_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="https://www.monstat.org/userfiles/file/publikacije/CG%20U%20BROJKAMA/MONSTAT_ENG_fin.pdf" target="_blank">Crna Gora u brojkama 2016.<br />
+<a href="http:// www.parksdinarides.org" target="_blank">www.parksdinarides.org</a><br />
+<a href="https://www.cbd.int/doc/world/me/me-nr-05-en.pdf" target="_blank">Peti nacionalni izvještaj prema Konvenciji Ujedinjenih nacija o biodiverzitetu</a></p>
+---
+fact_3_infobox:
+
+<p>Izvor i više informacija:<br />
+NP Durmitor- 45, NP Biogradska gora-27, NP Lovćen-21, NP Skadarsko jezero - 45, NP Prokletije-22.</p>
+---
+fact_4_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf" target="_blank">Rijeke, linije života dinarskog luka</a><br />
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf" target="_blank">Vodič za investitore</a></p>
+---
+fact_5_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="http://www.minpolj.gov.me/ResourceManager/FileDownload.aspx?rId=228513&rType=2" target="_blank">Nacrt strategije upravljanja vodama Crne Gore</a><br />
+<a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
+---
+fact_6_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="ftp://ftp.fao.org/docrep/fao/011/k4588e/k4588e00.pdf">ftp://ftp.fao.org/docrep/fao/011/k4588e/k4588e00.pdf</a><br />
+<a href=" https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+---
+fact_7_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href=" http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank"> http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf</a></p>
+---
+fact_8_infobox:
+
+<p>Izvor i više informacija:<br />
+Da li upravljači zaštićenih područja prepoznaju značaj uključivanja lokalnog stanovništva u upravljanje i da li imaju razvijene adekvatne mehanizme za njihovo uključivanje?<br />
+ Prema podacima Zavoda za statistiku Crne Gore MONSTAT</p>
+---
+fact_9_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="http://www.sumins.me/userfiles/file/Strategije/Predlog%20Strategija%20razvoja%20suma%20i%20sumarstva.pdf" target="_blank"> http://www.sumins.me/userfiles/file/Strategije/Predlog%20Strategija%20razvoja%20suma%20i%20sumarstva.pdf</a></p>
+---
+picto_1_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
+---
+picto_2_infobox:
+
+<p>Izvor i više informacija:<br />
+Sa manje od 500.000 EUR u 2009. godini, porasli su na gotovo 1.000.000 EUR u 2013. godini. Podaci Javnog preduzeća za nacionalne parkove Crne Gore.</p>
+---
+picto_3_infobox:
+
+<p>Izvor i više informacija:<br />
+<a hrwf="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744" target="_blank">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
+---
+picto_4_infobox:
+
+<p>Izvor i više informacija:<br /> </p>
+---
+picto_5_infobox:
+
+<p>Izvor i više informacija:<br /> </p>
+---
+picto_6_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank"> http://www.fao.org/forest-resources-assessment/current-assessment/en/</a></p>
+---
+picto_7_infobox:
+
+<p>Izvor i više informacija:<br />
+<a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+---
+picto_8_infobox:
+
+<p>Izvor i više informacija:<br />
+Ekonomsko vrednovanje sistema zaštićenih područja Crne Gore. ISSP</p>
+---
+picto_9_infobox:
+
+<p>Izvor i više informacija:<br />
+ Ekonomsko vrednovanje sistema zaštićenih područja Crne Gore. ISSP </p>
+---
