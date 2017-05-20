@@ -53,11 +53,11 @@
     <div class="max-width-4 mx-auto">
         <div class="clearfix flex flex-wrap items-center">
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('hr-jobs-fact-infobox', this.fact_3_infobox, top="7em") }}
+                {{ infobox.modal('hr-jobs-fact-infobox', this.fact_3_infobox, top="6em") }}
                 {{ facts.info(this.fact_3_title, this.fact_3_title_icon, this.fact_3_subtitle, this.fact_3_copy, this.fact_3_question) }}
             </div>
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('hr-jobs-picto-infobox', this.picto_3_infobox) }}
+                {{ infobox.modal('hr-jobs-picto-infobox', this.picto_3_infobox, top="-2em") }}
                 <div class="flex-wrap flex-column flex items-center justify-center">
                     <div class="flex items-center justify-center flex-column">
                         <div class="donut" id="croatia-fact-3" data-percent="39"></div>
@@ -73,11 +73,11 @@
     <div class="max-width-4 mx-auto">
         <div class="clearfix flex flex-wrap items-center">
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('hr-forestry-fact-infobox', this.fact_4_infobox, top="2.5em") }}
+                {{ infobox.modal('hr-forestry-fact-infobox', this.fact_4_infobox, top="4em") }}
                 {{ facts.info(this.fact_4_title, this.fact_4_title_icon, this.fact_4_subtitle, this.fact_4_copy, this.fact_4_question) }}
             </div>
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('hr-forestry-picto-infobox', this.fact_4_infobox, top="-0.5em") }}
+                {{ infobox.modal('hr-forestry-picto-infobox', this.picto_4_infobox, top="0.5em") }}
                 <div class="flex-wrap flex-column flex items-center justify-center">
                     <div class="w100 center counter-wrapper">
 						<div class="counter h2" id="croatia-fact-4">1</div>
@@ -89,14 +89,15 @@
     </div>
 </section>
 
-<section id="hr-facts-5" class="bg-white-dirty">
+<section id="hr-facts-5">
 	<div class="max-width-4 mx-auto">
 		<div class="clearfix flex flex-wrap items-center">
-			<div class="col md-col-6 py4 px2">
+			<div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('hr-aquaculture-fact-infobox', this.fact_5_infobox, top="2em") }}
 				{{ facts.info(this.fact_5_title, this.fact_5_title_icon, this.fact_5_subtitle, this.fact_5_copy, this.fact_5_question) }}
 			</div>
 			<div class="col md-col-6 py4 px2 relative">
-				{{ infobox.modal('hr-aquaculture-infobox', this.fact_5_infobox) }}
+				{{ infobox.modal('hr-aquaculture-infobox', this.picto_5_infobox, top="-6em") }}
 				<div class="flex-wrap flex-column flex items-center justify-center">
 					<div class="w100 center counter-wrapper">
 						<div class="counter h2" id="croatia-fact-5">17</div>
@@ -111,11 +112,12 @@
 <section id="hr-facts-6" class="bg-white-dirty">
 	<div class="max-width-4 mx-auto">
 		<div class="clearfix flex flex-wrap items-center">
-			<div class="col md-col-6 py4 px2">
+			<div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('hr-forestry-fact-infobox', this.fact_6_infobox, top="5em") }}
 				{{ facts.info(this.fact_6_title, this.fact_6_title_icon, this.fact_6_subtitle, this.fact_6_copy, this.fact_6_question) }}
 			</div>
 			<div class="col md-col-6 py4 px2 relative">
-				{{ infobox.modal('hr-forestry-infobox', this.fact_6_infobox) }}
+				{{ infobox.modal('hr-forestry-infobox', this.picto_6_infobox, top="-2em") }}
 				<div class="flex-wrap flex-column flex items-center justify-center">
 					<div class="w100 center counter-wrapper">
 						<div class="counter h2" id="croatia-fact-6">7000</div>
@@ -127,14 +129,15 @@
 	</div>
 </section>
 
-<section id="hr-facts-7" class="bg-white-dirty">
+<section id="hr-facts-7">
 	<div class="max-width-4 mx-auto">
 		<div class="clearfix flex flex-wrap items-center">
-			<div class="col md-col-6 py4 px2">
+			<div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('hr-fishery-fact-infobox', this.fact_7_infobox, top="7em") }}
 				{{ facts.info(this.fact_7_title, this.fact_7_title_icon, this.fact_7_subtitle, this.fact_7_copy, this.fact_7_question) }}
 			</div>
 			<div class="col md-col-6 py4 px2 relative">
-				{{ infobox.modal('hr-fishery-infobox', this.fact_7_infobox) }}
+				{{ infobox.modal('hr-fishery-infobox', this.picto_7_infobox, top="-2.5em") }}
 				<div class="flex-wrap flex-column flex items-center justify-center">
 					<div class="w100 center counter-wrapper">
 						<div class="counter h2" id="croatia-fact-7">10000</div>

@@ -18,13 +18,13 @@ fact_1_copy: Sva zaštićena područja ostvaruju prihode od turizma, a u čak dv
 ---
 fact_1_question: Prepoznaju li strategije turizma zaštićena područja kao pokretače razvoja?
 ---
-fact_1_caption: Broj prodanih ulaznica u nacionalnim parkovima i parkovima prirode u 2016. godini
+fact_1_caption: 3,484,331 prodanih ulaznica u nacionalnim parkovima i parkovima prirode u 2016. godini.
 ---
 fact_2_title: Voda
 ---
 fact_2_subtitle: Prihodi od korištenja voda
 ---
-fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi 60 milijuna eura. Njihovo godišnje ulaganje u zaštitu 200.000 hektara šumskog ekosustava iznosi samo 0,0265% od ukupnog prihoda hidroelektrana. Ti prihodi odlaze Hrvatskim šumama koje bi trebale sredstava namjenski trošiti na mjere očuvanja šumskog ekosustava, jer bez kvalitetnog šumskog pokrova neće biti niti vode dostupne za proizvodnju električne energije u hidroelektranama.
+fact_2_copy: Godišnji prihod dviju elektrana koje upotrebljavaju vodu iz zaštićenih područja na Velebitu iznosi <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/vrednovanje_doprinosa_ekosustava_nacionalnog_parka_sjeverni_velebit_i_parka_prirode_vele.pdf" target="_blank">60 milijuna eura</a>. Njihovo godišnje ulaganje u zaštitu 200.000 hektara šumskog ekosustava iznosi samo <a href="http://www.mps.hr/default.aspx?id=8451" target="_blank">0,0265% od ukupnog prihoda</a> hidroelektrana. Ti prihodi odlaze Hrvatskim šumama koje bi trebale sredstava namjenski trošiti na mjere očuvanja šumskog ekosustava, jer bez kvalitetnog šumskog pokrova neće biti niti vode dostupne za proizvodnju električne energije u hidroelektranama.
 ---
 fact_2_question: Kojim strategijama prepoznati i vrednovati usluge ekosustava koje pruža očuvana priroda te vratiti dio prihoda zaštićenim područjima?
 ---
@@ -34,21 +34,21 @@ fact_3_title: Poslovi
 ---
 fact_3_subtitle: Radna mjesta u zaštiti prirode
 ---
-fact_3_copy: U 8 nacionalnih parkova i 11 parkova prirode zaposleno je više od 1300 ljudi, od kojih samo 15 posto radi na poslovima zaštite prirode dok ostali većinom rade u popratnim djelatnostima (ugostiteljstvo, održavanje...).  Od sveukupnog broja zaposlenih u navedenim zaštićenim područjima dvije trećine radi u samo jednom zaštićenom području.
+fact_3_copy: U 8 nacionalnih parkova i 11 parkova prirode zaposleno je više <a href="https://vlada.gov.hr/UserDocsImages//Sjednice/2015/253%20sjednica%20Vlade//253%20-%209a.pdf" target="_blank">od 1300 ljudi, od kojih samo 15 posto radi na poslovima zaštite prirode dok ostali većinom rade u popratnim djelatnostima (ugostiteljstvo, održavanje...)</a>.  Od sveukupnog broja zaposlenih u navedenim zaštićenim područjima dvije trećine radi u samo jednom zaštićenom području.
 ---
 fact_3_question: Razumiju li  donosioci odluka prilike koje zaštita prirode pruža za zadržavanje visokoobrazovanih mladih ljudi u ruralnim dijelovima i njihov doprinos lokalnom razvoju.
 ---
 fact_3_caption: Poslovi u zaštićenim područjima su glavni izvor prihoda lokalnom stanovništvu u 39% parkova.
 ---
-fact_6_title: Ribarstvo
+fact_4_title: Šumarstvo
 ---
-fact_6_subtitle: Održivo ribarstvo u Jadranu
+fact_4_subtitle: Raspodjela prihoda
 ---
-fact_6_copy: Procijenjeno je da je 93% ribljih stokova u Sredozemnom moru, a samim time i u Jadranu u lošem statusu, a jedan od glavnih uzroka tome je neodrživ ribolov. Ukoliko se nastavi ovim tempom uskoro bi mogli ostati bez ribe u Jadranu.
+fact_4_copy: Šumarski je sektor 2015. godine imao prihod od <a href="http://portal.hrsume.hr/images/stories/godisnja-poslovna-izvjesca/godisnje_izvjesce_za_2015.pdf" target="_blank">2 milijarde kuna</a> ili <a href="http://www.hkisdt.hr/podaci/2015/ostalo/250_godina-26_02_2015-SZ.pdf" target="_blank">1,4 %</a> BDP-a. Lokalno stanovništvo ostvarilo je prihod od šumarstva u jednom od 10 zaštićenih područja (parkova prirode), i to jedino putem prodaje drva/šume.
 ---
-fact_6_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo (ne šteti ribljim resursima i okolišu) jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Jadranu? Potrebna je suglasnost svih dionika za poboljšanje regulacije i unaprijeđenje upravljanja ribljim resursima u Jadranu.
+fact_4_question: Jesu li lokalne zajednice i savjetodavne službe dovoljno informirane o mogućnostima koje vlasnici šuma imaju u korištenju šuma, a koje nije bazirano samo na njezinoj sječi? Pruža li im se dovoljna podrška u njihovu razvijanju?
 ---
-fact_6_caption: U 2015 više od 7000 brodica manjih od 12 metara obavljalo je ribolov u Hrvatskom dijelu Jadrana.
+fact_4_caption: Poslovni sektor ostvaruje značajni prihod u 4 zaštićena područja, dok lokalno stanovništvo ostvaruje značajan prihod od šumarstva u jednom zaštićenom području.
 ---
 fact_5_title: Akvakultura
 ---
@@ -60,15 +60,15 @@ fact_5_question: Prati li sektor ribarstva trendove održive akvakulture i uklju
 ---
 fact_5_caption: Za uzgoj jednog kilograma tune u Jadranu potrebno je od 12 do 17 kilograma male plave ribe.
 ---
-fact_4_title: Šumarstvo
+fact_6_title: Ribarstvo
 ---
-fact_4_subtitle: Raspodjela prihoda
+fact_6_subtitle: Održivo ribarstvo u Jadranu
 ---
-fact_4_copy: Šumarski je sektor 2015. godine imao prihod od 2 milijarde kuna ili 1,4 % BDP-a. Lokalno stanovništvo ostvarilo je prihod od šumarstva u jednom od 10 zaštićenih područja (parkova prirode), i to jedino putem prodaje drva/šume.
+fact_6_copy: Procijenjeno je da je 93% ribljih stokova u Sredozemnom moru, a samim time i u Jadranu u <a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">lošem statusu</a>, a jedan od glavnih uzroka tome je neodrživ ribolov. Ukoliko se nastavi ovim tempom uskoro bi mogli ostati bez ribe u Jadranu.
 ---
-fact_4_question: Jesu li lokalne zajednice i savjetodavne službe dovoljno informirane o mogućnostima koje vlasnici šuma imaju u korištenju šuma, a koje nije bazirano samo na njezinoj sječi? Pruža li im se dovoljna podrška u njihovu razvijanju?
+fact_6_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Jadranu?
 ---
-fact_4_caption: Poslovni sektor ostvaruje značajni prihod u 4 zaštićena područja, dok lokalno stanovništvo ostvaruje značajan prihod od šumarstva u jednom zaštićenom području.
+fact_6_caption: U 2015 više od 7000 brodica manjih od 12 metara obavljalo je ribolov u Hrvatskom dijelu Jadrana.
 ---
 fact_7_title: Rijeke
 ---
@@ -88,18 +88,18 @@ fact_2_title_icon: water
 ---
 fact_3_title_icon: jobs
 ---
-fact_6_title_icon: water
+fact_4_title_icon: forest
 ---
 fact_5_title_icon: water
 ---
-fact_4_title_icon: forest
+fact_6_title_icon: water
 ---
 fact_7_title_icon: water
 ---
 fact_1_infobox:
 
 <p>Izvor i više informacija:<br />
-Hrvatska agencija za okoliš i prirodu, 2016.</p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
 
 ---
 fact_2_infobox:
@@ -145,7 +145,7 @@ fact_7_infobox:
 picto_1_infobox:
 
 <p>Izvor i više informacija:<br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+Hrvatska agencija za okoliš i prirodu, 2016.</p>
 
 ---
 picto_2_infobox:
@@ -163,7 +163,9 @@ picto_3_infobox:
 picto_4_infobox:
 
 <p>Izvor i više informacija:<br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+Biokovo, Lonjsko polje, Papuk, Velebit za poslovni sektor<br />
+za lokalno stanovništvo - Velebit<br />
+Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
 
 ---
 picto_5_infobox:
@@ -175,9 +177,8 @@ Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umj
 picto_6_infobox:
 
 <p>Izvor i više informacija:<br />
-Biokovo, Lonjsko polje, Papuk, Velebit za poslovni sektor<br />
-za lokalno stanovništvo  - Velebit<br />
-Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">PA-BAT Hrvatska</a></p>
+Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
+<a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm">Izvor</a></p>
 
 ---
 picto_7_infobox:
