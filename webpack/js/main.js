@@ -229,20 +229,13 @@ jQuery(document).ready(function(){
 	animationHelpers.drawDonutChart('#homepage-fact-graph-1', $('#homepage-fact-graph-1').data('donut'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#homepage-fact-graph-3', $('#homepage-fact-graph-3').data('donut'), 200, 200, ".4em");
 
-	animationHelpers.animateValue("#croatia-fact-1", 4000);
-	animationHelpers.animateValue("#croatia-fact-6", 7000);
-	animationHelpers.animateValue("#croatia-fact-7", 10000);
 	animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
 	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
 
-	animationHelpers.animateValue("#bosnia-fact-2", 4000);
-	animationHelpers.animateValue("#bosnia-fact-3", 9200, 10);
-	animationHelpers.animateValue("#bosnia-fact-6", 1800, 3);
 	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
 
-	// animationHelpers.animateValue("#montenegro-fact-1", 1800, 3);
 	animationHelpers.drawDonutChart('#montenegro-fact-5', $('#montenegro-fact-5').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#montenegro-fact-7', $('#montenegro-fact-7').data('percent'), 200, 200, ".4em");
 
