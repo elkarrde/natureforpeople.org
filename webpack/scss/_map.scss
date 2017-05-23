@@ -37,7 +37,10 @@
 		.al path { fill: url(#al); }
 		.ba path { fill: url(#ba); }
 		.hr path { fill: url(#hr); }
-		.xk path { fill: url(#xk); }
+		.xk path {
+			stroke-dasharray: 5;
+			fill: url(#xk);
+		}
 		.mk path { fill: url(#mk); }
 		.me path { fill: url(#me); }
 		.rs path { fill: url(#rs); }

@@ -1,11 +1,18 @@
-<section id="homepage-header" class="bg-homepage-dark-blue z3 flex justify-center items-center flex-column pb3">
+<section id="homepage-header" class="bg-homepage-dark-blue overflow-hidden z3 flex justify-center items-center flex-column">
 
 	<div class="z1 px2 md-col-8 lg-col-6">
-		<h1 class="playfair-bold white h2 center mt4 text-shadow">{{ this.headline }}</h1>
+		<h1 class="playfair-heavy white h2 center mt4 text-shadow">{{ this.headline }}</h1>
 	</div>
 
 	<div class="z1 px2 sm-col-10 md-col-6 lg-col-4">
 		<p class="white center">{{ this.message }}</p>
 	</div>
 
+	<a href="javascript://" id="homepage-view-map-btn" class="btn rounded white bg-ba-yellow-blue mx-auto my3 xs-hide sm-hide">{{ this.scroll_to_map_button_text }}</a>
+
+	<div id="homepage-map-wrapper" class="z2 xs-hide sm-hide">
+		{% include "homepage/_map.html" %}
+		{% include "homepage/_map_desc.html" %}
+	</div>
 </section>
+
