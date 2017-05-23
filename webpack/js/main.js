@@ -243,6 +243,10 @@ jQuery(document).ready(function(){
 	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
 	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
 
+	// animationHelpers.animateValue("#montenegro-fact-1", 1800, 3);
+	animationHelpers.drawDonutChart('#montenegro-fact-5', $('#montenegro-fact-5').data('percent'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#montenegro-fact-7', $('#montenegro-fact-7').data('percent'), 200, 200, ".4em");
+
 	$("#homepage-map .country").click(function() {
 		panToCountry(this);
 	});

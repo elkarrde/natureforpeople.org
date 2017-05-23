@@ -16,44 +16,51 @@
 	.arc1 { fill: $ba-blue; }
 }
 
-#croatia-fact-1,
-#croatia-fact-2,
-#croatia-fact-4,
-#croatia-fact-6,
-#croatia-fact-5,
-#croatia-fact-7 {
-	color: $hr-red;
-}
 
 #ba-facts-5 .counter-wrapper,
 #ba-facts-2 .counter-wrapper,
+#me-facts-3 .counter-wrapper,
 #hr-facts-1 .counter-wrapper {
-	background: url('/static/images/vectors/visitors_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_visitors.svg') no-repeat center;
 }
 
-#hr-facts-4 .counter-wrapper {
-	background: url('/static/images/vectors/forest_bg.svg') no-repeat center;
+#hr-facts-4 .counter-wrapper,
+#me-facts-6 .counter-wrapper {
+	background: url('/static/images/vectors/bg_forest.svg') no-repeat center;
 }
 
 #hr-facts-2 .counter-wrapper,
 #ba-facts-3 .counter-wrapper {
-	background: url('/static/images/vectors/water_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_water.svg') no-repeat center;
 }
 
 #hr-facts-5 .counter-wrapper {
-	background: url('/static/images/vectors/fish_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_fish.svg') no-repeat center;
 }
 
 #hr-facts-6 .counter-wrapper {
-	background: url('/static/images/vectors/boat_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_boat.svg') no-repeat center;
 }
 
 #hr-facts-7 .counter-wrapper {
-	background: url('/static/images/vectors/bird_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_bird.svg') no-repeat center;
 }
 
 #ba-facts-6 .counter-wrapper {
-	background: url('/static/images/vectors/leaf_bg.svg') no-repeat center;
+	background: url('/static/images/vectors/bg_leaf.svg') no-repeat center;
+}
+
+#me-facts-1 .counter-wrapper,
+#me-facts-2 .counter-wrapper {
+	background: url('/static/images/vectors/bg_money.svg') no-repeat center;
+}
+
+#me-facts-8 .counter-wrapper {
+	background: url('/static/images/vectors/bg_honeycomb.svg') no-repeat center;
+}
+
+#me-facts-9 .counter-wrapper {
+	background: url('/static/images/vectors/bg_berry.svg') no-repeat center;
 }
 
 #croatia-fact-3 svg,
@@ -70,9 +77,35 @@
 	.arc1 { fill: $ba-yellow; }
 }
 
+#montenegro-fact-5 svg,
+#montenegro-fact-7 svg {
+	text { fill: $me-orange; }
+	.arc0 { fill: $me-red; }
+	.arc1 { fill: $me-orange; }
+}
+
+#croatia-fact-1,
+#croatia-fact-2,
+#croatia-fact-4,
+#croatia-fact-6,
+#croatia-fact-5,
+#croatia-fact-7 {
+	color: $hr-red;
+}
+
 #bosnia-fact-2,
 #bosnia-fact-3,
 #bosnia-fact-5,
 #bosnia-fact-6 {
 	color: $ba-yellow-dark;
+}
+
+#montenegro-fact-1,
+#montenegro-fact-2,
+#montenegro-fact-3,
+#montenegro-fact-4,
+#montenegro-fact-6,
+#montenegro-fact-8,
+#montenegro-fact-9 {
+	color: $me-orange;
 }
