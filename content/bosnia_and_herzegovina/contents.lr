@@ -72,17 +72,17 @@ fact_6_caption: Sutjeska National park which is under the threat of hydropower d
 ---
 cta_button_text: Let's solve challenges together
 ---
-fact_1_title_icon: forest
+fact_1_title_icon: cntry-msg-forest
 ---
-fact_2_title_icon: jobs
+fact_2_title_icon: cntry-msg-jobs
 ---
-fact_3_title_icon: water
+fact_3_title_icon: cntry-msg-hydro-power
 ---
-fact_4_title_icon: tourism
+fact_4_title_icon: cntry-msg-tourism
 ---
-fact_5_title_icon: growth
+fact_5_title_icon: cntry-msg-growth
 ---
-fact_6_title_icon: water
+fact_6_title_icon: cntry-msg-bridge
 ---
 fact_1_infobox:
 

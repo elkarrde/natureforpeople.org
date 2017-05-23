@@ -102,23 +102,23 @@ fact_9_caption: It is estimated that 970 tons of berries are picked in Prokletij
 ---
 cta_button_text: Let's solve challenges together
 ---
-fact_1_title_icon: tourism
+fact_1_title_icon: cntry-msg-tourism
 ---
-fact_2_title_icon: tourism
+fact_2_title_icon: cntry-msg-tourism
 ---
-fact_3_title_icon: jobs
+fact_3_title_icon: cntry-msg-jobs
 ---
-fact_4_title_icon: water
+fact_4_title_icon: cntry-msg-bridge
 ---
-fact_5_title_icon: water
+fact_5_title_icon: cntry-msg-hydro-power
 ---
-fact_6_title_icon: forest
+fact_6_title_icon: cntry-msg-forest
 ---
-fact_7_title_icon: fishery
+fact_7_title_icon: cntry-msg-fishing
 ---
-fact_8_title_icon: manufactura
+fact_8_title_icon: cntry-msg-honey-jar
 ---
-fact_9_title_icon: plants
+fact_9_title_icon: cntry-msg-bush
 ---
 fact_1_infobox:
 
