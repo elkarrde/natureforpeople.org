@@ -19,7 +19,14 @@
 		left: 10%;
 		width: 33%;
 
-		.country-prev { padding: 10px 0 0 35px; }
+		.country-prev {
+			padding: 10px 0 0 35px;
+			&:hover { opacity: 0.5; }
+		}
+
+		.country-next {
+			&:hover { opacity: 0.5; }
+		}
 	}
 
 	svg {
