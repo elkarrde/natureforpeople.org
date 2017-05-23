@@ -226,9 +226,8 @@ jQuery(document).ready(function(){
 		$('html,body').animate({scrollTop: $('#homepage-map').offset().top}, 'slow');
 	});
 
-	animationHelpers.drawDonutChart('#homepage-fact-1', $('#homepage-fact-1').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#homepage-fact-2', $('#homepage-fact-2').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#homepage-fact-3', $('#homepage-fact-3').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-graph-1', $('#homepage-fact-graph-1').data('donut'), 200, 200, ".4em");
+	animationHelpers.drawDonutChart('#homepage-fact-graph-3', $('#homepage-fact-graph-3').data('donut'), 200, 200, ".4em");
 
 	animationHelpers.animateValue("#croatia-fact-1", 4000);
 	animationHelpers.animateValue("#croatia-fact-6", 7000);

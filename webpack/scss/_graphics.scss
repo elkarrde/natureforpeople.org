@@ -1,21 +1,17 @@
 .counter {
-	font-size: 5rem;
-	font-weight: 900;
 	line-height: 11rem;
 }
 
 .donut {
 	font-size: 4rem;
-	letter-spacing: -.2rem;
 	fill: black;
 }
 
-#homepage-facts .donut svg {
-	text { fill: $ba-yellow; }
-	.arc0 { fill: $ba-yellow; }
-	.arc1 { fill: $ba-blue; }
-}
 
+#homepage-fact-2 .counter-wrapper {
+	color: $ba-blue;
+	background: url('/static/images/vectors/bg_forest.svg') no-repeat center;
+}
 
 #ba-facts-5 .counter-wrapper,
 #ba-facts-2 .counter-wrapper,
@@ -61,6 +57,12 @@
 
 #me-facts-9 .counter-wrapper {
 	background: url('/static/images/vectors/bg_berry.svg') no-repeat center;
+}
+
+#homepage-facts .donut svg {
+	text { fill: $ba-yellow; }
+	.arc0 { fill: $ba-yellow; }
+	.arc1 { fill: $ba-blue; }
 }
 
 #croatia-fact-3 svg,
