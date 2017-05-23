@@ -251,13 +251,17 @@ jQuery(document).ready(function(){
 	});
 
 	$('#homepage-map-desc .country-prev').click(function() {
+		console.log("sjdfklsdjflsdkjfslkj levo");
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
-		$('.map-wrapper svg .' + currentCountry).click();
+		console.log(currentCountry)
+		$('#homepage-map .' + currentCountry).click();
 	});
 
 	$('#homepage-map-desc .country-next').click(function() {
+		console.log("sjdfklsdjflsdkjfslkj desno");
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
-		$('.map-wrapper svg .' + currentCountry).click();
+		console.log(currentCountry)
+		$('#homepage-map .' + currentCountry).click();
 	});
 
 	$(document).keyup(function(e) {
