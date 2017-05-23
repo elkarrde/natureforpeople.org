@@ -15,7 +15,7 @@
         <div id="countries-dropdown" class="nav-dropdown">
           <button class="w100 link-invert pointer border-none px2 flex flex-row justify-center items-center">
             <span class="mr1 uppercase left-align">{{ countries.next()[1] }}</span>
-            <i class="icon-triangle-down"></i>
+            <i class="i-triangle-down"></i>
           </button>
           <ul class="nav-dropdown-options hidden list-reset m0">
             {% for path, label in countries %}
@@ -39,7 +39,7 @@
   <!-- Mobile navigation -->
   <div id="mobile-nav" class="nav-dropdown absolute top-0 right-0 lg-hide">
     <button class="link-invert ml-auto pointer border-none px2 flex">
-      <span class="icon-three-bars self-center"></span>
+      <span class="i-three-bars self-center"></span>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
@@ -73,7 +73,7 @@
   <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0 xs-hide sm-hide md-hide">
     <button class="link-invert pointer border-none px2 flex flex-column justify-center items-center">
       <span class="mt2 uppercase">{{ this.alt }}</span>
-      <i class="icon-triangle-down"></i>
+      <i class="i-triangle-down"></i>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
       <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a></li>
