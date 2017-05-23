@@ -51,25 +51,35 @@ p a {
 
 .raleway {
 	font-family: $raleway;
-	font-weight: normal;
+	font-weight: 500;
 }
 
 .raleway-light {
 	font-family: $raleway;
-	font-weight: bold;
+	font-weight: 300;
 }
 
 .raleway-bold {
 	font-family: $raleway;
-	font-weight: bold;
+	font-weight: 700;
+}
+
+.raleway-heavy {
+	font-family: $raleway;
+	font-weight: 900;
 }
 
 .playfair {
 	font-family: $playfair;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .playfair-bold {
+	font-family: $playfair;
+	font-weight: 700;
+}
+
+.playfair-heavy {
 	font-family: $playfair;
 	font-weight: 900;
 }
