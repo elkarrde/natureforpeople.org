@@ -111,7 +111,7 @@ translations = {
 }
 
 geolocation = null;
-locale = 'hr';
+locale = determineLocale();
 
 countriesOrder = ["si", "hr", "ba", "rs", "xk", "me", "al", "mk"];
 currentCountry = randomElement(countriesOrder);
@@ -215,7 +215,6 @@ var graphTypePicker = new Dropdown({
 })
 
 jQuery(document).ready(function(){
-	setLocale();
 	setGeolocation();
 
 	$('.graph-type-picker').graphTypePicker(function(choice) {
@@ -360,13 +359,13 @@ function parseDataSet(bars) {
 	return _.map(bars.split(','), function(num) { return parseInt(num, 10) });
 }
 
-function setLocale() {
+function determineLocale() {
 	if (window.location.pathname.split('/')[1] == 'hr') {
-		locale = 'hr';
 		$('.local-dropdown button span').html('HR');
+		return 'hr';
 	} else {
-		locale = 'en';
 		$('.local-dropdown button span').html('EN');
+		return 'en';
 	}
 }
 
