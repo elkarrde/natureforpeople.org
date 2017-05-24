@@ -112,3 +112,25 @@ body.country-ba {
     }
   }
 }
+
+body.country-me {
+  .global-header {
+    background-color: $me-orange;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $me-orange-dark;
+      }
+    }
+    .link-invert {
+      color: $grey-light;
+      background-color: $me-orange-dark;
+
+      &:hover, &.active {
+        color: $white;
+      }
+    }
+  }
+}
+
