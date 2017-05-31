@@ -1,5 +1,5 @@
 [project]
-name = wwf_pabat_site
+name = natureforpeople
 
 [packages]
 lektor-webpack-support = 0.3
