@@ -7,6 +7,7 @@ Vue = require('vue');
 jQuery = $;
 
 animationHelpers = require('./animationHelpers');
+dataLoader = require('./dataLoader');
 graphs = require('./graphs');
 pickers = require('./pickers');
 
@@ -14,94 +15,45 @@ require('./modal.js');
 
 pickers.initPickerPlugins($);
 
-countries = _.each([{
-	name: {
-		'en': "Albania",
-		'hr': "Albania"
-	},
-	code: "ALB",
-	protected_areas: [ { name: 'NP Bredhi i Drenoves', code: '' }, { name: 'NP Bredhi i Hotoves', code: '' }, { name: 'NP Butrinti', code: '' }, { name: 'NP Dajti', code: '' }, { name: 'NP Divjakë-Karavasta', code: '' }, { name: 'NP Dolina Valbona', code: '' }, { name: 'NP Karaburun-Sazan', code: '' }, { name: 'NP Llogara', code: '' }, { name: 'NP Mali i Tomorrit', code: '' }, { name: 'NP Prespa', code: '' }, { name: 'NP Qaf Shtama', code: '' }, { name: 'NP Shebenik Jabllanica', code: '' }, { name: 'NP Thethi', code: '' }]
-}, {
-	name: {
-		'en': "Bosnia & Herzegovina",
-		'hr': "Bosnia i Hercegovina"
-	},
-	code: "BIH",
-	protected_areas: [ { name: 'NP Kozara', code: '' }, { name: 'NP Sutjeska', code: '' }, { name: 'NP Una', code: '' }, { name: 'PP Bijambare', code: '' }, { name: 'PP Hutovo Blato', code: '' }, { name: 'PP Vrelo Bosne', code: '' } ]
-}, {
-	name: {
-		'en': "Croatia",
-		'hr': "Hrvatska"
-	},
-	code: "HRV",
-	protected_areas: [ { name: 'NP Brijuni', code: '' }, { name: 'NP Kornati', code: '' }, { name: 'NP Krka', code: '' }, { name: 'NP Mljet', code: '' }, { name: 'NP Paklenica', code: '' }, { name: 'NP Plitvička Jezera', code: '' }, { name: 'NP Risnjak', code: '' }, { name: 'NP Sjeverni Velebit', code: '' }, { name: 'NP Telašćica', code: '' }, { name: 'PP Biokovo', code: '' }, { name: 'PP Kopački Rit', code: '' }, { name: 'PP Lastovo', code: '' }, { name: 'PP Lonjsko Polje', code: '' }, { name: 'PP Medvednica', code: '' }, { name: 'PP Papuk', code: '' }, { name: 'PP Velebit', code: '' }, { name: 'PP Vransko Jezero', code: '' }, { name: 'PP Žumberak', code: '' } ]
-}, {
-	name: {
-		'en': "Kosovo*",
-		'hr': "Kosovo*",
-	},
-	code: "KOS",
-	protected_areas: [ { name: 'NP Sharri', code: '' }, { name: 'PP Germia', code: '' } ]
-}, {
-	name: {
-		'en': "Macedonia",
-		'hr': "Makedonija",
-	},
-	code: "MKD",
-	protected_areas: [ { name: 'NP Galičica', code: '' }, { name: 'NP Mavrovo', code: '' }, { name: 'NP Pelister', code: '' }]
-}, {
-	name: {
-		'en': "Montenegro",
-		'hr': "Crna Gora",
-	},
-	code: "MNE",
-	protected_areas: [ { name: 'NP Biogradska Gora', code: '' }, { name: 'NP Durmitor', code: '' }, { name: 'NP Lovćen', code: '' }, { name: 'NP Prokletje', code: '' }, { name: 'NP Skadarsko Jezero', code: '' } ]
-}, {
-	name: {
-		'en': "Serbia",
-		'hr': "Srbija",
-	},
-	code: "SRB",
-	protected_areas: [ { name: 'NP Fruška Gora', code: '' }, { name: 'NP Kopaonik', code: '' }, { name: 'NP Tara', code: '' }, { name: 'NP Đerdap', code: '' }, { name: 'PP Gornje Podunavlje', code: '' }, { name: 'PP Vlasina', code: '' } ]
-}, {
-	name: {
-		'en': "Slovenia",
-		'hr': "Slovenija",
-	},
-	code: "SVN",
-	protected_areas: [ { name: 'NP Triglav', code: '' }, { name: 'PP Krajinski Park Goričko', code: '' }, { name: 'PP Logarska Dolina', code: '' }, { name: 'PP Sečovlje', code: '' } ]
-}], function (country) {
-	_.each(country.protected_areas, function(pa) {
-		var new_name = { 'en': pa.name, 'hr': pa.name };
-		pa.name = new_name;
-	})
-});
+pabat_data = null;
+graph_types = null;
+countries = null;
+store = null;
 
-graph_types = [{
-	name: {
-		'en': "Overall values",
-		'hr': "Sve vrijednosti",
+store = {
+	debug: true,
+	state: {
+		country: null,
+		protected_area: null,
+		graph_type: null,
 	},
-	code: "overall"
-}, {
-	name: {
-		'en': "Overall economic values",
-		'hr': "Glavne ekonomske vrijednosti",
+	setState: function(prop, newValue) {
+		if (prop == 'country') { this.state.protected_area = null }
+		if (prop == 'graph_type') {
+			$('.graph-card').removeClass('active');
+			$('#graph-card-'+newValue.code).addClass('active');
+		}
+		this.state[prop] = newValue
+		renderGraph(this);
 	},
-	code: "overall_econ"
-}, {
-	name: {
-		'en': "Flow of economic benefits",
-		'hr': "Tijek prihoda dionicima",
-	},
-	code: "flow_econ"
-}, {
-	name: {
-		'en': "Main potentials",
-		'hr': "Glavni potencijali",
-	},
-	code: "potentials"
-}];
+	toChoice: function() {
+		return {
+			country: this.state.country['code'],
+			protected_area: this.state.protected_area && this.state.protected_area['name'][locale],
+			graph_type: this.state['graph_type']['code']
+		}
+	}
+}
+
+
+function remapParkNames(countries_parks) {
+	_.each(countries_parks, function (country) {
+		_.each(country.protected_areas, function(pa) {
+			var new_name = { 'en': pa.name, 'hr': pa.name };
+			pa.name = new_name;
+		})
+	});
+}
 
 translations = {
 	default_choice: {
@@ -127,91 +79,77 @@ var Dropdown = Vue.extend({
 		pick: function (picked, code, event) {
 			var selected = _.first(_.filter(this.choices, { code: code }));
 			this.picked = picked[this.locale];
+			console.log(store);
 			this.shared.setState(this.prop_name, selected);
 		}
 	},
 });
 
-var store = {
-	debug: true,
-	state: {
-		country: null,
-		protected_area: null,
-		graph_type: null,
-	},
-	setState: function(prop, newValue) {
-		if (prop == 'country') { this.state.protected_area = null }
-		if (prop == 'graph_type') {
-			$('.graph-card').removeClass('active');
-			$('#graph-card-'+newValue.code).addClass('active');
-		}
-		this.state[prop] = newValue
-		renderGraph(this);
-	},
-	toChoice: function() {
-		return {
-			country: this.state.country['code'],
-			protected_area: this.state.protected_area && this.state.protected_area['name'][locale],
-			graph_type: this.state['graph_type']['code']
-		}
-	}
-}
+dataLoader.loadJSON('/static/graph-types.json', function(gt) {
+	graph_types = gt;
 
-var countryPicker = new Dropdown({
-	el: '#graphs-country-picker',
-	data: function() {
-		return {
-			toggled: false,
-			picked: translations.default_choice[locale],
-			shared: store,
-			prop_name: 'country',
-			choices: countries,
-			locale: locale
-		}
-	},
-	computed: {
-		pickedText: function() { return this.picked }
-	}
+	dataLoader.loadJSON('/static/countries-parks.json', function(cp) {
+		var raw_cp = cp;
+		remapParkNames(raw_cp);
+		countries = raw_cp;
 
-})
+		new Dropdown({
+			el: '#graphs-country-picker',
+			data: function() {
+				return {
+					toggled: false,
+					picked: translations.default_choice[locale],
+					shared: store,
+					prop_name: 'country',
+					choices: countries,
+					locale: locale
+				}
+			},
+			computed: {
+				pickedText: function() { return this.picked }
+			}
+		})
 
-var paPicker = new Dropdown({
-	el: '#graphs-pa-picker',
-	data: function() {
-		return {
-			toggled: false,
-			picked: "-",
-			shared: store,
-			prop_name: 'protected_area',
-			locale: locale
-		}
-	},
-	computed: {
-		choices: function() {
-			var country = this.shared.state.country;
-			return country && country.protected_areas || [];
-		},
-		pickedText: function() {
-			return this.shared.state[this.prop_name] ? this.picked : "-";
-		}
-	}
-})
 
-var graphTypePicker = new Dropdown({
-	el: '#graphs-type-picker-narrow',
-	data: function() {
-		return {
-			toggled: false,
-			picked: translations.default_choice[locale],
-			shared: store,
-			prop_name: 'graph_type',
-			choices: graph_types,
-			locale: locale
-		}
-	},
-	computed: {
-		pickedText: function() { return this.picked }
-	}
+		new Dropdown({
+			el: '#graphs-pa-picker',
+			data: function() {
+				return {
+					toggled: false,
+					picked: "-",
+					shared: store,
+					prop_name: 'protected_area',
+					locale: locale
+				}
+			},
+			computed: {
+				choices: function() {
+					var country = this.shared.state.country;
+					return country && country.protected_areas || [];
+				},
+				pickedText: function() {
+					return this.shared.state[this.prop_name] ? this.picked : "-";
+				}
+			}
+		})
+
+		new Dropdown({
+			el: '#graphs-type-picker-narrow',
+			data: function() {
+				return {
+					toggled: false,
+					picked: translations.default_choice[locale],
+					shared: store,
+					prop_name: 'graph_type',
+					choices: graph_types,
+					locale: locale
+				}
+			},
+			computed: {
+				pickedText: function() { return this.picked }
+			}
+		})
+	});
 })
 
 jQuery(document).ready(function(){

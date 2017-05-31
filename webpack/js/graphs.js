@@ -1,7 +1,3 @@
-data_for_graphs = require('./preloadData');
-
-data = data_for_graphs.timian_data;
-
 questions_g1 = ['Tourism & recreation', 'Commercial & non-commercial water use', 'Jobs in PA', 'Water quality & quantity', 'Nature conservation', 'Wood', "Traditional agriculture", 'Fishing', 'Livestock grazing', 'Hunting', 'Pollination & honey production', 'Formal & informal education', 'Building knowledge', 'Wild food plants and mushrooms', 'Nature materials'];
 questions_g3 = ['Tourism & recreation', 'Livestock grazing', 'Traditional agriculture', 'Nature conservation', 'Building knowledge', 'Cultural & historical values', 'Formal & informal education', 'Pollination & honey production', 'Commercial & non-commercial water use', 'Jobs in PA', 'Hunting', 'Medicinal herbs', 'Wild food plants and mushrooms', 'Fishing', 'Water quality & quantity', 'Genetic material', 'Climate change mitigation'];
 questions_g4 = ['Flood prevention', 'Genetic material', 'Formal & informal education', 'Specific site value', 'Cultural & historical values', 'Nature conservation', 'Building knowledge', 'Tourism & recreation', 'Pollination & honey production', 'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood', 'Climate change mitigation', 'Commercial & non-commercial water use', 'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA', 'Nature materials', 'Soil stabilization', 'Medicinal herbs'];
@@ -33,22 +29,22 @@ translations = {
 	'Medicinal herbs'                       : '___ZDRAVE BILJKE'
 }
 
-function renderGraph(graph_choices) {
+function renderGraph(data, graph_choices) {
 	if (!!graph_choices.protected_area) {
-		if (graph_choices.graph_type == "overall") { renderPAOverall(graph_choices) }
-		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(graph_choices) }
-		else if (graph_choices.graph_type == "flow_econ") { renderPAFlowEconValue(graph_choices) }
-		else if (graph_choices.graph_type == "potentials") { renderPAMainPotentials(graph_choices) }
+		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices) }
+		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(data, graph_choices) }
+		else if (graph_choices.graph_type == "flow_econ") { renderPAFlowEconValue(data, graph_choices) }
+		else if (graph_choices.graph_type == "potentials") { renderPAMainPotentials(data, graph_choices) }
 	} else {
-		if (graph_choices.graph_type == "overall") { renderCountryOverall(graph_choices) }
-		else if (graph_choices.graph_type == "overall_econ") { renderCountryOverallEconomic(graph_choices) }
-		else if (graph_choices.graph_type == "flow_econ") { renderCountryFlowEconValue(graph_choices) }
-		else if (graph_choices.graph_type == "potentials") { renderCountryMainPotentials(graph_choices) }
+		if (graph_choices.graph_type == "overall") { renderCountryOverall(data, graph_choices) }
+		else if (graph_choices.graph_type == "overall_econ") { renderCountryOverallEconomic(data, graph_choices) }
+		else if (graph_choices.graph_type == "flow_econ") { renderCountryFlowEconValue(data, graph_choices) }
+		else if (graph_choices.graph_type == "potentials") { renderCountryMainPotentials(data, graph_choices) }
 	}
 }
 
-function renderCountryOverall(graph_choices) {
-	var dataset = pluckDataCountryOverall(graph_choices.country)
+function renderCountryOverall(data, graph_choices) {
+	var dataset = pluckDataCountryOverall(data, graph_choices.country)
 		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
 		, eco_line =  ['Economic values'].concat(_.map(only_counts, 'eco_v'))
@@ -62,8 +58,8 @@ function renderCountryOverall(graph_choices) {
 	});
 }
 
-function renderCountryOverallEconomic(graph_choices) {
-	var dataset = pluckDataCountryOverallEconomic(graph_choices.country)
+function renderCountryOverallEconomic(data, graph_choices) {
+	var dataset = pluckDataCountryOverallEconomic(data, graph_choices.country)
 		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
 		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
@@ -77,8 +73,8 @@ function renderCountryOverallEconomic(graph_choices) {
 	});
 }
 
-function renderCountryFlowEconValue(graph_choices) {
-	var dataset = pluckDataCountryFlowOfEconValue(graph_choices.country)
+function renderCountryFlowEconValue(data, graph_choices) {
+	var dataset = pluckDataCountryFlowOfEconValue(data, graph_choices.country)
 		, datasetForSectors = _.pick(dataset, sectors)
 		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
 		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
@@ -92,8 +88,8 @@ function renderCountryFlowEconValue(graph_choices) {
 	});
 }
 
-function renderCountryMainPotentials(graph_choices) {
-	var dataset = pluckDataCountryMainPotentials(graph_choices.country)
+function renderCountryMainPotentials(data, graph_choices) {
+	var dataset = pluckDataCountryMainPotentials(data, graph_choices.country)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_p', 'exi_p'], sizeOf)
 		, eco_pots_line = ['Potential with economic value'].concat(_.map(only_non_empty, 'eco_p'))
@@ -107,8 +103,8 @@ function renderCountryMainPotentials(graph_choices) {
 	})
 }
 
-function renderPAOverall(graph_choices) {
-	var dataset = pluckDataPAOverall(graph_choices.country, graph_choices.protected_area)
+function renderPAOverall(data, graph_choices) {
+	var dataset = pluckDataPAOverall(data, graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
 		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
@@ -122,8 +118,8 @@ function renderPAOverall(graph_choices) {
 	})
 }
 
-function renderPAOverallEconomic(graph_choices) {
-	var dataset = pluckDataPAOverallEconomic(graph_choices.country, graph_choices.protected_area)
+function renderPAOverallEconomic(data, graph_choices) {
+	var dataset = pluckDataPAOverallEconomic(data, graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['low_eco', 'high_eco'], sizeOf)
 		, low_eco_line = ['Low economic values'].concat(_.map(only_non_empty, 'low_eco'))
@@ -137,8 +133,8 @@ function renderPAOverallEconomic(graph_choices) {
 	})
 }
 
-function renderPAFlowEconValue(graph_choices) {
-	var dataset = pluckDataPAFlowEconValue(graph_choices.country, graph_choices.protected_area)
+function renderPAFlowEconValue(data, graph_choices) {
+	var dataset = pluckDataPAFlowEconValue(data, graph_choices.country, graph_choices.protected_area)
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
 		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
 		, exi_vals_line = ['Subsistence values'].concat(_.map(only_non_empty, 'exi_v'))
@@ -151,7 +147,7 @@ function renderPAFlowEconValue(graph_choices) {
 	});
 }
 
-function renderPAMainPotentials(graph_choices) {
+function renderPAMainPotentials(data, graph_choices) {
 	var dataset = pluckDataPAMainPotentials(graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['p_with_val', 'p_without_val'], sizeOf)
@@ -167,7 +163,7 @@ function renderPAMainPotentials(graph_choices) {
 	})
 }
 
-function pluckDataCountryOverall(country) {
+function pluckDataCountryOverall(data, country) {
 	var country_data = data[country]
 		, questions = questions_g1
 		, results = {};
@@ -191,7 +187,7 @@ function pluckDataCountryOverall(country) {
 	return results;
 }
 
-function pluckDataCountryOverallEconomic(country) {
+function pluckDataCountryOverallEconomic(data, country) {
 	var country_data = data[country]
 		, questions = questions_g1
 		, results = {};
@@ -215,7 +211,7 @@ function pluckDataCountryOverallEconomic(country) {
 	return results;
 }
 
-function pluckDataCountryFlowOfEconValue(country) {
+function pluckDataCountryFlowOfEconValue(data, country) {
 	var country_data = data[country]
 		, questions = questions_g1
 		, results = {};
@@ -239,7 +235,7 @@ function pluckDataCountryFlowOfEconValue(country) {
 	return results;
 }
 
-function pluckDataCountryMainPotentials(country) {
+function pluckDataCountryMainPotentials(data, country) {
 	var country_data = data[country]
 		, questions = questions_g3
 		, results = {};
@@ -264,7 +260,7 @@ function pluckDataCountryMainPotentials(country) {
 }
 
 
-function pluckDataPAOverall(country, pa) {
+function pluckDataPAOverall(data, country, pa) {
 	var pa_data = data[country][pa]
 		, questions = questions_g4
 		, results = {};
@@ -286,7 +282,7 @@ function pluckDataPAOverall(country, pa) {
 	return results;
 }
 
-function pluckDataPAOverallEconomic(country, pa) {
+function pluckDataPAOverallEconomic(data, country, pa) {
 	var pa_data = data[country][pa]
 		, questions = questions_g4
 		, results = {};
@@ -308,7 +304,7 @@ function pluckDataPAOverallEconomic(country, pa) {
 	return results;
 }
 
-function pluckDataPAFlowEconValue(country, pa) {
+function pluckDataPAFlowEconValue(data, country, pa) {
 	var pa_data = data[country][pa]
 		, questions = questions_g4
 		, results = {};
@@ -330,7 +326,7 @@ function pluckDataPAFlowEconValue(country, pa) {
 	return results;
 }
 
-function pluckDataPAMainPotentials(country, pa) {
+function pluckDataPAMainPotentials(data, country, pa) {
 	var pa_data = data[country][pa]
 		, questions = questions_g4
 		, results = {};
