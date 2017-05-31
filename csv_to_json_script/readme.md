@@ -10,4 +10,4 @@ Ruby converter for PABAT CSV files (old and new format compatible).
   - ```sh
     $ ruby csv_to_json_converter.rb
     ```
-  - Find your new json file in /assets/static/pabat-all.json
+  - Find your new json files in /assets/static/pabat-all.json and /assets/static/countries-parks.json
