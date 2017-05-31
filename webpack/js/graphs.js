@@ -30,6 +30,7 @@ translations = {
 }
 
 function renderGraph(data, graph_choices) {
+	console.log(data);
 	if (!!graph_choices.protected_area) {
 		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices) }
 		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(data, graph_choices) }

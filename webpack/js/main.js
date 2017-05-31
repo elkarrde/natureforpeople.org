@@ -39,20 +39,10 @@ store = {
 	toChoice: function() {
 		return {
 			country: this.state.country['code'],
-			protected_area: this.state.protected_area && this.state.protected_area['name'][locale],
+			protected_area: this.state.protected_area && this.state.protected_area['code'],
 			graph_type: this.state['graph_type']['code']
 		}
 	}
-}
-
-
-function remapParkNames(countries_parks) {
-	_.each(countries_parks, function (country) {
-		_.each(country.protected_areas, function(pa) {
-			var new_name = { 'en': pa.name, 'hr': pa.name };
-			pa.name = new_name;
-		})
-	});
 }
 
 translations = {
@@ -79,19 +69,20 @@ var Dropdown = Vue.extend({
 		pick: function (picked, code, event) {
 			var selected = _.first(_.filter(this.choices, { code: code }));
 			this.picked = picked[this.locale];
-			console.log(store);
 			this.shared.setState(this.prop_name, selected);
 		}
 	},
+});
+
+dataLoader.loadJSON('/static/pabat-all.json', function(pd) {
+	pabat_data = pd;
 });
 
 dataLoader.loadJSON('/static/graph-types.json', function(gt) {
 	graph_types = gt;
 
 	dataLoader.loadJSON('/static/countries-parks.json', function(cp) {
-		var raw_cp = cp;
-		remapParkNames(raw_cp);
-		countries = raw_cp;
+		countries = cp;
 
 		new Dropdown({
 			el: '#graphs-country-picker',
@@ -106,7 +97,9 @@ dataLoader.loadJSON('/static/graph-types.json', function(gt) {
 				}
 			},
 			computed: {
-				pickedText: function() { return this.picked }
+				pickedText: function() {
+					return this.picked;
+				}
 			}
 		})
 
@@ -127,8 +120,10 @@ dataLoader.loadJSON('/static/graph-types.json', function(gt) {
 					var country = this.shared.state.country;
 					return country && country.protected_areas || [];
 				},
+
 				pickedText: function() {
-					return this.shared.state[this.prop_name] ? this.picked : "-";
+					var pa = this.shared.state[this.prop_name];
+					return pa ? this.picked : "-";
 				}
 			}
 		})
@@ -181,16 +176,12 @@ jQuery(document).ready(function(){
 	});
 
 	$('#homepage-map-desc .country-prev').click(function() {
-		console.log("sjdfklsdjflsdkjfslkj levo");
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), -1)];
-		console.log(currentCountry)
 		$('#homepage-map .' + currentCountry).click();
 	});
 
 	$('#homepage-map-desc .country-next').click(function() {
-		console.log("sjdfklsdjflsdkjfslkj desno");
 		currentCountry = countriesOrder[crawlArray(countriesOrder, countriesOrder.indexOf(currentCountry), 1)];
-		console.log(currentCountry)
 		$('#homepage-map .' + currentCountry).click();
 	});
 
@@ -217,7 +208,7 @@ function renderGraph(store) {
 		$('.graphs-container .pabat-chart').addClass('hide');
 		$('.no-graphs').removeClass('hide');
 	} else {
-		graphs.renderGraph(store.toChoice())
+		graphs.renderGraph(pabat_data, store.toChoice())
 		$('.graphs-container .pabat-chart').addClass('hide');
 		$('.no-graphs').addClass('hide');
 		$(graphId(store)).removeClass('hide');
