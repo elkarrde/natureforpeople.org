@@ -29,138 +29,173 @@ translations = {
 	'Medicinal herbs'                       : '___ZDRAVE BILJKE'
 }
 
-function renderGraph(data, graph_choices) {
-	if (!!graph_choices.protected_area) {
-		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices) }
-		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(data, graph_choices) }
-		else if (graph_choices.graph_type == "flow_econ") { renderPAFlowEconValue(data, graph_choices) }
-		else if (graph_choices.graph_type == "potentials") { renderPAMainPotentials(data, graph_choices) }
-	} else {
-		if (graph_choices.graph_type == "overall") { renderCountryOverall(data, graph_choices) }
-		else if (graph_choices.graph_type == "overall_econ") { renderCountryOverallEconomic(data, graph_choices) }
-		else if (graph_choices.graph_type == "flow_econ") { renderCountryFlowEconValue(data, graph_choices) }
-		else if (graph_choices.graph_type == "potentials") { renderCountryMainPotentials(data, graph_choices) }
+partition_names = {
+	'low_eco': {
+		'en': 'Low economic values' ,
+		'hr': 'Niske ekonomske vrijednosti'
+	},
+	'high_eco': {
+		'en': 'High economic values',
+		'hr': 'Visoke ekonomske vrijednosti'
+	},
+	'eco_v': {
+		'en': 'Economic values',
+		'hr': 'Ekonomske vrijednosti'
+	},
+	'exi_v': {
+		'en': 'Subsistence values',
+		'hr': 'Egzistencijalne vrijednosti'
+	},
+	'eco_p': {
+		'en': 'Potential with economic value',
+		'hr': 'Ekonomski potencijali'
+	},
+	'exi_p': {
+		'en': 'Potential with existential value',
+		'hr': 'Egzistencijalni potencijali'
+	},
+	'p_with_val': {
+		'en': 'Potential with economic value',
+		'hr': 'Potencijal s ekonomskom vrijednošću'
+	},
+	'p_without_val': {
+		'en': 'Potential without economic value',
+		'hr': 'Potencijal bez ekonomske vrijednosti'
 	}
 }
 
-function renderCountryOverall(data, graph_choices) {
+function renderGraph(data, graph_choices, locale) {
+	if (!!graph_choices.protected_area) {
+		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "flow_econ") { renderPAFlowEconValue(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "potentials") { renderPAMainPotentials(data, graph_choices, locale) }
+	} else {
+		if (graph_choices.graph_type == "overall") { renderCountryOverall(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "overall_econ") { renderCountryOverallEconomic(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "flow_econ") { renderCountryFlowEconValue(data, graph_choices, locale) }
+		else if (graph_choices.graph_type == "potentials") { renderCountryMainPotentials(data, graph_choices, locale) }
+	}
+}
+
+function renderCountryOverall(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverall(data, graph_choices.country)
 		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_line =  ['Economic values'].concat(_.map(only_counts, 'eco_v'))
-		, exi_line =  ['Subsistence values'].concat(_.map(only_counts, 'exi_v'))
+		, eco_line =  [partition_names['eco_v'][locale]].concat(_.map(only_counts, 'eco_v'))
+		, exi_line =  [partition_names['exi_v'][locale]].concat(_.map(only_counts, 'exi_v'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall',
 		columns: [questions_line, eco_line, exi_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderCountryOverallEconomic(data, graph_choices) {
+function renderCountryOverallEconomic(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverallEconomic(data, graph_choices.country)
 		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line =  ['High economic values'].concat(_.map(only_counts, 'high_eco'))
+		, low_eco_line =  [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line =  [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall_econ',
 		columns: [questions_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderCountryFlowEconValue(data, graph_choices) {
+function renderCountryFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataCountryFlowOfEconValue(data, graph_choices.country)
 		, datasetForSectors = _.pick(dataset, sectors)
 		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line =  ['Low economic values'].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line =  ['High economic values'].concat(_.map(only_counts, 'high_eco'))
+		, low_eco_line =  [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line =  [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
 		, stakeholders_line = ['x'].concat(sectors);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_flow_econ',
 		columns: [stakeholders_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderCountryMainPotentials(data, graph_choices) {
+function renderCountryMainPotentials(data, graph_choices, locale) {
 	var dataset = pluckDataCountryMainPotentials(data, graph_choices.country)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_p', 'exi_p'], sizeOf)
-		, eco_pots_line = ['Potential with economic value'].concat(_.map(only_non_empty, 'eco_p'))
-		, exi_pots_line = ['Potential with existential value'].concat(_.map(only_non_empty, 'exi_p'))
+		, eco_pots_line = [partition_names['eco_p'][locale]].concat(_.map(only_non_empty, 'eco_p'))
+		, exi_pots_line = [partition_names['exi_p'][locale]].concat(_.map(only_non_empty, 'exi_p'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_potentials',
 		columns: [questions_line, eco_pots_line, exi_pots_line],
 		colors: [ '#8dc63f', '#007476']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderPAOverall(data, graph_choices) {
+function renderPAOverall(data, graph_choices, locale) {
 	var dataset = pluckDataPAOverall(data, graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
-		, exi_vals_line = ['Subsistence values'].concat(_.map(only_non_empty, 'exi_v'))
+		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(only_non_empty, 'eco_v'))
+		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(only_non_empty, 'exi_v'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_overall',
 		columns: [ questions_line, eco_vals_line, exi_vals_line ],
 		colors: [ '#007476', '#8dc63f']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderPAOverallEconomic(data, graph_choices) {
+function renderPAOverallEconomic(data, graph_choices, locale) {
 	var dataset = pluckDataPAOverallEconomic(data, graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line = ['Low economic values'].concat(_.map(only_non_empty, 'low_eco'))
-		, high_eco_line = ['High economic values'].concat(_.map(only_non_empty, 'high_eco'))
+		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_non_empty, 'low_eco'))
+		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_non_empty, 'high_eco'))
 		, questions_line = ['x'].concat(questions);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_overall_econ',
 		columns: [ questions_line, low_eco_line, high_eco_line ],
 		colors: [ '#007476', '#8dc63f']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderPAFlowEconValue(data, graph_choices) {
+function renderPAFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataPAFlowEconValue(data, graph_choices.country, graph_choices.protected_area)
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_vals_line = ['Economic values'].concat(_.map(only_non_empty, 'eco_v'))
-		, exi_vals_line = ['Subsistence values'].concat(_.map(only_non_empty, 'exi_v'))
+		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(only_non_empty, 'eco_v'))
+		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(only_non_empty, 'exi_v'))
 		, stakeholders_line = ['x'].concat(_.keys(only_non_empty));
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_flow_econ',
 		columns: [ stakeholders_line, exi_vals_line, eco_vals_line ],
 		colors: [ '#007476', '#8dc63f']
-	}, dataset);
+	}, dataset, locale);
 }
 
-function renderPAMainPotentials(data, graph_choices) {
+function renderPAMainPotentials(data, graph_choices, locale) {
 	var dataset = pluckDataPAMainPotentials(graph_choices.country, graph_choices.protected_area)
 		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['p_with_val', 'p_without_val'], sizeOf)
 		, sorted = sortNestedVals(only_non_empty, 'p_with_val', 'desc')
-		, p_plus_vals_line = ['Potential with economic value'].concat(_.map(sorted, 'p_with_val'))
-		, p_minus_vals_line = ['Potential without economic value'].concat(_.map(sorted, 'p_without_val'))
+		, p_plus_vals_line = [partition_names['p_with_val'][locale]].concat(_.map(sorted, 'p_with_val'))
+		, p_minus_vals_line = [partition_names['p_without_val'][locale]].concat(_.map(sorted, 'p_without_val'))
 		, stakeholders_line = ['x'].concat(_.keys(sorted));
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_potentials',
 		columns: [stakeholders_line, p_plus_vals_line, p_minus_vals_line],
 		colors: [ '#007476', '#8dc63f']
-	}, dataset);
+	}, dataset, locale);
 }
 
 function pluckDataCountryOverall(data, country) {
@@ -347,7 +382,9 @@ function pluckDataPAMainPotentials(data, country, pa) {
 }
 
 
-function renderTwicePartedXGraph(data, dataset) {
+function renderTwicePartedXGraph(data, dataset, locale) {
+	var ticks = generateTicks(data);
+
 	c3.generate({
 		bindto: data.id,
 		data: {
@@ -358,7 +395,15 @@ function renderTwicePartedXGraph(data, dataset) {
 		padding: { left: 110 },
 		axis: {
 			rotated: true,
-			x: { type: 'category' }
+			x: {
+				type: 'category',
+			},
+			y: {
+				tick: {
+					values: ticks,
+					// format: function (d) { return (parseInt(d) == d) ? d : null }
+				}
+			}
 		},
 		color: { pattern: data.colors },
 		bar: { width: { ratio: 0.5 } },
@@ -373,7 +418,7 @@ function renderTwicePartedXGraph(data, dataset) {
 					text, i, title, value, name, bgcolor,
 					orderAsc = $$.isOrderAsc();
 
-				var table = "<table colspan=2 class='" + $$.CLASS.tooltip + "'><tr><th colspan='2'>PAs:</th></tr>";
+				var table = "<table colspan=2 class='" + $$.CLASS.tooltip + "'>";
 
 				var a_names = Object.keys(dataset),
 					b_idx = d[0].index,
@@ -381,19 +426,19 @@ function renderTwicePartedXGraph(data, dataset) {
 					x_vals = dataset[c_name];
 
 				_.each(x_vals, function(set, key) {
+					var vals = Array.from(set);
 
-					table += "<tr class='" + $$.CLASS.tooltip + "'><td>" + key + "</th></tr>";
+					if (vals.length > 0) { table += "<tr><th>" + partition_names[key][locale] + ":</th></tr>" }
 
-					_.each(Array.from(set), function(v) {
+					_.each(vals, function(v) {
 						table += "<tr><td>" + v + "</td></tr>";
 					});
 				});
 
 				return table + "</table>";
-
-
 			}
-}
+
+		}
 	});
 }
 
@@ -443,6 +488,15 @@ function translateLables(labels) {
 	return _.map(labels, function(l) {
 		return translations[l];
 	})
+}
+
+function generateTicks(data) {
+	var group_1 = _.filter(data.columns[1], function(v) { return _.isNumber(v) }),
+		group_2 = _.filter(data.columns[2], function(v) { return _.isNumber(v) }),
+		group_1_max = _.max(group_1),
+		group_2_max = _.max(group_2);
+
+		return _.range(_.max([group_1_max, group_2_max]) + 1);
 }
 
 module.exports.renderGraph = renderGraph;

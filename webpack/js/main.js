@@ -208,7 +208,7 @@ function renderGraph(store) {
 		$('.graphs-container .pabat-chart').addClass('hide');
 		$('.no-graphs').removeClass('hide');
 	} else {
-		graphs.renderGraph(pabat_data, store.toChoice())
+		graphs.renderGraph(pabat_data, store.toChoice(), locale)
 		$('.graphs-container .pabat-chart').addClass('hide');
 		$('.no-graphs').addClass('hide');
 		$(graphId(store)).removeClass('hide');
