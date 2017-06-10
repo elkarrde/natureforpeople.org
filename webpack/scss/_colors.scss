@@ -118,7 +118,6 @@ body.country-me {
     .cc-secondary { color: $me-red }
 }
 
-
 body.wwf-examples {
     .cc-primary { color: $hr-blue }
     .cc-primary-dark { color: $hr-blue-dark }
@@ -129,6 +128,12 @@ body.sustainable-business {
     .cc-primary { color: $xk-magenta }
     .cc-primary-dark { color: $xk-magenta-dark }
     .cc-secondary { color: $xk-orange }
+}
+
+body.protected-areas {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-blue-dark }
 }
 
 body.recommendations {
