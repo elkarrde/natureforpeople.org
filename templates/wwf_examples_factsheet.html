@@ -15,7 +15,7 @@
       {% for fact in this.parent.children %}
       <div class="md-col md-col-4 p2">
         <div class="box-shadow center bg-white">
-          <div class="card-image {{ fact.slug }}"></div>
+          <a href="{{ fact|url }}" class="card-image {{ fact.slug }}"></a>
           <div class="px2 pb3">
             <h3 class="h4 bold">{{ fact.link_button }}</h3>
             <a href="{{ fact|url }}" class="btn border-me-orange-red">{{ fact.learn_more_button }}</a>

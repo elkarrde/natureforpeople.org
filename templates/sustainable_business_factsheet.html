@@ -15,9 +15,9 @@
       {% for case_study in this.parent.children %}
       <div class="md-col md-col-6 p2">
         <div class="box-shadow center bg-white">
-          <div class="card-image {{ case_study.slug }}"></div>
+          <a href="{{ case_study|url }}" class="card-image {{ case_study.slug }}"></a>
           <div class="px2 pb3">
-            <h3 class="h4 bold">{{ case_study.bg_text }}</h3>
+            <h3 class="h4 bold">{{ case_study.link_button }}</h3>
             <a href="{{ case_study|url }}" class="btn border-xk-magenta-orange">{{ case_study.learn_more_button }}</a>
           </div>
         </div>
