@@ -30,7 +30,6 @@ translations = {
 }
 
 function renderGraph(data, graph_choices) {
-	console.log(data);
 	if (!!graph_choices.protected_area) {
 		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices) }
 		else if (graph_choices.graph_type == "overall_econ") { renderPAOverallEconomic(data, graph_choices) }
@@ -56,7 +55,7 @@ function renderCountryOverall(data, graph_choices) {
 		id: '#country_chart_overall',
 		columns: [questions_line, eco_line, exi_line],
 		colors: ['#fdbc5f', '#da1d52']
-	});
+	}, dataset);
 }
 
 function renderCountryOverallEconomic(data, graph_choices) {
@@ -71,7 +70,7 @@ function renderCountryOverallEconomic(data, graph_choices) {
 		id: '#country_chart_overall_econ',
 		columns: [questions_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	});
+	}, dataset);
 }
 
 function renderCountryFlowEconValue(data, graph_choices) {
@@ -86,7 +85,7 @@ function renderCountryFlowEconValue(data, graph_choices) {
 		id: '#country_chart_flow_econ',
 		columns: [stakeholders_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	});
+	}, dataset);
 }
 
 function renderCountryMainPotentials(data, graph_choices) {
@@ -101,7 +100,7 @@ function renderCountryMainPotentials(data, graph_choices) {
 		id: '#country_chart_potentials',
 		columns: [questions_line, eco_pots_line, exi_pots_line],
 		colors: [ '#8dc63f', '#007476']
-	})
+	}, dataset);
 }
 
 function renderPAOverall(data, graph_choices) {
@@ -116,7 +115,7 @@ function renderPAOverall(data, graph_choices) {
 		id: '#pa_chart_overall',
 		columns: [ questions_line, eco_vals_line, exi_vals_line ],
 		colors: [ '#007476', '#8dc63f']
-	})
+	}, dataset);
 }
 
 function renderPAOverallEconomic(data, graph_choices) {
@@ -131,7 +130,7 @@ function renderPAOverallEconomic(data, graph_choices) {
 		id: '#pa_chart_overall_econ',
 		columns: [ questions_line, low_eco_line, high_eco_line ],
 		colors: [ '#007476', '#8dc63f']
-	})
+	}, dataset);
 }
 
 function renderPAFlowEconValue(data, graph_choices) {
@@ -145,7 +144,7 @@ function renderPAFlowEconValue(data, graph_choices) {
 		id: '#pa_chart_flow_econ',
 		columns: [ stakeholders_line, exi_vals_line, eco_vals_line ],
 		colors: [ '#007476', '#8dc63f']
-	});
+	}, dataset);
 }
 
 function renderPAMainPotentials(data, graph_choices) {
@@ -161,7 +160,7 @@ function renderPAMainPotentials(data, graph_choices) {
 		id: '#pa_chart_potentials',
 		columns: [stakeholders_line, p_plus_vals_line, p_minus_vals_line],
 		colors: [ '#007476', '#8dc63f']
-	})
+	}, dataset);
 }
 
 function pluckDataCountryOverall(data, country) {
@@ -174,12 +173,11 @@ function pluckDataCountryOverall(data, country) {
 	_.each(questions, function(q) {
 		results[q] = {'eco_v': new Set(), 'exi_v': new Set()};
 		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data[q], function(sh_data, sh_name) {
-
+			_.each(pa_data.questions[q], function(sh_data, sh_name) {
 				if (sh_data.Eco && sh_data.Eco.value > 0) {
-					results[q]['eco_v'].add(pa_name)
+					results[q]['eco_v'].add(pa_data.name)
 				} else if (sh_data.Exi && sh_data.Exi.value > 0) {
-					results[q]['exi_v'].add(pa_name)
+					results[q]['exi_v'].add(pa_data.name)
 				}
 			});
 		});
@@ -198,12 +196,12 @@ function pluckDataCountryOverallEconomic(data, country) {
 	_.each(questions, function(q) {
 		results[q] = {'high_eco': new Set(), 'low_eco': new Set()};
 		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data[q], function(sh_data, sh_name) {
+			_.each(pa_data.questions[q], function(sh_data, sh_name) {
 
 				if (sh_data.Eco && sh_data.Eco.value == 2) {
-					results[q]['high_eco'].add(pa_name)
+					results[q]['high_eco'].add(pa_data.name)
 				} else if (sh_data.Eco && sh_data.Eco.value == 1) {
-					results[q]['low_eco'].add(pa_name)
+					results[q]['low_eco'].add(pa_data.name)
 				}
 			});
 		});
@@ -221,13 +219,13 @@ function pluckDataCountryFlowOfEconValue(data, country) {
 
 	_.each(questions, function(q) {
 		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data[q], function(sh_data, sh_name) {
+			_.each(pa_data.questions[q], function(sh_data, sh_name) {
 				results[sh_name] = results[sh_name] || {'low_eco': new Set(), 'high_eco': new Set()};
 
 				if (sh_data.Eco && sh_data.Eco.value == 2) {
-					results[sh_name]['high_eco'].add(pa_name)
+					results[sh_name]['high_eco'].add(pa_data.name)
 				} else if (sh_data.Eco && sh_data.Eco.value == 1) {
-					results[sh_name]['low_eco'].add(pa_name)
+					results[sh_name]['low_eco'].add(pa_data.name)
 				}
 			});
 		});
@@ -246,12 +244,12 @@ function pluckDataCountryMainPotentials(data, country) {
 	_.each(questions, function(q) {
 		results[q] = {'eco_p': new Set(), 'exi_p': new Set()};
 		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data[q], function(sh_data, sh_name) {
+			_.each(pa_data.questions[q], function(sh_data, sh_name) {
 
 				if (sh_data.Eco && sh_data.Eco.value > 0 && sh_data.Eco.potential == 1) {
-					results[q]['eco_p'].add(pa_name);
+					results[q]['eco_p'].add(pa_data.name);
 				} else if(sh_data.Eco && sh_data.Eco.value == 0 && sh_data.Eco.potential == 1) {
-					results[q]['exi_p'].add(pa_name);
+					results[q]['exi_p'].add(pa_data.name);
 				}
 			});
 		});
@@ -270,8 +268,7 @@ function pluckDataPAOverall(data, country, pa) {
 
 	_.each(questions, function(q) {
 		results[q] = {'eco_v': new Set(), 'exi_v': new Set()};
-		_.each(pa_data[q], function(sh_data, sh_name) {
-
+		_.each(pa_data.questions[q], function(sh_data, sh_name) {
 			if (sh_data.Eco && sh_data.Eco.value > 0) {
 				results[q]['eco_v'].add(sh_name);
 			} else if(sh_data.Exi && sh_data.Exi.value > 0) {
@@ -292,7 +289,7 @@ function pluckDataPAOverallEconomic(data, country, pa) {
 
 	_.each(questions, function(q) {
 		results[q] = {'low_eco': new Set(), 'high_eco': new Set()};
-		_.each(pa_data[q], function(sh_data, sh_name) {
+		_.each(pa_data.questions[q], function(sh_data, sh_name) {
 
 			if (sh_data.Eco && sh_data.Eco.value == 1) {
 				results[q]['low_eco'].add(sh_name);
@@ -313,7 +310,7 @@ function pluckDataPAFlowEconValue(data, country, pa) {
 	if (_.isEmpty(pa_data)) { return }
 
 	_.each(questions, function(q) {
-		_.each(pa_data[q], function(sh_data, sh_name) {
+		_.each(pa_data.questions[q], function(sh_data, sh_name) {
 			results[sh_name] = results[sh_name] || {'eco_v': new Set(), 'exi_v': new Set()};
 
 			if (sh_data.Eco && sh_data.Eco.value > 0) {
@@ -336,7 +333,7 @@ function pluckDataPAMainPotentials(data, country, pa) {
 
 	_.each(questions, function(q) {
 		results[q] = {'p_with_val': new Set(), 'p_without_val': new Set()};
-		_.each(pa_data[q], function(sh_data, sh_name) {
+		_.each(pa_data.questions[q], function(sh_data, sh_name) {
 
 			if (sh_data.Eco && sh_data.Eco.potential == 1 && sh_data.Eco.value > 0) {
 				results[q]['p_with_val'].add(sh_name);
@@ -350,7 +347,7 @@ function pluckDataPAMainPotentials(data, country, pa) {
 }
 
 
-function renderTwicePartedXGraph(data) {
+function renderTwicePartedXGraph(data, dataset) {
 	c3.generate({
 		bindto: data.id,
 		data: {
@@ -366,7 +363,37 @@ function renderTwicePartedXGraph(data) {
 		color: { pattern: data.colors },
 		bar: { width: { ratio: 0.5 } },
 		grid: { y: { show: true } },
-		legend: { position: 'inset' }
+		legend: { position: 'inset' },
+		tooltip: {
+			contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
+				var $$ = this, config = $$.config,
+					titleFormat = config.tooltip_format_title || defaultTitleFormat,
+					nameFormat = config.tooltip_format_name || function (name) { return name; },
+					valueFormat = config.tooltip_format_value || defaultValueFormat,
+					text, i, title, value, name, bgcolor,
+					orderAsc = $$.isOrderAsc();
+
+				var table = "<table colspan=2 class='" + $$.CLASS.tooltip + "'><tr><th colspan='2'>PAs:</th></tr>";
+
+				var a_names = Object.keys(dataset),
+					b_idx = d[0].index,
+					c_name = a_names[b_idx],
+					x_vals = dataset[c_name];
+
+				_.each(x_vals, function(set, key) {
+
+					table += "<tr class='" + $$.CLASS.tooltip + "'><td>" + key + "</th></tr>";
+
+					_.each(Array.from(set), function(v) {
+						table += "<tr><td>" + v + "</td></tr>";
+					});
+				});
+
+				return table + "</table>";
+
+
+			}
+}
 	});
 }
 

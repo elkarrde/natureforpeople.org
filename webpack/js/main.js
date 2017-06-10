@@ -212,6 +212,7 @@ function renderGraph(store) {
 		$('.graphs-container .pabat-chart').addClass('hide');
 		$('.no-graphs').addClass('hide');
 		$(graphId(store)).removeClass('hide');
+		$('#pav-graph-gen-title').html(generatedTitle(store)).removeClass('hide');
 	}
 }
 
@@ -222,6 +223,62 @@ function graphRenderable(store) {
 function graphId(store) {
 	var graph_prefix = !!store.state.protected_area ? "pa" : "country";
 	return "#" + graph_prefix + "_chart_" + store.state.graph_type.code;
+}
+
+
+function generatedTitle() {
+	var title = null,
+		choices = store.toChoice(),
+		templates = {
+			country: {
+				hr: "Prikaz {VALUE} u svih {PA_CNT} zaštićenih područja u {COUNTRY}",
+				en: "{VALUE} in all {PA_CNT} protected areas in {COUNTRY}",
+			},
+			country_with_pa: {
+				hr: "Prikaz {VALUE} u zaštićenom području {PA}",
+				en: "{VALUE} in {PA}",
+			}
+		},
+		graph_type_name = {
+			en: {
+				overall: "Overall values",
+				overall_econ: "Overall economic values",
+				flow_econ: "Flow of economic value",
+				potentials: "Main potentials"
+			},
+			hr: {
+				overall: "Svih vrijednosti",
+				overall_econ: "Glavnih ekonomske vrijednosti",
+				flow_econ: "Tijeka prihoda dionicima",
+				potentials: "Glavnih potencijala"
+			}
+		},
+		countries = {
+			ALB: { en: "Albania", hr: "Albaniji" },
+			BIH: { en: "Bosnia & Herzegovina", hr: "Bosni i Hercegovini" },
+			HRV: { en: "Croatia", hr: "Hrvatskoj" },
+			MKD: { en: "Macedonia", hr: "Makedoniji" },
+			MNE: { en: "Montenegro", hr: "Crnoj Gori" },
+			SRB: { en: "Serbia", hr: "Srbiji" },
+			SVN: { en: "Slovenia", hr: "Sloveniji" },
+			KOS: { en: "Kosovo", hr: "Kosovu" }
+		}
+
+	console.log(pabat_data);
+	console.log(choices);
+
+	if (choices.protected_area) {
+		title = (' ' + templates.country_with_pa[locale]).slice(1);
+		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);
+		title = title.replace("{PA}", pabat_data[choices.country][choices.protected_area]['name']);
+	} else {
+		title = (' ' + templates.country[locale]).slice(1);
+		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);
+		title = title.replace("{COUNTRY}", countries[choices.country][locale]);
+		title = title.replace("{PA_CNT}", 18);
+	}
+
+	return title;
 }
 
 // ------------------------------------------------------
