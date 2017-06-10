@@ -272,7 +272,7 @@ function generatedTitle() {
 		title = (' ' + templates.country[locale]).slice(1);
 		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);
 		title = title.replace("{COUNTRY}", countries[choices.country][locale]);
-		title = title.replace("{PA_CNT}", 18);
+		title = title.replace("{PA_CNT}", _.size(_.keys(pabat_data[choices.country])));
 	}
 
 	return title;

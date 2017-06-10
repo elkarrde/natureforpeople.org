@@ -1,6 +1,3 @@
-questions_g1 = ['Tourism & recreation', 'Commercial & non-commercial water use', 'Jobs in PA', 'Water quality & quantity', 'Nature conservation', 'Wood', "Traditional agriculture", 'Fishing', 'Livestock grazing', 'Hunting', 'Pollination & honey production', 'Formal & informal education', 'Building knowledge', 'Wild food plants and mushrooms', 'Nature materials'];
-questions_g3 = ['Tourism & recreation', 'Livestock grazing', 'Traditional agriculture', 'Nature conservation', 'Building knowledge', 'Cultural & historical values', 'Formal & informal education', 'Pollination & honey production', 'Commercial & non-commercial water use', 'Jobs in PA', 'Hunting', 'Medicinal herbs', 'Wild food plants and mushrooms', 'Fishing', 'Water quality & quantity', 'Genetic material', 'Climate change mitigation'];
-questions_g4 = ['Flood prevention', 'Genetic material', 'Formal & informal education', 'Specific site value', 'Cultural & historical values', 'Nature conservation', 'Building knowledge', 'Tourism & recreation', 'Pollination & honey production', 'Livestock grazing', 'Fishing', 'Water quality & quantity', 'Hunting', 'Wood', 'Climate change mitigation', 'Commercial & non-commercial water use', 'Traditional agriculture', 'Wild food plants and mushrooms', 'Jobs in PA', 'Nature materials', 'Soil stabilization', 'Medicinal herbs'];
 sectors = ['Bussiness sector', 'National and regional and local government', 'Local people living near the PA', 'Local people living in the PA', 'Civil associations'];
 stakeholder = ['Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government', 'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'];
 
@@ -22,9 +19,11 @@ function renderGraph(data, graph_choices, locale) {
 function renderCountryOverall(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverall(data, graph_choices.country)
 		, only_counts = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_line = [partition_names['eco_v'][locale]].concat(_.map(only_counts, 'eco_v'))
-		, exi_line = [partition_names['exi_v'][locale]].concat(_.map(only_counts, 'exi_v'))
-		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_counts)), locale);
+		, only_non_empty = countNestedAndFilterOutZeros(only_counts, ['eco_v', 'exi_v'], _.identity)
+		, sorted_counts = sortNestedVals(only_non_empty, 'exi_v', 'desc')
+		, eco_line = [partition_names['eco_v'][locale]].concat(_.map(sorted_counts, 'eco_v'))
+		, exi_line = [partition_names['exi_v'][locale]].concat(_.map(sorted_counts, 'exi_v'))
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(sorted_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall',
@@ -36,9 +35,11 @@ function renderCountryOverall(data, graph_choices, locale) {
 function renderCountryOverallEconomic(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverallEconomic(data, graph_choices.country)
 		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
-		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_counts)), locale);
+		, only_non_empty = countNestedAndFilterOutZeros(only_counts, ['low_eco', 'high_eco'], _.identity)
+		, sorted_counts = sortNestedVals(only_non_empty, 'low_eco', 'desc')
+		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(sorted_counts, 'low_eco'))
+		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(sorted_counts, 'high_eco'))
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(sorted_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall_econ',
@@ -119,8 +120,7 @@ function renderPAFlowEconValue(data, graph_choices, locale) {
 }
 
 function renderPAMainPotentials(data, graph_choices, locale) {
-	var dataset = pluckDataPAMainPotentials(graph_choices.country, graph_choices.protected_area)
-		, questions = questions_g4
+	var dataset = pluckDataPAMainPotentials(data, graph_choices.country, graph_choices.protected_area)
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['p_with_val', 'p_without_val'], sizeOf)
 		, sorted = sortNestedVals(only_non_empty, 'p_with_val', 'desc')
 		, p_plus_vals_line = [partition_names['p_with_val'][locale]].concat(_.map(sorted, 'p_with_val'))
@@ -136,19 +136,18 @@ function renderPAMainPotentials(data, graph_choices, locale) {
 
 function pluckDataCountryOverall(data, country) {
 	var country_data = data[country]
-		, questions = questions_g1
 		, results = {};
 
 	if (_.isEmpty(country_data)) { return };
 
-	_.each(questions, function(q) {
-		results[q] = {'eco_v': new Set(), 'exi_v': new Set()};
-		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(country_data, function(pa_data, pa_name) {
+		_.each(pa_data.questions, function(q_data, q_name) {
+			results[q_name] = results[q_name] || {'eco_v': new Set(), 'exi_v': new Set()};
+			_.each(q_data, function(sh_data, sh_name) {
 				if (sh_data.Eco && sh_data.Eco.value > 0) {
-					results[q]['eco_v'].add(pa_data.name)
+					results[q_name]['eco_v'].add(pa_data.name)
 				} else if (sh_data.Exi && sh_data.Exi.value > 0) {
-					results[q]['exi_v'].add(pa_data.name)
+					results[q_name]['exi_v'].add(pa_data.name)
 				}
 			});
 		});
@@ -159,20 +158,19 @@ function pluckDataCountryOverall(data, country) {
 
 function pluckDataCountryOverallEconomic(data, country) {
 	var country_data = data[country]
-		, questions = questions_g1
 		, results = {};
 
 	if (_.isEmpty(country_data)) { return };
 
-	_.each(questions, function(q) {
-		results[q] = {'high_eco': new Set(), 'low_eco': new Set()};
-		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(country_data, function(pa_data, pa_name) {
+		_.each(pa_data.questions, function(q_data, q_name) {
+			results[q_name] = results[q_name] || {'high_eco': new Set(), 'low_eco': new Set()};
+			_.each(q_data, function(sh_data, sh_name) {
 
 				if (sh_data.Eco && sh_data.Eco.value == 2) {
-					results[q]['high_eco'].add(pa_data.name)
+					results[q_name]['high_eco'].add(pa_data.name)
 				} else if (sh_data.Eco && sh_data.Eco.value == 1) {
-					results[q]['low_eco'].add(pa_data.name)
+					results[q_name]['low_eco'].add(pa_data.name)
 				}
 			});
 		});
@@ -183,14 +181,13 @@ function pluckDataCountryOverallEconomic(data, country) {
 
 function pluckDataCountryFlowOfEconValue(data, country) {
 	var country_data = data[country]
-		, questions = questions_g1
 		, results = {};
 
 	if (_.isEmpty(country_data)) { return };
 
-	_.each(questions, function(q) {
-		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(country_data, function(pa_data, pa_name) {
+		_.each(pa_data.questions, function(q_data, q_name) {
+			_.each(q_data, function(sh_data, sh_name) {
 				results[sh_name] = results[sh_name] || {'low_eco': new Set(), 'high_eco': new Set()};
 
 				if (sh_data.Eco && sh_data.Eco.value == 2) {
@@ -207,20 +204,18 @@ function pluckDataCountryFlowOfEconValue(data, country) {
 
 function pluckDataCountryMainPotentials(data, country) {
 	var country_data = data[country]
-		, questions = questions_g3
 		, results = {};
 
 	if (_.isEmpty(country_data)) { return }
 
-	_.each(questions, function(q) {
-		results[q] = {'eco_p': new Set(), 'exi_p': new Set()};
-		_.each(country_data, function(pa_data, pa_name) {
-			_.each(pa_data.questions[q], function(sh_data, sh_name) {
-
+	_.each(country_data, function(pa_data, pa_name) {
+		_.each(pa_data.questions, function(q_data, q_name) {
+			results[q_name] = results[q_name] || {'eco_p': new Set(), 'exi_p': new Set()};
+			_.each(q_data, function(sh_data, sh_name) {
 				if (sh_data.Eco && sh_data.Eco.value > 0 && sh_data.Eco.potential == 1) {
-					results[q]['eco_p'].add(pa_data.name);
+					results[q_name]['eco_p'].add(pa_data.name);
 				} else if(sh_data.Eco && sh_data.Eco.value == 0 && sh_data.Eco.potential == 1) {
-					results[q]['exi_p'].add(pa_data.name);
+					results[q_name]['exi_p'].add(pa_data.name);
 				}
 			});
 		});
@@ -232,20 +227,19 @@ function pluckDataCountryMainPotentials(data, country) {
 
 function pluckDataPAOverall(data, country, pa) {
 	var pa_data = data[country][pa]
-		, questions = questions_g4
 		, results = {};
 
 	if (_.isEmpty(pa_data)) { return }
 
-	_.each(questions, function(q) {
-		results[q] = {'eco_v': new Set(), 'exi_v': new Set()};
-		_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(pa_data.questions, function(q_data, q_name) {
+		results[q_name] = results[q_name] || {'eco_v': new Set(), 'exi_v': new Set()};
+		_.each(q_data, function(sh_data, sh_name) {
 			if (sh_data.Eco && sh_data.Eco.value > 0) {
-				results[q]['eco_v'].add(sh_name);
+				results[q_name]['eco_v'].add(sh_name);
 			} else if(sh_data.Exi && sh_data.Exi.value > 0) {
-				results[q]['exi_v'].add(sh_name);
+				results[q_name]['exi_v'].add(sh_name);
 			}
-		});
+		})
 	});
 
 	return results;
@@ -253,19 +247,18 @@ function pluckDataPAOverall(data, country, pa) {
 
 function pluckDataPAOverallEconomic(data, country, pa) {
 	var pa_data = data[country][pa]
-		, questions = questions_g4
 		, results = {};
 
 	if (_.isEmpty(pa_data)) { return }
 
-	_.each(questions, function(q) {
-		results[q] = {'low_eco': new Set(), 'high_eco': new Set()};
-		_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(pa_data.questions, function(q_data, q_name) {
+		results[q_name] = results[q_name] || {'low_eco': new Set(), 'high_eco': new Set()};
+		_.each(q_data, function(sh_data, sh_name) {
 
 			if (sh_data.Eco && sh_data.Eco.value == 1) {
-				results[q]['low_eco'].add(sh_name);
+				results[q_name]['low_eco'].add(sh_name);
 			} else if(sh_data.Eco && sh_data.Eco.value == 2) {
-				results[q]['high_eco'].add(sh_name);
+				results[q_name]['high_eco'].add(sh_name);
 			}
 		});
 	});
@@ -275,19 +268,19 @@ function pluckDataPAOverallEconomic(data, country, pa) {
 
 function pluckDataPAFlowEconValue(data, country, pa) {
 	var pa_data = data[country][pa]
-		, questions = questions_g4
 		, results = {};
 
 	if (_.isEmpty(pa_data)) { return }
 
-	_.each(questions, function(q) {
-		_.each(pa_data.questions[q], function(sh_data, sh_name) {
+	_.each(pa_data.questions, function(q_data, q_name) {
+		_.each(q_data, function(sh_data, sh_name) {
+
 			results[sh_name] = results[sh_name] || {'eco_v': new Set(), 'exi_v': new Set()};
 
 			if (sh_data.Eco && sh_data.Eco.value > 0) {
-				results[sh_name]['eco_v'].add(q);
+				results[sh_name]['eco_v'].add(q_name);
 			} else if(sh_data.Exi && sh_data.Exi.value > 0) {
-				results[sh_name]['exi_v'].add(q);
+				results[sh_name]['exi_v'].add(q_name);
 			}
 		});
 	});
@@ -297,19 +290,17 @@ function pluckDataPAFlowEconValue(data, country, pa) {
 
 function pluckDataPAMainPotentials(data, country, pa) {
 	var pa_data = data[country][pa]
-		, questions = questions_g4
 		, results = {};
 
 	if (_.isEmpty(pa_data)) { return }
 
-	_.each(questions, function(q) {
-		results[q] = {'p_with_val': new Set(), 'p_without_val': new Set()};
-		_.each(pa_data.questions[q], function(sh_data, sh_name) {
-
+	_.each(pa_data.questions, function(q_data, q_name) {
+		results[q_name] = results[q_name] || {'p_with_val': new Set(), 'p_without_val': new Set()};
+		_.each(q_data, function(sh_data, sh_name) {
 			if (sh_data.Eco && sh_data.Eco.potential == 1 && sh_data.Eco.value > 0) {
-				results[q]['p_with_val'].add(sh_name);
+				results[q_name]['p_with_val'].add(sh_name);
 			} else if(sh_data.Eco && sh_data.Eco.potential == 1 && sh_data.Eco.value == 0) {
-				results[q]['p_without_val'].add(sh_name);
+				results[q_name]['p_without_val'].add(sh_name);
 			}
 		});
 	});
