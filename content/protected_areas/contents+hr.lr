@@ -2,7 +2,7 @@ _model: protected_areas
 ---
 title: Zaštićena područja
 ---
-bg_text: 
+bg_text:
 ---
 step_1: Odaberite zemlju iz padajućeg izbornika:
 ---
@@ -48,8 +48,8 @@ learn_more_title_3: Vrijednost zaštićenih područja
 ---
 intro_body:
 
-<p>WWF predstavlja rezultate analize 
-(<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_web_1355739158.pdf" class="cc-secondary">PA-BAT</a>) 
+<p>WWF predstavlja rezultate analize
+(<a href="http://croatia.panda.org/projekti/zatiena_podruja_za_prirodu_i_ljude/pa_bat_metodologija/" class="cc-secondary">PA-BAT</a>)
 koja prikazuje kako različiti dionici gledaju na trenutne egzistencijalne i ekonomske vrijednosti zaštićenih područja. Analiza je zasnovana na diskusijama koje su uključivale više od 1300 stručnjaka, vladinih službenika, poduzetnika, farmera i predstavnika lokalne zajednice u cijeloj regiji. </p>
 
 <p> Procijenjene vrijednosti zaštićenog područja mogu biti egzistencijalne, ekonomske i imaju li potencijala za prihode u budućnosti. Ispitano je osam grupa dionika: lokalno stanovništvo koje živi u zaštićenom području, lokalno stanovništvo koje živi u blizini zaštićenog područja, ukupno stanovništvo, znanstvenici/stručnjaci, organizacije civilnog društva, vlada/javni sektor, poslovni sektor i međunarodna zajednica.</p>
@@ -57,3 +57,11 @@ koja prikazuje kako različiti dionici gledaju na trenutne egzistencijalne i eko
 intro_title: Vrijednosti zaštićenih područja
 ---
 slug: protected-areas
+---
+documents:
+
+https://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf;;Hrvatska
+https://d2ouvy59p0dg6k.cloudfront.net/downloads/bih_bat_report_2016_bhs_web_1.pdf;;Bosna&Hercegovina
+https://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_cg_web__4_.pdf;;Crna gora
+---
+documents_title: Dokumenti
