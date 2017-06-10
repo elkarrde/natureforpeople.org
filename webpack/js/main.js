@@ -264,9 +264,6 @@ function generatedTitle() {
 			KOS: { en: "Kosovo", hr: "Kosovu" }
 		}
 
-	console.log(pabat_data);
-	console.log(choices);
-
 	if (choices.protected_area) {
 		title = (' ' + templates.country_with_pa[locale]).slice(1);
 		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);

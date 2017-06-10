@@ -4,65 +4,6 @@ questions_g4 = ['Flood prevention', 'Genetic material', 'Formal & informal educa
 sectors = ['Bussiness sector', 'National and regional and local government', 'Local people living near the PA', 'Local people living in the PA', 'Civil associations'];
 stakeholder = ['Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government', 'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'];
 
-translations = {
-	'Flood prevention'                      : '___PREVENCIJA POPLAVE',
-	'Genetic material'                      : '___GENETSKI MATERIJAL',
-	'Formal & informal education'           : 'Formalna i neformalna edukacija',
-	'Specific site value'                   : '___SPECIFICNO MJESTO',
-	'Cultural & historical values'          : '___KURTULA I HISTORIJA',
-	'Nature conservation'                   : 'Zaštita prirode',
-	'Building knowledge'                    : 'Istraživanje i nadogradnja znanja',
-	'Tourism & recreation'                  : 'Turizam i rekreacija',
-	'Pollination & honey production'        : 'Oprašivanje i proizvodnja meda',
-	'Livestock grazing'                     : 'Stočarstvo',
-	'Fishing'                               : 'Ribarstvo',
-	'Water quality & quantity'              : 'Kvaliteta i količina vode',
-	'Hunting'                               : 'Lovni turizam',
-	'Wood'                                  : 'Šumarstvo',
-	'Climate change mitigation'             : '___USPORAVENJA CLIMATE CHANGE',
-	'Commercial & non-commercial water use' : 'Komercijalna upotreba vode',
-	'Traditional agriculture'               : 'Tradicionalna poljoprivreda',
-	'Wild food plants and mushrooms'        : 'Samoniklo jestivo bilje i gljive',
-	'Jobs in PA'                            : 'Zapošljavanje u zaštićenom području',
-	'Nature materials'                      : 'Prirodni materijali',
-	'Soil stabilization'                    : '___STABILIZACIJA TLA',
-	'Medicinal herbs'                       : '___ZDRAVE BILJKE'
-}
-
-partition_names = {
-	'low_eco': {
-		'en': 'Low economic values' ,
-		'hr': 'Niske ekonomske vrijednosti'
-	},
-	'high_eco': {
-		'en': 'High economic values',
-		'hr': 'Visoke ekonomske vrijednosti'
-	},
-	'eco_v': {
-		'en': 'Economic values',
-		'hr': 'Ekonomske vrijednosti'
-	},
-	'exi_v': {
-		'en': 'Subsistence values',
-		'hr': 'Egzistencijalne vrijednosti'
-	},
-	'eco_p': {
-		'en': 'Potential with economic value',
-		'hr': 'Ekonomski potencijali'
-	},
-	'exi_p': {
-		'en': 'Potential with existential value',
-		'hr': 'Egzistencijalni potencijali'
-	},
-	'p_with_val': {
-		'en': 'Potential with economic value',
-		'hr': 'Potencijal s ekonomskom vrijednošću'
-	},
-	'p_without_val': {
-		'en': 'Potential without economic value',
-		'hr': 'Potencijal bez ekonomske vrijednosti'
-	}
-}
 
 function renderGraph(data, graph_choices, locale) {
 	if (!!graph_choices.protected_area) {
@@ -80,11 +21,10 @@ function renderGraph(data, graph_choices, locale) {
 
 function renderCountryOverall(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverall(data, graph_choices.country)
-		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_line =  [partition_names['eco_v'][locale]].concat(_.map(only_counts, 'eco_v'))
-		, exi_line =  [partition_names['exi_v'][locale]].concat(_.map(only_counts, 'exi_v'))
-		, questions_line = ['x'].concat(questions);
+		, eco_line = [partition_names['eco_v'][locale]].concat(_.map(only_counts, 'eco_v'))
+		, exi_line = [partition_names['exi_v'][locale]].concat(_.map(only_counts, 'exi_v'))
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall',
@@ -95,11 +35,10 @@ function renderCountryOverall(data, graph_choices, locale) {
 
 function renderCountryOverallEconomic(data, graph_choices, locale) {
 	var dataset = pluckDataCountryOverallEconomic(data, graph_choices.country)
-		, questions = questions_g1
 		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line =  [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line =  [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
-		, questions_line = ['x'].concat(questions);
+		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_overall_econ',
@@ -112,9 +51,9 @@ function renderCountryFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataCountryFlowOfEconValue(data, graph_choices.country)
 		, datasetForSectors = _.pick(dataset, sectors)
 		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line =  [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line =  [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
-		, stakeholders_line = ['x'].concat(sectors);
+		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
+		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
+		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(only_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_flow_econ',
@@ -125,11 +64,10 @@ function renderCountryFlowEconValue(data, graph_choices, locale) {
 
 function renderCountryMainPotentials(data, graph_choices, locale) {
 	var dataset = pluckDataCountryMainPotentials(data, graph_choices.country)
-		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_p', 'exi_p'], sizeOf)
 		, eco_pots_line = [partition_names['eco_p'][locale]].concat(_.map(only_non_empty, 'eco_p'))
 		, exi_pots_line = [partition_names['exi_p'][locale]].concat(_.map(only_non_empty, 'exi_p'))
-		, questions_line = ['x'].concat(questions);
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_non_empty)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_potentials',
@@ -140,11 +78,10 @@ function renderCountryMainPotentials(data, graph_choices, locale) {
 
 function renderPAOverall(data, graph_choices, locale) {
 	var dataset = pluckDataPAOverall(data, graph_choices.country, graph_choices.protected_area)
-		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
 		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(only_non_empty, 'eco_v'))
 		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(only_non_empty, 'exi_v'))
-		, questions_line = ['x'].concat(questions);
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_non_empty)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_overall',
@@ -155,11 +92,10 @@ function renderPAOverall(data, graph_choices, locale) {
 
 function renderPAOverallEconomic(data, graph_choices, locale) {
 	var dataset = pluckDataPAOverallEconomic(data, graph_choices.country, graph_choices.protected_area)
-		, questions = questions_g4
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['low_eco', 'high_eco'], sizeOf)
 		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_non_empty, 'low_eco'))
 		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_non_empty, 'high_eco'))
-		, questions_line = ['x'].concat(questions);
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_non_empty)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_overall_econ',
@@ -173,7 +109,7 @@ function renderPAFlowEconValue(data, graph_choices, locale) {
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
 		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(only_non_empty, 'eco_v'))
 		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(only_non_empty, 'exi_v'))
-		, stakeholders_line = ['x'].concat(_.keys(only_non_empty));
+		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(only_non_empty)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_flow_econ',
@@ -189,7 +125,7 @@ function renderPAMainPotentials(data, graph_choices, locale) {
 		, sorted = sortNestedVals(only_non_empty, 'p_with_val', 'desc')
 		, p_plus_vals_line = [partition_names['p_with_val'][locale]].concat(_.map(sorted, 'p_with_val'))
 		, p_minus_vals_line = [partition_names['p_without_val'][locale]].concat(_.map(sorted, 'p_without_val'))
-		, stakeholders_line = ['x'].concat(_.keys(sorted));
+		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(sorted)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_potentials',
@@ -399,10 +335,7 @@ function renderTwicePartedXGraph(data, dataset, locale) {
 				type: 'category',
 			},
 			y: {
-				tick: {
-					values: ticks,
-					// format: function (d) { return (parseInt(d) == d) ? d : null }
-				}
+				tick: { values: ticks }
 			}
 		},
 		color: { pattern: data.colors },
@@ -420,9 +353,9 @@ function renderTwicePartedXGraph(data, dataset, locale) {
 
 				var table = "<table colspan=2 class='" + $$.CLASS.tooltip + "'>";
 
-				var a_names = Object.keys(dataset),
-					b_idx = d[0].index,
-					c_name = a_names[b_idx],
+				var a_names = data.columns[0],
+					b_idx = d[0].index + 1,
+					c_name = revertToEn(locale, a_names[b_idx]),
 					x_vals = dataset[c_name];
 
 				_.each(x_vals, function(set, key) {
@@ -484,12 +417,6 @@ function filterNested(dataset, predicateFn) {
 	return _.fromPairs(_.filter(_.toPairs(dataset), predicateFn));
 }
 
-function translateLables(labels) {
-	return _.map(labels, function(l) {
-		return translations[l];
-	})
-}
-
 function generateTicks(data) {
 	var group_1 = _.filter(data.columns[1], function(v) { return _.isNumber(v) }),
 		group_2 = _.filter(data.columns[2], function(v) { return _.isNumber(v) }),
@@ -497,6 +424,234 @@ function generateTicks(data) {
 		group_2_max = _.max(group_2);
 
 		return _.range(_.max([group_1_max, group_2_max]) + 1);
+}
+
+function localizeNames(translations, names, locale) {
+	return _.map(names, function(name) {
+		if (translations[name]) { return translations[name][locale] } else { return name };
+	})
+}
+
+function revertToEn(locale, name) {
+	if (locale == 'en') {
+		return name;
+	} else {
+		if (_.has(questions_hr_to_en, name)) {
+			return questions_hr_to_en[name];
+		} else if (_.has(stakeholders_hr_to_en, name)) {
+			return stakeholders_hr_to_en[name];
+		} else {
+			return name;
+		}
+	}
+}
+
+
+stakeholder_names = {
+	'Bussiness sector': {
+		'en': 'Bussiness sector',
+		'hr': 'Poslovni sektor'
+	},
+	'National and regional and local government': {
+		'en': 'National and regional and local government',
+		'hr': 'Vlada/javni sektor'
+	},
+
+	'Local people living near the PA': {
+		'en': 'Local people living near the PA',
+		'hr': 'Stanovništvo u blizini zaštićenog područja'
+	},
+	'Local people living in the PA': {
+		'en': 'Local people living in the PA',
+		'hr': 'Stanovništvo u zaštićenom području'
+	},
+	'Civil associations': {
+		'en': 'Civil associations',
+		'hr': 'Udruženja građana'
+	},
+	'Non-governmental organizations': {
+		'en': 'Non-governmental organizations',
+		'hr': 'Nevladine udruge'
+	},
+	'Experts & Scientists': {
+		'en': 'Experts & Scientists',
+		'hr': 'Stručnjaci i znanstvenici'
+	},
+	'Stanovništvo': {
+		'en': 'Stanovništvo',
+		'hr': 'National population',
+	},
+	'Međunarodna zajednica': {
+		'en': 'Međunarodna zajednica',
+		'hr': 'Global community',
+	}
+}
+
+
+stakeholders_hr_to_en = {
+	'Poslovni sektor': 'Bussiness sector',
+	'Vlada/javni sektor': 'National and regional and local government',
+	'Stanovništvo u blizini zaštićenog područja': 'Local people living near the PA',
+	'Stanovništvo u zaštićenom području': 'Local people living in the PA',
+	'Udruženja građana': 'Civil associations',
+	'Nevladine udruge': 'Non-governmental organizations',
+	'Stručnjaci i znanstvenici': 'Experts & Scientists',
+	'Stanovništvo': 'National population',
+	'Međunarodna zajednica': 'Global community'
+}
+
+question_names = {
+	'Flood prevention': {
+		'en': 'Flood prevention',
+		'hr': 'Obrana od poplava'
+	},
+	"Genetic material": {
+		'en':'Genetic material',
+		'hr':'Genetski materijal'
+	},
+	"Formal & informal education": {
+		'en':'Formal & informal education',
+		'hr':'Formalna i neformalna edukacija'
+	},
+	"Specific site value": {
+		'en':'Specific site value',
+		'hr':'Specifična obilježja'
+	},
+	"Cultural & historical values": {
+		'en': 'Cultural & historical values',
+		'hr': 'Kulturne i povijesne vrijednosti'
+	},
+	"Nature conservation": {
+		'en': 'Nature conservation',
+		'hr': 'Zaštita prirode'
+	},
+	"Building knowledge": {
+		'en': 'Building knowledge',
+		'hr': 'Istraživanje i nadogradnja znanja'
+	},
+	"Tourism & recreation": {
+		'en': 'Tourism & recreation',
+		'hr': 'Turizam i rekreacija'
+	},
+	"Pollination & honey production": {
+		'en': 'Pollination & honey production',
+		'hr': 'Oprašivanje i proizvodnja meda'
+	},
+	"Livestock grazing": {
+		'en': 'Livestock grazing',
+		'hr': 'Stočarstvo'
+	},
+	"Fishing": {
+		'en': 'Fishing',
+		'hr': 'Ribarstvo'
+	},
+	"Water quality & quantity": {
+		'en': 'Water quality & quantity',
+		'hr': 'Kvaliteta i količina vode'
+	},
+	"Hunting": {
+		'en': 'Hunting',
+		'hr': 'Lov'
+	},
+	"Wood": {
+		'en': 'Wood',
+		'hr': 'Šumarstvo'
+	},
+	"Climate change mitigation": {
+		'en': 'Climate change mitigation',
+		'hr': 'Ublažavanje klimatskih promjena'
+	},
+	"Commercial & non-commercial water use": {
+		'en': 'Commercial & non-commercial water use',
+		'hr': 'Nekomercijalna upotreba vode'
+	},
+	"Traditional agriculture": {
+		'en': 'Traditional agriculture',
+		'hr': 'Tradicionalna poljoprivreda'
+	},
+	"Wild food plants and mushrooms": {
+		'en': 'Wild food plants and mushrooms',
+		'hr': 'Samoniklo jestivo bilje i gljive'
+	},
+	"Jobs in PA": {
+		'en': 'Jobs in PA',
+		'hr': 'Zapošljavanje u zaštićenom području'
+	},
+	"Nature materials": {
+		'en': 'Nature materials',
+		'hr': 'Prirodni materijali'
+	},
+	"Soil stabilization": {
+		'en': 'Soil stabilization',
+		'hr': 'Stabilizacija tla'
+	},
+	"Medicinal herbs": {
+		'en': 'Medicinal herbs',
+		'hr': 'Ljekovito bilje'
+	}
+}
+
+
+questions_hr_to_en = {
+		'Obrana od poplava': "Flood prevention",
+		'Genetski materijal': "Genetic material",
+		'Formalna i neformalna edukacija': "Formal & informal education",
+		'Specifična obilježja': "Specific site value",
+		'Kulturne i povijesne vrijednosti': "Cultural & historical values",
+		'Zaštita prirode': "Nature conservation",
+		'Istraživanje i nadogradnja znanja': "Building knowledge",
+		'Turizam i rekreacija': "Tourism & recreation",
+		'Oprašivanje i proizvodnja meda':  "Pollination & honey production",
+		'Stočarstvo':  "Livestock grazing",
+		'Ribarstvo':  "Fishing",
+		'Kvaliteta i količina vode':  "Water quality & quantity",
+		'Lov':  "Hunting",
+		'Šumarstvo':  "Wood",
+		'Ublažavanje klimatskih promjena':  "Climate change mitigation",
+		'Nekomercijalna upotreba vode':  "Commercial & non-commercial water use",
+		'Tradicionalna poljoprivreda':  "Traditional agriculture",
+		'Samoniklo jestivo bilje i gljive':  "Wild food plants and mushrooms",
+		'Zapošljavanje u zaštićenom području':  "Jobs in PA",
+		'Prirodni materijali':  "Nature materials",
+		'Stabilizacija tla':  "Soil stabilization",
+		'Ljekovito bilje':  "Medicinal herbs"
+}
+
+
+
+partition_names = {
+	'low_eco': {
+		'en': 'Low economic values' ,
+		'hr': 'Niske ekonomske vrijednosti'
+	},
+	'high_eco': {
+		'en': 'High economic values',
+		'hr': 'Visoke ekonomske vrijednosti'
+	},
+	'eco_v': {
+		'en': 'Economic values',
+		'hr': 'Ekonomske vrijednosti'
+	},
+	'exi_v': {
+		'en': 'Subsistence values',
+		'hr': 'Egzistencijalne vrijednosti'
+	},
+	'eco_p': {
+		'en': 'Potential with economic value',
+		'hr': 'Ekonomski potencijali'
+	},
+	'exi_p': {
+		'en': 'Potential with existential value',
+		'hr': 'Egzistencijalni potencijali'
+	},
+	'p_with_val': {
+		'en': 'Potential with economic value',
+		'hr': 'Potencijal s ekonomskom vrijednošću'
+	},
+	'p_without_val': {
+		'en': 'Potential without economic value',
+		'hr': 'Potencijal bez ekonomske vrijednosti'
+	}
 }
 
 module.exports.renderGraph = renderGraph;
