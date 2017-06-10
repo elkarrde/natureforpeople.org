@@ -1,5 +1,5 @@
-class String
-end
+require "i18n"
+I18n.config.available_locales = :en
 
 class Mapper
   def initialize
@@ -80,6 +80,7 @@ class Mapper
   end
 
   def codify_pa(cntry, pa)
-    strip_pa_prefix(cntry, pa).gsub(/::/, '/').gsub(/\s+/, ' ').gsub(/\s/, '-').gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').gsub(/([a-z\d])([A-Z])/,'\1_\2').tr("-", "_").downcase
+    pa_code = strip_pa_prefix(cntry, pa)
+    I18n.transliterate(pa_code).gsub(/::/, '/').gsub(/\s+/, ' ').gsub(/\s/, '-').gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').gsub(/([a-z\d])([A-Z])/,'\1_\2').tr("-", "_").downcase
   end
 end

@@ -6,7 +6,6 @@ require 'json'
 require 'digest'
 require 'mapper'
 
-
 pabat_all = {}
 countries_parks = []
 country_order = []
@@ -14,27 +13,16 @@ parks_indexed = []
 
 m = Mapper.new
 
-# Expected CSV format (index => value):
-# 0 - Country name
-# 1 - Protected area name
-# 2 - Group name
-# 3 - Question
-# 4 - Type of value (Exi or Eco)
-# 5 - Stakeholder
-# 6 - Value (Exi/Eco)
-# 7 - Potential
-
-CSV.read('pa-bat.csv', { :col_sep => "\t" }).each_with_index do |line, index|
+CSV.read('../assets/static/pabat-all.csv', { :col_sep => ";" }).each_with_index do |line, index|
   next if index == 0
 
   country_name = line[0]
   pa_name      = line[1]
-  group        = line[2]
-  question     = line[3]
-  value_type   = line[4]
-  stakeholder  = line[5]
-  value        = line[6].to_i
-  potential    = line[7].to_i
+  question     = line[2]
+  value_type   = line[3]
+  stakeholder  = line[4]
+  value        = line[5].to_i
+  potential    = line[6].to_i
 
   country = m.country_mappings[country_name]
   country_code = m.country_mappings[country_name]["code"]
@@ -45,8 +33,8 @@ CSV.read('pa-bat.csv', { :col_sep => "\t" }).each_with_index do |line, index|
   pabat_all[country_code] ||= {}
   pabat_all[country_code][pa_code] ||= {:name => pa_name_m, :questions => {}}
   pabat_all[country_code][pa_code][:questions][question] ||= {}
-  pabat_all[country_code][pa_code][:questions][question][group] ||= {}
-  pabat_all[country_code][pa_code][:questions][question][group][value_type_m] ||= {value: value, potential: potential}
+  pabat_all[country_code][pa_code][:questions][question][stakeholder] ||= {}
+  pabat_all[country_code][pa_code][:questions][question][stakeholder][value_type_m] ||= {value: value, potential: potential}
 
   if country_order.include? country_code
     if !parks_indexed.include? pa_code
