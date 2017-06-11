@@ -231,8 +231,8 @@ function generatedTitle() {
 		choices = store.toChoice(),
 		templates = {
 			country: {
-				hr: "Prikaz {VALUE} u svih {PA_CNT} zaštićenih područja u {COUNTRY}",
-				en: "{VALUE} in all {PA_CNT} protected areas in {COUNTRY}",
+				hr: "Prikaz {VALUE} u {PA_CNT} zaštićenih područja u {COUNTRY}",
+				en: "{VALUE} in {PA_CNT} protected areas in {COUNTRY}",
 			},
 			country_with_pa: {
 				hr: "Prikaz {VALUE} u zaštićenom području {PA}",

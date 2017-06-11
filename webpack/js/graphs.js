@@ -29,7 +29,7 @@ function renderCountryOverall(data, graph_choices, locale) {
 		id: '#country_chart_overall',
 		columns: [questions_line, eco_line, exi_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset, locale);
+	}, dataset, locale, {height: 1000});
 }
 
 function renderCountryOverallEconomic(data, graph_choices, locale) {
@@ -45,7 +45,7 @@ function renderCountryOverallEconomic(data, graph_choices, locale) {
 		id: '#country_chart_overall_econ',
 		columns: [questions_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset, locale);
+	}, dataset, locale, {height: 1000});
 }
 
 function renderCountryFlowEconValue(data, graph_choices, locale) {
@@ -60,7 +60,7 @@ function renderCountryFlowEconValue(data, graph_choices, locale) {
 		id: '#country_chart_flow_econ',
 		columns: [stakeholders_line, low_eco_line, high_eco_line],
 		colors: ['#fdbc5f', '#da1d52']
-	}, dataset, locale);
+	}, dataset, locale, {height: 1000});
 }
 
 function renderCountryMainPotentials(data, graph_choices, locale) {
@@ -309,8 +309,9 @@ function pluckDataPAMainPotentials(data, country, pa) {
 }
 
 
-function renderTwicePartedXGraph(data, dataset, locale) {
-	var ticks = generateTicks(data);
+function renderTwicePartedXGraph(data, dataset, locale, opts) {
+	var ticks = generateTicks(data),
+		height = opts && opts.height || 600;
 
 	c3.generate({
 		bindto: data.id,
@@ -319,11 +320,11 @@ function renderTwicePartedXGraph(data, dataset, locale) {
 			type: 'bar',
 			x: 'x'
 		},
-		padding: { left: 110 },
+		size: { height: 800 },
 		axis: {
 			rotated: true,
 			x: {
-				type: 'category',
+				type: 'category'
 			},
 			y: {
 				tick: { values: ticks }
