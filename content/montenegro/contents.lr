@@ -70,7 +70,7 @@ fact_6_title: Forestry
 ---
 fact_6_subtitle: Responsible management
 ---
-fact_6_copy: In 2011 the forestry sector realized a profit of <a href="http://www.fao.org/3/a-i3710e.pdf" target="_blank">USD 17.9 million</a>, or 0.5% of the GDP. The local population in Prokletije National Park depends on forests, particularly firewood, for their livelihoods. In 2014, 4.757 m3 of forests were illegally logged.
+fact_6_copy: In 2011 the forestry sector realized a profit of <a href="http://www.fao.org/3/a-i3710e.pdf" target="_blank">USD 17.9 million</a>, or 0.5% of the GDP. The local population in Prokletije National Park depends on forests, particularly firewood, for their livelihoods. In 2014, <a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank">4.757 m<sup>3</sup> of forests were illegally logged</a>.
 ---
 fact_6_question: Have local communities and protected area managers been informed about ways to use forest resources without relying on logging? Can forest certification (FSC) be the solution for illegal logging and result in responsible forest management in Montenegro?
 ---
@@ -80,7 +80,7 @@ fact_7_title: Fisheries
 ---
 fact_7_subtitle: Sustainable fisheries in Skadar Lake
 ---
-fact_7_copy: There is a long fishing tradition on Skadar Lake that annually contributes EUR 1.8 million to the local economy and is the primary occupation of about 400 fishermen on the lake. The annual catch is about 1000 t.
+fact_7_copy: There is a long fishing tradition on Skadar Lake that annually <a href="http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">contributes EUR 1.8 million</a> to the local economy and is the primary occupation of about 400 fishermen on the lake. The annual catch is about 1000 t.
 ---
 fact_7_question: Do decision makers and fishermen understand that a sustainable fishery is the only way to ensure over the long-term livelihoods and a sufficient quantity of fish in Skadar Lake?
 ---
@@ -139,9 +139,7 @@ fact_2_infobox:
 </p>
 ---
 fact_3_infobox:
-<p>
-NP Durmitor- 45, NP Biogradska gora-27, NP Lovćen-21, NP Skadarsko jezero - 45, NP Prokletije-22.
-</p>
+<p>Data of the Public Enterprise for National Parks of Montenegro.</p>
 ---
 fact_4_infobox:
 <p>
@@ -151,8 +149,8 @@ fact_4_infobox:
 ---
 fact_5_infobox:
 <p>
-<a href="http://www.minpolj.gov.me/ResourceManager/FileDownload.aspx?rId=228513&rType=2" target="_blank">Nacrt strategije upravljanja vodama Crne Gore</a><br />
-<a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a>
+<a href="http://www.minpolj.gov.me/ResourceManager/FileDownload.aspx?rId=228513&rType=2" target="_blank">Water management strategy of Montenegro</a><br />
+<a href=" http://www.epcg.com/en/about-us/electricity-production-and-electro-energetic-balance" target="_blank">Electricity production and electro energy balance</a>
 </p>
 ---
 fact_6_infobox:
@@ -193,9 +191,6 @@ The Tara River cuts the Tara River Canyon, the longest canyon in Montenegro and 
 Source: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a>
 </p>
 ---
-picto_5_infobox:
-<p><a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
----
 picto_6_infobox:
 <p><a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
 ---
@@ -203,12 +198,6 @@ picto_7_infobox:
 <p><a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
 ---
 picto_8_infobox:
-<p>
-<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a><br/>
-<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">The economic value of protected areas in Montenegro</a>
-</p>
----
-picto_9_infobox:
 <p>
 <a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a><br/>
 <a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">The economic value of protected areas in Montenegro</a>

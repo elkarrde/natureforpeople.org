@@ -70,7 +70,7 @@ fact_6_title: Šumarstvo
 ---
 fact_6_subtitle: Odgovorno upravljanje
 ---
-fact_6_copy: Šumarski je sektor 2011. godine imao prihod od <a href="http://www.fao.org/3/a-i3710e.pdf" target="_blank">17.9 miliona dolara</a> ili 0,5% BDP-a. Lokalno stanovništvo u Nacionalnom parku Prokletije egzistencijalno su vezani za šume između ostalog i zbog drva za ogrjev. U 2014. u Crnoj Gori je 4.757 m<sup>3</sup> šuma bespravno posječeno.
+fact_6_copy: Šumarski je sektor 2011. godine imao prihod od <a href="http://www.fao.org/3/a-i3710e.pdf" target="_blank">17.9 miliona dolara</a> ili 0,5% BDP-a. Lokalno stanovništvo u Nacionalnom parku Prokletije egzistencijalno su vezani za šume između ostalog i zbog drva za ogrjev. U 2014. <a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank">u Crnoj Gori je 4.757 m<sup>3</sup> šuma bespravno posječeno</a>.
 ---
 fact_6_question: Jesu li lokalne zajednice i službe zaštićenih područja dovoljno informirane o mogućnostima koje vlasnici šuma imaju u korišćenju šuma, a koje nije bazirano samo na njenoj sječi? Može li sertifikacija šume (FSC) biti rješenje za ilegalnu sječu i odgovorno upravljanje šumama u Crnoj Gori?
 ---
@@ -80,7 +80,7 @@ fact_7_title: Ribarstvo
 ---
 fact_7_subtitle: Održivo ribarstvo u Skadarskom jezeru
 ---
-fact_7_copy: Duga je tradicija ribolova na Skadarskom jezeru koja pritom godišnje donosi cca 1.8 miliona EUR lokalnoj ekonomiji i omogućava egzistenciju oko 400 ribara na jezeru sa godišnjim ulovom oko 1000 t.
+fact_7_copy: Duga je tradicija ribolova na Skadarskom jezeru koja pritom godišnje <a href="http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">donosi 1.8 miliona EUR</a> lokalnoj ekonomiji i omogućava egzistenciju oko 400 ribara na jezeru sa godišnjim ulovom oko 1000 t.
 ---
 fact_7_question: Razumiju li donosioci odluka i ribari da je održivo ribarstvo jedini put ka dugoročnoj egzistenciji i dovoljnoj količini ribe u Skadarskom jezeru?
 ---
@@ -139,9 +139,7 @@ fact_2_infobox:
 </p>
 ---
 fact_3_infobox:
-<p>
-NP Durmitor- 45, NP Biogradska gora-27, NP Lovćen-21, NP Skadarsko jezero - 45, NP Prokletije-22.
-</p>
+<p>Podaci Javnog preduzeća za nacionalne parkove Crne Gore.</p>
 ---
 fact_4_infobox:
 <p>
@@ -196,9 +194,6 @@ Kanjon rijeke Tare najduži je kanjon u Crnoj Gori i Europi, te drugi najduži n
 Izvor: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a>
 </p>
 ---
-picto_5_infobox:
-<p><a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
----
 picto_6_infobox:
 <p><a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
 ---
@@ -206,12 +201,6 @@ picto_7_infobox:
 <p><a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
 ---
 picto_8_infobox:
-<p>
-<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
-<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
-</p>
----
-picto_9_infobox:
 <p>
 <a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
 <a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
