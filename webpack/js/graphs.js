@@ -321,10 +321,11 @@ function renderTwicePartedXGraph(data, dataset, locale, opts) {
 		axis: {
 			rotated: true,
 			x: {
-				type: 'category'
+				type: 'category',
 			},
 			y: {
-				tick: { values: ticks }
+				tick: { values: ticks },
+				label: label_x_axis[locale]
 			}
 		},
 		color: { pattern: data.colors },
@@ -559,7 +560,7 @@ question_names = {
 	},
 	"Commercial & non-commercial water use": {
 		'en': 'Commercial & non-commercial water use',
-		'hr': 'Nekomercijalna upotreba vode'
+		'hr': 'Komercijalna i nekomercijalna uporaba vode'
 	},
 	"Traditional agriculture": {
 		'en': 'Traditional agriculture',
@@ -652,6 +653,11 @@ partition_names = {
 		'en': 'Potential without current economic value',
 		'hr': 'Potencijal bez trenutne ekonomske vrijednosti'
 	}
+}
+
+label_x_axis = {
+	"en": "Number of protected areas",
+	"hr": "Broj zaštićenih područja"
 }
 
 module.exports.renderGraph = renderGraph;

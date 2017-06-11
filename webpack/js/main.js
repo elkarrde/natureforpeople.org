@@ -260,7 +260,7 @@ function generatedTitle() {
 			MKD: { en: "Macedonia", hr: "Makedoniji" },
 			MNE: { en: "Montenegro", hr: "Crnoj Gori" },
 			SRB: { en: "Serbia", hr: "Srbiji" },
-			SVN: { en: "Slovenia", hr: "Sloveniji" },
+			SLV: { en: "Slovenia", hr: "Sloveniji" },
 			KOS: { en: "Kosovo", hr: "Kosovu" }
 		}
 
