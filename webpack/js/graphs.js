@@ -639,12 +639,12 @@ partition_names = {
 		'hr': 'Egzistencijalni potencijali'
 	},
 	'p_with_val': {
-		'en': 'Potential with economic value',
-		'hr': 'Potencijal s ekonomskom vrijednošću'
+		'en': 'Potential with current economic value',
+		'hr': 'Potencijal sa trenutnom ekonomskom vrijednosti'
 	},
 	'p_without_val': {
-		'en': 'Potential without economic value',
-		'hr': 'Potencijal bez ekonomske vrijednosti'
+		'en': 'Potential without current economic value',
+		'hr': 'Potencijal bez trenutne ekonomske vrijednosti'
 	}
 }
 
