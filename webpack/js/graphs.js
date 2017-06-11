@@ -1,7 +1,3 @@
-sectors = ['Bussiness sector', 'National and regional and local government', 'Local people living near the PA', 'Local people living in the PA', 'Civil associations'];
-stakeholder = ['Local people living in the PA', 'Local people living near the PA', 'Civil associations', 'National and regional and local government', 'Non-governmental organizations & experts & scientists', 'National population', 'Global community', 'Bussiness sector'];
-
-
 function renderGraph(data, graph_choices, locale) {
 	if (!!graph_choices.protected_area) {
 		if (graph_choices.graph_type == "overall") { renderPAOverall(data, graph_choices, locale) }
@@ -50,8 +46,7 @@ function renderCountryOverallEconomic(data, graph_choices, locale) {
 
 function renderCountryFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataCountryFlowOfEconValue(data, graph_choices.country)
-		, datasetForSectors = _.pick(dataset, sectors)
-		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
+		, only_counts = countNestedVals(dataset, ['low_eco', 'high_eco'], sizeOf)
 		, sorted_counts = sortNestedVals(only_counts, 'low_eco', 'desc')
 		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(sorted_counts, 'low_eco'))
 		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(sorted_counts, 'high_eco'))
@@ -450,7 +445,10 @@ stakeholder_names = {
 		'en': 'National and regional and local government',
 		'hr': 'Vlada/javni sektor'
 	},
-
+	'National, regional and local government': {
+		'en': 'National, regional and local government',
+		'hr': 'Vlada/javni sektor'
+	},
 	'Local people living near the PA': {
 		'en': 'Local people living near the PA',
 		'hr': 'Stanovništvo u blizini zaštićenog područja'
@@ -463,6 +461,10 @@ stakeholder_names = {
 		'en': 'Civil associations',
 		'hr': 'Udruženja građana'
 	},
+	'Non-governmental organizations, experts, scientists': {
+		'en': 'Non-governmental organizations, experts, scientists',
+		'hr': 'Nevladine udruge, stručnjaci i znanstvenici'
+	},
 	'Non-governmental organizations': {
 		'en': 'Non-governmental organizations',
 		'hr': 'Nevladine udruge'
@@ -471,13 +473,13 @@ stakeholder_names = {
 		'en': 'Experts & Scientists',
 		'hr': 'Stručnjaci i znanstvenici'
 	},
-	'Stanovništvo': {
-		'en': 'Stanovništvo',
-		'hr': 'National population',
+	'National population': {
+		'en': 'National population',
+		'hr': 'Stanovništvo',
 	},
-	'Međunarodna zajednica': {
-		'en': 'Međunarodna zajednica',
-		'hr': 'Global community',
+	'Global community': {
+		'en': 'Global community',
+		'hr': 'Međunarodna zajednica'
 	}
 }
 
@@ -567,8 +569,12 @@ question_names = {
 		'en': 'Wild food plants and mushrooms',
 		'hr': 'Samoniklo jestivo bilje i gljive'
 	},
+	"Jobs in Protected Areas": {
+		'en': 'Jobs in Protected Areas',
+		'hr': 'Zapošljavanje u zaštićenom području'
+	},
 	"Jobs in PA": {
-		'en': 'Jobs in PA',
+		'en': 'Jobs in Protected Areas',
 		'hr': 'Zapošljavanje u zaštićenom području'
 	},
 	"Nature materials": {
