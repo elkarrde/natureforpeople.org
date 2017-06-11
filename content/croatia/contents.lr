@@ -94,7 +94,7 @@ fact_2_title_icon: cntry-msg-hydro-power
 ---
 fact_3_title_icon: cntry-msg-jobs
 ---
-fact_4_title_icon: cntry-msg-logging
+fact_4_title_icon: cntry-msg-forest
 ---
 fact_5_title_icon: cntry-msg-fish-plate
 ---
@@ -128,12 +128,24 @@ fact_4_infobox:
 fact_5_infobox:
 
 <p>
-Gjurčević, Emil. Feeding and Fish Health. Croatian Academy of Science and Arts in Bosnia and Herzegovina, Mostar, BiH; Faculty of Agronomy and Food Technology of the University of Mostar, BiH; Faculty of Agriculture, University of Zagreb. Mostar, 2016</p>
+<a href="http://www.mps.hr/ribarstvo/UserDocsImages/NSPA%20Programska%20polazi%C5%A1ta%20i%20ciljevi.pdf" target="_blank">National strategic plan for development of aquaculture for the period 2014-2020</a>
+</p>
+
+<p>
+Members of the Marikultura Cluster produce over 4000 tonnes of tuna per year, 6000 tonnes of white fish and 3000 tonnes of shellfish and 20 million fishes of fish spawn<br/>
+Source: <a href="http://www.klastermarikultura.hr/o-nama/12-klaster-marikultura" target="_blank">Klaster marikultura</a>
+</p>
+
+<p>
+<a href="https://www.msc.org/" target="_blank">https://www.msc.org</a><br/>
+<a href="http://www.asc-aqua.org" target="_blank">http://www.asc-aqua.org</a>
+</p>
 ---
 fact_6_infobox:
 
 <p>
-<a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a></p>
+<a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a>
+</p>
 ---
 fact_7_infobox:
 <p>
@@ -174,8 +186,8 @@ picto_5_infobox:
 ---
 picto_6_infobox:
 <p>
-Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
-<a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm" target="_blank">Izvor</a>
+Fishing of small pelagic fish represents the most important segment of fisheries in Croatia, which accounts for more than 80% of the total catch.<br />
+<a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm" target="_blank">Fishery in 2015</a>
 </p>
 ---
 picto_7_infobox:

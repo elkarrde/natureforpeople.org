@@ -86,19 +86,19 @@ fact_7_caption: Jedna obitelj bregunica dnevno pojede oko 10.000 komaraca
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
-fact_1_title_icon: tourism
+fact_1_title_icon: cntry-msg-tourism
 ---
-fact_2_title_icon: water
+fact_2_title_icon: cntry-msg-hydro-power
 ---
-fact_3_title_icon: jobs
+fact_3_title_icon: cntry-msg-jobs
 ---
-fact_4_title_icon: forest
+fact_4_title_icon: cntry-msg-forest
 ---
-fact_5_title_icon: water
+fact_5_title_icon: cntry-msg-fish-plate
 ---
-fact_6_title_icon: water
+fact_6_title_icon: cntry-msg-fishing
 ---
-fact_7_title_icon: water
+fact_7_title_icon: cntry-msg-bridge
 ---
 fact_1_infobox:
 
@@ -130,7 +130,25 @@ fact_4_infobox:
 fact_5_infobox:
 
 <p>
-Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umjetnost u Bosni i Hercegovini, Mostar, BiH; Agronomski i prehrambeno-tehnološki fakultet Sveučilišta u Mostaru, BiH; Agronomski fakultet Sveučilišta u Zagrebu. Mostar, 2016</p></p>
+<a href="http://www.mps.hr/ribarstvo/UserDocsImages/NSPA%20Programska%20polazi%C5%A1ta%20i%20ciljevi.pdf" target="_blank">Nacionalni strateški plan razvoja akvakulture za razdoblje 2014.-2020. godine</a>
+</p>
+
+<p>
+Članovi Klastera Marikultura godišnje proizvedu preko 4000 tona tuna, 6000 tona bijele ribe i 3000 tona školjaka te 20 milijuna komada riblje mlađi.<br/>
+Source: <a href="http://www.klastermarikultura.hr/o-nama/12-klaster-marikultura" target="_blank">Klaster marikultura</a>
+</p>
+
+<p>
+<a href="https://www.msc.org/" target="_blank">https://www.msc.org</a><br/>
+<a href="http://www.asc-aqua.org" target="_blank">http://www.asc-aqua.org</a>
+</p>
+---
+fact_6_infobox:
+
+<p>
+<a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a>
+</p>
+
 
 ---
 fact_6_infobox:
@@ -195,7 +213,8 @@ Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umj
 picto_6_infobox:
 <p>
 Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
-Izvor: <a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm">Ribarstvo u 2015.</a></p>
+Izvor: <a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm">Ribarstvo u 2015.</a>
+</p>
 ---
 picto_7_infobox:
 <p>
