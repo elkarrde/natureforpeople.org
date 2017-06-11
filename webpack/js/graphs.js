@@ -52,9 +52,10 @@ function renderCountryFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataCountryFlowOfEconValue(data, graph_choices.country)
 		, datasetForSectors = _.pick(dataset, sectors)
 		, only_counts = countNestedVals(datasetForSectors, ['low_eco', 'high_eco'], sizeOf)
-		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(only_counts, 'low_eco'))
-		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(only_counts, 'high_eco'))
-		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(only_counts)), locale);
+		, sorted_counts = sortNestedVals(only_counts, 'low_eco', 'desc')
+		, low_eco_line = [partition_names['low_eco'][locale]].concat(_.map(sorted_counts, 'low_eco'))
+		, high_eco_line = [partition_names['high_eco'][locale]].concat(_.map(sorted_counts, 'high_eco'))
+		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(sorted_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_flow_econ',
@@ -66,9 +67,10 @@ function renderCountryFlowEconValue(data, graph_choices, locale) {
 function renderCountryMainPotentials(data, graph_choices, locale) {
 	var dataset = pluckDataCountryMainPotentials(data, graph_choices.country)
 		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_p', 'exi_p'], sizeOf)
-		, eco_pots_line = [partition_names['eco_p'][locale]].concat(_.map(only_non_empty, 'eco_p'))
-		, exi_pots_line = [partition_names['exi_p'][locale]].concat(_.map(only_non_empty, 'exi_p'))
-		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(only_non_empty)), locale);
+		, sorted_counts = sortNestedVals(only_non_empty, 'eco_p', 'desc')
+		, eco_pots_line = [partition_names['eco_p'][locale]].concat(_.map(sorted_counts, 'eco_p'))
+		, exi_pots_line = [partition_names['exi_p'][locale]].concat(_.map(sorted_counts, 'exi_p'))
+		, questions_line = localizeNames(question_names, ['x'].concat(_.keys(sorted_counts)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#country_chart_potentials',
