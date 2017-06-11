@@ -1,4 +1,4 @@
-{% macro modal(id, content, top="1.5em", right="1.5em") -%}
+{% macro modal(id, title, content, top="1.5em", right="1.5em") -%}
 <a id="{{ id }}"
    href="javascript://"
    data-toggle="modal"
@@ -14,6 +14,7 @@
                 <a data-dismiss="modal" class="h3 top-0 right-0 grey-light grey-hover absolute lh0 mt1 mr1" href="javascript://">&times;</a>
 
                 <div class="clearfix">
+					<h3>{{title}}</h3>
                     <div class="sm-col-12 mx-auto">{{ content }}</div>
                 </div>
 

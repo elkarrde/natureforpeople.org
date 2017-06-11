@@ -10,6 +10,10 @@ banner_message: Čisti zrak i voda, hrana, oprašivanje usjeva, prirodni materij
 ---
 banner_button_text: Saznajte više
 ---
+banner_image_meta: Park prirode Lastovsko Otočje
+---
+more_info_title: Izvor i više informacija
+---
 fact_1_title: Turizam
 ---
 fact_1_subtitle: Broj posjetitelja
@@ -98,13 +102,13 @@ fact_7_title_icon: water
 ---
 fact_1_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
 
 ---
 fact_2_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/vrednovanje_doprinosa_ekosustava_nacionalnog_parka_sjeverni_velebit_i_parka_prirode_vele.pdf">Vrednovanje doprinosa ekosustava Nacionalnog parka Sjeverni Velebit i Parka prirode Velebit gospodarskom rastu i boljitku čovjeka: Republika Hrvatska</a><br />
 <a href="http://www.mps.hr/default.aspx?id=8451">Naknade za korištenje općekorisnih funkcija šume</a>
 </p>
@@ -112,33 +116,33 @@ fact_2_infobox:
 ---
 fact_3_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="https://vlada.gov.hr/UserDocsImages//Sjednice/2015/253%20sjednica%20Vlade//253%20-%209a.pdf">Nacrt prijedloga Izvješća o stanju prirode u Republici Hrvatskoj za razdoblje od 2008. do 2012. godine</a></p>
 
 ---
 fact_4_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://portal.hrsume.hr/images/stories/godisnja-poslovna-izvjesca/godisnje_izvjesce_za_2015.pdf">Godišnje izvješće 2015.</a><br />
 <a href="http://www.hkisdt.hr/podaci/2015/ostalo/250_godina-26_02_2015-SZ.pdf">stanje u sektoru šumarstva i drvne industrije, 2015.</a></p>
 
 ---
 fact_5_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umjetnost u Bosni i Hercegovini, Mostar, BiH; Agronomski i prehrambeno-tehnološki fakultet Sveučilišta u Mostaru, BiH; Agronomski fakultet Sveučilišta u Zagrebu. Mostar, 2016</p></p>
 
 ---
 fact_6_infobox:
 
-<p>Izvor i više informacija:<br /><
+<p>
 <a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a></p>
 </p>
 
 ---
 fact_7_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 Najvažniji prijedlozi za povećanje održivosti brana uključuju:<br />
 • Dobivanje potpore javnosti na temelju pouzdanih informacija koje
 institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno
@@ -158,25 +162,25 @@ Izvor<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors
 ---
 picto_1_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 Hrvatska agencija za okoliš i prirodu, 2016.</p>
 
 ---
 picto_2_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 WWF Adria statistika – Irma Popović Dujmović kontakt</p>
 
 ---
 picto_3_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
 
 ---
 picto_4_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 Biokovo, Lonjsko polje, Papuk, Velebit za poslovni sektor<br />
 za lokalno stanovništvo - Velebit<br />
 Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
@@ -184,22 +188,16 @@ Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_201
 ---
 picto_5_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umjetnost u Bosni i Hercegovini, Mostar, BiH; Agronomski i prehrambeno-tehnološki fakultet Sveučilišta u Mostaru, BiH; Agronomski fakultet Sveučilišta u Zagrebu. Mostar, 2016</p>
 
 ---
 picto_6_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
 Izvor: <a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm">Ribarstvo u 2015.</a></p>
-
 ---
 picto_7_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/wwf_bregunica_factsheet_final.pdf">Bregunica factsheet</a></p>
-
----
-banner_image_meta: Park prirode Lastovsko Otočje
 ---

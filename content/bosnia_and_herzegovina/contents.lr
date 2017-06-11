@@ -10,11 +10,15 @@ banner_message: Clean air, fresh water, food, pollination, fibers, medicine and 
 ---
 banner_button_text: Find out more
 ---
+banner_image_meta: Livanjsko polje
+---
+more_info_title: Source and more information
+---
 fact_1_title: Forestry
 ---
 fact_1_subtitle: Distribution of income
 ---
-fact_1_copy: In cooperation with IKEA and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
+fact_1_copy: <a href="http://croatia.panda.org/projekti/promoviranje_odrivog_gospodarenja_umama_kao_podrka_odrivom_razvoju_u_bosni_i_hercegovini/" target="_blank">In cooperation with IKEA</a> and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
 ---
 fact_1_question: Can more natural resources in Bosnia and Herzegovina used in a sustainable way?
 ---
@@ -68,7 +72,7 @@ fact_6_copy: Analysis of rivers under threat of unsustainable hydropower develop
 ---
 fact_6_question: How to ensure that investors build and manage hydropower plants in accordance with globally recognized guidelines for the sustainable development of hydropower? How to ensure that the government declare the areas in which the construction of hydropower plants is not allowed.
 ---
-fact_6_caption: Sutjeska National park which is under the threat of hydropower development has more plant species (1800) than the entire Poland.
+fact_6_caption: Sutjeska National park which is under the threat of hydropower development has more plant species (<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf" target="_blank">1800</a>) than the entire <a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf" target="_blank">Poland</a>.
 ---
 cta_button_text: Let's solve challenges together
 ---
@@ -85,34 +89,25 @@ fact_5_title_icon: cntry-msg-growth
 fact_6_title_icon: cntry-msg-bridge
 ---
 fact_1_infobox:
-
-<p>Source and more information:<br />
-<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Forestry in Bosnia and Herzegovina</a></p>
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Forestry in Bosnia and Herzegovina</a></p>
 ---
 fact_2_infobox:
-
-<p>Source and more information:<br />
-<a href="http://www.fzzz.ba/vijesti/reregistracija-nezaposlenih-osoba-u-federaciji-bih">Federal employment Bureau</a><br />
-<a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf">Agency for Statistics of Bosnia and Herzegovina</a></p>
+<p>
+<a href="http://www.fzzz.ba/vijesti/reregistracija-nezaposlenih-osoba-u-federaciji-bih">Federal employment Bureau</a><br/>
+<a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf">Agency for Statistics of Bosnia and Herzegovina</a>
+</p>
 ---
 fact_3_infobox:
-
-<p>Source and more information:<br />
-<a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC" target="_blank">World Bank</a></p>
+<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">World Bank</a></p>
 ---
 fact_4_infobox:
-
-<p>Source and more information:<br />
-<a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
+<p><a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
 ---
 fact_5_infobox:
-
-<p>Source and more information:<br />
-<a href="https://natureforpeople.org/wwf_examples/local_una/">Contributing to a better local community life</a></p>
+<p><a href="https://natureforpeople.org/wwf_examples/local_una/">Contributing to a better local community life</a></p>
 ---
 fact_6_infobox:
-
-<p>Source and more information:<br />
+<p>
 WWF je zajedno s najvažnijim institucijama za zaštitu okoliša iz Albanije, Bosne i Hercegovine, Crne Gore i Hrvatske proveo analizu riječnih tokova kako bi se prepoznali oni još netaknuti i bogati biološkom raznolikošću. Analizom je obuhvaćeno 296 rijeka pod prijetnjom neodrživog hidroenergetskog razvoja, u ukupnoj duljini od 13.278 km i ukupne površine sliva od oko 165.000 km<sup>2</sup>.<br />
 Analiza je uzela u obzir stanje rijeka (na temelju njihove hidrologije, morfologije korita, obalne vegetacije, kvalitete vode i upotrebe zemljišta u podslivu) i njihovo biološko stanje na temelju distribucije slatkovodnih ribljih vrsta i postojanju zaštićenih područja.<br />
 Rezultati analize pokazali su da je razina cjelovitosti riječne mreže izrazito visoka te da su mnoge rijeke još uvijek u vrlo dobrom ili dobrom stanju.<br />
@@ -131,39 +126,30 @@ cijelog riječnog sliva.<br />
 • Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
 • Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
 preusmjeravanje vode.<br />
-Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">ODRŽIVA HIDROENERGIJA U DINARSKOM LUKU - Vodič za investitore</a></p>
+Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">ODRŽIVA HIDROENERGIJA U DINARSKOM LUKU - Vodič za investitore</a>
+</p>
 ---
 picto_1_infobox:
-
-<p>Source and more information:<br />
-<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Forestry in Bosnia and Herzegovina</a></p>
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Forestry in Bosnia and Herzegovina</a></p>
 ---
 picto_2_infobox:
-
-<p>Source and more information:<br />
+<p>
 Data on number of employed people in Republika Srpska provided by the Institute for Protection of Cultural-Historical and Natural Heritage of Republic of Srpska.<br />
-Data on number of employed people in the Federation of Bosna and Herzegovina provided by the Federal Ministry of Environment and Tourism.</p>
+Data on number of employed people in the Federation of Bosna and Herzegovina provided by the Federal Ministry of Environment and Tourism.
+</p>
 ---
 picto_3_infobox:
-
-<p>Source and more information:<br />
-<a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC" target="_blank">World Bank</a></p>
+<p><a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC?locations=BA" target="_blank">World Bank</a></p>
 ---
 picto_4_infobox:
-
-<p>Source and more information:<br />
-<a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
+<p><a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
 ---
 picto_5_infobox:
-
-<p>Source and more information:<br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Protected areas for nature and people</a>
+<p><a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Protected areas for nature and people</a>
 ---
 picto_6_infobox:
-
-<p>Source and more information:<br />
+<p>
 <a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br />
-<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland’s biodiversity at risk</a></p>
----
-banner_image_meta: Livanja fields
+<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland’s biodiversity at risk</a>
+</p>
 ---

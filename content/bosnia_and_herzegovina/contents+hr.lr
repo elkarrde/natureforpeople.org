@@ -10,11 +10,15 @@ banner_message: Čisti zrak i voda, hrana, oprašivanje usjeva, prirodni materij
 ---
 banner_button_text: Saznajte više
 ---
+banner_image_meta: Livanjsko polje
+---
+more_info_title: Izvor i više informacija
+---
 fact_1_title: Šumarstvo
 ---
 fact_1_subtitle: Raspodjela prihoda
 ---
-fact_1_copy: WWF u suradnji s IKEA-om kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
+fact_1_copy: <a href="http://croatia.panda.org/projekti/promoviranje_odrivog_gospodarenja_umama_kao_podrka_odrivom_razvoju_u_bosni_i_hercegovini/" target="_blank">WWF u suradnji s IKEA-om</a> kroz certificiranje šuma (FSC) namjerava smanjiti nezakonitu sječu i promovirati odgovorno upravljanje šumama kako bi se podržao održivi razvoj u Bosni i Hercegovini.
 ---
 fact_1_question: Može li se više prirodnih resursi u Bosni i Hercegovini koristiti  na održivi način?
 ---
@@ -85,34 +89,25 @@ fact_5_title_icon: cntry-msg-growth
 fact_6_title_icon: cntry-msg-bridge
 ---
 fact_1_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine - Stanje šumskog fonda</a></p>
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine - Stanje šumskog fonda</a></p>
 ---
 fact_2_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://www.fzzz.ba/vijesti/reregistracija-nezaposlenih-osoba-u-federaciji-bih">Federalni zavod za zapošljavanje Federacije Bosne i Hercegovine</a><br />
-<a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf">Agencija za statistiku Bosne i Hercegovine</a></p>
+<a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf">Agencija za statistiku Bosne i Hercegovine</a>
+</p>
 ---
 fact_3_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC" target="_blank">Svjetska banka</a></p>
+<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">Svjetska banka</a></p>
 ---
 fact_4_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine</a></p>
+<p><a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine</a></p>
 ---
 fact_5_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="https://natureforpeople.org/hr/wwf_examples/local_una/">Doprinos boljem životu lokalne zajednice</a></p>
+<p><a href="https://natureforpeople.org/hr/wwf_examples/local_una/">Doprinos boljem životu lokalne zajednice</a></p>
 ---
 fact_6_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 WWF je zajedno s najvažnijim institucijama za zaštitu okoliša iz Albanije, Bosne i Hercegovine, Crne Gore i Hrvatske proveo analizu riječnih tokova kako bi se prepoznali oni još netaknuti i bogati biološkom raznolikošću. Analizom je obuhvaćeno 296 rijeka pod prijetnjom neodrživog hidroenergetskog razvoja, u ukupnoj duljini od 13.278 km i ukupne površine sliva od oko 165.000 km<sup>2</sup>.<br />
 Analiza je uzela u obzir stanje rijeka (na temelju njihove hidrologije, morfologije korita, obalne vegetacije, kvalitete vode i upotrebe zemljišta u podslivu) i njihovo biološko stanje na temelju distribucije slatkovodnih ribljih vrsta i postojanju zaštićenih područja.<br />
 Rezultati analize pokazali su da je razina cjelovitosti riječne mreže izrazito visoka te da su mnoge rijeke još uvijek u vrlo dobrom ili dobrom stanju.<br />
@@ -131,40 +126,35 @@ cijelog riječnog sliva.<br />
 • Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
 • Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
 preusmjeravanje vode.<br />
-Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">ODRŽIVA HIDROENERGIJA U DINARSKOM LUKU - Vodič za investitore</a></p>
+Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">ODRŽIVA HIDROENERGIJA U DINARSKOM LUKU - Vodič za investitore</a>
+</p>
 ---
 picto_1_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine</a></p>
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine</a></p>
 ---
 picto_2_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 177 ljudi zaposlenih u Republici Srpskoj i 132 u FBiH:<br />
 Podatke o broju zaposlenih u Republici Srpskoj obezbijedio Institut za zaštitu kulturno-historijskog i prirodnog naslijeđa Republike Srpske.<br />
-Podatke o broju zaposlenih u FBiH obezbijedilo Federalno ministarstvo okoliša i turizma.</p>
+Podatke o broju zaposlenih u FBiH obezbijedilo Federalno ministarstvo okoliša i turizma.
+</p>
 ---
 picto_3_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC" target="_blank">Svjetska banka</a></p>
+<p><a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC?locations=BA" target="_blank">Svjetska banka</a></p>
 ---
 picto_4_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine.</a></p>
 ---
 picto_5_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT)</a></p>
 ---
 picto_6_infobox:
 
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br />
 <a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland's biodiversity at risk</a></p>
----
-banner_image_meta: Livanjsko polje
 ---

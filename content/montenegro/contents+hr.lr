@@ -10,6 +10,10 @@ banner_message: Čisti zrak i voda, hrana, oprašivanje usjeva, prirodni materij
 ---
 banner_button_text: Saznajte više
 ---
+banner_image_meta: Biogradska gora
+---
+more_info_title: Izvor i više informacija
+---
 fact_1_title: Turizam
 ---
 fact_1_subtitle: Prihod od zaštićenih područja
@@ -92,7 +96,7 @@ fact_8_question: Sarađuju li sa preduzetnicima u zaštićenim područjima koja 
 ---
 fact_8_caption: Pčelarstvo je veoma razvijeno na području Skadarskog jezera gdje prema procjenama, postoji cca 7500 košnica sa godišnjom proizvodnjom od blizu 80 tona meda.
 ---
-fact_9_title: Divlje jestivo bilje
+fact_9_title: Divlje voće i bilje
 ---
 fact_9_subtitle: Opće korisne funkcije šuma
 ---
@@ -123,100 +127,93 @@ fact_8_title_icon: cntry-msg-honey-jar
 fact_9_title_icon: cntry-msg-bush
 ---
 fact_1_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="https://www.wttc.org/-/media/files/reports/economic-impact-research/countries-2017/montenegro2017.pdf" target="_blank">Ekonomski uticaj putovanja i turizma u 2017. godini - Crna Gora. Svjetski  savjet za putovanja i turizam.</a></p>
+<p>
+<a href="https://www.wttc.org/-/media/files/reports/economic-impact-research/countries-2017/montenegro2017.pdf" target="_blank">Ekonomski uticaj putovanja i turizma u 2017. godini - Crna Gora. Svjetski  savjet za putovanja i turizam.</a>
+</p>
 ---
 fact_2_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="https://www.monstat.org/userfiles/file/publikacije/CG%20U%20BROJKAMA/MONSTAT_ENG_fin.pdf" target="_blank">Crna Gora u brojkama 2016.<br />
 <a href="http:// www.parksdinarides.org" target="_blank">Parkovi Dinarida</a><br />
-<a href="https://www.cbd.int/doc/world/me/me-nr-05-en.pdf" target="_blank">Peti nacionalni izvještaj prema Konvenciji Ujedinjenih nacija o biodiverzitetu</a></p>
+<a href="https://www.cbd.int/doc/world/me/me-nr-05-en.pdf" target="_blank">Peti nacionalni izvještaj prema Konvenciji Ujedinjenih nacija o biodiverzitetu</a>
+</p>
 ---
 fact_3_infobox:
-
-<p>Izvor i više informacija:<br />
-NP Durmitor- 45, NP Biogradska gora-27, NP Lovćen-21, NP Skadarsko jezero - 45, NP Prokletije-22.</p>
+<p>
+NP Durmitor- 45, NP Biogradska gora-27, NP Lovćen-21, NP Skadarsko jezero - 45, NP Prokletije-22.
+</p>
 ---
 fact_4_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf" target="_blank">Rijeke, linije života dinarskog luka</a><br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf" target="_blank">Vodič za investitore</a></p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf" target="_blank">Vodič za investitore</a>
+</p>
 ---
 fact_5_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="http://www.minpolj.gov.me/ResourceManager/FileDownload.aspx?rId=228513&rType=2" target="_blank">Nacrt strategije upravljanja vodama Crne Gore</a><br />
-<a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
+<a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a>
+</p>
 ---
 fact_6_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 <a href="ftp://ftp.fao.org/docrep/fao/011/k4588e/k4588e00.pdf">Contribution of the forestry sector to national
 economies, 1990-2006</a><br />
-<a href=" https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+<a href=" https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a>
+</p>
 ---
 fact_7_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href=" http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">Procjena uticaja na životnu sredinu brana na Morači na riblju faunu rijeke Morače i Skadarskog jezera</a></p>
+<p>
+<a href=" http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">Procjena uticaja na životnu sredinu brana na Morači na riblju faunu rijeke Morače i Skadarskog jezera</a>
+</p>
 ---
 fact_8_infobox:
-
-<p>Izvor i više informacija:<br />
+<p>
 Da li upravljači zaštićenih područja prepoznaju značaj uključivanja lokalnog stanovništva u upravljanje i da li imaju razvijene adekvatne mehanizme za njihovo uključivanje?<br />
-Prema podacima Zavoda za statistiku Crne Gore MONSTAT</p>
+Prema podacima Zavoda za statistiku Crne Gore MONSTAT<br/>
+<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
+</p>
 ---
 fact_9_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://www.sumins.me/userfiles/file/Strategije/Predlog%20Strategija%20razvoja%20suma%20i%20sumarstva.pdf" target="_blank">Predlog strategija sa planom razvoja šuma i šumarstva 2014. – 2023. godina - Nacionalna šumarska strategija</a></p>
+<p>
+<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
+</p>
 ---
 picto_1_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
+<p><a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
 ---
 picto_2_infobox:
-
-<p>Izvor i više informacija:<br />
-Sa manje od 500.000 EUR u 2009. godini, porasli su na gotovo 1.000.000 EUR u 2013. godini. Podaci Javnog preduzeća za nacionalne parkove Crne Gore.</p>
+<p>Sa manje od 500.000 EUR prihoda u 2009. godini, prihodi su porasli su na gotovo 1.000.000 EUR u 2013. godini. Podaci Javnog preduzeća za nacionalne parkove Crne Gore.</p>
 ---
 picto_3_infobox:
-
-<p>Izvor i više informacija:<br />
-<a hrwf="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744" target="_blank">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
+<p><a hrwf="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744" target="_blank">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
 ---
 picto_4_infobox:
-
-<p>Izvor i više informacija:<br />
-The Tara River cuts the Tara River Canyon, the longest canyon in Montenegro and Europe and second longest in the world after Grand Canyon, at 78 kilometers in length and 1,300 meters at its deepest. The canyon is protected as a UNESCO World Heritage Site, and is a part of Durmitor National Park.<br />
-Izvor: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a></p>
+<p>
+Kanjon rijeke Tare najduži je kanjon u Crnoj Gori i Europi, te drugi najduži na svijetu nakon Grand Canyona. Njegova dužina je 78 kilometara a dubina i do 1300 metara.
+Izvor: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a>
+</p>
 ---
 picto_5_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
+<p><a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i elektroenergetski bilans</a></p>
 ---
 picto_6_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
+<p><a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
 ---
 picto_7_infobox:
-
-<p>Izvor i više informacija:<br />
-<a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+<p><a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
 ---
 picto_8_infobox:
-
-<p>Izvor i više informacija:<br />
-Ekonomsko vrednovanje sistema zaštićenih područja Crne Gore. ISSP</p>
+<p>
+<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
+</p>
 ---
 picto_9_infobox:
-
-<p>Izvor i više informacija:<br />
- Ekonomsko vrednovanje sistema zaštićenih područja Crne Gore. ISSP </p>
+<p>
+<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
+</p>
 ---
