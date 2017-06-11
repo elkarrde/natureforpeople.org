@@ -247,10 +247,10 @@ function generatedTitle() {
 				potentials: "Main potentials"
 			},
 			hr: {
-				overall: "Svih vrijednosti",
-				overall_econ: "Glavnih ekonomske vrijednosti",
-				flow_econ: "Tijeka prihoda dionicima",
-				potentials: "Glavnih potencijala"
+				overall: "svih vrijednosti",
+				overall_econ: "glavnih ekonomskih vrijednosti",
+				flow_econ: "tijeka prihoda dionicima",
+				potentials: "glavnih potencijala"
 			}
 		},
 		countries = {
