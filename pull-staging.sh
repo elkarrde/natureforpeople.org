@@ -4,18 +4,25 @@ set -e;
 
 DEPLOY_USER=root
 DEPLOY_HOST=natureforpeople.org
-GIT_REPO_LOCATION=/root/data/staging/source
-BRANCH_NAME="staging-merge/date-$(date +%s000)"
-TAR_NAME="$BRANCH_NAME.tar.gz"
+GIT_REPO_LOCATION=data/staging/source
+BRANCH_INSTANCE="date-$(date +%s000)"
+BRANCH_NAME="staging-merge/$BRANCH_INSTANCE"
+TAR_NAME="$BRANCH_INSTANCE.tar.gz"
 LOCAL_TAR_STORE=/tmp/$TAR_NAME
 
-ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
-  echo ""
-  echo "---|> Packing code"
-  echo ""
+echo ""
+echo "---|> Packing code"
+echo ""
 
+ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
   tar -czf $TAR_NAME $GIT_REPO_LOCATION
 HERE
+
+echo ""
+echo "---|> Stashing code in working tree"
+echo ""
+
+git stash
 
 echo ""
 echo "---|> Moving to empty branch '$BRANCH_NAME'"
@@ -38,11 +45,11 @@ echo ""
 tar -xzf $LOCAL_TAR_STORE \
   && rm -rf $LOCAL_TAR_STORE
 
-ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
-  echo ""
-  echo "---|> Cleaning server"
-  echo ""
+echo ""
+echo "---|> Cleaning server"
+echo ""
 
+ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
   rm $TAR_NAME
 HERE
 
