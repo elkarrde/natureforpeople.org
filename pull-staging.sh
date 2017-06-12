@@ -56,12 +56,6 @@ git add --all
 git commit -m "Pulled changes from $DEPLOY_HOST at $(date)"
 
 echo ""
-echo "---|> Restore stash"
-echo ""
-
-git stash pop
-
-echo ""
 echo "---|> Cleaning server"
 echo ""
 
@@ -72,4 +66,6 @@ HERE
 
 echo ""
 echo "---|> DONE"
+echo ""
+echo "Remember to use 'git stash pop' to get your uncommited changes back!"
 echo ""
