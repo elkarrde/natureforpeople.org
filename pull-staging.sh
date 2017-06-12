@@ -15,7 +15,10 @@ echo "---|> Packing code"
 echo ""
 
 ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
-  tar -czf $TAR_NAME $GIT_REPO_LOCATION
+  cp -r $GIT_REPO_LOCATION $BRANCH_INSTANCE
+  cd $BRANCH_INSTANCE
+  tar -czf $TAR_NAME *
+  mv $TAR_NAME ~/$TAR_NAME
 HERE
 
 echo ""
@@ -29,8 +32,7 @@ echo "---|> Moving to empty branch '$BRANCH_NAME'"
 echo ""
 
 git branch $BRANCH_NAME \
-  && git checkout $BRANCH_NAME \
-  && rm -r $(ls)
+  && git checkout $BRANCH_NAME
 
 echo ""
 echo "---|> Pulling code"
