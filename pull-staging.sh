@@ -32,7 +32,7 @@ echo "---|> Moving to empty branch '$BRANCH_NAME'"
 echo ""
 
 git branch $BRANCH_NAME \
-  && git checkout $BRANCH_NAME
+  && git checkout $BRANCH_NAME \
   && rm -r $(ls)
 
 echo ""
