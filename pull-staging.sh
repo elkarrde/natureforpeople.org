@@ -49,10 +49,24 @@ tar -xzf $LOCAL_TAR_STORE \
   && rm -rf $LOCAL_TAR_STORE
 
 echo ""
+echo "---|> Commiting changes"
+echo ""
+
+git add --all
+git commit -m "Pulled changes from $DEPLOY_HOST at $(date)"
+
+echo ""
+echo "---|> Restore stash"
+echo ""
+
+git stash pop
+
+echo ""
 echo "---|> Cleaning server"
 echo ""
 
 ssh $DEPLOY_USER@$DEPLOY_HOST << HERE
+  rm -rf $BRANCH_INSTANCE
   rm $TAR_NAME
 HERE
 
