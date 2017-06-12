@@ -33,6 +33,7 @@ echo ""
 
 git branch $BRANCH_NAME \
   && git checkout $BRANCH_NAME
+  && rm -r $(ls)
 
 echo ""
 echo "---|> Pulling code"
