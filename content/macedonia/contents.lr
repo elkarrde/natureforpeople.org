@@ -2,7 +2,7 @@ _model: country
 ---
 _template: macedonia.html
 ---
-title: PABAT
+title: Macedonia
 ---
 h1_title: Macedonia
 ---
@@ -23,8 +23,6 @@ fact_1_caption: visitors in protected areas in 2012
 fact_2_title: Water Resources
 ---
 fact_2_subtitle: Income from exploitation of water
----
-fact_2_copy 60 million annual income is two large hydropower plants that depend on water from Velebit. 0 euros, their annual investment in the protection of forest ecosystems.
 ---
 fact_2_question: What strategies back part of the revenue the local community?
 ---
@@ -51,3 +49,5 @@ fact_4_question: Are the local community sufficiently informed and educated on s
 fact_4_caption: The business sector has a significant gain in three protected areas, while local people together with the business sector in only one (25%).
 ---
 cta_button_text: Let's solve challenges together
+---
+banner_title: Macedonia
