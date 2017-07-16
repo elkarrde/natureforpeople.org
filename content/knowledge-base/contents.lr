@@ -1,3 +1,12 @@
-_model: knowledgebase
+_model: knowledge_base
+---
+slug: knowledge-base
 ---
 title: Knowledge base
+---
+main_headline: Knowledge base
+---
+backline: Search articles
+---
+cta_button_text: Let's solve challenges together
+---

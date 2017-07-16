@@ -74,12 +74,24 @@
   background-color: $grey-light;
 }
 
+.bg-grey {
+    background-color: $grey;
+}
+
 .bg-grey-hover:hover {
   background-color: $grey;
 }
 
 .bg-hr-blue-hover:hover {
   background-color: $hr-blue;
+}
+
+.bg-si-green {
+    background-color: $si-green
+}
+
+.bg-si-green-dark-hover:hover {
+    background-color: $si-green-dark
 }
 
 .bg-hr-blue-red {
@@ -142,6 +154,12 @@ body.recommendations {
     .cc-secondary { color: $al-yellow }
 }
 
+body.knowledge-base {
+    .cc-primary { color: $hr-blue }
+    .cc-primary-dark { color: $hr-blue-dark }
+    .cc-secondary { color: $hr-red }
+}
+
 /* Borders */
 
 body.country-hr .border-gradient, .border-hr-red-blue {
@@ -176,6 +194,10 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
 
 .border-white {
   border: 3px solid $white;
+}
+
+.border-grey-light {
+    border-color: $grey-light;
 }
 
 .border-hr-blue {
