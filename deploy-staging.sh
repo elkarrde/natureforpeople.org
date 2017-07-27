@@ -27,5 +27,3 @@ HERE
 echo ""
 echo "---|> DONE"
 echo ""
-echo "The server may take a little while (max. 5min) to recompile the assets"
-echo ""
