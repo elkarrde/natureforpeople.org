@@ -42,6 +42,15 @@ $mobile-header-height: 50px;
       color: $grey-dark;
     }
   }
+
+  .mobile-link {
+    color: $grey-dark;
+    background-color: $white;
+
+    &:hover, &.active {
+      color: $black-light;
+    }
+  }
 }
 
 body.wwf-examples .global-header .link.active { border-color: $hr-red; }
@@ -50,7 +59,7 @@ body.recommendations .global-header .link.active { border-color: $al-yellow; }
 body.protected-areas .global-header .link.active { border-color: $hr-blue; }
 body.knowledge-base .global-header .link.active { border-color: $red; }
 
-@media (max-width: $breakpoint-sm) {
+@media (max-width: $breakpoint-lg) {
   .page {
     padding-top: $mobile-header-height;
   }
@@ -62,9 +71,15 @@ body.knowledge-base .global-header .link.active { border-color: $red; }
       width: 4rem;
     }
 
-    .nav-dropdown {
-      button {
-        height: $mobile-header-height;
+    .mobile-nav button {
+      height: $mobile-header-height;
+    }
+
+    .mobile-nav-dropdown {
+      margin-top: $mobile-header-height;
+
+      ul {
+        box-shadow: inset 1px 4px 9px -6px #000, 0px 4px 9px $grey;
       }
     }
   }

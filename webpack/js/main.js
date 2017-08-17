@@ -6,6 +6,7 @@ Vue = require('vue');
 
 jQuery = $;
 
+animationHelpers = require('./navigation');
 animationHelpers = require('./animationHelpers');
 dataLoader = require('./dataLoader');
 graphs = require('./graphs');
