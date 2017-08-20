@@ -1,6 +1,8 @@
 $global-header-height: 60px;
 $mobile-header-height: 50px;
 
+$mobile-nav-country-gradient: linear-gradient(135deg, #406591 0%, #B5C9DF 100%);
+
 .page {
   padding-top: $global-header-height;
 }
@@ -34,6 +36,7 @@ $mobile-header-height: 50px;
         border-bottom: 3px solid $grey;
     }
   }
+
   .link-invert {
     color: $grey;
     background-color: $grey-light;
@@ -52,6 +55,48 @@ $mobile-header-height: 50px;
     }
   }
 }
+
+#mobile-nav-countries {
+  .mobile-link-country {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    &.albania {
+      background-image: url(/static/images/country_icons/croatia.png), $mobile-nav-country-gradient;
+    }
+
+    &.bosnia_and_herzegovina {
+      background-image: url(/static/images/country_icons/bosnia_and_herzegovina.png), $mobile-nav-country-gradient;
+    }
+
+    &.croatia {
+      background-image: url(/static/images/country_icons/croatia.png), $mobile-nav-country-gradient;
+    }
+
+    &.kosovo {
+      background-image: url(/static/images/country_icons/kosovo.png), $mobile-nav-country-gradient;
+    }
+
+    &.macedonia {
+      background-image: url(/static/images/country_icons/macedonia.png), $mobile-nav-country-gradient;
+    }
+
+    &.montenegro {
+      background-image: url(/static/images/country_icons/montenegro.png), $mobile-nav-country-gradient;
+    }
+
+    &.serbia {
+      background-image: url(/static/images/country_icons/serbia.png), $mobile-nav-country-gradient;
+    }
+
+    &.slovenia {
+      background-image: url(/static/images/country_icons/slovenia.png), $mobile-nav-country-gradient;
+    }
+  }
+}
+
 
 body.wwf-examples .global-header .link.active { border-color: $hr-red; }
 body.sustainable-business .global-header .link.active { border-color: $xk-orange; }
