@@ -12,7 +12,7 @@ Run the following:
 ./deploy-staging.sh
 ```
 
-__BE AWARE THAT THIS WILL DELETE ALL CHANGES MAD ON THE SERVER AND DEPLOY
+__BE AWARE THAT THIS WILL DELETE ALL CHANGES MADE ON THE SERVER AND DEPLOY
 WHATEVER IS CURRENTLY ON MASTER__
 
 ## Pull code
@@ -20,5 +20,5 @@ WHATEVER IS CURRENTLY ON MASTER__
 Run the following:
 
 ```Bash
-./pull-satging.sh
+./pull-staging.sh
 ```
