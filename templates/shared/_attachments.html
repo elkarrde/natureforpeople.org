@@ -1,3 +1,5 @@
+{% if this.attachments %}
+
 <section class="relative attachments">
   <div class="max-width-4 mx-auto">
     <div class="clearfix">
@@ -5,12 +7,11 @@
       {% for attachment in this.attachments %}
       <div class="sm-col sm-col-6 md-col-4 p2">
         <div class="box-shadow bg-white-dirty p3">
-          <h4 class="h4 m0">Know Yourself Your Inner Power</h4>
-          <div class="grey mt1">
-            <div class="inline-block mr1"><span class="bold">Size:</span> 10 MB</div>
-          </div>
+          <h4 class="h4 m0">{{ attachment.title }}</h4>
+          <div class="grey mt1">{{ attachment.description }}</div>
+          <div class="grey mt1"><span class="bold">Type:</span> {{ attachment._attachment_type}}</div>
           <a
-            href="javascript://"
+            href="{{ attachment.path }}"
             class="block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2"
           >Download document</a>
         </div>
@@ -21,3 +22,5 @@
     </div>
   </div>
 </section>
+
+{% endif %}
