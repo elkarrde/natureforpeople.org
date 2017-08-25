@@ -46,16 +46,13 @@
     </button>
 
     <!-- languages -->
-    <div id="lang-dropdown" class="nav-dropdown right outline-none">
-      <button class="link-invert pointer border-none px2 flex flex-column justify-center items-center">
-        <span class="uppercase mt1">{{ this.alt }}</span>
-        <i class="i-triangle-down" style="margin-top: -0.2em"></i>
-      </button>
-      <ul class="nav-dropdown-options hidden list-reset m0">
-        <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a></li>
-        <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a></li>
-      </ul>
-    </div>
+    <li>
+      <hr class="link-inverted block px2 py0 m0">
+    </li>
+    <a class="link-invert block px2 py1 {% if this.alt == 'hr' %}active{% endif %}" href="{{ '.'|url(alt='hr') }}">Hrvatski</a>
+    <a class="link-invert block px2 py1 {% if this.alt == 'en' %}active{% endif %}" href="{{ '.'|url(alt='en') }}">English</a>
+    <a class="link-invert block px2 py1 {% if this.alt == 'ab' %}active{% endif %}" href="{{ '.'|url(alt='ab') }}">Albanski</a>
+    </ul>
   </div>
 
   <!-- Language dropdown -->
@@ -65,8 +62,15 @@
       <i class="i-triangle-down"></i>
     </button>
     <ul class="nav-dropdown-options hidden list-reset m0">
-      <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a></li>
-      <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a></li>
+      <li>
+        <a class="link-invert block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a>
+      </li>
+      <li>
+        <a class="link-invert block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a>
+      </li>
+      <li>
+        <a class="link-invert block px2 py1" href="{{ '.'|url(alt='ab') }}">AB</a>
+      </li>
     </ul>
   </div>
 
@@ -87,13 +91,13 @@
           <i class="i-triangle-right"></i>
         </div>
       </li>
-        <ul class="mobile-submenu translate100 list-reset m0 py3 bg-white">
-          <li>
-            <span id="select-country-back" class="pointer bg-white grey-dark black-light-hover center block py2">
-              <i class="i-triangle-left"></i>
-              Back
-          </a>
-          </li>
+      <ul class="mobile-submenu translate100 list-reset m0 py3 bg-white">
+        <li>
+          <span id="select-country-back" class="pointer bg-white grey-dark black-light-hover center block py2">
+            <i class="i-triangle-left"></i>
+            Back
+            </a>
+        </li>
         {% for path, label in countries %}
         <li>
           <a class="bg-white grey-dark black-light-hover center block py2 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>

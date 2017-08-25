@@ -1,0 +1,222 @@
+_model: country
+---
+_template: croatia.html
+---
+title: Kroacia
+---
+banner_title: Kroacia
+---
+banner_message: Ajër i  pastër, ujë i freskët, ushqimi, pllenim, materiale natyrore, ilaçe dhe shumë të tjera që natyra na i jap çdo ditë ... falas  
+---
+banner_button_text: Zbulo me shume
+---
+banner_image_meta: Park prirode Lastovsko Otočje
+---
+more_info_title: Izvor i više informacija
+---
+fact_1_title: Turizmi
+---
+fact_1_subtitle: Numri i vizitorëve
+---
+fact_1_copy: Të gjitha zonat e mbrojtura gjenerojnë të ardhura nga turizmi, madje  në dy të tretat e zonave të mbrojtura, turizmi ka qenë burimi kryesor i të ardhurave për komunitetet lokale përreth zonave të mbrojtura. Mirëqenia e komunitetit lokal si rezultat i zhvillimit të turizmit është e lidhur me natyrën e mbrojtur. 
+---
+fact_1_question: A i njohin strategjitë e turizmit zonat e mbrojtura dhe vlerat e tyre të ruajtura natyrore si faktor nxitës  të zhvillimit?
+---
+fact_1_caption: 3.484.331 është numri i biletave të shitura në parqet kombëtare dhe natyrore në vitin 2016.
+---
+fact_2_title: Uji
+---
+fact_2_subtitle: Të ardhurat  nga përdorimi i ujit 
+---
+fact_2_copy: Fitimi vjetor i dy hidrocentraleve që përdorin ujin nga zonat e mbrojtura në Velebit është <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/vrednovanje_doprinosa_ekosustava_nacionalnog_parka_sjeverni_velebit_i_parka_prirode_vele.pdf" target="_blank">60 milionë euro</a>. Investimi i tyre vjetor për mbrojtjen e 200.000 hektarëve të ekosistemit pyjor zë <a href="http://www.mps.hr/default.aspx?id=8451" target="_blank">vetëm 0.0265%  të të ardhurave të hidrocentraleve</a>. Këto të ardhura shkojnë në pyjet e Kroacisë që  duhet t’i  shpenzojnë ato   për  ruajtjen e ekosistemit pyjor, sepse pa një mbulim cilësor prej sipërfaqeve të pyjeve nuk do të ketë ujë për të prodhuar energjinë elektrike nga  hidrocentralet.
+---
+fact_2_question: Cilat strategji duhet të përdoren për të njohur dhe vlerësuar  shërbimet e  ekosistemeve të cilat ofrohen nga natyra  dhe sigurojnë  që një pjesë e fitimeve u kthehen zonave të mbrojtura?
+---
+fact_2_caption: Vetëm 2.76% e lumenjve në Kroaci kanë rrjedhë të lirë dhe nuk kanë pengesa nga burimi deri në grykëderdhjen e  gjerë.
+---
+fact_3_title: Punësimi
+---
+fact_3_subtitle: Vendet e punës për mbrojtjen e natyrës 
+---
+fact_3_copy: Në 8 parqet kombëtare dhe 11 parqet natyrore janë të punësuar më shumë se <a href="https://vlada.gov.hr/UserDocsImages//Sjednice/2015/253%20sjednica%20Vlade//253%20-%209a.pdf" target="_blank">1300 persona, nga të cilët vetëm 15 për qind punojnë në aktivitete qe lidhen drejpërsëdrejti me  mbrojtjen e natyrës ndërsa të tjerët kryesisht punojnë në aktivitetet ndihmësee (mikpritjen, mirëmbajtjen ...)</a>. Nga numri i përgjithshëm i të punësuarve në këto zona të mbrojtura, dy të tretat punojnë vetëm në një zonë të mbrojtur. 
+---
+fact_3_question:  A i kuptojnë vendimmarrësit mundësitë që ofron mbrojtja e natyrës për mbajtjen e të rinjve me arsim të lartë në zonat rurale dhe kontributin e tyre në zhvillimin lokal?
+---
+fact_3_caption: Në 39% të zonave të mbrojtura, punësimi në menaxhimin e zonave të mbrojtura është burimi kryesor i të ardhurave për banorët lokalë.
+---
+fact_4_title: Pylltaria
+---
+fact_4_subtitle: Shpërndarja e të ardhurave
+---
+fact_4_copy: Në vitin 2015 sektori i pyjeve kishte një fitim prej <a href="http://portal.hrsume.hr/images/stories/godisnja-poslovna-izvjesca/godisnje_izvjesce_za_2015.pdf" target="_blank">2 miliardë kuna</a>, ose <a href="http://www.hkisdt.hr/podaci/2015/ostalo/250_godina-26_02_2015-SZ.pdf" target="_blank">1.4 % të PBBsë</a>. Sidoqoftë, popullsia lokale ka përfituar nga pylltaria vetëm në një nga 10 zonat e mbrojtura (parqet natyrore),  përmes pyjeve/  shitjes së drunjve te zjarrit.
+---
+fact_4_question: A janë të informuara mirë komunitetet lokale dhe shërbimet këshilluese për mundësitë dhe praktikat e biznesit të qëndrueshëm, të cilat nuk bazohen vetëm në prerjen e pyjeve? A kanë mbështetje të mjaftueshme për t’i zhvilluar  praktikat e zhvillimit të  biznesit të qëndrueshëm?
+---
+fact_4_caption: Sektori i biznesit ka një fitim të konsiderueshëm në 4 zona të mbrojtura, ndërsa banorët lokalë realizojnë të ardhura të konsiderueshme nga pylltaria vetëm në një zonë të mbrojtur.
+---
+fact_5_title: Akuakultura
+---
+fact_5_subtitle: Sektori ushqimor me rritjen më të shpejtë në botë
+---
+fact_5_copy: Akuakultura sot përfaqëson pothuajse 50% të produkteve të peshkimit që gjenden në treg. Vetëm një akuakulturë e  përgjegjshme  mund të garantojë një prodhim të qëndrueshëm që nuk do të kishte ndikim negativ në mjedis. Evropa është importuesi më i madh i produkteve të peshkimit në botë. Duke zgjedhur produktet e peshkimit që janë rritur në mënyrë të qëndrueshme,  mund të  sigurohet e  ardhmja  e deteve dhe njerëzve.
+---
+fact_5_question: A i monitoron sektori i peshkimit tendencat e akuakulturës së qëndrueshme dhe a i përfshin ato në legjislacionin kombëtar? A  blini ju  produkte të  certifikuara të peshkut - Certifikimi i MSC (Marine Steëartship Council) për produktet e peshkimit   ose ASC (Aquaculture Steëardship Council)  për produktet e peshkimit nga mbarështimi?
+---
+fact_5_caption: Për mbarështimin e një kilogram peshku tuna në Adriatik nevojiten 12 deri në 17 kg  peshk i vogël blu.
+---
+fact_6_title: Peshkimi
+---
+fact_6_subtitle: Peshkimi i qëndrueshme në detin Adriatik
+---
+fact_6_copy: Vlerësohet se 93% e rezervave të peshkut në Detin Mesdhe, rrjedhimisht në Adriatik, janë në <a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">gjendje të keqe</a> dhe një nga shkaqet kryesore për këtë është peshkimi i paqëndrueshëm. Nëse vazhdojmë me këtë ritëm së shpejti nuk do të ketë më  asnjë peshk në Adriatik.
+---
+fact_6_question: A e kuptojnë vendimmarrësit dhe peshkatarët se peshkimi i qëndrueshëm është e vetmja rrugë drejt mbijetesës afatgjate dhe rezervave të mjaftueshme të peshkut në Detin Adriatik?
+---
+fact_6_caption: Në vitin 2015, më shumë se 7000 anije më të shkurtra se 12 metra peshkonin në pjesën kroate të detit Adriatik
+---
+fact_7_title: Lumenjtë
+---
+fact_7_subtitle: Rrjedhat natyrore
+---
+fact_7_copy: Analiza e lumenjve nën kërcënimin e zhvillimit të paqëndrueshëm të hidroenergjisë ka treguar se 73 për qind e lumenjve të Kroacisë janë të paprekura (3.301 km) dhe janë të pasura me biodiversitet. Në të njëjtën kohë, janë duke u rritur kërkesat për përdorimin e lumenjve për prodhimin e energjisë elektrike, të cilat shumë shpesh kanë pasoja jashtëzakonisht negative për vlerat natyrore të lumenjve, si dhe mënyrën e zakonshme të përdorimit të hapësirës dhe burimeve natyrore.
+---
+fact_7_question: Si të sigurohemi që investitorët ndërtojnë dhe menaxhojnë hidrocentralet në përputhje me udhëzimet e pranuara globalisht për zhvillimin e qëndrueshëm të hidroenergjisë? Si të sigurohemi që qeveria do të  shpallë zonat në të cilat nuk lejohet ndërtimi i hidrocentraleve?
+---
+fact_7_caption: Jedna obitelj bregunica dnevno pojede oko 10.000 komaraca
+---
+cta_button_text: Riješimo izazove zajedno
+---
+fact_1_title_icon: cntry-msg-tourism
+---
+fact_2_title_icon: cntry-msg-hydro-power
+---
+fact_3_title_icon: cntry-msg-jobs
+---
+fact_4_title_icon: cntry-msg-forest
+---
+fact_5_title_icon: cntry-msg-fish-plate
+---
+fact_6_title_icon: cntry-msg-fishing
+---
+fact_7_title_icon: cntry-msg-bridge
+---
+fact_1_infobox:
+
+<p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+
+---
+fact_2_infobox:
+
+<p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/vrednovanje_doprinosa_ekosustava_nacionalnog_parka_sjeverni_velebit_i_parka_prirode_vele.pdf">Vrednovanje doprinosa ekosustava Nacionalnog parka Sjeverni Velebit i Parka prirode Velebit gospodarskom rastu i boljitku čovjeka: Republika Hrvatska</a><br />
+<a href="http://www.mps.hr/default.aspx?id=8451">Naknade za korištenje općekorisnih funkcija šume</a>
+</p>
+
+---
+fact_3_infobox:
+
+<p>
+<a href="https://vlada.gov.hr/UserDocsImages//Sjednice/2015/253%20sjednica%20Vlade//253%20-%209a.pdf">Nacrt prijedloga Izvješća o stanju prirode u Republici Hrvatskoj za razdoblje od 2008. do 2012. godine</a></p>
+
+---
+fact_4_infobox:
+
+<p>
+<a href="http://portal.hrsume.hr/images/stories/godisnja-poslovna-izvjesca/godisnje_izvjesce_za_2015.pdf">Godišnje izvješće 2015.</a><br />
+<a href="http://www.hkisdt.hr/podaci/2015/ostalo/250_godina-26_02_2015-SZ.pdf">stanje u sektoru šumarstva i drvne industrije, 2015.</a></p>
+
+---
+fact_5_infobox:
+
+<p>
+<a href="http://www.mps.hr/ribarstvo/UserDocsImages/NSPA%20Programska%20polazi%C5%A1ta%20i%20ciljevi.pdf" target="_blank">Nacionalni strateški plan razvoja akvakulture za razdoblje 2014.-2020. godine</a>
+</p>
+
+<p>
+Članovi Klastera Marikultura godišnje proizvedu preko 4000 tona tuna, 6000 tona bijele ribe i 3000 tona školjaka te 20 milijuna komada riblje mlađi.<br/>
+Source: <a href="http://www.klastermarikultura.hr/o-nama/12-klaster-marikultura" target="_blank">Klaster marikultura</a>
+</p>
+
+<p>
+<a href="https://www.msc.org/" target="_blank">https://www.msc.org</a><br/>
+<a href="http://www.asc-aqua.org" target="_blank">http://www.asc-aqua.org</a>
+</p>
+---
+fact_6_infobox:
+
+<p>
+<a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a>
+</p>
+
+
+---
+fact_6_infobox:
+
+<p>
+<a href="https://www.nature.com/articles/srep44491.epdf?author_access_token=ehT2hgUO6aKq1T32eajg_dRgN0jAjWel9jnR3ZoTv0MoD2X2fubsnPGcl5h8WifHMoCnYg1--KEk1CQgUwetfoxbv52xpuAC4Xi4pepG56_EgGB8DMVLyPOjyS-qb3AT" target="_blank">Historical changes of the Mediterranean Sea ecosystem: modelling the role and impact of primary productivity and fisheries changes over time</a></p>
+</p>
+
+---
+fact_7_infobox:
+
+<p>
+Najvažniji prijedlozi za povećanje održivosti brana uključuju:<br />
+• Dobivanje potpore javnosti na temelju pouzdanih informacija koje
+institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno
+sudjelovanje u odlučivanju.<br />
+• Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim
+aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s
+tehničkog i društvenog aspekta.<br />
+• Izvlačenje maksimuma koristi iz postojećih brana prije izgradnje novih.<br />
+• Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž
+cijelog riječnog sliva.<br />
+• Dijeljenje koristi brana.<br />
+• Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
+• Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
+preusmjeravanje vode.<br />
+Izvor<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">Vodič za investitore</a></p>
+
+---
+picto_1_infobox:
+
+<p>
+Hrvatska agencija za okoliš i prirodu, 2016.</p>
+
+---
+picto_2_infobox:
+
+<p>
+WWF Adria statistika – Irma Popović Dujmović kontakt</p>
+
+---
+picto_3_infobox:
+
+<p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+
+---
+picto_4_infobox:
+
+<p>
+Biokovo, Lonjsko polje, Papuk, Velebit za poslovni sektor<br />
+za lokalno stanovništvo - Velebit<br />
+Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__hr__verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT) u Hrvatskoj</a></p>
+
+---
+picto_5_infobox:
+
+<p>
+Gjurčević, Emil. Hranidba i zdravlje riba. Hrvatska akademija za znanost i umjetnost u Bosni i Hercegovini, Mostar, BiH; Agronomski i prehrambeno-tehnološki fakultet Sveučilišta u Mostaru, BiH; Agronomski fakultet Sveučilišta u Zagrebu. Mostar, 2016</p>
+
+---
+picto_6_infobox:
+<p>
+Ribolov sitne plave ribe predstavlja najznačajniji segment ribarstva u Hrvatskoj na koji otpada više od 80 % ukupnog ulova.<br />
+Izvor: <a href="http://www.dzs.hr/Hrv_Eng/publication/2016/01-04-01_01_2016.htm">Ribarstvo u 2015.</a>
+</p>
+---
+picto_7_infobox:
+<p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/wwf_bregunica_factsheet_final.pdf">Bregunica factsheet</a></p>
+---
