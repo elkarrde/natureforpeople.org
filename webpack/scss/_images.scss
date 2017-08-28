@@ -61,6 +61,8 @@ body.country-si #country-cta { background-image: url('/static/images/Slovenia_CT
     &.forestry { background-image: url('/static/images/banners/forestry.jpg') };
     &.hydropower { background-image: url('/static/images/banners/hydropower.jpg') };
     &.mpa { background-image: url('/static/images/banners/mpa.jpg') };
+
+    &.knowledge-base{ background-image: url('/static/images/banners/knowledge-base.jpg') };
 }
 
 .short-cta {
@@ -80,4 +82,6 @@ body.country-si #country-cta { background-image: url('/static/images/Slovenia_CT
     &.forestry { background-image: url('/static/images/ctas/forestry.jpg') };
     &.hydropower { background-image: url('/static/images/ctas/hydropower.jpg') };
     &.mpa { background-image: url('/static/images/ctas/mpa.jpg') };
+
+    &.knowledge-base{ background-image: url('/static/images/ctas/mpa.jpg') };
 }
