@@ -12,6 +12,7 @@ graphs = require('./graphs');
 pickers = require('./pickers');
 
 require('./modal.js');
+require('./search.js');
 
 pickers.initPickerPlugins($);
 

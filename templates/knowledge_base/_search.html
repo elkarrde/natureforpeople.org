@@ -8,17 +8,18 @@
             <div class="sm-col-12 mx-auto px2 mt4">
 
                 <div class="bg-white-dirty box-shadow p4 mt3">
-                    <div class="flex flex-warp items-center">
+                    <form id="searchForm" class="flex flex-warp items-center">
                         <input
                             name="" type="text" placeholder="Start searching..." value=""
-                            class="col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner"
+                            class="col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner searchForm___input"
                             style="height: 70px"
                         />
-                        <button
+                        <input type="submit"
                             class="bg-hr-blue white bold h4 px4 border-none"
                             style="height: 70px"
-                        >SEARCH</button>
-                    </div>
+                            value="SEARCH"
+                        />
+                    </form>
                     <p class="mt2">
                         Or try one of these categories
                     </p>
@@ -30,14 +31,14 @@
                     </div>
                 </div>
 
-                <div class="right hr-blue h4 mt3">Total 123 search results</div>
+                <div class="right hr-blue h4 mt3 searchForm___total">Total 123 search results</div>
 
             </div>
         </div>
     </div>
 
     <div class="max-width-4 mx-auto">
-        <div class="clearfix">
+        <div class="clearfix searchForm___results">
             <div class="sm-col-10 mx-auto px2 mb4">
 
                 <div>
