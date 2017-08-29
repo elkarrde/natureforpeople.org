@@ -3,7 +3,7 @@ $(document).ready(function() {
         $.ajax({
             data : getParams(),
             type : "POST",
-            url : "http://127.0.0.1:3000/search" //lolcal dev environment
+            url : process.env.KB_URL+"/search" //lolcal dev environment
         })
         .done(function(data) {
             var total = `Total ${data.results.length} search results`;
