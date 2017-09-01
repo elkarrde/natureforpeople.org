@@ -43,12 +43,13 @@ var options = {
 		new ExtractTextPlugin({filename: 'styles.css',
 			allChunks: true
 		}),
-		new webpack.DefinePlugin({
+ 		new webpack.DefinePlugin({
 			'process.env': {
-				NODE_ENV: '"production"'
+				NODE_ENV: '"production"',
+				KB_URL: JSON.stringify(process.env.KB_URL || "http://127.0.0.1:3000")
 			}
 		}),
-		new webpack.optimize.UglifyJsPlugin()
+ 		new webpack.optimize.UglifyJsPlugin()
 	]
 };
 
