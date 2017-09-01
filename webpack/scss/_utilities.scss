@@ -37,6 +37,14 @@
   display: none;
 }
 
+.outline-none {
+  outline: 0;
+
+  :focus {
+    outline: 0;
+  }
+}
+
 .pointer:hover {
   cursor: pointer;
 }

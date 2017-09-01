@@ -14,5 +14,18 @@
 		{% include "homepage/_map.html" %}
 		{% include "homepage/_map_desc.html" %}
 	</div>
-</section>
 
+  <div id="mobile-nav-countries" class="lg-hide px2 my2">
+    {% set countries = bag('country-navigation', this.alt).iteritems() %}
+    <span class="hidden">{{ countries.next()[1] }}</span>
+    {% for path, label in countries %}
+    <a
+      href="{{ path|url(alt) }}"
+      class="mobile-link-country {{ path|replace("/", "") }} block playfair-heavy white h3 text-shadow box-shadow mb1 pl4 pr1 lh1 flex items-center"
+    >
+      {{ label }}
+    </a>
+    {% endfor %}
+  </div>
+
+</section>

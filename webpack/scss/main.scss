@@ -6,13 +6,17 @@
 @import "../node_modules/basscss-background-colors/css/background-colors.css";
 @import "../node_modules/c3/c3.min.css";
 
+/* https://jonsuh.com/hamburgers */
+@import "hamburgers-settings.scss";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
 @import "variables.scss";
 @import "typography.scss";
 @import "colors.scss";
 @import "images.scss";
 @import "utilities.scss";
 @import "icons.scss";
-@import "global_header.scss";
+@import "navigation.scss";
 @import "map.scss";
 @import "graphics.scss";
 @import "pickers.scss";
