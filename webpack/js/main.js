@@ -14,6 +14,7 @@ pickers = require('./pickers');
 
 require('./modal.js');
 require('./search.js');
+require('waypoints/lib/jquery.waypoints');
 
 pickers.initPickerPlugins($);
 
@@ -149,6 +150,7 @@ dataLoader.loadJSON('/static/graph-types.json', function(gt) {
 	});
 })
 
+
 jQuery(document).ready(function(){
 	setGeolocation();
 
@@ -159,19 +161,91 @@ jQuery(document).ready(function(){
 	$('#homepage-view-map-btn').click(function() {
 		$('html,body').animate({scrollTop: $('#homepage-map').offset().top}, 'slow');
 	});
+	if ($("#bosnia-fact-1")[0]){
+		new window.Waypoint({
+			element: document.getElementById('bosnia-fact-1'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+	
+		new window.Waypoint({
+			element: document.getElementById('bosnia-fact-4'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+	}
+	if ($("#croatia-fact-1")[0]){
+		new window.Waypoint({
+			element: document.getElementById('croatia-fact-2'),
+			handler: function(direction) {
+				animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+		
+		new window.Waypoint({
+			element: document.getElementById('croatia-fact-3'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
 
-	animationHelpers.drawDonutChart('#homepage-fact-graph-1', $('#homepage-fact-graph-1').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#homepage-fact-graph-3', $('#homepage-fact-graph-3').data('donut'), 200, 200, ".4em");
+		new window.Waypoint({
+			element: document.getElementById('croatia-fact-4'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+	}
+	if ($("#montenegro-fact-1")[0]){
+		new window.Waypoint({
+			element: document.getElementById('montenegro-fact-5'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#montenegro-fact-5', $('#montenegro-fact-5').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
 
-	animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
-	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
+		new window.Waypoint({
+			element: document.getElementById('montenegro-fact-7'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#montenegro-fact-7', $('#montenegro-fact-7').data('percent'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+	}
+	if ($("#homepage-fact-graph-1")[0]){
+		new window.Waypoint({
+			element: document.getElementById('homepage-fact-graph-1'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#homepage-fact-graph-1', $('#homepage-fact-graph-1').data('donut'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
 
-	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
-
-	animationHelpers.drawDonutChart('#montenegro-fact-5', $('#montenegro-fact-5').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#montenegro-fact-7', $('#montenegro-fact-7').data('percent'), 200, 200, ".4em");
+		new window.Waypoint({
+			element: document.getElementById('homepage-fact-graph-3'),
+			handler: function(direction) {
+				animationHelpers.drawDonutChart('#homepage-fact-graph-3', $('#homepage-fact-graph-3').data('donut'), 200, 200, ".4em");
+				this.destroy();
+			},
+			offset:'right-in-view'
+		});
+	}
 
 	$("#homepage-map .country").click(function() {
 		panToCountry(this);
