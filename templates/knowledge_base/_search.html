@@ -21,13 +21,27 @@
                         />
                     </form>
                     <p class="mt2">
-                        Or try one of these categories
+                        Filters
                     </p>
                     <div class="flex justify-start">
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mr1 bold h6">sustainable business</a>
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">tourism</a>
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">local development</a>
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">energy</a>
+                    </div>
+                    <div class="mt2">
+                        <div id="selected-country" data-value="/all" class="pointer inline-block white bg-grey bg-hr-blue-hover p2 bold h6">
+                            Select Country <i class="i-triangle-down"></i>
+                        </div>
+                        <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0">
+                            <li data-value="/all" class="pointer white bg-grey bg-hr-blue-hover p3">All countries</li>
+                            {% set countries = bag('country-navigation', this.alt).iteritems() %}
+                            {% for path, label in countries %}
+                                {% if loop.index > 1 %}
+                                    <li data-value= {{ path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
+                                {% endif %}
+                            {% endfor %}
+                        </dl>
                     </div>
                 </div>
 
@@ -39,6 +53,8 @@
 
     <div class="max-width-4 mx-auto">
         <div class="clearfix searchForm___results">
+        </div>
+        <div class="searchForm__navigation flex justify-between sm-col-10 mx-auto px2 mb4">
         </div>
     </div>
 </section>

@@ -13,6 +13,7 @@ pickers = require('./pickers');
 
 require('./modal.js');
 require('./search.js');
+require('./dropdown.js');
 
 pickers.initPickerPlugins($);
 

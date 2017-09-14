@@ -1,39 +1,46 @@
+categories=[]
+
 $(document).ready(function() {
     $("#searchForm").on("submit", function(event) {
-        $.ajax({
-            data : getParams(),
-            type : "POST",
-            url : process.env.KB_URL+"/search" //lolcal dev environment
-        })
-        .done(function(data) {
-            var total = `Total ${data.results.length} search results`;
-            $(".searchForm___total").html(total)
-            $(".searchForm___results").html("")
-            drawResults(data.results)
-        });
+        if(($(".searchForm___input").val())==="" && categories.length == 0){
+            $(".searchForm___results").append('<p class="sm-col-10 mx-auto px2 mb4">You must select at least one filter or write one query!');
+            return false; 
+        }
+        requestData(1)
         event.preventDefault();
     });
 });
 
+function requestData(page){
+    $.ajax({
+        data : getParams(page),
+        type : "GET",
+        url : process.env.KB_URL+"/search" //lolcal dev environment
+    })
+    .done(function(data) {
+        var total = `Total ${ data.total_entries } search results`;
+        $(".searchForm___total").html(total)
+        $(".searchForm___results").html("")
+        drawResults(data)
+    });
+};
+
+
 suggestedSearch = function(element){
-    $(".searchForm___input").val(element.text);
-    $("#searchForm").submit();
+    (categories.includes(element.text) ? categories.splice(element.text,1) : categories.push(element.text));
+    $(element).toggleClass("btn-blue-current")
 }
 
-function getParams(){
-    var categories = [true, true, true, true, true];
-    var size = 1000;
+function getParams(page){
+    var limit = 5;
     var adTerms = ($(".searchForm___input").val());
-    var minScore = 0.1
-    var countryName = "croatia"
+    var minScore = 0
+    var countryName = ($("#selected-country").attr('data-value')).substr(1);
     
     return {
-        c1: categories[0],
-        c2: categories[1],
-        c3: categories[2],
-        c4: categories[3],
-        c5: categories[4],
-        size: size,
+        filters: categories,
+        limit: limit,
+        page: page,
         adTerms: adTerms,
         minScore: minScore,
         countryName: countryName
@@ -41,7 +48,8 @@ function getParams(){
 }
 
 function drawResults(results){
-    results.forEach(element => {
+    $(".searchForm___results").html("");
+    results.data.forEach(element => {
         $(".searchForm___results").append(
             `<div class="sm-col-10 mx-auto px2 mb4">
                 <div>
@@ -63,4 +71,44 @@ function drawResults(results){
             </div>`  
         )
     });
+    if(results.page_number != 1){
+        $(".searchForm__navigation").html("");
+        $(".searchForm__navigation").append(`
+            <a href="#" id="prev-btn" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">
+                Back
+            </a>
+        `);
+        $("#prev-btn").click(function(e) {
+            e.preventDefault();
+            requestData( results.page_number - 1 );
+            $('html,body').animate({scrollTop:600},400);
+        });
+    }else{
+        $(".searchForm__navigation").html("");
+        $(".searchForm__navigation").append(`
+            <a href="#" id="prev-btn" class="inline-block mt2 bg-silver white bold h6 p2 not-allowed">
+                Back
+            </a>
+        `);
+        $("#prev-btn").click(function(e) {e.preventDefault();});
+    }
+    if(results.page_number < results.total_pages){
+        $(".searchForm__navigation").append(`
+            <a href="#" id="next-btn" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">
+                Next
+            </a>
+        `);
+        $("#next-btn").click(function(e) {
+            e.preventDefault();
+            requestData( results.page_number + 1 );
+            $('html,body').animate({scrollTop:600},400);
+        });
+    }else{
+        $(".searchForm__navigation").append(`
+            <a href="#" id="next-btn" class="inline-block mt2 bg-silver white bold h6 p2 not-allowed">
+                Next
+            </a>
+        `);
+        $("#next-btn").click(function(e) {e.preventDefault();});
+    }
 }
