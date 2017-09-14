@@ -3,6 +3,8 @@ categories=[]
 $(document).ready(function() {
     $("#searchForm").on("submit", function(event) {
         if(($(".searchForm___input").val())==="" && categories.length == 0){
+            $(".searchForm___results").html("");
+            $(".searchForm__navigation").html("");
             $(".searchForm___results").append('<p class="sm-col-10 mx-auto px2 mb4">You must select at least one filter or write one query!');
             return false; 
         }
