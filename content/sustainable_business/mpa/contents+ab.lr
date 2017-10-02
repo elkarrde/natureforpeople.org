@@ -1,0 +1,54 @@
+_model: factsheet
+---
+_template: sustainable_business_factsheet.html
+---
+title: Turizmi
+---
+bg_text:
+---
+link_button: Turizmi
+---
+main_headline:
+---
+learn_more_button: Lexo më shumë
+---
+intro_title: Bashkëpunimi me komunitetin lokal për menaxhim më të mirë të parqeve detare 
+---
+intro_body:
+
+<p><strong>Deti Adriatik është i ekspozuar ndaj një numri presionesh për shkak të burimeve të tij hapësinore dhe natyrore, nga mbi-peshkimi i organizmave detare deri në urbanizimin intensiv të bregdetit, ndotjen e detit dhe trafikut të intensifikuar të njerëzve dhe mallrave të stimuluara nga turizmi masiv.</strong> Mbi të gjitha, pa dyshim do të rritet edhe ndikimi i ndryshimit të klimës globale. E vetmja përgjigje efektive ndaj këtyre kërcënimeve tani për tani janë zonat e mbrojtura detare. Këto janë zonat e detit dhe bregdetit që janë ndarë për shkak të vlerës së tyre ekologjike, kulturore dhe estetike të cilat  mundësojnë ruajtjen e botës nënujore dhe stimulojnë ekonominë e komunitetit lokal.</p>
+
+<p><strong>Në praktikë, sfida më e madhe ka qenë gjetja e ekuilibrit midis shfrytëzimit dhe mbrojtjes së zonave të mbrojtura detare. WWF-i është përpjekur që të përqëendrohet në arritjen e menaxhimit efektiv të këtyre zonave</strong>, duke  siguruar kështu ruajtjen e burimeve hapësinore dhe natyrore, duke stimuluar ekonominë dhe ruajtjen e traditave të komunitetit lokal. Vizitorët mund të zbulojnë lidhjen e njeriut dhe mjedisit duke mësuar, kuptuar dhe  përjetuar natyrën në mënyrë unike.</p>
+
+<p>WWF-i në kuadër të projekteve të tij nxit bashkëpunimin midis aktorëve, në veçanti përfaqësuesve të sektorit për  mbrojtjen e natyrës, turizmit dhe peshkatarisë si dhe institucioneve dhe individëve <strong>për të arritur qëndrueshmërinë e aktiviteteve ekonomike</strong> që zhvillohen në këto zona.</p>
+
+<h3 class="h3 cc-secondary">Çfarë jemi duke bërë?</h3>
+
+<p>Që nga viti 2009 ne kemi punuar me zonat e mbrojtura detare në rajon në bashkëpunim me shoqatën Sunce (Dielli)  dhe partnerë të tjerë. Në kuadër të dy projekteve, <a href="http://adria.panda.org/projekti/jaanje_mree_zatienih_morskih_podruja_u_hrvatskoj/">MedPAN South</a> dhe <a href="http://adria.panda.org/projekti/sea_med/">SEA-Med</a>, ne kemi bërë përparime të konsiderueshëm në ngritjen e kapaciteteve dhe pavarësinë financiare të institucioneve publike që  menaxhojnë zonat e mbrojtura detare në Kroaci. Zonat e mbrojtura detare kroate në këtë mënyrë  janë bërë pjesë e rrjetit ndërkombëtar të zonave të mbrojtura Mesdhetare (MedPAN) dhe Adriatikut (AdriaPAN), ndërsa punonjësit kanë fituar njohuri të reja, nderkohe qe vetë institucionet kanë përfituar nga planet e menaxhimit, planet e turizmit të qëndrueshëm dhe strategjitë e shumta të marketingut dhe komunikimit.</p>
+
+<p>Kushti themelor për krijimin e një strategjie të mirë për turizëm të qëndrueshëm është përfshirja e popullsisë lokale në hartimin e planeve dhe krijimin e këshillave  përmes të cilave komunitetet lokale drejtpërdrejtë do të përfshihen në menaxhimin e këtyre zonave. Ne jemi krenarë që kemi kontribuar në rritjen e vlerësimit, përkrahjes dhe mirëkuptimit të komunitetit lokal dhe sektorit të biznesit për vlerat mjedisore, sociale dhe ekonomike të zonave të mbrojtura detare.</p>
+
+<p>Në Shqipëri, WWF-i ka marrë pjesë në krijimin e zonave të mbrojtura detare me rezultate konkrete ngritjen e Parkut Kombëtar Karaburun-Sazan. Po ashtu është përgatitur plani i menaxhimit dhe ai për turizëm të qëndrueshëm, të punësuarve u janë forcuar kapacitetet, ndërsa publikut i janë  prezantuar vlerat e asaj zone.  
+</p>
+
+<div class="highlight">
+	<ul>
+		<li>Numri i hulumtimeve dhe studimeve të kryera: <strong>20</strong></li>
+		<li>Numri i institucioneve të përfshira: <strong>51</strong></li>
+		<li>Numri i individëve të përfshirë: <strong>500+</strong></li>
+	</ul>
+</div>
+
+<p>WWF-i aktualisht është duke  zbatuar dy projekte në zonat e mbrojtura detare në rajon. Duke qënë se  puna jonë përfshin përkrahjen e peshkimit të qëndrueshëm dhe akuakulturës, në zonat e mbrojtura detare gjithashtu kemi evidentuar gjendjen e përgjithshme të dobët të detit. Prandaj, në kuadër të projektit <a href="http://croatia.panda.org/en/what_we_do/seas/fishmpablue2_project/">FishMPABlue 2</a> ne kemi punuar për <strong>përmirësimin e menaxhimit të burimeve të peshkut në zonat e mbrojtura detare</strong> në Mesdhe <strong>duke mbrojtur ekosistemet dhe speciet si dhe duke siguruar qëndrueshmërinë e peshkimit bregdetar në zonat e mbrojtura dhe përreth</strong>. Në kuadër të projektit <a href="http://croatia.panda.org/en/what_we_do/seas/mediterranean_ecotourism_destination___destimed/">DestiMED</a> ne  kemi theksuar turizmin e destinacionit për të monitoruar qëndrueshmërinë e produkteve të eko-turizmit në zonat e mbrojtura detare në Detin Mesdhe.</p>
+---
+learn_more: Lexo më shumë
+---
+sust_business_1: Hydropower
+---
+sust_business_2: Turizmi
+---
+sust_business_3: Forestry
+---
+cta_button_text: Let's solve challenges together
+---
+slug: mpa

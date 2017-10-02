@@ -1,0 +1,33 @@
+_model: factsheet
+---
+title: Shembujt e praktikave të mira 
+---
+bg_text:
+---
+main_headline:
+---
+learn_more_button: Learn more
+---
+intro_title: Shembujt e praktikave të mira
+---
+intro_body:
+
+<p>WWF-i ka realizuar projekte në terren në rajon. Rrezultatet do të përdoren si shembuj të praktikës së mirë, me qëllim ndjekjen e tyre  në zona të tjera të mbrojtura në rajon.</p>
+<p>Aktivitetet e zbatuara nga WWF-i do të rezultojnë me:</p>
+<ul>
+<li>produkte të reja turistike</li>
+<li>përfitime ekonomike për komunitetin lokal</li>
+<li>pëemirësim të nivelit të jeteës</li>
+<li>përmirësim në menaxhimin e parkut kombëtar</li>
+<li>zbutjen e kërcënimeve për ruajtjen e natyrës</li>
+</ul>
+<p><b>This is your site: a unique place that highlights examples of good practice and connects people across the region.</b> If you represent an institution, a non-governmental organization, or conduct research on the topics we have mentioned, <a href="mailto:natureforpeople@wwfadria.org">let us know</a>! We are already working on expanding this site in order to contain as many good examples which proves that preserved nature improves our quality of life. Add your logo to ours and create the natureforpeople.org together!</p>
+
+---
+learn_more: Lexo më shumë 
+---
+cta_button_text: Let's solve challenges together
+---
+_template: wwf_examples.html
+---
+slug: wwf-examples

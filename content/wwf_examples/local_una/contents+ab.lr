@@ -1,0 +1,42 @@
+_model: factsheet
+---
+_template: wwf_examples_factsheet.html
+---
+title: Una National Park and local community
+---
+link_button: Local offer
+---
+bg_text:
+---
+main_headline:
+---
+learn_more_button: Lexo më shumë
+---
+intro_title: Të kontribuojmë  për një jetë më të mirë të komunitetit lokal 
+---
+intro_body:
+
+<p>WWF-i  ka njohur Parkun Kombëtar Una si një nxitës  të zhvillimit rajonal. Ai  gjatë dy viteve të fundit ka bërë përparim të rëndësishëm në menaxhim, veçanërisht në përfshirjen e aktoreve  lokalë në aktivitetet e Parkut. Është krijuar një partneritet i fortë midis Parkut Kombëtar Una dhe ofruesve lokalë të shërbimeve turistike, gjë që ka sjellë që  numri i vizitave në park të dyfishohet çdo vit në krahasim me vitet e kaluara.</p>
+
+<p>Bashkëpunimi midis WWF-it dhe Parkut Kombëtar Una ka filluar në vitin 2012 me projektin "Parqet e Harkut Dinarik". Pas një punëtorie me aktorët u vlerësuan përfitimet e vetë zonës së mbrojtur. Analiza tregoi se zona kishte  potencial për rritjen e turizmit, në përfitim të popullsisë  lokale. WWF-i ka mbështetur  Parkun Kombëtar Una në procesin e nominimit për Certifikatën Evropiane për turizëm të qëndrueshëm, certifikatë të cilën parku e fitoi në vitin 2014. Duke u bazuar në këtë moment, WWF-i zhvilloi projektin në terren  Una si një nga gjashtë projektet në terren  në kuadër të programit "Zonat e Mbrojtura për natyrën dhe njerëzit".</p>
+
+<p>Turizmi është një forcë e madhe shtytëse, por gjithashtu është edhe kërcënim potencial për ruajtjen e natyrës, prandaj  ndikimi i tij duhet të monitorohet dhe drejtohet me kujdes. Nga ana tjetër, kërcënim paraqesin planet për ndërtimin e një hidrocentrali në park ose në afërsi të tij. Prandaj  ne po punojmë për të hartuar oferta turistike, për t’i promovuar vlerat e zonës së mbrojtur në mënyrë që popullsia lokale t’i përdorë ato në mënyrë të qëndrueshme.</p>
+
+<h3 class="h3 cc-secondary">Çfarë jemi duke bërë?</h3>
+<p class="highlight">Bashkëpunimi i mirë midis drejtuesve të parkut, popullsisë lokale që i kupton vlerat e parkut dhe sektorit të biznesit që sheh mundësitë për investime të qëndrueshme do të jetë garant i suksesit.</p>
+
+<p>WWF-i ka vazhduar bashkëpunimin e saj me një grup aktorësh me të cilët është takuar gjatë procesit të marrjes së Certifikatës Evropiane për Turizëm të Qëndrueshëm. Së fundmi ky grup është rritur në numër. Grupi ka shprehur dëshirën që të zyrtarizohet dhe me përkrahjen e projektit është themeluar Klusteri "Zhvillimi i Turizmit të Qëndrueshëm ". Kjo shoqatë qytetare do të marrë vendime në lidhje me metodat e zhvillimit të turizmit në Parkun Kombëtar Una. Bashkëpunimi i Parkut Una dhe Klusterit, është lehtësuar dhe nxitur nga WWF-i si dhe kontribuon në menaxhimin më të mirë të parkut, sepse merren parasysh  edhe mendimet e aktorëve.</p>
+
+<p>Ne do të organizojmë sesione të ndryshme trajnimi që synojnë të rrisin motivimin dhe gatishmërinë për të marrë pjesë në procesin e krijimit  të vendeve të punës në sektorin e turizmit. Do të jepen subvencione si nxitës për zhvillimin e produkteve të reja turistike dhe për të përmirësuar cilësinë e produkteve dhe shërbimeve ekzistuese, duke mbështetur kështu zhvillimin ekonomik. Në kuadër të programit "Eko-aware" ne po punojmë edhe për rritjen e ndërgjegjësimit të bashkësisë lokale lidhur me  rëndësinë e mbrojtjes së natyrës.</p>
+
+<h3 class="h3 cc-secondary">Çfarë do të arrijmë?</h3>
+<p>Qëllimi WWF–it dhe Parkut Kombëtar UNA për projektin në terren  është që të sigurojë një zonë të mbrojtur dhe të menaxhuar mirë,  të përmirësojë nivelin e  jetesës për komunitetin lokal si dhe të promovojë përdorimin e qëndrueshëm të burimeve natyrore në zonë. WWF-i do ta përdorë këtë model të menaxhimit për të përmirësuar procesin e punës në zonat e tjera të mbrojtura në rajon. Natyra do të mbrohet më mirë për aq kohë sa komuniteti lokal do të jetë i përfshirë në procesin e menaxhimit dhe do të ketë përfitime të drejtpërdrejta nga zonat e mbrojtura. Në këtë mënyrë do të rritet ndërgjegjësimi tek politikanët dhe vendimmarrësit për domosdoshmërinë e përmirësimit të politikave për mbrojtje më të mirë të resurseve natyrore.</p>
+
+<p class="highlight">Përveç vlerave të tij natyrore, Parku Una dhe WWF-i gjithashtu kanë promovuar vlerat kulturore të zonës, siç janë thurjet tradicionale të qilimave , recetat e vjetra për përgatitjen e ushqimit,  dhuratave  dhe objekteve tradicionale. Gjithashtu, partnerët janë përkujdesur që të përfshihen minoritetet dhe grupet vulnerabël   të cilat kanë qasje të kufizuar në proceset e vendimmarrjes dhe mundësitë e punësimit në atë zonë.</p>
+
+<hr width="70%" align="left" />
+<p><sup>1</sup> <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/making_germia_a_modern_park_1.pdf" target="_blank">Factsheet</a>
+---
+cta_button_text: Let's solve challenges together
+---
+slug: local-offer

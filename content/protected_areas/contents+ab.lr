@@ -1,0 +1,66 @@
+_model: protected_areas
+---
+title: Protected areas
+---
+bg_text:
+---
+step_1: Choose country from dropdown menu:
+---
+country_1: Select country
+---
+step_2: Choose protected area from dropdown menu:
+---
+pa_2: Select protected area
+---
+graph_values: Choose values you want displayed on graph:
+---
+overall_values: Overall values
+---
+econ_values: Overall economic values
+---
+flow_econ_value: Flow of economic value
+---
+potential: Main potentials
+---
+message_head: Nothing to show.
+---
+message_1: Choose country and/or PA
+---
+message_2: Choose values
+---
+cta_button_text: Let's solve challenges together
+---
+country: Country
+---
+pa: Protected areas
+---
+values: Values
+---
+learn_more_backline: Lexo më shumë
+---
+learn_more_cta: Lexo më shumë
+---
+learn_more_title_1: Natyra dhe Njerëzit
+---
+learn_more_title_2: Bizneset e qëndrueshme
+---
+learn_more_title_3: Vlerat e zonave të mbrojtura
+---
+slug: protected-areas
+---
+intro_body:
+<p>WWF-i po  paraqet gjetjet kyçe të
+<a href="http://croatia.panda.org/en/what_we_do/protected_areas/pa4np/pa_bat_methodology/" class="cc-secondary">analizës PA-BAT</a> 
+te cila mund të ofrojë informacione mbi perceprimin nga aktorët e ndryshëm të vlerave aktuale dhe potencialet te zonave të mbrojtura. Analiza është bazuar  në diskutimet që kanë përfshirë më shumë se 1300 ekspertë, nëpunës qeveritarë, sipërmarrës, fermerë dhe përfaqësues të komunitetit lokal në rajon.</p>
+
+<p>Vlerat e parashikuara të zonës së mbrojtur mund të jenë ekzistenciale, ekonomike dhe që kanë potencial ekonomik në të ardhmen. Rezultatet e vlerësimit janë të rëndësishme për menaxherët e zonave të mbrojtura, por edhe për qeveritë kombëtare dhe lokale si dhe aktorët lokalë të cilët po përpiqen ndërmarrin nisma për zhvillim të qëndrueshëm.</p>
+---
+intro_title: Vlerat e zonave të mbrojtura 
+---
+documents:
+
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__eng__verzija_za_web.pdf;;Croatia
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/bih_bat_report_2016_eng_web__3_.pdf;;Bosnia&Herzegovina
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_eng_web__1_.pdf;;Montenegro
+---
+documents_title: National reports
