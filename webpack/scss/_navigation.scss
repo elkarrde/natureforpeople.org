@@ -15,17 +15,18 @@ $mobile-nav-country-gradient: linear-gradient(135deg, #406591 0%, #B5C9DF 100%);
 	  position: absolute;
 	  top: -0.3em;
 	  left: 2rem;
-	  width: 6rem;
+    width: 6rem;
+    z-index: 100;
   }
 
   button, .main-nav > ul > li > a {
     height: $global-header-height;
   }
-
+  /*
   .nav-dropdown:hover .nav-dropdown-options {
     display: block;
   }
-
+  */
   .link {
     color: $grey-dark;
     &:hover {
@@ -122,6 +123,7 @@ body.knowledge-base .global-header .link.active { border-color: $red; }
 
     .mobile-nav-dropdown {
       margin-top: $mobile-header-height;
+      position: relative;
 
       ul {
         box-shadow: inset 1px 4px 9px -6px #000, 0px 4px 9px $grey;
@@ -193,4 +195,20 @@ body.country-me {
       }
     }
   }
+}
+
+.mobile-submenu{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  transition: all .35s;
+}
+
+.translate100{
+  transform: translate(100%);
+}
+#lang-dropdown{
+  z-index: 5;
 }

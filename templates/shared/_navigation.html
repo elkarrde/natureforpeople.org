@@ -82,16 +82,24 @@
       <!-- countries -->
       {% set countries = bag('country-navigation', this.alt).iteritems() %}
       <li>
-        <div class="bg-grey-light white center block py1 h7">
+        <div id="select-country" class="bg-white grey-dark black-light-hover center block py2 pointer">
           <span>{{ countries.next()[1] }}</span>
-          <i class="i-triangle-down"></i>
+          <i class="i-triangle-right"></i>
         </div>
       </li>
-      {% for path, label in countries %}
-      <li>
-        <a class="bg-white grey-dark black-light-hover center block py2 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
-      </li>
-      {% endfor %}
+        <ul class="mobile-submenu translate100 list-reset m0 py3 bg-white">
+          <li>
+            <span id="select-country-back" class="pointer bg-white grey-dark black-light-hover center block py2">
+              <i class="i-triangle-left"></i>
+              Back
+          </a>
+          </li>
+        {% for path, label in countries %}
+        <li>
+          <a class="bg-white grey-dark black-light-hover center block py2 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
     </ul>
 
   </div>

@@ -2,7 +2,6 @@ $ = require("jquery");
 d3 = require('d3');
 c3 = require('c3');
 _ = require('lodash');
-Vue = require('vue');
 
 jQuery = $;
 
@@ -14,38 +13,12 @@ pickers = require('./pickers');
 
 require('./modal.js');
 require('./search.js');
+require('waypoints/lib/jquery.waypoints');
+
+if ( window.location.href.split('/').includes("protected_areas") )
+	{ require('./areaDropdown'); }
 
 pickers.initPickerPlugins($);
-
-pabat_data = null;
-graph_types = null;
-countries = null;
-store = null;
-
-store = {
-	debug: true,
-	state: {
-		country: null,
-		protected_area: null,
-		graph_type: null,
-	},
-	setState: function(prop, newValue) {
-		if (prop == 'country') { this.state.protected_area = null }
-		if (prop == 'graph_type') {
-			$('.graph-card').removeClass('active');
-			$('#graph-card-'+newValue.code).addClass('active');
-		}
-		this.state[prop] = newValue
-		renderGraph(this);
-	},
-	toChoice: function() {
-		return {
-			country: this.state.country['code'],
-			protected_area: this.state.protected_area && this.state.protected_area['code'],
-			graph_type: this.state['graph_type']['code']
-		}
-	}
-}
 
 translations = {
 	default_choice: {
@@ -60,94 +33,17 @@ locale = determineLocale();
 countriesOrder = ["si", "hr", "ba", "rs", "xk", "me", "al", "mk"];
 currentCountry = randomElement(countriesOrder);
 
-var Dropdown = Vue.extend({
-	template: "<div class=\"country-picker picker relative inline-block\"> <button @focus=\"toggled = true\" @blur=\"toggled = false\" class=\"btn border-hr-blue p2 grey-dark pointer-cursor\"> <span>{{ pickedText }}</span> <i class=\"icon-arrow-drop-down right\"></i> </button> <ul v-show=\"toggled\" class=\"z2 m0 absolute bg-hr-blue list-reset\"> <li v-for=\"c in choices\"> <a @mousedown=\"pick(c.name, c.code, $event)\">{{ c.name | localize }}</a> </li> </ul> </div>",
-	filters: {
-		localize: function(value) {
-			return value[this.locale];
-		}
-	},
-	methods: {
-		pick: function (picked, code, event) {
-			var selected = _.first(_.filter(this.choices, { code: code }));
-			this.picked = picked[this.locale];
-			this.shared.setState(this.prop_name, selected);
-		}
-	},
-});
 
-dataLoader.loadJSON('/static/pabat-all.json', function(pd) {
-	pabat_data = pd;
-});
-
-dataLoader.loadJSON('/static/graph-types.json', function(gt) {
-	graph_types = gt;
-
-	dataLoader.loadJSON('/static/countries-parks.json', function(cp) {
-		countries = cp;
-
-		new Dropdown({
-			el: '#graphs-country-picker',
-			data: function() {
-				return {
-					toggled: false,
-					picked: translations.default_choice[locale],
-					shared: store,
-					prop_name: 'country',
-					choices: countries,
-					locale: locale
-				}
-			},
-			computed: {
-				pickedText: function() {
-					return this.picked;
-				}
-			}
-		})
-
-
-		new Dropdown({
-			el: '#graphs-pa-picker',
-			data: function() {
-				return {
-					toggled: false,
-					picked: "-",
-					shared: store,
-					prop_name: 'protected_area',
-					locale: locale
-				}
-			},
-			computed: {
-				choices: function() {
-					var country = this.shared.state.country;
-					return country && country.protected_areas || [];
-				},
-
-				pickedText: function() {
-					var pa = this.shared.state[this.prop_name];
-					return pa ? this.picked : "-";
-				}
-			}
-		})
-
-		new Dropdown({
-			el: '#graphs-type-picker-narrow',
-			data: function() {
-				return {
-					toggled: false,
-					picked: translations.default_choice[locale],
-					shared: store,
-					prop_name: 'graph_type',
-					choices: graph_types,
-					locale: locale
-				}
-			},
-			computed: {
-				pickedText: function() { return this.picked }
-			}
-		})
+function instWaypoint(id, method){
+	new window.Waypoint({
+		element: document.getElementById(id),
+		handler: function(direction) {
+			animationHelpers.drawDonutChart('#'+id, $('#'+id).data(method), 200, 200, ".4em");
+			this.destroy();
+		},
+		offset:'right-in-view'
 	});
-})
+}
 
 jQuery(document).ready(function(){
 	setGeolocation();
@@ -160,18 +56,29 @@ jQuery(document).ready(function(){
 		$('html,body').animate({scrollTop: $('#homepage-map').offset().top}, 'slow');
 	});
 
-	animationHelpers.drawDonutChart('#homepage-fact-graph-1', $('#homepage-fact-graph-1').data('donut'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#homepage-fact-graph-3', $('#homepage-fact-graph-3').data('donut'), 200, 200, ".4em");
+	if ($("#bosnia-fact-1")[0]){
+		instWaypoint('bosnia-fact-1', 'percent');
 
-	animationHelpers.drawBarChart("#croatia-fact-2", parseDataSet($('#croatia-fact-2').data('bars')), 200, 200);
-	animationHelpers.drawDonutChart('#croatia-fact-3', $('#croatia-fact-3').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#croatia-fact-4', $('#croatia-fact-4').data('percent'), 200, 200, ".4em");
+		instWaypoint('bosnia-fact-4', 'percent');
+	}
+	if ($("#croatia-fact-1")[0]){
+		instWaypoint('croatia-fact-2', 'bars');
 
-	animationHelpers.drawDonutChart('#bosnia-fact-1', $('#bosnia-fact-1').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#bosnia-fact-4', $('#bosnia-fact-4').data('percent'), 200, 200, ".4em");
+		instWaypoint('croatia-fact-3', 'percent');
 
-	animationHelpers.drawDonutChart('#montenegro-fact-5', $('#montenegro-fact-5').data('percent'), 200, 200, ".4em");
-	animationHelpers.drawDonutChart('#montenegro-fact-7', $('#montenegro-fact-7').data('percent'), 200, 200, ".4em");
+		instWaypoint('croatia-fact-4', 'percent');
+	}
+	if ($("#montenegro-fact-1")[0]){
+		instWaypoint('montenegro-fact-5', 'percent');
+
+		instWaypoint('montenegro-fact-7', 'percent');
+	}
+	if ($("#homepage-fact-graph-1")[0]){
+		instWaypoint('homepage-fact-graph-1', 'donut');
+
+		instWaypoint('homepage-fact-graph-3', 'donut');
+	}
+
 
 	$("#homepage-map .country").click(function() {
 		panToCountry(this);
@@ -201,84 +108,6 @@ jQuery(document).ready(function(){
   $('[data-toggle="modal"]').modal();
 });
 
-// ---------------------------------------------------------
-// Functions for manipulating graphs on Protected Areas page
-// ---------------------------------------------------------
-
-function renderGraph(store) {
-	if (!graphRenderable(store)) {
-		$('.graphs-container .pabat-chart').addClass('hide');
-		$('.no-graphs').removeClass('hide');
-	} else {
-		graphs.renderGraph(pabat_data, store.toChoice(), locale)
-		$('.graphs-container .pabat-chart').addClass('hide');
-		$('.no-graphs').addClass('hide');
-		$(graphId(store)).removeClass('hide');
-		$('#pav-graph-gen-title').html(generatedTitle(store)).removeClass('hide');
-	}
-}
-
-function graphRenderable(store) {
-	return store.state.country && store.state.graph_type;
-}
-
-function graphId(store) {
-	var graph_prefix = !!store.state.protected_area ? "pa" : "country";
-	return "#" + graph_prefix + "_chart_" + store.state.graph_type.code;
-}
-
-
-function generatedTitle() {
-	var title = null,
-		choices = store.toChoice(),
-		templates = {
-			country: {
-				hr: "Prikaz {VALUE} u {PA_CNT} zaštićenih područja u {COUNTRY}",
-				en: "{VALUE} in {PA_CNT} protected areas in {COUNTRY}",
-			},
-			country_with_pa: {
-				hr: "Prikaz {VALUE} u zaštićenom području {PA}",
-				en: "{VALUE} in {PA}",
-			}
-		},
-		graph_type_name = {
-			en: {
-				overall: "Overall values",
-				overall_econ: "Overall economic values",
-				flow_econ: "Flow of economic value",
-				potentials: "Main potentials"
-			},
-			hr: {
-				overall: "svih vrijednosti",
-				overall_econ: "glavnih ekonomskih vrijednosti",
-				flow_econ: "tijeka prihoda dionicima",
-				potentials: "glavnih potencijala"
-			}
-		},
-		countries = {
-			ALB: { en: "Albania", hr: "Albaniji" },
-			BIH: { en: "Bosnia & Herzegovina", hr: "Bosni i Hercegovini" },
-			HRV: { en: "Croatia", hr: "Hrvatskoj" },
-			MKD: { en: "Macedonia", hr: "Makedoniji" },
-			MNE: { en: "Montenegro", hr: "Crnoj Gori" },
-			SRB: { en: "Serbia", hr: "Srbiji" },
-			SLV: { en: "Slovenia", hr: "Sloveniji" },
-			KOS: { en: "Kosovo", hr: "Kosovu" }
-		}
-
-	if (choices.protected_area) {
-		title = (' ' + templates.country_with_pa[locale]).slice(1);
-		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);
-		title = title.replace("{PA}", pabat_data[choices.country][choices.protected_area]['name']);
-	} else {
-		title = (' ' + templates.country[locale]).slice(1);
-		title = title.replace("{VALUE}", graph_type_name[locale][choices.graph_type]);
-		title = title.replace("{COUNTRY}", countries[choices.country][locale]);
-		title = title.replace("{PA_CNT}", _.size(_.keys(pabat_data[choices.country])));
-	}
-
-	return title;
-}
 
 // ------------------------------------------------------
 // Functions for manipulating the map on the landing page
