@@ -1,0 +1,214 @@
+$global-header-height: 60px;
+$mobile-header-height: 50px;
+
+$mobile-nav-country-gradient: linear-gradient(135deg, #406591 0%, #B5C9DF 100%);
+
+.page {
+  padding-top: $global-header-height;
+}
+
+.global-header {
+	height: $global-header-height;
+  background-color: $white;
+
+  .brand-logo {
+	  position: absolute;
+	  top: -0.3em;
+	  left: 2rem;
+    width: 6rem;
+    z-index: 100;
+  }
+
+  button, .main-nav > ul > li > a {
+    height: $global-header-height;
+  }
+  /*
+  .nav-dropdown:hover .nav-dropdown-options {
+    display: block;
+  }
+  */
+  .link {
+    color: $grey-dark;
+    &:hover {
+      background-color: $grey-light;
+    }
+
+    &.active {
+        border-bottom: 3px solid $grey;
+    }
+  }
+
+  .link-invert {
+    color: $grey;
+    background-color: $grey-light;
+
+    &:hover, &.active {
+      color: $grey-dark;
+    }
+  }
+
+  .mobile-link {
+    color: $grey-dark;
+    background-color: $white;
+
+    &:hover, &.active {
+      color: $black-light;
+    }
+  }
+}
+
+#mobile-nav-countries {
+  .mobile-link-country {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    &.albania {
+      background-image: url(/static/images/country_icons/croatia.png), $mobile-nav-country-gradient;
+    }
+
+    &.bosnia_and_herzegovina {
+      background-image: url(/static/images/country_icons/bosnia_and_herzegovina.png), $mobile-nav-country-gradient;
+    }
+
+    &.croatia {
+      background-image: url(/static/images/country_icons/croatia.png), $mobile-nav-country-gradient;
+    }
+
+    &.kosovo {
+      background-image: url(/static/images/country_icons/kosovo.png), $mobile-nav-country-gradient;
+    }
+
+    &.macedonia {
+      background-image: url(/static/images/country_icons/macedonia.png), $mobile-nav-country-gradient;
+    }
+
+    &.montenegro {
+      background-image: url(/static/images/country_icons/montenegro.png), $mobile-nav-country-gradient;
+    }
+
+    &.serbia {
+      background-image: url(/static/images/country_icons/serbia.png), $mobile-nav-country-gradient;
+    }
+
+    &.slovenia {
+      background-image: url(/static/images/country_icons/slovenia.png), $mobile-nav-country-gradient;
+    }
+  }
+}
+
+
+body.wwf-examples .global-header .link.active { border-color: $hr-red; }
+body.sustainable-business .global-header .link.active { border-color: $xk-orange; }
+body.recommendations .global-header .link.active { border-color: $al-yellow; }
+body.protected-areas .global-header .link.active { border-color: $hr-blue; }
+body.knowledge-base .global-header .link.active { border-color: $red; }
+
+@media (max-width: $breakpoint-lg) {
+  .page {
+    padding-top: $mobile-header-height;
+  }
+
+  .global-header {
+    height: $mobile-header-height;
+
+    .brand-logo {
+      width: 4rem;
+    }
+
+    .mobile-nav button {
+      height: $mobile-header-height;
+    }
+
+    .mobile-nav-dropdown {
+      margin-top: $mobile-header-height;
+      position: relative;
+
+      ul {
+        box-shadow: inset 1px 4px 9px -6px #000, 0px 4px 9px $grey;
+      }
+    }
+  }
+}
+
+/* Country specific coloring */
+
+body.country-hr {
+  .global-header {
+    background-color: $hr-blue;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $hr-blue-dark;
+      }
+    }
+    .link-invert {
+      color: $grey-light;
+      background-color: $hr-blue-dark;
+
+      &:hover, &.active {
+        color: $white;
+      }
+    }
+  }
+}
+
+body.country-ba {
+  .global-header {
+    background-color: $ba-yellow;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $ba-yellow-dark;
+      }
+    }
+    .link-invert {
+      color: $grey-light;
+      background-color: $ba-yellow-dark;
+
+      &:hover, &.active {
+        color: $white;
+      }
+    }
+  }
+}
+
+body.country-me {
+  .global-header {
+    background-color: $me-orange;
+
+    .link {
+      color: $white;
+      &:hover {
+        background-color: $me-orange-dark;
+      }
+    }
+    .link-invert {
+      color: $grey-light;
+      background-color: $me-orange-dark;
+
+      &:hover, &.active {
+        color: $white;
+      }
+    }
+  }
+}
+
+.mobile-submenu{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom: 0;
+  transition: all .35s;
+}
+
+.translate100{
+  transform: translate(100%);
+}
+#lang-dropdown{
+  z-index: 5;
+}

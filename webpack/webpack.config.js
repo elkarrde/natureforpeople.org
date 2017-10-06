@@ -15,7 +15,7 @@ var options = {
 	resolve: {
 		extensions: ['.js'],
 		alias: {
-			'vue$': 'vue/dist/vue.js' // 'vue/dist/vue.common.js' for webpack 1
+			'vue$': 'vue/dist/vue.min.js' // 'vue/dist/vue.common.js' for webpack 1
 		}
 	},
 	module: {

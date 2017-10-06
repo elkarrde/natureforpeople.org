@@ -1,5 +1,13 @@
 /* Text colors */
 
+.black-light {
+  color: $black-light;
+}
+
+.black-light-hover:hover {
+  color: $black-light;
+}
+
 .white {
   color: $white;
 }
@@ -26,10 +34,6 @@
 
 .blue-light {
   color: $blue-light;
-}
-
-.black-light {
-  color: $black-light;
 }
 
 .red {
@@ -75,11 +79,19 @@
 }
 
 .bg-grey {
-    background-color: $grey;
+  background-color: $grey;
 }
 
 .bg-grey-hover:hover {
   background-color: $grey;
+}
+
+.bg-grey-dark {
+  background-color: $grey-dark;
+}
+
+.bg-grey-dark-hover:hover {
+  background-color: $grey-dark;
 }
 
 .bg-hr-blue-hover:hover {
@@ -87,11 +99,11 @@
 }
 
 .bg-si-green {
-    background-color: $si-green
+  background-color: $si-green
 }
 
 .bg-si-green-dark-hover:hover {
-    background-color: $si-green-dark
+  background-color: $si-green-dark
 }
 
 .bg-hr-blue-red {

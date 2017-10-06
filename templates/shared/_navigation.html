@@ -37,40 +37,29 @@
   </nav>
 
   <!-- Mobile navigation -->
-  <div id="mobile-nav" class="nav-dropdown absolute top-0 right-0 lg-hide">
-    <button class="link-invert ml-auto pointer border-none px2 flex">
-      <span class="i-three-bars self-center"></span>
+  <div id="mobile-nav" class="mobile-nav absolute top-0 right-0 lg-hide">
+
+    <button id="mobile-burger" class="hamburger hamburger--squeeze outline-none bg-grey-dark right" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
-    <ul class="nav-dropdown-options hidden list-reset m0">
-      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
-      <li>
-        <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
-      </li>
-      {% endfor %}
 
-      <!-- countries -->
-      {% set countries = bag('country-navigation', this.alt).iteritems() %}
-      <li>
-        <hr class="link-inverted block px2 py0 m0">
-        <span class="hidden">{{ countries.next()[1] }}</span>
-      </li>
-      {% for path, label in countries %}
-      <li>
-        <a class="link-invert block px2 py1 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
-      </li>
-      {% endfor %}
-
-      <!-- languages -->
-      <li>
-        <hr class="link-inverted block px2 py0 m0">
-      </li>
-        <a class="link-invert block px2 py1 {% if this.alt == 'hr' %}active{% endif %}"  href="{{ '.'|url(alt='hr') }}">Hrvatski</a>
-        <a class="link-invert block px2 py1 {% if this.alt == 'en' %}active{% endif %}"  href="{{ '.'|url(alt='en') }}">English</a>
-    </ul>
+    <!-- languages -->
+    <div id="lang-dropdown" class="nav-dropdown right outline-none">
+      <button class="link-invert pointer border-none px2 flex flex-column justify-center items-center">
+        <span class="uppercase mt1">{{ this.alt }}</span>
+        <i class="i-triangle-down" style="margin-top: -0.2em"></i>
+      </button>
+      <ul class="nav-dropdown-options hidden list-reset m0">
+        <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='hr') }}">HR</a></li>
+        <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a></li>
+      </ul>
+    </div>
   </div>
 
   <!-- Language dropdown -->
-  <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0 xs-hide sm-hide md-hide">
+  <div id="lang-dropdown" class="nav-dropdown absolute top-0 right-0 outline-none xs-hide sm-hide md-hide">
     <button class="link-invert pointer border-none px2 flex flex-column justify-center items-center">
       <span class="mt2 uppercase">{{ this.alt }}</span>
       <i class="i-triangle-down"></i>
@@ -80,4 +69,39 @@
       <li><a class="link-invert block px2 py1" href="{{ '.'|url(alt='en') }}">EN</a></li>
     </ul>
   </div>
+
+  <div id="mobile-nav-dropdown" class="mobile-nav-dropdown hidden">
+    <ul class="list-reset m0 py3 bg-white">
+
+      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
+      <li>
+        <a class="bg-white grey-dark black-light-hover center block py2 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
+      </li>
+      {% endfor %}
+
+      <!-- countries -->
+      {% set countries = bag('country-navigation', this.alt).iteritems() %}
+      <li>
+        <div id="select-country" class="bg-white grey-dark black-light-hover center block py2 pointer">
+          <span>{{ countries.next()[1] }}</span>
+          <i class="i-triangle-right"></i>
+        </div>
+      </li>
+        <ul class="mobile-submenu translate100 list-reset m0 py3 bg-white">
+          <li>
+            <span id="select-country-back" class="pointer bg-white grey-dark black-light-hover center block py2">
+              <i class="i-triangle-left"></i>
+              Back
+          </a>
+          </li>
+        {% for path, label in countries %}
+        <li>
+          <a class="bg-white grey-dark black-light-hover center block py2 {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </ul>
+
+  </div>
+
 </header>
