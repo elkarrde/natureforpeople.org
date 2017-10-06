@@ -13,6 +13,7 @@ pickers = require('./pickers');
 
 require('./modal.js');
 require('./search.js');
+require('./dropdown.js');
 require('waypoints/lib/jquery.waypoints');
 
 if ( window.location.href.split('/').includes("protected_areas") )
