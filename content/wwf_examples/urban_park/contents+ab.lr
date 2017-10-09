@@ -2,15 +2,15 @@ _model: factsheet
 ---
 _template: wwf_examples_factsheet.html
 ---
-title: Urban park in park Germia
+title: Parku urban në  Gërmi
 ---
-link_button: Urban parks and people
+link_button: Parqet urbane
 ---
 bg_text:
 ---
 main_headline:
 ---
-learn_more_button: Learn more
+learn_more_button: Lexo më shumë
 ---
 intro_title: Një park modern për një zhvillim më të mirë social dhe ekonomik
 ---
@@ -49,12 +49,12 @@ intro_body:
 </ol>
 
 <hr width="70%" align="left" />
-<p><sup>1</sup> This designation is without prejudice to positions on status and in line with UNSCR 1244/1999 and the ICJ Opinion on the Kosovo independence.</p>
-<p><sup>2</sup> <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/making_germia_a_modern_park_1.pdf" target="_blank">Factsheet</a>
+<p><sup>1</sup> Ky qëndrim është pa paragjykime për pozitën rreth statusit dhe në harmoni me RKSKB 1244/1999 dhe me opinionin e GJND rreth pavarësisë së Kosovës.</p>
+<p><sup>2</sup> <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/making_germia_a_modern_park_1.pdf" target="_blank">Broshurë informuese</a>
 
 ---
-learn_more: Learn more
+learn_more: Lexo më shumë
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat
 ---
 slug: urban-park

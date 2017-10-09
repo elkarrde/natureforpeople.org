@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: wwf_examples_factsheet.html
 ---
-title: Una National Park and local community
+title: Parku Kombëtar Una dhe komuniteti lokal 
 ---
-link_button: Local offer
+link_button: Ofertë lokale
 ---
 bg_text:
 ---
@@ -37,6 +37,6 @@ intro_body:
 <hr width="70%" align="left" />
 <p><sup>1</sup> <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/making_germia_a_modern_park_1.pdf" target="_blank">Factsheet</a>
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat
 ---
 slug: local-offer

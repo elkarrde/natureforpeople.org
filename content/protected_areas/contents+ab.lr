@@ -1,40 +1,40 @@
 _model: protected_areas
 ---
-title: Protected areas
+title: Zonat e mbrojtura
 ---
 bg_text:
 ---
-step_1: Choose country from dropdown menu:
+step_1: Zgjidhni vendin nga menuja e mwposhtme :
 ---
-country_1: Select country
+country_1: Zgjidhni Vendin
 ---
-step_2: Choose protected area from dropdown menu:
+step_2: Zgjidhni zonën e mbrojtur nga meuja e mwposhtme:
 ---
-pa_2: Select protected area
+pa_2: Zgjidhni zonën e mbrojtur
 ---
-graph_values: Choose values you want displayed on graph:
+graph_values: Zgjidhni vlerat që dëshironi të prezantohen në grafikë:
 ---
-overall_values: Overall values
+overall_values: Vlerat e përgjithshme 
 ---
-econ_values: Overall economic values
+econ_values: Vlerat e përgjithshme ekonomike
 ---
-flow_econ_value: Flow of economic value
+flow_econ_value: Rrjedha e vlerave ekonomike 
 ---
-potential: Main potentials
+potential: Potencialet kryesore 
 ---
-message_head: Nothing to show.
+message_head: Asgjë për të treguar.
 ---
-message_1: Choose country and/or PA
+message_1: Zgjidhni vendin dhe/ose ZB
 ---
-message_2: Choose values
+message_2: Zgjidhni Vlerat 
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat 
 ---
-country: Country
+country: Vendi
 ---
-pa: Protected areas
+pa: Zonat e Mbrojtura 
 ---
-values: Values
+values: Vlerat 
 ---
 learn_more_backline: Lexo më shumë
 ---
@@ -59,8 +59,8 @@ intro_title: Vlerat e zonave të mbrojtura
 ---
 documents:
 
-http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__eng__verzija_za_web.pdf;;Croatia
-http://d2ouvy59p0dg6k.cloudfront.net/downloads/bih_bat_report_2016_eng_web__3_.pdf;;Bosnia&Herzegovina
-http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_eng_web__1_.pdf;;Montenegro
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_a5__eng__verzija_za_web.pdf;;Kroacia
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/bih_bat_report_2016_eng_web__3_.pdf;;Bosnja dhe Herzegovina
+http://d2ouvy59p0dg6k.cloudfront.net/downloads/pa_bat_report_2017_eng_web__1_.pdf;;Mali i Zi
 ---
-documents_title: National reports
+documents_title: Raportet kombëtare

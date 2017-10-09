@@ -2,11 +2,11 @@ _model: factsheet
 ---
 _template: sustainable_business_factsheet.html
 ---
-title: Forestry and responsible forest management
+title: Pylltaria dhe menaxhimi i përgjegjshëm i pyjeve 
 ---
 bg_text:
 ---
-link_button: Forestry
+link_button: Pylltaria
 ---
 main_headline:
 ---
@@ -60,14 +60,14 @@ intro_body:
 ---
 learn_more: Lexo më shumë
 ---
-sust_business_1: Hydropower
+sust_business_1: Hidroenergjia 
 ---
-sust_business_2: Tourism
+sust_business_2: Turizmi
 ---
-sust_business_3: Forestry
+sust_business_3: Pylltaria
 ---
-sust_business_4: Fishery
+sust_business_4: Peshkimi 
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat 
 ---
 slug: forestry

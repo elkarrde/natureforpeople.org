@@ -6,7 +6,7 @@ bg_text:
 ---
 main_headline:
 ---
-learn_more_button: Learn more
+learn_more_button: Lexo më shumë
 ---
 intro_title: Shembujt e praktikave të mira
 ---
@@ -21,12 +21,12 @@ intro_body:
 <li>përmirësim në menaxhimin e parkut kombëtar</li>
 <li>zbutjen e kërcënimeve për ruajtjen e natyrës</li>
 </ul>
-<p><b>This is your site: a unique place that highlights examples of good practice and connects people across the region.</b> If you represent an institution, a non-governmental organization, or conduct research on the topics we have mentioned, <a href="mailto:natureforpeople@wwfadria.org">let us know</a>! We are already working on expanding this site in order to contain as many good examples which proves that preserved nature improves our quality of life. Add your logo to ours and create the natureforpeople.org together!</p>
+<p><b>Kjo është faqja e jonë e internetit: një vend unik që thekson shembujt e praktikave të mira dhe bashkon njerëzit në tw gjithë rajonin.</b> Nëse përfaqësoni një institucion, organizatë jo-qeveritare, ose jeni duke kryer kwrkime  rreth temave që kemi përmendur, lutemi <a href="mailto:natureforpeople@wwfadria.org">na informoni</a>! Ne jemi duke punuar që të zgjerojmë këtë faqe interneti, nw mwnyrw qw  ketë sa më shumë shembuj të praktikave të mira që dëshmojnw se ruajtja e natyrës përmirëson cilwsinw e jetws . Bashkoni  logon tuaj me tonën qw tw krijojmw së bashku natureforpeople.org!</p>
 
 ---
 learn_more: Lexo më shumë 
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat 
 ---
 _template: wwf_examples.html
 ---

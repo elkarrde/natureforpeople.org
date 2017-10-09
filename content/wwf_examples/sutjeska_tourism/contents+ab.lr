@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: wwf_examples_factsheet.html
 ---
-title: Sutjeska - River Tourism
+title: Turizmi i lumit Sutjeska
 ---
-link_button: Tourism and recreation
+link_button: Turizmi dhe argwtimi
 ---
 bg_text: 
 ---
@@ -42,6 +42,6 @@ intro_body:
 ---
 learn_more: Lexo më shumë
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat 
 ---
 slug: river-tourism

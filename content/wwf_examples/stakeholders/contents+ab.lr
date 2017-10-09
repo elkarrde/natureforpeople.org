@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: wwf_examples_factsheet.html
 ---
-title: Dialogue with stakeholders
+title: Këshilli i Palëve të Interesit
 ---
-link_button: Stakeholder Councils
+link_button: Dialogu me palët e interesit
 ---
 bg_text: 
 ---
@@ -49,6 +49,6 @@ intro_body:
 ---
 learn_more: Lexo më shumë
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat 
 ---
 slug: stakeholders

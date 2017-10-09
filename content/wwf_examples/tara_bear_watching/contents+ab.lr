@@ -2,9 +2,9 @@ _model: factsheet
 ---
 _template: wwf_examples_factsheet.html
 ---
-title: Bear watching in Tara and Biogradska gora national parks
+title: Vëzhgimi i arinjve në parqet kombëtare Tara dhe Biogradska gora
 ---
-link_button: Wildlife watching
+link_button: Vëzhgim mbi kafshët e  egra
 ---
 bg_text: 
 ---
@@ -63,6 +63,6 @@ intro_body:
 ---
 learn_more: Lexo më shumë
 ---
-cta_button_text: Let's solve challenges together
+cta_button_text: Le të  zgjidhim së bashku sfidat
 ---
 slug: bear-watching
