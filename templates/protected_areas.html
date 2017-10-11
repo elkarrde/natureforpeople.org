@@ -1,14 +1,5 @@
-{% extends "layout.html" %}
-
-{% set body_class = 'protected-areas' %}
-
-{% block body %}
-
-{% include "shared/_short_banner.html" %}
-
-{% include "shared/_intro.html" %}
-
-{% include "shared/_attachments.html" %}
+{% extends "layout.html" %} {% set body_class = 'protected-areas' %} {% block body %} {% include "shared/_short_banner.html"
+%} {% include "shared/_intro.html" %} {% include "shared/_attachments.html" %}
 
 <section id="pa-pickers" class="pt3">
 
@@ -18,13 +9,17 @@
 			<div class="md-col md-col-6 p2 flex-1">
 				<div class="playfair-heavy h2 opacity-10 lh0">{{ this.country }}</div>
 				<p class="h6 bold" style="margin-top: -1rem">{{ this.step_1 }}</p>
-				<div id="graphs-country-picker"><dropdown></dropdown></div>
+				<div id="graphs-country-picker">
+					<dropdown></dropdown>
+				</div>
 			</div>
 
 			<div class="md-col md-col-6 p2 flex-1">
 				<div class="playfair-heavy h2 opacity-10 lh0">{{ this.pa }}</div>
 				<p class="h6 bold" style="margin-top: -1rem">{{ this.step_2 }}</p>
-				<div id="graphs-pa-picker"><dropdown></dropdown></div>
+				<div id="graphs-pa-picker">
+					<dropdown></dropdown>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -38,7 +33,9 @@
 			</div>
 
 			<div class="px2 md-hide lg-hide">
-				<div id="graphs-type-picker-narrow"><dropdown></dropdown></div>
+				<div id="graphs-type-picker-narrow">
+					<dropdown></dropdown>
+				</div>
 			</div>
 
 		</div>
@@ -49,9 +46,9 @@
 </section>
 
 <div class="max-width-4 mx-auto">
-		<div class="clearfix">
-        <h3 id="pav-graph-gen-title" class="hide h3 px2 mt4"></h3>
-    </div>
+	<div class="clearfix">
+		<h3 id="pav-graph-gen-title" class="hide h3 px2 mt4"></h3>
+	</div>
 </div>
 
 <section id="pa-graphs" class="pb4 pt2">
@@ -84,6 +81,4 @@
 	<a href="{{ '/recommendations' | url(alt) }}" class="btn white border-white">{{ this.cta_button_text }}</a>
 </div>
 
-{% include "homepage/_learn_more.html" %}
-
-{% endblock %}
+{% include "homepage/_learn_more.html" %} {% endblock %}
