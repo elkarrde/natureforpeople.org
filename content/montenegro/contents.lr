@@ -18,7 +18,7 @@ fact_1_title: Tourism
 ---
 fact_1_subtitle: Income from the protected areas
 ---
-fact_1_copy: The economy of Montenegro largely depends on tourism. The direct GDP share from the tourism sector was estimated to be 11% in 2016, while its indirect share was estimated to be 22.15%. 
+fact_1_copy: The economy of Montenegro largely depends on tourism. The direct GDP share from the tourism sector was estimated to be 11% in 2016, while its indirect share was estimated to be 22.15%.
 ---
 fact_1_question: Has the business sector been adequately involved in protected area management? Business forums should be established to better analyse possibilities and initiate activities that would turn identified values into profits.
 ---
@@ -42,7 +42,7 @@ fact_3_copy: About 160 people are directly employed in five national parks, and 
 ---
 fact_3_question: Are protected areas promoted as "new job generators" and are they supported by relevant programs (subsidy schemes, credit lines for starting new green businesses, employment programmes)?
 ---
-fact_3_caption: Estimations showed that tourism in protected areas contributed a total of EUR 172 million to gross domestic product and created the equivalent of 7700 full-time jobs. 
+fact_3_caption: Estimations showed that tourism in protected areas contributed a total of EUR 172 million to gross domestic product and created the equivalent of 7700 full-time jobs.
 ---
 fact_4_title: Rivers
 ---
@@ -62,7 +62,7 @@ fact_5_subtitle: Income from using water
 ---
 fact_5_copy: Montenegro belongs to the group of water rich countries, and water resources are one of the main development drivers in the country. About 59.7% of electric power in 2016 was produced by hydropower plants. However, the benefits of hydropower plant production for local communities are few, especially if considered over the long-term.
 ---
-fact_5_question: Are local communities aware of the benefits of ecosystem services provided by water and wetlands, as well as with the potential for their sustainable use? How is money to mitigate negative impacts of hydropower being provided to protected areas and local communities? 
+fact_5_question: Are local communities aware of the benefits of ecosystem services provided by water and wetlands, as well as with the potential for their sustainable use? How is money to mitigate negative impacts of hydropower being provided to protected areas and local communities?
 ---
 fact_5_caption: The share of hydropower plants is <a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">59.7% of total production</a>.
 ---
@@ -100,9 +100,11 @@ fact_9_title: Wild fruits and plants
 ---
 fact_9_subtitle: Beneficial functions of forests
 ---
-fact_9_copy: It is estimated that 170 tons of berries, 30 tons of medical herbs and 70 tons of mushrooms are picked in Biogradska Gora National Park every year. This generates about EUR 1 million annually, with the nationwide total reaching 5 million.
+fact_9_copy:
+<p>It is estimated that 170 tons of berries, 30 tons of medical herbs and 70 tons of mushrooms are picked in Biogradska Gora National Park every year. This generates about EUR 1 million annually, with the nationwide total reaching 5 million.</p>
+<p>Zaštićeno područje ima značajnu ulogu u zaštiti ekosistema koji omogućuju proizvodnja meda, sakupljanje divljeg jestivog bilja i u kontroli održivog korišćenja prirodnih resursa.</p>
 ---
-fact_9_question: Protected areas have an important role in the protection of ecosystems that enable the production of honey and picking of wild edible herbs, and in the sustainable use of natural resources in general. Has market infrastructure for local products and wild edible foods been developed with the aim of supplementing incomes for local residents?
+fact_9_question:Has market infrastructure for local products and wild edible foods been developed with the aim of supplementing incomes for local residents?
 ---
 fact_9_caption: It is estimated that 970 tons of berries are picked in Prokletije and Biogradska Gora National Parks.
 ---
@@ -144,8 +146,7 @@ fact_3_infobox:
 fact_4_infobox:
 <p>
 <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf" target="_blank">Rijeke, linije života dinarskog luka</a><br />
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf" target="_blank">Vodič za investitore</a><
-/p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf" target="_blank">Vodič za investitore</a></p>
 ---
 fact_5_infobox:
 <p>
@@ -163,10 +164,7 @@ fact_7_infobox:
 <p><a href=" http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">Procjena uticaja na životnu sredinu brana na Morači na riblju faunu rijeke Morače i Skadarskog jezera</a></p>
 ---
 fact_8_infobox:
-<p>
-Do protected areas managers recognize the importance of involving local people in the management and whether they have developed adequate mechanisms for their inclusion?<br/>
-According to Montenegro Statistical Office MONSTAT<br/>
-<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a><br/>
+<p><a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a><br/>
 <a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">The economic value of protected areas in Montenegro</a>
 </p>
 ---
@@ -183,7 +181,7 @@ picto_2_infobox:
 <p>With less than EUR 500,000 in revenue in year 2009, revenue has risen to almost EUR 1,000,000 in 2013. Data of the Public Enterprise for National Parks of Montenegro.</p>
 ---
 picto_3_infobox:
-<p><a hrwf="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744" target="_blank">Ekonomska vrijednost zaštićenih područja u Crnoj Gori GEF-UNDP.</a></p>
+<p><a hrwf="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744" target="_blank">The economic value of protected areas in Montenegro</a></p>
 ---
 picto_4_infobox:
 <p>
@@ -191,15 +189,21 @@ The Tara River cuts the Tara River Canyon, the longest canyon in Montenegro and 
 Source: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a>
 </p>
 ---
+picto_5_infobox:
+<p><a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i Elektroenergetski Bilans, Elektroprivreda Crne Gore</a></p>
+---
 picto_6_infobox:
 <p><a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
 ---
 picto_7_infobox:
-<p><a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+<p><a href="http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">Fish fauna of Moraca River and Skadar Lake</a></p>
 ---
 picto_8_infobox:
 <p>
 <a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a><br/>
 <a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">The economic value of protected areas in Montenegro</a>
 </p>
+---
+picto_9_infobox:
+<p><a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Economic valuation of Montenegro’s protected area system</a></p>
 ---

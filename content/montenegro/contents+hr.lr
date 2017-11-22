@@ -100,9 +100,11 @@ fact_9_title: Divlje voće i bilje
 ---
 fact_9_subtitle: Opće korisne funkcije šuma
 ---
-fact_9_copy: Procjenjuje se da se godišnje ubere 170 t bobičastog voća, 30 t ljekovitog bilja i 70 t pečuraka u NP Biogradska gora. Na taj način se generiše cca 1 milion EUR godišnje dok je na nivou države procjena 5 miliona.
+fact_9_copy:
+<p>Procjenjuje se da se godišnje ubere 170 t bobičastog voća, 30 t ljekovitog bilja i 70 t pečuraka u NP Biogradska gora. Na taj način se generiše cca 1 milion EUR godišnje dok je na nivou države procjena 5 miliona.</p>
+<p>Zaštićeno područje ima značajnu ulogu u zaštiti ekosistema koji omogućuju proizvodnja meda, sakupljanje divljeg jestivog bilja i u kontroli održivog korišćenja prirodnih resursa.</p>
 ---
-fact_9_question: Zaštićeno područje ima značajnu ulogu u zaštiti ekosistema koji omogućuju proizvodnja meda, sakupljanje divljeg jestivog bilja i u kontroli održivog korišćenja prirodnih resursa. Razvija li se tržišna infrastruktura za lokalne proizvode i divlje jestive proizvode u cilju poboljšanja i stabilizovanja prihoda za lokalne stanovnike?
+fact_9_question: Razvija li se tržišna infrastruktura za lokalne proizvode i divlje jestive proizvode u cilju poboljšanja i stabilizovanja prihoda za lokalne stanovnike?
 ---
 fact_9_caption: Procjenjuje se da se 970 tona bobičastog voća sakupi u nacionalnim parkovima Prokletije i Biogradska gora.
 ---
@@ -194,15 +196,19 @@ Kanjon rijeke Tare najduži je kanjon u Crnoj Gori i Europi, te drugi najduži n
 Izvor: <a href="http://whc.unesco.org/en/list/100" target="_blank">UNESCO - Durmitor National Park</a>
 </p>
 ---
+picto_5_infobox:
+<p><a href="http://www.epcg.com/o-nama/proizvodnja-i-elektroenergetski-bilans" target="_blank">Proizvodnja i Elektroenergetski Bilans, Elektroprivreda Crne Gore</a></p>
+---
 picto_6_infobox:
 <p><a href=" http://www.fao.org/forest-resources-assessment/current-assessment/en/" target="_blank">Global Forest Resources Assessments</a></p>
 ---
 picto_7_infobox:
-<p><a href="https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf" target="_blank"> https://www.monstat.org/userfiles/file/publikacije/godisnjak%202015/12.sumarstvo.pdf</a></p>
+<p><a href="http://www.greenhome.co.me/fajlovi/greenhome/attach_fajlovi/eng/main-pages/2011/11/pdf/Fish_fauna_of_Moraca_River_and_Skadar_Lake.pdf" target="_blank">Procjena uticaja na životnu sredinu brana na Morači na riblju faunu rijeke Morače i Skadarskog jezera</a></p>
 ---
 picto_8_infobox:
-<p>
-<a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
-<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a>
-</p>
+<p><a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a><br/>
+<a href="http://procurement-notices.undp.org/view_file.cfm?doc_id=31744", target="_blank">Ekonomska procjena zaštićenih područja u Crnoj Gori</a></p>
+---
+picto_9_infobox:
+<p><a href="http://dev.cor.org.me/files/pdf/PAF%20-%20EVPA%20in%20MONTENEGRO-Final-July%202011.pdf" target="_blank">Ekonomska procjena vrijednosti sustava zaštićenih područja u Crnoj Gori</a></p>
 ---
