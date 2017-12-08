@@ -22,7 +22,6 @@ function requestData(page) {
     type: "GET",
     url: process.env.KB_URL + "/search" //lolcal dev environment
   }).done(function(data) {
-    console.log(data);
     var total = `Total ${data.total_entries} search results`;
     $(".searchForm___total").html(total);
     drawResults(data);
@@ -54,13 +53,11 @@ function getParams(page) {
   };
 }
 
+/// WIP
 function categoryLink(keyword) {
   event.preventDefault();
-  console.log(categories);
   categories = [keyword];
-  console.log(categories);
   $("#searchForm").submit();
-  console.log(categories);
 }
 
 function drawResults(results) {
