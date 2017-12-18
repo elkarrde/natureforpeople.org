@@ -104,10 +104,10 @@ function renderPAOverallEconomic(data, graph_choices, locale) {
 
 function renderPAFlowEconValue(data, graph_choices, locale) {
 	var dataset = pluckDataPAFlowEconValue(data, graph_choices.country, graph_choices.protected_area)
-		, only_non_empty = countNestedAndFilterOutZeros(dataset, ['eco_v', 'exi_v'], sizeOf)
-		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(only_non_empty, 'eco_v'))
-		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(only_non_empty, 'exi_v'))
-		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(only_non_empty)), locale);
+		, all_values = countNestedVals(dataset, ['eco_v', 'exi_v'], sizeOf)
+		, eco_vals_line = [partition_names['eco_v'][locale]].concat(_.map(all_values, 'eco_v'))
+		, exi_vals_line = [partition_names['exi_v'][locale]].concat(_.map(all_values, 'exi_v'))
+		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(all_values)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_flow_econ',
@@ -325,7 +325,7 @@ function renderTwicePartedXGraph(data, dataset, locale, opts) {
 			},
 			y: {
 				tick: { values: ticks },
-				label: label_x_axis[locale]
+				label: label_x_axis[data.id][locale]
 			}
 		},
 		color: { pattern: data.colors },
@@ -656,8 +656,40 @@ partition_names = {
 }
 
 label_x_axis = {
-	"en": "Number of protected areas",
-	"hr": "Broj zaštićenih područja"
+	/* Country graphs */
+	"#country_chart_overall": {
+		"en": "Number of protected areas",
+		"hr": "Broj zaštićenih područja"
+	},
+	"#country_chart_overall_econ": {
+		"en": "Number of protected areas",
+		"hr": "Broj zaštićenih područja"
+	},
+	"#country_chart_flow_econ": {
+		"en": "Number of protected areas",
+		"hr": "Broj zaštićenih područja"
+	},
+	"#country_chart_potentials": {
+		"en": "Number of protected areas",
+		"hr": "Broj zaštićenih područja"
+	},
+	/* PA graphs */
+	"#pa_chart_overall": {
+		"en": "Number of stakeholder groups",
+		"hr": "Broj grupa dionika"
+	},
+	"#pa_chart_overall_econ": {
+		"en": "Number of protected area values",
+		"hr": "Broj vrijednosti zaštićenog područja",
+	},
+	"#pa_chart_flow_econ": {
+		"en": "Number of stakeholder groups",
+		"hr": "Broj grupa dionika"
+	},
+	"#pa_chart_potentials": {
+		"en": "Number of stakeholder groups",
+		"hr": "Broj grupa dionika"
+	}
 }
 
 module.exports.renderGraph = renderGraph;
