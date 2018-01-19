@@ -17,7 +17,7 @@
                 {{ facts.info(this.fact_1_title, this.fact_1_title_icon, this.fact_1_subtitle, this.fact_1_copy, this.fact_1_question) }}
             </div>
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('me-tourism1-picto-infobox', this.more_info_title, this.picto_1_infobox) }}
+                {{ infobox.modal('me-tourism1-picto-infobox', this.more_info_title, this.picto_1_infobox, top="3em") }}
                 <div class="flex-wrap flex-column flex items-center justify-center">
                     <div class="w100 center counter-wrapper">
 						<div class="counter raleway-heavy h2" id="montenegro-fact-1"><small class="h3">&euro;</small> 172 <small class="h3">M</small></div>
@@ -37,7 +37,7 @@
                 {{ facts.info(this.fact_2_title, this.fact_2_title_icon, this.fact_2_subtitle, this.fact_2_copy, this.fact_2_question) }}
             </div>
             <div class="col md-col-6 py4 px2 relative">
-                {{ infobox.modal('me-tourism2-picto-infobox', this.more_info_title, this.picto_2_infobox, top="3.5em") }}
+                {{ infobox.modal('me-tourism2-picto-infobox', this.more_info_title, this.picto_2_infobox, top="4.5em") }}
                 <div class="flex-wrap flex-column flex items-center justify-center">
                     <div class="w100 center counter-wrapper">
 						<div class="counter raleway-heavy h2" id="montenegro-fact-2"><small class="h3">&euro;</small> 500 000</div>
@@ -101,7 +101,7 @@
 				{{ facts.info(this.fact_5_title, this.fact_5_title_icon, this.fact_5_subtitle, this.fact_5_copy, this.fact_5_question) }}
 			</div>
 			<div class="col md-col-6 py4 px2 relative">
-				{{ infobox.modal('me-water-picto-infobox', this.more_info_title, this.picto_5_infobox) }}
+				{{ infobox.modal('me-water-picto-infobox', this.more_info_title, this.picto_5_infobox, top="-0.5em") }}
 				<div class="flex-wrap flex-column flex items-center justify-center">
 					<div class="donut" id="montenegro-fact-5" data-percent="59"></div>
 					<p class="px2">{{ this.fact_5_caption }}</p>
@@ -115,6 +115,7 @@
 	<div class="max-width-4 mx-auto">
 		<div class="clearfix flex flex-wrap items-center">
 			<div class="col md-col-6 py4 px2 relative">
+                {{ infobox.modal('me-forestry-fact-infobox', this.more_info_title, this.fact_6_infobox, top="6.5em") }}
 				{{ facts.info(this.fact_6_title, this.fact_6_title_icon, this.fact_6_subtitle, this.fact_6_copy, this.fact_6_question) }}
 			</div>
 			<div class="col md-col-6 py4 px2 relative">
