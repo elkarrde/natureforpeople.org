@@ -24,15 +24,20 @@ function requestData(page) {
   }).done(function(data) {
     var total = `Total ${data.total_entries} search results`;
     $(".searchForm___total").html(total);
+    if (data.total_entries == 0) {
+      $(".no-results-block").removeClass("hide");
+    } else $(".no-results-block").addClass("hide");
     drawResults(data);
   });
 }
 
 suggestedSearch = function(element) {
-  categories.includes(element.text)
-    ? categories.splice(categories.indexOf(element.text), 1)
-    : categories.push(element.text);
+  $(".searchForm___input").val(element.text);
+  $(".btn-blue-current").each(function() {
+    this.classList.remove("btn-blue-current");
+  });
   $(element).toggleClass("btn-blue-current");
+  requestData(1);
 };
 
 function getParams(page) {
