@@ -10,7 +10,7 @@ banner_message: Clean air, fresh water, food, pollination, fibers, medicine and 
 ---
 banner_button_text: Find out more
 ---
-banner_image_meta: Nature Park Lastovo Islands
+banner_image_meta: Nature Park Lastovo
 ---
 more_info_title: Source and more information
 ---
@@ -148,22 +148,19 @@ fact_6_infobox:
 </p>
 ---
 fact_7_infobox:
-<p>
-Najvažniji prijedlozi za povećanje održivosti brana uključuju:<br />
-• Dobivanje potpore javnosti na temelju pouzdanih informacija koje
-institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno
-sudjelovanje u odlučivanju.<br />
-• Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim
-aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s
-tehničkog i društvenog aspekta.<br />
-• Izvlačenje maksimuma koristi iz postojećih brana prije izgradnje novih.<br />
-• Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž
-cijelog riječnog sliva.<br />
-• Dijeljenje koristi brana.<br />
-• Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
-• Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
-preusmjeravanje vode.<br />
-Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">Guide for investors</a></p>
+<p>Najvažniji prijedlozi za povećanje održivosti brana uključuju:</p>
+
+<ul>
+<li>Dobivanje potpore javnosti na temelju pouzdanih informacija koje institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno sudjelovanje u odlučivanju.</li>
+<li>Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s tehničkog i društvenog aspekta.</li>
+<li>Izvlačenje maksimuma koristi iz postojećih brana prije izgradnje novih.</li>
+<li>Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž cijelog riječnog sliva.</li>
+<li>Dijeljenje koristi brana.</li>
+<li>Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.</li>
+<li>Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju preusmjeravanje vode.</li>
+</ul>
+
+<p>Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">Guide for investors</a></p>
 ---
 picto_1_infobox:
 <p>Croatian Agency for Nature and Environment, 2016</p>

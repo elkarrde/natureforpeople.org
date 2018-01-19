@@ -18,7 +18,7 @@ fact_1_title: Forestry
 ---
 fact_1_subtitle: Distribution of income
 ---
-fact_1_copy: <a href="http://croatia.panda.org/projekti/promoviranje_odrivog_gospodarenja_umama_kao_podrka_odrivom_razvoju_u_bosni_i_hercegovini/" target="_blank">In cooperation with IKEA</a> and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
+fact_1_copy: <a href="http://croatia.panda.org/projekti/sume/promoviranje_odrivog_gospodarenja_umama_kao_podrka_odrivom_razvoju_u_bosni_i_hercegovini/" target="_blank">In cooperation with IKEA</a> and through forest certification (FSC) WWF is trying to reduce illegal cutting and promote responsible forest management to support sustainable development in Bosnia and Herzegovina.
 ---
 fact_1_question: Can more natural resources in Bosnia and Herzegovina used in a sustainable way?
 ---
@@ -98,13 +98,13 @@ fact_2_infobox:
 </p>
 ---
 fact_3_infobox:
-<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">World Bank</a></p>
+<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">Electricity production from hydroelectric sources</a></p>
 ---
 fact_4_infobox:
 <p><a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
 ---
 fact_5_infobox:
-<p><a href="https://natureforpeople.org/wwf_examples/local_una/">Contributing to a better local community life</a></p>
+<p><a href="https://natureforpeople.org/wwf_examples/local_una/">Contributing to a better local community life - NP Una</a></p>
 ---
 fact_6_infobox:
 <p>
@@ -145,11 +145,11 @@ picto_4_infobox:
 <p><a href="http://www.bhas.ba/" target="_blank">Agency for Statistics of Bosnia and Herzegovina.</a></p>
 ---
 picto_5_infobox:
-<p><a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Protected areas for nature and people</a>
+<p><a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Cooperation with the local community and stakeholders in Una National Park</a>
 ---
 picto_6_infobox:
-<p>
-<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br />
-<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland’s biodiversity at risk</a>
-</p>
+<ul>
+<li><a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br /></li>
+<li><a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland’s biodiversity at risk</a></li>
+</ul>
 ---

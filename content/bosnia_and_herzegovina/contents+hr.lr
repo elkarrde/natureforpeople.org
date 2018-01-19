@@ -98,13 +98,13 @@ fact_2_infobox:
 </p>
 ---
 fact_3_infobox:
-<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">Svjetska banka</a></p>
+<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">Proizvodnja hirdo-električne energije</a></p>
 ---
 fact_4_infobox:
 <p><a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine</a></p>
 ---
 fact_5_infobox:
-<p><a href="https://natureforpeople.org/hr/wwf_examples/local_una/">Doprinos boljem životu lokalne zajednice</a></p>
+<p><a href="https://natureforpeople.org/hr/wwf_examples/local_una/">Doprinos boljem životu lokalne zajednice - NP Una</a></p>
 ---
 fact_6_infobox:
 <p>
@@ -150,11 +150,12 @@ picto_4_infobox:
 picto_5_infobox:
 
 <p>
-<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT)</a></p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Suradnja s lokalnom zajednicom i dionicima u Nacionalnom parku Una</a>
+</p>
 ---
 picto_6_infobox:
-
-<p>
-<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br />
-<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland's biodiversity at risk</a></p>
+<ul>
+<li><a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br /></li>
+<li><a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland's biodiversity at risk</a></li>
+</ul>
 ---
