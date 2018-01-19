@@ -1,27 +1,36 @@
 <section id="knowledge-base-search" class="relative">
-    <h2
-        class="m0 ml2 playfair-heavy h0 lh0 grey-light sm-hide xs-hide"
-    >{{ this.backline }}</h2>
+    <h2 class="m0 ml2 playfair-heavy h0 lh0 grey-light sm-hide xs-hide">{{ this.backline }}</h2>
 
     <div class="max-width-4 mx-auto">
         <div class="clearfix">
             <div class="sm-col-12 mx-auto px2 mt4">
 
                 <div class="bg-white-dirty box-shadow p4 mt3">
-                    <form id="searchForm" class="flex flex-warp items-center">
-                        <input
-                            name="" type="text" placeholder="Start searching..." value=""
-                            class="col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner searchForm___input"
-                            style="height: 70px"
-                        />
-                        <input type="submit"
-                            class="bg-hr-blue white bold h4 px4 border-none btn-blue-hover pointer"
-                            style="height: 70px"
-                            value="SEARCH"
-                        />
-                    </form>
-                    <p class="mt2">
-                        Filters
+                    <div class="flex items-center">
+                        <div>
+                            <div id="selected-country" data-value="/all" class="flex items-center justify-center center pointer inline-block white bg-hr-blue bg-hr-blue-hover btn-blue-hover p2 bold h6">
+                                <div>Select Country
+                                    <i class="i-triangle-down"></i>
+                                </div>
+                            </div>
+                            <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0 absolute">
+                                <li data-value="/all" class="pointer white bg-grey bg-hr-blue-hover p3">All countries</li>
+                                {% set countries = bag('country-navigation', this.alt).iteritems() %} {% for path, label in countries %} {% if loop.index
+                                > 1 %}
+                                <li data-value={ { path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
+                                {% endif %} {% endfor %}
+                            </dl>
+                        </div>
+                        <form id="searchForm" class="flex flex-warp items-center w100">
+                            <input name="" type="text" placeholder="Start searching..." value="" class="w100 col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner searchForm___input"
+                                style="height: 70px" />
+                            <input type="submit" class="bg-hr-blue white bold h4 px4 border-none btn-blue-hover pointer" style="height: 70px" value="SEARCH"
+                            />
+                        </form>
+
+                    </div>
+                    <p class="mt2 bold">
+                        Predefined Search Terms:
                     </p>
                     <div class="flex justify-start">
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mr1 bold h6">sustainable business</a>
@@ -30,23 +39,14 @@
                         <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">energy</a>
                     </div>
                     <div class="mt2">
-                        <div id="selected-country" data-value="/all" class="pointer inline-block white bg-grey bg-hr-blue-hover p2 bold h6">
-                            Select Country <i class="i-triangle-down"></i>
-                        </div>
-                        <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0">
-                            <li data-value="/all" class="pointer white bg-grey bg-hr-blue-hover p3">All countries</li>
-                            {% set countries = bag('country-navigation', this.alt).iteritems() %}
-                            {% for path, label in countries %}
-                                {% if loop.index > 1 %}
-                                    <li data-value= {{ path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
-                                {% endif %}
-                            {% endfor %}
-                        </dl>
+
                     </div>
                 </div>
-
                 <div class="right hr-blue h4 mt3 searchForm___total mb3"></div>
-
+                <div class="no-results-block hide">
+                    <h2 class="m0 ml2 playfair-heavy h0 lh0 grey-light sm-hide xs-hide">No results</h2>
+                    <p class="mt2 ml3">There are no results for your query. Try with some of our predefined search terms</p>
+                </div>
             </div>
         </div>
     </div>
