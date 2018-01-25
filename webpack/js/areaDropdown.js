@@ -1,5 +1,41 @@
-Vue = require("vue");
 require("./areaTemplates");
+
+(function($) {
+  var isOpen = false;
+
+  $.fn.generateDropdown = function(itemList, callback, options) {
+    var root = this;
+    var settings = $.extend({}, options);
+    this.append("<ul class='z2 m0 absolute bg-hr-blue list-reset'></ul>");
+    itemList.forEach(function(item) {
+      root.find("ul").append("<li><a>" + item + "</a></li>");
+    });
+    this.on("click", "li", callback);
+    isOpen = !isOpen;
+    console.log(isOpen);
+    return this;
+  };
+})(jQuery);
+
+var countries = [
+  "Croatia",
+  "Bosnia",
+  "Serbia",
+  "Montenegro",
+  "Macedonia",
+  "Slovenia"
+];
+
+function printSwag() {
+  console.log("swag");
+}
+
+$("#graphs-country-picker").generateDropdown(countries, printSwag);
+
+// DEPRECATED VUE STUFF
+/*
+Vue = require("vue");
+
 
 pabat_data = null;
 graph_types = null;
@@ -191,3 +227,4 @@ $(document).ready(function() {
       .toggle();
   });
 });
+*/
