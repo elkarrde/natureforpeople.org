@@ -1,36 +1,54 @@
 require("./areaTemplates");
 
-(function($) {
-  var isOpen = false;
+function getLocale() {
+  var locale;
+  if (window.location.href.indexOf("/hr/") > -1) {
+    locale = "hr";
+  } else {
+    locale = "en";
+  }
+  return locale;
+}
 
+function countryDropdown() {
+  dataLoader.loadJSON("/static/countries-parks.json", function(cp) {
+    var countriesList = [];
+    let countries = cp;
+    let locale = getLocale();
+    countries.forEach(function(element) {
+      countriesList.push(element.name[locale]);
+    });
+    $("#graphs-country-picker").generateDropdown(countriesList, printSwag);
+  });
+}
+
+(function($) {
   $.fn.generateDropdown = function(itemList, callback, options) {
     var root = this;
     var settings = $.extend({}, options);
-    this.append("<ul class='z2 m0 absolute bg-hr-blue list-reset'></ul>");
+    this.append(
+      "<ul class='z2 m0 absolute bg-hr-blue list-reset' style='display:none'></ul>"
+    );
     itemList.forEach(function(item) {
-      root.find("ul").append("<li><a>" + item + "</a></li>");
+      root
+        .find("ul")
+        .append("<li data-name='" + item + "'><a>" + item + "</a></li>");
     });
     this.on("click", "li", callback);
-    isOpen = !isOpen;
-    console.log(isOpen);
+    this.on("click", (this, "button"), function(event) {
+      if (event.currentTarget === event.target) {
+        root.find("ul").toggle();
+      }
+    });
     return this;
   };
 })(jQuery);
 
-var countries = [
-  "Croatia",
-  "Bosnia",
-  "Serbia",
-  "Montenegro",
-  "Macedonia",
-  "Slovenia"
-];
-
 function printSwag() {
-  console.log("swag");
+  console.log(this);
 }
 
-$("#graphs-country-picker").generateDropdown(countries, printSwag);
+countryDropdown();
 
 // DEPRECATED VUE STUFF
 /*
