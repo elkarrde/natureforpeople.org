@@ -26,7 +26,13 @@ function requestData(page) {
     $(".searchForm___total").html(total);
     if (data.total_entries == 0) {
       $(".no-results-block").removeClass("hide");
-    } else $(".no-results-block").addClass("hide");
+      $(".searchForm__navigation").addClass("hide");
+      $(".searchForm___total").addClass("hide");
+    } else {
+      $(".no-results-block").addClass("hide");
+      $(".searchForm__navigation").removeClass("hide");
+      $(".searchForm___total").removeClass("hide");
+    }
     drawResults(data);
   });
 }
@@ -146,3 +152,22 @@ function drawResults(results) {
     });
   }
 }
+
+$("#selected-country").on("click", function(e) {
+  e.stopPropagation();
+  $("#country-dropdown").show();
+});
+
+$("body").on("click", "#country-dropdown li", function() {
+  $("#selected-country").html(this.innerHTML);
+  $("#selected-country").attr("data-value", this.getAttribute("data-value"));
+  if ($(".searchForm___input").val() != "") {
+    requestData(1);
+  }
+});
+
+$(document).click(function(e) {
+  if ($("#country-dropdown").is(":visible")) {
+    $("#country-dropdown").hide();
+  }
+});
