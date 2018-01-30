@@ -55,9 +55,9 @@ function instWaypoint(id, method) {
 jQuery(document).ready(function() {
   setGeolocation();
 
-  $(".graph-type-picker").graphTypePicker(function(choice) {
+  /*$(".graph-type-picker").graphTypePicker(function(choice) {
     store.setState("graph_type", choice);
-  });
+  });*/
 
   $("#homepage-view-map-btn").click(function() {
     $("html,body").animate(
