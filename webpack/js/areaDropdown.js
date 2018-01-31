@@ -11,83 +11,60 @@ function getLocale() {
   return locale;
 }
 
-var areasData;
+// ---------------------------------------------------------
+// Functions for manipulating graphs on Protected Areas page
+// ---------------------------------------------------------
 
-function countryDropdown() {
-  dataLoader.loadJSON("/static/countries-parks.json", function(cp) {
-    var countriesList = [];
-    areasData = cp;
-    let locale = getLocale();
-    areasData.forEach(function(element) {
-      countriesList.push({ name: element.name[locale], code: element.code });
-    });
-    $("#graphs-country-picker").generateDropdown(countriesList, selectCountry);
-  });
+function graphRenderable(state) {
+  return state.country && state.graph_type;
 }
 
-(function($) {
-  $.fn.generateDropdown = function(itemList, callback, options) {
-    var root = this;
-    var settings = $.extend({}, options);
-    this.append(
-      "<ul class='z2 m0 absolute bg-hr-blue list-reset' style='display:none'></ul>"
+function graphId(state) {
+  var graph_prefix = state.protected_area ? "pa" : "country";
+  return "#" + graph_prefix + "_chart_" + state.graph_type;
+}
+
+function generatedTitle(choices, pabatData) {
+  var title = null,
+    templates = countryTemplates,
+    graph_type_name = graphNameTemplates,
+    countries = countriesList;
+
+  if (choices.protected_area) {
+    title = (" " + templates.country_with_pa[locale]).slice(1);
+    title = title.replace(
+      "{VALUE}",
+      graph_type_name[locale][choices.graph_type]
     );
-    itemList.forEach(function(item) {
-      root
-        .find("ul")
-        .append(
-          "<li data-name='" +
-            item.name +
-            "' data-code='" +
-            item.code +
-            "' ><a href='javascript://'>" +
-            item.name +
-            "</a></li>"
-        );
-    });
-    this.on("click", "li", callback);
-    this.on("click", (this, "button"), function(event) {
-      event.preventDefault();
-      if (event.currentTarget === event.target) {
-        root.find("ul").toggle();
-      }
-    });
-    return this;
-  };
-})(jQuery);
+    title = title.replace(
+      "{PA}",
+      pabatData[choices.country][choices.protected_area]["name"]
+    );
+  } else {
+    title = (" " + templates.country[locale]).slice(1);
+    title = title.replace(
+      "{VALUE}",
+      graph_type_name[locale][choices.graph_type]
+    );
+    title = title.replace("{COUNTRY}", countries[choices.country][locale]);
+    title = title.replace(
+      "{PA_CNT}",
+      _.size(_.keys(pabatData[choices.country]))
+    );
+  }
 
-function selectCountry() {
-  let country = this.dataset.name;
-  let code = this.dataset.code;
-  $(this)
-    .closest("div")
-    .find(".btn span")
-    .text(country);
-  $(this)
-    .closest("ul")
-    .toggle();
-
-  let paList = [];
-  let locale = getLocale();
-
-  areasData.forEach(function(element) {
-    if (element.code === code) {
-      element.protected_areas.forEach(function(paItem) {
-        paList.push({ name: paItem.name[locale], code: paItem.code });
-      });
-      return false;
-    }
-  });
-  $("#graphs-pa-picker").generateDropdown(paList, printSwag);
-  $("#graphs-pa-picker .btn span").text("Choose PA");
+  return title;
 }
-ƒ;
+
 var ProtectedAreasControl = Control.extend({
   init(element, options) {
     this.$element = $(element);
     this.countriesList = [];
     this.state = {};
-    this.loadCountriesParks();
+    this.loadCountriesParks(() => {
+      this.initCountryDropdown();
+    });
+    this.loadPabatData();
   },
   initCountryDropdown() {
     this.initDropdown("#graphs-country-picker", this.countriesList);
@@ -142,6 +119,7 @@ var ProtectedAreasControl = Control.extend({
     this.initProtectedAreasDropdown(protectedAreas);
     this.$element.find("#graphs-country-picker .btn span").text(name);
     this.state = { country: code };
+    this.renderGraph();
   },
   "#graphs-pa-picker [data-dropdown-container] li click": function(el) {
     const code = el.dataset.code;
@@ -149,6 +127,7 @@ var ProtectedAreasControl = Control.extend({
 
     this.$element.find("#graphs-pa-picker .btn span").text(name);
     this.state.pa = code;
+    this.renderGraph();
   },
   "{document.body} click": function(el, ev) {
     const $target = $(ev.target);
@@ -158,9 +137,18 @@ var ProtectedAreasControl = Control.extend({
     }
   },
   "[data-graphid] click": function(el) {
+    this.state.graphid = el.dataset.graphid;
+    this.renderGraph();
+  },
+  ".picker click": function(el) {
+    $(el)
+      .find("[data-dropdown-container]")
+      .toggle();
+  },
+  renderGraph() {
     const country = this.state.country;
     const pa = this.state.pa;
-    const graphid = el.dataset.graphid;
+    const graphid = this.state.graphid;
 
     if (country && pa && graphid) {
       const state = {
@@ -168,20 +156,21 @@ var ProtectedAreasControl = Control.extend({
         protected_area: pa,
         graph_type: graphid
       };
-      renderGraph({
-        state,
-        toChoice: function() {
-          return state;
-        }
-      });
+
+      graphs.renderGraph(this.pabatData, state, locale);
+      this.$element.find(".graphs-container .pabat-chart").addClass("hide");
+      this.$element.find(".no-graphs").addClass("hide");
+      this.$element.find(graphId(state)).removeClass("hide");
+      this.$element
+        .find("#pav-graph-gen-title")
+        .html(generatedTitle(state, this.pabatData))
+        .removeClass("hide");
+    } else {
+      this.$element.find(".graphs-container .pabat-chart").addClass("hide");
+      this.$element.find(".no-graphs").removeClass("hide");
     }
   },
-  ".picker click": function(el) {
-    $(el)
-      .find("[data-dropdown-container]")
-      .toggle();
-  },
-  loadCountriesParks() {
+  loadCountriesParks(doneCb) {
     dataLoader.loadJSON("/static/countries-parks.json", cp => {
       const locale = getLocale();
 
@@ -193,78 +182,19 @@ var ProtectedAreasControl = Control.extend({
         });
       });
 
-      this.initCountryDropdown();
+      doneCb && doneCb();
+    });
+  },
+  loadPabatData() {
+    dataLoader.loadJSON("/static/pabat-all.json", pd => {
+      this.pabatData = pd;
     });
   }
 });
 
 $(function() {
-  new ProtectedAreasControl(document.getElementById("pa-pickers"));
-});
-
-// ---------------------------------------------------------
-// Functions for manipulating graphs on Protected Areas page
-// ---------------------------------------------------------
-
-var pabat_data;
-
-dataLoader.loadJSON("/static/pabat-all.json", function(pd) {
-  pabat_data = pd;
-});
-
-function renderGraph(store) {
-  if (!graphRenderable(store)) {
-    $(".graphs-container .pabat-chart").addClass("hide");
-    $(".no-graphs").removeClass("hide");
-  } else {
-    graphs.renderGraph(pabat_data, store.toChoice(), locale);
-    $(".graphs-container .pabat-chart").addClass("hide");
-    $(".no-graphs").addClass("hide");
-    $(graphId(store)).removeClass("hide");
-    $("#pav-graph-gen-title")
-      .html(generatedTitle(store))
-      .removeClass("hide");
+  const paContainer = document.getElementById("pa-container");
+  if (paContainer) {
+    new ProtectedAreasControl(paContainer);
   }
-}
-
-function graphRenderable(store) {
-  return store.state.country && store.state.graph_type;
-}
-
-function graphId(store) {
-  var graph_prefix = store.state.protected_area ? "pa" : "country";
-  return "#" + graph_prefix + "_chart_" + store.state.graph_type;
-}
-
-function generatedTitle(store) {
-  var title = null,
-    choices = store.toChoice(),
-    templates = countryTemplates,
-    graph_type_name = graphNameTemplates,
-    countries = countriesList;
-
-  if (choices.protected_area) {
-    title = (" " + templates.country_with_pa[locale]).slice(1);
-    title = title.replace(
-      "{VALUE}",
-      graph_type_name[locale][choices.graph_type]
-    );
-    title = title.replace(
-      "{PA}",
-      pabat_data[choices.country][choices.protected_area]["name"]
-    );
-  } else {
-    title = (" " + templates.country[locale]).slice(1);
-    title = title.replace(
-      "{VALUE}",
-      graph_type_name[locale][choices.graph_type]
-    );
-    title = title.replace("{COUNTRY}", countries[choices.country][locale]);
-    title = title.replace(
-      "{PA_CNT}",
-      _.size(_.keys(pabat_data[choices.country]))
-    );
-  }
-
-  return title;
-}
+});

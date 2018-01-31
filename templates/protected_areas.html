@@ -1,88 +1,88 @@
 {% extends "layout.html" %} {% set body_class = 'protected-areas' %} {% block body %} {% include "shared/_short_banner.html"
 %} {% include "shared/_intro.html" %} {% include "shared/_attachments.html" %}
+<div id="pa-container">
+	<section id="pa-pickers" class="pt3">
 
-<section id="pa-pickers" class="pt3">
+		<div class="max-width-4 mx-auto">
+			<div class="clearfix flex flex-wrap items-end">
 
-	<div class="max-width-4 mx-auto">
-		<div class="clearfix flex flex-wrap items-end">
-
-			<div class="md-col md-col-6 p2 flex-1">
-				<div class="playfair-heavy h2 opacity-10 lh0">{{ this.country }}</div>
-				<p class="h6 bold" style="margin-top: -1rem">{{ this.step_1 }}</p>
-				<div id="graphs-country-picker" class="country-picker picker relative inline-block">
-					<button class="btn border-hr-blue p2 bg-white grey-dark pointer-cursor">
-						<span>Please choose</span>
-						<i class="icon-arrow-drop-down right"></i>
-					</button>
+				<div class="md-col md-col-6 p2 flex-1">
+					<div class="playfair-heavy h2 opacity-10 lh0">{{ this.country }}</div>
+					<p class="h6 bold" style="margin-top: -1rem">{{ this.step_1 }}</p>
+					<div id="graphs-country-picker" class="country-picker picker relative inline-block">
+						<button class="btn border-hr-blue p2 bg-white grey-dark pointer-cursor">
+							<span>Please choose</span>
+							<i class="icon-arrow-drop-down right"></i>
+						</button>
+					</div>
 				</div>
-			</div>
 
-			<div class="md-col md-col-6 p2 flex-1">
-				<div class="playfair-heavy h2 opacity-10 lh0">{{ this.pa }}</div>
-				<p class="h6 bold" style="margin-top: -1rem">{{ this.step_2 }}</p>
-				<div id="graphs-pa-picker" class="country-picker picker relative inline-block">
-					<button class="btn border-hr-blue p2 bg-white grey-dark pointer-cursor">
-						<span>-</span>
-						<i class="icon-arrow-drop-down right"></i>
-					</button>
+				<div class="md-col md-col-6 p2 flex-1">
+					<div class="playfair-heavy h2 opacity-10 lh0">{{ this.pa }}</div>
+					<p class="h6 bold" style="margin-top: -1rem">{{ this.step_2 }}</p>
+					<div id="graphs-pa-picker" class="country-picker picker relative inline-block">
+						<button class="btn border-hr-blue p2 bg-white grey-dark pointer-cursor">
+							<span>-</span>
+							<i class="icon-arrow-drop-down right"></i>
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+
+		<div class="max-width-4 mx-auto">
+			<div class="clearfix">
+
+				<div class="p2 mt3">
+					<div class="playfair-heavy h2 opacity-10 lh0">{{ this.values }}</div>
+					<p class="h6 bold" style="margin-top: -1rem">{{ this.graph_values }}</p>
+				</div>
+
+				<div class="px2 md-hide lg-hide">
+					<div id="graphs-type-picker-narrow">
+						<dropdown></dropdown>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		{% include "pa/_graph_type_picker.html" %}
+	</section>
 
 	<div class="max-width-4 mx-auto">
 		<div class="clearfix">
+			<h3 id="pav-graph-gen-title" class="hide h3 px2 mt4"></h3>
+		</div>
+	</div>
 
-			<div class="p2 mt3">
-				<div class="playfair-heavy h2 opacity-10 lh0">{{ this.values }}</div>
-				<p class="h6 bold" style="margin-top: -1rem">{{ this.graph_values }}</p>
-			</div>
+	<section id="pa-graphs" class="pb4 pt2">
+		<div class="max-width-4 mx-auto">
+			<div class="clearfix">
 
-			<div class="px2 md-hide lg-hide">
-				<div id="graphs-type-picker-narrow">
-					<dropdown></dropdown>
+				<div class="no-graphs sm-col-12 md-col-8 px2 mx-auto">
+					<p class="playfair-heavy h2 opacity-50 mb0 center">{{ this.message_head }}</p>
+					<ol class="playfair-heavy h3 opacity-20">
+						<li>{{ this.message_1 }}</li>
+						<li>{{ this.message_2 }}</li>
+					</ol>
+				</div>
+
+				<div class="graphs-container sm-col-12 px2">
+					<div id="country_chart_overall" class="pabat-chart hide"></div>
+					<div id="country_chart_overall_econ" class="pabat-chart hide"></div>
+					<div id="country_chart_flow_econ" class="pabat-chart hide"></div>
+					<div id="country_chart_potentials" class="pabat-chart hide"></div>
+					<div id="pa_chart_overall" class="pabat-chart hide"></div>
+					<div id="pa_chart_overall_econ" class="pabat-chart hide"></div>
+					<div id="pa_chart_flow_econ" class="pabat-chart hide"></div>
+					<div id="pa_chart_potentials" class="pabat-chart hide"></div>
 				</div>
 			</div>
-
 		</div>
-
-	</div>
-
-	{% include "pa/_graph_type_picker.html" %}
-</section>
-
-<div class="max-width-4 mx-auto">
-	<div class="clearfix">
-		<h3 id="pav-graph-gen-title" class="hide h3 px2 mt4"></h3>
-	</div>
+	</section>
 </div>
-
-<section id="pa-graphs" class="pb4 pt2">
-	<div class="max-width-4 mx-auto">
-		<div class="clearfix">
-
-			<div class="no-graphs sm-col-12 md-col-8 px2 mx-auto">
-				<p class="playfair-heavy h2 opacity-50 mb0 center">{{ this.message_head }}</p>
-				<ol class="playfair-heavy h3 opacity-20">
-					<li>{{ this.message_1 }}</li>
-					<li>{{ this.message_2 }}</li>
-				</ol>
-			</div>
-
-			<div class="graphs-container sm-col-12 px2">
-				<div id="country_chart_overall" class="pabat-chart hide"></div>
-				<div id="country_chart_overall_econ" class="pabat-chart hide"></div>
-				<div id="country_chart_flow_econ" class="pabat-chart hide"></div>
-				<div id="country_chart_potentials" class="pabat-chart hide"></div>
-				<div id="pa_chart_overall" class="pabat-chart hide"></div>
-				<div id="pa_chart_overall_econ" class="pabat-chart hide"></div>
-				<div id="pa_chart_flow_econ" class="pabat-chart hide"></div>
-				<div id="pa_chart_potentials" class="pabat-chart hide"></div>
-			</div>
-		</div>
-	</div>
-</section>
-
 <div class="bg-hr-blue py4 center">
 	<a href="{{ '/recommendations' | url(alt) }}" class="btn white border-white">{{ this.cta_button_text }}</a>
 </div>
