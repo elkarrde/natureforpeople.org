@@ -1,160 +1,31 @@
-Vue = require("vue");
 require("./areaTemplates");
+const Control = require("can-control");
 
-pabat_data = null;
-graph_types = null;
-countries = null;
-store = null;
-
-store = {
-  debug: true,
-  state: {
-    country: null,
-    protected_area: null,
-    graph_type: null
-  },
-  setState: function(prop, newValue) {
-    if (prop == "country") {
-      this.state.protected_area = null;
-    }
-    if (prop == "graph_type") {
-      $(".graph-card").removeClass("active");
-      $("#graph-card-" + newValue.code).addClass("active");
-    }
-    this.state[prop] = newValue;
-    renderGraph(this);
-  },
-  toChoice: function() {
-    return {
-      country: this.state.country["code"],
-      protected_area:
-        this.state.protected_area && this.state.protected_area["code"],
-      graph_type: this.state["graph_type"]["code"]
-    };
+function getLocale() {
+  var locale;
+  if (window.location.href.indexOf("/hr/") > -1) {
+    locale = "hr";
+  } else {
+    locale = "en";
   }
-};
-
-var Dropdown = Vue.extend({
-  template: pickerTemplate,
-  filters: {
-    localize: function(value) {
-      return value[this.locale];
-    }
-  },
-  methods: {
-    pick: function(picked, code, event) {
-      var selected = _.first(_.filter(this.choices, { code: code }));
-      this.picked = picked[this.locale];
-      this.shared.setState(this.prop_name, selected);
-    }
-  }
-});
-
-dataLoader.loadJSON("/static/pabat-all.json", function(pd) {
-  pabat_data = pd;
-});
-
-dataLoader.loadJSON("/static/graph-types.json", function(gt) {
-  graph_types = gt;
-
-  dataLoader.loadJSON("/static/countries-parks.json", function(cp) {
-    countries = cp;
-
-    new Dropdown({
-      el: "#graphs-country-picker",
-      data: function() {
-        return {
-          toggled: false,
-          picked: translations.default_choice[locale],
-          shared: store,
-          prop_name: "country",
-          choices: countries,
-          locale: locale
-        };
-      },
-      computed: {
-        pickedText: function() {
-          return this.picked;
-        }
-      }
-    });
-
-    new Dropdown({
-      el: "#graphs-pa-picker",
-      data: function() {
-        return {
-          toggled: false,
-          picked: "-",
-          shared: store,
-          prop_name: "protected_area",
-          locale: locale
-        };
-      },
-      computed: {
-        choices: function() {
-          var country = this.shared.state.country;
-          return (country && country.protected_areas) || [];
-        },
-
-        pickedText: function() {
-          var pa = this.shared.state[this.prop_name];
-          return pa ? this.picked : "-";
-        }
-      }
-    });
-
-    new Dropdown({
-      el: "#graphs-type-picker-narrow",
-      data: function() {
-        return {
-          toggled: false,
-          picked: translations.default_choice[locale],
-          shared: store,
-          prop_name: "graph_type",
-          choices: graph_types,
-          locale: locale
-        };
-      },
-      computed: {
-        pickedText: function() {
-          return this.picked;
-        }
-      }
-    });
-  });
-});
+  return locale;
+}
 
 // ---------------------------------------------------------
 // Functions for manipulating graphs on Protected Areas page
 // ---------------------------------------------------------
 
-function renderGraph(store) {
-  if (!graphRenderable(store)) {
-    $(".graphs-container .pabat-chart").addClass("hide");
-    $(".no-graphs").removeClass("hide");
-  } else {
-    graphs.renderGraph(pabat_data, store.toChoice(), locale);
-    $(".graphs-container .pabat-chart").addClass("hide");
-    $(".no-graphs").addClass("hide");
-    $(graphId(store)).removeClass("hide");
-    $("#pav-graph-gen-title")
-      .html(generatedTitle(store))
-      .removeClass("hide");
-  }
+function graphRenderable(state) {
+  return state.country && state.graph_type;
 }
 
-function graphRenderable(store) {
-  return store.state.country && store.state.graph_type;
+function graphId(state) {
+  var graph_prefix = state.protected_area ? "pa" : "country";
+  return "#" + graph_prefix + "_chart_" + state.graph_type;
 }
 
-function graphId(store) {
-  var graph_prefix = !!store.state.protected_area ? "pa" : "country";
-  return "#" + graph_prefix + "_chart_" + store.state.graph_type.code;
-}
-
-function generatedTitle() {
+function generatedTitle(choices, pabatData) {
   var title = null,
-    choices = store.toChoice(),
     templates = countryTemplates,
     graph_type_name = graphNameTemplates,
     countries = countriesList;
@@ -167,7 +38,7 @@ function generatedTitle() {
     );
     title = title.replace(
       "{PA}",
-      pabat_data[choices.country][choices.protected_area]["name"]
+      pabatData[choices.country][choices.protected_area]["name"]
     );
   } else {
     title = (" " + templates.country[locale]).slice(1);
@@ -178,16 +49,152 @@ function generatedTitle() {
     title = title.replace("{COUNTRY}", countries[choices.country][locale]);
     title = title.replace(
       "{PA_CNT}",
-      _.size(_.keys(pabat_data[choices.country]))
+      _.size(_.keys(pabatData[choices.country]))
     );
   }
 
   return title;
 }
-$(document).ready(function() {
-  $("body").on("click", ".country-picker", function() {
-    $(this)
-      .children("ul")
+
+var ProtectedAreasControl = Control.extend({
+  init(element, options) {
+    this.$element = $(element);
+    this.countriesList = [];
+    this.state = {};
+    this.loadCountriesParks(() => {
+      this.initCountryDropdown();
+    });
+    this.loadPabatData();
+  },
+  initCountryDropdown() {
+    this.initDropdown("#graphs-country-picker", this.countriesList);
+  },
+  initProtectedAreasDropdown(protectedAreas) {
+    this.initDropdown("#graphs-pa-picker", protectedAreas, "Choose PA");
+  },
+  initDropdown(selector, items, title = "Please Choose") {
+    const $el = this.$element.find(selector);
+
+    $el.find("[data-dropdown-container]").remove();
+
+    $el.append(
+      "<ul class='z2 m0 absolute bg-hr-blue list-reset' data-dropdown-container style='display:none'></ul>"
+    );
+
+    const $container = $el.find("[data-dropdown-container]");
+
+    items.forEach(function(item) {
+      $container.append(
+        "<li data-name='" +
+          item.name +
+          "' data-code='" +
+          item.code +
+          "' ><a href='javascript://'>" +
+          item.name +
+          "</a></li>"
+      );
+    });
+
+    $el.find(".btn span").text(title);
+  },
+  "#graphs-country-picker [data-dropdown-container] li click": function(el) {
+    const code = el.dataset.code;
+    const name = el.dataset.name;
+    const locale = getLocale();
+
+    let protectedAreas = [];
+
+    this.countriesList.forEach(function(element) {
+      if (element.code === code) {
+        element.protected_areas.forEach(function(paItem) {
+          protectedAreas.push({
+            name: paItem.name[locale],
+            code: paItem.code
+          });
+        });
+        return false;
+      }
+    });
+
+    this.initProtectedAreasDropdown(protectedAreas);
+    this.$element.find("#graphs-country-picker .btn span").text(name);
+    this.state = { country: code };
+    this.renderGraph();
+  },
+  "#graphs-pa-picker [data-dropdown-container] li click": function(el) {
+    const code = el.dataset.code;
+    const name = el.dataset.name;
+
+    this.$element.find("#graphs-pa-picker .btn span").text(name);
+    this.state.pa = code;
+    this.renderGraph();
+  },
+  "{document.body} click": function(el, ev) {
+    const $target = $(ev.target);
+
+    if (!this.$element.find($target).length) {
+      this.$element.find("[data-dropdown-container]").hide();
+    }
+  },
+  "[data-graphid] click": function(el) {
+    this.state.graphid = el.dataset.graphid;
+    this.renderGraph();
+  },
+  ".picker click": function(el) {
+    $(el)
+      .find("[data-dropdown-container]")
       .toggle();
-  });
+  },
+  renderGraph() {
+    const country = this.state.country;
+    const pa = this.state.pa;
+    const graphid = this.state.graphid;
+
+    if (country && pa && graphid) {
+      const state = {
+        country,
+        protected_area: pa,
+        graph_type: graphid
+      };
+
+      graphs.renderGraph(this.pabatData, state, locale);
+      this.$element.find(".graphs-container .pabat-chart").addClass("hide");
+      this.$element.find(".no-graphs").addClass("hide");
+      this.$element.find(graphId(state)).removeClass("hide");
+      this.$element
+        .find("#pav-graph-gen-title")
+        .html(generatedTitle(state, this.pabatData))
+        .removeClass("hide");
+    } else {
+      this.$element.find(".graphs-container .pabat-chart").addClass("hide");
+      this.$element.find(".no-graphs").removeClass("hide");
+    }
+  },
+  loadCountriesParks(doneCb) {
+    dataLoader.loadJSON("/static/countries-parks.json", cp => {
+      const locale = getLocale();
+
+      cp.forEach(element => {
+        this.countriesList.push({
+          name: element.name[locale],
+          code: element.code,
+          protected_areas: element.protected_areas
+        });
+      });
+
+      doneCb && doneCb();
+    });
+  },
+  loadPabatData() {
+    dataLoader.loadJSON("/static/pabat-all.json", pd => {
+      this.pabatData = pd;
+    });
+  }
+});
+
+$(function() {
+  const paContainer = document.getElementById("pa-container");
+  if (paContainer) {
+    new ProtectedAreasControl(paContainer);
+  }
 });

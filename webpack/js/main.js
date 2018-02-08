@@ -9,18 +9,12 @@ animationHelpers = require("./navigation");
 animationHelpers = require("./animationHelpers");
 dataLoader = require("./dataLoader");
 graphs = require("./graphs");
-pickers = require("./pickers");
 
 require("./modal.js");
 require("./search.js");
 require("./dropdown.js");
 require("waypoints/lib/jquery.waypoints");
-
-if (window.location.href.split("/").includes("protected_areas")) {
-  require("./areaDropdown");
-}
-
-pickers.initPickerPlugins($);
+require("./areaDropdown");
 
 translations = {
   default_choice: {
@@ -54,10 +48,6 @@ function instWaypoint(id, method) {
 
 jQuery(document).ready(function() {
   setGeolocation();
-
-  $(".graph-type-picker").graphTypePicker(function(choice) {
-    store.setState("graph_type", choice);
-  });
 
   $("#homepage-view-map-btn").click(function() {
     $("html,body").animate(
