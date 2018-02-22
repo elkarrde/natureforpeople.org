@@ -10,3 +10,17 @@ backline: Pretraga članaka
 ---
 cta_button_text: Riješimo izazove zajedno
 ---
+search_button_text: PRETRAGA
+---
+search_placeholder: Pretražite nešto...
+---
+no_results_header: Nema rezultata
+---
+no_results_text: Nema rezultata za vaš upit. Pokušajte sa nekim od unaprijed definiranih pojmova za pretraživanje.
+---
+predefined_search_text: Unaprijed definirani pojmovi:
+---
+select_country: Odaberite Državu
+---
+all_countries: Sve države
+---

@@ -10,3 +10,17 @@ backline: Search articles
 ---
 cta_button_text: Let's solve challenges together
 ---
+search_button_text: SEARCH
+---
+search_placeholder: Start searching...
+---
+no_results_header: No results
+---
+no_results_text: There are no results for your query. Try with some of our predefined search terms
+---
+predefined_search_text: Predefined Search Terms:
+---
+select_country: Select Country
+---
+all_countries: All countries
+---

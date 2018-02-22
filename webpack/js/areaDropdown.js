@@ -70,9 +70,13 @@ var ProtectedAreasControl = Control.extend({
     this.initDropdown("#graphs-country-picker", this.countriesList);
   },
   initProtectedAreasDropdown(protectedAreas) {
-    this.initDropdown("#graphs-pa-picker", protectedAreas, "Choose PA");
+    this.initDropdown(
+      "#graphs-pa-picker",
+      protectedAreas,
+      pickerText.choosePA[getLocale()]
+    );
   },
-  initDropdown(selector, items, title = "Please Choose") {
+  initDropdown(selector, items, title = pickerText.pleaseChoose[getLocale()]) {
     const $el = this.$element.find(selector);
 
     $el.find("[data-dropdown-container]").remove();
@@ -150,7 +154,7 @@ var ProtectedAreasControl = Control.extend({
     const pa = this.state.pa;
     const graphid = this.state.graphid;
 
-    if (country && pa && graphid) {
+    if (country && graphid) {
       const state = {
         country,
         protected_area: pa,
@@ -166,6 +170,7 @@ var ProtectedAreasControl = Control.extend({
         .html(generatedTitle(state, this.pabatData))
         .removeClass("hide");
     } else {
+      this.$element.find("#pav-graph-gen-title").addClass("hide");
       this.$element.find(".graphs-container .pabat-chart").addClass("hide");
       this.$element.find(".no-graphs").removeClass("hide");
     }
