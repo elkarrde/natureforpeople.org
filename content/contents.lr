@@ -1,8 +1,12 @@
 _model: index
 ---
-title: The value of nature
+title: Nature <em>&</em> People
 ---
-headline: Recognize the value of our nature
+headline: Lorem ipsum subheadline copy
+---
+blurb_title: This project is supported by out friends and partners
+---
+blurb: Thanks for supporting us in this project.<br/>Nature & people will appreciate that.
 ---
 message:
 
@@ -55,3 +59,9 @@ about_content:
 <li><strong>Local communities</strong> to take a more active role in the governance of natural resources</li>
 <li><strong>All citizens</strong> to take an active role in the effort to safeguard our unique natural values as a basis for our long-term prosperity</li>
 </ul>
+---
+submit_title: Submit your story
+---
+submit_description: Download this Word document and share your story with us.
+---
+submit_cta_button_text: Download document

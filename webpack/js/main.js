@@ -3,6 +3,14 @@ d3 = require("d3");
 c3 = require("c3");
 _ = require("lodash");
 
+Isotope = require('isotope-layout');
+var IsoParams = {
+  layoutMode: 'fitRows',
+  itemSelector: '.article-item',
+  percentPosition: true
+}
+//var iso = new Isotope('.articles-grid', IsoParams)
+
 jQuery = $;
 
 animationHelpers = require("./navigation");
@@ -22,6 +30,22 @@ translations = {
     hr: "Izaberite"
   }
 };
+
+$('.js-article-filter').click(function(e) {
+  let filter = '.' + $(this).attr('data-filter');
+  $('.article-item').addClass('hidden');
+  $(filter).removeClass('hidden');
+
+  let isActive = $(this).hasClass('active')
+  if (isActive) {
+    $('.article-item').removeClass('hidden');
+    $('.js-article-filter').removeClass('active');
+  } else {
+    $('.js-article-filter').removeClass('active');
+    $(this).addClass('active');
+  }
+  return false
+})
 
 geolocation = null;
 locale = determineLocale();

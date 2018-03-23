@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% set body_class = 'article' %}
+
+{% block body %}
+
+<section id="articles-grid" class="pb4">
+  <div class="max-width-4 mx-auto">
+    <div class="clearfix">
+
+      <aside id="meta" class="small black my3 p1">
+          <span>{{ this.date }}</span>
+          <span>Author: {{ this.author }}</span>
+      </aside>
+
+      <header id="heading" class="max-width-4 mx-auto">
+          <h1 class="playfair-heavy h2 black">{{ this.title }}</h1>
+      </header>
+
+      <section id="lead">
+          <p class="bold black">{{ this.lead_text }}</p>
+      </section>
+
+      <section id="body">
+          {{ this.body }}
+      </section>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
