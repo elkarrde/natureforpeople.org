@@ -1,0 +1,13 @@
+<section id="usecases" class="mx2">
+
+    <div class="max-width-4 mx-auto py4">
+        <ul class="carousel list-reset">
+            {% for path, title in bag('usecases').iteritems() %}
+            <li class="inline-block mx3 case-{{ title|lower|urlencode|replace('%20', '-') }}">
+                <img src="{{ path|url }}.png" srcset="{{ path|url }}@2x.png 2x" alt="{{ title }}" title="{{ title }}">
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</section>

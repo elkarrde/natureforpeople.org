@@ -8,6 +8,7 @@
   <!-- WWF main navigation - Countries dropdown + pages -->
   <nav id="main-nav" class="main-nav px2 max-width-4 mx-auto">
     <ul class="list-reset m0 flex flex-row justify-around xs-hide sm-hide md-hide">
+      {#
       <li class="flex-1">
 
         <!-- Countries dropdown -->
@@ -25,11 +26,11 @@
             {% endfor %}
           </ul>
         </div>
-
       </li>
+      #}
 
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
-      <li class="flex-1">
+      <li class="flex-1 center">
         <a class="link block px3 flex items-center {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
       {% endfor %}

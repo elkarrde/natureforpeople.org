@@ -1,0 +1,11 @@
+_model: articles
+---
+title: Articles
+---
+learn_more_button: Learn more
+---
+learn_more: Learn more
+---
+_template: articles.html
+---
+slug: articles

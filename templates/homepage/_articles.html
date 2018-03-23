@@ -1,0 +1,30 @@
+<div class="bg-homepage-cyan">
+
+  {% include "articles/_filter-bar.html" %}
+
+  <section id="articles-grid" class="pb4 mt4">
+    <div class="max-width-4 mx-auto">
+      <div class="clearfix">
+
+        {% for artx in this.children|sort %}
+        {% if artx.type is defined %}
+        <div class="md-col md-col-4 p2">
+          <div class="box-shadow bg-white p2 article article-{{ artx.size }} overflow-hidden">
+            {# <a href="{{ artx|url }}" class="article-image {{ artx.slug }}"></a> #}
+            <div class="">
+              <h3 class="h4 p0 m0 bold playfair-bold">{{ artx.title }}</h3>
+              {% if artx.size != 'medium' %}
+              <p class="lead p0">{{ artx.lead_text }}</p>
+              {% endif %}
+              <a href="{{ artx|url }}" class="btn border-me-orange-red">{{ artx.learn_more }}</a>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+</div>

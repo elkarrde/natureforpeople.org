@@ -1,0 +1,71 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+slug: protecting-the-fjords
+---
+title: Protecting the fjords from toxic mining waste
+---
+date: 03.03.2018.
+---
+author: Cursus Platea
+---
+size: big
+---
+hot: false
+---
+type: article
+---
+tag1: products
+---
+tag2: tourism
+---
+tag3: education
+---
+tag4:
+---
+tag5:
+---
+lead_text:
+
+Neque turpis sed, sed et, vestibulum lectus. Dolor quam in, mus ac, vel platea. Ut orci nec. Condimentum sapien, ullamcorper dignissim ut. Facilisi curabitur. Mauris lacus, metus sollicitudin, vulputate nunc.
+---
+body:
+
+<p>Nunc potenti dignissim leo eleifend, id enim sed ante. Magna consequat eget eget a, tellus senectus enim odio convallis, neque neque interdum sed vitae. Mus commodo nunc lacus amet, diam nibh amet non arcu. Pulvinar erat et quisque, sem dui ut lectus leo, lorem sem nec enim, iaculis consectetuer arcu sapien. Velit tellus ullamcorper suspendisse dui, vestibulum sit commodo malesuada ante, at sed at molestiae, bibendum lobortis nam vitae. Vel nec ut mauris, morbi odio etiam sed tellus, eget orci ut risus, nonummy arcu convallis cras. Ante vulputate ut diam, at mauris malesuada ac vitae, commodo suspendisse porta gravida, ullamcorper ante nullam morbi. Suscipit et massa ut cras, dolor neque in eu pellentesque, ante egestas congue consequat, pharetra mauris purus inceptos dignissim. Sodales nostra mollis a, dapibus wisi nisl dapibus elit, mi eros non quis mauris, tempor dolores nonummy amet diam.</p>
+
+<p class="highlight">Praesent ante mi suspendisse non, sagittis eget elit sociosqu, eleifend eget phasellus sapien in. Morbi tincidunt nunc velit, et ligula sit odio. Ut vitae felis facere, mi cursus facilis ornare, arcu praesent ut urna. Rutrum mauris lacus adipisicing, mauris et metus eu, velit tempus consequat justo. Nisl nulla quam quam, massa mollis venenatis risus, cursus wisi mauris id nec. Aliquet orci vehicula ultrices, lacus vitae est non morbi, egestas orci donec non.</p>
+
+<p>Sit fames massa duis et, ipsum ac integer quis eum, lorem pellentesque enim blandit est. Dui diam molestie scelerisque, nulla id est libero dolor, ligula vel dignissim duis dapibus. Eu etiam dapibus mauris nulla, vestibulum elit risus mauris varius, conubia amet scelerisque iaculis donec. Felis tellus vitae non elementum, in ante ultrices in, feugiat ac ipsum lorem, mus libero dolor morbi. Duis luctus nulla ligula, molestie scelerisque vel justo proin, et sint arcu lectus, fermentum amet posuere convallis class. Ipsum vestibulum pulvinar purus a, enim dolor vestibulum lorem, in diam ac hac purus. Ante in felis neque, justo at quis sodales, et nullam maecenas placerat metus, euismod tincidunt natoque porttitor id.</p>
+
+<p>Libero diam euismod nulla, vel habitant quisque odio imperdiet, metus semper lorem est at. Ipsum quis cras posuere lacus, erat est bibendum iaculis rutrum. Fermentum id mattis felis eget, nibh a in eget. Vestibulum malesuada pede nullam, wisi purus enim eros sapien, laoreet dictumst amet aliquam, libero pulvinar wisi etiam sapien.</p>
+
+<h3 class="h3 cc-secondary">Tortor massa commodo adipiscing sollicitudin</h3>
+
+<p>Ac lacus ante consectetuer non, luctus et ligula a vulputate. Ut est pellentesque blandit velit, nonummy ante volutpat tincidunt dui, vestibulum habitasse augue sit fusce. Augue duis eu dolor accumsan, suscipit suspendisse morbi ut laoreet, suspendisse donec est suspendisse id, nec minus pharetra sed auctor:</p>
+<ul>
+	<li>Eget sit arcu porta sed, luctus nascetur integer eros</li>
+	<li>Dui blandit vestibulum porta libero, tempor sollicitudin vitae tortor, vel purus facilisis at - sed luctus semper nec sed</li>
+	<li>Magnis malesuada ante in libero vitae vestibulum, ipsum a vivamus aut ipsum cras at, etiam tellus pellentesque sed congue ipsum, dignissim quam ligula dui libero accumsan faucibus, libero non ullamcorper dolor posuere quam</li>
+</ul>
+
+<p>Turpis venenatis erat pede in, justo massa consectetuer sapien. Dolores ducimus non sapien, dictum congue mus commodo et, congue ipsum mauris erat est. Id ultrices culpa aliquam lacinia, odio mollis etiam leo. Neque a erat curabitur vulputate, vitae et eu ac, etiam egestas cras dictum. Nulla non vel sem, risus aliquam tristique et ultricies, lectus duis nunc suspendisse morbi. Vitae lobortis sodales proin aliquam, iaculis libero elit suspendisse tincidunt.</p>
+
+<p class="highlight">Animi fames porta augue arcu, a sed arcu faucibus, quis a lorem sollicitudin a. Blandit porta lectus aliquam amet, ac lorem turpis nibh, nascetur eleifend amet amet. Enim nibh placerat eros nisl, erat porttitor eu at posuere, lorem sem leo nec.</p>
+
+<p>Arcu leo ut nec amet, dictum quisque sed nulla hac, etiam id feugiat fringilla nam. Est erat laoreet enim interdum, vivamus condimentum duis et id, amet amet sit aenean, vitae quis augue duis tempor. Libero aliquam tenetur consectetuer vestibulum, aliquam vitae auctor quis facilisis, donec volutpat aliquam orci laoreet. Congue proin non quisque semper, vivamus et augue at, torquent et magnis nibh enim, ultrices aliquet sed suspendisse. Ultricies massa malesuada wisi habitasse, venenatis sodales mauris ullamcorper, lobortis massa pede dictumst lacinia. Nunc pellentesque nibh pellentesque, qui pariatur cras dolor cursus, rutrum sit eu eu.</p>
+
+<p>Ac nisl vel integer, elit accumsan nec quam elit. Nullam metus egestas quisque, sit ligula adipiscing et dolor:</p>
+<ul>
+	<li>Arcu mollis sapien eleifend purus, urna elit urna nascetur nulla</li>
+	<li>Nulla sit duis amet dignissim, lorem ligula erat fugit sem</li>
+	<li>Dui tincidunt pellentesque turpis, nec ut est dui etiam</li>
+</ul>
+
+<h3 class="h3 cc-secondary">Purus fames wisi aenean</h3>
+<p>Arcu interdum morbi in justo, mauris mollis nam nec semper, justo morbi a sed elit. Amet donec magna diam gravida, a ullamcorper aliquam velit id. Tincidunt bibendum et nulla, netus aliquam egestas feugiat, nulla aliquam mauris nisl. Metus vel quisque fringilla, pharetra aliquam semper elit, ut mollis massa amet. Dui tellus orci non platea, pellentesque proin velit morbi mi, metus turpis libero phasellus scelerisque. Ac iaculis iaculis nam, hendrerit et aenean dignissim, iaculis orci condimentum mi, sed odio nec ut. Tellus libero erat erat at, vel laoreet scelerisque ligula eget, cum vulputate ipsum gravida nunc. Luctus turpis molestie porttitor, donec penatibus dui pulvinar est, donec nulla ornare bibendum sed. Placerat et aenean vestibulum, tincidunt nostra volutpat suscipit wisi.</p>
+
+<p class="highlight">Nec donec arcu arcu, rhoncus rutrum est venenatis purus. Duis ut lacinia in non, ac nibh vehicula eget id, mauris magna ut nec nam, nulla pellentesque amet commodo dignissim. Felis integer mollis tellus, ac elit fusce exercitationem, duis vestibulum neque velit, ac lacinia primis tempor.</p>
+---
+learn_more: Learn more
+---

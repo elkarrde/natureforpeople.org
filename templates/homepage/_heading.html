@@ -1,0 +1,19 @@
+<section id="homepage-header" class="bg-homepage-cyan overflow-hidden z3 flex justify-center items-center flex-column">
+
+    <div class="full-width bg-homepage-green-wave pb3">
+    	<div class="mx-width-4 mx-auto center z1 p2">
+    		<h1 id="supertitle" class="playfair-heavy salmon h2 center mt4">{{ this.title }}</h1>
+        	<p class="black center">{{ this.headline }}</p>
+    	</div>
+    </div>
+
+    <div class="full-width center bg-homepage-cyan-grad py3">
+        <div class="z1 px2 max-width-1 mx-auto center">
+            <h4 class="h4 black center">{{ this.blurb_title }}</h4>
+            <p class="center">{{ this.blurb }}</p>
+        </div>
+    </div>
+
+    {% include "homepage/_usecases.html" %}
+
+</section>

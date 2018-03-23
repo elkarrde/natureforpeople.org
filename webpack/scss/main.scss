@@ -71,3 +71,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.article {
+  height: 360px;
+}
+
+#supertitle {
+  font-size: 5rem;
+  em { font-style: normal; }
+}
+
+.full-width { width: 100%; }
+
+.article-small {
+  p.lead {
+    overflow: hidden;
+    max-height: 7em;
+  }
+}

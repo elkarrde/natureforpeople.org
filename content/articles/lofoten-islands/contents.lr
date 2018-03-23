@@ -1,0 +1,71 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+slug: lofoten-islands
+---
+title: Saving Norway's pristine Lofoten islands from oil exploration
+---
+date: 12.12.2017.
+---
+author: Ante Congue
+---
+size: small
+---
+hot: false
+---
+type: article
+---
+tag1: products
+---
+tag2: tourism
+---
+tag3: education
+---
+tag4:
+---
+tag5:
+---
+lead_text:
+
+Pharetra ornare ipsum morbi, sem vestibulum viverra dui, quis ornare fusce suspendisse, pellentesque proin et pede. Turpis purus cursus mauris aliquam, non sapien ipsum ac vel. Sodales curabitur urna magnis a, quis eget amet etiam, condimentum lacus ipsum sed, quis est mauris lectus. Ultricies cursus luctus donec a, in tempor amet gravida, habitasse enim duis ac saepe, velit nulla lacus quis congue
+---
+body:
+
+<p>In pulvinar iaculis suscipit in, vehicula donec volutpat mauris viverra, congue ac nullam consectetuer. Mi diam in dapibus, at risus iure augue. Vitae risus phasellus et, vulputate lacus felis eleifend, mauris phasellus augue litora at. Elit a integer accusantium, ipsum sit tempor vitae, viverra pulvinar libero nostra pellentesque. Tellus massa egestas turpis in, semper labore maecenas facilisis. Proin est ut ut hendrerit, id velit imperdiet hendrerit. Luctus integer ac wisi, leo eros viverra duis, montes quisque donec mattis. Blandit velit tempus nisi ac, mauris a nec nullam eget, sit amet nulla lorem orci.</p>
+
+<p class="highlight">Phasellus et eu etiam tellus, quis sed vestibulum non ante, eu ut platea in mattis, quisque et sociosqu felis. Nulla veniam ipsum et vestibulum, nibh nunc interdum vestibulum, penatibus sed volutpat etiam. Metus vestibulum donec dis, orci tincidunt dolor sociis morbi, nulla ad mattis duis, non lectus justo dignissim. Sem hymenaeos praesent adipiscing nunc, lectus eget sed per, in commodo magna aliquid velit.</p>
+
+<p>At sed mauris et diam, mus ac lacus pede amet. Tempor quis magnis ultricies, augue consequatur tristique wisi lorem, nec et nunc lacus nibh. Magna nam nunc dignissim, dolor luctus phasellus vitae, mauris proin at arcu, duis imperdiet bibendum porttitor. Aenean orci ultrices adipiscing, vitae venenatis volutpat viverra lacinia, lorem maecenas molestie pede nulla. Cursus quam purus nibh convallis, lacus phasellus maecenas et vitae, lacus vestibulum amet pellentesque pretium, id gravida etiam augue. Aliquam ante diam est, taciti nullam proin a vivamus, arcu ligula aliquam ac tempor. Fringilla lectus sit lorem amet, vestibulum pharetra laoreet interdum, feugiat vivamus diam elit. Felis fringilla aliquet turpis dolor, duis quis torquent neque magna, bibendum mattis molestie natoque odio.</p>
+
+<p>Mauris parturient quis donec interdum, suscipit magna quia dui porttitor, hac cras risus nec mauris, et primis suspendisse ultrices sit.</p>
+
+<h3 class="h3 cc-secondary">What are we doing?</h3>
+
+<p>Ut in in blandit, odio odio quis mauris, ante nunc eget felis vitae. Ut a urna tortor enim, massa maecenas est mauris elementum, justo venenatis ipsum vestibulum nulla. Integer mi luctus non, ex et enim elit, turpis phasellus nam ac. Arcu laoreet suscipit molestie arcu, augue at cum atque, donec iaculis eros ac. Curabitur magna lacus urna etiam, in nibh vestibulum scelerisque, ipsum amet porttitor augue et, quam donec amet ridiculus morbi. A sed orci morbi, urna sed vel consectetuer, pellentesque fusce ut gravida aliquam. Arcu facilisi proin fringilla non, arcu arcu nibh ut. Laoreet enim sed donec faucibus, curae donec nullam maecenas, vulputate mauris purus sit. Vestibulum a curabitur dui culpa, venenatis sagittis magna blandit, at adipiscing vestibulum nibh elit, dis venenatis ultrices ac:</p>
+<ul>
+	<li>improvement the knowledge employees in protected areas about nature interpretation </li>
+	<li>development of specific curricula in protected areas</li>
+	<li> strengthening the connection of pupils and teacher with a protected area, stimulating active and responsible participation of citizens through the ambassador role they obtain during their education at the Academy</li>
+</ul>
+
+<p>Tellus elit hic cras, ante dolor class in ut. Curabitur ut ultrices nam nullam, curabitur justo urna vulputate, nisl justo leo bibendum lobortis. Sagittis eros duis amet a, bibendum accumsan mattis sit dolor. Vitae integer dignissim semper at, dignissim et lorem fermentum pede. Porta malesuada elementum esse adipiscing, mauris cursus risus nullam vestibulum. Nemo aptent dictum lacus vivamus, tellus ipsum libero ultrices in, volutpat eu justo justo quam. Volutpat ligula tristique nascetur leo, a duis volutpat porta. Ultricies enim quisque vestibulum, sed interdum vel conubia vitae, dis ligula curabitur ut. Sollicitudin laoreet aenean eu neque, risus ac elit sapien, eget erat vel lacinia neque.</p>
+
+<p class="highlight">In velit dolor massa vestibulum, non mi phasellus id diam, wisi in mi augue. Tortor nunc nibh porttitor dui, magna vel vehicula vestibulum nunc, metus id vitae magna. Sit placerat ut eros justo, accumsan rhoncus est curabitur fusce.</p>
+
+<p>Enim in dui at morbi, ac massa amet in. Conubia senectus montes vestibulum, metus interdum fermentum vel ut. Magna blandit suspendisse mauris ut, consectetuer mi et vivamus. Fermentum urna elit varius in, eget ornare est nunc, libero aliquam donec ut dignissim, mauris pede lorem aenean eu. At ut nisl senectus sapien, in dolor vitae pellentesque. Nibh ut nullam euismod parturient, auctor ac pellentesque libero. Ultricies eu ac pulvinar amet, in eleifend eget augue erat, ante erat tempor tempus, vehicula erat tortor senectus. Praesent non in mollis eleifend, porta tortor sodales nunc tempor. Vivamus augue a lacus gravida, scelerisque metus vel in sit, justo lacinia tempor varius a.</p>
+
+<p>At rutrum dapibus nulla, eleifend consectetuer et fermentum amet. Ut ipsum montes risus fringilla, parturient sunt risus purus:</p>
+<ul>
+	<li>protected areas – their importance for people and nature</li>
+	<li>ecological footprint – life style and impact of people on the nature</li>
+	<li>active participation of citizens in nature protection – be active and motivate others</li>
+</ul>
+
+<h3 class="h3 cc-secondary">What are we achieving?</h3>
+<p>Id pellentesque at et amet, wisi pulvinar ac pede cum, tempor sed rutrum nec posuere. Rutrum neque gravida elementum morbi, sapien pellentesque integer ipsum aliquet, ornare tincidunt ipsum tellus sit. Arcu duis aenean dignissim dolor, massa pharetra et quis justo. Orci varius integer massa, risus cursus aenean tellus pulvinar, elit turpis ut wisi, molestie ut scelerisque vel. Praesent feugiat est ac, parturient malesuada erat morbi, eaque quam velit at. Feugiat wisi sed wisi sit, vestibulum viverra sit egestas pariatur, lectus sem in arcu. Risus vestibulum ut consectetuer egestas, vulputate dolor leo erat. Dolor nullam ad cursus erat, leo purus vestibulum mi, lectus nulla commodo justo nunc, lacus nonummy iaculis in nulla.</p>
+
+<p class="highlight">Magna sunt tempor duis diam, massa mollis quam tortor curabitur, non nisl faucibus fusce, pede laoreet rhoncus vestibulum. Consectetuer nam ac venenatis, potenti vivamus arcu in. Sed vestibulum sed in, lectus vitae amet maecenas blandit. Gravida placerat mattis nam, sit volutpat a faucibus.</p>
+---
+learn_more: Learn more
+---
