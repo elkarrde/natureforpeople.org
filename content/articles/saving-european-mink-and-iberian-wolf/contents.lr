@@ -16,15 +16,15 @@ hot: false
 ---
 type: article
 ---
-tag1: products
+tag1: education
 ---
-tag2: education
+tag2:
 ---
 tag3:
 ---
 tag4:
 ---
-tag5:
+lead_image: https://placem.at/places?random=1&h=405&w=666
 ---
 lead_text:
 

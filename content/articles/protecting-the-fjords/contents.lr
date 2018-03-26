@@ -16,15 +16,15 @@ hot: false
 ---
 type: article
 ---
-tag1: products
+tag1: tourism
 ---
-tag2: tourism
+tag2: education
 ---
-tag3: education
+tag3:
 ---
 tag4:
 ---
-tag5:
+lead_image: https://placem.at/places?random=2&h=405&w=333
 ---
 lead_text:
 
