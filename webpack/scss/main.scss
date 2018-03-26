@@ -72,10 +72,6 @@
   margin-right: auto;
 }
 
-.article {
-  height: 360px;
-}
-
 #supertitle {
   font-size: 5rem;
   em { font-style: normal; }
@@ -83,9 +79,27 @@
 
 .full-width { width: 100%; }
 
+.article {
+  height: 405px;
+  font-size: 14px;
+}
+
 .article-small {
+  // text only
   p.lead {
     overflow: hidden;
     max-height: 7em;
   }
+}
+
+.article-medium {
+  // text with top-bar image, no description
+}
+
+.article-big {
+  // text with image at right, double-width
+}
+
+.article-full {
+  // text with image at right, full-row width
 }
