@@ -142,13 +142,18 @@
 .bg-homepage-cyan-grad {
   background: linear-gradient(0deg, $cyan-light 0%, $white 100%)
 }
-
 .bg-homepage-cyan {
   background-color: $cyan-light;
 }
 
 .bg-homepage-blue-wave {
   background: linear-gradient(0deg, $white 0%, $wave-blue 100%)
+}
+.bg-homepage-cyan-wave-bottom {
+  background: url('/static/images/vectors/bg-wave-cyan.svg') bottom center;
+  background-color: $wave-blue;
+  height: 100px;
+  width: 100%;
 }
 
 .bg-pink {
