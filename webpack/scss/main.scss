@@ -103,3 +103,10 @@
 .article-full {
   // text with image at right, full-row width
 }
+
+.article-filter-selection {
+  .filter.active {
+    color: $white;
+    background-color: $pink;
+  }
+}
