@@ -4,27 +4,46 @@
 
 {% block body %}
 
-<section id="articles-grid" class="pb4">
+<section id="article-single" class="pb4">
   <div class="max-width-4 mx-auto">
+
     <div class="clearfix">
-
-      <aside id="meta" class="small black my3 p1">
-          <span>{{ this.date }}</span>
-          <span>Author: {{ this.author }}</span>
+      <aside id="meta" class="article-meta small black left p1 mt4 mb0">
+          <span class="date mr4">{{ this.date }}</span>
+          <span class="author">Author: {{ this.author }}</span>
       </aside>
+      <aside id="tags" class="tags small right p1 mt4 mb0">
+        {% if this.tag1 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag1 }}</small></span>{% endif %}
+        {% if this.tag2 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag2 }}</small></span>{% endif %}
+        {% if this.tag3 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag3 }}</small></span>{% endif %}
+        {% if this.tag4 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag4 }}</small></span>{% endif %}
+      </aside>
+    </div>
 
-      <header id="heading" class="max-width-4 mx-auto">
-          <h1 class="playfair-heavy h2 black">{{ this.title }}</h1>
+    <div class="clearfix">
+      <header id="heading" class="article-title max-width-4 mx-auto my3">
+        <h1 class="playfair-heavy h2 black">{{ this.title }}</h1>
       </header>
 
-      <section id="lead">
-          <p class="bold black">{{ this.lead_text }}</p>
+      <section id="lead" class="article-lead clearfix mb3">
+        <div class="social gray grey col col-2 center">
+            <div class="col col-12 uppercase bold center pt2 pb2">Share article</div>
+            <div class="col col-2 mx1"><span class="center border rounded py1 px1 fb">FB</span></div>
+            <div class="col col-3 mx1"><span class="center border rounded py1 px1 twitter">TW</span></div>
+            <div class="col col-2 mx1"><span class="center border rounded py1 px1 email">@</span></div>
+        </div>
+        <p class="bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
-      <section id="body">
-          {{ this.body }}
+      <section id="lead-img" class="article-lead-image full-width">
+          <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
       </section>
 
+      <section id="body" class="article-body">
+          <div class="article-body-content">
+            {{ this.body }}
+          </div>
+      </section>
     </div>
   </div>
 </section>
