@@ -41,6 +41,7 @@
 }
 
 .pink { color: $pink; }
+.pink-hover:hover { color: $pink-dark; }
 .orange { color: $orange; }
 
 .hr-blue {
@@ -162,6 +163,9 @@
 .bg-pink {
   background-color: $pink;
 }
+.bg-pink-hover:hover {
+  background-color: $pink-dark;
+}
 
 /* Text colors - 'cc' prefix as 'country color' */
 
@@ -257,6 +261,8 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
   border: 3px solid $hr-blue;
 }
 
-.border-pink {
-  border-color: $pink;
-}
+.border-pink { border-color: $pink; }
+.border-pink-hover:hover { border-color: $pink-dark; }
+
+.border-2x { border-width: 2px; }
+.border-3x { border-width: 3px; }

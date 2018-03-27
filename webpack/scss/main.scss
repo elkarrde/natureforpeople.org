@@ -124,3 +124,69 @@
     background-color: $pink;
   }
 }
+
+#article-single {
+  .article-lead-image {
+    img {
+      max-width: 100%;
+      border-radius: 2px;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .article-body {
+    border-bottom: 1px solid $grey-light;
+
+    p + ul { margin-top: -0.75rem; }
+
+    .article-body-content {
+      p, ul, h1, h2, h3, h4, h5, h6 {
+        margin-left: 20%;
+      }
+      .highlight {
+        float: left;
+        width: 50%;
+        margin-left: 0;
+        background: $white;
+        border: none;
+        border-bottom: 5px solid $pink;
+        font-family: $playfair;
+        font-weight: 700;
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding: 1rem;
+        padding-left: 0;
+        margin-right: 2rem;
+        margin-top: 0;
+
+        &:before {
+          color: $pink;
+          content: "\201C";
+          font-family: $playfair;
+          font-size: 12rem;
+          float: left;
+          position: relative;
+          left: -0.5rem;
+          z-index: 0;
+          height: 0;
+          width: 0;
+          top: 1.5rem;
+          display: none; //run for the hills!
+        }
+      }
+
+      img {
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      ul { padding-left: 2.5rem; }
+    }
+  }
+}
+
+.attachment-item {
+  border-right: 1px solid $grey-light;
+
+  &:last-child { border-right: none; }
+}

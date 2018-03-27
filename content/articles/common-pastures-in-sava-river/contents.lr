@@ -24,7 +24,7 @@ tag3:
 ---
 tag4:
 ---
-lead_image: https://placem.at/places?random=3&h=136&w=333
+lead_image: https://placem.at/places?random=3&h=600&w=1140
 ---
 lead_text:
 
@@ -68,4 +68,14 @@ body:
 <p class="highlight">Suscipit suspendisse pellentesque in, odio risus non metus, conubia turpis libero ligula lectus. Lobortis etiam pulvinar bibendum, erat turpis quam tellus scelerisque, odio est mi dolore. Nulla habitasse libero aliquam, nunc ante lacus conubia, erat elit sed sodales auctor, rutrum ac sollicitudin tempus at.</p>
 ---
 learn_more: Learn more
+---
+factsheet:
+
+<p>Pellentesque curabitur, in condimentum, sed vitae lorem. Eu aenean dolor, neque nam amet, diam turpis massa. Vestibulum orci class, ullamcorper laoreet sed. Mi ultricies, blandit magna sollicitudin. Vestibulum enim, vestibulum et.</p>
+
+<p>Sem a eget, feugiat dui, pharetra mattis. Varius viverra enim, vivamus in cras, vestibulum proin. Est felis in, praesent elit, egestas feugiat. Convallis sit justo, nec tortor, sapien lobortis tincidunt. Suscipit nam, condimentum quam mus, sem volutpat.</p>
+
+<p>Nec mi orci, adipiscing lacus orci, sed pede. Montes aliquam, aliquam etiam ipsum, posuere habitasse. Mollis mollis vestibulum, donec curabitur, proin nascetur lectus. In curabitur. Quam nec orci.</p>
+
+<p>Morbi nonummy lorem, neque consectetur ut, imperdiet dolore tellus. Nec nulla amet. Iaculis facilisi lorem, erat in. Dui arcu. Mus morbi amet, feugiat dolor. Vel pellentesque, lectus accumsan sapien, vitae ornare nulla.</p>
 ---
