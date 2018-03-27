@@ -82,6 +82,10 @@
 .article {
   height: 405px;
   font-size: 14px;
+
+  &.article-hot {
+    border-bottom: 7px solid $orange;
+  }
 }
 
 .article-small {
@@ -94,14 +98,24 @@
 
 .article-medium {
   // text with top-bar image, no description
+  img {
+    max-width: 333px;
+    max-height: 136px;
+  }
 }
 
 .article-big {
   // text with image at right, double-width
+  img {
+    max-height: 405px;
+  }
 }
 
 .article-full {
   // text with image at right, full-row width
+  img {
+    max-height: 405px;
+  }
 }
 
 .article-filter-selection {

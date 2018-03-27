@@ -10,7 +10,7 @@
         {% for artx in this.children|sort %}
         {% if artx.type is defined %}
         <div class="article-item article-{{ artx.size }} {% if artx.tag1 != '' %}article-{{ artx.tag1 }} {% endif %}{% if artx.tag2 != '' %}article-{{ artx.tag2 }} {% endif %}{% if artx.tag3 != '' %}article-{{ artx.tag3 }} {% endif %}{% if artx.tag4 != '' %}article-{{ artx.tag4 }} {% endif %} col {% if artx.size == 'full' %}col-12{% elif artx.size == 'big' %}col-8{% else %}col-4{% endif %} p2">
-          <div class="box-shadow bg-white p0 article article-{{ artx.size }} overflow-hidden clearfix max-width-4 mx-auto">
+          <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix max-width-4 mx-auto">
             {% if artx.size == 'medium' %}
             <div class="col col-12">
               <a href="/articles/{{ artx|url }}">
@@ -25,6 +25,7 @@
                 {% if artx.tag3 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ artx.tag3 }}</small></span>{% endif %}
                 {% if artx.tag4 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ artx.tag4 }}</small></span>{% endif %}
               </aside>
+              {% if artx.hot == 'true' %}<h6 class="h6 mx0 mt1 mb0 p0 uppercase orange">Hot topic!</h5> {% endif %}
               <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb2 m0{% else %}p0 m0{% endif %} bold playfair-bold">{{ artx.title }}</h3>
               {% if artx.size != 'medium' %}
               <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">{{ artx.lead_text }}</p>

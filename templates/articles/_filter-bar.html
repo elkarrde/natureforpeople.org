@@ -7,10 +7,9 @@
         </div>
 
         <div class="right article-filter-selection">
-            <a href="#" class="js-article-filter filter rounded inline-block black border border-pink py1 px2" data-filter="article-products">products</a>
-            <a href="#" class="js-article-filter filter rounded inline-block black border border-pink py1 px2" data-filter="article-education">education</a>
-            <a href="#" class="js-article-filter filter rounded inline-block black border border-pink py1 px2" data-filter="article-tourism">tourism</a>
-            <a href="#" class="js-article-filter filter rounded inline-block black border border-pink py1 px2" data-filter="article-business">business</a>
+            {% for filter, title in bag('article-filters').iteritems() %}
+            <a href="#" class="js-article-filter filter rounded inline-block black border border-pink py1 px2" data-filter="{{ filter }}">{{ title }}</a>
+            {% endfor %}
         </div>
     </div>
 
