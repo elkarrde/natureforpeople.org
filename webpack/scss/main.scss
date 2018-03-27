@@ -130,10 +130,13 @@
     img {
       max-width: 100%;
       border-radius: 2px;
+      margin-bottom: 4rem;
     }
   }
 
   .article-body {
+    border-bottom: 1px solid $grey-light;
+
     p + ul { margin-top: -0.75rem; }
 
     .article-body-content {
@@ -172,8 +175,18 @@
         }
       }
 
-      img { margin-left: 0; }
+      img {
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
       ul { padding-left: 2.5rem; }
     }
   }
+}
+
+.attachment-item {
+  border-right: 1px solid $grey-light;
+
+  &:last-child { border-right: none; }
 }

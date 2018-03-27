@@ -26,23 +26,113 @@
       </header>
 
       <section id="lead" class="article-lead clearfix mb3">
-        <div class="social gray grey col col-2 center">
-            <div class="col col-12 uppercase bold center pt2 pb2">Share article</div>
-            <div class="col col-2 mx1"><span class="center border rounded py1 px1 fb">FB</span></div>
-            <div class="col col-3 mx1"><span class="center border rounded py1 px1 twitter">TW</span></div>
-            <div class="col col-2 mx1"><span class="center border rounded py1 px1 email">@</span></div>
+        <div class="social grey col col-2 center">
+          <div class="col col-12 uppercase bold center pt2 pb2">Share article</div>
+          <div class="col col-2 mx1"><span class="center border rounded py1 px1 fb">FB</span></div>
+          <div class="col col-3 mx1"><span class="center border rounded py1 px1 twitter">TW</span></div>
+          <div class="col col-2 mx1"><span class="center border rounded py1 px1 email">@</span></div>
         </div>
         <p class="bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
       <section id="lead-img" class="article-lead-image full-width">
-          <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
+        <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
       </section>
 
-      <section id="body" class="article-body">
-          <div class="article-body-content">
-            {{ this.body }}
+      <section id="body" class="article-body pb4 mb4">
+        <div class="article-body-content">
+          {{ this.body }}
+        </div>
+      </section>
+
+      <section id="attachments" class="article-attachments mb4">
+        <div class="clearfix">
+          <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
+          <ul class="attachments-list list-reset clearfix">
+
+            <li class="attachment-item col col-3 m0 p0">
+              <h4 class="h4 bold m0">Integer leo, vestibulum risus</h4>
+              <p class="pr2">Nulla ultrices eros, sit ac. Est leo, a rutrum sagittis. Dolor arcu. Quam arcu, fusce tellus. Pede vestibulum sed, morbi tellus nunc.</p>
+              <div class="meta grey">
+                <div class="meta-date">
+                  <span class="bold">Date:</span>
+                  <span>02 Jun 2017</span>
+                </div>
+                <div class="meta-size">
+                  <span class="bold">Size:</span>
+                  <span>10 MB</span>
+                </div>
+              </div>
+              <a href="#" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                <span class="i-file-text2 mr1"></span> Download
+              </a>
+            </li>
+
+            <li class="attachment-item col col-3 m0 p0">
+              <h4 class="h4 bold m0">Pellentesque magna vulputate</h4>
+              <p class="pr2">Venenatis nulla pellentesque. Ullamcorper dui, sed ac. Auctor nulla dapibus, tincidunt elit, ultricies cras.</p>
+              <div class="meta grey">
+                <div class="meta-date">
+                  <span class="bold">Date:</span>
+                  <span>02 Jun 2017</span>
+                </div>
+                <div class="meta-size">
+                  <span class="bold">Size:</span>
+                  <span>10 MB</span>
+                </div>
+              </div>
+              <a href="#" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                <span class="i-file-text2 mr1"></span> Download
+              </a>
+            </li>
+
+            <li class="attachment-item col col-3 m0 p0">
+              <h4 class="h4 bold m0">In lobortis enim, facilisi luctus a</h4>
+              <p class="pr2">Nullam ultricies, varius dictum. Justo sit nulla, mattis dictum consectetuer, in sint eu. Risus egestas, magna vulputate.</p>
+              <div class="meta grey">
+                <div class="meta-date">
+                  <span class="bold">Date:</span>
+                  <span>02 Jun 2017</span>
+                </div>
+                <div class="meta-size">
+                  <span class="bold">Size:</span>
+                  <span>10 MB</span>
+                </div>
+              </div>
+              <a href="#" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                <span class="i-file-text2 mr1"></span> Download
+              </a>
+            </li>
+
+            <li class="attachment-item col col-3 m0 p0">
+              <h4 class="h4 bold m0">Aliquam pede fusce integer sed</h4>
+              <p class="pr2">Risus sem turpis. Ullamcorper eget senectus. Id nibh nascetur. Purus tristique, in sapien eget. Nascetur arcu massa, facere sem</p>
+              <div class="meta grey">
+                <div class="meta-date">
+                  <span class="bold">Date:</span>
+                  <span>02 Jun 2017</span>
+                </div>
+                <div class="meta-size">
+                  <span class="bold">Size:</span>
+                  <span>10 MB</span>
+                </div>
+              </div>
+              <a href="#" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                <span class="i-file-text2 mr1"></span> Download
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section id="facts" class="article-facts my4">
+        <div class="clearfix">
+          <div class="mx-auto max-width-3 center bg-grey-light py3 px4">
+            <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
+            <span class="i-file-pdf h2 pink"></span>
           </div>
+        </div>
       </section>
     </div>
   </div>
