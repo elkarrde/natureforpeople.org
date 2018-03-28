@@ -30,21 +30,21 @@
           <div class="uppercase bold center pt2 pb2">Share article</div>
           <div class="inline-block mx1">
             <a href="http://facebook.com" target="_blank">
-              <span class="center rounded white bg-grey py1 px1 fb">
+              <span class="center rounded white bg-grey bg-grey-dark-hover py1 px1 fb">
                 <span class="i-facebook"></span></a>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
             <a href="http://twitter.com" target="_blank">
-              <span class="center rounded white bg-grey py1 px1 twitter">
+              <span class="center rounded white bg-grey bg-grey-dark-hover py1 px1 twitter">
                 <span class="i-twitter"></span>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
             <a href="mailto:put-your-email-address-here?subject={{ this.title }}" target="_blank">
-              <span class="center rounded white bg-grey py1 px1 email">
+              <span class="center rounded white bg-grey bg-grey-dark-hover py1 px1 email">
                 <span class="i-mail2"></span>
               </span>
             </a>
@@ -69,7 +69,7 @@
           <ul class="attachments-list list-reset clearfix">
 
             {% for atts in this.children %}
-            <li class="attachment-item col col-3 mx0 mt0 mb3 p0">
+            <li class="attachment-item col col-3 lg-col-3 md-col-3 sm-col-6 mx0 mt0 mb3 p0">
               <h4 class="h4 bold m0">{{ atts.title }}</h4>
               <p class="pr2">{{ atts.description }}</p>
               <div class="meta grey">
@@ -98,7 +98,7 @@
             <div class="center">
               <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
               <a href="#" class="js-expand-facts">
-                <span class="icon i-folder h3 p2 pink border boder-pink border-2x rounded"></span>
+                <span class="icon i-folder h3 p2 pink pink-hover border boder-pink border-pink-hover border-2x rounded"></span>
               </a>
             </div>
             <div class="hidden factsheet mt4">
