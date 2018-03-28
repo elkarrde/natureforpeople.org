@@ -1,0 +1,17 @@
+<li class="attachment-item col col-3 m0 p0">
+  <h4 class="h4 bold m0">{{ this.title }}</h4>
+  <p class="pr2">{{ this.description }}</p>
+  <div class="meta grey">
+    <div class="meta-date">
+      <span class="bold">Date:</span>
+      <span>{{ this.date }}</span>
+    </div>
+    <div class="meta-size">
+      <span class="bold">Size:</span>
+      <span>{{ this.size}}</span>
+    </div>
+  </div>
+  <a href="{{ this.slug|url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
+    <span class="i-download3 h4 mr1"></span> Download
+  </a>
+</li>

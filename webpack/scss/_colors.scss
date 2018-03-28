@@ -257,6 +257,7 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
   border: 3px solid $hr-blue;
 }
 
-.border-pink {
-  border-color: $pink;
-}
+.border-pink { border-color: $pink; }
+
+.border-2x { border-width: 2px; }
+.border-3x { border-width: 3px; }

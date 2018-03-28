@@ -31,18 +31,30 @@ translations = {
   }
 };
 
-$('.js-article-filter').click(function(e) {
-  let filter = '.' + $(this).attr('data-filter');
-  $('.article-item').addClass('hidden');
-  $(filter).removeClass('hidden');
+$('.js-article-filter').click(function() {
+  let filter = '.' + $(this).attr('data-filter')
+  $('.article-item').addClass('hidden')
+  $(filter).removeClass('hidden')
 
   let isActive = $(this).hasClass('active')
   if (isActive) {
-    $('.article-item').removeClass('hidden');
-    $('.js-article-filter').removeClass('active');
+    $('.article-item').removeClass('hidden')
+    $('.js-article-filter').removeClass('active')
   } else {
-    $('.js-article-filter').removeClass('active');
-    $(this).addClass('active');
+    $('.js-article-filter').removeClass('active')
+    $(this).addClass('active')
+  }
+  return false
+})
+
+$('.js-expand-facts').click(function() {
+  let isOpen = $(this).find('.icon').hasClass('open')
+  if (isOpen) {
+    $(this).find('.icon').removeClass('open').removeClass('i-folder-open').addClass('i-folder')
+    $('.factsheet').addClass('hidden')
+  } else {
+    $(this).find('.icon').addClass('open').removeClass('i-folder').addClass('i-folder-open')
+    $('.factsheet').removeClass('hidden')
   }
   return false
 })
