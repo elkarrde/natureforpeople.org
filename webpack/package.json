@@ -24,6 +24,8 @@
     "basscss": "^8.0.3",
     "c3": "^0.4.18",
     "can-control": "3.2.1",
+    "isotope-layout": "^3.0.5",
+    "isotope-packery": "^2.0.1",
     "jquery": "^3.1.1",
     "lodash": "^4.17.4",
     "waypoints": "^4.0.1"

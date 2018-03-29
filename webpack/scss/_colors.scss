@@ -40,8 +40,19 @@
   color: $red;
 }
 
+.pink { color: $pink; }
+.pink-hover:hover { color: $pink-dark; }
+.orange { color: $orange; }
+
 .hr-blue {
   color: $hr-blue;
+}
+
+.salmon {
+  color: $salmon;
+}
+.salmon em {
+  color: $salmon-dark;
 }
 
 /* Backgrounds */
@@ -120,6 +131,40 @@
 
 .bg-homepage-dark-blue {
   background: linear-gradient(0deg, $homepage-dark-blue 0%, $homepage-blue 100%);
+}
+
+.bg-homepage-green-wave {
+  background: linear-gradient(0deg, $wave-green 0%, $white 100%)
+}
+.bg-homepage-green-wave-bottom {
+  background: url('/static/images/vectors/bg-wave-green.svg') bottom center;
+  background-color: $white;
+  height: 100px;
+  width: 100%;
+}
+
+.bg-homepage-cyan-grad {
+  background: linear-gradient(0deg, $cyan-light 0%, $white 100%)
+}
+.bg-homepage-cyan {
+  background-color: $cyan-light;
+}
+
+.bg-homepage-blue-wave {
+  background: linear-gradient(0deg, $white 0%, $wave-blue 100%)
+}
+.bg-homepage-cyan-wave-bottom {
+  background: url('/static/images/vectors/bg-wave-cyan.svg') bottom center;
+  background-color: $wave-blue;
+  height: 100px;
+  width: 100%;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+.bg-pink-hover:hover {
+  background-color: $pink-dark;
 }
 
 /* Text colors - 'cc' prefix as 'country color' */
@@ -215,3 +260,16 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
 .border-hr-blue {
   border: 3px solid $hr-blue;
 }
+
+.border-pink { border-color: $pink; }
+.border-pink-hover:hover { border-color: $pink-dark; }
+
+.border-me-orange-red-hover:hover {
+  background: linear-gradient(to right, $me-red 0%, $me-orange-dark 100%);
+  border-image: linear-gradient(to right, $me-red 0%, $me-orange-dark 100%);
+  border-image-slice: 1;
+  color: $white;
+}
+
+.border-2x { border-width: 2px; }
+.border-3x { border-width: 3px; }
