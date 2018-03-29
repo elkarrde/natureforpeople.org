@@ -9,7 +9,7 @@ var IsoParams = {
   itemSelector: '.article-item',
   percentPosition: true
 }
-//var iso = new Isotope('.articles-grid', IsoParams)
+var iso = new Isotope('.articles-grid', IsoParams)
 
 jQuery = $;
 
