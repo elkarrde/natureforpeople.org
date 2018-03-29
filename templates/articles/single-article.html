@@ -12,7 +12,7 @@
           <span class="date mr4">{{ this.date }}</span>
           <span class="author">Author: {{ this.author }}</span>
       </aside>
-      <aside id="tags" class="tags small right p1 mt4 mb0">
+      <aside id="tags" class="article-tags small right p1 mt4 mb0">
         {% if this.tag1 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag1 }}</small></span>{% endif %}
         {% if this.tag2 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag2 }}</small></span>{% endif %}
         {% if this.tag3 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag3 }}</small></span>{% endif %}
@@ -21,11 +21,11 @@
     </div>
 
     <div class="clearfix">
-      <header id="heading" class="article-title max-width-4 mx-auto my3">
+      <header id="article-heading" class="article-title max-width-4 mx-auto my3">
         <h1 class="playfair-heavy h2 black">{{ this.title }}</h1>
       </header>
 
-      <section id="lead" class="article-lead clearfix mb3">
+      <section id="article-lead" class="article-lead clearfix mb3">
         <div class="social grey col col-2 center">
           <div class="uppercase bold center pt2 pb2">Share article</div>
           <div class="inline-block mx1">
@@ -50,20 +50,20 @@
             </a>
           </div>
         </div>
-        <p class="bold black col col-8 ml3">{{ this.lead_text }}</p>
+        <p class="lead bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
-      <section id="lead-img" class="article-lead-image full-width">
+      <section id="article-lead-img" class="article-lead-image full-width">
         <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
       </section>
 
-      <section id="body" class="article-body pb4 mb4">
+      <section id="article-body" class="article-body pb4 mb4">
         <div class="article-body-content">
           {{ this.body }}
         </div>
       </section>
 
-      <section id="attachments" class="article-attachments mb4">
+      <section id="article-attachments" class="article-attachments mb4">
         <div class="clearfix">
           <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
           <ul class="attachments-list list-reset clearfix">
@@ -94,7 +94,7 @@
 
       <section id="facts" class="article-facts my4">
         <div class="clearfix">
-          <div class="mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
+          <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
             <div class="center">
               <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
               <a href="#" class="js-expand-facts">

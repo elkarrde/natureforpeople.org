@@ -4,12 +4,13 @@ c3 = require("c3");
 _ = require("lodash");
 
 Isotope = require('isotope-layout');
+require('isotope-packery')
 var IsoParams = {
-  layoutMode: 'fitRows',
+  layoutMode: 'packery',
   itemSelector: '.article-item',
   percentPosition: true
 }
-//var iso = new Isotope('.articles-grid', IsoParams)
+var iso = new Isotope('.articles-grid', IsoParams)
 
 jQuery = $;
 

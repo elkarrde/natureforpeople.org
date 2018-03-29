@@ -264,5 +264,12 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
 .border-pink { border-color: $pink; }
 .border-pink-hover:hover { border-color: $pink-dark; }
 
+.border-me-orange-red-hover:hover {
+  background: linear-gradient(to right, $me-red 0%, $me-orange-dark 100%);
+  border-image: linear-gradient(to right, $me-red 0%, $me-orange-dark 100%);
+  border-image-slice: 1;
+  color: $white;
+}
+
 .border-2x { border-width: 2px; }
 .border-3x { border-width: 3px; }
