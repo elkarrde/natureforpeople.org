@@ -1,5 +1,38 @@
 categories = [];
 
+const translation = {
+  noEmpty: {
+    hr: "Morate upisati barem jedan pojam za pretragu!",
+    en: "You must enter at least one query to search!"
+  },
+  totalResults: {
+    hr: "rezultata",
+    en: "results"
+  },
+  downloadDocument: {
+    hr: "Preuzimanje dokumenta",
+    en: "Download document"
+  },
+  back: {
+    hr: "Natrag",
+    en: "Back"
+  },
+  next: {
+    hr: "Naprijed",
+    en: "Next"
+  }
+};
+
+function getLocale() {
+  var locale;
+  if (window.location.href.indexOf("/hr/") > -1) {
+    locale = "hr";
+  } else {
+    locale = "en";
+  }
+  return locale;
+}
+
 $(document).ready(function() {
   $("#searchForm").on("submit", function(event) {
     if ($(".searchForm___input").val() === "" && categories.length == 0) {
@@ -7,7 +40,9 @@ $(document).ready(function() {
         ".searchForm___results, .searchForm__navigation, .searchForm___total"
       ).html("");
       $(".searchForm___results").append(
-        '<p class="sm-col-10 mx-auto px2 mb4">You must select at least one filter or write one query!'
+        '<p class="sm-col-10 mx-auto px2 mb4 center">' +
+          translation.noEmpty[getLocale()] +
+          "</p>"
       );
       return false;
     }
@@ -22,7 +57,8 @@ function requestData(page) {
     type: "GET",
     url: process.env.KB_URL + "/search" //lolcal dev environment
   }).done(function(data) {
-    var total = `Total ${data.total_entries} search results`;
+    var total =
+      data.total_entries + " " + translation.totalResults[getLocale()];
     $(".searchForm___total").html(total);
     if (data.total_entries == 0) {
       $(".no-results-block").removeClass("hide");
@@ -103,7 +139,9 @@ function drawResults(results) {
                         </div>
                         <a href="${
                           element.url
-                        }" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">Download document</a>
+                        }" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">
+                        ${translation.downloadDocument[getLocale()]}
+                        </a>
                     </div>
                 </div>
             </div>`
@@ -112,7 +150,7 @@ function drawResults(results) {
   if (results.page_number != 1) {
     $(".searchForm__navigation").append(`
             <a href="#" id="prev-btn" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">
-                Back
+                ${translation.back[getLocale()]}
             </a>
         `);
     $("#prev-btn").click(function(e) {
@@ -123,7 +161,7 @@ function drawResults(results) {
   } else {
     $(".searchForm__navigation").append(`
             <a href="#" id="prev-btn" class="inline-block mt2 bg-silver white bold h6 p2 not-allowed">
-                Back
+                ${translation.back[getLocale()]}
             </a>
         `);
     $("#prev-btn").click(function(e) {
@@ -133,7 +171,7 @@ function drawResults(results) {
   if (results.page_number < results.total_pages) {
     $(".searchForm__navigation").append(`
             <a href="#" id="next-btn" class="inline-block mt2 bg-si-green bg-si-green-dark-hover white bold h6 p2">
-                Next
+                ${translation.next[getLocale()]}
             </a>
         `);
     $("#next-btn").click(function(e) {
@@ -144,7 +182,7 @@ function drawResults(results) {
   } else {
     $(".searchForm__navigation").append(`
             <a href="#" id="next-btn" class="inline-block mt2 bg-silver white bold h6 p2 not-allowed">
-                Next
+                ${translation.next[getLocale()]}
             </a>
         `);
     $("#next-btn").click(function(e) {
