@@ -2,14 +2,7 @@
     #usecases {
         .max-width-4 { max-width: 38em; }
         .case {
-            margin: 0;
-            padding: 0;
-            width: 24%;
-            text-align: center;
-            img {
-                max-width: 75%;
-                vertical-align: middle;
-            }
+            img { max-width: 80%; }
         }
     }
     .articles-filter-content {
@@ -100,14 +93,7 @@
     #usecases {
         .max-width-4 { max-width: 38em; }
         .case {
-            margin: 0;
-            padding: 0;
-            width: 24%;
-            text-align: center;
-            img {
-                max-width: 90%;
-                vertical-align: middle;
-            }
+            img { max-width: 90%; }
         }
     }
     #articles-filter {
@@ -184,10 +170,6 @@
     }
     #usecases {
         .max-width-4 { max-width: $breakpoint-md; }
-        .case {
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
     }
 
     #article-single {

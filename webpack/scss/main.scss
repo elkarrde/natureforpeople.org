@@ -78,16 +78,29 @@
 }
 
 .full-width { width: 100%; }
+.invisible { visibility: hidden; }
 
 .usecases-list {
   .case {
-    img { vertical-align: middle; }
+    padding: 0 1rem;
+    margin: 0;
+    width: 24%;
+
+     img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
   }
 }
 
 .article {
   height: 405px;
   font-size: 14px;
+
+  .btn-learn-more {
+    position: absolute;
+    bottom: 2.5rem;
+  }
 
   &.article-hot {
     border-bottom: 7px solid $orange;
@@ -189,6 +202,14 @@
 
 .attachment-item {
   border-right: 1px solid $grey-light;
+  position: relative;
+  min-height: 26rem;
+
+  .btn-download {
+    position: absolute;
+    bottom: 0;
+  }
+
   &:last-child { border-right: none; }
 }
 

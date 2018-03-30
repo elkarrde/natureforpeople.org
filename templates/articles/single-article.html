@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% set body_class = 'article' %}
+{% set body_class = 'article-single' %}
 
 {% block body %}
 
@@ -13,10 +13,10 @@
           <span class="author">Author: {{ this.author }}</span>
       </aside>
       <aside id="tags" class="article-tags small right p1 mt4 mb0">
-        {% if this.tag1 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag1 }}</small></span>{% endif %}
-        {% if this.tag2 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag2 }}</small></span>{% endif %}
-        {% if this.tag3 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag3 }}</small></span>{% endif %}
-        {% if this.tag4 != "" %}<span class="label label-tag"><small class="tag border border-pink pink rounded px1">{{ this.tag4 }}</small></span>{% endif %}
+        {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
+        {% if this.tag2 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag2 }}</span></span>{% endif %}
+        {% if this.tag3 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag3 }}</span></span>{% endif %}
+        {% if this.tag4 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag4 }}</span></span>{% endif %}
       </aside>
     </div>
 
@@ -53,17 +53,17 @@
         <p class="lead bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
-      <section id="article-lead-img" class="article-lead-image full-width">
+      <section id="article-lead-img" class="article-lead-image clearfix full-width">
         <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
       </section>
 
-      <section id="article-body" class="article-body pb4 mb4">
+      <section id="article-body" class="article-body clearfix pb4 mb4">
         <div class="article-body-content">
           {{ this.body }}
         </div>
       </section>
 
-      <section id="article-attachments" class="article-attachments mb4">
+      <section id="article-attachments" class="article-attachments clearfix mb4">
         <div class="clearfix">
           <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
           <ul class="attachments-list list-reset clearfix">
@@ -82,7 +82,7 @@
                   <span>{{ atts.size }}</span>
                 </div>
               </div>
-              <a href="{{ atts.slug|url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
+              <a href="{{ atts.slug|url }}" class="btn btn-download bg-si-green bg-si-green-dark-hover white my2">
                 <span class="i-download3 mr1"></span> Download
               </a>
             </li>
@@ -92,7 +92,7 @@
         </div>
       </section>
 
-      <section id="facts" class="article-facts my4">
+      <section id="facts" class="article-facts clearfix my4">
         <div class="clearfix">
           <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
             <div class="center">
