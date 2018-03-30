@@ -23,7 +23,7 @@ locale = ab
 name = Staging
 enabled = yes
 default = yes
-target = rsync://root@floatingpoint.io/home/www/pabat-beta.floatingpoint.io
+target = rsync://root@natureforpeople.org/var/www/staging.natureforpeople.org
 
 [servers.production]
 name = Production
