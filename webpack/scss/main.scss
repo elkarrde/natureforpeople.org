@@ -135,7 +135,10 @@
 
 .article-full {
   // text with image at right, full-row width
-  img { max-height: 405px; }
+  img {
+    min-height: 405px;
+    width: 100%;
+  }
 }
 
 .article-filter-selection {
