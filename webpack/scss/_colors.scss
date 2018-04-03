@@ -273,3 +273,11 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
 
 .border-2x { border-width: 2px; }
 .border-3x { border-width: 3px; }
+
+/* Target Safari 11+, because no support for border-image */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .border-me-orange-red {
+        border: 3px solid $me-orange-dark;
+    }
+}}
