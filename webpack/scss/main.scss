@@ -117,9 +117,14 @@
 
 .article-medium {
   // text with top-bar image, no description
-  img {
-    max-width: 333px;
+  .image {
     max-height: 136px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }
 
@@ -174,6 +179,7 @@
         margin-right: 2rem;
         margin-top: 0;
 
+        /*
         &:before {
           color: $pink;
           content: "\201C";
@@ -188,6 +194,7 @@
           top: 1.5rem;
           display: none; //run for the hills!
         }
+        */
       }
 
       img {
