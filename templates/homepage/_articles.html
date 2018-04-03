@@ -7,13 +7,12 @@
       <div class="articles-grid clearfix max-width-4 mx-auto">
         <div class="grid-sizer col col-12"></div>
 
-        {% for artx in this.children|sort %}
-        {% if artx.type is defined %}
+        {% for artx in site.get('/articles').children|sort %}
         <div class="article-item article-{{ artx.size }} {% if artx.tag1 != '' %}article-{{ artx.tag1 }} {% endif %}{% if artx.tag2 != '' %}article-{{ artx.tag2 }} {% endif %}{% if artx.tag3 != '' %}article-{{ artx.tag3 }} {% endif %}{% if artx.tag4 != '' %}article-{{ artx.tag4 }} {% endif %} col {% if artx.size == 'full' %}col-12{% elif artx.size == 'big' %}col-8{% else %}col-4{% endif %} p2">
           <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix max-width-4 mx-auto">
             {% if artx.size == 'medium' %}
             <div class="col col-12 image">
-              <a href="/articles/{{ artx|url }}">
+              <a href="{{ artx|url }}">
                 <img src="{{ artx.lead_image }}" class="article-image-medium" alt="{{ artx.title }}" title="{{ artx.title }}">
               </a>
             </div>
@@ -30,24 +29,23 @@
               {% if artx.size != 'medium' %}
               <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">{{ artx.lead_text }}</p>
               {% endif %}
-              <a href="/articles/{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
+              <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
             </div>
             {% if artx.size == 'full' %}
             <div class="col col-8 image">
-              <a href="/articles/{{ artx|url }}">
+              <a href="{{ artx|url }}">
                 <img src="{{ artx.lead_image }}" class="article-image-full" alt="{{ artx.title }}" title="{{ artx.title }}">
               </a>
             </div>
             {% elif artx.size == 'big' %}
             <div class="col col-6 image">
-              <a href="/articles/{{ artx|url }}">
+              <a href="{{ artx|url }}">
                 <img src="{{ artx.lead_image }}" class="article-image-big" alt="{{ artx.title }}" title="{{ artx.title }}">
               </a>
             </div>
             {% endif %}
           </div>
         </div>
-        {% endif %}
         {% endfor %}
 
       </div>
