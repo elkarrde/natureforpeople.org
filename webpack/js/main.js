@@ -10,7 +10,6 @@ var IsoParams = {
   itemSelector: '.article-item',
   percentPosition: true
 }
-var iso = new Isotope('.articles-grid', IsoParams)
 
 jQuery = $;
 
@@ -31,34 +30,6 @@ translations = {
     hr: "Izaberite"
   }
 };
-
-$('.js-article-filter').click(function() {
-  let filter = '.' + $(this).attr('data-filter')
-  $('.article-item').addClass('hidden')
-  $(filter).removeClass('hidden')
-
-  let isActive = $(this).hasClass('active')
-  if (isActive) {
-    $('.article-item').removeClass('hidden')
-    $('.js-article-filter').removeClass('active')
-  } else {
-    $('.js-article-filter').removeClass('active')
-    $(this).addClass('active')
-  }
-  return false
-})
-
-$('.js-expand-facts').click(function() {
-  let isOpen = $(this).find('.icon').hasClass('open')
-  if (isOpen) {
-    $(this).find('.icon').removeClass('open').removeClass('i-folder-open').addClass('i-folder')
-    $('.factsheet').addClass('hidden')
-  } else {
-    $(this).find('.icon').addClass('open').removeClass('i-folder').addClass('i-folder-open')
-    $('.factsheet').removeClass('hidden')
-  }
-  return false
-})
 
 geolocation = null;
 locale = determineLocale();
@@ -83,8 +54,41 @@ function instWaypoint(id, method) {
   });
 }
 
+// ---------- ON DOCUMENT LOAD ----------
 jQuery(document).ready(function() {
   setGeolocation();
+
+  $('.js-article-filter').click(function() {
+    let filter = '.' + $(this).attr('data-filter')
+    $('.article-item').addClass('hidden')
+    $(filter).removeClass('hidden')
+
+    let isActive = $(this).hasClass('active')
+    if (isActive) {
+      $('.article-item').removeClass('hidden')
+      $('.js-article-filter').removeClass('active')
+    } else {
+      $('.js-article-filter').removeClass('active')
+      $(this).addClass('active')
+    }
+    return false
+  })
+
+  $('.js-expand-facts').click(function() {
+    let isOpen = $(this).find('.icon').hasClass('open')
+    if (isOpen) {
+      $(this).find('.icon').removeClass('open').removeClass('i-folder-open').addClass('i-folder')
+      $('.factsheet').addClass('hidden')
+    } else {
+      $(this).find('.icon').addClass('open').removeClass('i-folder').addClass('i-folder-open')
+      $('.factsheet').removeClass('hidden')
+    }
+    return false
+  })
+
+  var iso = new Isotope('.articles-grid', IsoParams)
+
+  makeEmailsClickable()
 
   $("#homepage-view-map-btn").click(function() {
     $("html,body").animate(
@@ -269,4 +273,10 @@ function localizedUrl(url, locale) {
 
 function crawlArray(array, index, step) {
   return ((index + step) % array.length + array.length) % array.length;
+}
+
+function makeEmailsClickable() {
+  let authorString = $('#article-single .author-content').text()
+  let authorHtml = authorString.replace(/([\w-\.]{1,}@[\w-\.]{2,})/gi, '<a class="pink pink-hover" href="mailto:$1">$1</a>')
+  $('#article-single .author-content').html(authorHtml)
 }

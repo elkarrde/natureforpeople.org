@@ -2,6 +2,8 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
+enabled: no
+---
 slug: lofoten-islands
 ---
 title: Saving Norway's pristine Lofoten islands from oil exploration

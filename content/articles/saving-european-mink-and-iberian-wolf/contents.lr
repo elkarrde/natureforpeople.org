@@ -2,6 +2,8 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
+enabled: no
+---
 slug: saving-european-mink-and-iberian-wolf
 ---
 title: Working to save the European mink and the Iberian wolf

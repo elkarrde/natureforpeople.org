@@ -2,6 +2,8 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
+enabled: no
+---
 slug: sustainability-on-comino
 ---
 title: Sustainability on the island of Comino - update
