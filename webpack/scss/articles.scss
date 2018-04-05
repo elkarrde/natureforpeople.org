@@ -31,6 +31,14 @@
   &.article-hot {
     border-bottom: 7px solid $orange;
   }
+
+  .article-image {
+    width: 100%;
+    height: 405px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .article-small {
@@ -51,6 +59,7 @@
       max-width: 100%;
       max-height: 100%;
     }
+    .article-image { height: 136px; }
   }
 }
 
@@ -116,6 +125,7 @@
             margin-left: 0;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            width: 100%;
         }
 
         &.fit-text {
@@ -123,6 +133,10 @@
             margin-bottom: 1rem;
             margin-left: 20%;
             max-width: 80%;
+        }
+
+        &.force-width {
+          max-width: 100%;
         }
       }
 

@@ -2,6 +2,7 @@ $ = require("jquery");
 d3 = require("d3");
 c3 = require("c3");
 _ = require("lodash");
+lightbox = require('lightbox2')
 
 Isotope = require('isotope-layout');
 require('isotope-packery')
@@ -53,6 +54,24 @@ function instWaypoint(id, method) {
     offset: "right-in-view"
   });
 }
+
+function setupArticleImages() {
+  let images = $('#article-single .article-image-full, #article-single .article-body img')
+  images.each(function() {
+    let imgSrc = $(this).attr('src')
+    let imgTitle = $(this).attr('title')
+    $(this).addClass('image-lightbox').wrap('<a href="' + imgSrc + '" data-lightbox="article-single" data-title="' + imgTitle + '"></a>')
+  })
+
+  lightbox.option({
+    'wrapAround': true,
+    'disableScrolling': false
+  })
+}
+
+jQuery(window).on('load', function() {
+    setupArticleImages()
+})
 
 // ---------- ON DOCUMENT LOAD ----------
 jQuery(document).ready(function() {
