@@ -14,7 +14,8 @@
             {% if artx.size == 'medium' %}
             <div class="col col-12 image">
               <a href="{{ artx|url }}">
-                <img src="{{ artx.lead_image }}" class="article-image-medium" alt="{{ artx.title }}" title="{{ artx.title }}">
+                {#<img src="{{ artx.lead_image }}" class="article-image-medium" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+                <span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% endif %}
@@ -27,21 +28,21 @@
               </aside>
               {% if artx.hot == 'true' %}<h6 class="h6 mx0 mt1 mb0 p0 uppercase orange">Hot topic!</h5> {% endif %}
               <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb0 m0{% else %}p0 m0{% endif %} bold playfair-bold">{{ artx.title }}</h3>
-              {# % if artx.size != 'medium' % #}
               <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">{{ artx.lead_text }}</p>
-              {# % endif % #}
               <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
             </div>
             {% if artx.size == 'full' %}
             <div class="col col-8 image">
               <a href="{{ artx|url }}">
-                <img src="{{ artx.lead_image }}" class="article-image-full" alt="{{ artx.title }}" title="{{ artx.title }}">
+                {#<img src="{{ artx.lead_image }}" class="article-image-full" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+                <span class="article-image article-image-full" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% elif artx.size == 'big' %}
             <div class="col col-6 image">
               <a href="{{ artx|url }}">
-                <img src="{{ artx.lead_image }}" class="article-image-big" alt="{{ artx.title }}" title="{{ artx.title }}">
+                {#<img src="{{ artx.lead_image }}" class="article-image-big" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+                <span class="article-image article-image-big" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% endif %}
