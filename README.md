@@ -4,6 +4,9 @@ WWF Adria PA-BAT website
 ## How to run locally
 `lektor server -f webpack`
 
+Don't forget to build a site before deploying:
+`lektor build`
+
 ## Deploy
 
 Run the following:
@@ -22,3 +25,6 @@ Run the following:
 ```Bash
 ./pull-staging.sh
 ```
+
+
+See it live on [**staging** server](https://staging.natureforpeople.org/).

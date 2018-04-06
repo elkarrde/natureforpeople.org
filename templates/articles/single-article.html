@@ -10,7 +10,7 @@
     <div class="clearfix">
       <aside id="meta" class="article-meta small black left p1 mt4 mb0">
           <span class="date mr4">{{ this.date }}</span>
-          <span class="author">Author: {{ this.author }}</span>
+          <span class="author">Author: <span class="author-content">{{ this.author }}</span></span>
       </aside>
       <aside id="tags" class="article-tags small right p1 mt4 mb0">
         {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
@@ -54,7 +54,7 @@
       </section>
 
       <section id="article-lead-img" class="article-lead-image clearfix full-width">
-        <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.title }}" title="{{ this.title }}">
+        <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.lead_image_title }}" title="{{ this.lead_image_title }}">
       </section>
 
       <section id="article-body" class="article-body clearfix pb4 mb4">
@@ -63,6 +63,7 @@
         </div>
       </section>
 
+      {% if this.children %}
       <section id="article-attachments" class="article-attachments clearfix mb4">
         <div class="clearfix">
           <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
@@ -91,7 +92,9 @@
           </ul>
         </div>
       </section>
+      {% endif %}
 
+      {% if this.factsheet %}
       <section id="facts" class="article-facts clearfix my4">
         <div class="clearfix">
           <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
@@ -107,6 +110,7 @@
           </div>
         </div>
       </section>
+      {% endif %}
     </div>
   </div>
 </section>
