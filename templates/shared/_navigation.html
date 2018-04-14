@@ -1,14 +1,16 @@
 <header id="global-header" class="global-header uppercase bold fixed top-0 right-0 left-0 box-shadow z3">
 
+  {#
   <!-- WWF brand logo -->
   <a class="brand-logo" href="{{ '/'|url(alt) }}">
     <img src="{{ '/static/images/vectors/WWF_logo.svg'|asseturl }}" alt="WWF panda">
   </a>
+  #}
 
   <!-- WWF main navigation - Countries dropdown + pages -->
   <nav id="main-nav" class="main-nav px2 max-width-4 mx-auto">
     <ul class="list-reset m0 flex flex-row justify-around xs-hide sm-hide md-hide">
-      {#
+
       <li class="flex-1">
 
         <!-- Countries dropdown -->
@@ -27,7 +29,7 @@
           </ul>
         </div>
       </li>
-      #}
+
 
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
       <li class="flex-1 center">

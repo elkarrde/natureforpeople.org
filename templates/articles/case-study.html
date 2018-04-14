@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 
-{% set body_class = 'article-single' %}
+{% set body_class = 'case-study' %}
 
 {% block body %}
 
-<section id="article-single" class="pb4">
+<section id="article-single case-study" class="pb4">
   <div class="max-width-4 mx-auto">
 
     <div class="clearfix">
@@ -53,28 +53,61 @@
         <p class="lead bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
-      <section id="article-lead-img" class="article-lead-image clearfix full-width">
-        <img src="{{ this.lead_image }}" class="article-image-full" alt="{{ this.lead_image_title }}" title="{{ this.lead_image_title }}">
-      </section>
-
-      <section id="article-body" class="article-body clearfix pb4 mb4">
-        <div class="article-body-content">
-          {{ this.body }}
+      <section id="main-data" class="main-data clearfix mt1 mb2 flex flex-row justify-around">
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
+            <img src="/static/images/icons/icon-people.png" alt="">
+            <h5 class="h5 mb1 black uppercase">People</h5>
+            <p class="pink"><strong>{{ this.people }}</strong></p>
+          </div>
+        </div>
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
+            <img src="/static/images/icons/icon-money.png" alt="">
+            <h5 class="h5 mb1 black uppercase">Money</h5>
+            <p class="pink"><strong>{{ this.money }}</strong></p>
+          </div>
+        </div>
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
+            <img src="/static/images/icons/icon-time.png" alt="">
+            <h5 class="h5 mb1 black uppercase">Time</h5>
+            <p class="pink"><strong>{{ this.time }}</strong></p>
+          </div>
         </div>
       </section>
 
-      {% if site.get(this.path + '/case-study') %}
-      <section id="case-study" class="article-case-study clearfix mb4">
-          <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
-              <h4 class="black h4 center">{{ this.template_title }}</h4>
-              <p class="black center px4">{{ this.template_subtitle }}</p>
-
-              <div class="center mb3">
-                  <a href="{{ '.'|url }}case-study" class="btn bg-si-green bg-si-green-dark-hover white my2" target="_blank">
-                      <span class="i-arrow-right2 mr1"></span> {{ this.template_cta_button_text }}
-                  </a>
-              </div>
+      <section id="sub-data" class="sub-data clearfix mt1 mb2 py2 flex flex-row justify-around">
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white mx1 py2 center box-shadow">
+            <h5 class="h6 mb1 black">Organizacija</h5>
+            <p class="black">{{ this.organization }}</p>
           </div>
+        </div>
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white mx1 py2 center box-shadow">
+            <h5 class="h6 mb1 black">Država</h5>
+            <p class="black">{{ this.country }}</p>
+          </div>
+        </div>
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white mx1 py2 center box-shadow">
+            <h5 class="h6 mb1 black">Lokacija</h5>
+            <p class="black">{{ this.location }}</p>
+          </div>
+        </div>
+        <div class="data-item flex-1">
+          <div class="clearfix bg-white mx1 py2 center box-shadow">
+            <h5 class="h6 mb1 black">Stupanj zaštite</h5>
+            <p class="black">{{ this.level }}</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-body" class="data-body clearfix pb4 mb4">
+        <div class="data-body-content">
+          {{ this.body }}
+        </div>
       </section>
 
       {#
@@ -92,58 +125,7 @@
         </div>
       </section>
       #}
-      {% endif %}
 
-      {#
-      {% if this.children %}
-      <section id="article-attachments" class="article-attachments clearfix mb4">
-        <div class="clearfix">
-          <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
-          <ul class="attachments-list list-reset clearfix">
-
-            {% for atts in this.children %}
-            <li class="attachment-item col col-3 lg-col-3 md-col-3 sm-col-6 mx0 mt0 mb3 p0">
-              <h4 class="h4 bold m0">{{ atts.title }}</h4>
-              <p class="pr2">{{ atts.description }}</p>
-              <div class="meta grey">
-                <div class="meta-date">
-                  <span class="bold">Date:</span>
-                  <span>{{ atts.date }}</span>
-                </div>
-                <div class="meta-size">
-                  <span class="bold">Size:</span>
-                  <span>{{ atts.size }}</span>
-                </div>
-              </div>
-              <a href="{{ atts.slug|url }}" class="btn btn-download bg-si-green bg-si-green-dark-hover white my2">
-                <span class="i-download3 mr1"></span> Download
-              </a>
-            </li>
-            {% endfor %}
-
-          </ul>
-        </div>
-      </section>
-      {% endif %}
-      #}
-
-      {% if this.factsheet %}
-      <section id="facts" class="article-facts clearfix my4">
-        <div class="clearfix">
-          <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
-            <div class="center">
-              <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
-              <a href="#" class="js-expand-facts">
-                <span class="icon i-folder h3 p2 pink pink-hover border boder-pink border-pink-hover border-2x rounded"></span>
-              </a>
-            </div>
-            <div class="hidden factsheet mt4">
-              {{ this.factsheet }}
-            </div>
-          </div>
-        </div>
-      </section>
-      {% endif %}
     </div>
   </div>
 </section>

@@ -6,11 +6,11 @@
 .full-width { width: 100%; }
 .invisible { visibility: hidden; }
 
-.usecases-list {
+.partners-list {
   .case {
-    padding: 0 1rem;
-    margin: 0;
-    width: 24%;
+    //padding: 0 1rem;
+    //margin: 0;
+    //width: 24%;
 
      img {
       max-width: 100%;
@@ -19,14 +19,22 @@
   }
 }
 
+.social-icon { padding: 0.5rem 0.6rem; }
+
 .article {
   height: 405px;
   font-size: 14px;
 
-  .btn-learn-more {
-    position: absolute;
-    bottom: 2.5rem;
+  .btn {
+    padding: 0.75rem 1rem;
+    margin-right: 0;
   }
+
+  .btn-learn-more, .btn-view-study {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .btn-view-study { left: 11.25rem; }
 
   &.article-hot {
     border-bottom: 7px solid $orange;
@@ -39,6 +47,8 @@
     background-position: center;
     background-size: cover;
   }
+
+  .label-tag { margin-bottom: 0.25rem; }
 }
 
 .article-small {
@@ -118,6 +128,9 @@
         margin-top: 0;
       }
 
+      .m20 { margin-left: 20%; }
+      .clear { clear: both; }
+
       img {
         border-radius: 2px;
 
@@ -135,9 +148,8 @@
             max-width: 80%;
         }
 
-        &.force-width {
-          max-width: 100%;
-        }
+        &.force-width { max-width: 100%; }
+        &.force-full-width { width: 100%; }
       }
 
       ul { padding-left: 2.5rem; }

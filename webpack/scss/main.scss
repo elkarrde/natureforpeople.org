@@ -73,5 +73,31 @@
   margin-right: auto;
 }
 
+.case-wwf {
+  img { max-height: 130px; }
+}
+
 @import "articles.scss";
 @import "responsive.scss";
+
+.main-data {
+  img { max-height: 88px; }
+}
+.data-body-content {
+  dl {
+    margin-bottom: 1rem;
+
+    dt {
+      font-weight: bold;
+      font-size: 1.2rem;
+      width: 25%;
+      float: left;
+    }
+
+    dd {
+      float: right;
+      width: 70%;
+      padding-bottom: 1.33rem;
+    }
+  }
+}
