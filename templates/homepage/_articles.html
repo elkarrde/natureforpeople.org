@@ -1,3 +1,5 @@
+{% include "homepage/_partners.html" %}
+
 <div class="bg-homepage-cyan pb4">
 
   {% include "articles/_filter-bar.html" %}
@@ -14,7 +16,6 @@
             {% if artx.size == 'medium' %}
             <div class="col col-12 image">
               <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-medium" alt="{{ artx.title }}" title="{{ artx.title }}">#}
                 <span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
@@ -24,12 +25,14 @@
                 {% if artx.tag1 != "" %}<span class="label label-tag inline-block"><span class="tag border border-pink pink rounded px1">{{ artx.tag1 }}</span></span>{% endif %}
                 {% if artx.tag2 != "" %}<span class="label label-tag inline-block"><span class="tag border border-pink pink rounded px1">{{ artx.tag2 }}</span></span>{% endif %}
                 {% if artx.tag3 != "" %}<span class="label label-tag inline-block"><span class="tag border border-pink pink rounded px1">{{ artx.tag3 }}</span></span>{% endif %}
-                {% if artx.tag4 != "" %}<span class="label label-tag inline-block"><span class="tag border border-pink pink rounded px1">{{ artx.tag4 }}</span></span>{% endif %}
+                {#% if artx.tag4 != "" %}<span class="label label-tag inline-block"><span class="tag border border-pink pink rounded px1">{{ artx.tag4 }}</span></span>{% endif %#}
               </aside>
               {% if artx.hot == 'true' %}<h6 class="h6 mx0 mt1 mb0 p0 uppercase orange">Hot topic!</h5> {% endif %}
               <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb0 m0{% else %}p0 m0{% endif %} bold playfair-bold"><a href="{{ artx|url }}">{{ artx.title }}</a></h3>
               <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">{{ artx.lead_text }}</p>
+              {% if artx.learn_more != '' %}
               <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
+              {% endif %}
               {% if site.get((artx|url) + "case-study") %}
               <a href="{{ artx|url }}case-study" class="btn-view-study btn border-green-blue border-green-blue-hover">{{ artx.view_study }}</a>
               {% endif %}
@@ -37,14 +40,12 @@
             {% if artx.size == 'full' %}
             <div class="col col-8 image">
               <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-full" alt="{{ artx.title }}" title="{{ artx.title }}">#}
                 <span class="article-image article-image-full" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% elif artx.size == 'big' %}
             <div class="col col-6 image">
               <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-big" alt="{{ artx.title }}" title="{{ artx.title }}">#}
                 <span class="article-image article-image-big" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
