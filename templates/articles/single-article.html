@@ -10,7 +10,7 @@
     <div class="clearfix">
       <aside id="meta" class="article-meta small black left p1 mt4 mb0">
           <span class="date mr4">{{ this.date }}</span>
-          <span class="author">Author: <span class="author-content">{{ this.author }}</span></span>
+          {% if this.author != "" %}<span class="author">Author: <span class="author-content">{{ this.author }}</span></span>{% endif %}
       </aside>
       <aside id="tags" class="article-tags small right p1 mt4 mb0">
         {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
@@ -36,14 +36,14 @@
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="https://twitter.com/home?status={{ '.'|url }}" target="_blank">
+            <a href="https://twitter.com/home?status={{ '.'|url }} @wwfadria" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 twitter">
                 <span class="i-twitter"></span>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="mailto:put-your-email-address-here?subject={{ this.title }}&body={{ '.'|url }}" target="_blank">
+            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ '.'|url }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 email">
                 <span class="i-mail2"></span>
               </span>
@@ -70,7 +70,7 @@
               <p class="black center px4">{{ this.template_subtitle }}</p>
 
               <div class="center mb3">
-                  <a href="{{ '.'|url }}case-study" class="btn bg-si-green bg-si-green-dark-hover white my2" target="_blank">
+                  <a href="{{ '.'|url }}case-study" class="btn bg-si-green bg-si-green-dark-hover white my2">
                       <span class="i-arrow-right2 mr1"></span> {{ this.template_cta_button_text }}
                   </a>
               </div>

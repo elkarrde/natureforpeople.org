@@ -92,6 +92,8 @@
       font-size: 1.2rem;
       width: 25%;
       float: left;
+      clear: both;
+      margin-top: 1rem;
     }
 
     dd {
@@ -99,5 +101,7 @@
       width: 70%;
       padding-bottom: 1.33rem;
     }
+
+    dt + dd { margin-top: 1rem; }
   }
 }

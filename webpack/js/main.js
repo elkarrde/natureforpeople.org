@@ -73,9 +73,13 @@ jQuery(window).on('load', function() {
     setupArticleImages()
 })
 
+var iso;
+
 // ---------- ON DOCUMENT LOAD ----------
 jQuery(document).ready(function() {
   setGeolocation();
+
+  iso = new Isotope('.articles-grid', IsoParams);
 
   $('.js-article-filter').click(function() {
     let filter = '.' + $(this).attr('data-filter')
@@ -90,6 +94,7 @@ jQuery(document).ready(function() {
       $('.js-article-filter').removeClass('active')
       $(this).addClass('active')
     }
+    iso.layout();
     return false
   })
 
@@ -104,8 +109,6 @@ jQuery(document).ready(function() {
     }
     return false
   })
-
-  var iso = new Isotope('.articles-grid', IsoParams);
 
   makeEmailsClickable();
   makeShareArticleLinks();

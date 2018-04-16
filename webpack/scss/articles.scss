@@ -8,14 +8,11 @@
 
 .partners-list {
   .case {
-    //padding: 0 1rem;
-    //margin: 0;
-    //width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-     img {
-      max-width: 100%;
-      vertical-align: middle;
-    }
+    img { max-width: 100%; }
   }
 }
 
@@ -34,7 +31,7 @@
     position: absolute;
     bottom: 2rem;
   }
-  .btn-view-study { left: 11.25rem; }
+  .btn-learn-more + .btn-view-study { left: 11.25rem; }
 
   &.article-hot {
     border-bottom: 7px solid $orange;
