@@ -29,9 +29,9 @@
 }
 
 .short-banner {
-  height: 50vh;
+  height: 25vh;
   @media (min-width: $breakpoint-xxl) {
-    height: 30vh;
+    height: 17vh;
   }
 }
 
@@ -105,3 +105,7 @@
     dt + dd { margin-top: 1rem; }
   }
 }
+
+.h1-5 { font-size: 5.25rem; }
+.width-4 { width: 64rem; }
+.h70p { height: 70px; }

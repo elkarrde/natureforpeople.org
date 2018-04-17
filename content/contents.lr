@@ -1,6 +1,6 @@
 _model: index
 ---
-title: Nature <em>&</em> People
+title: Nature <em>&amp;</em> People
 ---
 headline: Recognize the value of our nature by discovering good stories from the field shared by our partners and their people they care about nature with.
 ---
@@ -67,3 +67,8 @@ share_description: Become a part of our platform & let's solve challenges togeth
 share_cta_button_text: Contact us
 ---
 share_link: mailto:natureforpeople@wwfadria.org
+---
+search_placeholder_text: Type and find a story...
+---
+search_button_text: Search
+---
