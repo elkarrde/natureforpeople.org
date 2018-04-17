@@ -122,7 +122,9 @@ var ProtectedAreasControl = Control.extend({
 
     this.initProtectedAreasDropdown(protectedAreas);
     this.$element.find("#graphs-country-picker .btn span").text(name);
-    this.state = { country: code };
+
+    delete this.state.pa;
+    this.state.country = code;
     this.renderGraph();
   },
   "#graphs-pa-picker [data-dropdown-container] li click": function(el) {
