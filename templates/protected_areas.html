@@ -1,5 +1,12 @@
-{% extends "layout.html" %} {% set body_class = 'protected-areas' %} {% block body %} {% include "shared/_short_banner.html"
-%} {% include "shared/_intro.html" %} {% include "shared/_attachments.html" %}
+{% extends "layout.html" %}
+{% set body_class = 'protected-areas' %}
+
+{% block body %}
+
+{% include "shared/_short_banner.html" %}
+{% include "shared/_intro.html" %}
+{% include "shared/_attachments.html" %}
+
 <div id="pa-container">
 	<section id="pa-pickers" class="pt3">
 
@@ -83,8 +90,12 @@
 		</div>
 	</section>
 </div>
+
+{#
 <div class="bg-hr-blue py4 center">
 	<a href="{{ '/recommendations' | url(alt) }}" class="btn white border-white">{{ this.cta_button_text }}</a>
 </div>
+#}
 
-{% include "homepage/_learn_more.html" %} {% endblock %}
+{#% include "homepage/_learn_more.html" %#}
+{% endblock %}

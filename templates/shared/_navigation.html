@@ -1,20 +1,29 @@
 <header id="global-header" class="global-header uppercase bold fixed top-0 right-0 left-0 box-shadow z3">
 
+  {#
   <!-- WWF brand logo -->
   <a class="brand-logo" href="{{ '/'|url(alt) }}">
     <img src="{{ '/static/images/vectors/WWF_logo.svg'|asseturl }}" alt="WWF panda">
   </a>
+  #}
 
   <!-- WWF main navigation - Countries dropdown + pages -->
   <nav id="main-nav" class="main-nav px2 max-width-4 mx-auto">
     <ul class="list-reset m0 flex flex-row justify-around xs-hide sm-hide md-hide">
-      {#
-      <li class="flex-1">
 
+      {% for path, label in bag('main-navigation', this.alt).iteritems() %}
+      {% if path == '/' %}
+      <li class="flex-1 center">
+        <a class="link block px3 flex items-center {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+
+      <li class="flex-1">
         <!-- Countries dropdown -->
         {% set countries = bag('country-navigation', this.alt).iteritems() %}
         <div id="countries-dropdown" class="nav-dropdown">
-          <button class="w100 link-invert pointer border-none px2 flex flex-row justify-center items-center">
+          <button class="w100 link--invert grey-dark bg-grey-light-hover pointer border-none px2 flex flex-row justify-center items-center">
             <span class="mr1 uppercase left-align">{{ countries.next()[1] }}</span>
             <i class="i-triangle-down"></i>
           </button>
@@ -27,12 +36,13 @@
           </ul>
         </div>
       </li>
-      #}
 
       {% for path, label in bag('main-navigation', this.alt).iteritems() %}
+      {% if path != '/' %}
       <li class="flex-1 center">
         <a class="link block px3 flex items-center {% if this.path == path %}active{% endif %}" href="{{ path|url(alt) }}">{{ label }}</a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </nav>

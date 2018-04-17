@@ -1,12 +1,12 @@
 _model: index
 ---
-title: Nature <em>&</em> People
+title: Nature <em>&amp;</em> People
 ---
-headline: Lorem ipsum subheadline copy
+headline: Recognize the value of our nature by discovering good stories from the field shared by our partners and their people they care about nature with.
 ---
-blurb_title: This project is supported by out friends and partners
+partners_title: This project is supported by out friends and partners
 ---
-blurb: Thanks for supporting us in this project.<br/>Nature & people will appreciate that.
+partners_text: Thanks for supporting us in this project.<br/>Nature & people will appreciate that.
 ---
 message:
 
@@ -60,10 +60,15 @@ about_content:
 <li><strong>All citizens</strong> to take an active role in the effort to safeguard our unique natural values as a basis for our long-term prosperity</li>
 </ul>
 ---
-submit_title: Submit your story
+share_title: Share your story
 ---
-submit_description: Download this Word document and share your story with us.
+share_description: Become a part of our platform & let's solve challenges together.
 ---
-submit_cta_button_text: Download document
+share_cta_button_text: Contact us
 ---
-submit_docs_link: http://unec.edu.az/application/uploads/2014/12/pdf-sample.pdf
+share_link: mailto:natureforpeople@wwfadria.org
+---
+search_placeholder_text: Type and find a story...
+---
+search_button_text: Search
+---

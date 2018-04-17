@@ -1,5 +1,5 @@
 @media (max-width: $breakpoint-sm) {
-    #usecases {
+    #partners {
         .max-width-4 { max-width: 38em; }
         .case {
             img { max-width: 80%; }
@@ -90,7 +90,7 @@
 }
 
 @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-    #usecases {
+    #partners {
         .max-width-4 { max-width: 38em; }
         .case {
             img { max-width: 90%; }
@@ -168,7 +168,7 @@
     #articles-filter {
         .max-width-4 { max-width: $breakpoint-md; }
     }
-    #usecases {
+    #partners {
         .max-width-4 { max-width: $breakpoint-md; }
     }
 

@@ -73,9 +73,13 @@ jQuery(window).on('load', function() {
     setupArticleImages()
 })
 
+var iso;
+
 // ---------- ON DOCUMENT LOAD ----------
 jQuery(document).ready(function() {
   setGeolocation();
+
+  iso = new Isotope('.articles-grid', IsoParams);
 
   $('.js-article-filter').click(function() {
     let filter = '.' + $(this).attr('data-filter')
@@ -90,6 +94,7 @@ jQuery(document).ready(function() {
       $('.js-article-filter').removeClass('active')
       $(this).addClass('active')
     }
+    iso.layout();
     return false
   })
 
@@ -105,9 +110,8 @@ jQuery(document).ready(function() {
     return false
   })
 
-  var iso = new Isotope('.articles-grid', IsoParams)
-
-  makeEmailsClickable()
+  makeEmailsClickable();
+  makeShareArticleLinks();
 
   $("#homepage-view-map-btn").click(function() {
     $("html,body").animate(
@@ -295,7 +299,14 @@ function crawlArray(array, index, step) {
 }
 
 function makeEmailsClickable() {
-  let authorString = $('#article-single .author-content').text()
-  let authorHtml = authorString.replace(/([\w-\.]{1,}@[\w-\.]{2,})/gi, '<a class="pink pink-hover" href="mailto:$1">$1</a>')
-  $('#article-single .author-content').html(authorHtml)
+  $('#article-single .author-content a').addClass('pink pink-hover');
+  // let authorHtml = authorString.replace(/([\w-\.]{1,}@[\w-\.]{2,})/gi, '<a class="pink pink-hover" href="mailto:$1">$1</a>')
+  // $('#article-single .author-content').html(authorHtml)
+}
+
+function makeShareArticleLinks() {
+  $('.social a').each(function() {
+    let href = $(this).attr('href').replace(/\=\.\.\/\.\.\//, '=' + window.location.origin + '/');
+    $(this).attr('href', href);
+  })
 }
