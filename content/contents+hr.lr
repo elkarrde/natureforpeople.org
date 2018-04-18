@@ -1,8 +1,8 @@
 _model: index
 ---
-title: Vrijednost naše prirode
+title: Priroda <em><i>i</i></em> ljudi
 ---
-headline: Prepoznajte vrijednost naše prirode
+headline: Prepoznajte vrijednost naše prirode otkrivajući dobre priče s terena koje dijele naši partneri i njihovi ljudi s kojima se brinu o prirodi.
 ---
 message:
 
@@ -56,15 +56,23 @@ about_content:
 <li><strong>Sve građane</strong> da se aktiviraju u zaštiti naših prirodnih vrijednosti.</li>
 </ul>
 ---
-share_title: Share your story
+partners_title: Ovaj projekt podržavaju naši prijatelji i partneri
 ---
-share_description: Become a part of our platform & let's solve challenges together.
+partners_text: Hvala što ste nas podržali u ovom projektu.<br/>Priroda i ljudi to će cijeniti.
 ---
-share_cta_button_text: Contact us
+share_title: Podijelite svoju priču
+---
+share_description: Postanite dio naše platforme i riješimo zajedno izazove.
+---
+share_cta_button_text: Kontaktirajte nas
 ---
 share_link: mailto:natureforpeople@wwfadria.org
 ---
-search_placeholder_text: Type and find a story...
+search_placeholder_text: Upišite i pronađite priču...
 ---
-search_button_text: Search
+search_button_text: Traži
+---
+filter_title: Pogledajte kako drugi pomažu očuvati okoliš
+---
+filter_description: Filtrirajte teme koje vas zanimaju
 ---

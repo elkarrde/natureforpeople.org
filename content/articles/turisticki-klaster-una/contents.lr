@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: turisticki-klaster-una
+_slug: tourist-cluster-una
 ---
 title: Partners, not competitors
 ---
@@ -202,7 +202,7 @@ the ideal foundations for a successful future!</p>
 <img src="/static/images/articles/una/carobna-una.jpg" class="fit-text" title="The magical Una © Hris Hadžihajdarević, NP Una">
 
 ---
-learn_more: Learn more
+learn_more: Read story
 ---
 view_study: Case study
 ---
@@ -221,4 +221,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---

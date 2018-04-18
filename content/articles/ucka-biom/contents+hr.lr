@@ -2,13 +2,13 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sutjeska-czzs
+_slug: ucka-biom
 ---
-title: Battle for Sutjeska – initiative to oppose the decision to construct hydroelectric plants in a national park
+title: Ornitološki edukativno-volonterski kampovi na Učki
 ---
-lang: en
+lang: hr
 ---
-date:
+date: 02.12.2017.
 ---
 author:
 ---
@@ -28,11 +28,11 @@ body:
 ---
 learn_more:
 ---
-view_study: Case study
+view_study: Vidi studiju
 ---
-tag1: initiatives
+tag1: education
 ---
-tag2:
+tag2: management
 ---
 tag3:
 ---

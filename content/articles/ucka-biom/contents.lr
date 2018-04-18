@@ -2,11 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: ucka-biom
+_slug: ucka-biom
 ---
-title: Ornitološki edukativno-volonterski kampovi na Učki
+title: Ornithological educational and volunteer camps on Mount Učka
 ---
-lang: hr
+lang: en
 ---
 date: 02.12.2017.
 ---
@@ -45,4 +45,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---
