@@ -49,6 +49,44 @@ $(document).ready(function() {
     requestData(1);
     event.preventDefault();
   });
+
+  $('#search-bar').on("submit", function(event) {
+      $('#search-bar .response').addClass('hidden');
+      let query = $('#search-bar .input-query').val();
+      let queryParam = $('#search-bar .input-query').attr('name');
+      let lang = $('#search-bar .input-lang').val();
+      let langParam = $('#search-bar .input-lang').attr('name');
+      let route = $('#search-bar form').attr('action');
+
+      let qryData = {};
+      qryData[queryParam] = query.trim();
+      qryData[langParam] = lang;
+
+      if (query.trim().length > 1) {
+        $.ajax({
+          data: qryData,
+          type: "GET",
+          url: process.env.KB_URL + route
+        }).done(function(data) {
+          if (data.pagination.total_entries > 0) {
+            $('.article-item').addClass('hidden')
+            data.data.forEach(function(itm) {
+              $('.article-item a.btn-learn-more[href*="' + itm.slug + '""]').closest('.article-item').removeClass('hidden')
+            });
+            setTimeout(function() { iso.layout(); }, 300);
+          } else {
+            $('#search-bar .response').removeClass('hidden');
+            $('.article-item').removeClass('hidden');
+            iso.layout();
+          }
+        });
+      } else {
+        $('.article-item').removeClass('hidden');
+        iso.layout();
+      }
+
+      return false;
+  });
 });
 
 function requestData(page) {

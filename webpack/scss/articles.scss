@@ -8,11 +8,13 @@
 
 .partners-list {
   .case {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    height: 10rem;
 
-    img { max-width: 100%; }
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
   }
 }
 

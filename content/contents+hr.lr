@@ -2,7 +2,7 @@ _model: index
 ---
 title: Priroda <em><i>i</i></em> ljudi
 ---
-headline: Prepoznajte vrijednost naše prirode otkrivajući dobre priče s terena koje dijele naši partneri i njihovi ljudi s kojima se brinu o prirodi.
+headline: Prepoznajte vrijednost naše prirode otkrivajući dobre priče svojih partnera i ljudi iz regije.
 ---
 message:
 
@@ -74,5 +74,7 @@ search_button_text: Traži
 ---
 filter_title: Pogledajte kako drugi pomažu očuvati okoliš
 ---
-filter_description: Filtrirajte teme koje vas zanimaju
+filter_description: , filtrirajte teme koje vas zanimaju
+---
+message_no_results: Nema rezultata.
 ---
