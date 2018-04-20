@@ -1,0 +1,48 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+case_study: case-study
+---
+slug: hawk-of-the-steppes-dzpps
+---
+title:
+---
+lang: hr
+---
+date:
+---
+author:
+---
+size: small
+---
+hot: false
+---
+lead_image:
+---
+lead_image_title:
+---
+lead_text:
+---
+body:
+---
+learn_more:
+---
+view_study: Case study
+---
+tag1: initiatives
+---
+tag2:
+---
+tag3:
+---
+tag4:
+---
+factsheet:
+---
+template_title: Follow steps to success
+---
+template_subtitle: Get more facts and details about this story
+---
+template_cta_button_text: Read case study
+---
