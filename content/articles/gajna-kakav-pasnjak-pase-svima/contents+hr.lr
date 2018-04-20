@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: gajna-kakav-pasnjak-odgovara-svima
+_slug: gajna-kakav-pasnjak-odgovara-svima
 ---
 title: Kakav pašnjak paše svima?
 ---
@@ -142,17 +142,17 @@ ona o nama i našoj stoci“, zaključuje Kovačević.</p>
 
 <img src="/static/images/articles/gajna/spremanje-sjena-u-vrijeme-potopljene-gajne-(c)-iris-benes-bed.jpg" class="fit-text" title="Spremanje sjena u vrijeme potopljene Gajne © Iris Beneš, BED">
 ---
-learn_more: Saznajte više
+learn_more: Pročitaj
 ---
 view_study: Vidi studiju
 ---
-tag1: management
+tag1: upravljanje
 ---
-tag2: initiatives
+tag2: inicijative
 ---
-tag3: culture
+tag3: kultura
 ---
-tag4: products
+tag4: proizvodi
 ---
 factsheet:
 ---

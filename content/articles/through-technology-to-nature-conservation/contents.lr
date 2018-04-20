@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: through-technology-to-nature-conservation
+_slug: through-technology-to-nature-conservation
 ---
 title: Through technology to nature conservation
 ---
@@ -120,7 +120,7 @@ with their friends, away from their parents”, Rizaj concluded.</p>
 <img src="/static/images/articles/digital-school/darsej-rizaj-in-the-camp-(c)-digital-school.jpg" class="fit-text" title="Darsej Rizaj in the camp © Digital School">
 
 ---
-learn_more: Learn more
+learn_more: Read story
 ---
 view_study: Case study
 ---

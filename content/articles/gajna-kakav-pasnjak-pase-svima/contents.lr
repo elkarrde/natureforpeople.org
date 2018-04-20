@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: gajna-kakav-pasnjak-odgovara-svima
+_slug: gajna-what-kind-of-pasture-is-best-for-all
 ---
 title: What kind of pasture is best for all?
 ---
@@ -184,7 +184,7 @@ us and our cattle,” concluded Kovačević.</p>
 
 <img src="/static/images/articles/gajna/spremanje-sjena-u-vrijeme-potopljene-gajne-(c)-iris-benes-bed.jpg" class="fit-text" title="Protecting hay during times of flooding at Gajna © Iris Beneš, BED">
 ---
-learn_more: Learn more
+learn_more: Read story
 ---
 view_study: Case study
 ---

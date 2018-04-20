@@ -1,20 +1,20 @@
-<section id="partners" class="mx1 full-width bg-homepage-cyan">
+<section id="partners" class="full-width bg-homepage-cyan">
 
-    <div class="partner-holder max-width-4 mx-auto pt1 pb4 clearfix">
-        <div class="partner-blurb col col-4">
+    <div class="partner-holder max-width-4 mx-auto pt1 pb4 flex flex-row items-center clearfix">
+        <div class="partner-blurb col col-3">
             <h5 class="h6 mb1">{{ this.partners_title }}</h5>
             <p class="mt0">{{ this.partners_text }}</p>
         </div>
-        <ul class="list-reset partners-list center flex flex-row justify-around m0 p0 col col-8">
-            <li class="flex-1 center case case-wwf">
-                <img src="/static/images/vectors/WWF_logo.svg" alt="WWF" title="WWF">
-            </li>
+        <div class="list-reset partners-list center -flex -flex-wrap -content-around -items-center m0 p0 col col-8 cleafix">
+            <div class="flex-1 flex items-center center px2 case case-wwf">
+                <img src="/static/images/vectors/WWF_logo.svg" alt="WWF" title="WWF" class="self-stretch">
+            </div>
             {% for path, title in bag('partners').iteritems() %}
-            <li class="flex-1 center case case-{{ title|lower|urlencode|replace('%20', '-') }}">
-                <img src="{{ path|url }}.png" srcset="{{ path|url }}@2x.png 2x" alt="{{ title }}" title="{{ title }}">
-            </li>
+            <div class="flex-1 flex items-center center px2 case case-{{ title|lower|urlencode|replace('%20', '-') }}">
+                <img src="{{ path|url }}.png" srcset="{{ path|url }}@2x.png 2x" alt="{{ title }}" title="{{ title }}" class="self-stretch">
+            </div>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 
 </section>

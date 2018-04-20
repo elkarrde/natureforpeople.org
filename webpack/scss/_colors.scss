@@ -131,6 +131,7 @@
 .bg-homepage-green-wave-bottom {
   background: url('/static/images/vectors/bg-wave-green.svg') bottom center, linear-gradient(0deg, $cyan-light 0%, $white 100%);
   background-color: $white;
+  background-size: contain;
   height: 100px;
   width: 100%;
 }

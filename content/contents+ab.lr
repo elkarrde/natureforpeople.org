@@ -2,7 +2,7 @@ _model: index
 ---
 title: Vlera e natyrës
 ---
-headline: Tw njohim  vlerat e natyrës tonë 
+headline: Tw njohim  vlerat e natyrës tonë
 ---
 message:
 
@@ -28,21 +28,21 @@ facts_card_3_link: http://awsassets.panda.org/downloads/wwf_brosura_print_eng_1.
 ---
 facts_cta: Burimi
 ---
-learn_more_title_1: Natyra dhe Njerëzit 
+learn_more_title_1: Natyra dhe Njerëzit
 ---
-learn_more_title_2: Bizneset e qëndrueshme 
+learn_more_title_2: Bizneset e qëndrueshme
 ---
-learn_more_title_3: Vlerat e zonës së mbrojtur 
+learn_more_title_3: Vlerat e zonës së mbrojtur
 ---
-learn_more_cta: Lexo më shumë 
+learn_more_cta: Lexo më shumë
 ---
 scroll_to_map_button_text: Shiko hartën për më shumë informata
 ---
-learn_more_backline: Lexo më shumë 
+learn_more_backline: Lexo më shumë
 ---
-about_backline: Për ne 
+about_backline: Për ne
 ---
-about_headline: Zonat e mbrojtura për natyrën dhe njerëzit 
+about_headline: Zonat e mbrojtura për natyrën dhe njerëzit
 ---
 about_content:
 
@@ -54,3 +54,22 @@ about_content:
 <li><strong>Komunitetet lokale</strong> qe të luajne një rol më aktiv në menaxhimin e burimeve natyrore dhe të përfshihen në marrjen e vendimeve në nivelet lokale</li>
 <li><strong>Të gjithë qytetarët</strong> të marrin një rol aktiv në përpjekjet për t’i ruajtur vlerat tona unike natyrore si bazë për prosperitetin tonë afatgjatë</li>
 </ul>
+---
+share_title: Share your story
+---
+share_description: Become a part of our platform & let's solve challenges together.
+---
+share_cta_button_text: Contact us
+---
+share_link: mailto:natureforpeople@wwfadria.org
+---
+search_placeholder_text: Type and find a story...
+---
+search_button_text: Search
+---
+filter_title: See how others are helping to preserve the environment
+---
+filter_description: Filter topics that you're interested in
+---
+message_no_results: No results.
+---

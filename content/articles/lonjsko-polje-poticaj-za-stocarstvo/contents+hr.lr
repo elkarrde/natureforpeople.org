@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: lonjsko-polje-poticaj-za-stocarstvo
+_slug: lonjsko-polje-poticaj-za-stocarstvo
 ---
 title: Poticaj za stočarstvo kao motiv za ostanak
 ---
@@ -176,17 +176,17 @@ pa su njihova gnijezda uzele druge rode. Dogodine su se vratile, na sreću i nas
 <img src="/static/images/articles/lonjsko-polje/rode-su-glavna-atrakcija-sela-cigoc-(c)-pp-lonjsko-polje.jpg" class="fit-text" title="Rode su zaštitni znak u selima Lonjskog polja © PP Lonjsko polje">
 
 ---
-learn_more: Saznajte više
+learn_more: Pročitaj
 ---
 view_study: Vidi studiju
 ---
-tag1: initiatives
+tag1: inicijative
 ---
-tag2: products
+tag2: proizvodi
 ---
-tag3: culture
+tag3: kultura
 ---
-tag4: management
+tag4: upravljanje
 ---
 factsheet:
 ---
@@ -195,4 +195,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---

@@ -2,6 +2,7 @@ $ = require("jquery");
 d3 = require("d3");
 c3 = require("c3");
 _ = require("lodash");
+slick = require("slick-carousel");
 lightbox = require('lightbox2')
 
 Isotope = require('isotope-layout');
@@ -73,7 +74,7 @@ jQuery(window).on('load', function() {
     setupArticleImages()
 })
 
-var iso;
+window.iso = null;
 
 // ---------- ON DOCUMENT LOAD ----------
 jQuery(document).ready(function() {
@@ -112,6 +113,13 @@ jQuery(document).ready(function() {
 
   makeEmailsClickable();
   makeShareArticleLinks();
+
+  $('.partners-list').slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
 
   $("#homepage-view-map-btn").click(function() {
     $("html,body").animate(

@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: through-technology-to-nature-conservation
+_slug: ocuvanje-prirode-s-pomocu-tehnologije
 ---
 title: Očuvanje prirode s pomoću tehnologije
 ---
@@ -124,13 +124,13 @@ zaključio je Rizaj.</p>
 <img src="/static/images/articles/digital-school/darsej-rizaj-in-the-camp-(c)-digital-school.jpg" class="fit-text" title="Darsej Rizaj u kampu © Digitalna škola">
 
 ---
-learn_more: Saznajte više
+learn_more: Pročitaj
 ---
 view_study: Vidi studiju
 ---
-tag1: education
+tag1: edukacija
 ---
-tag2: initiatives
+tag2: inicijative
 ---
 tag3:
 ---

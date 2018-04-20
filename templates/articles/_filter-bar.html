@@ -1,13 +1,13 @@
 <section id="articles-filter">
 
     <div class="articles-filter-content max-width-4 mx-auto bg-white box-shadow py2 px3 clearfix">
-        <div class="left mb2">
-            <h3 class="m0 p0">See how others are helping to preserve the environment</h3>
-            <p class="m0 p0">Filter topics that you're intrested in</p>
+        <div class="mb1">
+            {#<h3 class="m0 p0">{{ this.filter_title }}</h3>#}
+            <p class="m0 p0"><strong>{{ this.filter_title }}</strong>{{ this.filter_description }}</p>
         </div>
 
-        <div class="right article-filter-selection">
-            {% for filter, title in bag('article-filters').iteritems() %}
+        <div class="article-filter-selection center">
+            {% for filter, title in bag('article-filters', this.alt).iteritems() %}
             <a href="#filter-{{ filter }}" class="js-article-filter filter rounded inline-block black border border-pink bg-grey-light-hover py1 px2" data-filter="{{ filter }}">{{ title }}</a>
             {% endfor %}
         </div>

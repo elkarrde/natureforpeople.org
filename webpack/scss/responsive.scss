@@ -1,4 +1,6 @@
 @media (max-width: $breakpoint-sm) {
+    .width-4 { width: auto; }
+    .h1-5 { line-height: 4.2rem; }
     #partners {
         .max-width-4 { max-width: 38em; }
         .case {
@@ -90,6 +92,8 @@
 }
 
 @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .width-4 { width: 41em; }
+    .h1-5 { line-height: 4.25rem; }
     #partners {
         .max-width-4 { max-width: 38em; }
         .case {
@@ -165,6 +169,8 @@
 }
 
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .width-4 { width: $breakpoint-md; }
+    .h1-5 { line-height: 4.2rem; }
     #articles-filter {
         .max-width-4 { max-width: $breakpoint-md; }
     }
@@ -194,6 +200,7 @@
 }
 
 @media (min-width: $breakpoint-lg) {
+    .width-4 { width: $breakpoint-lg; }
     #article-single {
         .article-body {
             .article-body-content {
@@ -203,4 +210,6 @@
     }
 }
 
-@media (min-width: $breakpoint-xl) { }
+@media (min-width: $breakpoint-xl) {
+    .width-4 { width: $breakpoint-xl; }
+}

@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: kozjanski-park-kako-od-jabuka-napraviti-brend
+_slug: kozjanski-park-how-to-make-a-brand-out-of-apples
 ---
 title: How to make a brand – out of apples?
 ---
@@ -172,7 +172,7 @@ Park.</p>
 <img src="/static/images/articles/kozjanski-park/prekrasan-u-svako-doba-dana-(c)-kozjanski-park.jpg" class="fit-text" title="Always beautiful – Kozjansko Regional Park © Kozjanski park">
 
 ---
-learn_more: Learn more
+learn_more: Read story
 ---
 view_study: Case study
 ---

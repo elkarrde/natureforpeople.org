@@ -2,11 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: sutjeska-czzs
+_slug: sutjeska-czzs
 ---
-title: Bitka za Sutjesku – inicijativa u sprječavanju odluke vlade o gradnji hidroelektrane u nacionalnom parku
+title: Battle for Sutjeska – initiative to oppose the decision to construct hydroelectric plants in a national park
 ---
-lang: hr
+lang: en
 ---
 date:
 ---
@@ -45,4 +45,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---

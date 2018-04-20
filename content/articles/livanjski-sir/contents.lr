@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: livanjski-sir
+_slug: livanjski-sir
 ---
 title: Cestom livanjskog sira do okusa savršenstva
 ---
@@ -171,15 +171,15 @@ izazovima susreću ljudi da bi ga napravili. U slast!</p>
 <img src="/static/images/articles/livanjski-sir/ovakvo-ce-si-zadovoljstvo-uskoro-moci-priustiti-u-ljudi-diljem-europe-(c)-andrija-vroljak.jpg" class="fit-text" title="Ovakvo će si zadovoljstvo uskoro moći priuštiti u ljudi diljem Europe © Andrija Vroljak">
 
 ---
-learn_more: Learn more
+learn_more: Pročitaj
 ---
-view_study: Case study
+view_study: Vidi studiju
 ---
-tag1: initiatives
+tag1: inicijative
 ---
-tag2: products
+tag2: proizvodi
 ---
-tag3: management
+tag3: upravljanje
 ---
 tag4:
 ---
@@ -190,4 +190,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---

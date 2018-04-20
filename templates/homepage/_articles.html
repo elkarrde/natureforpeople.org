@@ -9,7 +9,7 @@
       <div class="articles-grid clearfix max-width-4 mx-auto">
         <div class="grid-sizer col col-12"></div>
 
-        {% for artx in site.get('/articles').children|sort %}
+        {% for artx in site.get('/articles', this.alt).children|sort %}
         {% if artx.enabled != 'no' %}
         <div class="article-item article-{{ artx.size }} {% if artx.tag1 != '' %}article-{{ artx.tag1 }} {% endif %}{% if artx.tag2 != '' %}article-{{ artx.tag2 }} {% endif %}{% if artx.tag3 != '' %}article-{{ artx.tag3 }} {% endif %}{% if artx.tag4 != '' %}article-{{ artx.tag4 }} {% endif %} col {% if artx.size == 'full' %}col-12{% elif artx.size == 'big' %}col-8{% else %}col-4{% endif %} p2">
           <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix max-width-4 mx-auto">
@@ -33,7 +33,7 @@
               {% if artx.learn_more != '' %}
               <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
               {% endif %}
-              {% if site.get((artx|url) + "case-study") %}
+              {% if artx.case_study %}
               <a href="{{ artx|url }}case-study" class="btn-view-study btn border-green-blue border-green-blue-hover">{{ artx.view_study }}</a>
               {% endif %}
             </div>

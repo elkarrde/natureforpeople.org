@@ -2,9 +2,9 @@ _model: index
 ---
 title: Nature <em>&amp;</em> People
 ---
-headline: Recognize the value of our nature by discovering good stories from the field shared by our partners and their people they care about nature with.
+headline: Recognize the value of our nature by discovering good stories from our partners and the people in the region.
 ---
-partners_title: This project is supported by out friends and partners
+partners_title: This project is supported by our friends and partners
 ---
 partners_text: Thanks for supporting us in this project.<br/>Nature & people will appreciate that.
 ---
@@ -71,4 +71,10 @@ share_link: mailto:natureforpeople@wwfadria.org
 search_placeholder_text: Type and find a story...
 ---
 search_button_text: Search
+---
+filter_title: See how others are helping to preserve the environment
+---
+filter_description: , filter topics that you're interested in
+---
+message_no_results: No results.
 ---
