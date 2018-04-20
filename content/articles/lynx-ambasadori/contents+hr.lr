@@ -2,17 +2,15 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-released: study
+_slug: lynx-ambasadori
 ---
-_slug: stepski-sokol-dzpps
----
-title: Suradnjom sa elektroprivredom do poboljšanja zaštite stepskog sokola
+title: Razvoj mreže mladih ambasadora risa u zaštićenim područjima
 ---
 lang: hr
 ---
 date:
 ---
-author:
+author: <a href="mailto:kivanic@wwfadria.org">Kasandra Ivanić</a>
 ---
 size: small
 ---
@@ -22,17 +20,15 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text: Prva suradnja nevladinog udruženja za zaštitu ptica i elektroprivrede u Srbiji.
----
-body:
+lead_text: 60 mladih učenika iz 25 škola u zaštićenim područjima Albanije u kojima obitava ris je educirano i postali su ambasadori ris.
 ---
 learn_more:
 ---
-view_study: Case study
+view_study: Vidi studiju
 ---
-tag1: divlje vrste
+tag1: edukacija
 ---
-tag2: upravljanje
+tag2: divljina
 ---
 tag3:
 ---
@@ -48,3 +44,4 @@ template_cta_button_text: Pročitajte studiju
 ---
 case_study: case-study
 ---
+body:

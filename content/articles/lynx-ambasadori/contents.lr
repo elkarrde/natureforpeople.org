@@ -2,17 +2,15 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-released: study
+_slug: lynx-ambassadors
 ---
-_slug: hawk-of-the-steppes-dzpps
----
-title: Cooperation with the electric company to improve protection of the saker falcon
+title: Developing a network of young Lynx ambassadors in protected areas
 ---
 lang: en
 ---
 date:
 ---
-author:
+author: <a href="mailto:kivanic@wwfadria.org ">Kasandra Ivanić</a>
 ---
 size: small
 ---
@@ -22,17 +20,15 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text: First cooperation between an NGO for bird protection and the Serbian national electric company.
----
-body:
+lead_text: 60 young students from 25 schools in the protected areas of Albania inhabited by lynx were educated and became Lynx ambassadors.
 ---
 learn_more:
 ---
 view_study: Case study
 ---
-tag1: wild species
+tag1: education
 ---
-tag2: management
+tag2: wildlife
 ---
 tag3:
 ---
@@ -48,3 +44,4 @@ template_cta_button_text: Read case study
 ---
 case_study: case-study
 ---
+body:
