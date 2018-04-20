@@ -2,13 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-case_study: case-study
+_slug: sasko-lake
 ---
-slug: hawk-of-the-steppes-dzpps
+title: Increase revenues for the local population through sustainable tourist at Šasko Lake
 ---
-title:
----
-lang: hr
+lang: en
 ---
 date:
 ---
@@ -24,15 +22,17 @@ lead_image_title:
 ---
 lead_text:
 ---
+homepage_text:
+---
 body:
 ---
 learn_more:
 ---
 view_study: Case study
 ---
-tag1: initiatives
+tag1: education
 ---
-tag2:
+tag2: management
 ---
 tag3:
 ---
@@ -45,4 +45,6 @@ template_title: Follow steps to success
 template_subtitle: Get more facts and details about this story
 ---
 template_cta_button_text: Read case study
+---
+case_study: case-study
 ---

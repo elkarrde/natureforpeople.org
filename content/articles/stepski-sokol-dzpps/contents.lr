@@ -2,13 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-case_study: case-study
+_slug: hawk-of-the-steppes-dzpps
 ---
-slug: stepski-sokol-dzpps
+title: Cooperation with the electric company to improve protection of the saker falcon in Vojvodina
 ---
-title:
----
-lang: hr
+lang: en
 ---
 date:
 ---
@@ -40,9 +38,11 @@ tag4:
 ---
 factsheet:
 ---
-template_title: Slijedite korake do uspjeha
+template_title: Follow steps to success
 ---
-template_subtitle: Saznajte više činjenica i pojedinosti o ovoj priči
+template_subtitle: Get more facts and details about this story
 ---
-template_cta_button_text: Pročitajte studiju
+template_cta_button_text: Read case study
+---
+case_study: case-study
 ---
