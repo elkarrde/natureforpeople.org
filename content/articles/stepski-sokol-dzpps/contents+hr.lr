@@ -2,9 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
+released: study
+---
 _slug: stepski-sokol-dzpps
 ---
-title: Suradnjom sa elektroprivredom do poboljšanja zaštite stepskog sokola u Vojvodini
+title: Suradnjom sa elektroprivredom do poboljšanja zaštite stepskog sokola
 ---
 lang: hr
 ---
@@ -20,7 +22,7 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text:
+lead_text: Prva suradnja nevladinog udruženja za zaštitu ptica i elektroprivrede u Srbiji.
 ---
 body:
 ---
@@ -28,9 +30,9 @@ learn_more:
 ---
 view_study: Case study
 ---
-tag1: initiatives
+tag1: divlje vrste
 ---
-tag2:
+tag2: upravljanje
 ---
 tag3:
 ---

@@ -2,9 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
+released: study
+---
 _slug: hawk-of-the-steppes-dzpps
 ---
-title: Cooperation with the electric company to improve protection of the saker falcon in Vojvodina
+title: Cooperation with the electric company to improve protection of the saker falcon
 ---
 lang: en
 ---
@@ -20,7 +22,7 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text:
+lead_text: First cooperation between an NGO for bird protection and the Serbian national electric company.
 ---
 body:
 ---
@@ -28,9 +30,9 @@ learn_more:
 ---
 view_study: Case study
 ---
-tag1: initiatives
+tag1: wild species
 ---
-tag2:
+tag2: management
 ---
 tag3:
 ---

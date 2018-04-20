@@ -34,13 +34,13 @@ protection: None
 ---
 level:
 ---
-tag1: tourism
+tag1: divlje vrste
 ---
-tag2: products
+tag2: upravljanje
 ---
-tag3: initiatives
+tag3:
 ---
-tag4: management
+tag4:
 ---
 download_title: Make a change
 ---
@@ -51,3 +51,89 @@ download_cta_button_text: Download document
 download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar.docx
 ---
 body:
+<dl class="clearfix">
+    <dt>Postignuća</dt>
+		<dd>Prva suradnja nevladinog udruženja za zaštitu ptica i elektroprivrede u Srbiji. </dd>
+		<dd>Podizanje svijesti u javnosti o kritično ugroženoj vrsti ptice stepskom sokolu</dd>
+		<dd>30 sigurnih gnijezda postavljeno</dd>
+		<dd>30 volontera iz Vojvodine sudjelovalo</dd>
+		<dd>Pronalazak kompromisa sa golubarskim i sokolarski udruženjima - odgađanje golubarskih natjecanja ili pomicanje lokacije za vrijeme gniježđenje sokolova.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+
+<dl class="clearfix">
+    <dt>Problem koji želite riješiti</dt>
+		<dd>Kritično ugrožena vrsta ptice na globalnom nivou</dd>
+		<dd>Neadekvatna mjesta za gniježđenje, na stupovima dalekovoda</dd>
+		<dd>Narušeno stanište</dd>
+		<dd>Elektrokucija </dd>
+		<dd>Ne poznavanje stanja gnijezdeće populacije </dd>
+		<dd>Trovanje sokola</dd>
+
+    <dt>Prilike koje želite iskoristiti</dt>
+		<dd>Suradnja sa elektroprivredom</dd>
+		<dd>Monitoring populacije stepskog sokola</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
+
+<dl class="clearfix">
+    <dt>Koja je uloga partnera?</dt>
+		<dd>Elektromreža Srbije je omogućila postavljanje sigurnih gnijezda na stupove dalekovoda u Vojvodini. EMS je obezbedila svoje radnike, dizalice i opremu za postavljenje gnijezda.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+
+<dl class="clearfix">
+    <dt>Ključne faze – od ideje do realizacije</dt>
+		<dd>1. Dobivanje financiranje</dd>
+		<dd>2. Suradnje s elektroprivredom</dd>
+		<dd>3. Cenzus populacije</dd>
+		<dd>4. Izrada gnijezda</dd>
+		<dd>5. Postavljanje gnijezda</dd>
+		<dd>6. Monitoring useljenih sigurnih gnijezda</dd>
+		<dd>7. Radionica sa golubarima</dd>
+
+    <dt>Koje akcije ste poduzeli?</dt>
+		<dd>Iniciranje sastanka/suradnje sa Elektromrežom Srbije. Predstavljanje projektnih aktivnosti.</dd>
+		<dd>Dobivanje dozvole za rad od strane Pokrajinskog zavoda za zaštitu prirode.</dd>
+		<dd>Uspostavljenje partnerstva i uloga elektroprivrede. Potpisan sporazum o međusobnoj saradnji u realizaciji projekta zaštite stepskog sokola u Srbiji.</dd>
+		<dd>Kompletan cenzus populacije uz učestvovanje 30ak volontera (članovi DZPSS-a).</dd>
+		<dd>Pravljenje sigurnih gnijezda/kutija na najugroženijim aktivnim gnijezdima na stupovima i bivšim gnijezdećim teritorijama. (podaci od cenzusa prije 10 godina).</dd>
+		<dd>Postavljanje gnijezda u suradnji s EMS u nekoliko etapa.</dd>
+		<dd>10-12 tura po 2-3 gnijezda. Potrebno je raditi etapno zbog isključivanje struje na dalekovodima širom Vojvodine uzrokujući nestanak struje za veliku populaciju. </dd>
+		<dd>Javne diskusije sa zainteresovanim stranama (golubarska udruženja, sokolari) koji imaju direktne štete od stepskog sokola i drugih grabljivica te ih direktno ugrožavaju i inspekcijske službe.</dd>
+		<dd>Ponuda rješenja sukoba (odgađanje golubarskih natjecanja ili pomicanje lokacije za vrijeme gniježđenje sokolova).</dd>
+		<dd>Suradnja sa mađarskim Birdlife partnerom MME u obiležavanju mlade jedinke stepskog sokola satelitskom telemetrijom.</dd>
+		<dd>Izrada promotivnog i edukativnog materijala</dd>
+
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+
+<dl class="clearfix">
+	<dt>Koja je pozitivna promjena u prirodi?</dt>
+		<dd>U 30 postavljenih sigurnih gnijezda, naseljen je samo jedan par stepskog sokola dok su u ostalima naseljeni sokol lastavičar, vjetruša, orao mišar i gavran.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Preslikavanje i preporuke</h4>
+
+<dl class="clearfix">
+    <dt>Postoji li nešto što biste učinili drukčije?</dt>
+		<dd>Ozbiljnije bismo pristupili projektu u smislu potraživanje financija. </dd>
+		<dd>Uključivanje šire javnosti kroz kampanje. </dd>
+		<dd>Usvojite gnijezdo stepskog sokola kao jedno od komunikacijskih poruka.</dd>
+		<dd>Javne tribine o važnosti stepskog sokola za regiju i državu kao jedina kritično ugrožena vrsta ptice grabljivice. </dd>
+		<dd>Veći pritisak na više instance da učestvuju u projektu i daju veći doprinos u konkretnim mjerama zaštite. </dd>
+		<dd>Potpisivanje Raptors memoranduma o suranji.</dd>
+
+	<dt>Koje su vaše preporuke za poboljšanje politika?</dt>
+		<dd>Jača kontrola nad ilegalnom promjenom namjene zemljišta.</dd>
+		<dd>Jači inspekcijski nadzor nad ilegalnim preoravanjem slatina i stepa u Vojvodini.</dd>
+		<dd>Nadzor ilegalnih aktivnosti golubara.</dd>
+		<dd>Jača kontrola nad distribucijom i upotrebom zabranjenih pesticida (poljoprivrednici), ali i golubara koji namažu sa furadanom, lanatanom i krezanom vrat goluba gdje golub ne može dohvatiti s kljunom te na taj način ubijaju stepskog sokola i druge grabljivice)</dd>
+		<dd>Zaštita prirode treba biti odgovornost različitih ne resornih institucija.</dd>
+
+</dl>
+---

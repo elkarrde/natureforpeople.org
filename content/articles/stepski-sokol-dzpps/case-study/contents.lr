@@ -34,13 +34,13 @@ protection: None
 ---
 level:
 ---
-tag1: tourism
+tag1: wild species
 ---
-tag2: products
+tag2: management
 ---
-tag3: initiatives
+tag3:
 ---
-tag4: management
+tag4:
 ---
 download_title: Make a change
 ---
@@ -51,3 +51,94 @@ download_cta_button_text: Download document
 download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar.docx
 ---
 body:
+<dl class="clearfix">
+    <dt>Achievements</dt>
+		<dd>First cooperation between an NGO for bird production and the Serbian national electric company.</dd>
+		<dd>Raising public awareness about the critically endangered species, the saker falcon.</dd>
+		<dd>30 safe nests installed</dd>
+		<dd>30 volunteers from Vojvodina participating</dd>
+		<dd>Finding a compromise between pigeon breeding and falcon societies, delaying pigeon competitions or changing locations during the falcon nesting season.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
+
+<dl class="clearfix">
+    <dt>Problem you wish to solve</dt>
+		<dd>Critically endangered bird species at the global level</dd>
+		<dd>Inadequate nesting sites, on power line poles</dd>
+		<dd>Habitat erosion</dd>
+		<dd>Electrocution</dd>
+		<dd>Lack of knowledge about the state of the nesting population </dd>
+		<dd>Poisoning of falcons</dd>
+
+    <dt>Opportunities you wish to seize</dt>
+		<dd>Cooperation with the electric company</dd>
+		<dd>Monitoring the population of the saker falcon</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Planning</h4>
+
+<dl class="clearfix">
+    <dt>What was the role of the partners?</dt>
+		<dd>The Serbian electric company (EMS) enabled the installation of safe nests on power longline structures in Vojvodina. EMS provided workers, cranes and equipment for their installation.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
+
+<dl class="clearfix">
+    <dt>Key stages – from idea to actualisation</dt>
+		<dd>1. Obtaining financing</dd>
+		<dd>2. Cooperation with the electric company</dd>
+		<dd>3. Population census</dd>
+		<dd>4. Building the nests</dd>
+		<dd>5. Installing the nests</dd>
+		<dd>6. Monitoring the use of safe nests</dd>
+		<dd>7. Workshop with pigeon breeders</dd>
+
+	<dt>Which actions did you take?</dt>
+		<dd>Initiated the meeting/cooperation with EMS. Presenting the project activities.</dd>
+		<dd>Obtaining a work permit from the Provincial Institute for Nature Protection.</dd>
+		<dd>Establishment of partnership and the role of the electric company. Cooperation agreement signed for the project to protect the saker falcon in Serbia.</dd>
+		<dd>Complete population census, with the participation of some 30 volunteers (members of DZPSS).</dd>
+		<dd>Building the safe nests/boxes in the most threatened active nests on power line poles and in former nesting territories (census data from 10 years earlier).</dd>
+		<dd>Installing the nests in cooperation with EMS in several phases.</dd>
+		<dd>10-12 installation tours, each with 2-3 nests. It is necessary to work in stages as the power on the longlines needs to be completely turned off throughout the area, causing blackouts for a large population.</dd>
+		<dd>Public discussions with interested parties (pigeon breeding associations, falcon breeders) suffering direct damages from the saker falcon and other predators, and the inspection services.</dd>
+		<dd>Offering a solution to the conflict (delaying pigeon competitions or moving their locations during falcon nesting periods).</dd>
+		<dd>Cooperation with the Birdlife partner MME in Hungary to ring young saker falcons for satellite telemetry tracking.</dd>
+		<dd>Drafting promotional and educational materials</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Change</h4>
+
+<dl class="clearfix">
+	<dt>What were the positive changes for nature?</dt>
+		<dd>Only 1 pair of saker falcons took up nesting in the 30 installed safe nests, the others were inhabited by the Eurasian hobby, kestrel, buzzard and raven.</dd>
+
+	<dt>Positive economic (E) and social (S) change</dt>
+		<dd>S: the project was followed regularly by the regional media, and the scientific and general public were informed of the issues to protect a critically endangered bird species (about its habitat, electrocution, number of individuals) in Serbia.</dd>
+		<dd>E: reduced damages to the electricity network due to the electrocution of birds</dd>
+		<dd>S: First cooperation in Serbia between an NGO for the protection of birds and the national electric company.</dd>
+		<dd>S: Local volunteers included in the work, from the ages of 18 to 60 years.</dd>
+		<dd>S: Census of the saker falcon population. Number of nesting pairs (16–21) of saker falcons and the list of all nests of ravens and grey crows which are potential nests for the saker falcon (which takes over their nests as it does not build its own).</dd>
+
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
+
+<dl class="clearfix">
+    <dt>Is there anything you would do differently?</dt>
+		<dd>We would take a more serious approach to this project in the sense of seeking additional funding. </dd>
+		<dd>Inclusion of the general public through campaigns. </dd>
+		<dd>Adopt a saker falcon nest, as a possible communication message.</dd>
+		<dd>Public discussions on the importance of the saker falcon for the region and country, as the only critically endangered bird of prey.</dd>
+		<dd>Greater pressures on institutions to participate in the project and to give a greater contribution in terms of specific protection measures.</dd>
+		<dd>Signing of a Raptors memorandum of cooperation.</dd>
+
+	<dt>What are your recommendations for policy improvement?</dt>
+		<dd>Stronger inspection controls over the illegal tilling of the salt flats and steppe in Vojvodina.</dd>
+		<dd>Supervision over the illegal activities of pigeon breeders.</dd>
+		<dd>Stronger control over the distribution and use of prohibited pesticides (farmers) and by pigeon breeders (who rub furadan, lanatan and krezan onto the neck of the pigeon where it cannot reach, thereby killing the saker falcon and other predators).</dd>
+		<dd>Nature conservation should be the responsibility of various institutions.</dd>
+</dl>
+---
