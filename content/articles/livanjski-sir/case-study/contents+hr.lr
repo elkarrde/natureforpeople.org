@@ -4,9 +4,9 @@ _template: articles/case-study.html
 ---
 slug: livanjski-sir
 ---
-title: Cestom livanjskog sira do okusa savršenstva
+title: Zaštita livanjskog sira i ostvarivanje prava malih proizvođača
 ---
-lang: en
+lang: hr
 ---
 date: 02.12.2017.
 ---
@@ -39,9 +39,6 @@ level: U procesu
 ---
 body:
 <dl class="clearfix">
-    <dt>Organizacija</dt>
-    <dd>Udruga proizvođača tradicionalnog livanjskog sira „Cincar“; Poljoprivredna zadruga Cincar 2</dd>
-
     <dt>Partneri</dt>
     <dd>Općina Livno i Hercegbosanska županija (HBŽ)</dd>
 
