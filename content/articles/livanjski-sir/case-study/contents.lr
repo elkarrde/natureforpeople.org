@@ -2,9 +2,9 @@ _model: case-study
 ---
 _template: articles/case-study.html
 ---
-slug: livanjski-sir
+slug: livno-cheese
 ---
-title: Cestom livanjskog sira do okusa savršenstva
+title: The protection of the Livno cheese and exercising the rights of small-volume producers
 ---
 lang: en
 ---
@@ -14,18 +14,18 @@ author: <a href="mailto:zseremet@wwfadria.org">Zoran Šeremet</a>
 ---
 lead_image: /static/images/articles/livanjski-sir/livanjski-sir-uskoro-ce-se-naci-na-policama-europskih-trgovina-(c)-andrija-vroljak.jpg
 ---
-lead_image_title: Livanjski sir uskoro će se naći na policama europskih trgovina © Andrija Vroljak
+lead_image_title: Livno Cheese will soon be found on the shelves of European shops © Andrija Vrdoljak
 ---
 lead_text:
 
-Livanjski sir, čija kvaliteta ovisi o tradicionalnoj poljoprivredi, uskoro će se naći na policama
-trgovina širom Europske unije i to pod jedinstvenim brendom
+Livno Cheese, whose quality depends on traditional agriculture, will soon be found under a
+single brand on shop shelves throughout the European Union.
 ---
-people: 1 (4 od početka 2018)
+people: 1 (4 since the beginning of 2018)
 ---
-time: 10 godina
+time: 10 years
 ---
-money: 1 000 000 EUR
+money: EUR 1 000 000
 ---
 country: BIH
 ---
@@ -33,152 +33,133 @@ organization: Udruga „Cincar“, PZ Cincar 2
 ---
 location: Livanjsko polje
 ---
-protection: Ramsar područje
+protection: Ramsar site
 ---
-level: U procesu
+level: In progress
 ---
 body:
 <dl class="clearfix">
-    <dt>Organizacija</dt>
-    <dd>Udruga proizvođača tradicionalnog livanjskog sira „Cincar“; Poljoprivredna zadruga Cincar 2</dd>
+    <dt>Organization</dt>
+    <dd>Association of producers of the traditional Livno cheese “Cincar”; Cincar 2 Agricultural Cooperative</dd>
 
-    <dt>Partneri</dt>
-    <dd>Općina Livno i Hercegbosanska županija (HBŽ)</dd>
+    <dt>Partners</dt>
+    <dd>The municipality of Livno and the Herzeg-Bosnia County</dd>
 
-    <dt>Izvor financiranja</dt>
-    <dd>UCODEP (Jedinstvo i Saradnja za Razvoj Naroda), UNDP (Razvojni program UN-a), Češka razvojna agencija</dd>
+    <dt>Funding source</dt>
+    <dd>CODEP (Unity and Cooperation for the Development of Peoples), UNDP (United Nations Development Programme), Czech Development Agency</dd>
 </dl>
 
 <br>
 
 <dl class="clearfix">
-    <dt>Postignuća</dt>
-        <dd>Osnivanje udruge za zaštitu autohtonog proizvoda, među prvima u BiH</dd>
-        <dd>Više od 50 obitelji proizvođača članovi su udruge Cincar (konstantan rast broja članova od osnivanja)</dd>
-        <dd>Indirektna korist za ljude - 500 (članovi obitelji koji imaju prihod od aktivnosti)</dd>
-        <dd>Broj novih usluga - 20 novih malih mljekara sa prostorom za kušanje</dd>
-        <dd>Osnivanje poljoprivredne zadruge – 11 obitelji članovi</dd>
-        <dd>Povećana kvaliteta i količina proizvoda (110 tona sira)</dd>
-        <dd>Povećavanje broja grla stoke – 8 000 ovaca, 700 krava</dd>
-        <dd>članovi udruge su aktivni sudionici radnih grupa za legislativu vezanu za autohtone proizvode u BiH</dd>
+    <dt>Achievements</dt>
+        <dd>founding the association for the protection of an autochthonous product, among the first in Bosnia and Herzegovina</dd>
+        <dd>more than 50 family-run productions are members of the Cincar association (number of members growing constantly since foundation)</dd>
+        <dd>indirect benefit for the people – 500 (family members collecting an income from the activities)</dd>
+        <dd>number of new services – 20 new small dairy farms</dd>
+        <dd>foundation of an agricultural cooperative – 11 member families</dd>
+        <dd>increased product quality and quantity (110 tonnes of cheese)</dd>
+        <dd>increase in livestock units – 8,000 sheep, 700 cows</dd>
+        <dd>association members are active participants in working groups involved in legislation related to autochthonous products of Bosnia and Herzegovina</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
 <dl class="clearfix">
-    <dt>Problem koji želite riješiti</dt>
-        <dd>Gubitak primarnog tržišta</dd>
-        <dd>Nedostatak i ne implementiranje legislative vezane za zaštitu autohtonih proizvoda i sigurnost hrane</dd>
-        <dd>Nelojalna konkurencija</dd>
-        <dd>Neujednačenost kvalitete proizvoda</dd>
+    <dt>Problem you wish to solve</dt>
+        <dd>Loss of primary market</dd>
+        <dd>Lack and non-implementation of legislation related to the protection of autochthonous products and food safety</dd>
+        <dd>Unfair competition</dd>
+        <dd>Disparities in product quality</dd>
 
-    <dt>Prilike koje želite iskoristiti</dt>
-        <dd>tradicionalna popljoprivreda</dd>
-        <dd>kvaliteni pašnjaci</dd>
-        <dd>zainteresirano lokalno stanovništvo</dd>
-        <dd>poznati brand</dd>
-        <dd>potražnja za autohtonim proizvodima</dd>
+    <dt>Opportunities you wish to seize?</dt>
+        <dd>traditional agricultural production</dd>
+        <dd>high-quality pastures</dd>
+        <dd>engaged local community</dd>
+        <dd>widely recognized brand</dd>
+        <dd>demand for autochthonous product</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
+<h4 class="h2 grey playfair-heavy mb1">Planning</h4>
 <dl class="clearfix">
-    <dt>Ključni preduvjeti za uspjeh</dt>
-        <dd>Postojanje prepoznatljivog proizvoda sa dugom tradicijom</dd>
-        <dd>Mogućnost osnivanja udruge kako bi stočari imali pravno tijelo, te zajednički stočari usuglasili priroritete te usmjeriti sredstva</dd>
-        <dd>osoba koja razumije forme i načine podnošenje prijedloga projekta</dd>
+    <dt>Key pre-requisites for success</dt>
+        <dd>existence of a recognisable product with a long-lasting tradition</dd>
+        <dd>possibility of founding an association that would serve as a legal entity for livestock farmers, and so that they would jointly agree on their priorities and direct their resources</dd>
+        <dd>a person that understand the forms and ways of submitting project proposals</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
 <dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije?</dt>
-        <dd>1. Osnivanje udruge proizvođača (definiranje ciljeva
-rada i određivanje prioriteta.)</dd>
-        <dd>2. Jačanje suradnje sa udrugama, donatorima,
-lokalnim vlastima, znanstvenim institucijama i
-medijima. (intezivniji kontakti, zajednički projekti)</dd>
-        <dd>3. Edukacija (studijske posjete sličnim proizvođačima
-u inozemstvu, radionice)</dd>
-        <dd>4. Prilagodba uvjetima i standardima koji zahtijevaju
-propisi vezani za zaštitu porijekla i sigurnosti hrane u
-BiH ali i u EU.</dd>
-        <dd>5. Suradnja s Češkom razvojnom agencijom
-(brendiranje, infrastruktura,oprema)</dd>
+    <dt>Key stages – from idea to actualisation?</dt>
+        <dd>1. Founding of producers’ association (defining work goals and setting priorities)</dd>
+        <dd>2. Strengthening cooperation with associations, donors, local authorities, scientific institutions and the media (more intensive contact, common projects)</dd>
+        <dd>3. Education (organised visits to similar producers abroad, workshops)</dd>
+        <dd>4. Adapting to conditions and standards required by regulations related to the protection of origin and food safety in Bosnia and Herzegovina and the EU.</dd>
+        <dd>5. Cooperation with the Czech Development Agency (branding, infrastructure, equipment)</dd>
 
-    <dt>Koje akcije ste poduzeli?</dt>
-        <dd>Osnovanje udruge proizvođača tradicionalnog
-livanjskog sira što nam je omogućilo da započnemo
-konkretnu suradnju sa predstavnicima vlasti,
-donatorima, udrugama, znanstvenim institucijama,
-medijima</dd>
-        <dd>Zajednička identifikacija problema i pronalazak
-rješenja sa partnerima</dd>
-        <dd>Studijske posjete sličnim proizvođačima i
-sajmovima u Italiji i Hrvatskoj te nedavno u Češkoj i
-Slovačkoj</dd>
-        <dd>Ispunjavanja svih zakonskih uvjeta za zaštitu
-proizvoda (pravilnik, standardizacija, sljedivost,
-receptura i sustav kontrole) po kategorijama
-izvornosti i autohtonosti</dd>
-        <dd>Sudjelovanje u radnim grupama za izradu zakona i
-pravilnika vezanih za zaštitu autohtonih proizvoda i
-lokalnih razvojnih strategija</dd>
-        <dd>Zajedničko izlaganje na sajmovima</dd>
-        <dd>Uključivanje lokalne vlasti u privlačenje projekata</dd>
-        <dd>Adaptacija, gradnja i opremanje mini/kućne mljekare
-radi prilagodbe svim suvremenim higijenskim
-standardima</dd>
-        <dd>Osnovanje zadruge isplativije nego da posluju kao
-pojedinačni obrti</dd>
-        <dd>Pokrenuli redovitu godišnju izložbu sira</dd>
-        <dd>Obuka za upravljanje zadrugom</dd>
-        <dd>Brendiranje - Jedinstvena etiketa no i svaka obitelj
-ima svoju oznaku</dd>
-        <dd>Zajednički objekt koji uključuje prodajni, uredski,
-muzej sira i skladišni prostor</dd>
-        <dd>Opremanje laboratorija za proizvode animalnog
-porijekla županijskog zavoda za hranu i veterinarstvo</dd>
-        <dd>Promocija turističke ceste sira</dd>
+    <dt>Which actions have you undertaken?</dt>
+        <dd>founding the association of producers of the traditional Livno cheese, which enabled us to initiate concrete cooperation with representatives of authorities, donors, associations, scientific institutions, the media</dd>
+        <dd>joint identification of issues and finding solutions with the partners</dd>
+        <dd>organised visits to similar producers and fairs in Italy and Croatia, and, most recently, the Czech Republic and Slovakia</dd>
+        <dd>fulfilment of all statutory requirements for product protection (ordinance, standardisation, traceability, recipe uniformity and control system)</dd>
+        <dd>participation in working groups for the drafting of legislation and ordinances related to the protection of autochthonous products and local development strategies</dd>
+        <dd>joint presentation at trade fairs</dd>
+        <dd>including the local authorities in attracting projects</dd>
+        <dd>adaptation, construction and furnishing of a mini/family dairy farm for the purpose of adjustment to all current hygiene standards</dd>
+        <dd>founding of a cooperative is more rentable than doing business as individual sole proprietorships</dd>
+        <dd>started a regular annual cheese trade show</dd>
+        <dd>training for Cooperative management</dd>
+        <dd>branding – a unique label, but each family has their own marking</dd>
+        <dd>a common facility consisting of a sales and office space, cheese museum and storage space</dd>
+        <dd>equipping a laboratory for products of animal origin of the county Office for Food and Veterinary Medicine</dd>
+        <dd>promotion of the tourist cheese rout</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+<h4 class="h2 grey playfair-heavy mb1">Change</h4>
 <dl class="clearfix">
-    <dt>Kako je smanjen negativni utjecaj na prirodu?</dt>
-        <dd>Stalnim povećanjem proizvodnje sprječava se
-zaraštavanje travnjaka te obnavljanje zapuštenih
-pašnjaka. Neki članova udruženja imaju preko 1000
-ovaca. Ispaša pomaže da se održe prirodni
-ekosustavi kao i mehanička kosidba u svrhu
-prikupljanja sijena za zimu.</dd>
-        <dd>Ukupno se održava 21 761ha pašnjaka u Livanjskom
-polju.</dd>
+    <dt>How was the negative environmental impact reduced?</dt>
+        <dd>The constant increase of production prevents the overgrowing of grasslands and revives the neglected pastures. Some association members have over 1000 sheep. The grazing helps maintain the natural eco-systems and so does the mechanical mowing for the purpose of collecting hay for the winter.</dd>
+        <dd>The total surface of the Livanjsko polje that is being maintained is 21,761 ha.</dd>
 
-    <dt>Koji je vaš najveći doprinos u projektu?</dt>
-        <dd>Za ljude</dd>
-        <dd>Povećanje prihoda za lokalnu zajednicu na osnovu vlastitih proizvoda i usluga.</dd>
+    <dt>Positive economic (E) and social (S) change in:</dt>
+        <dd><strong>The public sector – national:</strong></dd>
+        <dd>The importance of the association and its participation in working groups for the drafting of laws on the protection of food origin has been recognised.</dd>
+        <dd><strong>The public sector – local:</strong></dd>
+        <dd>The promotion of the area and local producers, increased visibility. The credibility of local authorities in relation to the donors has increased due to the implementation of a large-scale project. The municipality of Livno recognised the Cincar Association as the key partner in achieving strategic goals and the importance of this product to the recognisability of the area. The Livno cheese is also an important item in other strategic goals related to tourism and culture. For example: The “Cheese Days” event, although still emerging, is an integral part of the Livno cultural summer programme. The municipality of Livno gets an expo-sales area for its trademark product. The Herzeg-Bosnia County also included the small-volume producers in its support programmes, where before it has only supported large-scale dairy farms and their collaborators. Production development and the protection of the traditional Livno cheese is also included in the municipal and county development strategies. The process of drafting a county-wide rural development strategy, in which we’re actively participating, is currently in progress. </dd>
+        <dd><strong>The business sector: </strong></dd>
+        <dd>E: increased income, sustainable business activities</dd>
+        <dd>S: promoting products and services, the possibility of networking and joint action. Solely local companies and supplier were contracted during the construction of the mini dairy farms and the common facility. The large-scale dairy farms producing cheese agreed to a dialogue, which has never been the case before. Local businesspeople (restaurants, merchants) gain quality partners and suppliers. By meeting the requirements for export into the EU countries, the product will make its way back to its primary market, the Dalmatian coast, where the “traditional Livno cheese” will once again be available without any legal issues. The same goes for all the restaurants and supermarket chains in the country and abroad, which will be able to offer traditional Livno cheese for the first time ever. </dd>
+        <dd><strong>The local community:</strong></dd>
+        <dd>Economic:</dd>
+        <dd>The 50 families that are members of the Association of producers of the traditional Livno cheese “Cincar” draw economic benefits. At the moment, over 200 people make a living from this type of cheese production. About 20 families (that meet the requirements) founded the Cincar 2 Cooperative, within the project of the Czech Development agency, so that they could enter the market. The other families can join the cooperative as soon as they fulfil the requirements as stipulated by the ordinance.  Lower costs of laboratory production control.  Two people are employed full-time (two more planned).</dd>
+        <dd>Social:</dd>
+        <dd>Legalised market and products.  Product protection as part of the heritage and culture of the area. The cheese museum.  The public has been informed of the status and issues of traditional producers.</dd>
+        <dd><strong>The scientific community:</strong></dd>
+        <dd>Participating in protection processes from the beginning and enabling field work for students (Faculty of Agriculture and Food Science of Sarajevo) and monitoring the status and habitats of species.</dd>
+
+    <dt>What’s your greatest contribution to the project?</dt>
+        <dd>For the people</dd>
+        <dd>Increasing the income of the local community based on our own products and services.</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
+<h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
 <dl class="clearfix">
-    <dt>Koje su ključne stvari koje su bitne za replikaciju?</dt>
-        <dd>Osnivanje i jačanje kapaciteta udruge
-proizvođača</dd>
-        <dd>Kvalitet i prepoznatljivost proizvođača</dd>
-        <dd>Uključivanje donosioca odluka i upravljača na
-samom početku realizacije projekta</dd>
-        <dd>Uključivanje znanstvenih institucija tj. stručnjaka i
-studenata u početnoj fazi projekta</dd>
-        <dd>Upornost</dd>
-        <dd>Dobra suradnja između partnera u projektu i
-zajednički rad</dd>
+    <dt>What are the key things essential to replication?</dt>
+        <dd>founding a producers’ association and strengthening its capacities</dd>
+        <dd>quality and recognisability of the producers</dd>
+        <dd>including decision makers and managers in the very beginning of project implementation</dd>
+        <dd>including scientific institutions, i.e. experts and students in the initial stage of the project </dd>
+        <dd>persistence</dd>
+        <dd>good cooperation between project partners and a common effort</dd>
 </dl>
 
 ---
-tag1: tourism
+tag1: products
 ---
-tag2: products
+tag2: initiatives
 ---
-tag3: initiatives
+tag3: management
 ---
-tag4: management
+tag4:
 ---
 download_title: Make a change
 ---
@@ -186,4 +167,4 @@ download_subtitle: Replicate this solution & follow steps to success
 ---
 download_cta_button_text: Download document
 ---
-download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar.docx
+download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar-eng-gb.docx
