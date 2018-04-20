@@ -4,13 +4,13 @@ _template: articles/case-study.html
 ---
 slug: case-study
 ---
-title: Zajedništvo umjesto očekivane konkurencije
+title: Increasing the income of the local community through the formation of a tourism cluster
 ---
 lang: hr
 ---
 date: 1.9.2017.
 ---
-author: <a href="mailto:ppetrac@wwfadria.org">Petra Boić Petrač</a>
+author:
 ---
 lead_image: /static/images/articles/una/strbacki-buk.jpg
 ---
@@ -18,11 +18,12 @@ lead_image_title: The magical Una © Hris Hadžihajdarević, NP Una
 ---
 lead_text:
 
-Turistički klaster Una broji 27 članova i pokazuje zavidne rezultate za lokalnu zajednicu
+The Una Tourism Cluster has 27 members and is showing formidable results for a local
+community.
 ---
 people: 1
 ---
-time: 2 godine
+time: 2 years
 ---
 money: 150 000 EUR
 ---
@@ -32,42 +33,42 @@ organization: WWF Adria
 ---
 location: NP Una
 ---
-protection: Nacionalni park
+protection: National Park
 ---
 level: IUCN II
 ---
 body:
 
 <dl class="clearfix">
-    <dt>Postignuća (pregled)</dt>
-        <dd>Drugi turistički klaster u BIH</dd>
-        <dd>Broj članova klastera – 27 organizacija</dd>
-        <dd>Broj proizvoda (tradicionalna lokalna gastro ponuda) – 30</dd>
-        <dd>Broj novih usluga (outdoor turizam, kulturno-povijesni) - 20</dd>
-        <dd>Broj obitelji koji direktno ima koristi – 300 (članovi klastera ili zaposleni u hotelima/restoranima članovima klastera)</dd>
-        <dd>Indirektna korist za ljude – 1000 (članovi obitelji koji imaju prihod od aktivnosti)</dd>
+    <dt>Achievements (overview)</dt>
+        <dd>Second tourism cluster in Bosnia and Herzegovina</dd>
+        <dd>Number of cluster members – 27 organisations</dd>
+        <dd>Number of products (traditional local gastronomic offer) – 30</dd>
+        <dd>Number of new services (outdoor tourism, cultural-historical) – 20</dd>
+        <dd>Number of families directly benefiting – 300 (cluster members or employees of hotels/restaurants which are cluster members)</dd>
+        <dd>Indirect benefit to the people – 1000 (family members collecting an income from the activities)</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
 <dl class="clearfix">
-    <dt>Problem koji želite riješiti</dt>
-        <dd>Nedostatak kvalitetne lokalne ponude (nerazvijena infrastruktura, nedovoljno opremljeni smještajni kapaciteti, nerazvijene turističke rute, nedovoljno obučeni vodiči, skiperi)</dd>
-        <dd>Poboljšanje ekonomske situacije na lokalnom nivou</dd>
-        <dd>Slaba promocija proizvoda i usluga u NP Una u oblasti turizma</dd>
+    <dt>Problem you wish to solve</dt>
+        <dd>Lack of a high-quality local offer (underdeveloped infrastructure, insufficiently equipped accommodation capacities, underdeveloped tourist routes, insufficiently trained guides, skippers)</dd>
+        <dd>Improving the economic situation on a local level</dd>
+        <dd>Unsatisfactory product and service promotion at the Una National Park in a tourism context</dd>
 
-    <dt>Prilike koje želite iskoristiti</dt>
-        <dd>Povećanjem broja posjetitelja porasla je i potražnja za lokalnim proizvodima.</dd>
+    <dt>Opportunities you wish to seize?</dt>
+        <dd>An increase in the number of visitors has led to the increase in demand for local products</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
 <dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije?</dt>
-        <dd>1. analiza dionik</dd>
-        <dd>2. jačanje kapaciteta zainteresiranih dionika (treninzi)</dd>
-        <dd>3. studijsko putovanje – primjeri dobre prakse iz regije</dd>
-        <dd>4. osnivanje turističkog klastera</dd>
-        <dd>5. identifikacija turističkih proizvoda i usluga</dd>
-        <dd>6. stvaranje turističkog paketa, brandiranje i plasiranje na tržištu</dd>
+    <dt>Key stages – from idea to actualisation?</dt>
+        <dd>1. analysing the stakeholders</dd>
+        <dd>2. strengthening the capacities of interested stakeholders (trainings)</dd>
+        <dd>3. field trip – regional examples of good practice</dd>
+        <dd>4. founding a tourism cluster</dd>
+        <dd>5. identifying tourism products and services</dd>
+        <dd>6. creating package tours, branding and market placement</dd>
 </dl>
 
 ---

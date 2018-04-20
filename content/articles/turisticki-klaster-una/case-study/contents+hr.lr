@@ -1,0 +1,88 @@
+_model: case-study
+---
+_template: articles/case-study.html
+---
+slug: case-study
+---
+title: Zajedništvo umjesto očekivane konkurencije
+---
+lang: hr
+---
+date: 1.9.2017.
+---
+author:
+---
+lead_image: /static/images/articles/una/strbacki-buk.jpg
+---
+lead_image_title: The magical Una © Hris Hadžihajdarević, NP Una
+---
+lead_text:
+
+Turistički klaster Una broji 27 članova i pokazuje zavidne rezultate za lokalnu zajednicu
+---
+people: 1
+---
+time: 2 godine
+---
+money: 150 000 EUR
+---
+country: BIH
+---
+organization: WWF Adria
+---
+location: NP Una
+---
+protection: Nacionalni park
+---
+level: IUCN II
+---
+body:
+
+<dl class="clearfix">
+    <dt>Postignuća (pregled)</dt>
+        <dd>Drugi turistički klaster u BIH</dd>
+        <dd>Broj članova klastera – 27 organizacija</dd>
+        <dd>Broj proizvoda (tradicionalna lokalna gastro ponuda) – 30</dd>
+        <dd>Broj novih usluga (outdoor turizam, kulturno-povijesni) - 20</dd>
+        <dd>Broj obitelji koji direktno ima koristi – 300 (članovi klastera ili zaposleni u hotelima/restoranima članovima klastera)</dd>
+        <dd>Indirektna korist za ljude – 1000 (članovi obitelji koji imaju prihod od aktivnosti)</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<dl class="clearfix">
+    <dt>Problem koji želite riješiti</dt>
+        <dd>Nedostatak kvalitetne lokalne ponude (nerazvijena infrastruktura, nedovoljno opremljeni smještajni kapaciteti, nerazvijene turističke rute, nedovoljno obučeni vodiči, skiperi)</dd>
+        <dd>Poboljšanje ekonomske situacije na lokalnom nivou</dd>
+        <dd>Slaba promocija proizvoda i usluga u NP Una u oblasti turizma</dd>
+
+    <dt>Prilike koje želite iskoristiti</dt>
+        <dd>Povećanjem broja posjetitelja porasla je i potražnja za lokalnim proizvodima.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<dl class="clearfix">
+    <dt>Ključne faze – od ideje do realizacije?</dt>
+        <dd>1. analiza dionik</dd>
+        <dd>2. jačanje kapaciteta zainteresiranih dionika (treninzi)</dd>
+        <dd>3. studijsko putovanje – primjeri dobre prakse iz regije</dd>
+        <dd>4. osnivanje turističkog klastera</dd>
+        <dd>5. identifikacija turističkih proizvoda i usluga</dd>
+        <dd>6. stvaranje turističkog paketa, brandiranje i plasiranje na tržištu</dd>
+</dl>
+
+---
+tag1: tourizam
+---
+tag2: proizvodi
+---
+tag3: inicijative
+---
+tag4: vodstvo
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: primjer_dobre_prakse-una.docx

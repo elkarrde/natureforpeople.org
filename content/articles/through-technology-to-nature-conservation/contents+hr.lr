@@ -124,7 +124,7 @@ zaključio je Rizaj.</p>
 <img src="/static/images/articles/digital-school/darsej-rizaj-in-the-camp-(c)-digital-school.jpg" class="fit-text" title="Darsej Rizaj u kampu © Digitalna škola">
 
 ---
-learn_more: Pročitaj
+learn_more: Pročitaj priču
 ---
 view_study: Vidi studiju
 ---
@@ -137,4 +137,10 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+template_title: Slijedite korake do uspjeha
+---
+template_subtitle: Saznajte više činjenica i pojedinosti o ovoj priči
+---
+template_cta_button_text: Pročitajte studiju
 ---
