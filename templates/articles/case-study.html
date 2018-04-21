@@ -10,7 +10,7 @@
     <div class="clearfix">
       <aside id="meta" class="article-meta small black left p1 mt4 mb0">
           <span class="date mr4">{{ this.date }}</span>
-          {% if this.author != "" %}<span class="author">Author: <span class="author-content">{{ this.author }}</span></span>{% endif %}
+          {% if this.author != "" %}<span class="author">{{ bag('i18n', this.alt, 'author') }}: <span class="author-content">{{ this.author }}</span></span>{% endif %}
       </aside>
       <aside id="tags" class="article-tags small right p1 mt4 mb0">
         {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
@@ -27,7 +27,7 @@
 
       <section id="article-lead" class="article-lead clearfix mb3">
         <div class="social grey col col-2 center">
-          <div class="uppercase bold center pt2 pb2">Share article</div>
+          <div class="uppercase bold center pt2 pb2">{{ bag('i18n', this.alt, 'share-article') }}</div>
           <div class="inline-block mx1">
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ '.'|url }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 fb">
@@ -57,21 +57,21 @@
         <div class="data-item flex-1">
           <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
             <img src="/static/images/icons/icon-people.png" srcset="/static/images/icons/icon-people@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">People</h5>
+            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'people') }}</h5>
             <p class="pink"><strong>{{ this.people }}</strong></p>
           </div>
         </div>
         <div class="data-item flex-1">
           <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
             <img src="/static/images/icons/icon-money.png" srcset="/static/images/icons/icon-money@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">Money</h5>
+            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'money') }}</h5>
             <p class="pink"><strong>{{ this.money }}</strong></p>
           </div>
         </div>
         <div class="data-item flex-1">
           <div class="clearfix bg-white-dirty mx1 py3 center box-shadow">
             <img src="/static/images/icons/icon-time.png" srcset="/static/images/icons/icon-time@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">Time</h5>
+            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'time') }}</h5>
             <p class="pink"><strong>{{ this.time }}</strong></p>
           </div>
         </div>
@@ -80,25 +80,25 @@
       <section id="sub-data" class="sub-data clearfix mt1 mb2 py2 flex flex-row justify-around">
         <div class="data-item flex-1">
           <div class="clearfix bg-white mx1 py2 center box-shadow">
-            <h5 class="h6 mb1 black">Organizacija</h5>
+            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'organization') }}</h5>
             <p class="black">{{ this.organization }}</p>
           </div>
         </div>
         <div class="data-item flex-1">
           <div class="clearfix bg-white mx1 py2 center box-shadow">
-            <h5 class="h6 mb1 black">Država</h5>
+            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'country') }}</h5>
             <p class="black">{{ this.country }}</p>
           </div>
         </div>
         <div class="data-item flex-1">
           <div class="clearfix bg-white mx1 py2 center box-shadow">
-            <h5 class="h6 mb1 black">Lokacija</h5>
+            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'location') }}</h5>
             <p class="black">{{ this.location }}</p>
           </div>
         </div>
         <div class="data-item flex-1">
           <div class="clearfix bg-white mx1 py2 center box-shadow">
-            <h5 class="h6 mb1 black">Stupanj zaštite</h5>
+            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'protection-level') }}</h5>
             <p class="black">{{ this.level }}</p>
           </div>
         </div>
