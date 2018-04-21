@@ -2,19 +2,19 @@ _model: case-study
 ---
 _template: articles/case-study.html
 ---
-slug: case-study
+slug: turisticki-klaster-una
 ---
-title: Zajedništvo umjesto očekivane konkurencije
+title: Povećanje prihoda za lokalnu zajednicu na kroz uvezivanje u turistički klaster
 ---
 lang: hr
 ---
-date: 1.9.2017.
+date:
 ---
 author:
 ---
 lead_image: /static/images/articles/una/strbacki-buk.jpg
 ---
-lead_image_title: The magical Una © Hris Hadžihajdarević, NP Una
+lead_image_title: Magična Una © Hris Hadžihajdarević, NP Una
 ---
 lead_text:
 
@@ -59,10 +59,23 @@ body:
         <dd>Povećanjem broja posjetitelja porasla je i potražnja za lokalnim proizvodima.</dd>
 </dl>
 
+<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
+<dl class="clearfix">
+    <dt>Ključni preduvjeti za uspjeh</dt>
+        <dd>Pravni:</dd>
+        <dd>Prema zakonu o udruženjima - Članovi turističkog klastera trebaju biti pravni subjekti koji se mogu udružiti</dd>
+        <dd>Institucionalni:</dd>
+        <dd>Zaštićeno područje je voljno uključiti lokalno stanovništvo u svoj rad. </dd>
+        <dd>Strateško prepoznavanje turizma (a ne hidroenergije) kao vid ekonomske revitalizacije kraja. </dd>
+        <dd>Zajedničkih interes upravljača ZP, svih nivoa vlasti i lokalne zajednice.</dd>
+        <dd>Interni kapaciteti:</dd>
+        <dd>Jedna osoba koja je odgovorna za funkcioniranje i rad klastera.</dd>
+</dl>
+
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
 <dl class="clearfix">
     <dt>Ključne faze – od ideje do realizacije?</dt>
-        <dd>1. analiza dionik</dd>
+        <dd>1. analiza dionika</dd>
         <dd>2. jačanje kapaciteta zainteresiranih dionika (treninzi)</dd>
         <dd>3. studijsko putovanje – primjeri dobre prakse iz regije</dd>
         <dd>4. osnivanje turističkog klastera</dd>
@@ -70,14 +83,63 @@ body:
         <dd>6. stvaranje turističkog paketa, brandiranje i plasiranje na tržištu</dd>
 </dl>
 
+<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+<dl class="clearfix">
+    <dt>Kako je smanjen negativni utjecaj na prirodu?</dt>
+        <dd>Turistički subjekti postaju sve više ekološki osviješteni:</dd>
+        <dd>energetski efikasniji uvođenjem grijanja na pelet,</dd>
+        <dd>uvođenjem solarnih panela u udaljena mjesta do kojih nije sprovedena električna energija;</dd>
+        <dd>promoviranjem zdravog života u prirodi kroz bavljenje sportsko-rekreativnim aktivnostima, vodenim sportovima – raftingom i ciklo turizmom.</dd>
+        <dd>Došlo je i do smanjenja krivolova i divljih odlagališta otpada.</dd>
+
+    <dt>Pozitivna ekonomska (E) i društvena (D) promjena kod:</dt>
+        <dd>Javnog sektora (lokalni, nacionalni) </dd>
+        <dd>D: promocija kraja i lokalnih proizvođača u području, povećana vidljivost</dd>
+        <dd>Poslovnog sektora: </dd>
+        <dd>E: povećanje prihoda, održivo poslovanje</dd>
+        <dd>D: promocija proizvoda i usluga, mogućnost umrežavanja i zajedničkog djelovanja, edukacija</dd>
+        <dd>Upravljača zaštićenog područja: </dd>
+        <dd>E: ušteda sredstava (kroz donaciju štandova za eko tržnicu, opremanje info pointa)</dd>
+        <dd>D: smanjio se pritisak vezan za gradnju hidroelektrane u NP Una,</dd>
+        <dd>Lokalnog stanovništva: </dd>
+        <dd>E: povećanje prihoda, povećanje broja poslova</dd>
+        <dd>D: promocija proizvoda i usluga, sinergija s drugim ponuđačima, edukacija</dd>
+
+    <dt>Koji je vaš najveći doprinos u projektu?</dt>
+        <dd>Za prirodu: </dd>
+        <dd>Osvještavanje ljudi o važnosti očuvanog prirodnog resursa kako bi i oni dobro živjeli. </dd>
+        <dd>Za ljude:</dd>
+        <dd>Povećanje prihoda za lokalnu zajednicu na osnovu vlastitih proizvoda i usluga. </dd>
+
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
+<dl class="clearfix">
+    <dt>Koje su ključne stvari koje su bitne za replikaciju?</dt>
+        <dd>Postojanje prirodnog resursa na kojem će se graditi priča (zaštićeno područje).</dd>
+        <dd>Institucionalna podrška.</dd>
+        <dd>Financijska sredstva.</dd>
+        <dd>Interes zajednice.</dd>
+        <dd>Jedna osoba koja je posvećena i vodi proces.</dd>
+        <dd>Nacrt ugovora o pružanju administrativno-tehničke podrške, koji je bio temelj zajedničkog dogovora i koji je uvažavao sve strane, ne stavljajući nijednu u nepovoljan položaj.</dd>
+        <dd>Stvaranje info-servisa - mjesto zajedničkog susreta turističkih i privrednih subjekata, njihovog umrežavanja te podupiranje jedni drugih kroz projekte ali i ekološkog osvještavanja o potrebi očuvanja sredine.</dd>
+
+    <dt>Što bi napravili drukčije (i preporučili drugima)?</dt>
+        <dd>Formalizacija institucionalne podrške (sporazumi).</dd>
+        <dd>Preporuka je razvoj regionalne metodologije za osnivanje turističkog klastera u zaštićenom području.</dd>
+
+    <dt>Što je ključno za održivosti projekta?</dt>
+        <dd>Prepoznat proizvod i pozicioniranje na tržištu</dd>
+</dl>
+
 ---
-tag1: tourizam
+tag1: turizam
 ---
 tag2: proizvodi
 ---
 tag3: inicijative
 ---
-tag4: vodstvo
+tag4: upravljanje
 ---
 download_title: Napravi promjenu
 ---
