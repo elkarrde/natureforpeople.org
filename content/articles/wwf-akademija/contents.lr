@@ -20,16 +20,31 @@ lead_image: /static/images/articles/wwf-akademija-tara/mini-vrta-tara-u-bajinoj-
 ---
 lead_image_title: Mini Tara Garden in Bajina Bašta © WWF Adria
 ---
-homepage_text:
+lead_text: WWF Nature Academy is designed to involve teachers and students from primary and secondary schools in an active and creative nature conservation which we are all part of
 ---
-lead_text:
-
-Through the WWF Nature Academy for pupils and teachers of schools near protected areas, and in
-cooperation with protected area managers, to come up with creative ideas on how to protect the
-environment surrounding them
+homepage_text: WWF Nature Academy is designed to involve teachers and students from primary and secondary schools in an active and creative nature conservation which we are all part of
 ---
-homepage_text: WWF Nature Academy is designed to involve teachers and students from primary and secondary schools in an active and creative nature conservation which we are all part.
+learn_more: Read story
 ---
+view_study: Case study
+---
+tag1: initiative
+---
+tag2: education
+---
+tag3:
+---
+tag4:
+---
+factsheet:
+---
+template_title: Follow steps to success
+---
+template_subtitle: Get more facts and details about this story
+---
+template_cta_button_text: Read case study
+---
+case_study: case-study
 body:
 
 <p>“There was a lot of difficulty at the beginning, but my greatest satisfaction was when the pupils
@@ -135,26 +150,4 @@ ambassadors.</p>
 managers, and the idea that nature is the best classroom.</p>
 
 <img src="/static/images/articles/wwf-akademija-tara/wwf_akademija_za_prirodu_petnica_2_5.jpg" class="fit-text" title="WWF Nature Academy begins with a one-week training session at the Petnica research station © Szilard Kovač">
-
 ---
-learn_more: Read story
----
-view_study: Case study
----
-tag1: initiative
----
-tag2: education
----
-tag3:
----
-tag4:
----
-factsheet:
----
-template_title: Follow steps to success
----
-template_subtitle: Get more facts and details about this story
----
-template_cta_button_text: Read case study
----
-case_study: case-study

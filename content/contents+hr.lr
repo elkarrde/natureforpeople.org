@@ -56,7 +56,7 @@ about_content:
 <li><strong>Sve građane</strong> da se aktiviraju u zaštiti naših prirodnih vrijednosti.</li>
 </ul>
 ---
-partners_title: Ovaj projekt podržavaju naši prijatelji i partneri
+partners_title: Ovaj projekt podržavaju naši prijatelji i partneri.
 ---
 partners_text: Hvala što ste nas podržali u ovom projektu.<br/>Priroda i ljudi to će cijeniti.
 ---
@@ -74,7 +74,7 @@ search_button_text: Traži
 ---
 filter_title: Pogledajte kako drugi pomažu očuvati okoliš
 ---
-filter_description: , filtrirajte teme koje vas zanimaju
+filter_description: ; filtrirajte teme koje vas zanimaju.
 ---
 message_no_results: Nema rezultata.
 ---
