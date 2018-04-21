@@ -93,7 +93,7 @@ function requestData(page) {
   $.ajax({
     data: getParams(page),
     type: "GET",
-    url: process.env.KB_URL + "/search" //lolcal dev environment
+    url: "https://n4p-knowledgebase.herokuapp.com/api/search/articles" //lolcal dev environment
   }).done(function(data) {
     var total =
       data.total_entries + " " + translation.totalResults[getLocale()];
@@ -129,12 +129,10 @@ function getParams(page) {
     .substr(1);
 
   return {
-    filters: categories,
-    limit: limit,
+    page_size: limit,
     page: page,
-    adTerms: adTerms,
-    minScore: minScore,
-    countryName: countryName
+    search_terms: adTerms,
+    country_name: countryName
   };
 }
 
