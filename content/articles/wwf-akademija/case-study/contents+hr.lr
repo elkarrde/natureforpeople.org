@@ -2,9 +2,9 @@ _model: case-study
 ---
 _template: articles/case-study.html
 ---
-slug:
+slug: wwf-akademija-deo-tare-u-skolskom-dvoristu
 ---
-title: Ornitološki edukativno-volonterski kampovi na Učki
+title: WWF akademija za prirodu – saradnja škola i zaštićenih područja u Srbiji
 ---
 lang: hr
 ---
@@ -17,174 +17,160 @@ lead_image:
 lead_image_title:
 ---
 lead_text:
-14 godina se organizira edukativni kamp u parku prirode Učka na kojima je sudjelovalo preko 1000 volontera i prebrojano je 22 000 ptica. Pridružite im se i vi ove jeseni i budite dio ove inicijative.
 ---
-people: 1 (65 čovjek dana/2 radna mjeseca)
+people: 1
 ---
-time: 10 mjeseci
+time: 2 godine
 ---
-money: 55 000 HRK
+money: 50 000€
 ---
-country: Hrvatska
+country: Srbija
 ---
-organization: Biom
+organization: WWF Adria
 ---
-location: Park prirode Učka
+location: 5 zaštićenih područja i šira okolica
 ---
-protection: Park prirode
+protection: nacionalni park (NP), specijalni rezervat prirode (SRP) i predio izuzetnih oblika (PIO)
 ---
-level: IUCN V
+level:
 ---
 body:
 
 <dl class="clearfix">
-    <dt>Pregled</dt>
-        <dd>Koliko godina se organizira kamp - 14</dd>
-        <dd>Ukupan broj volontera - do sada preko 1000</dd>
-        <dd>Broj volontera godišnje - 70</dd>
-        <dd>Broj posjetitelja godišnje - 100</dd>
-        <dd>Ukupan broj škola koji je sudjelovao - 6</dd>
-        <dd>Ukupan broj prstenovača koji su sudjelovali - 10</dd>
-        <dd>Ukupan broj prstenovanih ptica - 22000</dd>
-        <dd>Održavanje livada – 2 ha</dd>
+    <dt>Postignuća (pregled)</dt>
+        <dd>5 zaštićenih područja ima edukativne programe i suradnju sa svoje 2 lokalne škole.</dd>
+        <dd>Obučeno 214 WWF ambasadora.</dd>
+        <dd>Sudjelovalo je 59 nastavnika iz 10 škola.</dd>
+        <dd>1097 djece uključeno u aktivnosti školskih projekata (od 7 – 17 godina) WWF akademije. </dd>
+        <dd><strong>Rezultati mini projekata WWF Ambasadora:</strong></dd>
+        <dd>filmovi i pozorišne predstave na temu zaštite prirode, </dd>
+        <dd>izgradnja mini zaštićenog područja u školskom dvorištu, </dd>
+        <dd>osmišljavanje i produkcija promotivnih materijala, </dd>
+        <dd>foto izložba.</dd>
+
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
 <dl class="clearfix">
-    <dt>Prilike koje želite iskoristiti</dt>
-        <dd>JUPP Učka zainteresirani za suradnju –
-prikupljanje podataka za ptice u parku. Nije
-postojalo mjesto na kojem se prstenuju ptice,
-educiraju volonteri i zainteresirani građani.</dd>
+    <dt>Problem koji želite riješiti</dt>
+        <dd>Nedostatak kvalitetne nastave u prirodi. </dd>
+        <dd>Nedostatak edukativnih programa u zaštićenim područjima.</dd>
+        <dd>Učitelji nemaju naputak i preporuke (kurikulum, radni plan) za rad u prirodi. </dd>
+        <dd>Većina roditelja smatra da izleti u prirodu (ekskurzije) nisu sigurni ili ih ne mogu financijski pokriti.</dd>
+
+    <dt>Prilika koju želite iskoristiti</dt>
+        <dd>Razvijanje novih kompetencija za učitelje i učenika. Upoznavanje sa zaštićenim područjem u kojem žive. Povećanje svijesti važnosti zaštićenih područja (ZP) i zaštite prirode. </dd>
+        <dd>Stvaranje saradnje između škola i ZP. </dd>
+        <dd>Škole, učitelji i stariji učenici postaju ambasadori ZP.</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
 <dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije?</dt>
-        <dd><strong>Pravni:</strong></dd>
-        <dd>Odredba u zakonu vezano za kampiranje u prirodi
-koju treba poštovati.</dd>
-        <dd><strong>Institucionalni:</strong></dd>
-        <dd>Zainteresiranost lokalnog upravljača (JUPP Učka)
-i/ili jedinice lokalne samouprave.</dd>
-        <dd>Lokalni upravljač sufinancira, daje opremu i
-promovira kamp.</dd>
-        <dd><strong>Interni kapaciteti:</strong></dd>
-        <dd>Licencirani prstenovači koji smiju prstenovati
-ptice u zaštićenom području.</dd>
-        <dd>Jedna osoba je van ureda 2 mjeseca za vrijeme
-trajanje kampa.</dd>
-        <dd>Vlastita sredstva i vlastita oprema ukoliko nema
-drugih izvora financija.</dd>
-
     <dt>Koja je uloga partnera?</dt>
-        <dd>JUPP Učka - podrška (dio opreme uključujući i
-vatrogasnu, korištenje zemljišta, prijevoz opreme
-i sudionika, priprema kampa), sufinanciranje,
-promocija.</dd>
+        <dd>Uloga zaštićenih područja - domaćin, mentor, izvor informacija. Surađivanje sa školama, prezentacija u školama razrada i sudjelovanje u osmišljavanju školskih projekata.</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
 <dl class="clearfix">
-    <dt>Koje su bile ključne faze – od ideje
-do realizacije?</dt>
-        <dd>1. dogovoriti angažman partnera i očekivanja s
-obje strane</dd>
-        <dd>2. osigurati opremu</dd>
-        <dd>3. dogovoriti raspored održavanja kampa</dd>
-        <dd>4. promovirati kamp</dd>
-        <dd>5. prijava volontera</dd>
-        <dd>6. složiti raspored zaposlenika i volontera</dd>
-        <dd>7. podijeliti odgovornosti zaposlenicima i
-volonterima</dd>
-        <dd>8a. Košnja livada</dd>
-        <dd>8b. prstenovanje/edukacija ujutro i podne svaki
-dan kampa</dd>
-        <dd>9. analiza prikupljena rezultata prstenovanja ptica</dd>
+    <dt>Ključne faze – od ideje do realizacije?</dt>
+        <dd>okupljanje dobrog tima edukatora</dd>
+        <dd>upoznavanje focal pointa iz ZP o sadržaju WWF akademije za prirodu i njihovoj ulozi</dd>
+        <dd>raspisivanje i promoviranje konkursa za odabir škole na vrijeme</dd>
+        <dd>odabir mjesta za obuku (istraživačka stanica Petnica)</dd>
+        <dd>uspostavljanje dobre suradnje sa ZP i školom</dd>
+        <dd>jednom mjesečno pratiti napredak implementacije školskog projekta polaznika</dd>
+        <dd>predstavljanje rezultata jedni drugima </dd>
+        <dd>kratka e-publikacija o rezultatima svake generacije</dd>
 
-    <dt>Kako ste uključili dionike?</dt>
-        <dd>Lokalne škole uključene u kamp – partneri ih obavještavaju.</dd>
-        <dd>Lovci su potpora kampu (problem sa ranjenim
-divljim životinjama).</dd>
-        <dd>Suradnja s vatrogascima u dovozu vode i obrani
-od požara.</dd>
+    <dt>Investicija po fazama</dt>
+        <dd>dobar tim edukatora - 10.650€</dd>
+        <dd>raspisivanje i promoviranje konkursa za odabir škole na vrijeme – 500€</dd>
+        <dd>organiziranje obuke i završnog događaja (32 ljudi, 9 dana – smještaj, hrana, materijali, prijevoz) – 14.000€</dd>
+        <dd>uspostavljanje dobre suradnje sa ZP i školom</dd>
+        <dd>pratiti napredak implementacije školskih projekata (1000€)</dd>
 
-    <dt>Koje ranjive skupine ste uključili i
-kako?</dt>
-        <dd>Najaktivniji volonteri imaju preko 65, najveći dio
-kampa organiziraju žene, pokrivene su sve dobne
-skupine.</dd>
+    <dt>Koje akcije ste poduzeli?</dt>
+        <dd>Odabir ZP prema veličini, stupnju zaštite i broju posjetitelja, zainteresiranosti</dd>
+        <dd>Potpisivanje memoranduma o suradnji sa ZP i određivanje focal pointa za obrazovne programe po ZP</dd>
+        <dd>Lista kriteriuma za odabir škola (u opštini u/ili u blizini odabranih ZP) i sastavljanje komisije za odabir (nastavnici, profesori, WWF)</dd>
+        <dd>Javno objavljivanje konkursa za prijavu škola (nastavnika) za WWF Akademiju (WWF stranice, Prosvetni pregled – javni prosvetarski časopis, bioblog, direktno kontaktiranje škola sa kojima se surađivalo)</dd>
+        <dd>2 škole po ZP (ukupno 10 škola) </dd>
+        <dd>Suglasnost roditelja za sudjelovanje svojeg djeteta u školskom projektnom timu zbog javne upotrebe fotografija i video materijala</dd>
+        <dd>Odabir edukatora i mjesta obuke</dd>
+        <dd>Izrada priručnika WWF akademije sa 5 poglavlja: zaštićena područja, ekološki otisak, aktivno učešće građana, upravljanje projektima i kako raditi sa medijima</dd>
+        <dd>Obuka nastavnika i jednog učenika po školi (5 dana – teorija i teren, 6 edukatora). Prilikom obuke dobiju priručnik i paket didaktičkih materijala koji ostaje u vlasništvu škole</dd>
+        <dd>Obučeni osnivaju projektni tima po školi (nastavnici i učenici – najmanje 10 učenika te 2-5 nastavnika)</dd>
+        <dd>Projektni tim u suradnji sa focal pointom ZP razvija plan školskog projekta (razvijeni kriteriji za postizanje cilja – saradnja škola i ZP)</dd>
+        <dd>Implementacija projektnih aktivnosti (trajanje od decembra do maja) i uključivanje što većeg broja učenika u aktivnosti </dd>
+        <dd>Svaki projektni team piše završni izvještaj i podnosi ga WWF-u prije završnog događaja</dd>
+        <dd>Završni događaj na kojem obučeni nastavnici i učenici prezentuju ZP i rezultate projekta jedni drugima (4 dana – evaluacija svog rada)</dd>
+        <dd>Konferencija za novinare (5 učenika/ambasadora) predstavilo rezultate</dd>
+        <dd>Škole ambasadori postaju mentori školama naredne  generacije WWF akademije</dd>
+        <dd>Kroz razvoj i implementaciju školskih projekata projektni tim je sakuplja naučene lekcije u „mentorsku kutiju“</dd>
+        <dd>Organiziranje predaje „mentorske kutije“ u Junu ili Septembru</dd>
+        <dd>Početak novog ciklusa</dd>
+
+    <dt>Koje ranjive skupine ste uključili i kako?</dt>
+        <dd>Uključena je škola sa manjinskom grupom Mađara iz Novog sada i Šokaca iz Bačkog Monoštora. </dd>
+        <dd>Uključeni su roditelji djece i šira obitelj čija su djeca dio ambasadorskih školi. </dd>
+        <dd>U kriterijima za odabir škole imaju prednost one koje rade s djecom sa invaliditetom.</dd>
+        <dd>Žene su najzastupljenije kao nastavnice u osnovnim i srednjim školama – 7 nastavnica i 3 nastavnika kao ambasadori. </dd>
+        <dd>Program je namenjen učenicima uzrasta od 7-17 godina. Uvid u brojnost imamo samo za školske projektne timove (profesori Ž-39 , M-9; učenici Ž-80, M-44), no u same aktivnosti je bilo uključeno mnogo više učenika iz svake škole.</dd>
+
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Promjena (vaš doprinos promjeni)</h4>
+<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
 <dl class="clearfix">
-    <dt>Koja je pozitivna promjena u
-prirodi?</dt>
-        <dd>Održavanje staništa kroz košnju (smanjenje
-sukcesije)</dd>
-
-    <dt>Kako je smanjen negativni utjecaj
-na prirodu?</dt>
-        <dd>Prisutnost kampa smanjuje moguće ilegalnih
-aktivnosti.</dd>
-
-    <dt>Pozitivna ekonomska (E) i
-društvena (D) promjena kod:</dt>
-        <dd><strong>Javnog sektora (lokalni, nacionalni):</strong></dd>
-        <dd>D: općina Kršan prepoznala značaj kampa i
-prijavili se zajedno na EU projekt (Biom i JUPP
-Učka) i dobili 1 milijun kuna za 4 godine</dd>
-        <dd><strong>Poslovnog sektora:</strong></dd>
-        <dd>E: lokalni ugostiteljski objekti i trgovine imaju
-ekonomsku korist od volontera koji sudjeluju u
-kampu</dd>
-        <dd><strong>Upravljača zaštićenog područja:</strong></dd>
-        <dd>D:dobivaju podatke o pticama, na njihovom
-području se organiziraju edukativne i volonterske
-akcije, promovira se područje na lokalnoj,
-nacionalnoj i međunarodnoj razini</dd>
-        <dd>Neka ZP iz Hrvatske šalju svoje zaposlenike u
-kamp</dd>
-        <dd><strong>Lokalnog stanovništva:</strong></dd>
-        <dd>D: Povećana zainteresiranost za prirodu,</dd>
-        <dd>Vlasnici parcela zadovoljni jer održavaju
-volonteri košnjom „uredne“ parcele</dd>
-        <dd><strong>Znanstvena zajednica:</strong></dd>
-        <dd>Svi licencirani prstenovači u zadnjih 5 godina
-započeli su svoju edukaciju u ovom kampu.</dd>
+    <dt>Pozitivna ekonomska (E) i društvena (D) promjena kod:</dt>
+        <dd>Javnog sektora (lokalni, nacionalni):</dd>
+        <dd>D: Škole ambasadori su međusobno povezani i razmjenjuju iskustvo. Iniciranje suradnje sa sektorom obrazovanja – Ministarstvo obrazovanja.</dd>
+        <dd>Upravljača zaštićenog područja:</dd>
+        <dd>D: suradnja sa novim školama u svojoj okolici s kojima nisu prije imali suradnju. ZP kao edukacijski poligon za lokalnu djecu.</dd>
+        <dd>Lokalnog stanovništva:</dd>
+        <dd>D: Lokalne škole se povezuju sa prirodom i ZP u svojoj blizini. Povećanje svijesti stanovništva o važnosti zaštićenog područja u njihovom kraju. </dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
 <dl class="clearfix">
-    <dt>Koje su ključne stvari koje su bitne
-za replikaciju?</dt>
-        <dd>Postojanje kapaciteta (unutar organizacije ili
-partnera).</dd>
-        <dd>Podrška upravljača područja i lokalnog
-stanovništva (zemljište, ugostiteljski objekti..)</dd>
+    <dt>Što bi napravili drukčije?</dt>
+        <dd>Pored koordinatora koji je angažovan 100% potrebno je imati i asistenta na projektu na 50% radnog vremena.</dd>
+        <dd>Uključiti po dva nastavnika (a ne jednog kao do sad) iz svake ambasadorske škole </dd>
+        <dd>Organizirati obavezne posete koordinatora projekta svakoj ambasadorskoj školi tokom akademskog ciklusa </dd>
+        <dd>Planirati veći budžet za didaktičke materijale koji ambasadorske škole dobivaju </dd>
+        <dd>Planirati veću donaciju za školu (svaka škola dobila je 100 € za materijalne troškove, to bih podigli na 300)  </dd>
+        <dd>Ukoliko planirate više generacija ambasadora preporuka je da unapred planirate susret svih generacija ambasadorskih nastavnika i učenika na kraju projekta</dd>
 
-    <dt>Što je ključno za održivosti
-projekta?</dt>
-        <dd>Podrška upravljača zaštićenog područja.</dd>
-        <dd>Konstantno poboljšavanje uvjeta u kampu.</dd>
-        <dd>Uspješna provedba.</dd>
-        <dd>Održavanje financijske konstrukcije – dobiven EU
-projekt za sljedeće 4 godine.</dd>
+    <dt>Što bi preporučili drugima?</dt>
+        <dd>Prednost rada sa učiteljima (1. do 4. razred) u rad WWF akademije doprinosi većem odazivu roditelja, te baka i djedova na aktivnosti vezano za projekt. </dd>
+        <dd>Koordinator projekta treba adaptirati svoj pristup svakom ZP i focal pointu u ZP.</dd>
+        <dd>Poziv za suradnju škola nije namenjen samo nastavnicima biologije. Nastava u prirodi treba biti interdisciplinarna.</dd>
+        <dd>Preporučamo da se prilikom replikacije uključi škole koje educiraju djecu s invaliditetom jer ona mogu uspješno učestvovati i sprovesti sve potrebne aktivnosti u skladu sa njihovim mogućnostima. </dd>
+
+    <dt>Što je ključno za održivosti projekta?</dt>
+        <dd>Istrajnost škola ambasadora (nastavnika i učenika). Jedna osoba posvećena cijeloj ideji. </dd>
+        <dd>Plana rada WWF akademije, pristupi i metode postaju dio plana rada u školama koje su sudjelovale i na taj način je održivo.</dd>
+
+    <dt>Koje su vaše preporuke za poboljšanje politika?</dt>
+        <dd>Baza informacija sa tačnim brojem škola u Srbiji i kontakt osobom. </dd>
+        <dd>Razvijanje i kvalitetna implementacija obrazovnih programa u ZP. Osmišljavanje edukativnih sadržaja u ZP koje ima dečije odmaralište. Osoba iz ZP može biti edukator u dječjem odmaralištu i/ili vršiti obuku animatora. </dd>
+        <dd>Obogaćivanje programa rekreativne nastave sa prirodnim temama. Kvalitetne smernice za nastavnike za pripremu izvođenja nastave u prirodi (ekskurzije).</dd>
+        <dd>Komuniciranje postojećih edukativnih programa u zaštićenim područjima:</dd>
+        <dd>Uključivanje ZP u edukaciji/kurikulum na nacionalnom nivou, obavezna nastava u prirodi/zaštićenim područjima.</dd>
 
 </dl>
 ---
-tag1: tourism
+tag1: edukacija
 ---
-tag2: products
+tag2: upravljanje
 ---
-tag3: initiatives
+tag3:
 ---
-tag4: management
+tag4:
 ---
-download_title: Make a change
+download_title: Napravi promjenu
 ---
-download_subtitle: Replicate this solution & follow steps to success
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
 ---
-download_cta_button_text: Download document
+download_cta_button_text: Preuzmi dokument
 ---
-download_link: primjer_dobre_prakse-ucka-biom.docx
+download_link: primjer_dobre_prakse-wwf_akademija.docx
