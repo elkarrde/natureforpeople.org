@@ -1,0 +1,50 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+_slug: from-a-waste-disposal-area-to-a-protected-area-tivat-salt-flats
+---
+title: From a waste disposal area to a protected area: the example of the Tivat salt flats
+---
+lang: en
+---
+date:
+---
+author:
+---
+size: small
+---
+hot: false
+---
+lead_image:
+---
+lead_image_title:
+---
+lead_text:
+---
+homepage_text: Tivat Salina are invaluable place for birds and are now recognized by people. Educational training ground for students and pupils and is slowly becoming the eco-tourist destination.
+---
+learn_more:
+---
+view_study: Case study
+---
+tag1: management
+---
+tag2: education
+---
+tag3: tourism
+---
+tag4:
+---
+factsheet:
+---
+template_title: Follow steps to success
+---
+template_subtitle: Get more facts and details about this story
+---
+template_cta_button_text: Read case study
+---
+case_study: case-study
+---
+body:
+---

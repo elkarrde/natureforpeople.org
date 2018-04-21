@@ -1,0 +1,50 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+_slug: od-deponija-do-zasticenog-podrucja-tivatska-solila
+---
+title: Od deponija do zaštićenog područja primjer Tivatska solila
+---
+lang: hr
+---
+date:
+---
+author:
+---
+size: small
+---
+hot: false
+---
+lead_image:
+---
+lead_image_title:
+---
+lead_text:
+---
+homepage_text: Tivatska solila su neprocjenjivo mjesto za ptice a sada su prepoznata i od ljudi.Edukativni poligon za studente i učenike a polako postaje i eko turistička destinacija. 
+---
+learn_more:
+---
+view_study: Vidi studiju
+---
+tag1: upravljanje
+---
+tag2: edukacija
+---
+tag3: turizam
+---
+tag4:
+---
+factsheet:
+---
+template_title: Slijedite korake do uspjeha
+---
+template_subtitle: Saznajte više činjenica i pojedinosti o ovoj priči
+---
+template_cta_button_text: Pročitajte studiju
+---
+case_study: case-study
+---
+body:
+---
