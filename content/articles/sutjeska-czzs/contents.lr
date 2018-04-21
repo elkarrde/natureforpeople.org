@@ -4,7 +4,7 @@ _template: articles/single-article.html
 ---
 _slug: sutjeska-czzs
 ---
-title: Battle for Sutjeska – initiative to oppose the decision to construct hydroelectric plants in a national park
+title: Battle for Sutjeska - Preventing the government's decision to build a hydro power plant in the national park
 ---
 lang: en
 ---
@@ -12,7 +12,7 @@ date:
 ---
 author:
 ---
-size: medium
+size: big
 ---
 hot: false
 ---
@@ -20,11 +20,9 @@ lead_image: /static/images/articles/sutjeska/sutjeska_nsrs2.jpg
 ---
 lead_image_title:
 ---
-lead_text:
-
+lead_text: The establishment of the first citizens' initiatives and the mobilization of over 6,000 people from 12 cities in Bosnia and Herzegovina barred the government's decision on the construction of hydroelectric power plant.
 ---
 body:
-
 ---
 learn_more:
 ---
