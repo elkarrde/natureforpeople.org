@@ -15,9 +15,15 @@
           <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix max-width-4 mx-auto">
             {% if artx.size == 'medium' %}
             <div class="col col-12 image">
-              <a href="{{ artx|url }}">
-                <span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
-              </a>
+				{% if artx.released == "study" %}
+				<a href="{{ artx|url }}case-study">
+					<span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
+				</a>
+				{% else %}
+				<a href="{{ artx|url }}">
+					<span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
+				</a>
+				{% endif %}
             </div>
             {% endif %}
             <div class="text col {% if artx.size == 'full' %}col-4 p2{% elif artx.size == 'big' %}col-6 p2{% elif artx.size == 'medium'%}col-12 px2 pt0 pb2{% else %}col-12 p2{% endif %}">
