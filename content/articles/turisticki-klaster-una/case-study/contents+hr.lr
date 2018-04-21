@@ -2,7 +2,7 @@ _model: case-study
 ---
 _template: articles/case-study.html
 ---
-slug: case-study
+slug:
 ---
 title: Zajedništvo umjesto očekivane konkurencije
 ---
