@@ -49,7 +49,8 @@ body:
         <dd>Photo exhibit</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Problem/opportunit</h4>
+<h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
+
 <dl class="clearfix">
     <dt>Problem to be resolved</dt>
         <dd>Lack of good quality classes in nature.</dd>

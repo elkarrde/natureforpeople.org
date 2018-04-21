@@ -1,0 +1,11 @@
+_model: articles
+---
+title: Članci
+---
+learn_more_button: Saznaj vise
+---
+learn_more: Saznaj vise
+---
+_template: articles.html
+---
+slug: clanci

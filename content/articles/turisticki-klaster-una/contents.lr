@@ -20,10 +20,30 @@ lead_image: /static/images/articles/una/strbacki-buk.jpg
 ---
 lead_image_title: The magical Una © Hris Hadžihajdarević, NP Una
 ---
-lead_text:
-
-The Una Tourism Cluster has 27 members and is showing formidable results for a local
+lead_text: The Una Tourism Cluster has 27 members and is showing formidable results for a local
 community.
+---
+learn_more: Read story
+---
+view_study: Case study
+---
+tag1: tourism
+---
+tag2: products
+---
+tag3: initiatives
+---
+tag4: management
+---
+factsheet:
+---
+template_title: Follow steps to success
+---
+template_subtitle: Get more facts and details about this story
+---
+template_cta_button_text: Read case study
+---
+case_study: case-study
 ---
 body:
 
@@ -200,27 +220,4 @@ with the management of the Una National Park... it all goes to show that this st
 the ideal foundations for a successful future!</p>
 
 <img src="/static/images/articles/una/carobna-una.jpg" class="fit-text" title="The magical Una © Hris Hadžihajdarević, NP Una">
-
----
-learn_more: Read story
----
-view_study: Case study
----
-tag1: tourism
----
-tag2: products
----
-tag3: initiatives
----
-tag4: management
----
-factsheet:
----
-template_title: Follow steps to success
----
-template_subtitle: Get more facts and details about this story
----
-template_cta_button_text: Read case study
----
-case_study: case-study
 ---
