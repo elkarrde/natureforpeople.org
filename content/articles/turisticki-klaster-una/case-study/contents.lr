@@ -18,8 +18,7 @@ lead_image_title: The magical Una © Hris Hadžihajdarević, NP Una
 ---
 lead_text:
 
-The Una Tourism Cluster has 27 members and is showing formidable results for a local
-community.
+The Una Tourism Cluster has 27 members and is showing formidable results for a local community.
 ---
 people: 1
 ---
@@ -31,7 +30,7 @@ country: BIH
 ---
 organization: WWF Adria
 ---
-location: NP Una
+location: Una National Park
 ---
 protection: National Park
 ---
@@ -60,6 +59,20 @@ body:
         <dd>An increase in the number of visitors has led to the increase in demand for local products</dd>
 </dl>
 
+<h4 class="h2 grey playfair-heavy mb1">Planning</h4>
+<dl class="clearfix">
+    <dt>Key prerequisites for success</dt>
+        <dd>Legal:</dd>
+        <dd>According to the Act on Associations – tourism cluster members must be legal entities which can form an association</dd>
+        <dd>Institutional:</dd>
+        <dd>The protected area is willing to include the local community in its activities. </dd>
+        <dd>A strategic acknowledgement of tourism (instead of hydropower) as the mode of economic area revitalisation. </dd>
+        <dd>A common interest of the PA managers, all levels of authority and the local community.</dd>
+        <dd>Internal capacities:</dd>
+        <dd>A single person responsible for the functioning and operations of the cluster.</dd>
+</dl>
+
+
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
 <dl class="clearfix">
     <dt>Key stages – from idea to actualisation?</dt>
@@ -69,6 +82,49 @@ body:
         <dd>4. founding a tourism cluster</dd>
         <dd>5. identifying tourism products and services</dd>
         <dd>6. creating package tours, branding and market placement</dd>
+</dl>
+
+
+<h4 class="h2 grey playfair-heavy mb1">Change</h4>
+<dl class="clearfix">
+    <dt>Positive economic (E) and social (S) change in:</dt>
+        <dd>The public sector (local, national) </dd>
+        <dd>S: the promotion of the area and local producers, increased visibility</dd>
+        <dd>The business sector: </dd>
+        <dd>E: increased income, sustainable business activities</dd>
+        <dd>S: promoting products and services, the possibility of networking and joint action, education</dd>
+        <dd>Protected area management: </dd>
+        <dd>E: resource saving (through donating eco-stands for the eco-market, equipping the info-point)</dd>
+        <dd>S: reduced pressure related to the construction of a hydropower plant at the Una National Park</dd>
+        <dd>The local community: </dd>
+        <dd>E: increased income, increased number of jobs</dd>
+        <dd>S: promoting products and services, synergy with other suppliers, education</dd>
+
+    <dt>What’s your greatest contribution to the project?</dt>
+        <dd>To nature: </dd>
+        <dd>Raising the people’s awareness on the importance of preserving natural resources so they also can live well. </dd>
+        <dd>To the people:</dd>
+        <dd>Increasing the income of the local community based on our own products and services.</dd>
+</dl>
+
+
+<h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
+<dl class="clearfix">
+    <dt>What are the key elements essential to replication?</dt>
+        <dd>The existence of a natural resource on which to develop a story (protected area).</dd>
+        <dd>Institutional support.</dd>
+        <dd>Financial resources.</dd>
+        <dd>Interest of the community.</dd>
+        <dd>A single dedicate person leading the process.</dd>
+        <dd>The draft of the contract on providing administrative and technical support, which was the foundation of the common arrangement and included all parties, not placing any in an unfavourable position.</dd>
+        <dd>Creating an information service – a meeting place for tourist and economic entities, their networking and mutual support through projects and raising environmental awareness on the necessity for area preservation.</dd>
+
+    <dt>Is there anything you would do differently (and recommend others)?</dt>
+        <dd>Formalising institutional support (agreements).</dd>
+        <dd>The recommendation is towards the development of regional methodology for the foundation of tourism clusters in protected areas. </dd>
+
+    <dt>What is the key element for project sustainability?</dt>
+        <dd>A recognised product and market positioning.</dd>
 </dl>
 
 ---
@@ -86,4 +142,4 @@ download_subtitle: Replicate this solution & follow steps to success
 ---
 download_cta_button_text: Download document
 ---
-download_link: primjer_dobre_prakse-una.docx
+download_link: primjer_dobre_prakse-una-eng.docx
