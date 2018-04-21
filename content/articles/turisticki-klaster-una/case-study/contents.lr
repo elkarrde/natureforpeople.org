@@ -2,7 +2,7 @@ _model: case-study
 ---
 _template: articles/case-study.html
 ---
-slug: case-study
+slug:
 ---
 title: Increasing the income of the local community through the formation of a tourism cluster
 ---
