@@ -4,7 +4,7 @@ _template: articles/case-study.html
 ---
 slug:
 ---
-title: Poticajima za zajedničke pašnjake do zadržavanja stanovništva u Lonjskom polju (Tradicionalno stočarstvo kao ključ očuvanja travnjačkih eko sustava/biološke raznolikosti)
+title: Poticajima za zajedničke pašnjake do zadržavanja stanovništva u Lonjskom polju (tradicionalno stočarstvo kao ključ očuvanja travnjačkih eko-sustava / biološke raznolikosti)
 ---
 lang: hr
 ---
@@ -16,7 +16,10 @@ lead_image: /static/images/articles/lonjsko-polje/autohtono-govedo-na-ispasi-u-l
 ---
 lead_image_title: Autohtono govedo na ispaši u Lonjskom polju © PP Lonjsko polje
 ---
-lead_text: Park prirode Lonjsko polje poznat je po dobroj suradnji s lokalnim stanovništvom kojima su osigurali poticaje u vrijednosti gotovo dva milijuna eura
+lead_text:
+
+Park prirode Lonjsko polje poznat je po dobroj suradnji s lokalnim stanovništvom kojima su osigurali
+poticaje u vrijednosti od gotovo dva milijuna eura
 ---
 people: 1
 ---
@@ -34,13 +37,104 @@ protection: Park prirode
 ---
 level: IUCN V
 ---
+body:
+
+<dl class="clearfix">
+    <dt>Postignuća (pregled)</dt>
+        <dd>ukupno dobivenih poticaja – 14 milijuna HRK (pola iz državnog proračuna, a pola iz EU-a)</dd>
+        <dd>broj obitelji – 110 obitelji-obiteljsko poljoprivrednih gospodarstava (OPG) / cca pozitivan učinak na 400 ljudi</dd>
+        <dd>25 % stanovništva Lonjskog polja ima izravne ekonomske koristi, a 70 % stanovništva neizravne</dd>
+        <dd>povećava se broj grla stoke – 3200 grla</dd>
+        <dd>povećava se površina koja se održava ispašom – 3500 ha</dd>
+        <dd>autohtone pasmine zadržane</dd>
+        <dd>smanjen broj hektara invazivnih vrsta/amorfa, čičak (cca 100 ha).</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<dl class="clearfix">
+    <dt>Problem koji želite riješiti </dt>
+        <dd>gubitak travnjačkih staništa</dd>
+        <dd>zarastanje s invazivnim vrstama</dd>
+        <dd>odlazak stanovništva</dd>
+        <dd>smanjen broj stoke.</dd>
+
+    <dt>Prilike koje želite iskoristiti</dt>
+        <dd>ulazak Hrvatske u EU i provedba poljoprivredne politike.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
+<dl class="clearfix">
+    <dt>Ključni preduvjeti za uspjeh</dt>
+        <dd><strong>Pravni:</strong></dd>
+        <dd>provedba poljoprivredne politike </dd>
+        <dd>Lonjsko polje kao dio ekološke mreže Natura 2000.</dd>
+        <dd><strong>Institucionalni:</strong></dd>
+        <dd>podrška Hrvatske agencije za okoliš i prirodu (HAOP), APZ, jedinice lokalne samouprave i MZOE.</dd>
+        <dd><strong>Interni kapaciteti:</strong></dd>
+        <dd>poznavanje zakona o poljoprivredi, okupljanje dionika, organiziranje sastanaka.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<dl class="clearfix">
+    <dt>Ključne faze – od ideje do realizacije</dt>
+        <dd>prostorno definirati zajedničke pašnjake (u suradnji s lokalnom samoupravom)</dd>
+        <dd>odrediti koji su korisnici na svakom pašnjaku i koliko grla stoke može biti na pašnjaku</dd>
+        <dd>definiranje prijedloga pravne regulative – pravilnika zajedničkih pašnjaka za dodjelu u zakup</dd>
+        <dd>dogovoreni uvjeti ponašanja – uvjeti zaštite prirode (rješenje o korištenju od MZOE), stočari su izradili sporazum o korištenju pašnjaka (sezona ispaše, dozvoljeni broj grla, evakuacijski pašnjak, livade, obnova zaraslih dijelova pašnjaka) i svi su ga morali potpisati</dd>
+        <dd>Agencija za poljoprivredno zemljište i Agencija za plaćanje dogovorili su da se upis u Arkod sustav definira na dio katastarske čestice pašnjaka (a ne na cijelu česticu što je bio problem)</dd>
+        <dd>država je ovim pravilnikom omogućila poljoprivrednicima da dobiju u zakup zemljište na privremeno korištenje na 5 godina bez javnog natječaja.</dd>
+
+    <dt>Jeste li osvijestili lokalne dionike na njihova prava na informacije?</dt>
+        <dd>uključivanje lokalnog stanovništva u donošenje plana upravljanja i prostornog plana područja Lonjskog polja</dd>
+        <dd>formiranjem vijeća dionika lokalno stanovništvo doprinosilo je idejama i planovima za daljnji razvoj područja kao i upravljanja resursima u parku.</dd>
+
+    <dt>Koji su bili izazovi prilikom provedbe?</dt>
+        <dd>Administrativni:</dd>
+        <dd>dokazivanje nadležnim ministarstvima problematike velikih pašnjačkih kompleksa i njihovog korištenja </dd>
+        <dd>nepostojanje legislative o zajedničkim pašnjacima</dd>
+        <dd>pripajanje zaraslih pašnjaka u revizije šumsko gospodarske osnove. Hrvatske šume preuzimaju zaraslo područje pod svoje gospodarenje.</dd>
+
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+<dl class="clearfix">
+    <dt>Koja je pozitivna promjena u prirodi?</dt>
+        <dd>obnova staništa (sprječavanje sukcesije), povećanje populacije ugrožena vrste ptice kosca (Crex crex)</dd>
+        <dd>povećan broj izvornih autohtonih pasmina konja (hrvatski posavac i hrvatski hladnokrvnjak).</dd>
+
+    <dt>Kako je smanjen negativni utjecaj na prirodu?</dt>
+        <dd>ljudi više brinu o stoci koja održava pašnjake i na taj se način povećava površina pašnjaka i smanjuje površina invazivnih vrsta.</dd>
+
+    <dt>Koji je vaš najveći doprinos u projektu?</dt>
+        <dd><strong>Za prirodu:</strong></dd>
+        <dd>očuvanje poplavnih područja koji su glavna značajka parka </dd>
+        <dd>očuvanje tradicionalnog stočarstva kao bitnog ekološkog procesa</dd>
+        <dd>očuvani poplavni krajobraz.</dd>
+        <dd><strong>Za ljude:</strong></dd>
+        <dd>zadržali smo ljude u području</dd>
+        <dd>očuvanje kulturne baštine.</dd>
+
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
+<dl class="clearfix">
+    <dt>Koje su ključne stvari važne za replikaciju?</dt>
+        <dd>postojanje primjera Austrije kao jedine zemlje EU-a s uređenim sustavom zajedničkog korištenja pašnjaka</dd>
+        <dd>postojanje velikih zajedničkih pašnjaka u državnom vlasništvu</dd>
+        <dd>zemlje kandidatkinje EU-a</dd>
+        <dd>stočari mogu koristiti u zakup državno zemljište</dd>
+        <dd>zaštićeno područje koje je prepoznalo takvu vrstu travnjaka kao vrijednost</dd>
+        <dd>zaštićeno područje treba imati upravljača.</dd>
+
+</dl>
+---
 tag1: upravljanje
 ---
-tag2: lokalne_inicijative
+tag2: inicijativa
 ---
 tag3: kultura
 ---
-tag4: lokalni_proizvodi
+tag4: proizvodi
 ---
 download_title: Napravi promjenu
 ---
@@ -49,95 +143,3 @@ download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
 download_cta_button_text: Preuzmi dokument
 ---
 download_link: primjer_dobre_prakse-lonjsko_polje.docx
----
-body:
-
-<dl class="clearfix">
-    <dt>Postignuća (pregled)</dt>
-        <dd>Ukupno poticaja dobiveno – 14 milijuna HRK (pola iz državnog proračuna a pola iz EU)</dd>
-        <dd>Broj obitelji– 110 obitelji-obiteljsko poljoprivrednih gospodarstava (OPG)/cca pozitivan efekt na 400 ljudi</dd>
-        <dd>25% stanovništva Lonjskog polja ima direktne ekonomske koristi a indirektne 70% stanovništva</dd>
-        <dd>Povećava se broj grla stoke – 3200 grla</dd>
-        <dd>Povećava se površina koja se održava ispašom – 3500ha</dd>
-        <dd>Autohtone pasmine zadržan</dd>
-        <dd>Smanjen broj hektara invazivnih vrsta/amorfa, čičak (cca 100ha)</dd>
-</dl>
-
-<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
-<dl class="clearfix">
-    <dt>Problem koji želite riješiti </dt>
-        <dd>Gubitak travnjačkih staništa</dd>
-        <dd>Zarastanje s invazivnim vrstama</dd>
-        <dd>Odlazak stanovništva</dd>
-        <dd>Smanjen broj stoke</dd>
-
-    <dt>Prilike koje želite iskoristiti</dt>
-        <dd>Ulazak Hrvatske u EU i provedba poljoprivredne politike E</dd>
-</dl>
-
-<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
-<dl class="clearfix">
-    <dt>Ključni preduvjeti za uspjeh</dt>
-        <dd><strong>Pravni:</strong></dd>
-        <dd>provedba poljoprivredne politike </dd>
-        <dd>Lonjsko polje kao dio ekološke mreža Natura 2000</dd>
-        <dd><strong>Institucionalni:</strong></dd>
-        <dd>Podrška Hrvatske agencije za okoliš i prirodu (HAOP), APZ, jedinice lokalne samouprave i MZOE</dd>
-        <dd><strong>Interni kapaciteti:</strong></dd>
-        <dd>Poznavanje zakona o poljoprivredi, okupljanje dionika, organiziranje sastanka.</dd>
-</dl>
-
-<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
-<dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije</dt>
-        <dd>Prostorno definirati zajedničke pašnjake (u suradnji sa lokalnom samoupravom)</dd>
-        <dd>Odrediti koji korisnici su na svakom pašnjaku i koliko grla stoke može biti</dd>
-        <dd>Definiranje prijedloga pravne regulative - pravilnika zajedničkih pašnjaka za dodjelu u zakup</dd>
-        <dd>Dogovoreni uvjeti ponašanja – uvjeti zaštite prirode (rješenje o korištenju od MZOE), stočari su izradili sporazum o korištenju pašnjaka (sezona ispaše, dozvoljeni broj grla, evakuacijski pašnjak, livade, obnova zaraslih dijelova pašnjaka) i svi su ga morali potpisati</dd>
-        <dd>Agencija za poljoprivredno zemljište i Agencija za plaćanje su dogovorili da se upis u Arkod sustav definira na dio katastarske čestice pašnjaka (a ne na cijelu česticu što je bio problem).</dd>
-        <dd>Država je omogućila ovim pravilnikom poljoprivrednicima da dobiju u zakup zemljište na privremeno korištenje na 5 godina bez javnog natječaja.</dd>
-
-    <dt>Jeste li osvijestili lokalne dionike na njihova prava na informacije?</dt>
-        <dd>Uključivanje lokalnog stanovništva u donošenje plana upravljanja i prostornog plana područja Lonjskog polja.</dd>
-        <dd>Formiranjem vijeća dionika lokalno stanovništvo je doprinosilo idejama i planovima za daljnji razvoj područja kao i upravljanja resursima u parku.</dd>
-
-    <dt>Koji su bili izazovi prilikom provedbe?</dt>
-        <dd>Administrativni:</dd>
-        <dd>Dokazivanje nadležnim ministarstvima problematiku velikih pašnjačkih kompleksa i njihovog korištenja. </dd>
-        <dd>Nepostojanje legislative o zajedničkim pašnjacima.</dd>
-        <dd>Pripajanje zaraslih pašnjaka u revizije šumsko gospodarske osnove. Hrvatske Šume preuzimaju zaraslo područje pod svoje gospodarenje.</dd>
-
-</dl>
-
-<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
-<dl class="clearfix">
-    <dt>Koja je pozitivna promjena u prirodi?</dt>
-        <dd>Obnova staništa (sprječavanje sukcesije), povećanje populacije ugrožena vrste ptice kosca (Crex crex)</dd>
-        <dd>Povećan broj izvornih autohtonih pasmina konja (hrvatski posavac i hrvatski hladnokrvnjak)</dd>
-
-    <dt>Kako je smanjen negativni utjecaj na prirodu?</dt>
-        <dd>Ljudi više brinu u stoci koja održava pašnjake i na taj način se povećava površina pašnjaka i smanjuje se površina invazivnih vrsta.</dd>
-
-    <dt>Koji je vaš najveći doprinos u projektu?</dt>
-        <dd><strong>Za prirodu:</strong></dd>
-        <dd>Sačuvanije poplavna područja koji su glavna značajka parka. </dd>
-        <dd>Očuvanje tradicionalnog stočarstva kao bitan ekološki proces.</dd>
-        <dd>Očuvani poplavni krajobraz</dd>
-        <dd><strong>Za ljude:</strong></dd>
-        <dd>Zadržali smo ljude u području.</dd>
-        <dd>Očuvanje kulturne baštine</dd>
-
-</dl>
-
-<h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
-    <dt>Koje su ključne stvari koje su bitne za replikaciju?</dt>
-        <dd>Postojanje primjera Austrije kao jedina zemlja u EU sa uređenim sustavom zajedničkog korištenja pašnjaka</dd>
-        <dd>Postojanje velikih zajedničkih pašnjaka u državnom vlasništvu</dd>
-        <dd>Zemlje pred pristupnice u EU</dd>
-        <dd>Stočari mogu koristiti u zakup državno zemljište</dd>
-        <dd>Zaštićeno područje koje je prepoznalo takvu vrstu travnjaka kao vrijednost</dd>
-        <dd>Zaštićeno područje treba imati upravljača.</dd>
-
-</dl>
----
