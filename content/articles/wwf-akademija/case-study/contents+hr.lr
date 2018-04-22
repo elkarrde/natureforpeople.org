@@ -34,6 +34,22 @@ protection: nacionalni park (NP), specijalni rezervat prirode (SRP) i predio izu
 ---
 level:
 ---
+tag1: edukacija
+---
+tag2: upravljanje
+---
+tag3:
+---
+tag4:
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: /static/docs/akademija_pdp_hr.pdf
+---
 body:
 
 <dl class="clearfix">
@@ -159,18 +175,3 @@ body:
 
 </dl>
 ---
-tag1: edukacija
----
-tag2: upravljanje
----
-tag3:
----
-tag4:
----
-download_title: Napravi promjenu
----
-download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
----
-download_cta_button_text: Preuzmi dokument
----
-download_link: primjer_dobre_prakse-wwf_akademija.docx

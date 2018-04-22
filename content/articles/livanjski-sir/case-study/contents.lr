@@ -37,6 +37,22 @@ protection: Ramsar site
 ---
 level: In progress
 ---
+tag1: products
+---
+tag2: initiatives
+---
+tag3: management
+---
+tag4:
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/livanjski_pdp_en.pdf
+---
 body:
 <dl class="clearfix">
     <dt>Organization</dt>
@@ -153,18 +169,3 @@ body:
 </dl>
 
 ---
-tag1: products
----
-tag2: initiatives
----
-tag3: management
----
-tag4:
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar-eng-gb.docx

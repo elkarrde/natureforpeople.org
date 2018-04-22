@@ -46,7 +46,7 @@ download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
 ---
 download_cta_button_text: Preuzmi dokument
 ---
-download_link: primjeri_dobre_prakse-lynx_ambasadori-ppnea.docx
+download_link: /static/docs/lynx_pdp_hr.pdf
 ---
 body:
 <dl class="clearfix">

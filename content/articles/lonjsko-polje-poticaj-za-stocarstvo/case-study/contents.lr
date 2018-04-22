@@ -4,7 +4,7 @@ _template: articles/case-study.html
 ---
 slug:
 ---
-title: Incentives for joint pastures to retain the population in Lonjsko Polje (traditional animal husbandry as the key to conserving grassland ecosystems and biodiversity)
+title: Incentives for joint pastures to retain the population in Lonjsko Polje
 ---
 lang: en
 ---
@@ -16,10 +16,7 @@ lead_image: /static/images/articles/lonjsko-polje/autohtono-govedo-na-ispasi-u-l
 ---
 lead_image_title: Indigenous cattle in Lonjsko polje © Lonjsko polje Nature Park
 ---
-lead_text:
-
-The Lonjsko polje Nature Park has been known to cooperate with the locals and it has secured them
-almost two million euros worth of subsidies
+lead_text: The Lonjsko polje Nature Park has been known to cooperate with the locals and it has secured them almost two million euros worth of subsidies
 ---
 people: 1
 ---
@@ -36,6 +33,22 @@ location: Lonjsko polje
 protection: Nature park
 ---
 level: IUCN V
+---
+tag1: management
+---
+tag2: initiative
+---
+tag3: culture
+---
+tag4: products
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/lonjsko_pdp_en.pdf
 ---
 body:
 
@@ -133,18 +146,3 @@ body:
 
 </dl>
 ---
-tag1: management
----
-tag2: initiative
----
-tag3: culture
----
-tag4: products
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-lonjsko_polje-eng.docx

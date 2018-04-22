@@ -34,6 +34,22 @@ protection: national park (NP), special nature reserve (SRP) and areas of outsta
 ---
 level:
 ---
+tag1: education
+---
+tag2: management
+---
+tag3:
+---
+tag4:
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/akademija_pdp_en.pdf
+---
 body:
 
 <dl class="clearfix">
@@ -121,18 +137,3 @@ body:
 
 </dl>
 ---
-tag1: education
----
-tag2: management
----
-tag3:
----
-tag4:
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-wwf_akademija-eng.docx

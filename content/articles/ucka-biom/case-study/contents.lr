@@ -34,6 +34,22 @@ protection: Nature Park
 ---
 level: IUCN V
 ---
+tag1: education
+---
+tag2: management
+---
+tag3:
+---
+tag4:
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/ucka_pdp_en.pdf
+---
 body:
 
 <dl class="clearfix">
@@ -131,18 +147,3 @@ body:
         <dd>Maintaining a financial structure – secured EU-funded project for the next 4 years. </dd>
 </dl>
 ---
-tag1: education
----
-tag2: management
----
-tag3:
----
-tag4:
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-ucka-biom-eng.docx

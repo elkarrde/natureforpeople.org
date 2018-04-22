@@ -36,6 +36,22 @@ protection: National Park
 ---
 level: IUCN II
 ---
+tag1: tourism
+---
+tag2: products
+---
+tag3: initiatives
+---
+tag4: management
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/una_pdp_en.pdf
+---
 body:
 
 <dl class="clearfix">
@@ -126,20 +142,4 @@ body:
     <dt>What is the key element for project sustainability?</dt>
         <dd>A recognised product and market positioning.</dd>
 </dl>
-
 ---
-tag1: tourism
----
-tag2: products
----
-tag3: initiatives
----
-tag4: management
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-una-eng.docx

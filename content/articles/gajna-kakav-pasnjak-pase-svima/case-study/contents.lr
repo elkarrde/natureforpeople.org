@@ -35,6 +35,22 @@ protection: &ndash;
 ---
 level: Natura 2000
 ---
+tag1: culture
+---
+tag2: products
+---
+tag3: initiatives
+---
+tag4: management
+---
+download_title: Make a change
+---
+download_subtitle: Replicate this solution & follow steps to success
+---
+download_cta_button_text: Download document
+---
+download_link: /static/docs/gajna_pdp_en.pdf
+---
 body:
 
 <dl class="clearfix">
@@ -131,18 +147,3 @@ body:
         <dd>Volunteers are an important aspect in project implementation.</dd>
 </dl>
 ---
-tag1: culture
----
-tag2: products
----
-tag3: initiatives
----
-tag4: management
----
-download_title: Make a change
----
-download_subtitle: Replicate this solution & follow steps to success
----
-download_cta_button_text: Download document
----
-download_link: primjer_dobre_prakse-gajna-bed-eng.docx
