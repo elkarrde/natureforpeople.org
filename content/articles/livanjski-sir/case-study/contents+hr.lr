@@ -37,6 +37,22 @@ protection: Ramsar područje
 ---
 level: U procesu
 ---
+tag1: lokalni_proizvodi
+---
+tag2: lokalne_inicijative
+---
+tag3: upravljanje
+---
+tag4:
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar.docx
+---
 body:
 <dl class="clearfix">
     <dt>Partneri</dt>
@@ -134,18 +150,3 @@ body:
 </dl>
 
 ---
-tag1: proizvodi
----
-tag2: inicijative
----
-tag3: upravljanje
----
-tag4:
----
-download_title: Napravi promjenu
----
-download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
----
-download_cta_button_text: Preuzmi dokument
----
-download_link: primjer_dobre_prakse-livanjsko_polje-udruga_cincar.docx

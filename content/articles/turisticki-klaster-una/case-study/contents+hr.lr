@@ -36,6 +36,22 @@ protection: Nacionalni park
 ---
 level: IUCN II
 ---
+tag1: turizam
+---
+tag2: lokalni_proizvodi
+---
+tag3: lokalne_inicijative
+---
+tag4: upravljanje
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: primjer_dobre_prakse-una.docx
+---
 body:
 
 <dl class="clearfix">
@@ -133,18 +149,3 @@ body:
 </dl>
 
 ---
-tag1: turizam
----
-tag2: proizvodi
----
-tag3: inicijative
----
-tag4: upravljanje
----
-download_title: Napravi promjenu
----
-download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
----
-download_cta_button_text: Preuzmi dokument
----
-download_link: primjer_dobre_prakse-una.docx

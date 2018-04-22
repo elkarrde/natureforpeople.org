@@ -16,8 +16,7 @@ lead_image: /static/images/articles/gajna/svitanje-na-gajni-(c)-benes-bed.jpg
 ---
 lead_image_title: Svitanje na Gajni, kada nije poplavljena © Beneš, BED
 ---
-lead_text:
-Pašnjak Gajna je simbol izvrsne suradnje lokalnih stočara koji čuvaju biološku raznolikost kroz tradicionalni uzgoj i pašarenje u poplavnim uvjetima
+lead_text: Pašnjak Gajna je simbol izvrsne suradnje lokalnih stočara koji čuvaju biološku raznolikost kroz tradicionalni uzgoj i pašarenje u poplavnim uvjetima
 ---
 people: 3
 ---
@@ -34,6 +33,22 @@ location: Slavonija, Gajna
 protection: &ndash;
 ---
 level: Natura 2000
+---
+tag1: kultura
+---
+tag2: lokalni_proizvodi
+---
+tag3: lokalne_inicijative
+---
+tag4: upravljanje
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: primjer_dobre_prakse-gajna-bed.docx
 ---
 body:
 
@@ -132,18 +147,3 @@ body:
 
 </dl>
 ---
-tag1: kultura
----
-tag2: proizvodi
----
-tag3: inicijativa
----
-tag4: upravljanje
----
-download_title: Napravi promjenu
----
-download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
----
-download_cta_button_text: Preuzmi dokument
----
-download_link: primjer_dobre_prakse-gajna-bed.docx

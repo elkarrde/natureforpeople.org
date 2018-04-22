@@ -34,6 +34,22 @@ protection: Nacionalni park
 ---
 level: IUCN II
 ---
+tag1: lokalne_inicijative
+---
+tag2:
+---
+tag3:
+---
+tag4:
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: primjer_dobre_prakse-sutjeska-czzs.docx
+---
 body:
 
 <dl class="clearfix">
@@ -120,18 +136,3 @@ body:
 </dl>
 
 ---
-tag1: inicijative
----
-tag2:
----
-tag3:
----
-tag4:
----
-download_title: Napravi promjenu
----
-download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
----
-download_cta_button_text: Preuzmi dokument
----
-download_link: primjer_dobre_prakse-sutjeska-czzs.docx
