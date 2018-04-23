@@ -10,12 +10,19 @@
     .articles-filter-content {
         padding: 1rem;
         .filter { margin-bottom: 0.5rem; }
+        .center { text-align: left; }
     }
     #articles {
         .article {
             height: auto;
             max-height: 405px;
         }
+
+        .btn-learn-more, .btn-view-study {
+            position: static;
+            bottom: 0;
+        }
+        .btn-learn-more { margin-right: 1rem; }
         .article-item {
             width: 100%;
 
@@ -59,7 +66,15 @@
                     padding-right: 1rem;
                 }
                 ul { padding-left: 2.5rem; }
-                img { max-width: 100%; }
+                img {
+                    max-width: 100%;
+                    &.fit-text {
+                        margin-left: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                .m20 { margin-left: inherit; }
                 p.highlight {
                     margin-left: 1rem;
                     margin-right: 1rem;
@@ -86,6 +101,29 @@
                 padding-right: 1rem;
 
                 h3 { padding: 0 0.5rem; }
+            }
+        }
+
+        &.case-study {
+            .data-body-content {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            .main-data, .sub-data { display: block; }
+            .data-item {
+                flex: none;
+                margin-bottom: 1rem;
+            }
+            h4 {
+                word-break: break-word;
+                font-size: 2.5rem;
+            }
+            dl {
+                dt {
+                    float: none;
+                    width: 80%;
+                }
+                dd { width: 90%; }
             }
         }
     }
@@ -115,6 +153,10 @@
             .col-4 { width: 50%; }
             .col-8 { width: 50%; }
 
+            &.article-small {
+                .btn-learn-more, .btn-view-study { position: static; }
+                .btn-learn-more { margin-right: 1rem; }
+            }
             &.article-medium {
                 .col-12 {
                     width: 50%;
@@ -124,6 +166,13 @@
                     max-height: fit-content;
                     max-width: fit-content;
                 }
+
+                .image {
+                    max-height: fit-content;
+                    .article-image { height: 230px; }
+                }
+                .btn-learn-more, .btn-view-study { position: static; }
+                .btn-learn-more { margin-right: 1rem; }
             }
         }
     }
@@ -136,6 +185,9 @@
             padding: 0 1rem;
             line-height: 4.25rem;
             word-break: break-word;
+        }
+        .article-tags {
+            &.right { float: none; }
         }
         .lead {
             width: 100%;
@@ -154,7 +206,15 @@
                     padding-right: 1rem;
                 }
                 ul { padding-left: 2.5rem; }
-                img { max-width: 100%; }
+                img {
+                    max-width: 100%;
+                    &.fit-text {
+                        margin-left: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                .m20 { margin-left: inherit; }
                 p.highlight {
                     margin-left: 1rem;
                     margin-right: 1rem;
@@ -162,6 +222,21 @@
                     width: 95%;
                     border-bottom: none;
                     border-left: 5px solid $pink;
+                }
+            }
+        }
+
+        &.case-study {
+            .data-body-content {
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                dl {
+                    dt {
+                        float: none;
+                        width: 50%;
+                    }
+                    dd { width: 85%; }
                 }
             }
         }
@@ -195,6 +270,13 @@
                     margin-left: 1rem;
                 }
             }
+        }
+    }
+
+    &.case-study {
+        .data-body-content {
+            margin-left: 1rem;
+            margin-right: 1rem;
         }
     }
 }

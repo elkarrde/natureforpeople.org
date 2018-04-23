@@ -86,9 +86,13 @@
 }
 
 .article-filter-selection {
-  .filter.active {
-    color: $white;
-    background-color: $pink;
+  .filter {
+    margin-bottom: 0.5rem;
+
+    &.active {
+      color: $white;
+      background-color: $pink;
+    }
   }
 }
 
@@ -152,6 +156,13 @@
       }
 
       ul { padding-left: 2.5rem; }
+    }
+  }
+
+  &.case-study {
+    .data-body-content {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 }
