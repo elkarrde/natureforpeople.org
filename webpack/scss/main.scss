@@ -103,6 +103,22 @@
     }
 
     dt + dd { margin-top: 1rem; }
+
+    &.bulleted {
+      dd {
+        display: list-item;
+        list-style-type: disc;
+
+        &.no-bullet { list-style-type: none; }
+      }
+    }
+
+    &.numbered {
+      dd {
+        display: list-item;
+        list-style-type: decimal;
+      }
+    }
   }
 }
 

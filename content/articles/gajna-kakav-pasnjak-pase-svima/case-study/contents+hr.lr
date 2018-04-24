@@ -34,6 +34,8 @@ protection: &ndash;
 ---
 level: Natura 2000
 ---
+partners: Javna ustanova Natura Slavonica
+---
 tag1: kultura
 ---
 tag2: lokalni_proizvodi
@@ -52,7 +54,7 @@ download_link: /static/docs/gajna_pdp_hr.pdf
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postignuća (pregled)</dt>
         <dd>Jedino zaštićeno područje u Hrvatskoj kojem je povjerena nadležnost upravljanja lokalnoj zajednice i nevladinoj organizaciji.</dd>
         <dd>Osnovana zadruga stočara sa 16 OPG-ova (na 50 članova obitelji ima pozitivan utjecaj).</dd>
@@ -63,13 +65,13 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem koji želite riješiti</dt>
         <dd>zarastanje pašnjaka</dd>
         <dd>gubitak autohtonih pasmina</dd>
         <dd>odlazak lokalnog stanovništva</dd>
 </dl>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Prilike koje želite iskoristiti</dt>
         <dd>obrana od poplava</dd>
         <dd>kulturna baština</dd>
@@ -80,46 +82,46 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Ključni preduvjeti za uspjeh</dt>
-        <dd>1. Korištenje zemljišta (državno-privatno)</dd>
-        <dd>2. Preklapanje nadležnosti (zaštita prirode, poljoprivreda, vode)</dd>
-        <dd>3. Loša koordinacija nadležnih sektora</dd>
-        <dd>4. Veće vrednovanje lokalnih proizvoda (*društvena dobrobit od pašarenja na poplavnim pašnjacima)</dd>
-        <dd>5. osnivanje suradnička vijeća (lokalno stanovništvo, nadležni sektori)</dd>
-        <dd>6. zadržavanje lokalnog stanovništva</dd>
-        <dd>7. održavanje lokalnih praksi</dd>
+        <dd>Korištenje zemljišta (državno-privatno)</dd>
+        <dd>Preklapanje nadležnosti (zaštita prirode, poljoprivreda, vode)</dd>
+        <dd>Loša koordinacija nadležnih sektora</dd>
+        <dd>Veće vrednovanje lokalnih proizvoda (*društvena dobrobit od pašarenja na poplavnim pašnjacima)</dd>
+        <dd>osnivanje suradnička vijeća (lokalno stanovništvo, nadležni sektori)</dd>
+        <dd>zadržavanje lokalnog stanovništva</dd>
+        <dd>održavanje lokalnih praksi</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Ključne faze – od ideje do realizacije?</dt>
-        <dd>1. Rješavanje institucionalnih prepreka (neprepoznavanje nisko produktivnu poljoprivrednu praksu ka rješenje za zaštitu prirode)</dd>
-        <dd>2. Zakon o poljoprivrednim zemljištima (zajednički pašnjaci na poljoprivrednim područjima – komentiranje zakona, lobiranje)</dd>
-        <dd>3. Osnivanje zadruge/pašnjačke zajednice</dd>
-        <dd>4. Identifikacija lokalnih proizvođača</dd>
-        <dd>5. Marketinški plan za Gajnu</dd>
-        <dd>6. Marketing u lokalnim restoranima</dd>
-        <dd>7. Predstavljanje na sajmovima</dd>
-        <dd>8. Predavanja u zajednici</dd>
+        <dd>Rješavanje institucionalnih prepreka (neprepoznavanje nisko produktivnu poljoprivrednu praksu ka rješenje za zaštitu prirode)</dd>
+        <dd>Zakon o poljoprivrednim zemljištima (zajednički pašnjaci na poljoprivrednim područjima – komentiranje zakona, lobiranje)</dd>
+        <dd>Osnivanje zadruge/pašnjačke zajednice</dd>
+        <dd>Identifikacija lokalnih proizvođača</dd>
+        <dd>Marketinški plan za Gajnu</dd>
+        <dd>Marketing u lokalnim restoranima</dd>
+        <dd>Predstavljanje na sajmovima</dd>
+        <dd>Predavanja u zajednici</dd>
 
     <dt>Koje akcije ste poduzeli?</dt>
-        <dd>1. Osnivanje zadruge stočara Gajna koja legalno može upravljač zajedničkog pašnjaka što joj omogućuje da dobije potpore iz poljoprivrednog sustava.</dd>
-        <dd>2. Osnivanje Suradničkog vijeća (poljoprivrednici, ribari, lovci, graničari, općina, vatrogasci, HAOP, stočari, Hrvatske šume i Hrvatske vode) kao jedan od načina stvaranja komunikacije između sektora na lokalnoj i nacionalnoj razini.</dd>
-        <dd>3. Ostvarivanje sinergije MZOIP i Ministarstva poljoprivrede oko preklapanja poljoprivrednih i Natura 2000 zemljišta.</dd>
-        <dd>4. Plasman mesnih proizvoda autohtonih pasmina (slavonski podolac, crna slavonska svinja) u lokalne restorane.</dd>
-        <dd>5. Razvoj poučne staze i info centar.</dd>
+        <dd>Osnivanje zadruge stočara Gajna koja legalno može upravljač zajedničkog pašnjaka što joj omogućuje da dobije potpore iz poljoprivrednog sustava.</dd>
+        <dd>Osnivanje Suradničkog vijeća (poljoprivrednici, ribari, lovci, graničari, općina, vatrogasci, HAOP, stočari, Hrvatske šume i Hrvatske vode) kao jedan od načina stvaranja komunikacije između sektora na lokalnoj i nacionalnoj razini.</dd>
+        <dd>Ostvarivanje sinergije MZOIP i Ministarstva poljoprivrede oko preklapanja poljoprivrednih i Natura 2000 zemljišta.</dd>
+        <dd>Plasman mesnih proizvoda autohtonih pasmina (slavonski podolac, crna slavonska svinja) u lokalne restorane.</dd>
+        <dd>Razvoj poučne staze i info centar.</dd>
 
     <dt>Koje ranjive skupine ste uključili i kako?</dt>
-        <dd>Umirovljeni branitelji iznad 55 godina (1 žena od njih 16). Udruga žena Smiljak – mali muzej. U posljednje dvije godine su se priključile dvije mlade obitelji.</dd>
+        <dd class="no-bullet">Umirovljeni branitelji iznad 55 godina (1 žena od njih 16). Udruga žena Smiljak – mali muzej. U posljednje dvije godine su se priključile dvije mlade obitelji.</dd>
 
     <dt>Jeste li osvijestili lokalne dionike na njihova prava na informacije?</dt>
-        <dd>1. Osnivanjem zadruge (lokalno) – sastanci svaka 2 mjeseca</dd>
-        <dd>2. Osnivanjem suradničkog vijeća (lokalno) – uključivanje sektora</dd>
+        <dd>Osnivanjem zadruge (lokalno) – sastanci svaka 2 mjeseca</dd>
+        <dd>Osnivanjem suradničkog vijeća (lokalno) – uključivanje sektora</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Promjena (vaš doprinos promjeni)</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Koja je pozitivna promjena u prirodi?</dt>
         <dd>Povećanje broj flore i faune, endemičnih biljaka i životinja, vrsta koje su dio Natura 2000 zaštite</dd>
         <dd>održavanje autohtonih pasmina (slavonski podolac, crna slavonska svinja)</dd>
@@ -130,14 +132,15 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Koje su ključne stvari koje su bitne za replikaciju?</dt>
-        <dd>1. Volonterski rad</dd>
-        <dd>2. Motivacija pokretača inicijative koja dolazi iz lokalne zajednice</dd>
-        <dd>3. Komunikacija sa različitim sektorima (BED kao inicijator i facilitator)</dd>
-        <dd>4. Dijalog sa upravljačem zemljišta (Javna ustanova Natura Slavonica)</dd>
-        <dd>5. Imati na umu da će rezultati biti vidljivi nakon 2 godine.</dd>
-
+        <dd>Volonterski rad</dd>
+        <dd>Motivacija pokretača inicijative koja dolazi iz lokalne zajednice</dd>
+        <dd>Komunikacija sa različitim sektorima (BED kao inicijator i facilitator)</dd>
+        <dd>Dijalog sa upravljačem zemljišta (Javna ustanova Natura Slavonica)</dd>
+        <dd>Imati na umu da će rezultati biti vidljivi nakon 2 godine.</dd>
+</dl>
+<dl class="clearfix bulleted">
     <dt>Što bi preporučili drugima?</dt>
         <dd>Upornošću do uspjeha.</dd>
         <dd>Neprestana komunikacija sa svima.</dd>

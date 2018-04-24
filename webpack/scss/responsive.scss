@@ -39,7 +39,10 @@
     }
 
     #article-single {
-        .article-meta { float: none; }
+        .article-meta {
+            float: none;
+            &.mt4 { margin-top: 1rem; }
+        }
         .article-tags {
             float: none;
             margin-top: 0;
@@ -48,6 +51,8 @@
             padding: 0 1rem;
             line-height: 4.25rem;
             word-break: break-word;
+
+            .h2 { font-size: 3.5em; }
         }
         .lead {
             width: 100%;
@@ -181,6 +186,11 @@
     }
 
     #article-single {
+        .article-meta {
+            float: none;
+            &.mt4 { margin-top: 1rem; }
+        }
+        .article-tags { margin-top: 0; }
         .article-title {
             padding: 0 1rem;
             line-height: 4.25rem;
@@ -254,6 +264,12 @@
     }
 
     #article-single {
+        .article-meta {
+            &.mt4 { margin-top: 1rem; }
+        }
+        .article-tags {
+            margin-top: 1rem;
+        }
         .article-title {
             padding: 0 1rem;
             line-height: 4.25rem;

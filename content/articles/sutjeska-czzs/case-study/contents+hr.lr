@@ -24,15 +24,17 @@ time: 2 godine
 ---
 money: 50 000 BAM / 25 000 EUR
 ---
-country: BIH
+country: Bosna i Hercegovina
 ---
-organization: Centar za životnu sredinu
+organization: Centar za životnu sredinu (CZZS)
 ---
 location: Nacionalni park Sutjeska
 ---
 protection: Nacionalni park
 ---
 level: IUCN II
+---
+partners: WWF, Arbor Magna, Spasilački klub Wolf
 ---
 tag1: lokalne_inicijative
 ---
@@ -52,14 +54,18 @@ download_link: primjer_dobre_prakse-sutjeska-czzs.docx
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postignuća (pregled)</dt>
         <dd>Prva građanska inicijativa u Bosni i Hercegovini (inicijativa za promjenu odluke vlade, podneseni i skupljani potpisi u narodnoj skupštini) - prva takva mobilizacija ljudi u BiH – 6 000 potpisa</dd>
         <dd>problematika hidroelektrana aktualizirana je na primjeru Sutjeske u BIH – 12 gradova u kojima su se skupljali potpisi</dd>
         <dd>267 objava u domaćim i stranim medijima.</dd>
-        <dd>Motivacija lokalnih grupa i udruga da se uključe i bore za svoja prava:</dd>
-        <dd>1. osnivanje koalicije za zaštitu rijeka BiH (više od 23 udruga)</dd>
-        <dd>2. pokrenute inicijative na 7 rijeka u BiH (Ljuta, Neretva, Una, Ugar, Željeznica, Vrbas, Orlja) – 10 udruga (ekološke, ribarske, sportska udruženje, kajakaške, lovačke, humanitarne)</dd>
+        <dd>
+            Motivacija lokalnih grupa i udruga da se uključe i bore za svoja prava:
+            <ol>
+                <li>osnivanje koalicije za zaštitu rijeka BiH (više od 23 udruga)</li>
+                <li>2. pokrenute inicijative na 7 rijeka u BiH (Ljuta, Neretva, Una, Ugar, Željeznica, Vrbas, Orlja) – 10 udruga (ekološke, ribarske, sportska udruženje, kajakaške, lovačke, humanitarne)</li>
+            </ol>
+        </dd>
         <dd>dobivena prva sudska presuda u kojoj je sud ušao u meritum.</dd>
         <dd>EU parlament donio je rezoluciju za BiH i jedan od segmenata sadrži preporuku da se ne grade hidroelektrane u NP Una i Sutjeska i da se ozbiljnije pristupi izradi studija utjecaja.</dd>
         <dd>Zaustavljeni trenutni planovi za izgradnju hidroelektrana na rijekama Sutjeska i Hrčavka.</dd>
@@ -76,7 +82,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Ključne faze – od ideje do realizacije</dt>
         <dd>mapiranje problema (saveznici i suprotstavljene strane)</dd>
         <dd>analiziranje pravnih procesa i mogućnosti</dd>
@@ -88,7 +94,8 @@ body:
         <dd>kontinuirani rad s medijima</dd>
         <dd>biološko istraživanje kanjona Sutjeske i Hrčavke</dd>
         <dd>proslava</dd>
-
+</dl>
+<dl class="clearfix">
     <dt>Kako ste uključili dionike?</dt>
         <dd>umrežavanje sa ekološkim organizacijama u BIH, prikupljanje 6000 potpisa u 12 gradova, poziv na prosvjede.</dd>
 
@@ -120,7 +127,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Koje su ključne stvari važne za replikaciju?</dt>
         <dd>posvećenost</dd>
         <dd>uključivanje raznolikih partnera</dd>

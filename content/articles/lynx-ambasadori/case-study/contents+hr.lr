@@ -32,6 +32,8 @@ location: Regija Pukë-Mirditë i Nacionalni park (NP) Shebenik-Jabllanicë
 ---
 level: Nacionalni park
 ---
+partners: 25 srednjih škola
+---
 tag1: edukacija
 ---
 tag2: divlje_vrste
@@ -49,7 +51,7 @@ download_cta_button_text: Preuzmi dokument
 download_link: /static/docs/lynx_pdp_hr.pdf
 ---
 body:
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postignuća</dt>
 		<dd>Sudjelovalo 25 škola.</dd>
 		<dd>Educirano 60 ambasadora.</dd>
@@ -66,13 +68,12 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem koji želite riješiti</dt>
 		<dd>Smanjenje nezakonitih aktivnosti unutar i oko zaštićenih područja.</dd>
 		<dd>Sukob između mještana i životinjskog i biljnog svijeta.</dd>
 		<dd>Slabo razumijevanje vrijednosti zaštićenih područja.</dd>
 		<dd>Neodržive prakse.</dd>
-
 
     <dt>Prilike koje želite iskoristiti</dt>
 		<dd>Prisutnost balkanskog risa u odabranim albanskim zaštićenim područjima.</dd>
@@ -83,7 +84,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Ključni preduvjeti za uspjeh</dt>
 		<dd>Prisutnost balkanskog risa u zaštićenim područjima.</dd>
 		<dd>Podrška ministarstva obrazovanja i ministarstva zaštite okoliša. </dd>
@@ -98,13 +99,13 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
 
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Ključne faze – od ideje do realizacije</dt>
-		<dd>1. Izrada programa obuke</dd>
-		<dd>2. Kontaktiranje regionalne uprave za obrazovanje i odabir škola</dd>
-		<dd>3. Provedba treninga u školama s odabranim grupama učenika</dd>
-		<dd>4. Provedba nastave među vršnjačkog obrazovanja nove grupe ambasadora s njihovim mlađim vršnjacima u drugim školama regije</dd>
-		<dd>5. Terenski izlet na planinu Munella i u NP Shebenik-Jabllanicë s mladim ambasadorima; posjet boravištu balkanskog risa (planina Munella) i drugim važnim staništima u Shebeniku.</dd>
+		<dd>Izrada programa obuke</dd>
+		<dd>Kontaktiranje regionalne uprave za obrazovanje i odabir škola</dd>
+		<dd>Provedba treninga u školama s odabranim grupama učenika</dd>
+		<dd>Provedba nastave među vršnjačkog obrazovanja nove grupe ambasadora s njihovim mlađim vršnjacima u drugim školama regije</dd>
+		<dd>Terenski izlet na planinu Munella i u NP Shebenik-Jabllanicë s mladim ambasadorima; posjet boravištu balkanskog risa (planina Munella) i drugim važnim staništima u Shebeniku.</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
@@ -113,14 +114,18 @@ body:
 	<dt>Kako je smanjen negativni utjecaj na okoliš?</dt>
 		<dd>Ambasadori su postali “psi čuvari” na tim područjima te podnose izvještaje o različitim vrstama okolišnog kriminala u svojem području. </dd>
 		<dd>U lokalnoj zajednici predstavljeni su različiti školski projekti o važnosti zaštićenih područja, zaštiti biljnog i životinjskog svijeta te postojećim prijetnjama, čime se podiže osviještenost o tim pitanjima.  </dd>
-
-
+</dl>
+<dl class="clearfix bulleted">
 	<dt>Pozitivne ekonomske (E) i društvene (D) promjene</dt>
+		<dd class="no-bullet"><strong>Javnom sektoru - lokalno:</strong></dd>
 		<dd>Ris je postao dio promotivnog materijala općina na području Munelle.</dd>
 		<dd>Općine na području Munelle  lobiraju za zaštitu prirode. </dd>
+		<dd class="no-bullet"><strong>Upravljanju zaštićenim područjima:</strong></dd>
 		<dd>Ris u logu zaštićenog područja  (NP Shebenik-Jabllanicë), jaka uključenost u aktivnosti PPNEA-e. </dd>
 		<dd>Putem različitih okolišnih edukacijskih modula/programa za ambasadore, educirali su se također i djelatnici  NP-a Shebenik-Jabllanicë.</dd>
+		<dd class="no-bullet"><strong>Poslovnom sektoru:</strong></dd>
 		<dd>Umjesto prepariranih životinja kakvima se dekoriraju lokalni restorani, u jednom od njih na je zidu naslikan prizor risa u svojem prirodnom staništu. Malen korak u podizanju razine svijesti o ovom pitanju.  </dd>
+		<dd class="no-bullet"><strong>Lokalnoj zajednici:</strong></dd>
 		<dd>Ekonomske: tri ambasadora počela su raditi kao eko-turistički vodiči i sada organiziraju ture na temu vrijednosti bioraznolikosti Parka. </dd>
 		<dd>Društvene: povećana svijest lokalne zajednice o vrijednostima zaštićenih područja. Ambasadori su nakon završetka edukacije poduzeli inicijative (slikanje, poezija, lokalne kampanje, dijeljenje letaka lokalnoj zajednici, društveni mediji) i još uvijek utječu na lokalne zajednice.</dd>
 
@@ -128,7 +133,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Preslikavanje i preporuke</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postoji li nešto što biste učinili drukčije?</dt>
 		<dd>Jedna osoba s punim radnim vremenom tijekom cijelog projekta, uključujući i proračun za vrijeme osoblja, a ne samo aktivnosti.</dd>
 		<dd>Izabrati jednak broj ženskih i muških volontera za suradnju. </dd>

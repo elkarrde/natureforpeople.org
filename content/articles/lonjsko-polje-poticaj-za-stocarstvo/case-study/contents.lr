@@ -34,6 +34,10 @@ protection: Nature park
 ---
 level: IUCN V
 ---
+partners: Agriculture Lands Agency (APZ), Ministry of Agriculture, All local self-government units (6) Brod Ecological Society (BED), Ministry of Environmental and Nature Protection (MZOE), Representatives of the joint pastures
+---
+funding: State Budget of the Republic of Croatia
+---
 tag1: management
 ---
 tag2: initiative
@@ -90,7 +94,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Key phases – from idea to realisation?</dt>
         <dd>Spatial definition of the joint pastures (in cooperation with local government)</dd>
         <dd>Determine which users are on each pasture and number of animals per pasture</dd>
@@ -98,7 +102,8 @@ body:
         <dd>Agreed conditions of conduct – nature conservation conditions (decision on use from MZOE), animal owners drafted agreement on the use of pastures (grazing seasons, permitted numbers of animals, evacuation pasture, meadows, restoration of overgrown pastures) and all were required to sign</dd>
         <dd>Agricultural Lands Agency and Payments Agency agreed that entry into the Arkod system would be defined by the part of the cadastral plot of the pasture (and not to the entire plot which was previously a problem).</dd>
         <dd>Via this Ordinance, the state enabled farmers to lease these lands for temporary use for a 5-year period, without the need for a public tender.</dd>
-
+</dl>
+<dl class="clearfix">
     <dt>Did you inform (local) stakeholders of their right to information?</dt>
         <dd>Inclusion of the local population in adopting management plans and spatial plans for the Lonjsko Polje area.</dd>
         <dd>With the formation of the councils, the local population was able to contribute to ideas and plans for further development of the area, and for resource management in the park.</dd>
@@ -132,7 +137,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Which key items were important for replication?</dt>
         <dd>The example of Austria as the only EU Member State with an organised system of joint pasture use</dd>
         <dd>Existence of large joint pastures under state ownership</dd>
@@ -140,7 +145,8 @@ body:
         <dd>Animal owners able to lease state lands</dd>
         <dd>Protected area that recognised this type of grassland as a valuable resource</dd>
         <dd>Protected area needs a manager</dd>
-
+</dl>
+<dl class="clearfix">
     <dt>What is key for project sustainability?</dt>
         <dd>Supper of the Ministry of Agriculture and MZOE</dd>
 

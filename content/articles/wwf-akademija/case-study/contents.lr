@@ -32,6 +32,8 @@ location: 5 protected areas and wider area
 ---
 protection: national park (NP), special nature reserve (SRP) and areas of outstanding nature (AON)
 ---
+partners: 5 protected areas in Serbia - Tara, Đerdap, Fruška Gora National Parks, Gornja Podunavlja special nature reserve, and Avala protected landscape
+---
 level:
 ---
 tag1: education
@@ -52,13 +54,13 @@ download_link: /static/docs/akademija_pdp_en.pdf
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Accomplishments (overview)</dt>
         <dd>5 protected areas with educational programmes and cooperation with 2 local schools.</dd>
         <dd>214 WWF ambassadors trained.</dd>
         <dd>59 teachers from 10 schools participated.</dd>
         <dd>1097 children included in school project activities (from 7 – 17 years) of the WWF Academy.</dd>
-        <dd><strong>Results of the mini project WWF Ambassador:</strong></dd>
+        <dd class="no-bullet"><strong>Results of the mini project WWF Ambassador:</strong></dd>
         <dd>Films and theatre performances on the topic of nature conservation</dd>
         <dd>Construction of mini protected areas in the schoolyard</dd>
         <dd>Design and production of promotional materials</dd>
@@ -66,8 +68,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
-
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem to be resolved</dt>
         <dd>Lack of good quality classes in nature.</dd>
         <dd>Lack of educational programmes in protected areas.</dd>
@@ -88,7 +89,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
-<dl class="clearfix">
+<dl class="clearfix ordered">
     <dt>Key phases – from idea to realisation?</dt>
         <dd>Gathering a strong team of educators</dd>
         <dd>Familiarising the PA focal point about the WWF Nature Academy and its role</dd>
@@ -104,18 +105,18 @@ body:
 <h4 class="h2 grey playfair-heavy mb1">Changes</h4>
 <dl class="clearfix">
     <dt>Positive economic (E) and social (S) changes:</dt>
-        <dd>Public sector (local, national):</dd>
+        <dd><strong>Public sector (local, national):</strong></dd>
         <dd>S: School ambassadors were connected and exchanged experiences. Cooperation initiated with education sector and Education Ministry.</dd>
-        <dd>Protected area manager:</dd>
+        <dd><strong>Protected area manager:</strong></dd>
         <dd>S: cooperation with new schools in the vicinity with which there was not previous cooperation. PA as an education polygon for local children.</dd>
-        <dd>Local population:</dd>
+        <dd><strong>Local population:</strong></dd>
         <dd>S: Local schools connected with nature and the PA in their vicinity. Increased awareness of the population of the importance of the protected area in their region.</dd>
         <dd>Education of teachers and pupils in protected areas for better nature conservation. Local residents become ambassadors of the PA.</dd>
 
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>What would you do differently?</dt>
         <dd>In addition to coordinators involved 100%, an assistant on 50% time would be necessary</dd>
         <dd>Include up to 2 teachers (and not just 1 as up to now) from each ambassador school</dd>
@@ -131,9 +132,9 @@ body:
         <dd>We recommend that during replication that schools working with disabled children also be included, as they can successfully participate and implement all necessary activities in line with their possibilities.</dd>
 
     <dt>What is key for project sustainability?</dt>
-        <dd>Perseverance of ambassador schools (teachers and pupils).</dd>
-        <dd>One person dedicated to the project.</dd>
-        <dd>Work plan of the WWF Academy, approaches and methods become part of the work plan for participating schools, thereby making the programme sustainable.</dd>
+        <dd class="no-bullet">Perseverance of ambassador schools (teachers and pupils).</dd>
+        <dd class="no-bullet">One person dedicated to the project.</dd>
+        <dd class="no-bullet">Work plan of the WWF Academy, approaches and methods become part of the work plan for participating schools, thereby making the programme sustainable.</dd>
 
 </dl>
 ---

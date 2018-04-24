@@ -24,7 +24,7 @@ time: 2 years
 ---
 money: 50 000 BAM / 25 000 EUR
 ---
-country: BIH
+country: Bosnia and Herzegovina
 ---
 organization: Centar za životnu sredinu (CZZS) – Environment Centre
 ---
@@ -33,6 +33,8 @@ location: Sutjeska National Park
 protection: National Park
 ---
 level: IUCN II
+---
+partners: WWF, Arbor Magna, Spasilački klub Wolf
 ---
 tag1: initiatives
 ---
@@ -54,7 +56,7 @@ body:
 
 <dl class="clearfix">
     <dt>Accomplishments (overview)</dt>
-        <dd>First civil initiative in Bosnia and Herzegovina (initiative to change the government decision and petition of signatures submitted to the national assembly) – the first such mobilization of people in BiH, with 6000 signatures (priručnik o građanskim inicijativama – handbook on civil initiatives)</dd>
+        <dd>First civil initiative in Bosnia and Herzegovina (initiative to change the government decision and petition of signatures submitted to the national assembly) – the first such mobilization of people in BiH, with 6000 signatures (<a href="http://nasprostor.org/prirucnik-o-gradanskim-inicijativama/" target="_blank">priručnik o građanskim inicijativama – handbook on civil initiatives</a>)</dd>
         <dd>The issue of hydroelectric plants has been focused on the example of Sutjeska in BiH – 12 towns in which signatures were collected</dd>
         <dd>267 announcements in the domestic and foreign media</dd>
         <dd>Motivation of local groups and associations to get involved and fight for their rights</dd>
@@ -76,7 +78,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Key phases – from idea to realisation?</dt>
         <dd>mapping the problem (supporters and opponents)</dd>
         <dd>analysing legal processes and possibilities</dd>
@@ -88,7 +90,8 @@ body:
         <dd>ongoing work with the media</dd>
         <dd>biological research of the Sutjeska and Hrčavka canyons</dd>
         <dd>celebration</dd>
-
+</dl>
+<dl class="clearfix">
     <dt>How were stakeholders included?</dt>
         <dd>Networking with ecological associations in BiH, collection of 6000 signatures in 12 cities, calls for protests</dd>
 
@@ -96,7 +99,6 @@ body:
         <dd>The entire process influenced the informing of the public and activation of societies to demand their rights.</dd>
         <dd>Both experts and the local population were invited to make their comments at public debates.</dd>
         <dd>Opinions of the local population were heard for the first time.</dd>
-
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Changes</h4>
@@ -105,23 +107,23 @@ body:
         <dd>The existing state and quality of habitat in the Sutjeska and Hrčavka canyons have been preserved.</dd>
 
     <dt>Positive economic (E) and social (S) changes:</dt>
-        <dd>Public sector (local, national) </dd>
+        <dd><strong>Public sector (local, national):</strong></dd>
         <dd>S: more positive position of authorities (local and national) on the need to conserve the river</dd>
-        <dd>Private sector:</dd>
+        <dd><strong>Private sector:</strong></dd>
         <dd>E: increased revenues and jobs</dd>
         <dd>S: increased numbers of tourists following promotional campaigns of Sutjeska.</dd>
-        <dd>Protected area manager:</dd>
+        <dd><strong>Protected area manager:</strong></dd>
         <dd>E: increased revenues from ticket sales and accommodations</dd>
         <dd>S: promotion of Sutjeska National Park, establishment of the cooperation council</dd>
-        <dd>Civil society: </dd>
+        <dd><strong>Civil society:</strong></dd>
         <dd>S: activating societies to demand their rights and their networking; a range of initiatives for 7 other rivers; creation of a coalition for the protection of BiH rivers (over 23 societies)</dd>
-        <dd>Local population:</dd>
+        <dd><strong>Local population:</strong></dd>
         <dd>E: revenues through accommodation and sales of local products</dd>
         <dd>S: awareness of the values of Sutjeska, their voice has been heard through the campaign, representatives in the cooperation council</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Which key items were important for replication?</dt>
         <dd>Dedication</dd>
         <dd>Inclusion of a wide range of partners</dd>

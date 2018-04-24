@@ -35,6 +35,7 @@ protection: Park prirode
 ---
 level: IUCN V
 ---
+partners: Javna ustanova park prirode (JUPP) Učka
 ---
 tag1: edukacija
 ---
@@ -55,7 +56,7 @@ download_link: /static/docs/ucka_pdp_hr.pdf
 body:
 
 <dl class="clearfix">
-    <dt>Pregled</dt>
+    <dt>Postignuća</dt>
         <dd>Ukupno godina organizacije kampa - 14</dd>
         <dd>Ukupan broj volontera - do sada preko 1000</dd>
         <dd>Broj volontera godišnje - 70</dd>
@@ -74,7 +75,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
 <dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije?</dt>
+    <dt>Ključni preduvjeti za uspjeh</dt>
         <dd><strong>Pravni:</strong></dd>
         <dd>odredba u zakonu vezano s kampiranjem u prirodi koju treba poštovati.</dd>
         <dd><strong>Institucionalni:</strong></dd>

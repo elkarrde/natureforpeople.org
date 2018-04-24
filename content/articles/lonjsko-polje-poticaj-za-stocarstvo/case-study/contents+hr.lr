@@ -34,6 +34,10 @@ protection: Park prirode
 ---
 level: IUCN V
 ---
+partners: Agencija za poljoprivredno zemljište (APZ), Ministarstvo poljoprivrede, sve jedinice lokalne samouprave (6), Brodsko ekološko društvo BED, Ministarstvo zaštite okoliša i prirode (MZOE),  predstavnici zajedničkih pašnjaka
+---
+funding: Državni proračun Republike Hrvatske
+---
 tag1: upravljanje
 ---
 tag2: inicijativa
@@ -88,7 +92,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Ključne faze – od ideje do realizacije</dt>
         <dd>prostorno definirati zajedničke pašnjake (u suradnji s lokalnom samoupravom)</dd>
         <dd>odrediti koji su korisnici na svakom pašnjaku i koliko grla stoke može biti na pašnjaku</dd>
@@ -96,7 +100,8 @@ body:
         <dd>dogovoreni uvjeti ponašanja – uvjeti zaštite prirode (rješenje o korištenju od MZOE), stočari su izradili sporazum o korištenju pašnjaka (sezona ispaše, dozvoljeni broj grla, evakuacijski pašnjak, livade, obnova zaraslih dijelova pašnjaka) i svi su ga morali potpisati</dd>
         <dd>Agencija za poljoprivredno zemljište i Agencija za plaćanje dogovorili su da se upis u Arkod sustav definira na dio katastarske čestice pašnjaka (a ne na cijelu česticu što je bio problem)</dd>
         <dd>država je ovim pravilnikom omogućila poljoprivrednicima da dobiju u zakup zemljište na privremeno korištenje na 5 godina bez javnog natječaja.</dd>
-
+</dl>
+<dl class="clearfix">
     <dt>Jeste li osvijestili lokalne dionike na njihova prava na informacije?</dt>
         <dd>uključivanje lokalnog stanovništva u donošenje plana upravljanja i prostornog plana područja Lonjskog polja</dd>
         <dd>formiranjem vijeća dionika lokalno stanovništvo doprinosilo je idejama i planovima za daljnji razvoj područja kao i upravljanja resursima u parku.</dd>
@@ -130,7 +135,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Koje su ključne stvari važne za replikaciju?</dt>
         <dd>postojanje primjera Austrije kao jedine zemlje EU-a s uređenim sustavom zajedničkog korištenja pašnjaka</dd>
         <dd>postojanje velikih zajedničkih pašnjaka u državnom vlasništvu</dd>

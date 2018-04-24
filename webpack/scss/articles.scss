@@ -105,6 +105,13 @@
     }
   }
 
+  .article-tags {
+    .label-tag {
+      display: inline-block;
+      margin-bottom: 0.5em;
+    }
+  }
+
   .article-body {
     border-bottom: 1px solid $grey-light;
 

@@ -277,3 +277,10 @@ body.country-xk .border-gradient, .border-xk-magenta-orange {
         border: 3px solid $me-orange-dark;
     }
 }}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    .border-green-blue {
+        border: 3px solid $case-green;
+    }
+}}

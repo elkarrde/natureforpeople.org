@@ -8,7 +8,7 @@ title: Zaštita livanjskog sira i ostvarivanje prava malih proizvođača
 ---
 lang: hr
 ---
-date: 02.12.2017.
+date:
 ---
 author: <a href="mailto:zseremet@wwfadria.org">Zoran Šeremet</a>
 ---
@@ -27,15 +27,19 @@ time: 10 godina
 ---
 money: 1 000 000 EUR
 ---
-country: BIH
+country: Bosna i Hercegovina
 ---
-organization: Udruga „Cincar“, PZ Cincar 2
+organization: Udruga proizvođača tradicionalnog livanjskog sira „Cincar“; Poljoprivredna zadruga Cincar 2
 ---
 location: Livanjsko polje
 ---
 protection: Ramsar područje
 ---
-level: U procesu
+level: U tijeku proces zaštite prema nacionalnoj kategorizaciji.
+---
+partners: Općina Livno i Hercegbosanska županija (HBŽ)
+---
+funding: UCODEP (Jedinstvo i Saradnja za Razvoj Naroda), UNDP (Razvojni program UN-a), Češka razvojna agencija
 ---
 tag1: lokalni_proizvodi
 ---
@@ -54,17 +58,7 @@ download_cta_button_text: Preuzmi dokument
 download_link: /static/docs/livanjski_pdp_hr.pdf
 ---
 body:
-<dl class="clearfix">
-    <dt>Partneri</dt>
-    <dd>Općina Livno i Hercegbosanska županija (HBŽ)</dd>
-
-    <dt>Izvor financiranja</dt>
-    <dd>UCODEP (Jedinstvo i Saradnja za Razvoj Naroda), UNDP (Razvojni program UN-a), Češka razvojna agencija</dd>
-</dl>
-
-<br>
-
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postignuća</dt>
         <dd>osnivanje udruge za zaštitu autohtonog proizvoda, među prvima u BiH</dd>
         <dd>više od 50 obitelji proizvođača članovi su udruge Cincar (konstantan rast broja članova od osnivanja)</dd>
@@ -77,7 +71,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem koji želite riješiti</dt>
         <dd>gubitak primarnog tržišta</dd>
         <dd>nedostatak i izostanak implementacije legislative vezane sa zaštitom autohtonih proizvoda i sigurnosti hrane</dd>
@@ -93,7 +87,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Ključni preduvjeti za uspjeh</dt>
         <dd>postojanje prepoznatljivog proizvoda s dugom tradicijom</dd>
         <dd>mogućnost osnivanja udruge kako bi stočari imali pravno tijelo te zajednički stočari usuglasili priroritete te usmjerili sredstva</dd>
@@ -108,7 +102,8 @@ body:
         <dd>3. edukacija (studijske posjete sličnim proizvođačima u inozemstvu, radionice)</dd>
         <dd>4. prilagodba uvjetima i standardima koje zahtijevaju propisi vezani sa zaštitom porijekla i sigurnosti hrane u BiH, ali i u EU</dd>
         <dd>5. suradnja s Češkom razvojnom agencijom (brendiranje, infrastruktura, oprema)</dd>
-
+</dl>
+<dl class="clearfix bulleted">
     <dt>Koje akcije ste poduzeli?</dt>
         <dd>osnivanje udruge proizvođača tradicionalnog livanjskog sira što nam je omogućilo da započnemo konkretnu suradnju s predstavnicima vlasti, donatorima, udrugama, znanstvenim institucijama, medijima</dd>
         <dd>zajednička identifikacija problema i pronalazak rješenja s partnerima</dd>
@@ -139,7 +134,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Koje su ključne stvari važne za replikaciju?</dt>
         <dd>osnivanje i jačanje kapaciteta udruge proizvođača</dd>
         <dd>kvalitet i prepoznatljivost proizvođača</dd>

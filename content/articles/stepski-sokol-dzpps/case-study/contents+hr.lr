@@ -34,6 +34,8 @@ protection: None
 ---
 level:
 ---
+partners: Elektromreža Srbije (EMS)
+---
 tag1: divlje_vrste
 ---
 tag2: upravljanje
@@ -62,7 +64,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem koji želite riješiti</dt>
 		<dd>Kritično ugrožena vrsta ptice na globalnom nivou</dd>
 		<dd>Neadekvatna mjesta za gniježđenje, na stupovima dalekovoda</dd>
@@ -85,16 +87,17 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
 
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Ključne faze – od ideje do realizacije</dt>
-		<dd>1. Dobivanje financiranje</dd>
-		<dd>2. Suradnje s elektroprivredom</dd>
-		<dd>3. Cenzus populacije</dd>
-		<dd>4. Izrada gnijezda</dd>
-		<dd>5. Postavljanje gnijezda</dd>
-		<dd>6. Monitoring useljenih sigurnih gnijezda</dd>
-		<dd>7. Radionica sa golubarima</dd>
-
+		<dd>Dobivanje financiranje</dd>
+		<dd>Suradnje s elektroprivredom</dd>
+		<dd>Cenzus populacije</dd>
+		<dd>Izrada gnijezda</dd>
+		<dd>Postavljanje gnijezda</dd>
+		<dd>Monitoring useljenih sigurnih gnijezda</dd>
+		<dd>Radionica sa golubarima</dd>
+</dl>
+<dl class="clearfix bulleted">
     <dt>Koje akcije ste poduzeli?</dt>
 		<dd>Iniciranje sastanka/suradnje sa Elektromrežom Srbije. Predstavljanje projektnih aktivnosti.</dd>
 		<dd>Dobivanje dozvole za rad od strane Pokrajinskog zavoda za zaštitu prirode.</dd>
@@ -119,7 +122,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Preslikavanje i preporuke</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postoji li nešto što biste učinili drukčije?</dt>
 		<dd>Ozbiljnije bismo pristupili projektu u smislu potraživanje financija. </dd>
 		<dd>Uključivanje šire javnosti kroz kampanje. </dd>
@@ -127,7 +130,8 @@ body:
 		<dd>Javne tribine o važnosti stepskog sokola za regiju i državu kao jedina kritično ugrožena vrsta ptice grabljivice. </dd>
 		<dd>Veći pritisak na više instance da učestvuju u projektu i daju veći doprinos u konkretnim mjerama zaštite. </dd>
 		<dd>Potpisivanje Raptors memoranduma o suranji.</dd>
-
+</dl>
+<dl class="clearfix">
 	<dt>Koje su vaše preporuke za poboljšanje politika?</dt>
 		<dd>Jača kontrola nad ilegalnom promjenom namjene zemljišta.</dd>
 		<dd>Jači inspekcijski nadzor nad ilegalnim preoravanjem slatina i stepa u Vojvodini.</dd>

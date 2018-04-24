@@ -34,6 +34,8 @@ protection: None
 ---
 level:
 ---
+partners: Elektromreža Srbije (EMS) – Serbian Electric company
+---
 tag1: wildlife
 ---
 tag2: management
@@ -62,7 +64,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem you wish to solve</dt>
 		<dd>Critically endangered bird species at the global level</dd>
 		<dd>Inadequate nesting sites, on power line poles</dd>
@@ -85,16 +87,17 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
 
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Key stages – from idea to actualisation</dt>
-		<dd>1. Obtaining financing</dd>
-		<dd>2. Cooperation with the electric company</dd>
-		<dd>3. Population census</dd>
-		<dd>4. Building the nests</dd>
-		<dd>5. Installing the nests</dd>
-		<dd>6. Monitoring the use of safe nests</dd>
-		<dd>7. Workshop with pigeon breeders</dd>
-
+		<dd>Obtaining financing</dd>
+		<dd>Cooperation with the electric company</dd>
+		<dd>Population census</dd>
+		<dd>Building the nests</dd>
+		<dd>Installing the nests</dd>
+		<dd>Monitoring the use of safe nests</dd>
+		<dd>Workshop with pigeon breeders</dd>
+</dl>
+<dl class="clearfix bulleted">
 	<dt>Which actions did you take?</dt>
 		<dd>Initiated the meeting/cooperation with EMS. Presenting the project activities.</dd>
 		<dd>Obtaining a work permit from the Provincial Institute for Nature Protection.</dd>
@@ -126,7 +129,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Is there anything you would do differently?</dt>
 		<dd>We would take a more serious approach to this project in the sense of seeking additional funding. </dd>
 		<dd>Inclusion of the general public through campaigns. </dd>

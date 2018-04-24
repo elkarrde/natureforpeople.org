@@ -32,6 +32,8 @@ location: 5 zaštićenih područja i šira okolica
 ---
 protection: nacionalni park (NP), specijalni rezervat prirode (SRP) i predio izuzetnih oblika (PIO)
 ---
+partners: 5 zaštićenih područja u Srbiji - nacionalni parkovi Tara, Đerdap, Fruška gora, posebni rezervat prirode Gornje Podunavlje i zaštićeni krajolik Avala
+---
 level:
 ---
 tag1: edukacija
@@ -52,13 +54,13 @@ download_link: /static/docs/akademija_pdp_hr.pdf
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Postignuća (pregled)</dt>
         <dd>5 zaštićenih područja ima edukativne programe i suradnju sa svoje 2 lokalne škole.</dd>
         <dd>Obučeno 214 WWF ambasadora.</dd>
         <dd>Sudjelovalo je 59 nastavnika iz 10 škola.</dd>
         <dd>1097 djece uključeno u aktivnosti školskih projekata (od 7 – 17 godina) WWF akademije. </dd>
-        <dd><strong>Rezultati mini projekata WWF Ambasadora:</strong></dd>
+        <dd class="no-bullet"><strong>Rezultati mini projekata WWF Ambasadora:</strong></dd>
         <dd>filmovi i pozorišne predstave na temu zaštite prirode, </dd>
         <dd>izgradnja mini zaštićenog područja u školskom dvorištu, </dd>
         <dd>osmišljavanje i produkcija promotivnih materijala, </dd>
@@ -67,7 +69,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem koji želite riješiti</dt>
         <dd>Nedostatak kvalitetne nastave u prirodi. </dd>
         <dd>Nedostatak edukativnih programa u zaštićenim područjima.</dd>
@@ -87,7 +89,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
-<dl class="clearfix">
+<dl class="clearfix ordered">
     <dt>Ključne faze – od ideje do realizacije?</dt>
         <dd>okupljanje dobrog tima edukatora</dd>
         <dd>upoznavanje focal pointa iz ZP o sadržaju WWF akademije za prirodu i njihovoj ulozi</dd>
@@ -138,16 +140,16 @@ body:
 <h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
 <dl class="clearfix">
     <dt>Pozitivna ekonomska (E) i društvena (D) promjena kod:</dt>
-        <dd>Javnog sektora (lokalni, nacionalni):</dd>
+        <dd><strong>Javnog sektora (lokalni, nacionalni):</strong></dd>
         <dd>D: Škole ambasadori su međusobno povezani i razmjenjuju iskustvo. Iniciranje suradnje sa sektorom obrazovanja – Ministarstvo obrazovanja.</dd>
-        <dd>Upravljača zaštićenog područja:</dd>
+        <dd><strong>Upravljača zaštićenog područja:</strong></dd>
         <dd>D: suradnja sa novim školama u svojoj okolici s kojima nisu prije imali suradnju. ZP kao edukacijski poligon za lokalnu djecu.</dd>
-        <dd>Lokalnog stanovništva:</dd>
+        <dd><strong>Lokalnog stanovništva:</strong></dd>
         <dd>D: Lokalne škole se povezuju sa prirodom i ZP u svojoj blizini. Povećanje svijesti stanovništva o važnosti zaštićenog područja u njihovom kraju. </dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Što bi napravili drukčije?</dt>
         <dd>Pored koordinatora koji je angažovan 100% potrebno je imati i asistenta na projektu na 50% radnog vremena.</dd>
         <dd>Uključiti po dva nastavnika (a ne jednog kao do sad) iz svake ambasadorske škole </dd>
@@ -161,11 +163,14 @@ body:
         <dd>Koordinator projekta treba adaptirati svoj pristup svakom ZP i focal pointu u ZP.</dd>
         <dd>Poziv za suradnju škola nije namenjen samo nastavnicima biologije. Nastava u prirodi treba biti interdisciplinarna.</dd>
         <dd>Preporučamo da se prilikom replikacije uključi škole koje educiraju djecu s invaliditetom jer ona mogu uspješno učestvovati i sprovesti sve potrebne aktivnosti u skladu sa njihovim mogućnostima. </dd>
-
+</dl>
+<dl class="clearfix">
     <dt>Što je ključno za održivosti projekta?</dt>
-        <dd>Istrajnost škola ambasadora (nastavnika i učenika). Jedna osoba posvećena cijeloj ideji. </dd>
+        <dd>Istrajnost škola ambasadora (nastavnika i učenika).</dd>
+        <dd>Jedna osoba posvećena cijeloj ideji.</dd>
         <dd>Plana rada WWF akademije, pristupi i metode postaju dio plana rada u školama koje su sudjelovale i na taj način je održivo.</dd>
-
+</dl>
+<dl class="clearfix bulleted">
     <dt>Koje su vaše preporuke za poboljšanje politika?</dt>
         <dd>Baza informacija sa tačnim brojem škola u Srbiji i kontakt osobom. </dd>
         <dd>Razvijanje i kvalitetna implementacija obrazovnih programa u ZP. Osmišljavanje edukativnih sadržaja u ZP koje ima dečije odmaralište. Osoba iz ZP može biti edukator u dječjem odmaralištu i/ili vršiti obuku animatora. </dd>

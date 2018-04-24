@@ -8,7 +8,7 @@ title: Increasing the income of the local community through the formation of a t
 ---
 lang: hr
 ---
-date: 1.9.2017.
+date:
 ---
 author:
 ---
@@ -26,7 +26,7 @@ time: 2 years
 ---
 money: 150 000 EUR
 ---
-country: BIH
+country: Bosnia and Herzegovina
 ---
 organization: WWF Adria
 ---
@@ -35,6 +35,8 @@ location: Una National Park
 protection: National Park
 ---
 level: IUCN II
+---
+partners: Una National Park, local community – UNASANA tourism cluster
 ---
 tag1: tourism
 ---
@@ -78,54 +80,54 @@ body:
 <h4 class="h2 grey playfair-heavy mb1">Planning</h4>
 <dl class="clearfix">
     <dt>Key prerequisites for success</dt>
-        <dd>Legal:</dd>
+        <dd><strong>Legal:</strong></dd>
         <dd>According to the Act on Associations – tourism cluster members must be legal entities which can form an association</dd>
-        <dd>Institutional:</dd>
+        <dd><strong>Institutional:</strong></dd>
         <dd>The protected area is willing to include the local community in its activities. </dd>
         <dd>A strategic acknowledgement of tourism (instead of hydropower) as the mode of economic area revitalisation. </dd>
         <dd>A common interest of the PA managers, all levels of authority and the local community.</dd>
-        <dd>Internal capacities:</dd>
+        <dd><strong>Internal capacities:</strong></dd>
         <dd>A single person responsible for the functioning and operations of the cluster.</dd>
 </dl>
 
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Key stages – from idea to actualisation?</dt>
-        <dd>1. analysing the stakeholders</dd>
-        <dd>2. strengthening the capacities of interested stakeholders (trainings)</dd>
-        <dd>3. field trip – regional examples of good practice</dd>
-        <dd>4. founding a tourism cluster</dd>
-        <dd>5. identifying tourism products and services</dd>
-        <dd>6. creating package tours, branding and market placement</dd>
+        <dd>analysing the stakeholders</dd>
+        <dd>strengthening the capacities of interested stakeholders (trainings)</dd>
+        <dd>field trip – regional examples of good practice</dd>
+        <dd>founding a tourism cluster</dd>
+        <dd>identifying tourism products and services</dd>
+        <dd>creating package tours, branding and market placement</dd>
 </dl>
 
 
 <h4 class="h2 grey playfair-heavy mb1">Change</h4>
 <dl class="clearfix">
     <dt>Positive economic (E) and social (S) change in:</dt>
-        <dd>The public sector (local, national) </dd>
+        <dd><strong>The public sector (local, national):</strong></dd>
         <dd>S: the promotion of the area and local producers, increased visibility</dd>
-        <dd>The business sector: </dd>
+        <dd><strong>The business sector:</strong></dd>
         <dd>E: increased income, sustainable business activities</dd>
         <dd>S: promoting products and services, the possibility of networking and joint action, education</dd>
-        <dd>Protected area management: </dd>
+        <dd><strong>Protected area management:</strong></dd>
         <dd>E: resource saving (through donating eco-stands for the eco-market, equipping the info-point)</dd>
         <dd>S: reduced pressure related to the construction of a hydropower plant at the Una National Park</dd>
-        <dd>The local community: </dd>
+        <dd><strong>The local community:</strong></dd>
         <dd>E: increased income, increased number of jobs</dd>
         <dd>S: promoting products and services, synergy with other suppliers, education</dd>
 
     <dt>What’s your greatest contribution to the project?</dt>
-        <dd>To nature: </dd>
+        <dd><strong>To nature:</strong></dd>
         <dd>Raising the people’s awareness on the importance of preserving natural resources so they also can live well. </dd>
-        <dd>To the people:</dd>
+        <dd><strong>To the people:</strong></dd>
         <dd>Increasing the income of the local community based on our own products and services.</dd>
 </dl>
 
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>What are the key elements essential to replication?</dt>
         <dd>The existence of a natural resource on which to develop a story (protected area).</dd>
         <dd>Institutional support.</dd>
@@ -136,10 +138,10 @@ body:
         <dd>Creating an information service – a meeting place for tourist and economic entities, their networking and mutual support through projects and raising environmental awareness on the necessity for area preservation.</dd>
 
     <dt>Is there anything you would do differently (and recommend others)?</dt>
-        <dd>Formalising institutional support (agreements).</dd>
-        <dd>The recommendation is towards the development of regional methodology for the foundation of tourism clusters in protected areas. </dd>
+        <dd class="no-bullet">Formalising institutional support (agreements).</dd>
+        <dd class="no-bullet">The recommendation is towards the development of regional methodology for the foundation of tourism clusters in protected areas. </dd>
 
     <dt>What is the key element for project sustainability?</dt>
-        <dd>A recognised product and market positioning.</dd>
+        <dd class="no-bullet">A recognised product and market positioning.</dd>
 </dl>
 ---
