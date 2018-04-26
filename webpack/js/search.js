@@ -13,6 +13,26 @@ const translation = {
     hr: "Preuzimanje dokumenta",
     en: "Download document"
   },
+  author: {
+    hr: "Autor",
+    en: "Author"
+  },
+  size: {
+    hr: "Veličina",
+    en: "Size"
+  },
+  pageCount: {
+    hr: "Br. Stranica",
+    en: "Page Count"
+  },
+  country: {
+    hr: "Država",
+    en: "Country"
+  },
+  keywords: {
+    hr: "Ključne riječi",
+    en: "Keywords"
+  },
   back: {
     hr: "Natrag",
     en: "Back"
@@ -96,7 +116,7 @@ function requestData(page) {
     url: "https://n4p-knowledgebase.herokuapp.com/api/search/articles" //lolcal dev environment
   }).done(function(data) {
     var total =
-      data.total_entries + " " + translation.totalResults[getLocale()];
+      data.pagination.total_entries + " " + translation.totalResults[getLocale()];
     $(".searchForm___total").html(total);
     if (data.total_entries == 0) {
       $(".no-results-block").removeClass("hide");
@@ -155,21 +175,21 @@ function drawResults(results) {
                             ${element.summary}
                         </p>
                         <div class="py1 grey">
-                            <div class="inline-block mr1"><span class="bold">Author:</span> ${
-                              element.author
+                            <div class="inline-block mr1"><span class="bold">${ translation.author[getLocale()] }:</span> ${
+                              element.author? element.author : '&ndash;'
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Country:</span> ${
-                              element.country
+                            <div class="inline-block mr1"><span class="bold">${ translation.country[getLocale()] }:</span> ${
+                              element.country? element.country : '&ndash;'
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Page Count:</span> ${
+                            <div class="inline-block mr1"><span class="bold">${ translation.pageCount[getLocale()] }:</span> ${
                               element.page_count
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Size:</span> ${
+                            <div class="inline-block mr1"><span class="bold">${ translation.size[getLocale()] }:</span> ${
                               element.file_size
                             }</div>
                         </div>
                         <div class="py1 grey">
-                            <span class="bold">Keywords:</span> ${
+                            <span class="bold">${ translation.keywords[getLocale()] }:</span> ${
                               element.keywords
                             }
                         </div>
