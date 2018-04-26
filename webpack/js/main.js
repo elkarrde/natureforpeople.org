@@ -91,6 +91,7 @@ jQuery(document).ready(function() {
   } else {
     $('html').addClass('screen-narrow');
   }
+  $('.articles-grid').removeClass('loading');
 
   $('.js-article-filter').click(function() {
     let filter = '.' + $(this).attr('data-filter')
@@ -123,13 +124,14 @@ jQuery(document).ready(function() {
 
   makeEmailsClickable();
   makeShareArticleLinks();
+  setupLogoSlider();
 
-  let maxLogos = Math.floor(window.innerWidth/180);
-  $('.partners-list').slick({
-    autoplay: true,
-    arrows: false,
-    slidesToShow: maxLogos > 6? 6 : maxLogos,
-    slidesToScroll: 1
+  window.addEventListener("orientationchange", function() {
+    iso.layout();
+    setTimeout(function() {
+      $('.partners-list').slick('unslick');
+      setupLogoSlider();
+    }, 150);
   });
 
   $("#homepage-view-map-btn").click(function() {
@@ -323,6 +325,16 @@ function makeShareArticleLinks() {
     let href = $(this).attr('href').replace(/\=\.\.\/\.\.\//, '=' + window.location.origin + '/');
     $(this).attr('href', href);
   })
+}
+
+function setupLogoSlider() {
+  let maxLogos = Math.floor(window.innerWidth / 180);
+  $('.partners-list').slick({
+    autoplay: true,
+    arrows: false,
+    slidesToShow: maxLogos > 6? 6 : maxLogos,
+    slidesToScroll: 1
+  });
 }
 
 window.mobilecheck = function() {

@@ -85,6 +85,13 @@
   }
 }
 
+.articles-grid {
+  .article-item { visibility: visible; }
+  &.loading {
+    .article-item { visibility: hidden; }
+  }
+}
+
 .article-filter-selection {
   .filter {
     margin-bottom: 0.5rem;

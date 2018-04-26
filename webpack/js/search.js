@@ -91,9 +91,9 @@ $(document).ready(function() {
           if (data.pagination.total_entries > 0) {
             $('.article-item').addClass('hidden')
             data.data.forEach(function(itm) {
-              $('.article-item a.btn-learn-more[href*="' + itm.slug + '""]').closest('.article-item').removeClass('hidden')
+              $('a.btn-learn-more[href*="' + itm.slug + '"]').closest('.article-item').removeClass('hidden');
             });
-            setTimeout(function() { iso.layout(); }, 300);
+            setTimeout(function() { iso.layout(); }, 200);
           } else {
             $('#search-bar .response').removeClass('hidden');
             $('.article-item').removeClass('hidden');
