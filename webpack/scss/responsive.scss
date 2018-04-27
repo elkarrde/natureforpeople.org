@@ -301,6 +301,13 @@
 
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     .width-4 { width: $breakpoint-md; }
+    .max-width-wide { width: 100%; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 100%; }
+        &.col-single { width: 100%; }
+    }
+
     .h1-5 { line-height: 4.2rem; }
     #articles-filter {
         .max-width-4 { max-width: $breakpoint-md; }
@@ -345,8 +352,15 @@
     html.reveal-breakpoints { border-bottom: 5px solid dodgerblue; }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-lg1)  {
     .width-4 { width: $breakpoint-lg; }
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
     #article-single {
         .article-body {
             .article-body-content {
@@ -358,8 +372,141 @@
     html.reveal-breakpoints { border-bottom: 5px solid forestgreen; }
 }
 
-@media (min-width: $breakpoint-xl) {
-    .width-4 { width: $breakpoint-lg; }
+@media (min-width: $breakpoint-lg1) and (max-width: $breakpoint-lg2)  {
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
 
-    html.reveal-breakpoints { border-bottom: 5px dashed black; }
+    html.reveal-breakpoints { border-bottom: 5px dashed blue; }
+}
+
+@media (min-width: $breakpoint-lg2) and (max-width: $breakpoint-lg3)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dashed red; }
+}
+
+@media (min-width: $breakpoint-lg3) and (max-width: $breakpoint-xl1)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dashed lime; }
+}
+
+@media (min-width: $breakpoint-xl1) and (max-width: $breakpoint-xl2)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted yellow; }
+}
+
+@media (min-width: $breakpoint-xl2) and (max-width: $breakpoint-xxl)  {
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted red; }
+}
+
+@media (min-width: $breakpoint-xxl) and (max-width: $breakpoint-xxl1)  {
+    .max-width-wide { max-width: 95vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted pink; }
+}
+@media (min-width: $breakpoint-xxl1) and (max-width: $breakpoint-3xl)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted black; }
+}
+
+@media (min-width: $breakpoint-3xl) and (max-width: $breakpoint-3xl1)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted silver; }
+}
+
+@media (min-width: $breakpoint-3xl1) and (max-width: $breakpoint-4xl)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted red; }
+}
+
+@media (min-width: $breakpoint-4xl) and (max-width: $breakpoint-5xl)  {
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted gray; }
+}
+@media (min-width: $breakpoint-5xl) and (max-width: $breakpoint-6xl)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted gray; }
+}
+@media (min-width: $breakpoint-6xl) and (max-width: $breakpoint-7xl)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted gray; }
+}
+@media (min-width: $breakpoint-7xl)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted gray; }
 }
