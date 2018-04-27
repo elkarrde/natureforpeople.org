@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'case-study' %}
+{% set siteRoot = bag('global.targetBaseUrl') %}
 
 {% block body %}
 
@@ -29,21 +30,21 @@
         <div class="social grey col col-2 center">
           <div class="uppercase bold center pt2 pb2">{{ bag('i18n', this.alt, 'share-article') }}</div>
           <div class="inline-block mx1">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ '.'|url }}" target="_blank">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteRoot }}/{{ '.'|url }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 fb">
                 <span class="i-facebook"></span></a>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="https://twitter.com/home?status={{ '.'|url }} @wwfadria" target="_blank">
+            <a href="https://twitter.com/home?status={{ siteRoot }}/{{ '.'|url }} @wwfadria" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 twitter">
                 <span class="i-twitter"></span>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ '.'|url }}" target="_blank">
+            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ siteRoot }}/{{ '.'|url }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 email">
                 <span class="i-mail2"></span>
               </span>
