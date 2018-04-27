@@ -316,14 +316,16 @@ function crawlArray(array, index, step) {
 
 function makeEmailsClickable() {
   $('#article-single .author-content a').addClass('pink pink-hover');
-  // let authorHtml = authorString.replace(/([\w-\.]{1,}@[\w-\.]{2,})/gi, '<a class="pink pink-hover" href="mailto:$1">$1</a>')
-  // $('#article-single .author-content').html(authorHtml)
 }
 
 function makeShareArticleLinks() {
   $('.social a').each(function() {
-    let href = $(this).attr('href').replace(/\=\.\.\/\.\.\//, '=' + window.location.origin + '/');
+    let href = $(this).attr('href').replace(/(\.\.\/){1,}/, '')
     $(this).attr('href', href);
+  })
+  $('head meta[property*=":url"]').each(function() {
+    let href = $(this).attr('content').replace(/(\.\.\/){1,}/, '')
+    $(this).attr('content', href);
   })
 }
 
