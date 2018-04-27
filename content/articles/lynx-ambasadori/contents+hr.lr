@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: lynx-ambasadori
+_slug: razvoj-mreze-mladih-ambasadora-risa-u-zasticenim-podrucjima
 ---
 title: Razvoj mreže mladih ambasadora risa u zaštićenim područjima
 ---
@@ -37,6 +37,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: ppnea
 ---
 template_title: Slijedite korake do uspjeha
 ---

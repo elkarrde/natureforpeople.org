@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: lonjsko-polje-poticaj-za-stocarstvo
+_slug: poticaj-za-stocarstvo-kao-motiv-za-ostanak
 ---
 title: Poticaj za stočarstvo kao motiv za ostanak
 ---
@@ -35,6 +35,8 @@ tag3: kultura
 tag4: upravljanje
 ---
 factsheet:
+---
+partner: pp-lonjsko-polje
 ---
 template_title: Slijedite korake do uspjeha
 ---

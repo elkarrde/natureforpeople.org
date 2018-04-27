@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: gajna-kakav-pasnjak-odgovara-svima
+_slug: kakav-pasnjak-pase-svima
 ---
 title: Kakav pašnjak paše svima?
 ---
@@ -35,6 +35,8 @@ tag3: kultura
 tag4: lokalni_proizvodi
 ---
 factsheet:
+---
+partner: bed
 ---
 template_title: Slijedite korake do uspjeha
 ---

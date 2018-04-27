@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: ornitoloski-edukativno-volonterski-kampovi-ucka-biom
+_slug: ornitoloski-edukativno-volonterski-kampovi-na-ucki
 ---
 title: Ornitološki edukativno-volonterski kampovi na Učki
 ---
@@ -37,6 +37,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: biom
 ---
 template_title: Slijedite korake do uspjeha
 ---

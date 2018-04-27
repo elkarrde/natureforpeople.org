@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: obedska-bara
+_slug: en-evolucija-u-restauraciji-i-ocuvanju-travnih-staništa-obedska-bara
 ---
 title: Evolucija u restauraciji i očuvanju travnih staništa – Obedska bara
 ---
@@ -37,6 +37,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: ppnea
 ---
 template_title: Follow steps to success
 ---

@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sasko-jezero
+_slug: povecanje-prihoda-lokalnog-stanovnistva-kroz-odrzivi-turizam-na-saskom-jezeru
 ---
 title: Povećanje prihoda lokalnog stanovništva kroz održivi turizam na Šaskom jezeru
 ---
@@ -39,6 +39,8 @@ tag3: upravljanje
 tag4: kultura
 ---
 factsheet:
+---
+partner: green-home
 ---
 template_title: Slijedite korake do uspjeha
 ---

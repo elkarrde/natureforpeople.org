@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: kozjanski-park-how-to-make-a-brand-out-of-apples
+_slug: how-to-make-a-brand-out-of-apples
 ---
 title: How to make a brand – out of apples?
 ---
@@ -35,6 +35,8 @@ tag3: management
 tag4: tourism
 ---
 factsheet:
+---
+partner: kozjanski-park
 ---
 template_title: Follow steps to success
 ---

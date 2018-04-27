@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-slug: kozjanski-park-kako-od-jabuka-napraviti-brend
+slug: kako-od-jabuka-napraviti-brend
 ---
 title: Kako od jabuka napraviti brend?
 ---
@@ -35,6 +35,8 @@ tag3: upravljanje
 tag4: turizam
 ---
 factsheet:
+---
+partner: kozjanski-park
 ---
 template_title: Slijedite korake do uspjeha
 ---

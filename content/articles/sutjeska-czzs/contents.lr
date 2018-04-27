@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sutjeska-czzs
+_slug: battle-for-sutjeska-preventing-the-governments-decision-to-build-a-hydro-power-plant-in-the-national-park
 ---
 title: Battle for Sutjeska - Preventing the government's decision to build a hydro power plant in the national park
 ---
@@ -39,6 +39,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: czzs
 ---
 template_title: Follow steps to success
 ---

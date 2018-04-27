@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sutjeska-czzs
+_slug: bitka-za-sutjesku-sprijecena-gradnja-hidroelektrane-u-nacionalnom-parku
 ---
 title: Bitka za Sutjesku &ndash; spriječena gradnja hidroelektrane u nacionalnom parku
 ---
@@ -39,6 +39,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: czzs
 ---
 template_title: Slijedite korake do uspjeha
 ---

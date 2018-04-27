@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: wwf-akademija-deo-tare-u-skolskom-dvoristu
+_slug: deo-tare-u-skolskom-dvoristu
 ---
 title: Deo Tare u školskom dvorištu
 ---
@@ -37,6 +37,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: wwf-adria
 ---
 template_title: Slijedite korake do uspjeha
 ---

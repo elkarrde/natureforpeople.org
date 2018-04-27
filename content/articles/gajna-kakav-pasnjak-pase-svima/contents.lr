@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: gajna-what-kind-of-pasture-is-best-for-all
+_slug: what-kind-of-pasture-is-best-for-all
 ---
 title: What kind of pasture is best for all?
 ---
@@ -29,6 +29,8 @@ tag3: culture
 tag4: products
 ---
 factsheet:
+---
+partner: bed
 ---
 template_title: Follow steps to success
 ---

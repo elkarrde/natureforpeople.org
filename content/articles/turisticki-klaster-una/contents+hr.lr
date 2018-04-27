@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: turisticki-klaster-una
+_slug: zajednistvo-umjesto-ocekivane-konkurencije
 ---
 title: Zajedništvo umjesto očekivane konkurencije
 ---
@@ -33,6 +33,8 @@ tag2: lokalni_proizvodi
 tag3: lokalne_inicijative
 ---
 tag4: upravljanje
+---
+partner: wwf-adria
 ---
 factsheet:
 ---

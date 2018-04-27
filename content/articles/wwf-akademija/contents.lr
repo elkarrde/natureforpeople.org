@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: wwf-akademija-a-bit-of-tara-in-the-schoolyard
+_slug: a-bit-of-tara-in-the-schoolyard
 ---
 title: A bit of Tara in the schoolyard
 ---
@@ -37,6 +37,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: wwf-adria
 ---
 template_title: Follow steps to success
 ---

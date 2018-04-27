@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: lynx-ambassadors
+_slug: developing-a-network-of-young-lynx-ambassadors-in-protected-areas
 ---
 title: Developing a network of young Lynx ambassadors in protected areas
 ---
@@ -35,6 +35,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: ppnea
 ---
 template_title: Follow steps to success
 ---

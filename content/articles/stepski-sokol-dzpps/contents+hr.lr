@@ -4,7 +4,7 @@ _template: articles/single-article.html
 ---
 released: study
 ---
-_slug: stepski-sokol-dzpps
+_slug: suradnjom-s-elektroprivredom-do-poboljsanja-zastite-stepskog-sokola
 ---
 title: Suradnjom s elektroprivredom do poboljšanja zaštite stepskog sokola
 ---
@@ -39,6 +39,8 @@ tag3:
 tag4:
 ---
 factsheet:
+---
+partner: dzpps
 ---
 template_title: Slijedite korake do uspjeha
 ---

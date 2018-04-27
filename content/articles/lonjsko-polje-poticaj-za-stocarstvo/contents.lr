@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: lonjsko-polje-subsidies-as-an-incentive-to-stay
+_slug: animal-husbandry-subsidies-as-an-incentive-to-stay
 ---
 title: Animal husbandry subsidies as an incentive to stay
 ---
@@ -35,6 +35,8 @@ tag3: culture
 tag4: management
 ---
 factsheet:
+---
+partner: pp-lonjsko-polje
 ---
 template_title: Follow steps to success
 ---
