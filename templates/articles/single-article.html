@@ -65,6 +65,7 @@
       </section>
 
       {% if site.get(this.path + '/case-study') %}
+      {#
       <section id="case-study" class="article-case-study clearfix mb4">
           <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
               <h4 class="black h4 center">{{ this.template_title }}</h4>
@@ -77,22 +78,27 @@
               </div>
           </div>
       </section>
+      #}
 
-      {#
       <section id="case-study" class="article-case-study clearfix mb4">
         <div class="bg-green-light clearfix px4 py4">
-          <a href="{{ '.'|url }}case-study" title="Read case study">
-            <h3 class="h3 white uppercase col col-8">
-              Get more facts and
-              details about this story
-            </h3>
-            <div class="col col-4 center my3">
+          <div class="col col-8">
+            <a href="{{ '.'|url }}case-study" title="{{ this.template_cta_button_text }}">
+              <h3 class="h3 white uppercase pt0 pb1 my0">
+                {{ this.template_title }}
+              </h3>
+              <p class="h4 white uppercase py0 my0">
+                {{ this.template_subtitle }}
+              </p>
+            </a>
+          </div>
+          <div class="col col-4 center my3">
+            <a href="{{ '.'|url }}case-study" title="{{ this.template_cta_button_text }}">
               <span class="i-arrow-right2 white h2"></span>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </section>
-      #}
       {% endif %}
 
       {#
