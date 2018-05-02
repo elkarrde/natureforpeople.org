@@ -15,10 +15,9 @@
                             </div>
                             <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0 absolute">
                                 <li data-value="/all" class="pointer white bg-grey bg-hr-blue-hover p3">{{ this.all_countries }}</li>
-                                {% set countries = bag('country-navigation', this.alt).iteritems() %} {% for path, label in countries %} {% if loop.index
-                                > 1 %}
+                                {% set countries = bag('countries', this.alt).iteritems() %} {% for path, label in countries %}
                                 <li data-value={ { path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
-                                {% endif %} {% endfor %}
+                                {% endfor %}
                             </dl>
                         </div>
                         <form id="searchForm" class="flex flex-warp items-center w100">
@@ -32,11 +31,10 @@
                     <p class="mt2 bold">
                         {{ this.predefined_search_text }}
                     </p>
-                    <div class="search-templates flex justify-start">
-                        <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mr1 bold h6">sustainable business</a>
-                        <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">tourism</a>
-                        <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">local development</a>
-                        <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mx1 bold h6">energy</a>
+                    <div class="search-templates">
+                        {% for filter, title in bag('search-presets', this.alt).iteritems() %}
+                        <a href="javascript://" onclick="suggestedSearch(this)" class="white bg-grey bg-hr-blue-hover p2 mr1 bold h6">{{ title }}</a>
+                        {% endfor %}
                     </div>
                     <div class="mt2">
 
