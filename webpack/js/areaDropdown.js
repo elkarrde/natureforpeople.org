@@ -3,8 +3,8 @@ const Control = require("can-control");
 
 function getLocale() {
   var locale;
-  if (window.location.href.indexOf("/hr/") > -1) {
-    locale = "hr";
+  if (window.location.href.indexOf("/bcs/") > -1) {
+    locale = "bcs";
   } else {
     locale = "en";
   }
@@ -140,6 +140,7 @@ var ProtectedAreasControl = Control.extend({
 
     if (!this.$element.find($target).length) {
       this.$element.find("[data-dropdown-container]").hide();
+      $("[data-dropdown-container]").hide();
     }
   },
   "[data-graphid] click": function(el) {

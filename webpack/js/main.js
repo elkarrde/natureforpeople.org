@@ -29,7 +29,7 @@ require("./areaDropdown");
 translations = {
   default_choice: {
     en: "Please choose",
-    hr: "Izaberite"
+    bcs: "Izaberite"
   }
 };
 
@@ -86,7 +86,9 @@ jQuery(document).ready(function() {
     $('html').addClass('device-desktop');
   }
   if (window.innerWidth > 640) {
-    iso = new Isotope('.articles-grid', IsoParams);
+    if ($('.articles-grid').length > 0) {
+      iso = new Isotope('.articles-grid', IsoParams);
+    }
     $('html').addClass('screen-wide');
   } else {
     $('html').addClass('screen-narrow');
@@ -272,9 +274,9 @@ function parseDataSet(bars) {
 }
 
 function determineLocale() {
-  if (window.location.pathname.split("/")[1] == "hr") {
-    $(".local-dropdown button span").html("HR");
-    return "hr";
+  if (window.location.pathname.split("/")[1] == "bcs") {
+    $(".local-dropdown button span").html("BCS");
+    return "bcs";
   } else {
     $(".local-dropdown button span").html("EN");
     return "en";
@@ -303,7 +305,7 @@ function randomElement(array) {
 }
 
 function localizedUrl(url, locale) {
-  if (locale == "hr") {
+  if (locale == "bcs") {
     return "/" + locale + url;
   } else {
     return url;

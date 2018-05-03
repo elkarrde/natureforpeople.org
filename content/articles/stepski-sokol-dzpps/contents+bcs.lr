@@ -2,11 +2,13 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: povecanje-prihoda-lokalnog-stanovnistva-kroz-odrzivi-turizam-na-saskom-jezeru
+released: study
 ---
-title: Povećanje prihoda lokalnog stanovništva kroz održivi turizam na Šaskom jezeru
+_slug: suradnjom-s-elektroprivredom-do-poboljsanja-zastite-stepskog-sokola
 ---
-lang: hr
+title: Suradnjom s elektroprivredom do poboljšanja zaštite stepskog sokola
+---
+lang: bcs
 ---
 date:
 ---
@@ -20,9 +22,7 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text:
----
-homepage_text: Umrežavanjem lokalnih proizvođača do uspješnog razvoja lokalne ponude i turizma u zaleđu Ulcinja
+lead_text: Prva suradnja nevladinog udruženja za zaštitu ptica i elektroprivrede u Srbiji
 ---
 body:
 ---
@@ -30,17 +30,17 @@ learn_more:
 ---
 view_study: Vidi studiju
 ---
-tag1: turizam
+tag1: divlje_vrste
 ---
-tag2: lokalni_proizvodi
+tag2: upravljanje
 ---
-tag3: upravljanje
+tag3:
 ---
-tag4: kultura
+tag4:
 ---
 factsheet:
 ---
-partner: green-home
+partner: dzpps
 ---
 template_title: Slijedite korake do uspjeha
 ---

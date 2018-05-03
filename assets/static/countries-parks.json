@@ -1,206 +1,206 @@
 [
   {
     "code": "BIH",
-    "name": { "en": "Bosnia & Herzegovina", "hr": "Bosna i Hercegovina" },
+    "name": { "en": "Bosnia & Herzegovina", "bcs": "Bosna i Hercegovina" },
     "protected_areas": [
-      { "code": "bijambare", "name": { "en": "Bijambare", "hr": "Bijambare" } },
+      { "code": "bijambare", "name": { "en": "Bijambare", "bcs": "Bijambare" } },
       {
         "code": "hutovo_blato",
-        "name": { "en": "Hutovo Blato", "hr": "Hutovo Blato" }
+        "name": { "en": "Hutovo Blato", "bcs": "Hutovo Blato" }
       },
-      { "code": "kozara", "name": { "en": "Kozara", "hr": "Kozara" } },
-      { "code": "sutjeska", "name": { "en": "Sutjeska", "hr": "Sutjeska" } },
-      { "code": "una", "name": { "en": "Una", "hr": "Una" } },
+      { "code": "kozara", "name": { "en": "Kozara", "bcs": "Kozara" } },
+      { "code": "sutjeska", "name": { "en": "Sutjeska", "bcs": "Sutjeska" } },
+      { "code": "una", "name": { "en": "Una", "bcs": "Una" } },
       {
         "code": "vrelo_bosne",
-        "name": { "en": "Vrelo Bosne", "hr": "Vrelo Bosne" }
+        "name": { "en": "Vrelo Bosne", "bcs": "Vrelo Bosne" }
       }
     ]
   },
   {
     "code": "MNE",
-    "name": { "en": "Montenegro", "hr": "Crna Gora" },
+    "name": { "en": "Montenegro", "bcs": "Crna Gora" },
     "protected_areas": [
       {
         "code": "biogradska_gora",
-        "name": { "en": "Biogradska Gora", "hr": "Biogradska Gora" }
+        "name": { "en": "Biogradska Gora", "bcs": "Biogradska Gora" }
       },
-      { "code": "durmitor", "name": { "en": "Durmitor", "hr": "Durmitor" } },
-      { "code": "lovcen", "name": { "en": "Lovćen", "hr": "Lovćen" } },
-      { "code": "prokletje", "name": { "en": "Prokletje", "hr": "Prokletje" } },
+      { "code": "durmitor", "name": { "en": "Durmitor", "bcs": "Durmitor" } },
+      { "code": "lovcen", "name": { "en": "Lovćen", "bcs": "Lovćen" } },
+      { "code": "prokletje", "name": { "en": "Prokletje", "bcs": "Prokletje" } },
       {
         "code": "skadarsko_jezero",
-        "name": { "en": "Skadarsko Jezero", "hr": "Skadarsko Jezero" }
+        "name": { "en": "Skadarsko Jezero", "bcs": "Skadarsko Jezero" }
       }
     ]
   },
   {
     "code": "HRV",
-    "name": { "en": "Croatia", "hr": "Hrvatska" },
+    "name": { "en": "Croatia", "bcs": "Hrvatska" },
     "protected_areas": [
       {
         "code": "pp_biokovo",
-        "name": { "en": "PP Biokovo", "hr": "PP Biokovo" }
+        "name": { "en": "PP Biokovo", "bcs": "PP Biokovo" }
       },
       {
         "code": "np_brijuni",
-        "name": { "en": "NP Brijuni", "hr": "NP Brijuni" }
+        "name": { "en": "NP Brijuni", "bcs": "NP Brijuni" }
       },
       {
         "code": "pp_kopacki_rit",
-        "name": { "en": "PP Kopački Rit", "hr": "PP Kopački Rit" }
+        "name": { "en": "PP Kopački Rit", "bcs": "PP Kopački Rit" }
       },
       {
         "code": "np_kornati",
-        "name": { "en": "NP Kornati", "hr": "NP Kornati" }
+        "name": { "en": "NP Kornati", "bcs": "NP Kornati" }
       },
-      { "code": "np_krka", "name": { "en": "NP Krka", "hr": "NP Krka" } },
+      { "code": "np_krka", "name": { "en": "NP Krka", "bcs": "NP Krka" } },
       {
         "code": "pp_lastovo",
-        "name": { "en": "PP Lastovo", "hr": "PP Lastovo" }
+        "name": { "en": "PP Lastovo", "bcs": "PP Lastovo" }
       },
       {
         "code": "pp_lonjsko_polje",
-        "name": { "en": "PP Lonjsko Polje", "hr": "PP Lonjsko Polje" }
+        "name": { "en": "PP Lonjsko Polje", "bcs": "PP Lonjsko Polje" }
       },
       {
         "code": "pp_medvednica",
-        "name": { "en": "PP Medvednica", "hr": "PP Medvednica" }
+        "name": { "en": "PP Medvednica", "bcs": "PP Medvednica" }
       },
-      { "code": "np_mljet", "name": { "en": "NP Mljet", "hr": "NP Mljet" } },
+      { "code": "np_mljet", "name": { "en": "NP Mljet", "bcs": "NP Mljet" } },
       {
         "code": "np_paklenica",
-        "name": { "en": "NP Paklenica", "hr": "NP Paklenica" }
+        "name": { "en": "NP Paklenica", "bcs": "NP Paklenica" }
       },
-      { "code": "pp_papuk", "name": { "en": "PP Papuk", "hr": "PP Papuk" } },
+      { "code": "pp_papuk", "name": { "en": "PP Papuk", "bcs": "PP Papuk" } },
       {
         "code": "np_plitvicka_jezera",
-        "name": { "en": "NP Plitvička Jezera", "hr": "NP Plitvička Jezera" }
+        "name": { "en": "NP Plitvička Jezera", "bcs": "NP Plitvička Jezera" }
       },
       {
         "code": "np_risnjak",
-        "name": { "en": "NP Risnjak", "hr": "NP Risnjak" }
+        "name": { "en": "NP Risnjak", "bcs": "NP Risnjak" }
       },
       {
         "code": "np_sjeverni_velebit",
-        "name": { "en": "NP Sjeverni Velebit", "hr": "NP Sjeverni Velebit" }
+        "name": { "en": "NP Sjeverni Velebit", "bcs": "NP Sjeverni Velebit" }
       },
       {
         "code": "pp_telascica",
-        "name": { "en": "PP Telašćica", "hr": "PP Telašćica" }
+        "name": { "en": "PP Telašćica", "bcs": "PP Telašćica" }
       },
       {
         "code": "pp_velebit",
-        "name": { "en": "PP Velebit", "hr": "PP Velebit" }
+        "name": { "en": "PP Velebit", "bcs": "PP Velebit" }
       },
       {
         "code": "pp_vransko_jezero",
-        "name": { "en": "PP Vransko Jezero", "hr": "PP Vransko Jezero" }
+        "name": { "en": "PP Vransko Jezero", "bcs": "PP Vransko Jezero" }
       },
       {
         "code": "pp_zumberak",
-        "name": { "en": "PP Žumberak", "hr": "PP Žumberak" }
+        "name": { "en": "PP Žumberak", "bcs": "PP Žumberak" }
       }
     ]
   },
   {
     "code": "ALB",
-    "name": { "en": "Albania", "hr": "Albanija" },
+    "name": { "en": "Albania", "bcs": "Albanija" },
     "protected_areas": [
       {
         "code": "bredhi_i_drenoves",
-        "name": { "en": "Bredhi i Drenoves", "hr": "Bredhi i Drenoves" }
+        "name": { "en": "Bredhi i Drenoves", "bcs": "Bredhi i Drenoves" }
       },
       {
         "code": "bredhi_i_hotoves",
-        "name": { "en": "Bredhi i Hotoves", "hr": "Bredhi i Hotoves" }
+        "name": { "en": "Bredhi i Hotoves", "bcs": "Bredhi i Hotoves" }
       },
-      { "code": "butrinti", "name": { "en": "Butrinti", "hr": "Butrinti" } },
+      { "code": "butrinti", "name": { "en": "Butrinti", "bcs": "Butrinti" } },
       {
         "code": "divjake_karavasta",
-        "name": { "en": "Divjakë-Karavasta", "hr": "Divjakë-Karavasta" }
+        "name": { "en": "Divjakë-Karavasta", "bcs": "Divjakë-Karavasta" }
       },
       {
         "code": "dolina_valbona",
-        "name": { "en": "Dolina Valbona", "hr": "Dolina Valbona" }
+        "name": { "en": "Dolina Valbona", "bcs": "Dolina Valbona" }
       },
       {
         "code": "karaburun_sazan",
-        "name": { "en": "Karaburun-Sazan", "hr": "Karaburun-Sazan" }
+        "name": { "en": "Karaburun-Sazan", "bcs": "Karaburun-Sazan" }
       },
-      { "code": "llogara", "name": { "en": "Llogara", "hr": "Llogara" } },
+      { "code": "llogara", "name": { "en": "Llogara", "bcs": "Llogara" } },
       {
         "code": "mali_i_tomorrit",
-        "name": { "en": "Mali i Tomorrit", "hr": "Mali i Tomorrit" }
+        "name": { "en": "Mali i Tomorrit", "bcs": "Mali i Tomorrit" }
       },
-      { "code": "prespa", "name": { "en": "Prespa", "hr": "Prespa" } },
+      { "code": "prespa", "name": { "en": "Prespa", "bcs": "Prespa" } },
       {
         "code": "qaf_shtama",
-        "name": { "en": "Qaf Shtama", "hr": "Qaf Shtama" }
+        "name": { "en": "Qaf Shtama", "bcs": "Qaf Shtama" }
       },
-      { "code": "thethi", "name": { "en": "Thethi", "hr": "Thethi" } },
-      { "code": "dajti", "name": { "en": "Dajti", "hr": "Dajti" } },
+      { "code": "thethi", "name": { "en": "Thethi", "bcs": "Thethi" } },
+      { "code": "dajti", "name": { "en": "Dajti", "bcs": "Dajti" } },
       {
         "code": "shebenik_jabllanica",
-        "name": { "en": "Shebenik Jabllanica", "hr": "Shebenik Jabllanica" }
+        "name": { "en": "Shebenik Jabllanica", "bcs": "Shebenik Jabllanica" }
       }
     ]
   },
   {
     "code": "SRB",
-    "name": { "en": "Serbia", "hr": "Srbija" },
+    "name": { "en": "Serbia", "bcs": "Srbija" },
     "protected_areas": [
-      { "code": "derdap", "name": { "en": "Đerdap", "hr": "Đerdap" } },
+      { "code": "derdap", "name": { "en": "Đerdap", "bcs": "Đerdap" } },
       {
         "code": "fruska_gora",
-        "name": { "en": "Fruška Gora", "hr": "Fruška Gora" }
+        "name": { "en": "Fruška Gora", "bcs": "Fruška Gora" }
       },
       {
         "code": "gornje_podunavlje",
-        "name": { "en": "Gornje Podunavlje", "hr": "Gornje Podunavlje" }
+        "name": { "en": "Gornje Podunavlje", "bcs": "Gornje Podunavlje" }
       },
-      { "code": "kopaonik", "name": { "en": "Kopaonik", "hr": "Kopaonik" } },
-      { "code": "tara", "name": { "en": "Tara", "hr": "Tara" } },
-      { "code": "vlasina", "name": { "en": "Vlasina", "hr": "Vlasina" } }
+      { "code": "kopaonik", "name": { "en": "Kopaonik", "bcs": "Kopaonik" } },
+      { "code": "tara", "name": { "en": "Tara", "bcs": "Tara" } },
+      { "code": "vlasina", "name": { "en": "Vlasina", "bcs": "Vlasina" } }
     ]
   },
   {
     "code": "MKD",
-    "name": { "en": "Macedonia*", "hr": "Makedonija*" },
+    "name": { "en": "Macedonia*", "bcs": "Makedonija*" },
     "protected_areas": [
-      { "code": "galicica", "name": { "en": "Galičica", "hr": "Galičica" } },
-      { "code": "mavrovo", "name": { "en": "Mavrovo", "hr": "Mavrovo" } },
-      { "code": "pelister", "name": { "en": "Pelister", "hr": "Pelister" } }
+      { "code": "galicica", "name": { "en": "Galičica", "bcs": "Galičica" } },
+      { "code": "mavrovo", "name": { "en": "Mavrovo", "bcs": "Mavrovo" } },
+      { "code": "pelister", "name": { "en": "Pelister", "bcs": "Pelister" } }
     ]
   },
   {
     "code": "KOS",
-    "name": { "en": "Kosovo*", "hr": "Kosovo*" },
+    "name": { "en": "Kosovo*", "bcs": "Kosovo*" },
     "protected_areas": [
-      { "code": "germia", "name": { "en": "Germia", "hr": "Germia" } },
-      { "code": "sharri", "name": { "en": "Sharri", "hr": "Sharri" } }
+      { "code": "germia", "name": { "en": "Germia", "bcs": "Germia" } },
+      { "code": "sharri", "name": { "en": "Sharri", "bcs": "Sharri" } }
     ]
   },
   {
     "code": "SLV",
-    "name": { "en": "Slovenia", "hr": "Slovenija" },
+    "name": { "en": "Slovenia", "bcs": "Slovenija" },
     "protected_areas": [
       {
         "code": "krajinski_park_goricko",
         "name": {
           "en": "Krajinski Park Goričko",
-          "hr": "Krajinski Park Goričko"
+          "bcs": "Krajinski Park Goričko"
         }
       },
       {
         "code": "logarska_dolina",
-        "name": { "en": "Logarska Dolina", "hr": "Logarska Dolina" }
+        "name": { "en": "Logarska Dolina", "bcs": "Logarska Dolina" }
       },
-      { "code": "secovlje", "name": { "en": "Sečovlje", "hr": "Sečovlje" } },
-      { "code": "triglav", "name": { "en": "Triglav", "hr": "Triglav" } },
+      { "code": "secovlje", "name": { "en": "Sečovlje", "bcs": "Sečovlje" } },
+      { "code": "triglav", "name": { "en": "Triglav", "bcs": "Triglav" } },
       {
         "code": "skocjanski_zatok",
-        "name": { "en": "Škocjanski zatok", "hr": "Škocjanski zatok" }
+        "name": { "en": "Škocjanski zatok", "bcs": "Škocjanski zatok" }
       }
     ]
   }

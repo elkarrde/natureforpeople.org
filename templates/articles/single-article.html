@@ -99,6 +99,30 @@
           </div>
         </div>
       </section>
+
+      {% else %}
+
+      {% set root = site.get('/', this.alt) %}
+      <section id="case-study" class="article-case-study clearfix mb4">
+        <div class="bg-green-light clearfix px4 py4">
+          <div class="col col-8">
+            <a href="{{ root.share_link }}" title="{{ root.share_cta_button_text }}">
+              <h3 class="h3 white uppercase pt0 pb1 my0">
+                {{ root.share_title }}
+              </h3>
+              <p class="h4 white uppercase py0 my0">
+                {{ root.share_description }}
+              </p>
+            </a>
+          </div>
+          <div class="col col-4 center my3">
+            <a href="{{ root.share_link }}" title="{{ root.share_cta_button_text }}">
+              <span class="i-arrow-right2 white h2"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {% endif %}
 
       {#
@@ -151,6 +175,7 @@
         </div>
       </section>
       {% endif %}
+
     </div>
   </div>
 </section>

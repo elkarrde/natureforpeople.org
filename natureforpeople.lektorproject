@@ -9,15 +9,15 @@ name = English
 primary = yes
 locale = en_US
 
-[alternatives.hr]
-name = Croatian
-url_prefix = /hr/
-locale = hr
+[alternatives.bcs]
+name = BCHS*
+url_prefix = /bcs/
+locale = bcs
 
-[alternatives.ab]
+[alternatives.al]
 name = Albanian
-url_prefix = /ab/
-locale = ab
+url_prefix = /al/
+locale = al
 
 [servers.staging]
 name = Staging

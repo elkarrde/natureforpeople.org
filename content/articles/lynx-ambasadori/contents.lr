@@ -12,13 +12,13 @@ date:
 ---
 author: <a href="mailto:kivanic@wwfadria.org ">Kasandra Ivanić</a>
 ---
-size: small
+size: medium
 ---
 hot: false
 ---
-lead_image:
+lead_image: /static/images/articles/lynx-ambassadors/img_8294.jpg
 ---
-lead_image_title:
+lead_image_title: Developing a network of young Lynx ambassadors in protected areas
 ---
 lead_text: 60 young students from 25 schools in the protected areas of Albania inhabited by lynx were educated and became Lynx ambassadors.
 ---
@@ -30,7 +30,7 @@ tag1: education
 ---
 tag2: wildlife
 ---
-tag3:
+tag3: gender
 ---
 tag4:
 ---

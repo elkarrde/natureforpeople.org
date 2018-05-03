@@ -16,9 +16,9 @@ size: big
 ---
 hot: false
 ---
-lead_image: /static/images/articles/wwf-akademija-tara/mini-vrta-tara-u-bajinoj-basti-(c)-np-tara.jpg
+lead_image: /static/images/articles/wwf-akademija-tara/wwf_akademija_za_prirodu_petnica_2_5.jpg
 ---
-lead_image_title: Mini Tara Garden in Bajina Bašta © WWF Adria
+lead_image_title: WWF Nature Academy begins with a one-week training session at the Petnica research station © Szilard Kovač
 ---
 lead_text: WWF Nature Academy is designed to involve teachers and students from primary and secondary schools in an active and creative nature conservation which we are all part of
 ---
@@ -32,7 +32,7 @@ tag1: initiative
 ---
 tag2: education
 ---
-tag3:
+tag3: gender
 ---
 tag4:
 ---
@@ -131,7 +131,7 @@ different sides. Many parents, representatives of the local authorities and the 
 attended the opening of Mini Tara Garden. We have always worked closely with the national
 park, and now we are recognised as a partner,” stated professor Aleksandra.</p>
 
-<img src="/static/images/articles/wwf-akademija-tara/vxxx" class="fit-text" title="Ranko Milanović from Tara National Park © Marko Slapnik">
+<!--img src="/static/images/articles/wwf-akademija-tara/vxxx" class="fit-text" title="Ranko Milanović from Tara National Park © Marko Slapnik"-->
 
 <p>Ranko Milanović, head of the Tourism and Education Department at the Tara National Park
 Public Institute agrees with her. The park donated the saplings and created the necessary tables
@@ -152,5 +152,5 @@ ambassadors.</p>
 <p>Each of the schools and its projects has contributed to promoting the protected areas and their
 managers, and the idea that nature is the best classroom.</p>
 
-<img src="/static/images/articles/wwf-akademija-tara/wwf_akademija_za_prirodu_petnica_2_5.jpg" class="fit-text" title="WWF Nature Academy begins with a one-week training session at the Petnica research station © Szilard Kovač">
+<img src="/static/images/articles/wwf-akademija-tara/mini-vrta-tara-u-bajinoj-basti-(c)-np-tara.jpg" class="fit-text" title="Mini Tara Garden in Bajina Bašta © WWF Adria">
 ---

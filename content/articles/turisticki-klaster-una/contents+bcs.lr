@@ -6,7 +6,7 @@ _slug: zajednistvo-umjesto-ocekivane-konkurencije
 ---
 title: Zajedništvo umjesto očekivane konkurencije
 ---
-lang: hr
+lang: bcs
 ---
 date: 1.9.2017.
 ---
@@ -32,11 +32,11 @@ tag2: ravnopravnost
 ---
 tag3: lokalne_inicijative
 ---
-tag4: upravljanje
+tag4: lokalni_proizvodi
 ---
-tag5: lokalni_proizvodi
+tag5: upravljanje
 ---
-partner: wwf-adria
+partner: unasana
 ---
 factsheet:
 ---
@@ -115,10 +115,10 @@ kratkom su se vremenu počeli osjećati kao partneri i iskreni prijatelji“.</p
 
 <div class="clearfix clear m20">
     <div class="col col-6 pr1">
-        <img src="/static/images/articles/una/cardaklije.jpg" class="fit--text" title="Čardaklije © Petra Boić Petrač, WWF Adria">
+        <img src="/static/images/articles/una/cardaklije.jpg" class="mw100" title="Čardaklije © Petra Boić Petrač, WWF Adria">
     </div>
     <div class="col col-6 pl1">
-        <img src="/static/images/articles/una/zoran-ima-terapijsko-jahanje.jpg" class="fit--text" title="Zoran Radošević na Čardaklijama ima osam konja koje koristi za terapijsko jahanje © Petra Boić Petrač, WWF Adria">
+        <img src="/static/images/articles/una/zoran-ima-terapijsko-jahanje.jpg" class="mw100" title="Zoran Radošević na Čardaklijama ima osam konja koje koristi za terapijsko jahanje © Petra Boić Petrač, WWF Adria">
     </div>
 </div>
 
@@ -155,10 +155,10 @@ kancelariju.</p>
 
 <div class="clearfix clear m20">
     <div class="col col-6 pr1">
-        <img src="/static/images/articles/una/aida-i-elvira_cor(c)petra-boic-petrac-wwf-adria_1.jpg" title="Aida and Elvira are happy to be able to help others announce projects © Petra Boić Petrač, WWF Adria">
+        <img src="/static/images/articles/una/aida-i-elvira_cor(c)petra-boic-petrac-wwf-adria_1.jpg" class="mw100" title="Aida and Elvira are happy to be able to help others announce projects © Petra Boić Petrač, WWF Adria">
     </div>
     <div class="col col-6 pl1">
-        <img src="/static/images/articles/una/aida-i-elvira_cor1(c)petra-boic-petrac-wwf-adria_1.jpg" title="Aida and Elvira are happy to be able to help others announce projects © Petra Boić Petrač, WWF Adria">
+        <img src="/static/images/articles/una/aida-i-elvira_cor1(c)petra-boic-petrac-wwf-adria_1.jpg" class="mw100" title="Aida and Elvira are happy to be able to help others announce projects © Petra Boić Petrač, WWF Adria">
     </div>
 </div>
 

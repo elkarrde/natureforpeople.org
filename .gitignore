@@ -3,5 +3,5 @@ push_and_deploy.sh
 assets/static/gen/
 .DS_Store
 *.afdesign
-todo.md
+todo*.md
 tags

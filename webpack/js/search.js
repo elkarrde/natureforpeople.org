@@ -2,51 +2,51 @@ categories = [];
 
 const translation = {
   noEmpty: {
-    hr: "Morate upisati barem jedan pojam za pretragu!",
+    bcs: "Morate upisati barem jedan pojam za pretragu!",
     en: "You must enter at least one query to search!"
   },
   totalResults: {
-    hr: "rezultata",
+    bcs: "rezultata",
     en: "results"
   },
   downloadDocument: {
-    hr: "Preuzimanje dokumenta",
+    bcs: "Preuzimanje dokumenta",
     en: "Download document"
   },
   author: {
-    hr: "Autor",
+    bcs: "Autor",
     en: "Author"
   },
   size: {
-    hr: "Veličina",
+    bcs: "Veličina",
     en: "Size"
   },
   pageCount: {
-    hr: "Br. Stranica",
+    bcs: "Br. Stranica",
     en: "Page Count"
   },
   country: {
-    hr: "Država",
+    bcs: "Država",
     en: "Country"
   },
   keywords: {
-    hr: "Ključne riječi",
+    bcs: "Ključne riječi",
     en: "Keywords"
   },
   back: {
-    hr: "Natrag",
+    bcs: "Natrag",
     en: "Back"
   },
   next: {
-    hr: "Naprijed",
+    bcs: "Naprijed",
     en: "Next"
   }
 };
 
 function getLocale() {
   var locale;
-  if (window.location.href.indexOf("/hr/") > -1) {
-    locale = "hr";
+  if (window.location.href.indexOf("/bcs/") > -1) {
+    locale = "bcs";
   } else {
     locale = "en";
   }

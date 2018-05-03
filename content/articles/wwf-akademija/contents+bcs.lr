@@ -6,7 +6,7 @@ _slug: deo-tare-u-skolskom-dvoristu
 ---
 title: Deo Tare u školskom dvorištu
 ---
-lang: hr
+lang: bcs
 ---
 date: 15.11.2017.
 ---
@@ -16,9 +16,9 @@ size: big
 ---
 hot: false
 ---
-lead_image: /static/images/articles/wwf-akademija-tara/mini-vrta-tara-u-bajinoj-basti-(c)-np-tara.jpg
+lead_image: /static/images/articles/wwf-akademija-tara/wwf_akademija_za_prirodu_petnica_2_5.jpg
 ---
-lead_image_title: Mini vrta Tara u Bajinoj Bašti © WWF Adria
+lead_image_title: WWF Akademija za prirodu započinje jednonedeljnom obukom u Istraživačkoj stanici Petnica © Szilard Kovač
 ---
 lead_text: Kroz WWF Akademiju za prirodu učenici i nastavnici iz škola u blizini zaštićenih područja u saradnji s upravljačima osmišljavaju kreativne ideje kako sačuvati prirodnu sredinu koja ih okružuje
 ---
@@ -32,7 +32,7 @@ tag1: lokalne_inicijative
 ---
 tag2: edukacija
 ---
-tag3:
+tag3: ravnopravnost
 ---
 tag4:
 ---
@@ -126,7 +126,7 @@ Tara’ došlo je mnogo roditelja i predstavnika lokalne vlasti i nacionalnog pa
 imali dobru saradnju sa nacionalnim parkom, ali sada smo prepoznati kao njihovi dobri
 partneri“, kaže profesorica Aleksandra.</p>
 
-<img src="/static/images/articles/wwf-akademija-tara/vxxx" class="fit-text" title="Ranko Milanović iz Nacionalnog parka Tara © Marko Slapnik">
+<!--img src="/static/images/articles/wwf-akademija-tara/vxxx" class="fit-text" title="Ranko Milanović iz Nacionalnog parka Tara © Marko Slapnik"-->
 
 <p>Sa njom se slaže i Ranko Milanović, rukovodilac Službe turizma i edukacije u Javnom preduzeću
 „Nacionalni park Tara“, koje je gimnaziji za „Mini vrt“ doniralo sadnice i izradilo neophodne
@@ -145,5 +145,5 @@ edukovala 20 škola koje su sada ambasadori zaštićenih područja.</p>
 <p>Svaka od škola svojim projektom doprinela je promovisanju zaštićenog područja i njegovog
 upravljača, ali i ideje o prirodi kao najboljoj učionici.</p>
 
-<img src="/static/images/articles/wwf-akademija-tara/wwf_akademija_za_prirodu_petnica_2_5.jpg" class="fit-text" title="WWF Akademija za prirodu započinje jednonedeljnom obukom u Istraživačkoj stanici Petnica © Szilard Kovač">
+<img src="/static/images/articles/wwf-akademija-tara/mini-vrta-tara-u-bajinoj-basti-(c)-np-tara.jpg" class="fit-text" title="Mini vrta Tara u Bajinoj Bašti © WWF Adria">
 

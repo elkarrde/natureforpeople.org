@@ -2,11 +2,11 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: od-deponija-do-zasticenog-podrucja-tivatska-solila
+_slug: povecanje-prihoda-lokalnog-stanovnistva-kroz-odrzivi-turizam-na-saskom-jezeru
 ---
-title: Od deponija do zaštićenog područja &ndash; Tivatska solila
+title: Povećanje prihoda lokalnog stanovništva kroz održivi turizam na Šaskom jezeru
 ---
-lang: hr
+lang: bcs
 ---
 date:
 ---
@@ -22,23 +22,25 @@ lead_image_title:
 ---
 lead_text:
 ---
-homepage_text: Tivatska solila neprocjenjivo su mjesto za ptice, a sada su prepoznata i od ljudi. Edukativni poligon za studente i učenike polako postaje i eko-turistička destinacija.
+homepage_text: Umrežavanjem lokalnih proizvođača do uspješnog razvoja lokalne ponude i turizma u zaleđu Ulcinja
+---
+body:
 ---
 learn_more:
 ---
 view_study: Vidi studiju
 ---
-tag1: upravljanje
+tag1: turizam
 ---
-tag2: edukacija
+tag2: lokalni_proizvodi
 ---
-tag3: turizam
+tag3: upravljanje
 ---
-tag4:
+tag4: kultura
 ---
 factsheet:
 ---
-partner: czip
+partner: green-home
 ---
 template_title: Slijedite korake do uspjeha
 ---
@@ -47,6 +49,4 @@ template_subtitle: Saznajte više činjenica i pojedinosti o ovoj priči
 template_cta_button_text: Pročitajte studiju
 ---
 case_study: case-study
----
-body:
 ---

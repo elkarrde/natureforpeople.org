@@ -3,12 +3,12 @@
       "code" : "overall",
       "name" : {
          "en" : "Overall values",
-         "hr" : "Sve vrijednosti"
+         "bcs" : "Sve vrijednosti"
       }
    },
    {
       "name" : {
-         "hr" : "Glavne ekonomske vrijednosti",
+         "bcs" : "Glavne ekonomske vrijednosti",
          "en" : "Overall economic values"
       },
       "code" : "overall_econ"
@@ -17,14 +17,14 @@
       "code" : "flow_econ",
       "name" : {
          "en" : "Flow of economic benefits",
-         "hr" : "Tijek prihoda dionicima"
+         "bcs" : "Tijek prihoda dionicima"
       }
    },
    {
       "code" : "potentials",
       "name" : {
          "en" : "Main potentials",
-         "hr" : "Glavni potencijali"
+         "bcs" : "Glavni potencijali"
       }
    }
 ]
