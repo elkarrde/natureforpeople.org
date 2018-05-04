@@ -3,7 +3,7 @@ const Control = require("can-control");
 
 function getLocale() {
   var locale;
-  if (window.location.href.indexOf("/bcs/") > -1) {
+  if (window.location.href.indexOf("/bcs/") > -1 || window.location.href.indexOf("/hr/") > -1) {
     locale = "bcs";
   } else {
     locale = "en";

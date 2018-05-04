@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
       $('.js-article-filter').removeClass('active')
       $(this).addClass('active')
     }
-    iso.layout();
+    try { iso.layout(); } catch(e) {}
     return false
   })
 
@@ -129,7 +129,7 @@ jQuery(document).ready(function() {
   setupLogoSlider();
 
   window.addEventListener("orientationchange", function() {
-    iso.layout();
+    try { iso.layout(); } catch(e) {}
     setTimeout(function() {
       $('.partners-list').slick('unslick');
       setupLogoSlider();

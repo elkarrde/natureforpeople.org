@@ -93,16 +93,16 @@ $(document).ready(function() {
             data.data.forEach(function(itm) {
               $('a.btn-learn-more[href*="' + itm.slug + '"]').closest('.article-item').removeClass('hidden');
             });
-            setTimeout(function() { iso.layout(); }, 200);
+            setTimeout(function() { try { iso.layout(); } catch(e) {} }, 200);
           } else {
             $('#search-bar .response').removeClass('hidden');
             $('.article-item').removeClass('hidden');
-            iso.layout();
+            try { iso.layout(); } catch(e) {}
           }
         });
       } else {
         $('.article-item').removeClass('hidden');
-        iso.layout();
+        try { iso.layout(); } catch(e) {}
       }
 
       return false;
