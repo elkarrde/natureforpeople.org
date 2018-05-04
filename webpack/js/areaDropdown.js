@@ -78,6 +78,7 @@ var ProtectedAreasControl = Control.extend({
   },
   initDropdown(selector, items, title = pickerText.pleaseChoose[getLocale()]) {
     const $el = this.$element.find(selector);
+    console.log('XX--->', items)
 
     $el.find("[data-dropdown-container]").remove();
 
@@ -179,7 +180,7 @@ var ProtectedAreasControl = Control.extend({
     }
   },
   loadCountriesParks(doneCb) {
-    dataLoader.loadJSON("/static/countries-parks.json", cp => {
+    dataLoader.loadJSON("/static/countries-parks.json?v=2", cp => {
       const locale = getLocale();
 
       cp.forEach(element => {
