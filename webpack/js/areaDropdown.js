@@ -78,10 +78,8 @@ var ProtectedAreasControl = Control.extend({
   },
   initDropdown(selector, items, title = pickerText.pleaseChoose[getLocale()]) {
     const $el = this.$element.find(selector);
-    console.log('XX--->', items)
 
     $el.find("[data-dropdown-container]").remove();
-
     $el.append(
       "<ul class='z2 m0 absolute bg-hr-blue list-reset' data-dropdown-container style='display:none'></ul>"
     );

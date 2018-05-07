@@ -424,6 +424,13 @@
         &.col-single { width: 25%; }
     }
 
+    .article-medium {
+        aside.tags {
+            max-height: 1.65rem;
+            overflow: hidden;
+        }
+    }
+
     html.reveal-breakpoints { border-bottom: 5px dotted red; }
 }
 

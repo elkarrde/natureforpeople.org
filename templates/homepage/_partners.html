@@ -8,11 +8,13 @@
     <div class="partner-holder max-width-4 mx-auto pt1 pb4 flex flex-row items-center clearfix">
         <div class="list-reset partners-list center flex flex-wrap content-around items-center m0 p0 col col-12 cleafix">
             <div class="flex-1 flex items-center center px2 case case-wwf">
-                <img src="/static/images/vectors/WWF_logo.svg" alt="WWF" title="WWF" class="self-stretch pointer-cursor js-article-filter" data-filter="article-wwf-adria">
+                <img src="/static/images/vectors/WWF_logo.svg" alt="WWF" title="WWF" class="self-stretch pointer-cursor article-filter img-filter" data-article-filter="article-wwf-adria">
+                <span class="notificator"></span>
             </div>
             {% for path, title in bag('partners').iteritems() %}
             <div class="flex-1 flex items-center center px2 case case-{{ title|lower|urlencode|replace('%20', '-') }}">
-                <img src="{{ path|url }}.png" srcset="{{ path|url }}@2x.png 2x" alt="{{ title }}" title="{{ title }}" class="self-stretch pointer-cursor js-article-filter" data-filter="article-{{ title|lower|urlencode|replace('%20', '-') }}">
+                <img src="{{ path|url }}.png" srcset="{{ path|url }}@2x.png 2x" alt="{{ title }}" title="{{ title }}" class="self-stretch pointer-cursor article-filter img-filter" data-article-filter="article-{{ title|lower|urlencode|replace('%20', '-') }}">
+                <span class="notificator"></span>
             </div>
             {% endfor %}
         </div>

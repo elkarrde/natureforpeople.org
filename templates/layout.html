@@ -10,7 +10,7 @@
     {% set siteRoot = bag('global.targetBaseUrl') %}
     <!-- OpenGraph data -->
     <meta property="og:title" content="{{ this.title|striptags }} — natureforpeople.org">
-    <meta property="og:url" content="{{ siteRoot }}/{{ '.'|url }}">
+    <meta property="og:url" content="{{ siteRoot }}/{{ '.'|url|replace('../', '') }}">
     <meta property="og:type" content="website">
     <meta property="og:description" content="{% if this.headline is defined %}{{ this.headline }}{% else %}{{ this.lead_text }}{% endif %}">
     <meta property="og:image" content="{{ siteRoot }}{% if this.lead_image is defined %}{{ this.lead_image }}{% else %}{{ '/static/images/vectors/WWF_logo.svg' }}{% endif %}">
@@ -24,7 +24,7 @@
     <meta property="twitter:title" content="{{ this.title|striptags }} — natureforpeople.org">
     <meta property="twitter:description" content="{% if this.headline is defined %}{{ this.headline }}{% else %}{{ this.lead_text }}{% endif %}">
     <meta property="twitter:image" content="{{ siteRoot }}{% if this.lead_image is defined %}{{ this.lead_image }}{% else %}{{ '/static/images/vectors/WWF_logo.svg' }}{% endif %}">
-    <meta property="twitter:url" content="{{ siteRoot }}/{{ '.'|url }}">
+    <meta property="twitter:url" content="{{ siteRoot }}/{{ '.'|url|replace('../', '') }}">
     <meta property="twitter:card" content="summary">
 
     <link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">

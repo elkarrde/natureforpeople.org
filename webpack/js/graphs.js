@@ -122,7 +122,7 @@ function renderPAMainPotentials(data, graph_choices, locale) {
 		, sorted = sortNestedVals(only_non_empty, 'p_with_val', 'desc')
 		, p_plus_vals_line = [partition_names['p_with_val'][locale]].concat(_.map(sorted, 'p_with_val'))
 		, p_minus_vals_line = [partition_names['p_without_val'][locale]].concat(_.map(sorted, 'p_without_val'))
-		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(sorted)), locale);
+		, stakeholders_line = localizeNames(question_names, ['x'].concat(_.keys(sorted)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_potentials',
