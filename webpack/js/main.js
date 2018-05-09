@@ -155,6 +155,30 @@ jQuery(document).ready(function() {
   makeEmailsClickable();
   setupLogoSlider();
 
+  $('.js-sig-generate').click(function() {
+    $('#signature-form form input').each(function() {
+      let name = $(this).attr('name');
+      let value = $(this).val().trim();
+      let attr = '#' + name;
+      $(attr).text(value);
+      if (name === 's-email') { $(attr).attr('href', 'mailto:' + value); }
+      if (value.length < 1 && !$(this).hasClass('required')) { $(attr).closest('tr').remove(); }
+    })
+    $('#raw .js-content [id]').removeAttr('id');
+    let html = $('#raw .js-content').html();
+    $('#signature textarea').val(html.trim());
+
+    $('#signature-form').addClass('hide');
+    $('#signature').removeClass('hide');
+    $('#raw').removeClass('hide');
+    return false;
+  })
+  $('.js-sig-back').click(function() {
+    $('#signature-form').removeClass('hide');
+    $('#signature').addClass('hide');
+    $('#raw').addClass('hide');
+  })
+
   window.addEventListener("orientationchange", function() {
     try { iso.layout(); } catch(e) {}
     setTimeout(function() {
