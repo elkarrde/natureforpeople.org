@@ -6,7 +6,7 @@ slug:
 ---
 title: Increase revenues for the local population through sustainable tourism at Šasko Lake
 ---
-lang: hr
+lang: bcs
 ---
 date:
 ---
@@ -34,6 +34,8 @@ protection:
 ---
 level:
 ---
+partners: Ulcinj municipality, Šas restaurant, local tourist boards, Ora NGO
+---
 tag1: wild species
 ---
 tag2: management
@@ -52,7 +54,7 @@ download_link: /static/docs/sasko_pdp_en.pdf
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Accomplishments:</dt>
 		<dd>Registration of local producers (honey, olive oil, wine) at Šasko Lake – 15 representatives.</dd>
 		<dd>Formation of a joint platform of local households (20-40) having revenues from the sale of local products</dd>
@@ -62,7 +64,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem you wish to solve</dt>
 		<dd>Lack of will to protect the area</dd>
 		<dd>Large migration of the local population</dd>
@@ -104,7 +106,7 @@ body:
 
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Change</h4>
+<h4 class="h2 grey playfair-heavy mb1">Changes</h4>
 
 <dl class="clearfix">
 	<dt>Positive economic (E) and social (S) change</dt>
@@ -122,7 +124,7 @@ body:
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Which key items were important for replication?</dt>
 		<dd>Local support</dd>
 		<dd>Existence of products and services</dd>

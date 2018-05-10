@@ -103,11 +103,37 @@
     }
 
     dt + dd { margin-top: 1rem; }
+
+    &.bulleted {
+      dd {
+        display: list-item;
+        list-style-type: disc;
+
+        &.no-bullet { list-style-type: none; }
+      }
+    }
+
+    &.numbered {
+      dd {
+        display: list-item;
+        list-style-type: decimal;
+      }
+    }
+  }
+}
+
+.search-templates {
+  display: block;
+  a {
+      display: inline-block;
+      margin: 0 0.25rem 0.5rem 0;
+      white-space: nowrap;
   }
 }
 
 .h1-5 { font-size: 4.25rem; }
-.width-4 { }
 .h70p { height: 70px; }
+.mw100 { max-width: 100%; }
+.slick-slide { position: relative; }
 
 @import "slick.scss";

@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: ornithological-educational-camps-on-ucka-biom
+_slug: ornithological-educational-and-volunteer-camps-on-mount-ucka
 ---
 title: Ornithological educational and volunteer camps on Mount Učka
 ---
@@ -32,11 +32,13 @@ tag1: education
 ---
 tag2: management
 ---
-tag3:
+tag3: wildlife
 ---
 tag4:
 ---
 factsheet:
+---
+partner: biom
 ---
 template_title: Follow steps to success
 ---

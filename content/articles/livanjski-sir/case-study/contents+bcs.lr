@@ -1,0 +1,147 @@
+_model: case-study
+---
+_template: articles/case-study.html
+---
+slug:
+---
+title: Zaštita livanjskog sira i ostvarivanje prava malih proizvođača
+---
+lang: bcs
+---
+date:
+---
+author:
+---
+lead_image: /static/images/articles/livanjski-sir/livanjski-sir-uskoro-ce-se-naci-na-policama-europskih-trgovina-(c)-andrija-vroljak.jpg
+---
+lead_image_title: Livanjski sir uskoro će se naći na policama europskih trgovina © Andrija Vroljak
+---
+lead_text:
+
+Livanjski sir, čija kvaliteta ovisi o tradicionalnoj poljoprivredi, uskoro će se naći na policama
+trgovina širom Europske unije i to pod jedinstvenim brendom
+---
+people: 1 (4 od početka 2018)
+---
+time: 10 godina
+---
+money: 1 000 000 EUR
+---
+country: Bosna i Hercegovina
+---
+organization: Udruga proizvođača tradicionalnog livanjskog sira „Cincar“; Poljoprivredna zadruga Cincar 2
+---
+location: Livanjsko polje
+---
+protection: Ramsar područje
+---
+level: U tijeku proces zaštite prema nacionalnoj kategorizaciji.
+---
+partners: Općina Livno i Hercegbosanska županija (HBŽ)
+---
+funding: UCODEP (Jedinstvo i Saradnja za Razvoj Naroda), UNDP (Razvojni program UN-a), Češka razvojna agencija
+---
+tag1: lokalni_proizvodi
+---
+tag2: lokalne_inicijative
+---
+tag3: upravljanje
+---
+tag4: kultura
+---
+download_title: Napravi promjenu
+---
+download_subtitle: Ponovite ovo rješenje i slijedite korake za uspjeh
+---
+download_cta_button_text: Preuzmi dokument
+---
+download_link: /static/docs/livanjski_pdp_hr.pdf
+---
+body:
+<dl class="clearfix bulleted">
+    <dt>Postignuća</dt>
+        <dd>osnivanje udruge za zaštitu autohtonog proizvoda, među prvima u BiH</dd>
+        <dd>više od 50 obitelji proizvođača članovi su udruge Cincar (konstantan rast broja članova od osnivanja)</dd>
+        <dd>indirektna korist za ljude - 500 (članovi obitelji koji imaju prihod od aktivnosti)</dd>
+        <dd>Broj novih usluga - 20 novih malih mljekara s prostorom za kušanje</dd>
+        <dd>osnivanje poljoprivredne zadruge – 11 obitelji članovi</dd>
+        <dd>povećana kvaliteta i količina proizvoda (110 tona sira)</dd>
+        <dd>povećavanje broja grla stoke – 8 000 ovaca, 700 krava</dd>
+        <dd>članovi udruge aktivni su sudionici radnih grupa za legislativu vezanu za autohtone proizvode u BiH.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<dl class="clearfix bulleted">
+    <dt>Problem koji želite riješiti</dt>
+        <dd>gubitak primarnog tržišta</dd>
+        <dd>nedostatak i izostanak implementacije legislative vezane sa zaštitom autohtonih proizvoda i sigurnosti hrane</dd>
+        <dd>nelojalna konkurencija</dd>
+        <dd>neujednačenost kvalitete proizvoda.</dd>
+
+    <dt>Prilike koje želite iskoristiti</dt>
+        <dd>tradicionalna popljoprivreda</dd>
+        <dd>kvalitetni pašnjaci</dd>
+        <dd>zainteresirano lokalno stanovništvo</dd>
+        <dd>poznati brend</dd>
+        <dd>potražnja za autohtonim proizvodima.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Planiranje</h4>
+<dl class="clearfix bulleted">
+    <dt>Ključni preduvjeti za uspjeh</dt>
+        <dd>postojanje prepoznatljivog proizvoda s dugom tradicijom</dd>
+        <dd>mogućnost osnivanja udruge kako bi stočari imali pravno tijelo te zajednički stočari usuglasili priroritete te usmjerili sredstva</dd>
+        <dd>osoba koja razumije forme i načine podnošenja prijedloga projekta.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<dl class="clearfix">
+    <dt>Ključne faze – od ideje do realizacije</dt>
+        <dd>1. osnivanje udruge proizvođača (definiranje ciljeva rada i određivanje prioriteta)</dd>
+        <dd>2. jačanje suradnje s udrugama, donatorima, lokalnim vlastima, znanstvenim institucijama i medijima (intenzivniji kontakti, zajednički projekti)</dd>
+        <dd>3. edukacija (studijske posjete sličnim proizvođačima u inozemstvu, radionice)</dd>
+        <dd>4. prilagodba uvjetima i standardima koje zahtijevaju propisi vezani sa zaštitom porijekla i sigurnosti hrane u BiH, ali i u EU</dd>
+        <dd>5. suradnja s Češkom razvojnom agencijom (brendiranje, infrastruktura, oprema)</dd>
+</dl>
+<dl class="clearfix bulleted">
+    <dt>Koje akcije ste poduzeli?</dt>
+        <dd>osnivanje udruge proizvođača tradicionalnog livanjskog sira što nam je omogućilo da započnemo konkretnu suradnju s predstavnicima vlasti, donatorima, udrugama, znanstvenim institucijama, medijima</dd>
+        <dd>zajednička identifikacija problema i pronalazak rješenja s partnerima</dd>
+        <dd>studijske posjete sličnim proizvođačima i sajmovima u Italiji i Hrvatskoj te nedavno u Češkoj i Slovačkoj</dd>
+        <dd>ispunjavanja svih zakonskih uvjeta za zaštitu proizvoda (pravilnik, standardizacija, sljedivost, receptura i sustav kontrole) po kategorijama izvornosti i autohtonosti</dd>
+        <dd>sudjelovanje u radnim grupama za izradu zakona i pravilnika vezanih za zaštitu autohtonih proizvoda i lokalnih razvojnih strategija</dd>
+        <dd>zajedničko izlaganje na sajmovima</dd>
+        <dd>uključivanje lokalne vlasti u privlačenje projekata</dd>
+        <dd>adaptacija, gradnja i opremanje mini/kućne mljekare radi prilagodbe svim suvremenim higijenskim standardima</dd>
+        <dd>osnivanje zadruge isplativije je nego da posluju kao pojedinačni obrti</dd>
+        <dd>pokretanje redovite godišnje izložbe sira</dd>
+        <dd>Obuka za upravljanje zadrugom</dd>
+        <dd>brendiranje - jedinstvena etiketa, iako svaka obitelj ima svoju oznaku</dd>
+        <dd>zajednički objekt koji uključuje muzej sira te prodajni, uredski, i skladišni prostor</dd>
+        <dd>opremanje laboratorija za proizvode animalnog porijekla županijskog zavoda za hranu i veterinarstvo</dd>
+        <dd>promocija turističke ceste sira.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+<dl class="clearfix">
+    <dt>Kako je smanjen negativni utjecaj na prirodu?</dt>
+        <dd>Stalnim povećanjem proizvodnje sprječava se zarastanje travnjaka te se obnavljaju zapušteni pašnjaci. Neki članovi udruženja imaju preko 1000 ovaca. Ispaša pomaže da se održe prirodni ekosustavi, kao i mehanička kosidba u svrhu prikupljanja sijena za zimu.</dd>
+        <dd>Ukupno se održava 21.761 ha pašnjaka u Livanjskom polju.</dd>
+
+    <dt>Koji je vaš najveći doprinos u projektu?</dt>
+        <dd>Za ljude</dd>
+        <dd>povećanje prihoda za lokalnu zajednicu na osnovu vlastitih proizvoda i usluga.</dd>
+</dl>
+
+<h4 class="h2 grey playfair-heavy mb1">Replikacija i preporuke</h4>
+<dl class="clearfix bulleted">
+    <dt>Koje su ključne stvari važne za replikaciju?</dt>
+        <dd>osnivanje i jačanje kapaciteta udruge proizvođača</dd>
+        <dd>kvalitet i prepoznatljivost proizvođača</dd>
+        <dd>uključivanje donosioca odluka i upravljača na samom početku realizacije projekta</dd>
+        <dd>uključivanje znanstvenih institucija tj. stručnjaka i studenata u početnoj fazi projekta</dd>
+        <dd>upornost</dd>
+        <dd>dobra suradnja između partnera u projektu i zajednički rad</dd>
+</dl>
+
+---

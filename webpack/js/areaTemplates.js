@@ -3,22 +3,22 @@ pickerTemplate =
 
 pickerText = {
   pleaseChoose: {
-    hr: "Molimo Odaberite",
+    bcs: "Molimo Odaberite",
     en: "Please Choose"
   },
   choosePA: {
-    hr: "Odaberite ZP",
+    bcs: "Odaberite ZP",
     en: "Choose PA"
   }
 };
 
 countryTemplates = {
   country: {
-    hr: "Prikaz {VALUE} u {PA_CNT} zaštićenih područja u {COUNTRY}",
+    bcs: "Prikaz {VALUE} u {PA_CNT} zaštićenih područja u {COUNTRY}",
     en: "{VALUE} in {PA_CNT} protected areas in {COUNTRY}"
   },
   country_with_pa: {
-    hr: "Prikaz {VALUE} u zaštićenom području {PA}",
+    bcs: "Prikaz {VALUE} u zaštićenom području {PA}",
     en: "{VALUE} in {PA}"
   }
 };
@@ -30,7 +30,7 @@ graphNameTemplates = {
     flow_econ: "Flow of economic value",
     potentials: "Main potentials"
   },
-  hr: {
+  bcs: {
     overall: "svih vrijednosti",
     overall_econ: "glavnih ekonomskih vrijednosti",
     flow_econ: "tijeka prihoda dionicima",
@@ -39,12 +39,12 @@ graphNameTemplates = {
 };
 
 countriesList = {
-  ALB: { en: "Albania", hr: "Albaniji" },
-  BIH: { en: "Bosnia & Herzegovina", hr: "Bosni i Hercegovini" },
-  HRV: { en: "Croatia", hr: "Hrvatskoj" },
-  MKD: { en: "Macedonia", hr: "Makedoniji" },
-  MNE: { en: "Montenegro", hr: "Crnoj Gori" },
-  SRB: { en: "Serbia", hr: "Srbiji" },
-  SLV: { en: "Slovenia", hr: "Sloveniji" },
-  KOS: { en: "Kosovo", hr: "Kosovu" }
+  ALB: { en: "Albania", bcs: "Albaniji" },
+  BIH: { en: "Bosnia & Herzegovina", bcs: "Bosni i Hercegovini" },
+  HRV: { en: "Croatia", bcs: "Hrvatskoj" },
+  MKD: { en: "Macedonia", bcs: "Makedoniji" },
+  MNE: { en: "Montenegro", bcs: "Crnoj Gori" },
+  SRB: { en: "Serbia", bcs: "Srbiji" },
+  SLV: { en: "Slovenia", bcs: "Sloveniji" },
+  KOS: { en: "Kosovo", bcs: "Kosovu" }
 };

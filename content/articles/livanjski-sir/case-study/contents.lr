@@ -8,13 +8,13 @@ title: The protection of the Livno cheese and exercising the rights of small-vol
 ---
 lang: en
 ---
-date: 02.12.2017.
+date:
 ---
-author: <a href="mailto:zseremet@wwfadria.org">Zoran Šeremet</a>
+author:
 ---
-lead_image: /static/images/articles/livanjski-sir/livanjski-sir-uskoro-ce-se-naci-na-policama-europskih-trgovina-(c)-andrija-vroljak.jpg
+lead_image:
 ---
-lead_image_title: Livno Cheese will soon be found on the shelves of European shops © Andrija Vrdoljak
+lead_image_title:
 ---
 lead_text:
 
@@ -27,15 +27,19 @@ time: 10 years
 ---
 money: EUR 1 000 000
 ---
-country: BIH
+country: Bosnia and Herzegovina
 ---
-organization: Udruga „Cincar“, PZ Cincar 2
+organization: Association of producers of the traditional Livno cheese “Cincar”; Cincar 2 Agricultural Cooperative
 ---
-location: Livanjsko polje
+location: Livanjsko polje (“the Livno field”)
 ---
 protection: Ramsar site
 ---
-level: In progress
+level: The process of protection according to national categorization currently in progress
+---
+partners: The municipality of Livno and the Herzeg-Bosnia County
+---
+funding: UCODEP (Unity and Cooperation for the Development of Peoples), UNDP (United Nations Development Programme), Czech Development Agency
 ---
 tag1: products
 ---
@@ -43,7 +47,7 @@ tag2: initiatives
 ---
 tag3: management
 ---
-tag4:
+tag4: culture
 ---
 download_title: Make a change
 ---
@@ -54,20 +58,8 @@ download_cta_button_text: Download document
 download_link: /static/docs/livanjski_pdp_en.pdf
 ---
 body:
-<dl class="clearfix">
-    <dt>Organization</dt>
-    <dd>Association of producers of the traditional Livno cheese “Cincar”; Cincar 2 Agricultural Cooperative</dd>
 
-    <dt>Partners</dt>
-    <dd>The municipality of Livno and the Herzeg-Bosnia County</dd>
-
-    <dt>Funding source</dt>
-    <dd>CODEP (Unity and Cooperation for the Development of Peoples), UNDP (United Nations Development Programme), Czech Development Agency</dd>
-</dl>
-
-<br>
-
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Achievements</dt>
         <dd>founding the association for the protection of an autochthonous product, among the first in Bosnia and Herzegovina</dd>
         <dd>more than 50 family-run productions are members of the Cincar association (number of members growing constantly since foundation)</dd>
@@ -80,7 +72,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem you wish to solve</dt>
         <dd>Loss of primary market</dd>
         <dd>Lack and non-implementation of legislation related to the protection of autochthonous products and food safety</dd>
@@ -96,7 +88,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Planning</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Key pre-requisites for success</dt>
         <dd>existence of a recognisable product with a long-lasting tradition</dd>
         <dd>possibility of founding an association that would serve as a legal entity for livestock farmers, and so that they would jointly agree on their priorities and direct their resources</dd>
@@ -111,7 +103,8 @@ body:
         <dd>3. Education (organised visits to similar producers abroad, workshops)</dd>
         <dd>4. Adapting to conditions and standards required by regulations related to the protection of origin and food safety in Bosnia and Herzegovina and the EU.</dd>
         <dd>5. Cooperation with the Czech Development Agency (branding, infrastructure, equipment)</dd>
-
+</dl>
+<dl class="clearfix bulleted">
     <dt>Which actions have you undertaken?</dt>
         <dd>founding the association of producers of the traditional Livno cheese, which enabled us to initiate concrete cooperation with representatives of authorities, donors, associations, scientific institutions, the media</dd>
         <dd>joint identification of issues and finding solutions with the partners</dd>
@@ -158,7 +151,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>What are the key things essential to replication?</dt>
         <dd>founding a producers’ association and strengthening its capacities</dd>
         <dd>quality and recognisability of the producers</dd>

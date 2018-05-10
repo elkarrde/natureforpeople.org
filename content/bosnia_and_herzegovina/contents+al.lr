@@ -1,0 +1,160 @@
+_model: country
+---
+_template: bosnia_and_herzegovina.html
+---
+title: Bosnja dhe Hercegovina
+---
+banner_title: Bosnja dhe Hercegovina
+---
+banner_message: Ajër i  pastër, ujë i freskët, ushqimi, pllenim, materiale natyrore, ilaçe dhe shumë të tjera që natyra na i jap çdo ditë ... falas
+---
+banner_button_text: Zbulo me shume
+---
+banner_image_meta: Livanjsko polje
+---
+more_info_title: Izvor i više informacija
+---
+fact_1_title: Pylltaria
+---
+fact_1_subtitle: Shpërndarja e të ardhurave
+---
+fact_1_copy: <a href="http://croatia.panda.org/projekti/promoviranje_odrivog_gospodarenja_umama_kao_podrka_odrivom_razvoju_u_bosni_i_hercegovini/" target="_blank">Në  bashkëpunim me IKEA-në</a> dhe nëpërmjet certifikimit pyjor (FSC) WWF-i përpiqet të mimimizojë  prerjet ilegale dhe të promovojë menaxhimin e përgjegjshëm të pyjeve në mbështetje të zhvillimit të  qëndrueshëm në Bosnjë dhe Hercegovinë.
+---
+fact_1_question: A mund të kemi një përdorim më të qëndrueshmë të burimeve natyrore në Bosnjë dhe Hercegovinë?
+---
+fact_1_caption: <a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">53% e territorit të Bosnjës dhe Hercegovinës është e mbuluar me pyje dhe tokë pyjore.
+---
+fact_2_title: Punësimi
+---
+fact_2_subtitle: Vendet e punës për mbrojtjen e natyrës
+---
+fact_2_copy: Bosnja dhe Hercegovina ka një nivel të lartë papunësie me një normë të llogaritur prej <a href="http://www.fzzz.ba/vijesti/reregistracija-nezaposlenih-osoba-u-federaciji-bih" target="_blank">47%</a>, ose  më shumë se <a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf" target="_blank">511 mijë</a> persona të regjistruar si të papunë. Vendet e punës në zonat e mbrojtura përveç dobisë ekonomike ofrojnë edhe shumë përfitime të tjera sociale, siç është mundësia për edukimin e popullsisë lokale që do t ë  inkurajonte qëndrimin mbrojtës ndaj natyrës.
+---
+fact_2_question: Mundësitë për punësim në masë të madhe varen nga praktikat e menaxhimit të zonave të mbrojtura. A janë zonat e mbrojtura të përshtatura për qasjet moderne të menaxhimit ?
+---
+fact_2_caption: 300 persona janë të punësuar në zonat e mbrojtura të Bosnjës dhe Hercegovinës (177 persona në Republika Srpska dhe 132 në FBeH).
+---
+fact_3_title: Uji
+---
+fact_3_subtitle: Të ardhurat  nga përdorimi i ujit
+---
+fact_3_copy: Rreth 45% e energjisë elektrike  në Bosnjë dhe Hercegovinë prodhohet nga hidrocentralet. Çdo vit, hidrocentralet në vend prodhojnë mesatarisht  energji elektrike me  vlerë prej 350 milionë euro. Megjithatë, përfitimet nga prodhimi i energjisë nga hidrocentralet janë të pakta për komunitetin lokal veçanërisht në qoftë se ato shikohen në aspektin afatgjatë.
+---
+fact_3_question: A është e vetëdijshme popullsia lokale për përfitimet nga  shërbimet e  ekosistemeve që mundëson uji dhe zonat moçalore, si dhe potencialet për shfrytëzimin e tyre të qëndrueshëm?
+---
+fact_3_caption: Bosnja dhe Hercegovina me më shumë se 9,200 m<sup>3</sup> ujë për frymë  është vendi më i pasur me ujë të pijshëm në rajon dhe një ndër dhjetë vendet më të pasura në Evropë.
+---
+fact_4_title: Turizmi
+---
+fact_4_subtitle: Numri i vizitorëve
+---
+fact_4_copy: Sektori i turizmit në Bosnje dhe Hercegovinë është ende në fazën fillestare të zhvillimit, dhe të ardhurat nga turizmi janë nën nivelin mesatar në krahasim me të ardhurat e vendeve fqinje në rajon. Megjithatë, potenciali turistik i Bosnjës dhe Hercegovinës konsiderohet të jetë një mundësi e madhe për të rindërtuar ekonominë e vendit në mënyrë të qëndrueshme.
+---
+fact_4_question: Si mund  të zgjidhen mangësitë e dukshme të ofertës turistike dhe infrastrukturës në zonat e mbrojtura?
+---
+fact_4_caption: Kontributi i  turizmit në PBB-në e Bosnjës dhe Hercegovinës është 2%
+---
+fact_5_title: Zhvillimi lokal
+---
+fact_5_subtitle: Faktorët e suksesit
+---
+fact_5_copy: <a href="https://natureforpeople.org/al/wwf_examples/local_una/">Parku Kombetar Una</a> është një nga nxitësit  e zhvillimit ekonomik në rajon. Falë  bashkëpunimit me ofruesit lokalë të shërbimeve turistike, nga viti në vit vizitat në park janë duke u dyfishuar.
+---
+fact_5_question: Ku qëndrojnë mundësitë për zhvillimin ekonomik në zonat e mbrojtura dhe përreth tyre?
+---
+fact_5_caption: 16 herë është rritur numri i vizitorëve të Parkut Kombëtar UNA që nga themelimi i tij në vitin 2008.
+---
+fact_6_title: Lumenjtë
+---
+fact_6_subtitle: Rrjedhat natyrore
+---
+fact_6_copy: Analiza e lumenjve që janë nën kërcënimin e zhvillimit të paqëndrueshëm hidroenergjetik tregojnë se Bosnja dhe Hercegovina ka 60% (2.632 km) rrjedha të paprekura të lumenjve të pasura me biodiversitet. Në të njëjtën kohë, po rriten  kërkesat për përdorimin e lumenjve për prodhimin e energjisë elektrike, gjë që shumë shpesh sjell pasoja jashtëzakonisht negative për vlerat natyrore të lumenjve, si dhe  përdorimin normal  të hapësirës dhe burimeve natyrore.
+---
+fact_6_question: Si të sigurohemi që investitorët do t’i ndërtojnë dhe menaxhojnë hidrocentralet në përputhje me udhëzimet e pranuara globalisht për zhvillimin e qëndrueshëm të hidroenergjisë? Si të sigurohemi që qeveria do të shpallë zonat në të cilat nuk lejohet ndërtimi i hidrocentraleve?
+---
+fact_6_caption: Parku kombëtar Sutjeska i cili është nën kërcënimin e ndërtimit të hidrocentralit ka më shumë specie bimore (<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf" target="_blank">1800</a>) se sa gjithë <a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf" target="_blank">Polonia</a>.
+---
+cta_button_text: Le të  zgjidhim së bashku sfidat
+---
+fact_1_title_icon: cntry-msg-forest
+---
+fact_2_title_icon: cntry-msg-jobs
+---
+fact_3_title_icon: cntry-msg-hydro-power
+---
+fact_4_title_icon: cntry-msg-tourism
+---
+fact_5_title_icon: cntry-msg-growth
+---
+fact_6_title_icon: cntry-msg-bridge
+---
+fact_1_infobox:
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine - Stanje šumskog fonda</a></p>
+---
+fact_2_infobox:
+<p>
+<a href="http://www.fzzz.ba/vijesti/reregistracija-nezaposlenih-osoba-u-federaciji-bih">Federalni zavod za zapošljavanje Federacije Bosne i Hercegovine</a><br />
+<a href="http://www.bhas.ba/saopstenja/2017/NEZ_2017M1_001_01_BS.pdf">Agencija za statistiku Bosne i Hercegovine</a>
+</p>
+---
+fact_3_infobox:
+<p><a href="http://data.worldbank.org/indicator/EG.ELC.HYRO.ZS?locations=BA" target="_blank">Svjetska banka</a></p>
+---
+fact_4_infobox:
+<p><a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine</a></p>
+---
+fact_5_infobox:
+<p><a href="https://natureforpeople.org/al/wwf_examples/local_una/">Doprinos boljem životu lokalne zajednice</a></p>
+---
+fact_6_infobox:
+<p>
+WWF je zajedno s najvažnijim institucijama za zaštitu okoliša iz Albanije, Bosne i Hercegovine, Crne Gore i Hrvatske proveo analizu riječnih tokova kako bi se prepoznali oni još netaknuti i bogati biološkom raznolikošću. Analizom je obuhvaćeno 296 rijeka pod prijetnjom neodrživog hidroenergetskog razvoja, u ukupnoj duljini od 13.278 km i ukupne površine sliva od oko 165.000 km<sup>2</sup>.<br />
+Analiza je uzela u obzir stanje rijeka (na temelju njihove hidrologije, morfologije korita, obalne vegetacije, kvalitete vode i upotrebe zemljišta u podslivu) i njihovo biološko stanje na temelju distribucije slatkovodnih ribljih vrsta i postojanju zaštićenih područja.<br />
+Rezultati analize pokazali su da je razina cjelovitosti riječne mreže izrazito visoka te da su mnoge rijeke još uvijek u vrlo dobrom ili dobrom stanju.<br />
+Izvor: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/rijeke_linije_ivote_dinarskog_luka.pdf">Rijeke: linije života Dinarskog luka</a><br /><br />
+Najvažniji prijedlozi za povećanje održivosti brana uključuju:<br />
+• Dobivanje potpore javnosti na temelju pouzdanih informacija koje
+institucionalnim dionicima i lokalnom stanovništvu omogućuju smisleno
+sudjelovanje u odlučivanju.<br />
+• Procjenjivanje svih opcija, pridavanje jednake težine društvenim i ekološkim
+aspektima kao i tehničkim čimbenicima te razmatranje postojećih brana s
+tehničkog i društvenog aspekta.<br />
+• Izvlačenje maksimuma koristi iz postojećih brana prije izgradnje novih.<br />
+• Promicanje razumijevanja o vodnim ekosustavima i njihovom održavanju duž
+cijelog riječnog sliva.<br />
+• Dijeljenje koristi brana.<br />
+• Izgradnja u skladu s najboljim dostupnim dogovorenim standardima.<br />
+• Razmatranje prekograničnih utjecaja, posebice u projektima koji uključuju
+preusmjeravanje vode.<br />
+Source: <a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/guide_for_investors_cro__izmjena_2016_.pdf">ODRŽIVA HIDROENERGIJA U DINARSKOM LUKU - Vodič za investitore</a>
+</p>
+---
+picto_1_infobox:
+<p><a href="http://www.usitfbih.ba/sumarstvo_bih.html" target="_blank">Šumarstvo Bosne i Hercegovine</a></p>
+---
+picto_2_infobox:
+<p>
+177 ljudi zaposlenih u Republici Srpskoj i 132 u FBiH:<br />
+Podatke o broju zaposlenih u Republici Srpskoj obezbijedio Institut za zaštitu kulturno-historijskog i prirodnog naslijeđa Republike Srpske.<br />
+Podatke o broju zaposlenih u FBiH obezbijedilo Federalno ministarstvo okoliša i turizma.
+</p>
+---
+picto_3_infobox:
+<p><a href="http://data.worldbank.org/indicator/ER.H2O.INTR.PC?locations=BA" target="_blank">Svjetska banka</a></p>
+---
+picto_4_infobox:
+
+<p>
+<a href="http://www.bhas.ba/" target="_blank">Agencija za statistiku Bosne i Hercegovine.</a></p>
+---
+picto_5_infobox:
+
+<p>
+<a href="http://d2ouvy59p0dg6k.cloudfront.net/downloads/una_factsheet_2017_hr_verzija_za_web.pdf">Procjena dobrobiti zaštićenih područja (PA-BAT)</a></p>
+---
+picto_6_infobox:
+
+<p>
+<a href="http://etnar.net/wp-content/uploads/2015/02/Sutjeska-Publikacija.pdf">"Bitka za Sutjesku"</a><br />
+<a href="https://cmsdata.iucn.org/downloads/poland_s_biodiversity_at_risk_fact_sheet_may_2013.pdf">Poland's biodiversity at risk</a></p>
+---

@@ -7,8 +7,29 @@
 
     <title>{{ this.title|striptags }} — natureforpeople.org</title>
 
+    {% set siteRoot = bag('global.targetBaseUrl') %}
+    <!-- OpenGraph data -->
+    <meta property="og:title" content="{{ this.title|striptags }} — natureforpeople.org">
+    <meta property="og:url" content="{{ siteRoot }}/{{ '.'|url|replace('../', '') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{% if this.headline is defined %}{{ this.headline }}{% else %}{{ this.lead_text }}{% endif %}">
+    <meta property="og:image" content="{{ siteRoot }}{% if this.lead_image is defined %}{{ this.lead_image }}{% else %}{{ '/static/images/vectors/WWF_logo.svg' }}{% endif %}">
+    <meta property="og:locale" content="{{ this.alt }}">
+    {% for alt in get_alts(this) %}<meta property="og:locale:alternate" content="{{ alt }}">
+    {% endfor %}
+    {% if this.author is defined %}<meta property="article:author" content="{{ this.author|striptags }}">{% endif %}
+    {#<meta property="article:tag" content="{{ this.tag1 }},{{ this.tag2 }},{{ this.tag3 }},{{ this.tag4 }}">#}
+
+    <!-- Twitter Card -->
+    <meta property="twitter:title" content="{{ this.title|striptags }} — natureforpeople.org">
+    <meta property="twitter:description" content="{% if this.headline is defined %}{{ this.headline }}{% else %}{{ this.lead_text }}{% endif %}">
+    <meta property="twitter:image" content="{{ siteRoot }}{% if this.lead_image is defined %}{{ this.lead_image }}{% else %}{{ '/static/images/vectors/WWF_logo.svg' }}{% endif %}">
+    <meta property="twitter:url" content="{{ siteRoot }}/{{ '.'|url|replace('../', '') }}">
+    <meta property="twitter:card" content="summary">
+
     <link rel="stylesheet" href="{{ '/static/gen/styles.css'|asseturl }}">
     <link rel="shortcut icon" type="image/png" href="{{ '/static/favicon.png'|asseturl }}"/>
+
   </head>
 
   <body class="{{ body_class }}">

@@ -32,13 +32,15 @@ location: Učka Nature Park
 ---
 protection: Nature Park
 ---
+partners: Učka Nature Park Public Institution (NPPI)
+---
 level: IUCN V
 ---
 tag1: education
 ---
 tag2: management
 ---
-tag3:
+tag3: wildlife
 ---
 tag4:
 ---
@@ -73,12 +75,12 @@ body:
 <h4 class="h2 grey playfair-heavy mb1">Planning</h4>
 <dl class="clearfix">
     <dt>Key pre-requisites for success</dt>
-        <dd>Legal:</dd>
+        <dd><strong>Legal:</strong></dd>
         <dd>Statutory decree related to camping outdoors which must be adhered to.</dd>
-        <dd>Institutional:</dd>
+        <dd><strong>Institutional:</strong></dd>
         <dd>The interest of the local manager (NPPI Učka) and/or local self-governing units.</dd>
         <dd>The local manager provides co-funding, equipment and promotes the camp.</dd>
-        <dd>Internal capacities:</dd>
+        <dd><strong>Internal capacities:</strong></dd>
         <dd>Licensed bird ringers that have the authority to ring birds in the protected area.</dd>
         <dd>One person remains outside the office for 2 months during the camp. </dd>
         <dd>Own resources and own equipment, if there are no other funding sources.</dd>
@@ -97,8 +99,8 @@ body:
         <dd>5. volunteer applications </dd>
         <dd>6. arranging the schedule of the employees and volunteers</dd>
         <dd>7. distributing responsibilities among employees and volunteers</dd>
-        <dd>8.a meadow mowing </dd>
-        <dd>8.b bird ringing / morning education and at noon each day</dd>
+        <dd>8a. meadow mowing </dd>
+        <dd>8b. bird ringing / morning education and at noon each day</dd>
         <dd>9. analysing the collected results of bird ringing</dd>
 
     <dt>How have you included the stakeholders?</dt>
@@ -120,17 +122,17 @@ body:
         <dd>Camp presence reduces any potential illegal activities.</dd>
 
     <dt>Positive economic (E) and social (S) change in:</dt>
-        <dd>The public sector (local, national):</dd>
+        <dd><strong>The public sector (local, national):</strong></dd>
         <dd>S: The municipality of Kršan recognised the significance of the camp and joined us in applying for an EU-funded project (Biom and NPPI Učka), and received HRK 1 million (ca. EUR 130,000) for a 4-year period</dd>
-        <dd>The business sector:</dd>
+        <dd><strong>The business sector:</strong></dd>
         <dd>E: local hospitality facilities and stores benefit economically from the volunteers participating in the camp</dd>
-        <dd>Protected area management:</dd>
+        <dd>Protected area management:</dd></dd>
         <dd>S: they get information about the birds; educational and volunteer activities are organised in their area; the area is being promoted on a local, national and international level</dd>
         <dd>The protected areas of Croatia should send their employees to the camp</dd>
-        <dd>The local community:</dd>
+        <dd><strong>The local community:</strong></dd>
         <dd>S: Increased interest in nature,</dd>
         <dd>Parcel owners satisfied since the volunteers mow the parcels and thus keep them in order</dd>
-        <dd>The scientific community:</dd>
+        <dd><strong>The scientific community:</strong></dd>
         <dd>All licensed bird ringers of the last 5 years started their education at this camp.</dd>
 </dl>
 

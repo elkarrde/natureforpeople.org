@@ -2,31 +2,51 @@ categories = [];
 
 const translation = {
   noEmpty: {
-    hr: "Morate upisati barem jedan pojam za pretragu!",
+    bcs: "Morate upisati barem jedan pojam za pretragu!",
     en: "You must enter at least one query to search!"
   },
   totalResults: {
-    hr: "rezultata",
+    bcs: "rezultata",
     en: "results"
   },
   downloadDocument: {
-    hr: "Preuzimanje dokumenta",
+    bcs: "Preuzimanje dokumenta",
     en: "Download document"
   },
+  author: {
+    bcs: "Autor",
+    en: "Author"
+  },
+  size: {
+    bcs: "Veličina",
+    en: "Size"
+  },
+  pageCount: {
+    bcs: "Br. Stranica",
+    en: "Page Count"
+  },
+  country: {
+    bcs: "Država",
+    en: "Country"
+  },
+  keywords: {
+    bcs: "Ključne riječi",
+    en: "Keywords"
+  },
   back: {
-    hr: "Natrag",
+    bcs: "Natrag",
     en: "Back"
   },
   next: {
-    hr: "Naprijed",
+    bcs: "Naprijed",
     en: "Next"
   }
 };
 
 function getLocale() {
   var locale;
-  if (window.location.href.indexOf("/hr/") > -1) {
-    locale = "hr";
+  if (window.location.href.indexOf("/bcs/") > -1) {
+    locale = "bcs";
   } else {
     locale = "en";
   }
@@ -71,18 +91,18 @@ $(document).ready(function() {
           if (data.pagination.total_entries > 0) {
             $('.article-item').addClass('hidden')
             data.data.forEach(function(itm) {
-              $('.article-item a.btn-learn-more[href*="' + itm.slug + '""]').closest('.article-item').removeClass('hidden')
+              $('a.btn-learn-more[href*="' + itm.slug + '"]').closest('.article-item').removeClass('hidden');
             });
-            setTimeout(function() { iso.layout(); }, 300);
+            setTimeout(function() { try { iso.layout(); } catch(e) {} }, 200);
           } else {
             $('#search-bar .response').removeClass('hidden');
             $('.article-item').removeClass('hidden');
-            iso.layout();
+            try { iso.layout(); } catch(e) {}
           }
         });
       } else {
         $('.article-item').removeClass('hidden');
-        iso.layout();
+        try { iso.layout(); } catch(e) {}
       }
 
       return false;
@@ -96,7 +116,7 @@ function requestData(page) {
     url: "https://n4p-knowledgebase.herokuapp.com/api/search/articles" //lolcal dev environment
   }).done(function(data) {
     var total =
-      data.total_entries + " " + translation.totalResults[getLocale()];
+      data.pagination.total_entries + " " + translation.totalResults[getLocale()];
     $(".searchForm___total").html(total);
     if (data.total_entries == 0) {
       $(".no-results-block").removeClass("hide");
@@ -155,21 +175,21 @@ function drawResults(results) {
                             ${element.summary}
                         </p>
                         <div class="py1 grey">
-                            <div class="inline-block mr1"><span class="bold">Author:</span> ${
-                              element.author
+                            <div class="inline-block mr1"><span class="bold">${ translation.author[getLocale()] }:</span> ${
+                              element.author? element.author : '&ndash;'
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Country:</span> ${
-                              element.country
+                            <div class="inline-block mr1"><span class="bold">${ translation.country[getLocale()] }:</span> ${
+                              element.country? element.country : '&ndash;'
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Page Count:</span> ${
+                            <div class="inline-block mr1"><span class="bold">${ translation.pageCount[getLocale()] }:</span> ${
                               element.page_count
                             }</div>
-                            <div class="inline-block mr1"><span class="bold">Size:</span> ${
+                            <div class="inline-block mr1"><span class="bold">${ translation.size[getLocale()] }:</span> ${
                               element.file_size
                             }</div>
                         </div>
                         <div class="py1 grey">
-                            <span class="bold">Keywords:</span> ${
+                            <span class="bold">${ translation.keywords[getLocale()] }:</span> ${
                               element.keywords
                             }
                         </div>

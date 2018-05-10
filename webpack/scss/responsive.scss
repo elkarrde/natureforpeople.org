@@ -10,12 +10,19 @@
     .articles-filter-content {
         padding: 1rem;
         .filter { margin-bottom: 0.5rem; }
+        .center { text-align: left; }
     }
     #articles {
         .article {
             height: auto;
             max-height: 405px;
         }
+
+        .btn-learn-more, .btn-view-study {
+            position: static;
+            bottom: 0;
+        }
+        .btn-learn-more { margin-right: 1rem; }
         .article-item {
             width: 100%;
 
@@ -32,7 +39,10 @@
     }
 
     #article-single {
-        .article-meta { float: none; }
+        .article-meta {
+            float: none;
+            &.mt4 { margin-top: 1rem; }
+        }
         .article-tags {
             float: none;
             margin-top: 0;
@@ -41,6 +51,8 @@
             padding: 0 1rem;
             line-height: 4.25rem;
             word-break: break-word;
+
+            .h2 { font-size: 3.5em; }
         }
         .lead {
             width: 100%;
@@ -59,7 +71,15 @@
                     padding-right: 1rem;
                 }
                 ul { padding-left: 2.5rem; }
-                img { max-width: 100%; }
+                img {
+                    max-width: 100%;
+                    &.fit-text {
+                        margin-left: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                .m20 { margin-left: inherit; }
                 p.highlight {
                     margin-left: 1rem;
                     margin-right: 1rem;
@@ -88,11 +108,73 @@
                 h3 { padding: 0 0.5rem; }
             }
         }
+
+        &.case-study {
+            .data-body-content {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+            .main-data, .sub-data { display: block; }
+            .data-item {
+                flex: none;
+                margin-bottom: 1rem;
+            }
+            h4 {
+                word-break: break-word;
+                font-size: 2.5rem;
+            }
+            dl {
+                dt {
+                    float: none;
+                    width: 80%;
+                }
+                dd { width: 90%; }
+            }
+        }
     }
+
+    .search-holder {
+        .btn {
+            padding: 1rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    #knowledge-base-search {
+        .search-holder { padding: 2rem; }
+        .form-holder {
+            display: block;
+            position: relative;
+        }
+        .country-chooser {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+
+            & > div { line-height: 35px; }
+        }
+        #country-dropdown { top: 70px; }
+        #searchForm {
+            display: block;
+            input[type="submit"] { width: 100%; }
+        }
+        .search-templates {
+            display: block;
+            a {
+                display: inline-block;
+                margin: 0 0.25rem 0.5rem 0;
+                padding: 0.5rem;
+            }
+        }
+
+        input[type="submit"] { padding: 1rem 1.5rem; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px solid red; }
 }
 
 @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-    .width-4 { width: 41em; }
+    .width-4 { width: 48em; }
     .h1-5 { line-height: 4.25rem; }
     #partners {
         .max-width-4 { max-width: 38em; }
@@ -115,6 +197,10 @@
             .col-4 { width: 50%; }
             .col-8 { width: 50%; }
 
+            &.article-small {
+                .btn-learn-more, .btn-view-study { position: static; }
+                .btn-learn-more { margin-right: 1rem; }
+            }
             &.article-medium {
                 .col-12 {
                     width: 50%;
@@ -124,6 +210,13 @@
                     max-height: fit-content;
                     max-width: fit-content;
                 }
+
+                .image {
+                    max-height: fit-content;
+                    .article-image { height: 230px; }
+                }
+                .btn-learn-more, .btn-view-study { position: static; }
+                .btn-learn-more { margin-right: 1rem; }
             }
         }
     }
@@ -132,10 +225,18 @@
     }
 
     #article-single {
+        .article-meta {
+            float: none;
+            &.mt4 { margin-top: 1rem; }
+        }
+        .article-tags { margin-top: 0; }
         .article-title {
             padding: 0 1rem;
             line-height: 4.25rem;
             word-break: break-word;
+        }
+        .article-tags {
+            &.right { float: none; }
         }
         .lead {
             width: 100%;
@@ -154,7 +255,15 @@
                     padding-right: 1rem;
                 }
                 ul { padding-left: 2.5rem; }
-                img { max-width: 100%; }
+                img {
+                    max-width: 100%;
+                    &.fit-text {
+                        margin-left: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                .m20 { margin-left: inherit; }
                 p.highlight {
                     margin-left: 1rem;
                     margin-right: 1rem;
@@ -165,11 +274,40 @@
                 }
             }
         }
+
+        &.case-study {
+            .data-body-content {
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                dl {
+                    dt {
+                        float: none;
+                        width: 50%;
+                    }
+                    dd { width: 85%; }
+                }
+            }
+        }
     }
+
+    #searchForm {
+        input[type="submit"] { padding: 1rem 1.5rem; }
+        #selected-country { width: 185px; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px solid orange; }
 }
 
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
     .width-4 { width: $breakpoint-md; }
+    .max-width-wide { width: 100%; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 100%; }
+        &.col-single { width: 100%; }
+    }
+
     .h1-5 { line-height: 4.2rem; }
     #articles-filter {
         .max-width-4 { max-width: $breakpoint-md; }
@@ -179,6 +317,12 @@
     }
 
     #article-single {
+        .article-meta {
+            &.mt4 { margin-top: 1rem; }
+        }
+        .article-tags {
+            margin-top: 1rem;
+        }
         .article-title {
             padding: 0 1rem;
             line-height: 4.25rem;
@@ -197,10 +341,26 @@
             }
         }
     }
+
+    &.case-study {
+        .data-body-content {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px solid dodgerblue; }
 }
 
-@media (min-width: $breakpoint-lg) {
+@media (min-width: $breakpoint-lg) and (max-width: $breakpoint-lg1)  {
     .width-4 { width: $breakpoint-lg; }
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
     #article-single {
         .article-body {
             .article-body-content {
@@ -208,8 +368,152 @@
             }
         }
     }
+
+    html.reveal-breakpoints { border-bottom: 5px solid forestgreen; }
 }
 
-@media (min-width: $breakpoint-xl) {
-    .width-4 { width: $breakpoint-xl; }
+@media (min-width: $breakpoint-lg1) and (max-width: $breakpoint-lg2)  {
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dashed blue; }
+}
+
+@media (min-width: $breakpoint-lg2) and (max-width: $breakpoint-lg3)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dashed red; }
+}
+
+@media (min-width: $breakpoint-lg3) and (max-width: $breakpoint-xl1)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dashed lime; }
+}
+
+@media (min-width: $breakpoint-xl1) and (max-width: $breakpoint-xl2)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 100%; }
+        &.col-double { width: 66%; }
+        &.col-single { width: 33%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted yellow; }
+}
+
+@media (min-width: $breakpoint-xl2) and (max-width: $breakpoint-xxl)  {
+    .max-width-wide { max-width: 100vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    .article-medium {
+        aside.tags {
+            max-height: 1.65rem;
+            overflow: hidden;
+        }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted red; }
+}
+
+@media (min-width: $breakpoint-xxl) and (max-width: $breakpoint-xxl1)  {
+    .max-width-wide { max-width: 95vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted pink; }
+}
+@media (min-width: $breakpoint-xxl1) and (max-width: $breakpoint-3xl)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted black; }
+}
+
+@media (min-width: $breakpoint-3xl) and (max-width: $breakpoint-3xl1)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 5px dotted silver; }
+}
+
+@media (min-width: $breakpoint-3xl1) and (max-width: $breakpoint-4xl)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted red; }
+}
+
+@media (min-width: $breakpoint-4xl) and (max-width: $breakpoint-5xl)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 75%; }
+        &.col-double { width: 50%; }
+        &.col-single { width: 25%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted gray; }
+}
+@media (min-width: $breakpoint-5xl) and (max-width: $breakpoint-6xl)  {
+    .max-width-wide { max-width: 90vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted lime; }
+}
+@media (min-width: $breakpoint-6xl) and (max-width: $breakpoint-7xl)  {
+    .max-width-wide { max-width: 85vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dotted blue; }
+}
+@media (min-width: $breakpoint-7xl)  {
+    .max-width-wide { max-width: 80vw; }
+    .col {
+        &.col-full { width: 60%; }
+        &.col-double { width: 40%; }
+        &.col-single { width: 20%; }
+    }
+
+    html.reveal-breakpoints { border-bottom: 15px dashed red; }
 }

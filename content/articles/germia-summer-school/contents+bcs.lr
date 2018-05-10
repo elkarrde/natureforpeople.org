@@ -1,0 +1,143 @@
+_model: articles
+---
+_template: articles/single-article.html
+---
+_slug: ocuvanje-prirode-s-pomocu-tehnologije
+---
+title: Očuvanje prirode s pomoću tehnologije
+---
+lang: en
+---
+date: 29.11.2017
+---
+author: <a href="mailto:anrecaj@wwfadria.org">Ardin Nrecaj</a>
+---
+size: big
+---
+hot: false
+---
+lead_image: /static/images/articles/digital-school/kids-learning-about-nature-through-their-favorite-gadgets-(c)-digital-school.jpg
+---
+lead_image_title: Djeca su sudjelujući u kampu u Germiji upoznala prirodu na sasvim drukčiji način © Digitalna škola
+---
+lead_text: Ljetni kampovi u parku Germia na Kosovu nude iskustvo djetinjstva kakvo je nekad bilo: igra u prirodi bez gadgeta. Kad tome dodate IT umove, rezultat je fantastičan!
+---
+learn_more: Pročitaj priču
+---
+view_study: Vidi studiju
+---
+tag1: edukacija
+---
+tag2: lokalne_inicijative
+---
+tag3: upravljanje
+---
+tag4:
+---
+factsheet:
+---
+partner: wwf-adria
+---
+template_title: Slijedite korake do uspjeha
+---
+template_subtitle: Saznajte više činjenica i pojedinosti o ovoj priči
+---
+template_cta_button_text: Pročitajte studiju
+---
+body:
+
+<p>Što se dogodi kada u parku okupite grupu mladih programera? Dobijete aplikaciju o parku, naravno.
+Upravo to dogodilo se u parku Germia, gdje je tijekom ljeta 2016. i 2017. godine digitalna škola iz
+Prištine na Kosovu održavala svoje ljetne kampove u rekreacijskom centru parka.</p>
+
+<p>Izvana, Digitalna škola izgleda jednako kao i bilo koja druga kuća u Prištini. Međutim, kad uđete unutra,
+prva stvar koja će vam privući pozornost je uokvirena disketa na zidu. Dok se uspinjete stepenicama,
+teško je ne primijetiti citate Stevea Jobsa i Billa Gatesa. Direktor Darsej Rizaj pozdravlja nas s velikim
+osmijehom na licu i vodi nas u svoj ured.</p>
+
+<p>“Dobrodošli u naš tehnološki svijet”, njegovim dočekom započinje naš posjet čija je svrha saznati što to
+djeca razvijaju za park.</p>
+
+<img src="/static/images/articles/digital-school/darsej-rizaj-ravnatelj-skole-(c)-ardian-nrecaj-wwf-adria.jpg" class="fit-text" title="Darsej Rizaj, direktor Digitalne škole © Digitalna škola">
+
+<p>Digitalna škola djeluje više od dvije godine i održava tečajeve informatičke tehnologije za djecu.</p>
+
+<p>“Željeli smo djeci pružiti jedno novo iskustvo”, objašnjava Rizaj. Ova avantura započela je kada je WWF
+Adria kontaktirala Digitalnu školu i ponudila joj korištenje obnovljenog rekreacijskog centra u parku.</p>
+
+<p>Kao rezultat suradnje koju WWF dogovara s organizacijama ili školama koje žele održavati svoje
+kampove u rekreacijskom centru u parku Germia, one moraju obavljati određeni društveno korisni rad
+za centar. Prema tom ugovoru, Digitalna škola odlučila je izraditi aplikacije za park. Osmislili su kurikulum
+za ljetno razdoblje koji obuhvaća podučavanje praktičnih IT vještina, u sklopu kojeg djeca mogu naučiti
+rukovati hardverom, softverom, umrežavanjem ili računalnom sigurnošću i različitim multimedijskim
+aplikacijama.</p>
+
+<img src="/static/images/articles/digital-school/summer-camp-(c)-digital-school.jpg" class="fit-text" title="LJETNI KAMP – u ljetnom kampu djeca uživaju u djetinjstvu kakvo je nekad bilo © Digitalna škola">
+
+<p class="highlight">“Ova djeca dosta vremena provode online i ispred računala tako da smo im, da bi im bilo zanimljivije,
+htjeli pružiti priliku da se inspiriraju prirodom i budu offline barem jedne noći tijekom kampa”</p>
+
+<p>“Ova djeca dosta vremena provode online i ispred računala tako da smo im, da bi im bilo zanimljivije,
+htjeli pružiti priliku da se inspiriraju prirodom i budu offline barem jedne noći tijekom kampa”, kaže
+Rizaj, predstavljajući nam neke od dječaka koji su osmislili projekt.</p>
+
+<p>Za Glauka Aliu i Arta Bekollija, dvojicu 13-godišnjaka iz Prištine, najupečatljiviji trenutak u dvije godine
+tijekom kojih su pohađali školu bili su ljetni kampovi. Dok razgovaramo s njima, teško je ne primijetiti
+osmijehe na njihovim licima dok govore o kampu, igrama i koliko im je bilo zabavno. Nekoj od te djece
+to je bilo prvi put u životu da su bila odvojena od obitelji.</p>
+
+<p>“Tijekom ljetnog kampa, prikupljali smo ideje za aplikaciju raspravljajući o svemu u većoj skupini. Na
+kraju smo odabrali one najbolje. Aplikacija je namijenjena posjetiteljima koji dolaze u Prištinu i koji
+nikada nisu čuli za park Germiju, kako bi mogli pronaći informacije o njemu”, objašnjavaju nam Aliu i
+Bekolli tijekom našeg posjeta.</p>
+
+<img src="/static/images/articles/digital-school/camp-is-totally-new-experience-glauk-aliu-claims-(c)-digital-school.jpg" class="fit-text" title="Glauk Aliu had fantastic moments in the camp © Digital School">
+
+<p>Prve godine kreirane su dvije jednostavne mobilne
+aplikacije. Prva od njih pruža općenite informacije o
+parku Germia, a druga je nazvana Outdoor Games
+(Igre na otvorenom).</p>
+
+<p>Djeca sve više vremena provode na svojim
+
+smartfonima, igrajući videoigrice ili pred televizorom. Ideja aplikacije Outdoor Games bila je potaknuti ih
+da posjete park Germia i okušaju se u raznim igrama na otvorenom i aktivnostima koje se nalaze u
+aplikaciji.</p>
+
+<p>Jednom kada se izradi više sekcija, slijedi veliki projekt izrade jedne aplikacije koja sadrži sve o parku,
+spajajući sve tri aplikacije u jednu profesionalnu aplikaciju.</p>
+
+<img src="/static/images/articles/digital-school/digital-school-slogan-(c)-digital-school.jpg" class="fit-text" title="Trust me, I’m a programmer (Vjeruj mi, ja sam programer) – jednostavni slogan Digitalne škole">
+
+<p>“Kakvo cvijeće možete pronaći u parku, koje biljke i
+životinje, gdje su restorani i informacije s njihovim
+kontaktima, kamo možete ići na trčanje ili gdje su sportski
+tereni... sve te informacije mogu se naći u aplikaciji”,
+objašnjava Bekolli.</p>
+
+<p>Aplikacija također broji vaše korake dok se šećete parkom, a sadrži i igricu s prikupljanjem smeća i njegovim odlaganjem u kante za smeće.</p>
+
+<p>“Da bi mogla izrađivati takve stvari, toj djeci trebamo omogućiti daljnji razvoj. Ona našu školu pohađaju
+tek dvije godine. Da bi sve te ideje ugradili u jednu aplikaciju, potreban im je daljnji profesionalni razvoj”,
+rekao je Rizaj.</p>
+
+<p>Rizaj je objasnio da je više od 400 djece sudjelovalo na dva ljetna kampa koja je Digitalna škola
+organizirala u Germiji.</p>
+
+<img src="/static/images/articles/digital-school/over-400-kids-attended-summer-camp-(c)-digital-school.jpg" class="fit-text" title="Više od 400 djece pohađalo je ljetni kamp © Digitalna škola">
+
+<p>FZa Arta Bekollija, to je bilo jedinstveno iskustvo jer nema
+vrlo često priliku provesti noć u kampu u prirodi. “Bilo je
+jako zabavno, jedno potpuno novo iskustvo! U prirodi imate
+više prostora, mjesta za šetnju, na svježem ste zraku i
+možete uživati u zelenilu, što je fantastično! U zgradi ste
+tako izolirani”, rekao je Bekolli.</p>
+
+<p>“U kampu smo igrali različite igre koje su jako veselile djecu. No, najviše im se svidjelo to što su ondje i
+noćili! Za većinu njih to je bilo prvo iskustvo takve vrste: spavanje s prijateljima, daleko od roditelja”,
+zaključio je Rizaj.</p>
+
+<p>A djeca? Ona jednostavno nestrpljivo čekaju novi ljetni kamp u Germiji.</p>
+
+<img src="/static/images/articles/digital-school/darsej-rizaj-in-the-camp-(c)-digital-school.jpg" class="fit-text" title="Darsej Rizaj u kampu © Digitalna škola">
+---

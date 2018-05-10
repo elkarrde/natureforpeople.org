@@ -4,13 +4,13 @@ _template: articles/case-study.html
 ---
 slug:
 ---
-title: Evolucija u restauraciji i očuvanju travnih staništa – Obedska bara
+title: Evolucija u restauraciji i očuvanju travnih staništa — Obedska bara
 ---
-lang: hr
+lang: bcs
 ---
 date:
 ---
-author: <a href="mailto:kivanic@wwfadria.org">Kasandra Ivanić</a>
+author:
 ---
 lead_image:
 ---
@@ -18,7 +18,7 @@ lead_image_title:
 ---
 lead_text:
 ---
-people:
+people: Veliki broj zaposlenih unutar organizacija uključenih u programske-projektne aktivnosti
 ---
 time: 8 years
 ---
@@ -38,7 +38,7 @@ tag2: edukacija
 ---
 tag3: lokalne_inicijative
 ---
-tag4: lokalni_proizvodi
+tag4: divlje_vrste
 ---
 download_title: Napravi promjenu
 ---
@@ -49,7 +49,6 @@ download_cta_button_text: Preuzmi dokument
 download_link: /static/docs/obedska_pdp_en.pdf
 ---
 body:
----
 <dl class="clearfix">
     <dt>Postignuća</dt>
 		<dd>Promena stava stanovništva o zaštićenom području – vrijednostima pašnjaka i obrane od poplava</dd>

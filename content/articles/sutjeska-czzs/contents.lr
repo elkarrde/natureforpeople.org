@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sutjeska-czzs
+_slug: battle-for-sutjeska-preventing-the-governments-decision-to-build-a-hydro-power-plant-in-the-national-park
 ---
 title: Battle for Sutjeska - Preventing the government's decision to build a hydro power plant in the national park
 ---
@@ -20,7 +20,9 @@ lead_image: /static/images/articles/sutjeska/sutjeska_nsrs2.jpg
 ---
 lead_image_title:
 ---
-lead_text: 6,000 people from 12 cities in Bosnia and Herzegovina barred the government's decision on the construction of hydroelectric power plant
+lead_text: Networking and activating the 27 associations and 6,000 citizens led to the prevention of building hydropower plant. They jointly abolished the government’s decision by using more tools - lawsuits, civil initiative, petitions, protest, lobbying at the international and national level, and media campaigns.
+---
+homepage_text: Networking and activating the 27 associations and 6,000 citizens led to the prevention of building hydropower plant.
 ---
 body:
 ---
@@ -30,13 +32,15 @@ view_study: Case study
 ---
 tag1: initiatives
 ---
-tag2:
+tag2: management
 ---
-tag3:
+tag3: gender
 ---
 tag4:
 ---
 factsheet:
+---
+partner: czzs
 ---
 template_title: Follow steps to success
 ---

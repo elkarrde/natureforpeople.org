@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% set body_class = 'signature-generator' %}
+
+{% block body %}
+
+<div class="bg-homepage-white">
+
+  <div class="max-width-4 mx-auto px2">
+    <h2 class="title h2 py1 playfair-heavy">{{ this.title }}</h2>
+  </div>
+
+  <section id="signature-form" class="max-width-4 mx-auto px2 mb4 clearfix">
+    <div class="form-holder max-width-4 mx-auto py2 pb4">
+        <form action="#" method="get" class="w100">
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1 bold">{{ this.name }}:</span>
+              <input name="s-name" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner required col col-10" placeholder="{{ this.name }}" required="required">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1 bold">{{ this.officetitle }}:</span>
+              <input name="s-title" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner required col col-10" placeholder="{{ this.officetitle }}" required="required">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1">{{ this.phone1 }}:</span>
+              <input name="s-phone1" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner col col-10" placeholder="{{ this.phone1 }}">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1">{{ this.phone2 }}:</span>
+              <input name="s-phone2" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner col col-10" placeholder="{{ this.phone2 }}">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1 bold">{{ this.email }}:</span>
+              <input name="s-email" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner required col col-10" placeholder="{{ this.email }}" required="required">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="black py1 col col-1">Skype:</span>
+              <input name="s-skype" type="text" class="input input-query grey-dark bg-white p1 border-none box-shadow-inner col col-10" placeholder="Skype">
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="col col-1">&nbsp;</span>
+              <div class="col col-10 ">
+                {{ this.form_notification }}
+              </div>
+            </div>
+            <div class="form-item p1 col col-12">
+              <span class="col col-1">&nbsp;</span>
+              <button type="submit" class="btn white border-none pointer bg-si-green bg-si-green-dark-hover js-sig-generate">
+                {{ this.generate }}
+              </button>
+            </div>
+        </form>
+    </div>
+  </section>
+
+  <section id="raw" class="max-width-4 mx-auto p2 hide">
+    <div class="border box-shadow-inner p2 js-content">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+<table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+<tr><td style="padding-bottom: 5px; color: #539EE3; font-size: 20px; font-family: Raleway, Arial, Helvetica, sans-serif;"><b id="s-name">?</b></td></tr>
+<tr><td style="color: #333333; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif; text-transform: uppercase;"><b id="s-title">?</b><br><br></td></tr>
+<tr><td valign="top" style="vertical-align: top; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><span style="color: #FCA63A;">M:</span>&nbsp;<span style="vertical-align: top; color: #333333; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;" id="s-phone1">?</span></td></tr>
+<tr><td valign="top" style="vertical-align: top; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><span style="color: #FCA63A;">T:</span>&nbsp;<span style="vertical-align: top; color: #333333; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;" id="s-phone2">?</span></td></tr>
+<tr><td valign="top" style="vertical-align: top; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><span style="color: #FCA63A;">E:</span>&nbsp;<span style="vertical-align: top; color: #333333; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><a href="mailto:?@wwfadria.org" style="text-decoration: none; font-weight: normal; font-size: 14px; color: #333333;" id="s-email">?@wwfadria.org</a></span></td></tr>
+<tr><td valign="top" style="vertical-align: top; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><span style="color: #FCA63A;">Skype:</span>&nbsp;<span style="vertical-align: top; color: #333333; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;" id="s-skype">?</span><br><br></td></tr>
+<tr><td valign="top" style="vertical-align: top; color: #FCA63A; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><a href="http://adria.panda.org" style=" color: #FCA63A; font-weight: normal; font-size: 14px;">http://adria.panda.org</a><br><br></td></tr>
+<tr><td style="padding-bottom: 8px; padding-top: 5px;"><img src="https://natureforpeople.org/static/images/signatureimage.jpg"></td></tr>
+<tr><td valign="top" style="vertical-align: top; font-size: 14px; font-family: Raleway, Arial, Helvetica, sans-serif;"><b>WWF Adria</b>&nbsp;&nbsp;Budmanijeva 5, 10000 Zagreb, Croatia</td></tr>
+</table>
+    </div>
+  </section>
+
+  <section id="signature" class="max-width-4 mx-auto px2 mb4 clearfix hide">
+    <div class="search-holder max-width-4 mx-auto py2 pb4">
+      <div class="w100">
+        <div class="form-item p1 col col-12">
+          <textarea name="signature" cols="30" rows="10" class="input input-result grey-dark bg-white p1 border-none box-shadow-inner col col-12"></textarea>
+        </div>
+        <div class="form-item p1 col col-12">
+          <p>{{ this.help }}</p>
+          <ul class="list-reset">
+            <li><a href="https://mail.google.com/mail/u/1/#settings/general" target="_blank" class="pink pink-hover underline">GMail {{ this.settings }}</a></li>
+          </ul>
+        </div>
+        <div class="form-item p1 col col-12">
+          <button type="button" class="btn white border-none pointer bg-si-green bg-si-green-dark-hover js-sig-back">
+            {{ this.back }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

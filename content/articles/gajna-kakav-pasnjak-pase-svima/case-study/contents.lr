@@ -35,6 +35,8 @@ protection: &ndash;
 ---
 level: Natura 2000
 ---
+partners: Natura Slavonica Public Institution
+---
 tag1: culture
 ---
 tag2: products
@@ -53,7 +55,7 @@ download_link: /static/docs/gajna_pdp_en.pdf
 ---
 body:
 
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Accomplishments (overview)</dt>
         <dd>The only protected area in Croatia for which the management was entrusted to the local community and an NGO</dd>
         <dd>A cooperative of livestock breeders was founded and includes 16 family farms (OPGs; positive benefit for 50 family members).</dd>
@@ -64,13 +66,13 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Problem to be resolved</dt>
         <dd>Overgrowth of pastures</dd>
         <dd>Loss of indigenous animal breeds</dd>
         <dd>Depopulation</dd>
 </dl>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Opportunity to be taken</dt>
         <dd>Flood control</dd>
         <dd>Cultural heritage</dd>
@@ -81,15 +83,15 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Planning</h4>
-<dl class="clearfix">
+<dl class="clearfix numbered">
     <dt>Key requirements for success</dt>
-        <dd>1. Land use (state/private)</dd>
-        <dd>2. Overlapping authority (conservation, agriculture, water)</dd>
-        <dd>3. Poor coordination of responsible sectors</dd>
-        <dd>4. Greater valuation of local products (*social benefit from grazing on floodplain pastures)</dd>
-        <dd>5. Establishment of the Cooperation Council (local population, competent sectors)</dd>
-        <dd>6. Retention of the local population</dd>
-        <dd>7. Preserving local practices</dd>
+        <dd>Land use (state/private)</dd>
+        <dd>Overlapping authority (conservation, agriculture, water)</dd>
+        <dd>Poor coordination of responsible sectors</dd>
+        <dd>Greater valuation of local products (*social benefit from grazing on floodplain pastures)</dd>
+        <dd>Establishment of the Cooperation Council (local population, competent sectors)</dd>
+        <dd>Retention of the local population</dd>
+        <dd>Preserving local practices</dd>
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
@@ -120,7 +122,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Changes (your contribution to change)</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>What are the positive changes for nature?</dt>
         <dd>Increase in the flora and fauna, endemic plants and animals, species under Natura 2000 protection</dd>
         <dd>Retaining indigenous breeds (Slavonian Podolian cattle, Slavonian Black pig)</dd>
@@ -131,7 +133,7 @@ body:
 </dl>
 
 <h4 class="h2 grey playfair-heavy mb1">Replication and recommendations</h4>
-<dl class="clearfix">
+<dl class="clearfix bulleted">
     <dt>Which key items were important for replication?</dt>
         <dd>Volunteer work</dd>
         <dd>Motivation of members of the local community to launch the initiative</dd>

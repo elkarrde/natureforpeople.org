@@ -9,7 +9,7 @@
         <div class="box-shadow bg-white-dirty p2">
           <h4 class="h5 m0">{{ attachment.title }}</h4>
           <div class="grey mt1">{{ attachment.description }}</div>
-          <img src={{ attachment.image }} alt={{ attachment.image }} class="box--shadow image-protected">
+          <img src={{ attachment.image|url }} alt={{ attachment.image }} class="image-protected">
           <a
             href="{{ attachment.path }}"
             class="block mt2 bg-si-green bg-si-green-dark-hover white bold h7 p2"

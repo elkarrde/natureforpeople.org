@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: sasko-lake
+_slug: increase-revenues-for-the-local-population-through-sustainable-tourism-at-sasko-lake
 ---
 title: Increase revenues for the local population through sustainable tourism at Šasko Lake
 ---
@@ -39,6 +39,8 @@ tag3: management
 tag4: culture
 ---
 factsheet:
+---
+partner: green-home
 ---
 template_title: Follow steps to success
 ---

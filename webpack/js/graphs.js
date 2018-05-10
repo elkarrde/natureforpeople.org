@@ -122,7 +122,7 @@ function renderPAMainPotentials(data, graph_choices, locale) {
 		, sorted = sortNestedVals(only_non_empty, 'p_with_val', 'desc')
 		, p_plus_vals_line = [partition_names['p_with_val'][locale]].concat(_.map(sorted, 'p_with_val'))
 		, p_minus_vals_line = [partition_names['p_without_val'][locale]].concat(_.map(sorted, 'p_without_val'))
-		, stakeholders_line = localizeNames(stakeholder_names, ['x'].concat(_.keys(sorted)), locale);
+		, stakeholders_line = localizeNames(question_names, ['x'].concat(_.keys(sorted)), locale);
 
 	renderTwicePartedXGraph({
 		id: '#pa_chart_potentials',
@@ -438,49 +438,49 @@ function revertToEn(locale, name) {
 
 
 stakeholder_names = {
-	'Bussiness sector': {
-		'en': 'Bussiness sector',
-		'hr': 'Poslovni sektor'
+	'Business sector': {
+		'en': 'Business sector',
+		'bcs': 'Poslovni sektor'
 	},
 	'National and regional and local government': {
 		'en': 'National and regional and local government',
-		'hr': 'Vlada/javni sektor'
+		'bcs': 'Vlada/javni sektor'
 	},
 	'National, regional and local government': {
 		'en': 'National, regional and local government',
-		'hr': 'Vlada/javni sektor'
+		'bcs': 'Vlada/javni sektor'
 	},
 	'Local people living near the PA': {
 		'en': 'Local people living near the PA',
-		'hr': 'Stanovništvo u blizini zaštićenog područja'
+		'bcs': 'Stanovništvo u blizini zaštićenog područja'
 	},
 	'Local people living in the PA': {
 		'en': 'Local people living in the PA',
-		'hr': 'Stanovništvo u zaštićenom području'
+		'bcs': 'Stanovništvo u zaštićenom području'
 	},
 	'Civil associations': {
 		'en': 'Civil associations',
-		'hr': 'Udruženja građana'
+		'bcs': 'Udruženja građana'
 	},
 	'Non-governmental organizations, experts, scientists': {
 		'en': 'Non-governmental organizations, experts, scientists',
-		'hr': 'Nevladine udruge, stručnjaci i znanstvenici'
+		'bcs': 'Nevladine udruge, stručnjaci i znanstvenici'
 	},
 	'Non-governmental organizations': {
 		'en': 'Non-governmental organizations',
-		'hr': 'Nevladine udruge'
+		'bcs': 'Nevladine udruge'
 	},
-	'Experts & Scientists': {
+	'Experts and scientists': {
 		'en': 'Experts & Scientists',
-		'hr': 'Stručnjaci i znanstvenici'
+		'bcs': 'Stručnjaci i znanstvenici'
 	},
 	'National population': {
 		'en': 'National population',
-		'hr': 'Stanovništvo',
+		'bcs': 'Stanovništvo',
 	},
 	'Global community': {
 		'en': 'Global community',
-		'hr': 'Međunarodna zajednica'
+		'bcs': 'Međunarodna zajednica'
 	}
 }
 
@@ -500,95 +500,95 @@ stakeholders_hr_to_en = {
 question_names = {
 	'Flood prevention': {
 		'en': 'Flood prevention',
-		'hr': 'Obrana od poplava'
+		'bcs': 'Obrana od poplava'
 	},
 	"Genetic material": {
 		'en':'Genetic material',
-		'hr':'Genetski materijal'
+		'bcs':'Genetski materijal'
 	},
 	"Formal & informal education": {
 		'en':'Formal & informal education',
-		'hr':'Formalna i neformalna edukacija'
+		'bcs':'Formalna i neformalna edukacija'
 	},
 	"Specific site value": {
 		'en':'Specific site value',
-		'hr':'Specifična obilježja'
+		'bcs':'Specifična obilježja'
 	},
 	"Cultural & historical values": {
 		'en': 'Cultural & historical values',
-		'hr': 'Kulturne i povijesne vrijednosti'
+		'bcs': 'Kulturne i povijesne vrijednosti'
 	},
 	"Nature conservation": {
 		'en': 'Nature conservation',
-		'hr': 'Zaštita prirode'
+		'bcs': 'Zaštita prirode'
 	},
 	"Building knowledge": {
 		'en': 'Building knowledge',
-		'hr': 'Istraživanje i nadogradnja znanja'
+		'bcs': 'Istraživanje i nadogradnja znanja'
 	},
 	"Tourism & recreation": {
 		'en': 'Tourism & recreation',
-		'hr': 'Turizam i rekreacija'
+		'bcs': 'Turizam i rekreacija'
 	},
 	"Pollination & honey production": {
 		'en': 'Pollination & honey production',
-		'hr': 'Oprašivanje i proizvodnja meda'
+		'bcs': 'Oprašivanje i proizvodnja meda'
 	},
 	"Livestock grazing": {
 		'en': 'Livestock grazing',
-		'hr': 'Stočarstvo'
+		'bcs': 'Stočarstvo'
 	},
 	"Fishing": {
 		'en': 'Fishing',
-		'hr': 'Ribarstvo'
+		'bcs': 'Ribarstvo'
 	},
 	"Water quality & quantity": {
 		'en': 'Water quality & quantity',
-		'hr': 'Kvaliteta i količina vode'
+		'bcs': 'Kvaliteta i količina vode'
 	},
 	"Hunting": {
 		'en': 'Hunting',
-		'hr': 'Lov'
+		'bcs': 'Lov'
 	},
 	"Wood": {
 		'en': 'Wood',
-		'hr': 'Šumarstvo'
+		'bcs': 'Šumarstvo'
 	},
 	"Climate change mitigation": {
 		'en': 'Climate change mitigation',
-		'hr': 'Ublažavanje klimatskih promjena'
+		'bcs': 'Ublažavanje klimatskih promjena'
 	},
 	"Commercial & non-commercial water use": {
 		'en': 'Commercial & non-commercial water use',
-		'hr': 'Komercijalna i nekomercijalna uporaba vode'
+		'bcs': 'Komercijalna i nekomercijalna uporaba vode'
 	},
 	"Traditional agriculture": {
 		'en': 'Traditional agriculture',
-		'hr': 'Tradicionalna poljoprivreda'
+		'bcs': 'Tradicionalna poljoprivreda'
 	},
 	"Wild food plants and mushrooms": {
 		'en': 'Wild food plants and mushrooms',
-		'hr': 'Samoniklo jestivo bilje i gljive'
+		'bcs': 'Samoniklo jestivo bilje i gljive'
 	},
 	"Jobs in Protected Areas": {
 		'en': 'Jobs in Protected Areas',
-		'hr': 'Zapošljavanje u zaštićenom području'
+		'bcs': 'Zapošljavanje u zaštićenom području'
 	},
 	"Jobs in PA": {
 		'en': 'Jobs in Protected Areas',
-		'hr': 'Zapošljavanje u zaštićenom području'
+		'bcs': 'Zapošljavanje u zaštićenom području'
 	},
 	"Nature materials": {
 		'en': 'Nature materials',
-		'hr': 'Prirodni materijali'
+		'bcs': 'Prirodni materijali'
 	},
 	"Soil stabilization": {
 		'en': 'Soil stabilization',
-		'hr': 'Stabilizacija tla'
+		'bcs': 'Stabilizacija tla'
 	},
 	"Medicinal herbs": {
 		'en': 'Medicinal herbs',
-		'hr': 'Ljekovito bilje'
+		'bcs': 'Ljekovito bilje'
 	}
 }
 
@@ -623,35 +623,35 @@ questions_hr_to_en = {
 partition_names = {
 	'low_eco': {
 		'en': 'Low economic values' ,
-		'hr': 'Niske ekonomske vrijednosti'
+		'bcs': 'Niske ekonomske vrijednosti'
 	},
 	'high_eco': {
 		'en': 'High economic values',
-		'hr': 'Visoke ekonomske vrijednosti'
+		'bcs': 'Visoke ekonomske vrijednosti'
 	},
 	'eco_v': {
 		'en': 'Economic values',
-		'hr': 'Ekonomske vrijednosti'
+		'bcs': 'Ekonomske vrijednosti'
 	},
 	'exi_v': {
 		'en': 'Subsistence values',
-		'hr': 'Egzistencijalne vrijednosti'
+		'bcs': 'Egzistencijalne vrijednosti'
 	},
 	'eco_p': {
 		'en': 'Potential with economic value',
-		'hr': 'Ekonomski potencijali'
+		'bcs': 'Ekonomski potencijali'
 	},
 	'exi_p': {
 		'en': 'Potential with existential value',
-		'hr': 'Egzistencijalni potencijali'
+		'bcs': 'Egzistencijalni potencijali'
 	},
 	'p_with_val': {
 		'en': 'Potential with current economic value',
-		'hr': 'Potencijal sa trenutnom ekonomskom vrijednosti'
+		'bcs': 'Potencijal sa trenutnom ekonomskom vrijednosti'
 	},
 	'p_without_val': {
 		'en': 'Potential without current economic value',
-		'hr': 'Potencijal bez trenutne ekonomske vrijednosti'
+		'bcs': 'Potencijal bez trenutne ekonomske vrijednosti'
 	}
 }
 
@@ -659,36 +659,36 @@ label_x_axis = {
 	/* Country graphs */
 	"#country_chart_overall": {
 		"en": "Number of protected areas",
-		"hr": "Broj zaštićenih područja"
+		"bcs": "Broj zaštićenih područja"
 	},
 	"#country_chart_overall_econ": {
 		"en": "Number of protected areas",
-		"hr": "Broj zaštićenih područja"
+		"bcs": "Broj zaštićenih područja"
 	},
 	"#country_chart_flow_econ": {
 		"en": "Number of protected areas",
-		"hr": "Broj zaštićenih područja"
+		"bcs": "Broj zaštićenih područja"
 	},
 	"#country_chart_potentials": {
 		"en": "Number of protected areas",
-		"hr": "Broj zaštićenih područja"
+		"bcs": "Broj zaštićenih područja"
 	},
 	/* PA graphs */
 	"#pa_chart_overall": {
 		"en": "Number of stakeholder groups",
-		"hr": "Broj grupa dionika"
+		"bcs": "Broj grupa dionika"
 	},
 	"#pa_chart_overall_econ": {
 		"en": "Number of protected area values",
-		"hr": "Broj vrijednosti zaštićenog područja",
+		"bcs": "Broj vrijednosti zaštićenog područja",
 	},
 	"#pa_chart_flow_econ": {
 		"en": "Number of stakeholder groups",
-		"hr": "Broj grupa dionika"
+		"bcs": "Broj grupa dionika"
 	},
 	"#pa_chart_potentials": {
 		"en": "Number of stakeholder groups",
-		"hr": "Broj grupa dionika"
+		"bcs": "Broj grupa dionika"
 	}
 }
 

@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: kozjanski-park-how-to-make-a-brand-out-of-apples
+_slug: how-to-make-a-brand-out-of-apples
 ---
 title: How to make a brand – out of apples?
 ---
@@ -33,8 +33,12 @@ tag2: initiatives
 tag3: management
 ---
 tag4: tourism
+--
+tag5: culture
 ---
 factsheet:
+---
+partner: kozjanski-park
 ---
 template_title: Follow steps to success
 ---
@@ -112,16 +116,7 @@ the production of apple juice, and all they have to pay for the service is the c
 purchased from the local producers of the old varieties. Last year, the park purchased 3.5 ha of
 land and planted 200 new saplings, to have its own meadow orchard.</p>
 
-
-<div class="clearfix clear m20">
-    <div class="col col-6 pr1">
-        <img src="/static/images/articles/kozjanski-park/hrvoje-teo-orsanic.jpg" class="fit--text" title="Hrvoje Teo Oršanič, director of the Kozjansko Regional Park with Franc Stegenšek, who was awarded with Carjevič award">
-    </div>
-    <div class="col col-6 pl1">
-        <img src="/static/images/articles/kozjanski-park/nagradu-carjevic-ove-je-godine-dobio-franc-stegensek-4-(c)-ljubisa-pejovic-parkovi-dinarida_1.jpg" class="fit--text" title="This year's Carjevič award was given to Franc Stegenšek © Kozjanski park">
-    </div>
-</div>
-
+<img src="/static/images/articles/kozjanski-park/hrvoje-teo-orsanic-i-carjevic-franc-stegensek-(c)-kozjanski-park.jpg" class="fit-text" title="Hrvoje Teo Oršanić and Carjevič Franc Stegenšek © Kozjanski park">
 
 <p>Even in the past, these old orchards were specific to Kozjansko Park. “The park administration
 recognised the importance of those old orchards from the perspective of nature conservation and

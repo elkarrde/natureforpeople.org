@@ -85,10 +85,42 @@
   }
 }
 
+.articles-grid {
+  .article-item { visibility: visible; }
+  &.loading {
+    .article-item { visibility: hidden; }
+  }
+}
+
 .article-filter-selection {
-  .filter.active {
+  .article-filter {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.article-filter {
+  &.active {
     color: $white;
     background-color: $pink;
+  }
+
+  &.active.img-filter {
+    background-color: transparent;
+
+    &+.notificator {
+      float: left;
+
+      &:after {
+        content: "\25CF";
+        color: $pink;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 2rem;
+        text-shadow: 0 1px 0 rgba(black, 0.75);
+      }
+    }
   }
 }
 
@@ -98,6 +130,13 @@
       max-width: 100%;
       border-radius: 2px;
       margin-bottom: 4rem;
+    }
+  }
+
+  .article-tags {
+    .label-tag {
+      display: inline-block;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -152,6 +191,13 @@
       }
 
       ul { padding-left: 2.5rem; }
+    }
+  }
+
+  &.case-study {
+    .data-body-content {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 }

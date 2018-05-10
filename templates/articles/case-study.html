@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'case-study' %}
+{% set siteRoot = bag('global.targetBaseUrl') %}
 
 {% block body %}
 
-<section id="article-single case-study" class="pb4">
+<section id="article-single" class="case-study pb4">
   <div class="max-width-4 mx-auto">
 
     <div class="clearfix">
@@ -29,21 +30,21 @@
         <div class="social grey col col-2 center">
           <div class="uppercase bold center pt2 pb2">{{ bag('i18n', this.alt, 'share-article') }}</div>
           <div class="inline-block mx1">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ '.'|url }}" target="_blank">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteRoot }}/{{ '.'|url|replace('../', '') }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 fb">
                 <span class="i-facebook"></span></a>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="https://twitter.com/home?status={{ '.'|url }}" target="_blank">
+            <a href="https://twitter.com/home?status={{ siteRoot }}/{{ '.'|url|replace('../', '') }} @wwfadria" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 twitter">
                 <span class="i-twitter"></span>
               </span>
             </a>
           </div>
           <div class="inline-block mx1">
-            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ '.'|url }}" target="_blank">
+            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ siteRoot }}/{{ '.'|url|replace('../', '') }}" target="_blank">
               <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 email">
                 <span class="i-mail2"></span>
               </span>
@@ -78,26 +79,26 @@
       </section>
 
       <section id="sub-data" class="sub-data clearfix mt1 mb2 py2 flex flex-row flex-stretch justify-around">
-        <div class="data-item flex-1 mx1 py2 bg-white box-shadow">
-          <div class="clearfix center">
+        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
+          <div class="clearfix center p2">
             <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'organization') }}</h5>
             <p class="black">{{ this.organization }}</p>
           </div>
         </div>
-        <div class="data-item flex-1 mx1 py2 bg-white box-shadow">
-          <div class="clearfix center">
+        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
+          <div class="clearfix center p2">
             <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'country') }}</h5>
             <p class="black">{{ this.country }}</p>
           </div>
         </div>
-        <div class="data-item flex-1 mx1 py2 bg-white box-shadow">
-          <div class="clearfix center">
+        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
+          <div class="clearfix center p2">
             <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'location') }}</h5>
             <p class="black">{{ this.location }}</p>
           </div>
         </div>
-        <div class="data-item flex-1 mx1 py2 bg-white box-shadow">
-          <div class="clearfix center">
+        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
+          <div class="clearfix center p2">
             <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'protection-level') }}</h5>
             <p class="black">{{ this.level }}</p>
           </div>

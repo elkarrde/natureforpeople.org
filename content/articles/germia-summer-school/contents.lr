@@ -12,7 +12,7 @@ date: 29.11.2017
 ---
 author: <a href="mailto:anrecaj@wwfadria.org">Ardin Nrecaj</a>
 ---
-size: full
+size: big
 ---
 hot: false
 ---
@@ -30,11 +30,13 @@ tag1: education
 ---
 tag2: initiatives
 ---
-tag3:
+tag3: management
 ---
 tag4:
 ---
 factsheet:
+---
+partner: wwf-adria
 ---
 body:
 

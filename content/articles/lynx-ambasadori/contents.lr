@@ -2,7 +2,7 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: lynx-ambassadors
+_slug: developing-a-network-of-young-lynx-ambassadors-in-protected-areas
 ---
 title: Developing a network of young Lynx ambassadors in protected areas
 ---
@@ -12,13 +12,13 @@ date:
 ---
 author: <a href="mailto:kivanic@wwfadria.org ">Kasandra Ivanić</a>
 ---
-size: small
+size: full
 ---
 hot: false
 ---
-lead_image:
+lead_image: /static/images/articles/lynx-ambassadors/front.jpg
 ---
-lead_image_title:
+lead_image_title: Developing a network of young Lynx ambassadors in protected areas
 ---
 lead_text: 60 young students from 25 schools in the protected areas of Albania inhabited by lynx were educated and became Lynx ambassadors.
 ---
@@ -30,11 +30,13 @@ tag1: education
 ---
 tag2: wildlife
 ---
-tag3:
+tag3: gender
 ---
 tag4:
 ---
 factsheet:
+---
+partner: ppnea
 ---
 template_title: Follow steps to success
 ---

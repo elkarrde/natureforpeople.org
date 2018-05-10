@@ -3,8 +3,8 @@ const Control = require("can-control");
 
 function getLocale() {
   var locale;
-  if (window.location.href.indexOf("/hr/") > -1) {
-    locale = "hr";
+  if (window.location.href.indexOf("/bcs/") > -1 || window.location.href.indexOf("/hr/") > -1) {
+    locale = "bcs";
   } else {
     locale = "en";
   }
@@ -80,7 +80,6 @@ var ProtectedAreasControl = Control.extend({
     const $el = this.$element.find(selector);
 
     $el.find("[data-dropdown-container]").remove();
-
     $el.append(
       "<ul class='z2 m0 absolute bg-hr-blue list-reset' data-dropdown-container style='display:none'></ul>"
     );
@@ -140,6 +139,7 @@ var ProtectedAreasControl = Control.extend({
 
     if (!this.$element.find($target).length) {
       this.$element.find("[data-dropdown-container]").hide();
+      $("[data-dropdown-container]").hide();
     }
   },
   "[data-graphid] click": function(el) {
@@ -178,7 +178,7 @@ var ProtectedAreasControl = Control.extend({
     }
   },
   loadCountriesParks(doneCb) {
-    dataLoader.loadJSON("/static/countries-parks.json", cp => {
+    dataLoader.loadJSON("/static/countries-parks.json?v=2", cp => {
       const locale = getLocale();
 
       cp.forEach(element => {
