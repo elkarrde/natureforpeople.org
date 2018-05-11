@@ -14,27 +14,27 @@ pa_2: Zgjidhni zonën e mbrojtur
 ---
 graph_values: Zgjidhni vlerat që dëshironi të prezantohen në grafikë:
 ---
-overall_values: Vlerat e përgjithshme 
+overall_values: Vlerat e përgjithshme
 ---
 econ_values: Vlerat e përgjithshme ekonomike
 ---
-flow_econ_value: Rrjedha e vlerave ekonomike 
+flow_econ_value: Rrjedha e vlerave ekonomike
 ---
-potential: Potencialet kryesore 
+potential: Potencialet kryesore
 ---
 message_head: Asgjë për të treguar.
 ---
 message_1: Zgjidhni vendin dhe/ose ZB
 ---
-message_2: Zgjidhni Vlerat 
+message_2: Zgjidhni Vlerat
 ---
-cta_button_text: Le të  zgjidhim së bashku sfidat 
+cta_button_text: Le të  zgjidhim së bashku sfidat
 ---
 country: Vendi
 ---
-pa: Zonat e Mbrojtura 
+pa: Zonat e Mbrojtura
 ---
-values: Vlerat 
+values: Vlerat
 ---
 learn_more_backline: Lexo më shumë
 ---
@@ -50,12 +50,12 @@ slug: protected-areas
 ---
 intro_body:
 <p>WWF-i po  paraqet gjetjet kyçe të
-<a href="http://croatia.panda.org/en/what_we_do/protected_areas/pa4np/pa_bat_methodology/" class="cc-secondary">analizës PA-BAT</a> 
+<a href="http://croatia.panda.org/en/what_we_do/protected_areas/pa4np/pa_bat_methodology/" class="cc-secondary" target="_blank">analizës PA-BAT</a>
 te cila mund të ofrojë informacione mbi perceprimin nga aktorët e ndryshëm të vlerave aktuale dhe potencialet te zonave të mbrojtura. Analiza është bazuar  në diskutimet që kanë përfshirë më shumë se 1300 ekspertë, nëpunës qeveritarë, sipërmarrës, fermerë dhe përfaqësues të komunitetit lokal në rajon.</p>
 
 <p>Vlerat e parashikuara të zonës së mbrojtur mund të jenë ekzistenciale, ekonomike dhe që kanë potencial ekonomik në të ardhmen. Rezultatet e vlerësimit janë të rëndësishme për menaxherët e zonave të mbrojtura, por edhe për qeveritë kombëtare dhe lokale si dhe aktorët lokalë të cilët po përpiqen ndërmarrin nisma për zhvillim të qëndrueshëm.</p>
 ---
-intro_title: Vlerat e zonave të mbrojtura 
+intro_title: Vlerat e zonave të mbrojtura
 ---
 documents:
 

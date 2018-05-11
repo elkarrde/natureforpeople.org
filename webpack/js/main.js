@@ -386,9 +386,14 @@ function setupLogoSlider() {
   let maxLogos = Math.floor(window.innerWidth / 180);
   $('.partners-list').slick({
     autoplay: true,
-    arrows: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    dots: true,
+    appendArrows: $('.partners-list'),
     slidesToShow: maxLogos > 6? 6 : maxLogos,
     slidesToScroll: 1,
+    swipe: true,
+    swipeToSlide: true,
     pauseOnHover: true
   });
 }

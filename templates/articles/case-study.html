@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'case-study' %}
+
 {% from "articles/_share-block.html" import share_block %}
 {% from "articles/_subheader-block.html" import subheader_block %}
+
+{% from "articles/_cta-wide.html" import cta_wide_download %}
+{% from "articles/_cta-box.html" import cta_box_download %}
 
 {% block body %}
 
@@ -81,34 +85,8 @@
       </section>
 
       <section id="case-study" class="article-case-study clearfix mb4">
-          <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
-              <h4 class="black h4 center">{{ this.download_title }}</h4>
-              <p class="black center px4">{{ this.download_subtitle }}</p>
-
-              <div class="center mb3">
-                  <a href="{{ this.download_link|url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
-                      <span class="i-download3 mr1"></span> {{ this.download_cta_button_text }}
-                  </a>
-              </div>
-          </div>
+          {{ cta_box_download(this.download_title, this.download_subtitle, this.download_cta_button_text, (this.download_link|url)) }}
       </section>
-
-      {#
-      <section id="case-study" class="article-case-study clearfix mb4">
-        <div class="bg-green-light clearfix px4 py4">
-          <a href="{{ '.'|url }}" title="Read case study">
-            <h3 class="h3 white uppercase col col-8">
-              Get more facts and
-              details about this story
-            </h3>
-            <div class="col col-4 center my3">
-              <span class="i-download3 white h2"></span>
-            </div>
-          </a>
-        </div>
-      </section>
-      #}
-
     </div>
   </div>
 </section>

@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'article-single' %}
+
 {% from "articles/_share-block.html" import share_block %}
 {% from "articles/_subheader-block.html" import subheader_block %}
+
+{% from "articles/_cta-wide.html" import cta_wide %}
+{% from "articles/_cta-box.html" import cta_box %}
 
 {% block body %}
 
@@ -34,64 +38,14 @@
       </section>
 
       {% if site.get(this.path + '/case-study') %}
-      {#
-      <section id="case-study" class="article-case-study clearfix mb4">
-          <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
-              <h4 class="black h4 center">{{ this.template_title }}</h4>
-              <p class="black center px4">{{ this.template_subtitle }}</p>
-
-              <div class="center mb3">
-                  <a href="{{ '.'|url }}case-study" class="btn bg-si-green bg-si-green-dark-hover white my2">
-                      <span class="i-arrow-right2 mr1"></span> {{ this.template_cta_button_text }}
-                  </a>
-              </div>
-          </div>
-      </section>
-      #}
-
-      <section id="case-study" class="article-case-study clearfix mb4">
-        <div class="bg-green-light clearfix px4 py4">
-          <div class="col col-8">
-            <a href="{{ '.'|url }}case-study" title="{{ this.template_cta_button_text }}">
-              <h3 class="h3 white uppercase pt0 pb1 my0">
-                {{ this.template_title }}
-              </h3>
-              <p class="h4 white uppercase py0 my0">
-                {{ this.template_subtitle }}
-              </p>
-            </a>
-          </div>
-          <div class="col col-4 center my3">
-            <a href="{{ '.'|url }}case-study" title="{{ this.template_cta_button_text }}">
-              <span class="i-arrow-right2 white h2"></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
+        <section id="case-study" class="article-case-study clearfix mb4">
+          {{ cta_wide(this.template_title, this.template_subtitle, this.template_cta_button_text, ('.'|url) + 'case-study') }}
+        </section>
       {% else %}
-
-      {% set root = site.get('/', this.alt) %}
-      <section id="case-study" class="article-case-study clearfix mb4">
-        <div class="bg-green-light clearfix px4 py4">
-          <div class="col col-8">
-            <a href="{{ root.share_link }}" title="{{ root.share_cta_button_text }}">
-              <h3 class="h3 white uppercase pt0 pb1 my0">
-                {{ root.share_title }}
-              </h3>
-              <p class="h4 white uppercase py0 my0">
-                {{ root.share_description }}
-              </p>
-            </a>
-          </div>
-          <div class="col col-4 center my3">
-            <a href="{{ root.share_link }}" title="{{ root.share_cta_button_text }}">
-              <span class="i-arrow-right2 white h2"></span>
-            </a>
-          </div>
-        </div>
-      </section>
-
+        {% set root = site.get('/', this.alt) %}
+        <section id="case-study" class="article-case-study clearfix mb4">
+          {{ cta_wide(root.share_title, root.share_description, root.share_cta_button_text, root.share_link) }}
+        </section>
       {% endif %}
 
       {#
@@ -127,6 +81,7 @@
       {% endif %}
       #}
 
+      {#
       {% if this.factsheet %}
       <section id="facts" class="article-facts clearfix my4">
         <div class="clearfix">
@@ -144,6 +99,7 @@
         </div>
       </section>
       {% endif %}
+      #}
 
     </div>
   </div>

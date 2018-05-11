@@ -13,7 +13,7 @@
       <div class="articles-grid loading clearfix max-width-wide mx-auto">
         <div class="grid-sizer col col-12"></div>
 
-        {% for artx in this.children|sort %}
+        {% for artx in this.children.order_by('title') %}
         {% if artx.enabled != 'no' %}
 
         {% if artx.learn_more != '' %}
