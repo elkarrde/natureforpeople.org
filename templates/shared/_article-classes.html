@@ -1,0 +1,9 @@
+{% macro article_classes(art) %}
+{% if art.size == 'full' %}col-full{% elif art.size == 'big' %}col-double{% else %}col-single{% endif %}
+article-{{ art.size }}
+{% if art.tag1 != '' %}article-{{ art.tag1 }} {% endif %}
+{% if art.tag2 != '' %}article-{{ art.tag2 }} {% endif %}
+{% if art.tag3 != '' %}article-{{ art.tag3 }} {% endif %}
+{% if art.tag4 != '' %}article-{{ art.tag4 }} {% endif %}
+{% if art.partner != '' %}article-{{ art.partner }}{% endif %}
+{% endmacro %}

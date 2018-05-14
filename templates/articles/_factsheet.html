@@ -1,0 +1,17 @@
+      {% if this.factsheet %}
+      <section id="facts" class="article-facts clearfix my4">
+        <div class="clearfix">
+          <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
+            <div class="center">
+              <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
+              <a href="#" class="js-expand-facts">
+                <span class="icon i-folder h3 p2 pink pink-hover border boder-pink border-pink-hover border-2x rounded"></span>
+              </a>
+            </div>
+            <div class="hidden factsheet mt4">
+              {{ this.factsheet }}
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endif %}

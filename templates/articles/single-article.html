@@ -3,7 +3,6 @@
 {% set body_class = 'article-single' %}
 
 {% from "articles/_share-block.html" import share_block %}
-{% from "articles/_subheader-block.html" import subheader_block %}
 
 {% from "articles/_cta-boxes.html" import cta_wide %}
 {% from "articles/_cta-boxes.html" import cta_box %}
@@ -14,7 +13,7 @@
   <div class="max-width-4 mx-auto">
 
     <div class="clearfix">
-      {{ subheader_block(this) }}
+      {% include 'articles/_subheader.html' %}
     </div>
 
     <div class="clearfix">
@@ -49,56 +48,7 @@
       {% endif %}
 
       {#
-      {% if this.children %}
-      <section id="article-attachments" class="article-attachments clearfix mb4">
-        <div class="clearfix">
-          <h3 class="h3 playfair-bold mx-width-4 mx-auto center py2">Attached documents</h3>
-          <ul class="attachments-list list-reset clearfix">
-
-            {% for atts in this.children %}
-            <li class="attachment-item col col-3 lg-col-3 md-col-3 sm-col-6 mx0 mt0 mb3 p0">
-              <h4 class="h4 bold m0">{{ atts.title }}</h4>
-              <p class="pr2">{{ atts.description }}</p>
-              <div class="meta grey">
-                <div class="meta-date">
-                  <span class="bold">Date:</span>
-                  <span>{{ atts.date }}</span>
-                </div>
-                <div class="meta-size">
-                  <span class="bold">Size:</span>
-                  <span>{{ atts.size }}</span>
-                </div>
-              </div>
-              <a href="{{ atts.slug|url }}" class="btn btn-download bg-si-green bg-si-green-dark-hover white my2">
-                <span class="i-download3 mr1"></span> Download
-              </a>
-            </li>
-            {% endfor %}
-
-          </ul>
-        </div>
-      </section>
-      {% endif %}
-      #}
-
-      {#
-      {% if this.factsheet %}
-      <section id="facts" class="article-facts clearfix my4">
-        <div class="clearfix">
-          <div class="facts-holder mx-auto max-width-3 bg-grey-light pt3 pb4 px4">
-            <div class="center">
-              <h3 class="h3 uppercase px4">Get more facts and details about this story</h3>
-              <a href="#" class="js-expand-facts">
-                <span class="icon i-folder h3 p2 pink pink-hover border boder-pink border-pink-hover border-2x rounded"></span>
-              </a>
-            </div>
-            <div class="hidden factsheet mt4">
-              {{ this.factsheet }}
-            </div>
-          </div>
-        </div>
-      </section>
-      {% endif %}
+      {% include 'articles/_factsheet.html' %}
       #}
 
     </div>
