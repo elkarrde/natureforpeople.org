@@ -57,7 +57,7 @@
 6. **Tivatska solila** → [EN](https://natureforpeople.org/articles/from-a-waste-disposal-area-to-a-protected-area-tivat-salt-flats/case-study), [HR](https://natureforpeople.org/bcs/articles/od-deponija-do-zasticenog-podrucja-tivatska-solila/case-study)
   - [x] [HR](https://drive.google.com/file/d/1gGom5Qq4IM2vYl2BF56mHMTD6D9UhQlX/view)
   - [x] [EN](https://drive.google.com/file/d/1G3JP8C0SDSrmmHpV-Uij3_Yp_rz31Haa/view)
-  - [ ] Slike
+  - [ ] Slike :warning:
 7. **Sutjeska** → [EN](https://natureforpeople.org/articles/battle-for-sutjeska-preventing-the-governments-decision-to-build-a-hydro-power-plant-in-the-national-park/case-study), [HR](https://natureforpeople.org/bcs/articles/bitka-za-sutjesku-sprijecena-gradnja-hidroelektrane-u-nacionalnom-parku/case-study)
   - [x] [HR](https://docs.google.com/document/d/1WBv9MD-HVT22xaZ-nN69ChflnDdz0Ouw6jiqOI2yiSQ/edit)
   - [x] [EN](https://docs.google.com/document/d/1kpvBH_Ebx083IS6gtAICMTWYCjn8du5-4aSKKF5P7vk/edit)
@@ -69,38 +69,38 @@
 9. **Šasko jezero** → [EN](https://natureforpeople.org/articles/increase-revenues-for-the-local-population-through-sustainable-tourism-at-sasko-lake/case-study), [HR](https://natureforpeople.org/bcs/articles/povecanje-prihoda-lokalnog-stanovnistva-kroz-odrzivi-turizam-na-saskom-jezeru/case-study)
   - [x] [HR](https://docs.google.com/document/d/1j9JIoO2ln8NtUlBB_kYJXYDGMbROWpzJZPEOPlbiAXU/edit)
   - [x] [EN](https://docs.google.com/document/d/11mQpyV9D7bP1HWXyDUjpgZ6mKN96j9xRj79bORKFNjg/edit)
-  - [ ] **Slike**
+  - [ ] **Slike** :warning:
 10. **Lonjsko polje** → [EN](https://natureforpeople.org/articles/animal-husbandry-subsidies-as-an-incentive-to-stay/case-study), [HR](https://natureforpeople.org/bcs/articles/poticaj-za-stocarstvo-kao-motiv-za-ostanak/case-study)
   - [x] [HR](https://docs.google.com/document/d/1N3vybp3hKzDnpqOJqxwAtiJ017huKrr23D7qNOsfdGM/edit)
   - [x] [EN](https://drive.google.com/file/d/1PXJt3RMoA-iLm4eE3Qs6av4a67MjOgic/view)
   - [x] [Slike](https://drive.google.com/drive/u/2/folders/1JJHV9Xcf5ZmgWWAIcTJ7swTKz4w9oAUB)
 11. **Obedska bara** → [HR](https://natureforpeople.org/bcs/articles/evolucija-u-restauraciji-i-ocuvanju-travnih-stanita-obedska-bara/case-study)
   - [x] [HR](https://docs.google.com/document/d/1a7uEJ3aoKKwylvd-j42wdW4ucWuPE-1k5FDCxEZopMU/edit)
-  - [ ] **EN**
-  - [ ] **Slike**
+  - [ ] **EN** :warning:
+  - [ ] **Slike** :warning:
 12. **WWF Akademija, Tara** → [EN](https://natureforpeople.org/articles/a-bit-of-tara-in-the-schoolyard/case-study), [HR](https://natureforpeople.org/bcs/articles/deo-tare-u-skolskom-dvoristu/case-study)
   - [x] [HR](https://docs.google.com/document/d/1N1TAvVWnDMLHrYyG4dYdHOKkf-9aKNSup4jVgNQmnqs/edit)
   - [x] [EN](https://drive.google.com/file/d/1qBzqwMgTzoF2kL4gkJfnTqFlAj4hHEzp/view)
   - [x] [Slike](https://drive.google.com/drive/u/2/folders/1AZ6umVt6YmtEX1SHc9dd6EOer7uV1FOD)
 13. MS & WOOD
-  - [ ] **HR**
-  - [ ] **EN**
+  - [ ] **HR** :warning:
+  - [ ] **EN** :warning:
   - [x] [Slike](https://drive.google.com/drive/u/2/folders/1jxV7oS6iIc5CLMQtx6_3JbAw_wWF90_S)
 
 ---
 
 ## Partner logos
-- BED [vector **PDF**](https://drive.google.com/file/d/143IRf5Wsm0dXPR2Z6_f1-pSUPaN8ke2y/view)
-- CZIP [vector **PDF**](https://drive.google.com/file/d/16HD_sWv_mJhIzaf1WNpJqa-G62gIiIm9/view)
-- CZZS [vector **CDR**](https://drive.google.com/file/d/0B-Z5JlAzbN1BSkYtSURWVGdtWk9RNHJtUUduTzkxUXhpR05z/view)
-- Green Home [vector **PDF**](https://drive.google.com/file/d/11S2PWA7jM_hvXbsQp4XaZAYq7CEcDSz9/view)
-- Kozjanski park [vector **PDF**](https://drive.google.com/file/d/1cU_czo1By-IOZ-Z31ornCpAFV6pwFkv2/view)
-- BiOM [vector **AI**](https://drive.google.com/file/d/0B-Z5JlAzbN1BeWJ6OHdzNFpYVGpSMFJjQ3gzNng0SGVvZ3NJ/view)
-- Blidinje [vector **PDF**](https://drive.google.com/file/d/1mYseRce_9lmTqOXks6t85_YZt5xS3Ub-/view)
-- Parkovi Dinarida [vector **PDF**](https://drive.google.com/file/d/0B-Z5JlAzbN1BSW1HQjNpUEhNdVB2NWJKZTczbmNIdUhtSmR3/view)
-- PP Lonjsko polje [vector **AI**](https://drive.google.com/file/d/1T_RgDYS8Cy8RIdcGIyiKgkLwVMV7KD71/view)
-- PPNEA [vector **PDF**](https://drive.google.com/file/d/1Otxwn0IUrWU7J7ha5Bp9vXppAR0ddImM/view)
-- PZZP [vector **CDR**](https://drive.google.com/file/d/1WrkgMBQ6jzD_Nr3bEHEEniWC4paz49DU/view)
-- DZPPS [vector HR plavi **PDF**](https://drive.google.com/file/d/1pC4FHfLFV9pRQnXu-h9Tn-ZTsvUr95OF/view), [EN zeleni **PDF**](https://drive.google.com/file/d/1_qsFFuZ1S8GAHeV9967vuzw9LMxUQRS1/view)
-- UnaSana [raster **PNG**](https://drive.google.com/file/d/0B-Z5JlAzbN1BQmE5N0JveXBzdVp4VGNwcEJ2WFg4azhKNFRR/view)
+- BED → [vector **PDF**](https://drive.google.com/file/d/143IRf5Wsm0dXPR2Z6_f1-pSUPaN8ke2y/view)
+- CZIP → [vector **PDF**](https://drive.google.com/file/d/16HD_sWv_mJhIzaf1WNpJqa-G62gIiIm9/view)
+- CZZS → [vector **CDR**](https://drive.google.com/file/d/0B-Z5JlAzbN1BSkYtSURWVGdtWk9RNHJtUUduTzkxUXhpR05z/view)  :triangular_flag_on_post:
+- Green Home → [vector **PDF**](https://drive.google.com/file/d/11S2PWA7jM_hvXbsQp4XaZAYq7CEcDSz9/view)
+- Kozjanski park → [vector **PDF**](https://drive.google.com/file/d/1cU_czo1By-IOZ-Z31ornCpAFV6pwFkv2/view)
+- BiOM → [vector **AI**](https://drive.google.com/file/d/0B-Z5JlAzbN1BeWJ6OHdzNFpYVGpSMFJjQ3gzNng0SGVvZ3NJ/view)
+- Blidinje → [vector **PDF**](https://drive.google.com/file/d/1mYseRce_9lmTqOXks6t85_YZt5xS3Ub-/view)
+- Parkovi Dinarida → [vector **PDF**](https://drive.google.com/file/d/0B-Z5JlAzbN1BSW1HQjNpUEhNdVB2NWJKZTczbmNIdUhtSmR3/view)
+- PP Lonjsko polje → [vector **AI**](https://drive.google.com/file/d/1T_RgDYS8Cy8RIdcGIyiKgkLwVMV7KD71/view)
+- PPNEA → [vector **PDF**](https://drive.google.com/file/d/1Otxwn0IUrWU7J7ha5Bp9vXppAR0ddImM/view)
+- PZZP → [vector **CDR**](https://drive.google.com/file/d/1WrkgMBQ6jzD_Nr3bEHEEniWC4paz49DU/view)  :triangular_flag_on_post:
+- DZPPS → [vector HR plavi **PDF**](https://drive.google.com/file/d/1pC4FHfLFV9pRQnXu-h9Tn-ZTsvUr95OF/view), [EN zeleni **PDF**](https://drive.google.com/file/d/1_qsFFuZ1S8GAHeV9967vuzw9LMxUQRS1/view)
+- UnaSana → [raster **PNG**](https://drive.google.com/file/d/0B-Z5JlAzbN1BQmE5N0JveXBzdVp4VGNwcEJ2WFg4azhKNFRR/view) :triangular_flag_on_post:
 
