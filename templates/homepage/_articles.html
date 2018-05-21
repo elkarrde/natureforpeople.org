@@ -36,7 +36,7 @@
 
               {% if artx.hot == 'true' %}<h6 class="h6 mx0 mt1 mb0 p0 uppercase orange">Hot topic!</h5> {% endif %}
 
-              <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb0 m0{% else %}p0 m0{% endif %} bold playfair-bold">
+              <h3 class="title h4 {% if artx.size == 'medium' %}px0 pt0 pb0 m0{% else %}p0 m0{% endif %} bold playfair-bold">
                 <a href="{{ fullUrl }}">{{ artx.title }}</a>
               </h3>
               <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">
@@ -47,11 +47,11 @@
                 {% endif %}
               </p>
               {% if artx.learn_more != '' %}
-              <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
+              <a href="{{ artx|url }}" class="learn-more btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
               {% endif %}
 
               {% if artx.case_study %}
-              <a href="{{ artx|url }}case-study" class="btn-view-study btn border-green-blue border-green-blue-hover">{{ artx.view_study }}</a>
+              <a href="{{ artx|url }}case-study" class="view-study btn-view-study btn border-green-blue border-green-blue-hover">{{ artx.view_study }}</a>
               {% endif %}
             </div>
 
