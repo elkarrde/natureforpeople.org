@@ -407,25 +407,35 @@ function fetchSimilarArticles() {
   let min = 0;
   let rndItem = Math.floor(Math.random() * (max - min + 1)) + min;
   let rndTag = $('#tags .tag').eq(rndItem).text();
-  $.get('/').done(function(res) {
+  let locale = determineLocale() === 'bcs'? 'bcs' : '';
+  $.get('/' + locale).done(function(res) {
     let content = $(res).find('.article-' + rndTag);
     content.each(function(pc) {
       if (pc < 3) {
         let title = $(this).find('.title').html();
         let lead = $(this).find('.lead').html();
-        let out = '';
-        out += '<div class="article-item col col-4 p2">';
-        out += '  <div class="box-shadow bg-white p0 article article-small overflow-hidden clearfix">';
-        out += '    <div class="text col col-12 p2">';
-        out += '      <h3 class="h4 p0 m0 bold playfair-bold">' + title + '</h3>';
-        out += '      <p class="lead p0">' + lead + '</p>';
-        out += '    </div>';
-        out += '  </div>';
-        out += '</div>';
-
-        $('#similar-articles .articles').append($(out));
+        let tags = $(this).find('.tags').html();
+        let more = $(this).find('.learn-more').html();
+        let study = $(this).find('.view-study').html();
+        let out = $('.article-item-template').html();
+        $('#similar-articles .articles .article-item').eq(pc).find('.title').html(title);
+        $('#similar-articles .articles .article-item').eq(pc).find('.lead').html(lead);
+        $('#similar-articles .articles .article-item').eq(pc).find('.tags').html(tags);
+        if (more) {
+          $('#similar-articles .articles .article-item').eq(pc).find('.learn-more').html(more);
+        } else {
+          $('#similar-articles .articles .article-item').eq(pc).find('.learn-more').remove()
+        }
+        if (study) {
+          $('#similar-articles .articles .article-item').eq(pc).find('.view-study').html(study);
+        } else {
+          $('#similar-articles .articles .article-item').eq(pc).find('.view-study').remove();
+        }
+        $('#similar-articles .articles .article-item').eq(pc).removeClass('empty');
       }
     })
+    $('#similar-articles .articles .article-item').css({display: 'block'});
+    $('#similar-articles .articles .article-item.empty').remove();
   })
 }
 
