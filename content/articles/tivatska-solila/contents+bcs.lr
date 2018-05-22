@@ -4,7 +4,7 @@ _template: articles/single-article.html
 ---
 _slug: od-deponija-do-zasticenog-podrucja-tivatska-solila
 ---
-title: Od deponija do zaštićenog područja &ndash; Tivatska solila
+title: Od deponije do specijalnog rezervata prirode
 ---
 lang: bcs
 ---
@@ -16,15 +16,15 @@ size: small
 ---
 hot: false
 ---
-lead_image:
+lead_image: /static/images/articles/tivat-salina/solila_paradise_for_people_and_bird_alike.jpg
 ---
-lead_image_title:
+lead_image_title: Tivatska solila raj su za ptice i ljude (c) Đorđe Kalezić
 ---
-lead_text:
+lead_text: Tivatska solila neprocjenjivo su mjesto za ptice, a sada su ih prepoznali i ljudi. Edukativni poligon za studente i učenike polako postaje i eko-turistička destinacija.
 ---
 homepage_text: Tivatska solila neprocjenjivo su mjesto za ptice, a sada su prepoznata i od ljudi. Edukativni poligon za studente i učenike polako postaje i eko-turistička destinacija.
 ---
-learn_more:
+learn_more: Pročitaj priču
 ---
 view_study: Vidi studiju
 ---
@@ -49,4 +49,115 @@ template_cta_button_text: Pročitajte studiju
 case_study: case-study
 ---
 body:
+
+<p>So je odvajkada bila jedna od najdragocjenijih životnih namirnica. Solila u zaleđu Tivatskog zaliva na
+obodu Boke Kotorske više od hiljadu godina bila su izvor života i blagostanja za lokalno stanovništvo, jer
+je so u prošlosti bila jedna od najvrednijih roba na tržištu. Do prije jednog vijeka, od proizvodnje soli na
+Solilima živjelo je više od 300 porodica. Poslednja berba dogodila se 1960. Od tada Solila polako padaju u
+zaborav. Nekadašnji ponos ovog područja, vremenom se pretvorio u deponiju.</p>
+
+<p>Ipak, pola vijeka nakon poslednje berbe soli, uviđa se značaj Solila. Ali ne zbog eksploatacije soli, već kao
+jedno od najznačajnijih staništa ptica i poslednjih primjeraka flore prilagođene slanim staništima na
+istočnoj obali Jadrana. Zavod za zaštitu prirode proglasio je 2008. godine Solila za specijalni rezervat
+prirode. Pet godina kasnije, uvrštena su na Ramsar listu močvara od međunarodnog značaja. Iste godine
+upravljanje Solilima povjerava se Javnom preduzeću za upravljanje morskim dobrom Crne Gore, koje je
+tada po prvi put dobilo nadležnost za upravljanjem zaštićenim područjima u zoni morskog dobra,
+objašnjava biologinja <b>mr. Aleksandra Ivanović</b>, koja je u tom preduzeću rukovodi Službom za održivi
+razvoj. U dogovoru sa Centrom za zaštitu i proučavanje ptica Crne Gore, Opštinom Tivat, Lokalnom
+turističkom organizacijom Tivat, nastaje partnerstvo kako bi se jedno veliko smetlište privelo svojoj
+namjeni.</p>
+
+<p class="highlight">Pola vijeka nakon poslednje berbe soli, uviđa se značaj Solila kao jednog od najznačajnijih staništa ptica i poslednjih primjeraka flore prilagođene slanim staništima na istočnoj obali Jadrana</p>
+
+<p>„Naišli smo na jako zapušten prostor“¸ priča mi Aleksandra dok hodamo kamenom ozidanim nasipom
+koji služi kao granica između bazena u kojima se nekad sakupljala so. Sa nasipa danas nam se pruža
+poseban ugođaj - pogled na par bijelih čaplji koje su od strane mora sletjele na doručak. Dvogled nam
+ipak nije omogućio da zavirimo šta je danas bilo na jelovniku, tako da smo nastavili hodanje do prvog
+drvenog mosta, koji služi za bezbjedno premošćavanje vodenih kanala.</p>
+
+<p>“Evo, sve do ovog mosta nalazile su se razne vrste otpada od smeća do deponija zemlje, šuta, pa i
+sadržina septičkih jama, tako da smo prvo očistili taj dio Solila, a zatim i rekonstruisali svih 12 mostova.
+Time je ujedno formirana i šetališna, rekreativna staza u dužini od oko dva km. Postavili smo i ulazne
+kapije, info punkt, informativne table, klupe, osmatračnice za posmatranje ptica i rekonstruisali i ovaj
+nasip po kojem hodamo“, objašnjava <b>Aleksandra</b>.</p>
+
+<img class="fit-text" src="/static/images/articles/tivat-salina/caplje_stalne_gosce.jpg" title="Čaplje, stalne gošće na Solilima (c) Miloš Mitkić"/>
+
+<p>Njen kolega iz Službe <b>Vojislav Dragnić</b>, zadužen za koordinaciju i praćenje uređenja i obnove Solila, koji takođe kao i Aleksandra na Solilima s proljeća provodi svaki slobodan trenutak, kaže da je JP „Morsko dobro“ do sada u sanaciju infrastrukture i uređenje rezervata uložilo oko 200.000 eura. Sa osmatračnice pokazuje mi plan bazena koji su planirani da se obnove za proizvodnju soli u turističke svrhe, kako bi se posjetiocima dočaralo kako se so proizvodila na tradicionalan način prije nekoliko vjekova. Tako će turisti iz Budve, Tivta i Kotora, tri grada koji gravitiraju oko područja Solila, imati priliku da dožive jednu novu ambijentalnu turističku ponudu, uz već postojeću ponudu posmatranja ptica i rekreativni turizam.</p>
+
+<p>Velika pažnja usmjerena je i na monitoring stanja flore i faune, za koji se na godišnjem nivou izdvaja i do
+10 000 eura. Solila su bila poznata i po lovu na ptice. „Zahvaljujući uspješnoj saradnji sa nadležnim
+institucijama, lov na području Solila konačno je iskorijenjen“, sa ponosom ističe <b>Vojislav</b>.</p>
+
+<p class="highlight">
+"Solila su jedno od najznačajnijih zimovališta i gnjezdilišta ptica u Crnoj Gori."
+</p>
+
+<p>Svoje oduševljenje sadašnjim stanjem Solila nije krio ni ornitolog <b>Darko Saveljić</b> iz Centra za zaštitu i
+proučavanje ptica, za koga je ovo jedna od najljepših priča o zaštiti prirode u Crnoj Gori, u smislu
+sinergije vladinih, nevladinih i lokalnih subjekata. Posebno kad se ima u vidu njen značaj, koji nadaleko
+prelazi granice Crne Gore, jer se Solila nalaze na Jadranskom migratornom koridoru za milione ptica iz
+Sibira, Sjeverne, Srednje i Istočne Evrope, koje svake godine lete ka Africi i obratno. „Kad s jeseni ptice
+lete na jug, upravo su Solila poslednja stanica za jako naporan let preko Jadranskog mora. A kad se s
+proljeća vraćaju, Solila su prvo hranilište ptica nakon iscpljujućeg jadranskog putovanja iz Italije, dugog
+200 kilmetara. Uz to, Solila su jedno od najznačajnijih zimovališta i gnjezdilišta ptica u Crnoj Gori,
+značajno područje za ptice (IBA) od međunardnog značaja i Emerald stanište Bernske konvencje, na
+kojem smo uspjeli da registrujemo više od 114 vrsta ptica.“</p>
+
+<p>Solila ubrzo nakon uređenja, osim kao gozba za umorne svjetske letače, postaju i omiljeno mjesto
+mještana za odmor i rekreaciju. <b>Aleksandra</b> naglašava saradnju sa lokalnom zajednicom, kao još jedan
+uspješan segment razvoja Solila. „Značajna površina Solila nalazi se u privatnom vlasništvu. Iz tog razloga
+ulaz u Solila je besplatan, kapija uvijek otvorena, i svi pripadnici lokalne zajednice su više nego
+dobrodošli“.</p>
+
+<img class="fit-text" src="/static/images/articles/tivat-salina/solila_salt_flats.jpg" title="The Salina in the period when it functioned as saltpans (c) Anđelko Stjepčević"/>
+
+<p>„Upravo od mještana smo naučili kako se to područje koristilo nekad, i prije nego bilo šta uradimo na
+Solilima, prvo prodiskutujemo sa lokalnom zajednicom, a tek onda pristupamo izvodjenju radova. Mi
+smo od početka pozvali sve zainteresovane strane da učestvuju u ovom procesu zajedno sa nama. I od
+početka govorimo šta je naš plan i cilj sa rezervatom“, dodaje <b>Vojislav</b>.</p>
+
+<p>Osim Aleksandre i Vojislava naš domaćin na Solilima bio je i predstavnik lokalne zajednice i trenutno
+jedini zaposleni u rezervatu <b>Aleksandar Brinić</b>, koji nam se prudružio sa drugog kraja Solila. Stasit mladić
+odmah se nadovezao na naš razgovor o tome koliko se promijenio stav mještana od kad su Solila postala
+zaštićeni rezervat.</p>
+
+<p class="highlight">“Umjesto kao lovci, danas mještani na ovo mjesto dolaze kao rekreativci. Za njih sad Solila imaju novo
+značenje, jer su naučili da poštuju taj prostor.</p>
+
+<p>Vidiš kako je sve veći mir što dublje ulazimo u rezervat. A to je nevjerovatan osjećaj, posebno u jeku turističke sezone, kad turisti preplave cjelokupno primorje“, kaže Brinić.</p>
+
+<p>„Prošlog ljeta je gorelo“, prisjećam se pitajajući Aleksandra kako je to primila lokalna zajednica. Taj
+primjer, shvatam ubrzo, najbolje govori o njihovoj privrženosti.</p>
+
+<p>„Spasili smo svi zajedno Solila od velikog požara“, govori mi Aleksandar. „Vatra je prijetila, gutala je cijelo
+područje. Ugasili smo je na vrijeme, a kasnije smo svi zajedno učestvovali u u sadnji vegetacije, kako bi
+se obnovio fond drveća stradalih u požaru. Lokalna zajednica je pobijedila moguću katastrofu“,
+zaključuje.</p>
+
+<p>Sa našim domaćinima dolazim do kraja šetališne zone, na kojoj stoji tabla sa imenima najznačajnijih ptica
+koje posjećuju rezervat. Uvidjevši moj znatiželjni pogled , Aleksandra dodaje kako su table predvidjene
+za edukaciju , na koju je stavljen poseban akcenat. U tu svrhu redovno se organizuju radionice sa djecom
+iz osnovnih škola iz Tivta, kojima se kroz igru, zabavu i predavanja, predstavlja veliki značaj Solila na
+ovom području. Rezervat je mjesto na kojem se obilježava Dan močvarnih staništa, Dan planete Zemlje...</p>
+
+<p>„Služba za održivi razvoj JP Morskog dobra na raspolaganju je svim obrazovnim ustanovama za
+organizovane posjete Solilima. U okviru jednosatne besplatne edukativne šetnje kroz Solila, posjetioci
+mogu da čuju interesantne priče i podatke o biodiverzitetu Solila: migratornim pticama, specifičnoj flori,
+kornjačama, ribama i rakovima koji nastanjuju rezervat, zatim o istorijskom razvoju na području,
+proizvodnji soli kroz vjekove, kulturnim vrijednostima i tradiciji ovog kraja. Takođe, u okviru posjete
+rezervatu organizuje se i posmatranje ptica“, objašnjava mi Aleksandra na kraju našeg puta po Solilima.</p>
+
+<p>Na ulaznoj kapiji Solila vraćamo se na početak priče. Moji domaćini i vodiči su se potrudili da Solila
+prikažu, ne samo kao prirodno dobro, već kao i kulturno nasljeđe. Zbog toga su uradili Studiju zaštite
+kulturne baštine Solila, tako da je u toku procedura kod nadležnog Ministartsva za proglašenje Solila kao
+kulturnog dobra.</p>
+
+<p>Tada sam pomislio nešto što im nisam rekao - kako se zaokružuje uspješna priča koja govori na koji način
+se jedna deponija pretvorila u prirodni i kulturni biser. Umjesto toga, zahvalio sam im se što su mi
+omogućili da na kratko doživim taj biser. Poželio sam im da istraju u njihovoj ulozi školjke, kako bi
+nastavili da uvećavaju povraćeni sjaj bisera, na opšte zadovoljstvo prije svega umornih ptičijih
+evroafričkih putnika namjernika, a zatim mještana, djece i turista.</p>
+
+<img class="fit-text" src="/static/images/articles/tivat-salina/solila_end.jpg" title="Solila (c) Đorđe Kalezić"/>
 ---
