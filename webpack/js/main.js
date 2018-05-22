@@ -194,6 +194,10 @@ jQuery(document).ready(function() {
     );
   });
 
+  if ($('#similar-articles').length) {
+    fetchSimilarArticles();
+  }
+
   if ($("#bosnia-fact-1")[0]) {
     instWaypoint("bosnia-fact-1", "percent");
     instWaypoint("bosnia-fact-4", "percent");
@@ -386,11 +390,43 @@ function setupLogoSlider() {
   let maxLogos = Math.floor(window.innerWidth / 180);
   $('.partners-list').slick({
     autoplay: true,
-    arrows: false,
+    autoplaySpeed: 2000,
+    arrows: true,
+    dots: true,
+    appendArrows: $('.partners-list'),
     slidesToShow: maxLogos > 6? 6 : maxLogos,
     slidesToScroll: 1,
+    swipe: true,
+    swipeToSlide: true,
     pauseOnHover: true
   });
+}
+
+function fetchSimilarArticles() {
+  let max = $('#tags .tag').length - 1;
+  let min = 0;
+  let rndItem = Math.floor(Math.random() * (max - min + 1)) + min;
+  let rndTag = $('#tags .tag').eq(rndItem).text();
+  $.get('/').done(function(res) {
+    let content = $(res).find('.article-' + rndTag);
+    content.each(function(pc) {
+      if (pc < 3) {
+        let title = $(this).find('.title').html();
+        let lead = $(this).find('.lead').html();
+        let out = '';
+        out += '<div class="article-item col col-4 p2">';
+        out += '  <div class="box-shadow bg-white p0 article article-small overflow-hidden clearfix">';
+        out += '    <div class="text col col-12 p2">';
+        out += '      <h3 class="h4 p0 m0 bold playfair-bold">' + title + '</h3>';
+        out += '      <p class="lead p0">' + lead + '</p>';
+        out += '    </div>';
+        out += '  </div>';
+        out += '</div>';
+
+        $('#similar-articles .articles').append($(out));
+      }
+    })
+  })
 }
 
 window.mobilecheck = function() {

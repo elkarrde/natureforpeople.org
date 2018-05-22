@@ -13,17 +13,17 @@
                                     <i class="i-triangle-down"></i>
                                 </div>
                             </div>
-                            <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0 absolute">
+                            <dl id="country-dropdown" class="hidden list-reset bg-grey p0 m0 absolute box-shadow">
                                 <li data-value="/all" class="pointer white bg-grey bg-hr-blue-hover p3">{{ this.all_countries }}</li>
                                 {% set countries = bag('countries', this.alt).iteritems() %} {% for path, label in countries %}
-                                <li data-value={ { path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
+                                <li data-value={{ path }} class="pointer white bg-grey bg-hr-blue-hover p3">{{ label }}</li>
                                 {% endfor %}
                             </dl>
                         </div>
                         <form id="searchForm" class="flex flex-warp items-center w100">
-                            <input name="" type="text" placeholder="{{ this.search_placeholder }}" value="" class="w100 col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner searchForm___input"
-                                style="height: 70px" />
-                            <input type="submit" class="bg-hr-blue white bold h4 px4 border-none btn-blue-hover pointer" style="height: 70px" value="{{ this.search_button_text }}"
+                            <input name="" type="text" placeholder="{{ this.search_placeholder }}" value="" class="w100 h70p col-10 grey-dark bg-white h5 px2 border-none box-shadow-inner searchForm___input"
+                             />
+                            <input type="submit" class="bg-hr-blue white bold h4 px4 border-none btn-blue-hover pointer h70p" value="{{ this.search_button_text }}"
                             />
                         </form>
 

@@ -1,0 +1,69 @@
+{% macro cta_box(title, subtitle, cta_button_text, url, icon) %}
+        <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
+            <h4 class="black h4 center">{{ title }}</h4>
+            <p class="black center px4">{{ subtitle }}</p>
+
+            <div class="center mb3">
+                <a href="{{ url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                    <span class="i-arrow-right2 mr1"></span> {{ cta_button_text }}
+                </a>
+            </div>
+        </div>
+{% endmacro %}
+
+{% macro cta_box_download(title, subtitle, cta_button_text, url, icon) %}
+        <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
+            <h4 class="black h4 center">{{ title }}</h4>
+            <p class="black center px4">{{ subtitle }}</p>
+
+            <div class="center mb3">
+                <a href="{{ url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
+                    <span class="i-download3 mr1"></span> {{ cta_button_text }}
+                </a>
+            </div>
+        </div>
+{% endmacro %}
+
+{% macro cta_wide(title, subtitle, cta_button_text, url) %}
+        <div class="bg-green-light clearfix px4 py4">
+            <div class="col col-8">
+                <h3 class="h3 white uppercase pt0 pb1 my0">
+                    <a href="{{ url }}" title="{{ cta_button_text }}" class="white no-underline">
+                        {{ title }}
+                    </a>
+                </h3>
+                <p class="h4 white uppercase py0 my0">
+                    <a href="{{ url }}" title="{{ cta_button_text }}" class="white no-underline">
+                        {{ subtitle }}
+                    </a>
+                </p>
+            </div>
+            <div class="col col-4 center my3">
+                <a href="{{ url }}" title="{{ cta_button_text }}">
+                    <span class="i-arrow-right2 white h2"></span>
+                </a>
+            </div>
+        </div>
+{% endmacro %}
+
+{% macro cta_wide_download(title, subtitle, cta_button_text, url) %}
+        <div class="bg-green-light clearfix px4 py4">
+            <div class="col col-8">
+                <h3 class="h3 white uppercase pt0 pb1 my0">
+                    <a href="{{ url }}" title="{{ cta_button_text }}" class="white no-underline">
+                        {{ title }}
+                    </a>
+                </h3>
+                <p class="h4 white uppercase py0 my0">
+                    <a href="{{ url }}" title="{{ cta_button_text }}" class="white no-underline">
+                        {{ subtitle }}
+                    </a>
+                </p>
+            </div>
+            <div class="col col-4 center my3">
+                <a href="{{ url }}" title="{{ cta_button_text }}">
+                    <span class="i-download3 white h2"></span>
+                </a>
+            </div>
+        </div>
+{% endmacro %}

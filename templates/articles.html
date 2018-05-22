@@ -2,67 +2,86 @@
 
 {% set body_class = 'articles' %}
 
+{% from "shared/_article-classes.html" import article_classes %}
+
 {% block body %}
 
 <div class="py4 bg-homepage-cyan">
 
-{% include "articles/_filter-bar.html" %}
+{% include "homepage/_filter-bar.html" %}
 
-<section id="articles" class="pb0 mt4 clearfix">
-  <div class="max-width-4 mx-auto clearfix">
-    <div class="articles-grid clearfix max-width-4 mx-auto">
-      <div class="grid-sizer col col-12"></div>
+  <section id="articles" class="pb0 mt4 clearfix">
+    <div class="max-width-wide mx-auto clearfix">
+      <div class="articles-grid loading clearfix max-width-wide mx-auto">
+        <div class="grid-sizer col col-12"></div>
 
-      {% for artx in this.children %}
+        {% for artx in this.children.order_by('title') %}
         {% if artx.enabled != 'no' %}
-        <div class="article-item article-{{ artx.size }} {% if artx.tag1 != '' %}article-{{ artx.tag1|url }} {% endif %}{% if artx.tag2 != '' %}article-{{ artx.tag2|url }} {% endif %}{% if artx.tag3 != '' %}article-{{ artx.tag3|url }} {% endif %}{% if artx.tag4 != '' %}article-{{ artx.tag4|url }} {% endif %} col {% if artx.size == 'full' %}col-12{% elif artx.size == 'big' %}col-8{% else %}col-4{% endif %} p2">
-          <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix max-width-4 mx-auto">
+
+        {% if artx.learn_more != '' %}
+        {% set fullUrl = (artx|url) %}
+        {% else %}
+        {% set fullUrl = (artx|url) + 'case-study' %}
+        {% endif %}
+
+        <div class="article-item col {{ article_classes(artx) }} p2">
+          <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix">
+
             {% if artx.size == 'medium' %}
             <div class="col col-12 image">
-              <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-medium" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+              <a href="{{ fullUrl }}">
                 <span class="article-image article-image-medium" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% endif %}
             <div class="text col {% if artx.size == 'full' %}col-4 p2{% elif artx.size == 'big' %}col-6 p2{% elif artx.size == 'medium'%}col-12 px2 pt0 pb2{% else %}col-12 p2{% endif %}">
-              <aside class="tags mb1{% if artx.size == 'medium' %}mt1 py1{% endif %}">
-                {% if artx.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ artx.tag1 }}</span></span>{% endif %}
-                {% if artx.tag2 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ artx.tag2 }}</span></span>{% endif %}
-                {% if artx.tag3 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ artx.tag3 }}</span></span>{% endif %}
-                {% if artx.tag4 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ artx.tag4 }}</span></span>{% endif %}
-              </aside>
+
+              {% include 'homepage/_article-tags.html' %}
+
               {% if artx.hot == 'true' %}<h6 class="h6 mx0 mt1 mb0 p0 uppercase orange">Hot topic!</h5> {% endif %}
-              <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb2 m0{% else %}p0 m0{% endif %} bold playfair-bold">{{ artx.title }}</h3>
-              {% if artx.size != 'medium' %}
-              <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">{{ artx.lead_text }}</p>
-              {% endif %}
+
+              <h3 class="h4 {% if artx.size == 'medium' %}px0 pt0 pb0 m0{% else %}p0 m0{% endif %} bold playfair-bold">
+                <a href="{{ fullUrl }}">{{ artx.title }}</a>
+              </h3>
+              <p class="lead {% if artx.size == 'full' %}py0 pl0 pr2{% elif artx.size == 'big' %}py0 pl0 pr2{% else %}p0{% endif %}">
+                {% if artx.homepage_text %}
+                {{ artx.homepage_text }}
+                {% else %}
+                {{ artx.lead_text }}
+                {% endif %}
+              </p>
+              {% if artx.learn_more != '' %}
               <a href="{{ artx|url }}" class="btn-learn-more btn border-me-orange-red border-me-orange-red-hover">{{ artx.learn_more }}</a>
+              {% endif %}
+
+              {% if artx.case_study %}
+              <a href="{{ artx|url }}case-study" class="btn-view-study btn border-green-blue border-green-blue-hover">{{ artx.view_study }}</a>
+              {% endif %}
             </div>
+
             {% if artx.size == 'full' %}
             <div class="col col-8 image">
-              <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-full" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+              <a href="{{ fullUrl }}">
                 <span class="article-image article-image-full" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% elif artx.size == 'big' %}
-            <div class="col col-6 image x-BIG-x">
-              <a href="{{ artx|url }}">
-                {#<img src="{{ artx.lead_image }}" class="article-image-big" alt="{{ artx.title }}" title="{{ artx.title }}">#}
+            <div class="col col-6 image">
+              <a href="{{ fullUrl }}">
                 <span class="article-image article-image-big" title="{{ artx.title }}" style="background-image: url('{{ artx.lead_image }}')"></span>
               </a>
             </div>
             {% endif %}
+
           </div>
         </div>
         {% endif %}
-      {% endfor %}
+        {% endfor %}
 
+      </div>
     </div>
-  </div>
-</section>
-
-{% endblock %}
+  </section>
 
 </div>
+
+{% endblock %}

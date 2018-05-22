@@ -135,5 +135,12 @@
 .h70p { height: 70px; }
 .mw100 { max-width: 100%; }
 .slick-slide { position: relative; }
+.slick-slider {
+  &.slick-dotted {
+    ul.slick-dots { padding: 0; }
+  }
+}
+
+a.no-underline { text-decoration: none; }
 
 @import "slick.scss";

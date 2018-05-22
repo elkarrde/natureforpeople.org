@@ -4,7 +4,7 @@
   <div class="max-width-4 mx-auto">
     <div class="clearfix">
 
-      {% for attachment in this.attachments.documents %}
+      {% for attachment in this.attachments.documents.order_by('title') %}
       <div class="sm-col sm-col-6 md-col-3 p1">
         <div class="box-shadow bg-white-dirty p2">
           <h4 class="h5 m0">{{ attachment.title }}</h4>
@@ -13,7 +13,7 @@
           <a
             href="{{ attachment.path }}"
             class="block mt2 bg-si-green bg-si-green-dark-hover white bold h7 p2"
-          >Download document</a>
+          >{{ bag('i18n', this.alt, 'download-document') }}</a>
         </div>
       </div>
       {% endfor %}

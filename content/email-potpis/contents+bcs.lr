@@ -1,0 +1,26 @@
+_model: signature-generator
+---
+_slug: generator-email-potpisa
+---
+title: Generator e-mail potpisa
+---
+name: Ime
+---
+officetitle: Titula
+---
+phone1: Mobitel
+---
+phone2: Telefon
+---
+email: E-mail
+---
+generate: Prikaži
+---
+back: Natrag
+---
+form_notification: Neupisana polja se neće prikazati.<br>Boldana polja su obavezna.
+---
+settings: postavke
+---
+help: <b>Upute</b>: Kopirajte odgovarajući sadržaj u postavke potpisa Vaše e-mail aplikacije.
+---

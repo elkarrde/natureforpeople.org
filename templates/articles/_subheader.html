@@ -1,0 +1,10 @@
+      <aside id="meta" class="article-meta small black left p1 mt4 mb0">
+          <span class="date mr4">{{ this.date }}</span>
+          {% if this.author != "" %}<span class="author">{{ bag('i18n', this.alt, 'author') }}: <span class="author-content">{{ this.author }}</span></span>{% endif %}
+      </aside>
+      <aside id="tags" class="article-tags small right p1 mt4 mb0">
+        {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
+        {% if this.tag2 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag2 }}</span></span>{% endif %}
+        {% if this.tag3 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag3 }}</span></span>{% endif %}
+        {% if this.tag4 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag4 }}</span></span>{% endif %}
+      </aside>

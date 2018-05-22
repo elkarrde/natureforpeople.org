@@ -1,7 +1,11 @@
 {% extends "layout.html" %}
 
 {% set body_class = 'case-study' %}
-{% set siteRoot = bag('global.targetBaseUrl') %}
+
+{% from "articles/_share-block.html" import share_block %}
+
+{% from "articles/_cta-boxes.html" import cta_wide_download %}
+{% from "articles/_cta-boxes.html" import cta_box_download %}
 
 {% block body %}
 
@@ -9,16 +13,7 @@
   <div class="max-width-4 mx-auto">
 
     <div class="clearfix">
-      <aside id="meta" class="article-meta small black left p1 mt4 mb0">
-          <span class="date mr4">{{ this.date }}</span>
-          {% if this.author != "" %}<span class="author">{{ bag('i18n', this.alt, 'author') }}: <span class="author-content">{{ this.author }}</span></span>{% endif %}
-      </aside>
-      <aside id="tags" class="article-tags small right p1 mt4 mb0">
-        {% if this.tag1 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag1 }}</span></span>{% endif %}
-        {% if this.tag2 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag2 }}</span></span>{% endif %}
-        {% if this.tag3 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag3 }}</span></span>{% endif %}
-        {% if this.tag4 != "" %}<span class="label label-tag"><span class="tag border border-pink pink rounded px1">{{ this.tag4 }}</span></span>{% endif %}
-      </aside>
+      {% include 'articles/_subheader.html' %}
     </div>
 
     <div class="clearfix">
@@ -27,83 +22,12 @@
       </header>
 
       <section id="article-lead" class="article-lead clearfix mb3">
-        <div class="social grey col col-2 center">
-          <div class="uppercase bold center pt2 pb2">{{ bag('i18n', this.alt, 'share-article') }}</div>
-          <div class="inline-block mx1">
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ siteRoot }}/{{ '.'|url|replace('../', '') }}" target="_blank">
-              <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 fb">
-                <span class="i-facebook"></span></a>
-              </span>
-            </a>
-          </div>
-          <div class="inline-block mx1">
-            <a href="https://twitter.com/home?status={{ siteRoot }}/{{ '.'|url|replace('../', '') }} @wwfadria" target="_blank">
-              <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 twitter">
-                <span class="i-twitter"></span>
-              </span>
-            </a>
-          </div>
-          <div class="inline-block mx1">
-            <a href="mailto:put-target-email-address-here?subject={{ this.title }}&body={{ siteRoot }}/{{ '.'|url|replace('../', '') }}" target="_blank">
-              <span class="social-icon center rounded white bg-grey bg-grey-dark-hover py1 px1 email">
-                <span class="i-mail2"></span>
-              </span>
-            </a>
-          </div>
-        </div>
+        {{ share_block(this) }}
         <p class="lead bold black col col-8 ml3">{{ this.lead_text }}</p>
       </section>
 
-      <section id="main-data" class="main-data clearfix mt1 mb2 flex flex-row flex-stretch justify-around">
-        <div class="data-item flex-1 bg-white-dirty mx1 py3 center box-shadow">
-          <div class="clearfix">
-            <img src="/static/images/icons/icon-people.png" srcset="/static/images/icons/icon-people@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'people') }}</h5>
-            <p class="pink"><strong>{{ this.people }}</strong></p>
-          </div>
-        </div>
-        <div class="data-item flex-1 bg-white-dirty mx1 py3 center box-shadow">
-          <div class="clearfix">
-            <img src="/static/images/icons/icon-money.png" srcset="/static/images/icons/icon-money@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'money') }}</h5>
-            <p class="pink"><strong>{{ this.money }}</strong></p>
-          </div>
-        </div>
-        <div class="data-item flex-1 bg-white-dirty mx1 py3 center box-shadow">
-          <div class="clearfix">
-            <img src="/static/images/icons/icon-time.png" srcset="/static/images/icons/icon-time@2x.png 2x" alt="">
-            <h5 class="h5 mb1 black uppercase">{{ bag('i18n', this.alt, 'time') }}</h5>
-            <p class="pink"><strong>{{ this.time }}</strong></p>
-          </div>
-        </div>
-      </section>
-
-      <section id="sub-data" class="sub-data clearfix mt1 mb2 py2 flex flex-row flex-stretch justify-around">
-        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
-          <div class="clearfix center p2">
-            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'organization') }}</h5>
-            <p class="black">{{ this.organization }}</p>
-          </div>
-        </div>
-        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
-          <div class="clearfix center p2">
-            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'country') }}</h5>
-            <p class="black">{{ this.country }}</p>
-          </div>
-        </div>
-        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
-          <div class="clearfix center p2">
-            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'location') }}</h5>
-            <p class="black">{{ this.location }}</p>
-          </div>
-        </div>
-        <div class="data-item flex-1 mx1 bg-white-dirty box-shadow">
-          <div class="clearfix center p2">
-            <h5 class="h6 mb1 black">{{ bag('i18n', this.alt, 'protection-level') }}</h5>
-            <p class="black">{{ this.level }}</p>
-          </div>
-        </div>
-      </section>
+      {% include 'articles/_cs_main-highlights.html' %}
+      {% include 'articles/_cs_secondary-highlights.html' %}
 
       <section id="data-body" class="data-body clearfix pb4 mb4">
         <div class="data-body-content">
@@ -112,34 +36,8 @@
       </section>
 
       <section id="case-study" class="article-case-study clearfix mb4">
-          <div class="mx-auto max-width-2 mt3 mb2 py1 px2 bg-white-dirty box-shadow">
-              <h4 class="black h4 center">{{ this.download_title }}</h4>
-              <p class="black center px4">{{ this.download_subtitle }}</p>
-
-              <div class="center mb3">
-                  <a href="{{ this.download_link|url }}" class="btn bg-si-green bg-si-green-dark-hover white my2">
-                      <span class="i-download3 mr1"></span> {{ this.download_cta_button_text }}
-                  </a>
-              </div>
-          </div>
+          {{ cta_box_download(this.download_title, this.download_subtitle, this.download_cta_button_text, (this.download_link|url)) }}
       </section>
-
-      {#
-      <section id="case-study" class="article-case-study clearfix mb4">
-        <div class="bg-green-light clearfix px4 py4">
-          <a href="{{ '.'|url }}" title="Read case study">
-            <h3 class="h3 white uppercase col col-8">
-              Get more facts and
-              details about this story
-            </h3>
-            <div class="col col-4 center my3">
-              <span class="i-download3 white h2"></span>
-            </div>
-          </a>
-        </div>
-      </section>
-      #}
-
     </div>
   </div>
 </section>

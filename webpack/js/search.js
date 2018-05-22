@@ -55,6 +55,7 @@ function getLocale() {
 
 $(document).ready(function() {
   $("#searchForm").on("submit", function(event) {
+    /*
     if ($(".searchForm___input").val() === "" && categories.length == 0) {
       $(
         ".searchForm___results, .searchForm__navigation, .searchForm___total"
@@ -62,10 +63,11 @@ $(document).ready(function() {
       $(".searchForm___results").append(
         '<p class="sm-col-10 mx-auto px2 mb4 center">' +
           translation.noEmpty[getLocale()] +
-          "</p>"
+        '</p>'
       );
       return false;
     }
+    */
     requestData(1);
     event.preventDefault();
   });
@@ -113,7 +115,7 @@ function requestData(page) {
   $.ajax({
     data: getParams(page),
     type: "GET",
-    url: "https://n4p-knowledgebase.herokuapp.com/api/search/articles" //lolcal dev environment
+    url: "https://n4p-knowledgebase.herokuapp.com/api/search/articles" //local dev environment
   }).done(function(data) {
     var total =
       data.pagination.total_entries + " " + translation.totalResults[getLocale()];

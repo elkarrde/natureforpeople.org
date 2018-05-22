@@ -169,6 +169,10 @@
 
         input[type="submit"] { padding: 1rem 1.5rem; }
     }
+    .slick-arrows { display: none; }
+    .slick-dots {
+        li { padding: 0 0.25rem; }
+    }
 
     html.reveal-breakpoints { border-bottom: 5px solid red; }
 }
