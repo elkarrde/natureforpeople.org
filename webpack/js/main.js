@@ -408,34 +408,54 @@ function fetchSimilarArticles() {
   let rndItem = Math.floor(Math.random() * (max - min + 1)) + min;
   let rndTag = $('#tags .tag').eq(rndItem).text();
   let locale = determineLocale() === 'bcs'? 'bcs' : '';
+  console.log('ARTICLES', rndTag)
+  console.time('FETCH');
   $.get('/' + locale).done(function(res) {
     let content = $(res).find('.article-' + rndTag);
+    items = [];
     content.each(function(pc) {
-      if (pc < 3) {
-        let title = $(this).find('.title').html();
-        let lead = $(this).find('.lead').html();
-        let tags = $(this).find('.tags').html();
-        let more = $(this).find('.learn-more').html();
-        let study = $(this).find('.view-study').html();
-        let out = $('.article-item-template').html();
-        $('#similar-articles .articles .article-item').eq(pc).find('.title').html(title);
-        $('#similar-articles .articles .article-item').eq(pc).find('.lead').html(lead);
-        $('#similar-articles .articles .article-item').eq(pc).find('.tags').html(tags);
-        if (more) {
-          $('#similar-articles .articles .article-item').eq(pc).find('.learn-more').html(more);
-        } else {
-          $('#similar-articles .articles .article-item').eq(pc).find('.learn-more').remove()
-        }
-        if (study) {
-          $('#similar-articles .articles .article-item').eq(pc).find('.view-study').html(study);
-        } else {
-          $('#similar-articles .articles .article-item').eq(pc).find('.view-study').remove();
-        }
-        $('#similar-articles .articles .article-item').eq(pc).removeClass('empty');
+      if ($('#article-heading').text().trim() !== $(this).find('.title').text().trim()) {
+        items.push({
+          title: $(this).find('.title').html(),
+          lead: $(this).find('.lead').html(),
+          tags: $(this).find('.tags').html(),
+          more: $(this).find('.learn-more').html(),
+          moreLnk: $(this).find('.learn-more').attr('href'),
+          study: $(this).find('.view-study').html(),
+          studyLnk: $(this).find('.view-study').attr('href')
+        });
       }
     })
+    items.sort(function() { return 0.5 - Math.random() });
+    let rndItems = items.splice(0, 3);
+    let i = 0;
+    rndItems.forEach(function(itm) {
+      let out = $('.article-item-template').html();
+      $('#similar-articles .articles .article-item').eq(i).find('.title').html(itm.title);
+      $('#similar-articles .articles .article-item').eq(i).find('.lead').html(itm.lead);
+      $('#similar-articles .articles .article-item').eq(i).find('.tags').html(itm.tags);
+      if (itm.more) {
+        $('#similar-articles .articles .article-item').eq(i).find('.learn-more').html(itm.more);
+        $('#similar-articles .articles .article-item').eq(i).find('.learn-more').attr('href', itm.moreLnk);
+      } else {
+        $('#similar-articles .articles .article-item').eq(i).find('.learn-more').remove()
+      }
+      if (itm.study) {
+        $('#similar-articles .articles .article-item').eq(i).find('.view-study').html(itm.study);
+        $('#similar-articles .articles .article-item').eq(i).find('.view-study').attr('href', itm.studyLnk);
+      } else {
+        $('#similar-articles .articles .article-item').eq(i).find('.view-study').remove();
+      }
+      $('#similar-articles .articles .article-item').eq(i).removeClass('empty');
+      i++;
+    })
     $('#similar-articles .articles .article-item').css({display: 'block'});
-    $('#similar-articles .articles .article-item.empty').remove();
+    $('#similar-articles .articles .article-item [data-article-filter="article-' + rndTag + '"]').addClass('active')
+    $('#similar-articles .articles .article-item a').each(function() {
+      let href = $(this).attr('href');
+      $(this).attr('href', href.replace(/^\.\./, ''))
+    });
+    console.timeEnd('FETCH');
   })
 }
 
