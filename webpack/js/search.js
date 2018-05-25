@@ -88,7 +88,7 @@ $(document).ready(function() {
         $.ajax({
           data: qryData,
           type: "GET",
-          url: process.env.KB_URL + route
+          url: "https://n4p-knowledgebase.herokuapp.com" + route
         }).done(function(data) {
           if (data.pagination.total_entries > 0) {
             $('.article-item').addClass('hidden')
