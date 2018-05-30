@@ -20,7 +20,7 @@
         {% set fullUrl = (artx|url) + 'case-study' %}
         {% endif %}
 
-        <div class="article-item col {{ article_classes(artx) }} p2">
+        <div class="article-item col {{ article_classes(artx) }} {{ "article-" + (artx.country|replace(" ", "_")) }} p2">
           <div class="box-shadow bg-white p0 article article-{{ artx.size }}{% if artx.hot == 'true' %} article-hot{% endif %} overflow-hidden clearfix">
 
             {% if artx.size == 'medium' %}

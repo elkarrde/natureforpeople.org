@@ -3,15 +3,15 @@ d3 = require("d3");
 c3 = require("c3");
 _ = require("lodash");
 slick = require("slick-carousel");
-lightbox = require('lightbox2');
+lightbox = require("lightbox2");
 
-Isotope = require('isotope-layout');
-require('isotope-packery')
+Isotope = require("isotope-layout");
+require("isotope-packery");
 var IsoParams = {
-  layoutMode: 'packery',
-  itemSelector: '.article-item',
+  layoutMode: "packery",
+  itemSelector: ".article-item",
   percentPosition: true
-}
+};
 
 jQuery = $;
 
@@ -57,22 +57,32 @@ function instWaypoint(id, method) {
 }
 
 function setupArticleImages() {
-  let images = $('#article-single .article-image-full, #article-single .article-body img')
+  let images = $(
+    "#article-single .article-image-full, #article-single .article-body img"
+  );
   images.each(function() {
-    let imgSrc = $(this).attr('src')
-    let imgTitle = $(this).attr('title')
-    $(this).addClass('image-lightbox').wrap('<a href="' + imgSrc + '" data-lightbox="article-single" data-title="' + imgTitle + '"></a>')
-  })
+    let imgSrc = $(this).attr("src");
+    let imgTitle = $(this).attr("title");
+    $(this)
+      .addClass("image-lightbox")
+      .wrap(
+        '<a href="' +
+          imgSrc +
+          '" data-lightbox="article-single" data-title="' +
+          imgTitle +
+          '"></a>'
+      );
+  });
 
   lightbox.option({
-    'wrapAround': true,
-    'disableScrolling': false
-  })
+    wrapAround: true,
+    disableScrolling: false
+  });
 }
 
-jQuery(window).on('load', function() {
-    setupArticleImages()
-})
+jQuery(window).on("load", function() {
+  setupArticleImages();
+});
 
 window.iso = null;
 
@@ -81,108 +91,133 @@ jQuery(document).ready(function() {
   setGeolocation();
 
   if (mobilecheck()) {
-    $('html').addClass('device-mobile');
+    $("html").addClass("device-mobile");
   } else {
-    $('html').addClass('device-desktop');
+    $("html").addClass("device-desktop");
   }
   if (window.innerWidth > 640) {
-    if ($('.articles-grid').length > 0) {
-      iso = new Isotope('.articles-grid', IsoParams);
+    if ($(".articles-grid").length > 0) {
+      iso = new Isotope(".articles-grid", IsoParams);
     }
-    $('html').addClass('screen-wide');
+    $("html").addClass("screen-wide");
   } else {
-    $('html').addClass('screen-narrow');
+    $("html").addClass("screen-narrow");
   }
-  $('.articles-grid').removeClass('loading');
+  $(".articles-grid").removeClass("loading");
 
-  $('[data-article-filter]').attr('data-filter-active', 'false');
-  $('[data-article-filter]').click(function() {
-    let filter = $(this).attr('data-article-filter');
-    let classSelector = '.' + filter;
+  $("[data-article-filter]").attr("data-filter-active", "false");
+  $("[data-article-filter]").click(function() {
+    let filter = $(this).attr("data-article-filter");
+    let classSelector = "." + filter;
     let attrSelector = '[data-article-filter="' + filter + '"]';
+    console.log(this);
+    console.log(filter);
+    console.log(classSelector);
+    console.log(attrSelector);
+    $(".article-item").addClass("hidden");
+    $(classSelector).removeClass("hidden");
 
-    $('.article-item').addClass('hidden');
-    $(classSelector).removeClass('hidden');
-
-    let isActive = $(this).attr('data-filter-active') !== 'false';
+    let isActive = $(this).attr("data-filter-active") !== "false";
     if (isActive) {
-      $('.article-item').removeClass('hidden');
-      $(attrSelector).attr('data-filter-active', 'false');
-      $(attrSelector).removeClass('active');
+      $(".article-item").removeClass("hidden");
+      $(attrSelector).attr("data-filter-active", "false");
+      $(attrSelector).removeClass("active");
 
-      if ($(this).hasClass('img-filter')) {
-        $('.partners-list').slick('slickPlay');
-        $('.img-filter.active').attr('data-filter-active', 'false');
-        $('.img-filter.active').removeClass('active');
+      if ($(this).hasClass("img-filter")) {
+        $(".partners-list").slick("slickPlay");
+        $(".img-filter.active").attr("data-filter-active", "false");
+        $(".img-filter.active").removeClass("active");
       } else {
-        $('.partners-list').slick('slickPlay');
-        $('[data-article-filter]').attr('data-filter-active', 'false');
-        $('[data-article-filter]').removeClass('active');
+        $(".partners-list").slick("slickPlay");
+        $("[data-article-filter]").attr("data-filter-active", "false");
+        $("[data-article-filter]").removeClass("active");
       }
     } else {
-      if ($(this).hasClass('img-filter')) {
-        $('.partners-list').slick('slickPause');
-        $('.img-filter.active').attr('data-filter-active', 'false');
-        $('.img-filter.active').removeClass('active');
-        $(this).addClass('active');
+      if ($(this).hasClass("img-filter")) {
+        $(".partners-list").slick("slickPause");
+        $(".img-filter.active").attr("data-filter-active", "false");
+        $(".img-filter.active").removeClass("active");
+        $(this).addClass("active");
       } else {
-        $('.img-filter.active').attr('data-filter-active', 'false');
-        $('.img-filter.active').removeClass('active');
-        $('.partners-list').slick('slickPlay');
+        $(".img-filter.active").attr("data-filter-active", "false");
+        $(".img-filter.active").removeClass("active");
+        $(".partners-list").slick("slickPlay");
       }
-      $('[data-article-filter]').attr('data-filter-active', 'false');
-      $('[data-article-filter]').removeClass('active');
-      $(attrSelector).attr('data-filter-active', 'true');
-      $(attrSelector).addClass('active');
+      $("[data-article-filter]").attr("data-filter-active", "false");
+      $("[data-article-filter]").removeClass("active");
+      $(attrSelector).attr("data-filter-active", "true");
+      $(attrSelector).addClass("active");
     }
 
-    try { iso.layout(); } catch(e) {}
+    try {
+      iso.layout();
+    } catch (e) {}
     return false;
-  })
+  });
 
-  $('.js-expand-facts').click(function() {
-    let isOpen = $(this).find('.icon').hasClass('open');
+  $(".js-expand-facts").click(function() {
+    let isOpen = $(this)
+      .find(".icon")
+      .hasClass("open");
     if (isOpen) {
-      $(this).find('.icon').removeClass('open').removeClass('i-folder-open').addClass('i-folder');
-      $('.factsheet').addClass('hidden')
+      $(this)
+        .find(".icon")
+        .removeClass("open")
+        .removeClass("i-folder-open")
+        .addClass("i-folder");
+      $(".factsheet").addClass("hidden");
     } else {
-      $(this).find('.icon').addClass('open').removeClass('i-folder').addClass('i-folder-open');
-      $('.factsheet').removeClass('hidden');
+      $(this)
+        .find(".icon")
+        .addClass("open")
+        .removeClass("i-folder")
+        .addClass("i-folder-open");
+      $(".factsheet").removeClass("hidden");
     }
     return false;
-  })
+  });
 
   makeEmailsClickable();
   setupLogoSlider();
 
-  $('.js-sig-generate').click(function() {
-    $('#signature-form form input').each(function() {
-      let name = $(this).attr('name');
-      let value = $(this).val().trim();
-      let attr = '#' + name;
+  $(".js-sig-generate").click(function() {
+    $("#signature-form form input").each(function() {
+      let name = $(this).attr("name");
+      let value = $(this)
+        .val()
+        .trim();
+      let attr = "#" + name;
       $(attr).text(value);
-      if (name === 's-email') { $(attr).attr('href', 'mailto:' + value); }
-      if (value.length < 1 && !$(this).hasClass('required')) { $(attr).closest('tr').remove(); }
-    })
-    $('#raw .js-content [id]').removeAttr('id');
-    let html = $('#raw .js-content').html();
-    $('#signature textarea').val(html.trim());
+      if (name === "s-email") {
+        $(attr).attr("href", "mailto:" + value);
+      }
+      if (value.length < 1 && !$(this).hasClass("required")) {
+        $(attr)
+          .closest("tr")
+          .remove();
+      }
+    });
+    $("#raw .js-content [id]").removeAttr("id");
+    let html = $("#raw .js-content").html();
+    $("#signature textarea").val(html.trim());
 
-    $('#signature-form').addClass('hide');
-    $('#signature').removeClass('hide');
-    $('#raw').removeClass('hide');
+    $("#signature-form").addClass("hide");
+    $("#signature").removeClass("hide");
+    $("#raw").removeClass("hide");
     return false;
-  })
-  $('.js-sig-back').click(function() {
-    $('#signature-form').removeClass('hide');
-    $('#signature').addClass('hide');
-    $('#raw').addClass('hide');
-  })
+  });
+  $(".js-sig-back").click(function() {
+    $("#signature-form").removeClass("hide");
+    $("#signature").addClass("hide");
+    $("#raw").addClass("hide");
+  });
 
   window.addEventListener("orientationchange", function() {
-    try { iso.layout(); } catch(e) {}
+    try {
+      iso.layout();
+    } catch (e) {}
     setTimeout(function() {
-      $('.partners-list').slick('unslick');
+      $(".partners-list").slick("unslick");
       setupLogoSlider();
     }, 150);
   });
@@ -194,7 +229,7 @@ jQuery(document).ready(function() {
     );
   });
 
-  if ($('#similar-articles').length) {
+  if ($("#similar-articles").length) {
     fetchSimilarArticles();
   }
 
@@ -372,29 +407,33 @@ function crawlArray(array, index, step) {
 }
 
 function makeEmailsClickable() {
-  $('#article-single .author-content a').addClass('pink pink-hover');
+  $("#article-single .author-content a").addClass("pink pink-hover");
 }
 
 function makeShareArticleLinks() {
-  $('.social a').each(function() {
-    let href = $(this).attr('href').replace(/(\.\.\/){1,}/, '')
-    $(this).attr('href', href);
-  })
+  $(".social a").each(function() {
+    let href = $(this)
+      .attr("href")
+      .replace(/(\.\.\/){1,}/, "");
+    $(this).attr("href", href);
+  });
   $('head meta[property*=":url"]').each(function() {
-    let href = $(this).attr('content').replace(/(\.\.\/){1,}/, '')
-    $(this).attr('content', href);
-  })
+    let href = $(this)
+      .attr("content")
+      .replace(/(\.\.\/){1,}/, "");
+    $(this).attr("content", href);
+  });
 }
 
 function setupLogoSlider() {
   let maxLogos = Math.floor(window.innerWidth / 180);
-  $('.partners-list').slick({
+  $(".partners-list").slick({
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
     dots: true,
-    appendArrows: $('.partners-list'),
-    slidesToShow: maxLogos > 6? 6 : maxLogos,
+    appendArrows: $(".partners-list"),
+    slidesToShow: maxLogos > 6 ? 6 : maxLogos,
     slidesToScroll: 1,
     swipe: true,
     swipeToSlide: true,
@@ -403,34 +442,52 @@ function setupLogoSlider() {
 }
 
 function fetchSimilarArticles() {
-  let max = $('#tags .tag').length - 1;
+  let max = $("#tags .tag").length - 1;
   let min = 0;
   let rndItem = Math.floor(Math.random() * (max - min + 1)) + min;
-  let rndTag = $('#tags .tag').eq(rndItem).text();
-  $.get('/').done(function(res) {
-    let content = $(res).find('.article-' + rndTag);
+  let rndTag = $("#tags .tag")
+    .eq(rndItem)
+    .text();
+  $.get("/").done(function(res) {
+    let content = $(res).find(".article-" + rndTag);
     content.each(function(pc) {
       if (pc < 3) {
-        let title = $(this).find('.title').html();
-        let lead = $(this).find('.lead').html();
-        let out = '';
+        let title = $(this)
+          .find(".title")
+          .html();
+        let lead = $(this)
+          .find(".lead")
+          .html();
+        let out = "";
         out += '<div class="article-item col col-4 p2">';
-        out += '  <div class="box-shadow bg-white p0 article article-small overflow-hidden clearfix">';
+        out +=
+          '  <div class="box-shadow bg-white p0 article article-small overflow-hidden clearfix">';
         out += '    <div class="text col col-12 p2">';
-        out += '      <h3 class="h4 p0 m0 bold playfair-bold">' + title + '</h3>';
-        out += '      <p class="lead p0">' + lead + '</p>';
-        out += '    </div>';
-        out += '  </div>';
-        out += '</div>';
+        out +=
+          '      <h3 class="h4 p0 m0 bold playfair-bold">' + title + "</h3>";
+        out += '      <p class="lead p0">' + lead + "</p>";
+        out += "    </div>";
+        out += "  </div>";
+        out += "</div>";
 
-        $('#similar-articles .articles').append($(out));
+        $("#similar-articles .articles").append($(out));
       }
-    })
-  })
+    });
+  });
 }
 
 window.mobilecheck = function() {
   var check = false;
-  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+  (function(a) {
+    if (
+      /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(
+        a
+      ) ||
+      /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
+        a.substr(0, 4)
+      )
+    )
+      check = true;
+  })(navigator.userAgent || navigator.vendor || window.opera);
   return check;
 };
