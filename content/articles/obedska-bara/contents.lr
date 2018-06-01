@@ -2,9 +2,9 @@ _model: articles
 ---
 _template: articles/single-article.html
 ---
-_slug: en-evolucija-u-restauraciji-i-ocuvanju-travnih-staništa-obedska-bara
+_slug: evolution-in-restoration-and-preservation-of-grassland-habitats-obedska-bara
 ---
-title: Evolucija u restauraciji i očuvanju travnih staništa — Obedska bara
+title: Evolution in restoration and preservation of grassland habitats – Obedska bara
 ---
 lang: en
 ---
@@ -20,9 +20,9 @@ lead_image:
 ---
 lead_image_title:
 ---
-lead_text: Dugogodišnja obnova staništa kroz radne volonterske kampove koji se održavaju 20 godina. Na taj način omogućuno je lokalnoj zajednici da se vrati u to područje i živi od stočarstva.
+lead_text: Long-term restoration of habitats through 20 years of organising international work camps. In this way it enables the local community to return to that area and live from livestock farming.
 ---
-homepage_text: Dugogodišnja obnova staništa kroz radne volonterske kampove koji se održavaju 20 godina.
+homepage_text: Long-term restoration of habitats through 20 years of organising international work camps.
 ---
 learn_more:
 ---
@@ -34,7 +34,9 @@ tag2: education
 ---
 tag3: local_initiatives
 ---
-tag4: wildlife
+tag4: local_produce
+---
+country: Serbia
 ---
 factsheet:
 ---

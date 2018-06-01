@@ -4,9 +4,9 @@ _template: articles/case-study.html
 ---
 slug:
 ---
-title: Evolucija u restauraciji i očuvanju travnih staništa — Obedska bara
+title: Evolution in restoration and preservation of grassland habitats – Obedska bara
 ---
-lang: bcs
+lang: en
 ---
 date:
 ---
@@ -18,19 +18,19 @@ lead_image_title:
 ---
 lead_text:
 ---
-people: Veliki broj zaposlenih unutar organizacija uključenih u programske-projektne aktivnosti
+people: A great number of employees within organisations involved in programme/project-related activities
 ---
 time: 8 years
 ---
-money: 458 000 EUR
+money: EUR 458 000
 ---
-country: Srbija
+country: Serbia
 ---
-organization: Pokrajinski zavod za zaštitu prirode; Mladi Istraživači Srbije
+organization: Regional Institute for Environmental Protection; Young Researchers of Serbia
 ---
 location: Obedska bara
 ---
-level: Specijalni rezervat prirode; Ramsar site; IBA; IPA
+level: Special nature reserve; Ramsar site; IBA; IPA
 ---
 tag1: management
 ---
@@ -50,89 +50,91 @@ download_link: /static/docs/obedska_pdp_en.pdf
 ---
 body:
 <dl class="clearfix">
-    <dt>Postignuća</dt>
-		<dd>Promena stava stanovništva o zaštićenom području – vrijednostima pašnjaka i obrane od poplava</dd>
-		<dd>Povratak stočarstva - osnovana pašnjačka udruženje</dd>
-		<dd>20 godina organiziranja međunarodnih radnih kampova sa preko 470 volontera </dd>
-		<dd>Unapređenje vodnog režima i kapaciteta obrane od poplava</dd>
-		<dd>Povratak crnog ibisa i kašičarke od međunarodnog značaja</dd>
-		<dd>Mnogostruko uvećanje brojnosti vrsta i parova u mešovitoj koloniji čaplji i vranaca</dd>
-		<dd>Značajno smanjivanje invazivnih vrsta biljaka (posebno bagremca) na vrednim vlažnim staništima</dd>
-		<dd>Razvijena infrastruktura za edukaciju, rekreaciju i turizam kroz izgrađen sistem staza, vidikovaca, nadstrešnica, kula, mostova, info-tabli, putokaza</dd>
+    <dt>Achievements</dt>
+		<dd>Changing the attitude of the inhabitants towards the protected area – the value of pastures and flood control</dd>
+		<dd>The return of animal husbandry – founding pasture associations</dd>
+		<dd>20 years of organising international work camps with over 470 volunteers </dd>
+		<dd>Improving the water drainage system and flood control capacity</dd>
+		<dd>The international significance of the return of the glossy ibis and the common spoonbill</dd>
+		<dd>Exponential increase in the number of species and pairs in mixed heron and cormorant colony</dd>
+		<dd>Significant decrease of invasive plant species (especially false indigo-bush) on valuable humid habitats</dd>
+		<dd>Developed infrastructure for education, recreation and tourism through a system of paths, belvederes, canopies, towers, bridges, info panels, signposts</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Problem/prilika</h4>
+<h4 class="h2 grey playfair-heavy mb1">Problem/opportunity</h4>
 
 <dl class="clearfix">
-    <dt>Problem koji želite riješiti</dt>
-		<dd>Gubitak biološke i predeone raznovrsnosti</dd>
-		<dd>Poremećen vodni režim, izražena sedimentacija i eutrofikacija</dd>
-		<dd>Nedovoljno operativan program upravljanja zaštićenim područjem</dd>
-		<dd>Suprostavljeni interesi sektorskih politika</dd>
-		<dd>Sukcesija staništa i širenje invazivnih vrsta;</dd>
-		<dd>Niska svest javnosti i donosioca odluka o značaju i potencijalima zaštićenog područja;</dd>
-		<dd>Nedovoljna uključenost lokalnog  stanovništva u upravljanje i razvoj;</dd>
-		<dd>Zamiranje tradicionalnih vidova korišćenja prostora; Nedovoljno razvijeni programi turizma, eko edukacije i rekreacije.</dd>
+    <dt>Problem you wish to solve</dt>
+		<dd>Loss of biological and landscape diversity</dd>
+		<dd>Disrupted water drainage system, substantial sedimentation and eutrophication</dd>
+		<dd>Insufficiently operative programme of protected area management</dd>
+		<dd>Conflicted interests of sectoral policies</dd>
+		<dd>Habitat succession and expansion of invasive species;</dd>
+		<dd>Low awareness of the general public and decision makers on the significance and potential of the protected area;</dd>
+		<dd>Insufficient involvement of the local population in management and development;</dd>
+		<dd>Disappearance of traditional modes of using space; Insufficiently developed tourism programmes, eco-education and recreation.</dd>
 
-    <dt>Prilika koju želite iskoristiti</dt>
-		<dd>Usklađeni razvoj na dobrobit prirode i ljudi;</dd>
-		<dd>Revitalizacija i održavanje osetljivih otvorenih staništa tradicionalnim korišćenjem prostora (pašarenje)</dd>
-		<dd>Održivi razvoj eko-etno turizma, programa edukacije i rekreacije</dd>
-		<dd>Razvoj nacionalnih i međunarodnih volonterskih kampova (radnih i edukativnih)</dd>
+		<dt>Opportunity you wish to seize</dt>
+		<dd>Development in line with the benefits for nature and people;</dd>
+		<dd>Revitalisation and maintenance of fragile open habitats by means of traditional usage of space (grazing)</dd>
+		<dd>Sustainable development of eco and ethno-tourism, educational and recreational programmes</dd>
+		<dd>Development of national and international volunteer camps (working and educational)  </dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Provedba</h4>
+<h4 class="h2 grey playfair-heavy mb1">Implementation</h4>
 
 <dl class="clearfix">
-    <dt>Ključne faze – od ideje do realizacije</dt>
-		<dd>1. Aktivna zaštita prirodnih i stvorenih vrijednosti</dd>
-		<dd>2. Radni volonterski kampovi kojima je cilj bio revitalizacija staništa</dd>
-		<dd>3. Sanacija i revitalizaciji ugroženih staništa (bare i livade) na velikom broju lokacija</dd>
-		<dd>4. Unapređenje vodnog režima izgradnjom namenskih ustava (Upravljač) i izmuljivanje dela nataloženog sedimenta</dd>
-		<dd>5. Izrađen program upravljanja za period 2012-2020</dd>
-		<dd>6. Razvoj tradicionalnog pašarenja u suradnji sa mještanima;</dd>
-		<dd>7. Izrađen Prostorni plan područja posebne namene za zaštićeno područje i šire okruženje, kroz proces javnih konsultacija i rasprava; </dd>
-		<dd>8. Promocija zaštićenog područja</dd>
-		<dd>9. Edukativne aktivnosti i razvoj infrastrukture</dd>
+    <dt>Key pre-requisites for success</dt>
+		<dd>1. Active protection of natural and created values</dd>
+		<dd>2. Volunteer working camps for the purpose of revitalising habitats</dd>
+		<dd>3. Reparation and revitalisation of endangered habitats (bogs and meadows) on a large number of locations</dd>
+		<dd>4. Improving the water drainage system by constructing dedicated systems (Manager) and dredging part of sediment deposits</dd>
+		<dd>5. Drafting of the management programme for the period of 2012-2020</dd>
+		<dd>6. Developing traditional grazing in cooperation with the local population;</dd>
+		<dd>7. Drafting of the Zoning Plan of Special-Purpose Areas for the protected area and its surroundings by means of the process of public consulting and discussions; </dd>
+		<dd>8. Promotion of protected area</dd>
+		<dd>9. Educational activities and infrastructure development</dd>
 
-	<dt>Jeste li osvijestili lokalne dionike na njihova prava na informacije?</dt>
-		<dd>Šumari su decenijama odlučivali o upravljanju prostorom.</dd>
-		<dd>Lokalcima su objašnjeni postojeći zakone i njihova prava. Bitne su procedure.</dd>
-		<dd>Iniciranjem pašnjačkih udruženja počeli su tražiti svoja prava.</dd>
-		<dd>Lokalno stanovništvo je značajno povećalo nivo sopstvenog informisanja o zaštićenom području, njegovim vrednostima, ali i svojim mogućnostima i ograničenjima;</dd>
+	<dt>Have you drawn the attention of the local stakeholders to their rights to information?</dt>
+		<dd>The foresters were the ones that made decisions on area management for decades. </dd>
+		<dd>The local population was informed on the existing laws and their respective rights. The procedures are very important. </dd>
+		<dd>They started to claim their rights by initiating grazing associations.</dd>
+		<dd>The local population started getting significantly more informed about the protected area, its value, but also about their own possibilities and limitations;</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Promjena</h4>
+<h4 class="h2 grey playfair-heavy mb1">Change</h4>
 
 <dl class="clearfix">
-	<dt>Pozitivna ekonomska (E) i društvena (D) promjena</dt>
-		<dd>Značajno povećanje interesa i uključenosti lokalne samouprave u poslove vezane za zaštitu i održivi razvoj šireg područja;  Šuma je certificirana (dodatni bodovi iz korištenje) i time je dobilo i drvo veću vrijednost, prodaja na zapadnom tržištu.</dd>
-		<dd>Jačanje civilnog sektora na lokalnom nivou. Pojačano interesovanje lokalnog nastavnog osoblja da programe školske nastave realizuju u zaštićenom području; zadržavanja stanovništva.</dd>
-		<dd>Podsticaj za pokretanje i omasovljivanje manifestacija (npr. Regata Majke Angeline, Dani vitezova); tri restorana, revitalizacija ribnjaka; </dd>
-		<dd>Povećanje broja konkretnih inicijativa koje dolaze sa lokalnog nivoa.</dd>
-		<dd>Porast investicija lokalnih preduzimača u poslove bliske zaštiti prirode (npr. sanacija starog ribnjaka-vodenog staništa za turizam i rekreaciju; izgradnja stočarskog punkta; otvaranje etno-restorana na obali i vodi;</dd>
-		<dd>Povećan broj turista i posetilaca generalno, koji dolaze u naselja oko zaštićenog područja; prihod od pašarenja, prihod od mehaničkih radova revitalizacije staništa</dd>
-		<dd>Povećanje interesovanja lokalnog stanovništva za tradicionalne delatnosti (stočarstvo, ugostiteljstvo), povezane sa zaštićenim područjem.</dd>
-		<dd>Povećanje potražnje i cene nekretnina u naseljima uz zaštićeno područje zbog unapređenja prirodnih, predeonih i kulturno-istorijskih vrednosti</dd>
-		<dd>Jačanje/negovanje  običaja i tradicije. </dd>
-		<dd>Povećan interes stanovništva za zaštićeno područje i mogućnosti njegovog korišćenja (vidljivo kroz učešće na volonterskim radnim kampovima i kroz broj stočara);</dd>
+	<dt>Positive economic (E) and social (S) change in</dt>
 
+		<dd>E: Significant increase of interest and involvement of the unit of local self-government in activities related to protection and sustainable development of the greater area; 
+The forest received certification (additional points for usage) thus raising the value of wood in the Western market. </dd>
+		<dd>S: Strengthening of the civil sector on the local level. Increased interest of the local teaching staff to organise classes in the protected area; counteracting emigration.</dd>
+
+		<dd>E: Incentive for initiating and expanding events (e.g. the Mother Angelina Regatta, Days of the Knights); three restaurants, revitalisation of fishponds;</dd>
+		<dd>S: Increasing the number of concrete initiatives on the local level. Increase in investment of local entrepreneurs in activities related to environmental protection (e.g. restoration of an old fishpond – aquatic habitat for tourism and recreation; construction of an animal husbandry site; opening an ethnologically based restaurant on the coast and water); </dd>
+		
+		<dd>E: A general increase in the number of tourists and visitors to the places adjacent to the protected area; grazing income, income from mechanical works of habitat revitalisation</dd>
+		<dd>S: change in the attitude of the managers in relation to the management method – they started to independently invest in management and information centre, recognising the importance of the protected area and building the image of environmentally conscious company; developed infrastructure for education, recreation and tourism through a system of paths, belvederes, canopies, towers, bridges, info panels, signposts, etc.</dd>
+
+		<dd>E: Increase in interest of the local population for traditional activities (animal husbandry, catering industry) related to the protected area.Increase in real estate demand and prices in places adjacent to the protected area due to the improvement in natural, landscape and cultural-historic values</dd>
+		<dd>S: Possible effect on keeping the younger population living in the places adjacent to the protected area;Strengthening/fostering customs and tradition. Increase of interest in the protected area and the possibilities of utilising it (evident in the participation in volunteer working camps and the number of livestock farmers);Increased awareness of local decision makers and water management representatives of the significance of the protected area for flood control; Restoration of religious structures (the Church of Mother Angelina), cultural-historical (the Kupinik fortress) and ethnological heritage (ethnological house museum).</dd>
 </dl>
 
-<h4 class="h2 grey playfair-heavy mb1">Što je ključno za održivosti projekta?</h4>
+<h4 class="h2 grey playfair-heavy mb1">What is the key element for project sustainability?</h4>
 <dl>
-	<dt>Pozitivna ekonomska (E) i društvena (D) promjena</dt>
-		<dd>Jasna vizija na početku</dd>
-		<dd>Okupljanje partnera i sinergija</dd>
-		<dd>Početak konkretnih/vidljivih aktivnosti</dd>
-		<dd>Širok volonterski pristup radu</dd>
-		<dd>Upornost u realizaciji</dd>
-		<dd>Dijalogom do rešenja u konfliktnim situacijama</dd>
-		<dd>Otvorenost za nove ideje i snage/partnere</dd>
-		<dd>Postepeno uključivanje stručnih/naučnih institucija</dd>
-		<dd>Rad sa lokalnim stanovništvom</dd>
-		<dd>Razvoj u prekograničnom kontekstu</dd>
-		<dd>Primerena prezentacija rezultata</dd>
-		<dd>Zaokruživanje pojedinih programskih celina i započinjanje novih</dd>
+	<dt>Positive economic and social change</dt>
+		<dd>Clear initial vision</dd>
+		<dd>Gathering partners and synergy</dd>
+		<dd>Start of concrete/visible activities</dd>
+		<dd>Broad volunteer approach to work</dd>
+		<dd>Persistence in execution</dd>
+		<dd>Resolving conflicts with dialogue</dd>
+		<dd>Openness to new ideas and forces/partners</dd>
+		<dd>Gradual inclusion of expert/scientific institutions</dd>
+		<dd>Collaboration with the local community</dd>
+		<dd>Cross-border expansion</dd>
+		<dd>Appropriate presentation of results</dd>
+		<dd>inalising individual programme sections and initialising new ones</dd>
 </dl>
 ---

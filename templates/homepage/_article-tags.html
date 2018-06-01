@@ -1,6 +1,8 @@
-              <aside class="tags {% if artx.size == 'medium' %}my0 pb0 pt1{% else %} mb1{% endif %}">
-                {% if artx.tag1 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag1 }}">{{ artx.tag1 }}</span>{% endif %}
-                {% if artx.tag2 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag2 }}">{{ artx.tag2 }}</span>{% endif %}
-                {% if artx.tag3 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag3 }}">{{ artx.tag3 }}</span>{% endif %}
-                {% if artx.tag4 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag4 }}">{{ artx.tag4 }}</span>{% endif %}
-              </aside>
+<aside class="tags {% if artx.size == 'medium' %}my0 pb0 pt1{% else %} mb1{% endif %}">
+  {% if artx.country != "" %}
+  <span class="label label-tag inline-block pointer-cursor article-filter tag border border-green green bg-grey-light-hover rounded px1" data-article-filter="article-{{ (artx.country|replace(" ", "_")) }}">{{ artx.country }}</span>{% endif %}
+  {% if artx.tag1 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag1 }}">{{ artx.tag1 }}</span>{% endif %}
+  {% if artx.tag2 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag2 }}">{{ artx.tag2 }}</span>{% endif %}
+  {% if artx.tag3 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag3 }}">{{ artx.tag3 }}</span>{% endif %}
+  {% if artx.tag4 != "" %}<span class="label label-tag inline-block pointer-cursor article-filter tag border border-pink pink bg-grey-light-hover rounded px1" data-article-filter="article-{{ artx.tag4 }}">{{ artx.tag4 }}</span>{% endif %}
+</aside>
